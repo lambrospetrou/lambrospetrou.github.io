@@ -1,0 +1,18 @@
+{{template "header" .Header}}
+
+<ul class="index-posts">
+    {{range $index, $element := .Posts}}
+    <li>
+        <article>
+            <header>
+                <h2 class="index-post-title"><a href="/blog/view/{{$element.Id}}" title="view post">{{ $element.Title }}</a></h2>
+                <p class="index-post-meta">{{ $element.FormattedCreatedTime }}</p>
+            </header>    
+            <section class="index-post-meta-bottom">
+            </section>
+        </article>
+    {{ end }}
+    </li>
+</ul>
+
+{{template "footer" .Footer}}
