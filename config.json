@@ -1,1 +1,12 @@
-{"static_paths": ["s", "./README.md"]}
+{
+	"static_paths": [
+		"s", 
+		"./README.md"
+	],
+	"templates": [
+		"partials/header.html",
+		"partials/footer.html",
+		"post.html",
+		"index.html"
+	]
+}
