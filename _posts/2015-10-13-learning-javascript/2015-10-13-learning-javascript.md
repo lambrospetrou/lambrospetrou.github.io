@@ -1,5 +1,5 @@
 ---
-title: Learning Javascript
+title: Learning Javascript 2015
 url: learning-javascript
 ---
 
