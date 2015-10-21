@@ -1,7 +1,6 @@
 {
 	"static_paths": [
-		"s", 
-		"./README.md"
+		"s"
 	],
 	"templates": [
 		"partials/header.html",
