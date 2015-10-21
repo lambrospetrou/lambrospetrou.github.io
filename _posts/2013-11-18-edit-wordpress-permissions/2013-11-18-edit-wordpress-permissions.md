@@ -1,6 +1,6 @@
 ---
-title: Editing Wordpress permissions guide
-url: edit-wordpress-permissions
+title: Wordpress permissions guide
+url: wordpress-permissions
 ---
 
 If you have ever installed wordpress on your own server, at some time you faced permissions problems. Especially when you are migrating a wordpress blog from one host to another and there is file copying involvement through ftp, scp etc.
