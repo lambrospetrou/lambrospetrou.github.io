@@ -3,15 +3,11 @@
 <article>
     <header>
         <h1 class="post-title">{{ .Post.Title }}</h1>
-        <small class="post-meta-top">{{ .Post.FormattedCreatedTime }}</small>
+        <p class="post-meta-top">{{ .Post.FormattedCreatedTime }}</p>
     </header>    
     <section class="post-body">
     	{{ .Post.ContentHtml }}
     </section>
-
-    <!--<section class="post-meta-bottom">
-        <small class="post-meta-top">last updated: {{.Post.FormattedEditedTime}}</small>
-    </section>-->
 </article>
 
 {{template "footer" .Footer}}
