@@ -214,7 +214,8 @@ a.text-link-cv:hover {
     color: #920000;
     border-bottom: 3px solid #920000;
 }
-#header-logo img {
+#header-logo img,
+#header-logo svg {
     width: 60px;
     height: auto;
 }
