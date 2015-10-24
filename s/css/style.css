@@ -69,7 +69,7 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6, h7 {
-    font-family: 'Droid Serif', "droid-serif", 'Times New Roman', 'Georgia', serif;
+    font-family: 'Droid Serif', 'Times New Roman', 'Georgia', serif;
 }
 h1 {
     font-size: 200%;
@@ -147,7 +147,7 @@ code {
     background-color: #fafafa;
     border: 1px dotted #920000;
     border-left: 10px double #920000;
-    font-size: 90%;
+    font-size: 80%;
     line-height: 130%;
     font-family: Consolas, 'Courier New', monospace;
 }
@@ -261,11 +261,17 @@ a.text-link-cv:hover {
  */
 
 #inner-content h1 {
-    margin-top: 0;
+    margin: 0;
 }
 
-.post-meta-top {
-    font-style: italic;
+.post-meta-top,
+.index-post-meta {
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+    font-family: 'Droid Serif';
+    opacity: 0.5;
+    font-size: 90%;
 }
 .post-meta-bottom {
     text-align: right;
@@ -293,10 +299,4 @@ a.text-link-cv:hover {
     /*font-variant: small-caps;*/
 }
 .index-post-meta {
-    font-style: italic;
-    font-size: 90%;
-    text-align: left;
-    margin: 0;
-    padding: 0;
-    opacity: 0.6;
 }
