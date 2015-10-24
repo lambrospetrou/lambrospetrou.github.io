@@ -7,5 +7,6 @@
 		"partials/footer.html",
 		"post.html",
 		"index.html"
-	]
+	],
+	"site_index_title" : "Lambros Petrou"
 }
