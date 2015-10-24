@@ -38,11 +38,14 @@
     padding: 0;
     margin: 0;
 }
-body {
-    font-family: 'lmroman10', serif;
-    font-size: 16px;
+body, input {
+    /*font-family: 'lmroman10', Georgia, Times, Times New Roman, Serif;*/
+    font-family: "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+    font-size: 17px;
     color: #000000;
-    line-height: 1.5;
+    line-height: 150%;
+}
+body {
     padding: 0;
     margin: 0;
     background-color: #ffffff;
@@ -61,8 +64,11 @@ body {
     padding: 10px 0px 20px 0px;
     margin: 0;
     width: 90%;
-    max-width: 700px;
+    max-width: 620px;
     margin: 0 auto;
+
+    word-wrap: break-word;
+    overflow-wrap: break-word
 }
 a, a:link, a:active {
     text-decoration: none;
@@ -75,16 +81,22 @@ a:hover {
     border-bottom: 1px dotted #920000;
     opacity: 1;
 }
+
+h1, h2, h3, h4, h5, h6, h7 {
+    font-family: 'Droid Serif', "droid-serif", serif;
+}
 h1 {
-    font-size: 150%;
+    font-size: 200%;
+    line-height: 120%;
     margin-top: 15px;
     margin-bottom: 10px;
 }
 h2 {
-    font-size: 140%;
+    font-size: 150%;
     margin-top: 15px;
     margin-bottom: 10px;
     border-bottom: 2px solid #920000;
+    line-height: 120%;
 }
 h3 {
     font-size: 120%;
@@ -151,13 +163,12 @@ code {
     border: 1px dotted #920000;
     border-left: 10px double #920000;
     font-size: 12px;
-    font-family: Consolas, 'Courrier New', monospace;
+    font-family: Consolas, 'Courier New', monospace;
 }
 input, textarea {
     width: 100%;
     padding: 5px;
     margin-bottom: 5px;
-    font-family: Lato, Roboto, 'Open Sans', Arial;
     outline: none;
     border: 1px solid #afafaf;
 }
@@ -191,7 +202,7 @@ input[type="button"]:hover, input[type="submit"]:hover, button:hover {
 }
 #inner-header h1 {
     font-variant: small-caps;
-    font-weight: bolder;
+    font-weight: bold;
 }
 a.text-link-cv {
     padding: 3px;
@@ -221,18 +232,15 @@ a.text-link-cv:hover {
 }
 #header-quote {
     font-style: italic;
-    font-family: 'Times New Roman', 'lmroman10', serif;
+    font-size: 90%;
+    font-family: 'Droid Serif', 'Times New Roman', Serif;
     color: #686868;
 }
 #inner-header #nav-buttons {
     margin-top: 10px;
 }
 #inner-header #nav-buttons a {
-    padding: 0 5px;
-    opacity: 0.7;
-}
-#inner-header #nav-buttons a:hover, #inner-header #nav-buttons a:active, #inner-header #nav-buttons a:focus {
-    opacity: 1;
+    margin: 0 15px;
 }
 
 /******************************
@@ -284,20 +292,20 @@ a.text-link-cv:hover {
     margin-left: 0;
 }
 .index-posts h2 {
+    font-size: 110%;
     border: 0;
     margin-bottom: 5px;
 }
 .index-post-title {
     color: #920000;
-    font-weight: bolder;
-    font-variant: small-caps;
+    font-weight: bold;
+    /*font-variant: small-caps;*/
 }
 .index-post-meta {
     font-style: italic;
-    font-weight: bold;
     font-size: 90%;
-    color: #686868;
-    text-align: justify;
+    text-align: left;
     margin: 0;
     padding: 0;
+    opacity: 0.6;
 }
