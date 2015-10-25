@@ -1,5 +1,6 @@
 ---
 title: Install JDK 7 (Java Development Toolkit) on Ubuntu 12.04 LTS
+description: Guide explaining how to easily install Java JDK on your Ubuntu 12.04 LTS.
 url: install-jdk7-ubuntu-12.04
 ---
 

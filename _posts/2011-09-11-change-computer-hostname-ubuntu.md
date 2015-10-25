@@ -1,5 +1,6 @@
 ---
 title: Change your Computer Name (hostname) inside your network - Ubuntu
+description: Change the hostname of your PC.
 ---
 
 Your *hostname* or otherwise Computer Name is the name that your computer uses inside the network it is connected to in order to distinguish itself. Usually you setup your own during the setup of the Operating System but if for any reason you want to change it check out the guide below.

@@ -3,16 +3,26 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-
-    <title>{{.Title}} | Lambros Petrou</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
 
-    <meta name="description" content="This is Lambros Petrou personal blog and website where I publish my thoughts and anything else that comes to my mind regarding technology and programming."/>
+    <title>{{.Title}} | Lambros Petrou</title>
+    <meta name="description" content="A personal blog where I publish my thoughts and anything else that comes to my mind regarding technology and programming."/>
+
     <meta name="keywords" content="Lambros,Petrou,LPSofts,portfolio,programming,developer,coder, software engineer, amazon, ucy, oxford" />
     <meta name="author" content="Lambros Petrou" />
     <meta name="owner" content="Lambros Petrou" />
     <meta name="copyright" content="2015 Lambros Petrou" />
     <meta name="robots" content="all" />
+
+    {{ if .Post }}
+    <meta property="og:title" content="{{.Post.Title}}" />
+    <meta property="og:description" content="{{.Post.Description}}" />
+    {{ end }}
+    <meta property="og:type" content="article" />
+    <meta property="og:locale" content="en_UK" />
+    <meta property="article:author" content="https://lambrospetrou.com" />
+    <meta property="article:publisher" content="https://lambrospetrou.com" />
+    <meta property="og:site_name" content="Lambros Petrou articles and bio."/>
 
     <!--<link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgo=">-->
     <link id="page_favicon" href="data:image/x-icon;base64,R0lGODlhEAAQAPEAAAAAAJYeHgAAAAAAACH5BAkeAAIAIf8LTkVUU0NBUEUyLjADAQAAACwAAAAAEAAQAAAC55QkIiIiIoQQQgghhBBCCCEIgiAIQhAEgiAIghAEgSAIgSAEgSAIQhAQCAICQUAgEAQCAkEgIBAIAgJBICAQCAICQUAgEAQCAoEgEBAIBIGAQCAIBAQCgUAQCAgEgYBAEBAgICAgICAgICAgEBAgICAgICAgICAgICAgIBAQICAgICAgICAgICAgICAQECAgICAgICAgICAgICAgEBAgICAgICAgICAgICAgIBAQICAgICAgICAgICAgICAQECAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgQIAAAQIKAAAh+QQJHgACACwAAAAAEAAQAAAC55QkIiIiIoQQQgghhBBCCCEIgiAIgiAIgiAIgiAIgiAIQhAEgiAIghAIBAQCQUAgCAQEAoEgEBAIAgJBQCAQBAICQSAgEAgCAkEgIBAIAgJBQCAQBAICgSAQEAgEgYBAIBAQICAgICAQECAgEBAgIBAQICAgICAgICAgIBAQICAgICAgICAgICAgICAQECAgICAgICAgICAgICAgEBAgICAgICAgICAgICAgIBAQICAgICAgICAgICAgICAQECAgICAgICAgICAgICAgEBAgICAgICAgICAgICAgICAgICAgQIAAAQIKAAAh+QQJHgACACwAAAAAEAAQAAAC55QkIiIiIoQQQgghhBBCCCEIgiAIQhAEgiAIghAEgSAIgSAEgSAIQhAQCAICQUAgEAQCAkEgIBAIAgJBICAQCAICQUAgEAQCAoEgEBAIBIGAQCAIBAQCgUAQCAgEgYBAEBAgICAgICAgICAgEBAgICAgICAgICAgICAgIBAQICAgICAgICAgICAgICAQECAgICAgICAgICAgICAgEBAgICAgICAgICAgICAgIBAQICAgICAgICAgICAgICAQECAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgQIAAAQIKAAAh+QQJHgACACwAAAAAEAAQAAAC55QkIiIiIoQQQogQghBCCBEEgSAIgSAEgSAIQhAIQiAIgSAIQSAIQSAQCAICQSAgEAgCAkFAIBAEAgKBIBAQCASBgEAgCAQEAoFAEAgIBIGAQBAICAQCgUAgEAgEgYBAICAgICAgICAgICAgEBAgICAgICAgICAgICAgIBAQICAgICAgICAgICAgICAQECAgICAgICAgICAgICAgEBAgICAgICAgICAgICAgIBAQICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgQIAAAQIKAAAh+QQJHgACACwAAAAAEAAQAAAC55QkIiIiIoQQQgghhBBCCCEIgiAIQhAEgiAIghAEgSAIgSAEgSAIQhAQCAICQUAgEAQCAkEgIBAIAgJBICAQCAICQUAgEAQCAoEgEBAIBIGAQCAIBAQCgUAQCAgEgYBAEBAgICAgICAgICAgEBAgICAgICAgICAgICAgIBAQICAgICAgICAgICAgICAQECAgICAgICAgICAgICAgEBAgICAgICAgICAgICAgIBAQICAgICAgICAgICAgICAQECAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgQIAAAQIKAAA7" rel="icon" type="image/x-icon">

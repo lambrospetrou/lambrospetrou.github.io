@@ -1,5 +1,6 @@
 ---
 title: Micro-blog service written in Go as a personal blog
+description: I switched from Wordpress to my custom own-made blog coded in Go-lang.
 url: micro-blog-service-written-in-go-personal-blog
 ---
 

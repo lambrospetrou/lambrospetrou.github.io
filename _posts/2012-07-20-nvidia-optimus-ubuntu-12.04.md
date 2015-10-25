@@ -1,5 +1,6 @@
 ---
 title: nVidia Optimus Support in Ubuntu 12.04 LTS - How to get the most of your battery life guide
+description: A guide that guides you through the installation of Bumblebee to manage the discrete along with the integrated graphics card.
 url: nvidia-optimus-support-ubuntu-12.04
 ---
 

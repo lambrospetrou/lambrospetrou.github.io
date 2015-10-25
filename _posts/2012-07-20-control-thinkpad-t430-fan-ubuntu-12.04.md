@@ -1,5 +1,6 @@
 ---
 title: Control the fan speed of you Thinkpad T430 running Ubuntu 12.04 LTS
+description: Easy way to control the fan speed of your Thinkpad based on the temperatures of its sensors.
 url: control-thinkpad-t430-fan-ubuntu-12.04
 ---
 

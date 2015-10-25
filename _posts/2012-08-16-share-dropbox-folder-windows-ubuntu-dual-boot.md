@@ -1,5 +1,6 @@
 ---
 title: Share your Dropbox folder between Windows and Ubuntu on dual-boot system
+description: Tutorial on how to share your Dropbox sync folder between  Windows and Linux.
 url: share-dropbox-folder-windows-ubuntu-dual-boot
 ---
 
@@ -31,7 +32,7 @@ Following the guide below you can consolidate them into one and reclaim your was
     ln -s /media/WindowsOS/User/_username_/Dropbox /home/_username_/Dropbox
     ```
 
-    ```/media/WindowsOS/User/_username_/Dropbox``` 
+    ```/media/WindowsOS/User/_username_/Dropbox```
     the path to the Dropbox folder in your Windows partition mounted in Ubuntu  
 
     ```/home/_username_/Dropbox```
