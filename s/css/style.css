@@ -132,10 +132,22 @@ ol ol {
 ol ol ol {
     list-style-type: lower-greek;
 }
+code {
+    display: inline-block;
+    border: 1px dotted #920000;
+    white-space: pre;
+    word-wrap: normal;
+    overflow-wrap: normal;
+    padding: 5px;
+    background-color: #fafafa;
+    font-size: 80%;
+    line-height: 100%;
+    font-family: Consolas, 'Courier New', monospace;
+}
 pre {
     overflow-x: auto;
 }
-code {
+pre code {
     overflow: auto;
     white-space: pre;
     word-wrap: normal;
@@ -144,12 +156,8 @@ code {
     display: block;
     padding: 10px;
     padding-left: 20px;
-    background-color: #fafafa;
-    border: 1px dotted #920000;
     border-left: 10px double #920000;
-    font-size: 80%;
     line-height: 130%;
-    font-family: Consolas, 'Courier New', monospace;
 }
 input, textarea {
     width: 100%;
@@ -173,6 +181,17 @@ input[type="button"], input[type="submit"], button {
 input[type="button"]:hover, input[type="submit"]:hover, button:hover {
     opacity: 1;
     cursor: pointer;
+}
+
+table {
+    border: 1px dashed #920000;
+    border-spacing: 3px;
+    /*border-collapse: collapse;*/
+}
+td, th {
+  border: 1px solid #afafaf;
+  padding: 3px;
+  text-align: left;
 }
 
 /******************************

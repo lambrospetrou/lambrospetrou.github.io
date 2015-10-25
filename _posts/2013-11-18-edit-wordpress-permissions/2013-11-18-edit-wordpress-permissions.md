@@ -1,6 +1,6 @@
 ---
 title: Wordpress permissions guide
-url: "wordpress-permissions"
+url: wordpress-permissions
 published: true
 ---
 
