@@ -3,9 +3,9 @@ title: Control the fan speed of you Thinkpad T430 running Ubuntu 12.04 LTS
 url: control-thinkpad-t430-fan-ubuntu-12.04
 ---
 
-After researching for a few hours online to find a guide on how to control my Thinkpad's fan speed I realized that the new models have some differences from previous models and the guides available are not complete if not wrong. So, I am making this tutorial for anyone that has a new Thinkpad ( x30/x20 models ) and needs to control his fan in order to keep the noise down and get more battery life.
+After researching for a few hours online to find a guide on how to control my Thinkpad's fan speed I realized that the new models have some differences from previous models and the guides available are not complete if not wrong. So, I am making this tutorial for anyone that has a new Thinkpad (x30/x20 models) and needs to control his fan in order to keep the noise down and get more battery life.
 
-Every step below uses the terminal so open an instance with the combination CRTL + ALT + T
+Every step below uses the terminal so open an instance with the combination ```CRTL + ALT + T```
 
 1. The first thing we will do is to install a program that will provide us information about the sensors of the laptop and their temperatures
 
@@ -61,7 +61,7 @@ Answer **Yes** to every question and the last confirmation for saving the change
     ```
     The above lines are the results from Step 5 prefixed with 'sensor '.
 
-7. Time to set the temperature rules. The format is: (FAN_LEVEL, LOW_TEMP, HIGH_TEMP) meaning that each *FAN_LEVEL* will start when the highest temperature reported by all the sensors meets its *LOW_TEMP* and if it surpasses its *HIGH_TEMP* it will go to the next *FAN_LEVEL* rule. If it goes below the *LOW_TEMP* it will fallback to the previous *FAN_LEVEL* rule.
+7. Time to set the temperature rules. The format is: ```FAN_LEVEL, LOW_TEMP, HIGH_TEMP``` meaning that each *FAN_LEVEL* will start when the highest temperature reported by all the sensors meets its *LOW_TEMP* and if it surpasses its *HIGH_TEMP* it will go to the next *FAN_LEVEL* rule. If it goes below the *LOW_TEMP* it will fallback to the previous *FAN_LEVEL* rule.
 
     **Please take notice** that the *HIGH_TEMP* of a rule must be between the *LOW_TEMP* & *HIGH_TEMP* of the rule that follows.
 

@@ -7,7 +7,7 @@ Many users are dual booting Windows and Ubuntu for numerous reasons today. Well 
 
 Following the guide below you can consolidate them into one and reclaim your wasted space back.
 
-**NOTE::** I am assuming that the Windows partition is mounted at startup when you boot into Ubuntu.
+**NOTE**: I am assuming that the Windows partition is mounted at startup when you boot into Ubuntu.
 
 ## Guidelines
 
@@ -30,8 +30,12 @@ Following the guide below you can consolidate them into one and reclaim your was
     ```bash
     ln -s /media/WindowsOS/User/_username_/Dropbox /home/_username_/Dropbox
     ```
-    **/media/WindowsOS/User/_username_/Dropbox**: the path to the Dropbox folder in your Windows partition mounted in Ubuntu  
-    **/home/_username_/Dropbox**: the default folder for Dropbox to synchronize
+
+    ```/media/WindowsOS/User/_username_/Dropbox``` 
+    the path to the Dropbox folder in your Windows partition mounted in Ubuntu  
+
+    ```/home/_username_/Dropbox```
+    the default folder for Dropbox to synchronize
 
 5. Reboot and you’ re finished. Now you maintain only one copy of your Dropbox folder which needs to be synced only once, no matter which OS is booted at any time.
 

@@ -9,7 +9,7 @@ Anyone that purchased a laptop with nVidia Optimus is facing problems with Linux
 
 The latest update though changed that and now linux fans can have their Optimus configuration without the enormous battery draw. Follow the steps below to install bumblebee but please note that I am assuming you removed any nVidia drivers you may installed on your own.
 
-- We must add the repositories for the bumblebee packages so please type the following in your terminal (CRTL + ALT + T)
+- We must add the repositories for the bumblebee packages so please type the following in your terminal ```CRTL + ALT + T```
 
     ```bash
     sudo add-apt-repository ppa:ubuntu-x-swat/x-updates
@@ -23,7 +23,7 @@ The latest update though changed that and now linux fans can have their Optimus 
     sudo apt-get install bumblebee bumblebee-nvidia
     ```
 
-    **NOTE::** If you do not want the discrete card to be enabled at all please use the following command instead:
+    **NOTE:** If you do not want the discrete card to be enabled at all please use the following command instead:
 
     ```bash
     sudo apt-get install --no-install-recommends bumblebee
