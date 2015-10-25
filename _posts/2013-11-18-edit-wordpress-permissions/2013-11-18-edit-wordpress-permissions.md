@@ -1,7 +1,9 @@
 ---
 title: Wordpress permissions guide
-url: wordpress-permissions
+url: "wordpress-permissions"
+published: true
 ---
+
 
 If you have ever installed wordpress on your own server, at some time you faced permissions problems. Especially when you are migrating a wordpress blog from one host to another and there is file copying involvement through ftp, scp etc.
 
@@ -9,15 +11,17 @@ If not, lucky you! :)
 
 ## Scenario
 
-**username:** lpuser  
-**server(apache2) groupname:** www-data  
-**wordpress dir:** /home/lpuser/wordpress/
+| Description | Value |
+|-------------|------|
+| username | lpuser |
+| apache2 groupname | www-data |
+| wordpress dir | /home/lpuser/wordpress/ |
 
-Let's say you are **lpuser** and your server that runs the wordpress blog belongs to the **www-data** permissions group.
+Let's say you are ```lpuser``` and your server that runs the wordpress blog belongs to the ```www-data``` permissions group.
 
 ## Wordpress Permissions
 
-Everything should have the 0755 permission for the user, apart from the .htaccess files and the wp-admin/index.php file that need to have 0644.
+Everything should have the ```0755``` permission for the user, apart from the *.htaccess* files and the *wp-admin/index.php* file that need to have ```0644```.
 
 Let's do this:
 
@@ -27,17 +31,17 @@ sudo chmod 0644 /home/lpuser/wordpress/.htaccess
 sudo chmod 0644 /home/lpuser/wordpress/wp-admin/index.php
 ```
 
-Now if you execute the following command you should verify that everything has **rwxr-xr-x**, and the two other files **rw-r--r--**.
+Now if you execute the following command you should verify that everything has ```rwxr-xr-x```, and the two other files ```rw-r--r--```.
 
 If you try now to make changes to your theme through the wordpress editor then you won't be able to save since the server does not have write permissions.
-We can find that apache runs under the user **www-data** and the same group, as seen by the following commands:
+We can find that apache runs under the user ```www-data``` and the same group, as seen by the following commands:
 
 ```bash
 ps aux | grep apache
 groups www-data
 ```
 
-So an easy solution to fix the problems is to add ourselves to the group **www-data** and then make the files to be owned by us, and the new group we belong.
+So an easy solution to fix the problems is to add ourselves to the group ```www-data``` and then make the files to be owned by us, and the new group we belong.
 
 This can be achieved with the following commands:
 
