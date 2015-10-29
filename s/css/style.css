@@ -43,6 +43,7 @@ body {
     width: 100%;
 }
 .inner-section {
+    position: relative;
     box-sizing: border-box;
 
     padding: 0.5em;
@@ -192,6 +193,16 @@ td, th {
   border: 1px solid #afafaf;
   padding: 3px;
   text-align: left;
+}
+
+p img {
+    display: block;
+    max-width: 90%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 3px;
+    margin: 0 auto;
+    border: 1px dashed #920000;
 }
 
 /******************************
