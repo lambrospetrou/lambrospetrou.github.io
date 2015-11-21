@@ -185,7 +185,7 @@ The solution to this problem is to add a **policy rule** in our SNS topic to onl
 
     The above configuration adds the **Condition** to the existing rule which is what is restricting access to the **Publish** permissions of the topic only to our domain. Make sure that you use your own **Resource arn url** which can be found in the topics details page and also your own domains.
 
-6. Done. Your website is the only one with rights to publish messages into your SNS topic (except of course yourself through the console).
+6. Done. Your website is the only one with rights to publish messages into your SNS topic (except of course yourself through the console). Please be advised though that it is not difficult for programmers to create TCP packets with the proper headers to fool this policy. At least we make it a bit harder for the usual user :)
 
 
 ### Conclusion
