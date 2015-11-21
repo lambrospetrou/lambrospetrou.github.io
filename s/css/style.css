@@ -21,7 +21,6 @@
     margin: 0;
 }
 body, input {
-    /*font-family: 'lmroman10', Georgia, Times, Times New Roman, Serif;*/
     font-family: "Helvetica Neue", Helvetica, Arial, Sans-Serif;
     font-size: 17px;
     color: #000000;
@@ -46,9 +45,9 @@ body {
     position: relative;
     box-sizing: border-box;
 
-    padding: 0.5em;
+    padding: 0.5em 0;
     margin: 0;
-    width: 90%;
+    width: 95%;
     max-width: 650px;
     margin: 0 auto;
 
@@ -70,10 +69,10 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6, h7 {
-    font-family: 'Droid Serif', 'Times New Roman', 'Georgia', serif;
+    font-family: Roboto, Lato, 'Times New Roman', 'Georgia', serif;
 }
 h1 {
-    font-size: 200%;
+    font-size: 180%;
     line-height: 150%;
     margin-top: 1em;
     margin-bottom: 1em;
@@ -82,7 +81,7 @@ h2 {
     font-size: 170%;
     margin-top: 1em;
     margin-bottom: 1em;
-    line-height: 170%;
+    line-height: 150%;
 }
 h3 {
     font-size: 140%;
@@ -197,7 +196,7 @@ td, th {
 
 p img {
     display: block;
-    max-width: 90%;
+    max-width: 95%;
     height: auto;
     box-sizing: border-box;
     padding: 3px;
@@ -246,7 +245,7 @@ a.text-link-cv:hover {
 #header-quote {
     font-style: italic;
     font-size: 90%;
-    font-family: 'Droid Serif', 'Times New Roman', Serif;
+    font-family: 'Times New Roman', 'Georgia', serif;
     color: #686868;
 }
 #inner-header #nav-buttons {
@@ -299,9 +298,10 @@ a.text-link-cv:hover {
     margin: 0;
     padding: 0;
     font-style: normal;
-    font-family: 'Droid Serif';
+    font-weight: normal;
     opacity: 0.5;
     font-size: 90%;
+    line-height: 100%;
 }
 .post-meta-bottom {
     text-align: right;
