@@ -24,7 +24,7 @@ body, input {
     font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 17px;
     color: #000000;
-    line-height: 150%;
+    line-height: 1.6;
 }
 body {
     padding: 0;
@@ -47,8 +47,8 @@ body {
 
     padding: 0.5em 0;
     margin: 0;
-    width: 95%;
-    max-width: 650px;
+    width: 90%;
+    max-width: 700px;
     margin: 0 auto;
 
     word-wrap: break-word;
@@ -69,7 +69,7 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6, h7 {
-    font-family: 'Roboto Slab', Roboto, Lato, 'Times New Roman', 'Georgia', serif;
+    font-family: 'Roboto Slab', Roboto, 'Times New Roman', 'Georgia', serif;
 }
 h1 {
     font-size: 180%;
