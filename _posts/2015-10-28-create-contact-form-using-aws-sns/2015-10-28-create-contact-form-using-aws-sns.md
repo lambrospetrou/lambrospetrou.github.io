@@ -63,7 +63,7 @@ We use Cognito just for the sake of getting temporary credentials for our websit
     });
     ```
 
-That it's for the Cognito service!
+That's it for the Cognito service!
 
 ### Simple Notification Service (SNS)
 
