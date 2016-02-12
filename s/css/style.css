@@ -185,7 +185,7 @@ input[type="button"]:hover, input[type="submit"]:hover, button:hover {
 }
 
 table {
-    border: 1px dashed #920000;
+    border: 3px solid #f5f5f5;
     border-spacing: 3px;
     /*border-collapse: collapse;*/
 }
@@ -202,8 +202,13 @@ p img {
     box-sizing: border-box;
     padding: 3px;
     margin: 0 auto;
-    border: 1px dashed #920000;
+    border: 3px solid #f5f5f5;
 }
+
+article {
+    margin-bottom: 45px;
+}
+
 
 /******************************
  * HEADER
@@ -250,20 +255,23 @@ a.text-link-cv:hover {
     font-style: italic;
     font-size: 90%;
     font-family: 'Georgia', 'Times New Roman', serif;
-    color: #686868;
+    color: #888;
 }
 #inner-header #nav-buttons {
-    margin-top: 10px;
-    font-size: 80%;
+    margin-top: 0px;
 }
 #inner-header #nav-buttons a {
     margin: 0 15px;
     padding: 2px;
-    border-bottom: 1px dashed;
+    border-bottom: 1px dotted;
+    font-size: 70%;
+    text-transform: uppercase;
+    color: #aaa;
 }
 #inner-header #nav-buttons a:hover,
 #inner-header #nav-buttons a:focus {
-    border-bottom: 1px solid !important;
+    border-bottom: 1px solid;
+    color: #888;
 }
 
 /******************************
@@ -271,22 +279,16 @@ a.text-link-cv:hover {
  */
 
 #footer-wrapper {
-    /*background: url("/static/images/bg_black.jpg") repeat;*/
     min-height: 2em;
     font-size: 80%;
-    color: #686868;
+    color: #888;
+    text-align: center;
 }
 #inner-footer {
     border-top: dashed 1px #bfbfbf;
 }
 #inner-footer p {
     margin-top: 5px;
-}
-#footer-links {
-    float: right;
-}
-#footer-copyright {
-    float: left;
 }
 
 /******************************
@@ -297,21 +299,19 @@ a.text-link-cv:hover {
     margin: 0;
 }
 
+.post-title {
+    color: #920000;
+}
+
 .post-meta-top,
 .index-post-meta {
     margin: 0;
     padding: 0;
     font-style: normal;
     font-weight: normal;
-    opacity: 0.5;
-    font-size: 90%;
+    font-size: 80%;
     line-height: 100%;
-}
-.post-meta-bottom {
-    text-align: right;
-}
-.post-title {
-    color: #920000;
+    color: #888;
 }
 
 /******************************
@@ -322,6 +322,7 @@ a.text-link-cv:hover {
     list-style-type: none;
     margin-left: 0;
 }
+
 .index-posts h2 {
     font-size: 110%;
     border: 0;
@@ -330,7 +331,4 @@ a.text-link-cv:hover {
 .index-post-title {
     color: #920000;
     font-weight: bold;
-    /*font-variant: small-caps;*/
-}
-.index-post-meta {
 }
