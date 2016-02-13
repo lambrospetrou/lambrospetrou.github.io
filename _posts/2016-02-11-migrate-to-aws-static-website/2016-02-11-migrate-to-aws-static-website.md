@@ -8,13 +8,13 @@ A few months ago I started studying most of the Amazon Web Services (AWS) and as
 
 This tutorial is the first part of a series and explains in detail how to setup a static website with unlimited throughput, durability and availability using [Amazon S3](https://aws.amazon.com/s3/). Additionally, we exploit [Amazon Cloudfront](https://aws.amazon.com/cloudfront/) to provide caching and super-fast downloads all over the world and finally, we use [Route 53](https://aws.amazon.com/route53/) to serve the website behind our custom domain name (e.g. lambrospetrou.com).
 
-The reason I decided to write this post is because although the documentation in AWS is very good, the majority of all the articles and threads in several forums are a bit outdated and do not cover the new features of the AWS services we are going to use. For example, Cloudfront's ability to serve GZIPed compressed content and its free HTTPS supprt. The reason is that Amazon releases hundreds of features every year and it is impossible for everyone to catch-up ;) 
+The reason I decided to write this post is because although the documentation in AWS is very good, the majority of all the articles and threads in several forums are a bit outdated and do not cover the new features of the AWS services we are going to use. For example, Cloudfront's ability to serve GZIP-ed compressed content and its free HTTPS supprt. The reason is that Amazon releases hundreds of features every year and it is impossible for everyone to catch-up ;) 
 
 I will try to structure this tutorial in a way that each part is self-contained and builds upon the previous part, in order to allow you to pick-and-choose only the parts that you want for your website.
 
 ## Overview
 
-The most important service when it comes to static content is Amazon S3, which stands for Simple Storage Service. This is one of the **best** web services available as of this moment and not just among Amazon's offerings but other competitors' too. It is a file storage solution that offers super high-availability, extreme durability (eleven nines, 99.999999999%) and it is very cheap. **Using just Amazon S3 you can have a proper static website ready in a few minutes.**
+The most important service when it comes to static content is Amazon S3, which stands for Simple Storage Service. This is one of the **best** web services available as of this moment and not just among Amazon's offerings but other competitors' too. It is a file storage solution that offers super high-availability, extreme durability (eleven nines, 99.999999999%) and it is very cheap. **Amazon S3 alone allows you to have a proper static website ready in a few minutes.**
 
 The other two services, Cloudfront and Route 53 are going to extend our website to provide caching in edge locations all over the world, to allow users to download the files from locations closer to them, and with Route 53 we will allow the usage of custom domains instead of using the default AWS ones (e.g. lambrospetrou.com.s3-website-region.amazonaws.com).
 
@@ -79,7 +79,7 @@ Assume that throughout this tutorial we want to make a website for **lambrospetr
 
 9. Try to open that link using your browser. Of course you will see nothing since you haven't uploaded anything to your bucket yet ;p
 
-### Make the www-subdomain to redirect to our naked APEX domain
+### Make the www-subdomain to redirect to the APEX domain
 
 In this section I will describe how we can make all requests to **wwww.lambrospetrou.com** to be redirected to **lambrospetrou.com**. Again we only need to use Amazon S3 for this part. The idea is very simple. We will create another bucket named **wwww.lambrospetrou.com** but now instead of putting files into this bucket we will specify redirection rules to the bucket we created before.
 
@@ -115,7 +115,7 @@ In this section I will describe how we can make all requests to **wwww.lambrospe
 
 ## Use a custom domain with our website instead of the Amazon S3 endpoints
 
-In this section, I will describe how you can use your domain name (e.g. **lambrospetrou.com**) to point to your website on S3 using **[Route 53](https://aws.amazon.com/route53/)**, which is Amazon's DNS solution offering.
+In this section, I will describe how you can use your domain name (e.g. **lambrospetrou.com**) to point to your website on S3 using [Route 53](https://aws.amazon.com/route53/), which is Amazon's DNS solution offering.
 
 1. Register your domain with any registrar or Route 53 itself if you do not have a domain in hand.
 
@@ -148,7 +148,7 @@ In this section, I will describe how you can use your domain name (e.g. **lambro
 
 ## Use Amazon Cloudfront to provide super-fast latencies all over the world
 
-Again, we will use **[Cloudfront](https://aws.amazon.com/cloudfront/)** to provide a cache layer in front of our website for several reasons. 
+Again, we will use [Cloudfront](https://aws.amazon.com/cloudfront/) to provide a cache layer in front of our website for several reasons. 
 
 First of all, Cloudfront is a CDN (content delivery network) with edge locations scattered around the world which means that our users will always download the files from locations close to them avoiding long routing trips to the other side of the world (the location of your website is the region you specified during the S3 bucket creation). 
 

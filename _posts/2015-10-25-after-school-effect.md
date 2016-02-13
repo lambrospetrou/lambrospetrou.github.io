@@ -4,7 +4,7 @@ description: School is finally history freeing up more time to do exciting and i
 url: after-school-effect
 ---
 
-Time passes and goes at amazing speed. Finally, after twenty-five years, school has reached its end. I still don't know if this is bad or good, since I am now thrown into the wild jungle known as *life*.
+Time passes and goes at amazing speed. Finally, after twenty-five years, school has reached its end. I still don't know if this is bad or good, since I am now thrown into the wild jungle known as life.
 
 Anyway, enough with the philosophical talk. Now that I graduated from university I have some time to revisit some of my old projects and refactor them. As always, when I want to try something new I re-write my website. During last week I completely re-written my website and blog from scratch, ```lambrospetrou.com```.
 
@@ -12,7 +12,7 @@ As I described in my last article, dated in 2014-July-20, I am in love with Go a
 
 Apart from my website and blog, another important project I had in pending state was [Spi.To](http://spi.to), my own custom URL shortener and text share tool. During last year, I was experimenting with Polymer and Paper elements to give it a material design makeover. However, I found it to be pretty unstable (it was still in development stages so it might have fixed its issues with its current stable version) and very heavy for the simple and minimalistic product I wanted. I ported most of the stuff I needed into native [Dart](https://www.dartlang.org/) and now I find it to be much more responsive.
 
-I plan to add more features to *Spi.to* during the coming months and I really want to replace the back-end with a server-less infrastructure at Amazon Web Services (AWS). **AWS** is among my top priorities in the **To-Learn** list for this year and I would love to create more projects utilizing the myriad services available by Amazon, especially the new **API Gateway**, **Lambda functions** and of course the awesome **Simple Storage Service (S3)**.
+I plan to add more features to Spi.to during the coming months and I really want to replace the back-end with a server-less infrastructure at Amazon Web Services (AWS). **AWS** is among my top priorities in the **To-Learn** list for this year and I would love to create more projects utilizing the myriad services available by Amazon, especially the new **API Gateway**, **Lambda functions** and of course the awesome **Simple Storage Service (S3)**.
 
 One thing I wanted to do for a long time was to find a way to edit my CV (resume) easily without booting into Windows just to use Microsoft Word and without searching for a Latex template that would most probably not match the design I wanted. I decided to turn to the easiest platform for customizations and easy updates, the web. I replicated the design of my old CV using only HTML and CSS, leading to a pixel-perfect document which is amazingly easy to update and to customize in-detail. You can find my new CV version at [lambrospetrou.com/cv/](https://lambrospetrou.com/cv/).
 

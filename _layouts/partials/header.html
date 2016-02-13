@@ -2,8 +2,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
+    <!-- Use the Web Font Loader -->
+    <script>
+        var WebFontConfig = {
+            google: {
+                families: [
+                    'Open Sans:300,400,400italic,700,800:greek,latin', 
+                    /*'Source Sans Pro:300,400,400italic,700,900:greek,latin', */
+                    'Source Code Pro:400',
+                ]
+            }
+        };
+        (function() {
+             var wf = document.createElement('script');
+             wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+             '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+             wf.type = 'text/javascript';
+             wf.async = 'true';
+             var s = document.getElementsByTagName('script')[0];
+             s.parentNode.insertBefore(wf, s);
+        })();
+    </script>
+
+
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
 
     <meta name="keywords" content="Lambros,Petrou,LPSofts,portfolio,programming,developer,coder, software engineer, amazon, ucy, oxford" />
     <meta name="author" content="Lambros Petrou" />
@@ -81,7 +105,7 @@
                        id="path606" /></g></svg>
                 </a>
             </div>
-            <h1>Lambros Petrou <a class="text-link-cv" href="//lambrospetrou.com/cv/" target="_blank" title="Lambros Petrou Resume - CV">CV</a></h1>
+            <div id="header-name">Lambros Petrou <a class="text-link-cv" href="//lambrospetrou.com/cv/" target="_blank" title="Lambros Petrou Resume - CV">CV</a></div>
             <div id="header-quote">"We are what we repeatedly do. Excellence then, is not an act, but a habit!"&#x2009;&mdash;&#x2009;Aristotle</div>
             <div id="nav-buttons">
                 <!--<a href="#">About</a>-->

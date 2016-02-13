@@ -26,7 +26,7 @@ In order to implement the contact form we are gong to use two services from AWS.
 
 ## Procedure
 
-The whole procedure is very _simple_. We will create an SNS topic (imagine it as an endpoint) where the website will send the message of the contact form. As soon as SNS receives the message it will automatically send it over to our email, which we will have configured through the AWS console to be a subscriber of that specific topic. Amazon Cognito is used just as a way to get temporary credentials for the website in order to be able to publish the message to the SNS topic.
+The whole procedure is very simple. We will create an SNS topic (imagine it as an endpoint) where the website will send the message of the contact form. As soon as SNS receives the message it will automatically send it over to our email, which we will have configured through the AWS console to be a subscriber of that specific topic. Amazon Cognito is used just as a way to get temporary credentials for the website in order to be able to publish the message to the SNS topic.
 
 I will explain the implementation in three steps, **a)** Amazon Cognito, **b)** SNS and **c)** Securing our SNS topic to allow only publishings from our website domain.
 
@@ -41,15 +41,15 @@ We use Cognito just for the sake of getting temporary credentials for our websit
 
     ![Amazon Cognito - Create new identity pool](/articles/create-contact-form-using-aws-sns/data/cognito-create-pool.png "Amazon Cognito - Create new identity pool")
 
-3. Type in a name for your pool (i.e. Website_Contact_Form) and enable *Unauthenticated identities*.
+3. Type in a name for your pool (i.e. Website_Contact_Form) and enable **Unauthenticated identities**.
 
 4. You should have something along the lines of the following picture.
 
     ![Amazon Cognito - Identity pool information](/articles/create-contact-form-using-aws-sns/data/cognito-info-pool.png "Amazon Cognito - Identity pool information")
 
-5. Click **Create Pool** and then on the next page you get the message "*Your Cognito identities require access to your resources*". Just click **Allow** (bottom right) to proceed.
+5. Click **Create Pool** and then on the next page you get the message "Your Cognito identities require access to your resources". Just click **Allow** (bottom right) to proceed.
 
-6. You should be in the *Edit identity pool* page now where you see the information you provided above. From the left side menu choose **Sample code** and in the **Platform** dropdown select *Javascript*.
+6. You should be in the **Edit identity pool** page now where you see the information you provided above. From the left side menu choose **Sample code** and in the **Platform** dropdown select Javascript.
 
 7. Download the AWS SDK since you will use it on your website later.
 
@@ -75,19 +75,19 @@ Let's dive in!
 
     ![SNS - Create Topic](/articles/create-contact-form-using-aws-sns/data/sns-create-topic.png "SNS - Create Topic")
 
-2. Select **Create Topic** and then just fill out the *Topic name* with whatever you want (i.e. com-website-contact-form). You should now see the *Topic Details* page for your new topic (similar to the picture below).
+2. Select **Create Topic** and then just fill out the **Topic name** with whatever you want (i.e. com-website-contact-form). You should now see the **Topic Details** page for your new topic (similar to the picture below).
 
     ![SNS - Topic details](/articles/create-contact-form-using-aws-sns/data/sns-topic-details.png "SNS - Topic details")
 
 3. Click on the dropdown **Other topic actions** and select **Edit topic policy**.
 
-4. From the *Edit topic policy* screen make sure you are in the **Basic View** and modify the options as per the picture below and click **Update**. Basically we allow everyone to become publisher of the topic but only we (the owner) can subscribe to it.
+4. From the **Edit topic policy** screen make sure you are in the **Basic View** and modify the options as per the picture below and click **Update**. Basically we allow everyone to become publisher of the topic but only we (the owner) can subscribe to it.
 
     ![SNS - Edit topic policy](/articles/create-contact-form-using-aws-sns/data/sns-topic-policy-everyone.png "SNS - Edit topic policy")
 
 5. Now you successfully have a topic that anyone can publish messages to.
 
-6. Time to add our email as a subscriber to the topic. From the *Topic Details* page, click on the **Create Subscription** button.
+6. Time to add our email as a subscriber to the topic. From the **Topic Details** page, click on the **Create Subscription** button.
 
 7. Make sure to change the **Protocol** to **Email** and fill out your email on the corresponding box and click **Create Subscription**. An email will be sent to your email in order for you to confirm that you would like to subscribe to this topic.
 
@@ -159,9 +159,9 @@ The solution to this problem is to add a **policy rule** in our SNS topic to onl
 
     ![SNS - Secure policy](/articles/create-contact-form-using-aws-sns/data/sns-secure-edit-policy.png "SNS - Secure policy")
 
-4. Now instead of the *Basic View* you should go to the **Advanced View**
+4. Now instead of the Basic View you should go to the **Advanced View**
 
-5. In *Advanced View* you can directly edit the topic policy rules in detail. We want to restrict access for publishing only to our domain. Make sure that the *second* statement of the rules is as the following excerpt.
+5. In **Advanced View** you can directly edit the topic policy rules in detail. We want to restrict access for publishing only to our domain. Make sure that the **second** statement of the rules is as the following excerpt.
 
     ```JSON
     {
@@ -196,6 +196,6 @@ There are many features built into SNS that you can use in order to make your me
 
 If you spot any errors in the tutorial or your experience is different from what is described here please don't hesitate to contact me.
 
-_Disclaimer_
+**Disclaimer**
 
 The details used above for the SNS topic and Cognito identity pool were deleted after completing this tutorial.

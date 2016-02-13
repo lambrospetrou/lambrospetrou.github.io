@@ -21,7 +21,7 @@
     margin: 0;
 }
 body, input {
-    font-family: 'Open Sans', 'Ubuntu', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Source Sans Pro', 'Open Sans', 'Ubuntu', "Segoe UI", Roboto, "Droid Sans", "Helvetica Neue", Arial, sans-serif;
     font-size: 19px;
     color: #333;
     line-height: 1.6;
@@ -29,7 +29,6 @@ body, input {
 body {
     padding: 0;
     margin: 0;
-    /*background-color: #ebebeb;*/
 }
 
 #outer-wrapper {
@@ -56,23 +55,22 @@ body {
     overflow-wrap: break-word;
 
     background-color: #ffffff;
+    outline: none;
 }
-a, a:link, a:active {
+a, a:link {
+    outline: none;
     text-decoration: none;
     color: #920000;
-    opacity: 1;
     border: 0;
+    border-bottom: 1px dotted #888;
 }
-a:hover {
+a:hover, a:active {
     border-bottom: 1px solid #920000;
-    opacity: 1;
-}
-p a {
-    border-bottom: 1px dashed #920000;
 }
 
 h1, h2, h3, h4, h5, h6, h7 {
-    font-family: 'Roboto Slab', 'Georgia', 'Times New Roman', serif;
+    /*font-family: 'Source Sans Pro', 'Open Sans', 'Roboto', 'Georgia', 'Times New Roman', serif;*/
+    font-weight: 900;
 }
 h1 {
     font-size: 180%;
@@ -218,13 +216,7 @@ article {
     min-height: 60px;
 }
 #inner-header {
-    /*border-bottom: dotted 1px #bfbfbf;*/
     text-align: center;
-}
-#inner-header h1 {
-    font-variant: small-caps;
-    font-weight: bold;
-    margin: 0;
 }
 a.text-link-cv {
     padding: 3px;
@@ -251,6 +243,12 @@ a.text-link-cv:hover {
     width: 60px;
     height: auto;
 }
+
+#header-name {
+    font-size: 180%;
+    font-weight: 700;
+}
+
 #header-quote {
     font-style: italic;
     font-size: 90%;
@@ -275,60 +273,35 @@ a.text-link-cv:hover {
 }
 
 /******************************
- * FOOTER
- */
-
-#footer-wrapper {
-    min-height: 2em;
-    font-size: 80%;
-    color: #888;
-    text-align: center;
-}
-#inner-footer {
-    border-top: dashed 1px #bfbfbf;
-}
-#inner-footer p {
-    margin-top: 5px;
-}
-
-/******************************
  * MAIN CONTENT - SINGLE POST VIEW
  */
 
-#inner-content h1 {
-    margin: 0;
-}
-
 .post-title {
+    margin-bottom: 5px;
     color: #920000;
+    font-weight: 300;
 }
 
-.post-meta-top,
-.index-post-meta {
+.post-meta {
     margin: 0;
     padding: 0;
     font-style: normal;
     font-weight: normal;
-    font-size: 80%;
+    font-size: 75%;
     line-height: 100%;
     color: #888;
+    text-transform: uppercase;
 }
-
-/******************************
- * MAIN CONTENT - INDEX PAGE
- */
 
 .index-posts {
     list-style-type: none;
     margin-left: 0;
 }
 
-.index-posts h2 {
-    font-size: 110%;
+.index-posts a, .index-posts a:link, .index-posts a:visited {
     border: 0;
-    margin-bottom: 5px;
 }
-.index-post-title {
-    color: #920000;
-    font-weight: bold;
+.index-posts a:active, .index-posts a:hover {
+    border-bottom: 1px solid #920000;
 }
+

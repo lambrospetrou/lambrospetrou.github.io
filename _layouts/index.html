@@ -5,11 +5,9 @@
     <li>
         <article>
             <header>
-                <h2 class="index-post-title"><a href="/articles/{{$element.UrlPermalink}}/" title="view post">{{ $element.Title }}</a></h2>
-                <h3 class="index-post-meta">{{ $element.FormattedCreatedTime }}</h3>
+                <h2 class="post-title"><a href="/articles/{{$element.UrlPermalink}}/" title="view post">{{ $element.Title }}</a></h2>
+                <div class="post-meta">{{ $element.FormattedCreatedTime }}</div>
             </header>
-            <section class="index-post-meta-bottom">
-            </section>
         </article>
     {{ end }}
     </li>
