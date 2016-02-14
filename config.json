@@ -1,6 +1,6 @@
 {
 	"static_paths": [
-		"s", "about.html"
+		"s"
 	],
 	"templates": [
 		"partials/header.html",

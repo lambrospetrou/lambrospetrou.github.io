@@ -8,7 +8,7 @@ A few months ago I started studying most of the Amazon Web Services (AWS) and as
 
 This tutorial is the first part of a series and explains in detail how to setup a static website with unlimited throughput, durability and availability using [Amazon S3](https://aws.amazon.com/s3/). Additionally, we exploit [Amazon Cloudfront](https://aws.amazon.com/cloudfront/) to provide caching and super-fast downloads all over the world and finally, we use [Route 53](https://aws.amazon.com/route53/) to serve the website behind our custom domain name (e.g. lambrospetrou.com).
 
-The reason I decided to write this post is because although the documentation in AWS is very good, the majority of all the articles and threads in several forums are a bit outdated and do not cover the new features of the AWS services we are going to use. For example, Cloudfront's ability to serve GZIP-ed compressed content and its free HTTPS supprt. The reason is that Amazon releases hundreds of features every year and it is impossible for everyone to catch-up ;) 
+The reason I decided to write this post is because although the documentation in AWS is very good, the majority of all the articles and threads in several forums are a bit outdated and do not cover the new features of the AWS services we are going to use. For example, Cloudfront's ability to serve GZIP-ed compressed content and its free HTTPS support. The reason is that Amazon releases hundreds of features every year and it is impossible for everyone to catch-up ;) 
 
 I will try to structure this tutorial in a way that each part is self-contained and builds upon the previous part, in order to allow you to pick-and-choose only the parts that you want for your website.
 
