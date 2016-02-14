@@ -47,21 +47,21 @@ The following instructions are valid and work with the Google Keep website as of
 
 11. You have successfully imported your Gmail messages into Google Keep :) 
 
-If you encountered any problems or your experience was different from what I described please contact me in order to fix the issue. As you will read later, the extension is highly experimental and it might not be working as expected in all the operating systems (I had some issues with Mac OSX but I tried to resolve them).
+If you encountered any problems or your experience was different from what I described please contact me in order to fix the issue. As you will read later, the extension is highly experimental and it might not be working as expected in all operating systems (I had some issues with Mac OSX but I tried to resolve them).
 
-In addition, it goes without saying that the importer works for plain emails. If you try to import emails that have attachments or fancy HTML websites embedded only the visible text of the message will be imported.
+In addition, it goes without saying that the importer works for plain emails. If you try to import emails that have attachments or fancy HTML websites embedded only the visible text of the message will be imported. As of version v0.13 the first line of the email becomes the title of the note in Keep.
 
-## Dive deep into the juicy details
+## Deep dive into the juicy details
 
-This sections contains more details about the problem itself, its issues, and the approach that I used to solve it. If you discovered a better solution contact me or even better do a pull-request at Github with your solution and I will adjust it accordingly.
+This section contains more details about the problem itself, its issues, and the approach that I used to solve it. If you discovered a better solution contact me or even better do a pull-request at Github with your solution and I will adjust it accordingly.
 
 ### Problem overview
 
-Initially the problem at hand was to import Apple Notes into Google Keep. Apple Notes stores your notes as messages at Gmail (assuming you use a Google account of course) under the label **Notes** (yes, very innovative name by Apple that will not conflict with anything :D ). This makes it easier for us since the problem now can be reduced to importing from Gmail to Google Keep, which seemed trivial at first glance. Therefore, our problem now is two-fold, **a)** Fetch messages from Gmail and **b)** Create a note in Google Keep with code programmatically. 
+Initially the problem at hand was to import Apple Notes into Google Keep. Apple Notes stores your notes as messages at Gmail (assuming you use a Google account of course) under the label **Notes** (yes, very innovative name by Apple that will not conflict with anything :D ). This makes it easier for us since the problem now can be reduced to importing from Gmail to Google Keep, which seemed trivial at first glance. Therefore, our problem now is two-fold: **a)** Fetch messages from Gmail and **b)** Create a note in Google Keep with code programmatically. 
 
 Gmail has a very nicely explained and easy to use [Javascript API](https://developers.google.com/gmail/api/quickstart/js) so the first task of fetching the emails under a label name is trivial and I will not go into more details since there are hundreds of articles explaining how to do this. Personally, I find Google's documentation to be superb.
 
-The problem is with the second part, creating notes into Google Keep. Google does **not** provide an open API for Keep as it does with Gmail so far, maybe because it is a new (couple of years) service or just because they don't want developers yet to create apps around it. As a web developer myself I instantly had an idea to overcome this problem. Let's use the Keep website and use the existing form programmatically, thus typing the note, the title and clicking the Done button, all done with code. **Nifty idea right? :)**
+The problem is with the second part, creating notes into Google Keep. Google does **not** provide an open API for Keep as it does with Gmail so far, maybe because it is a new (couple of years) service or just because they don't want developers yet to create apps around it. As a web developer myself I instantly had an idea to overcome this problem. Let's use the Keep website and use the existing form programmatically, thus typing the note, the title and clicking the Done button, all with code. **Nifty idea right? :)**
 
 ### The journey inside Google Keep website
 
@@ -79,15 +79,15 @@ I dived into the HTML source code of the website, always using the awesome Chrom
 
 So far so good, we have a way to reference each HTML element on the website. Let's try to add some dummy content into the text boxes and simulate the click on the submit button to see what happens. 
 
-    1. Adding text programmatically: **Works**
-    2. Clicking submit/done: **Does not work!**
+    1. Adding text programmatically: Works
+    2. Clicking Done: Does not work!
 
 Hmmm, this was not expected at first because the button **was** clicked, but nothing happened and the note disappeared instead of being added. After diving deeper into the code I was examing the HTML dom of the elements in question throughout a proper manual note creation and saw what changed, where the content was added in reality, and what was the button's behavior. I discovered that Google uses two elements per input field instead of one in order to allow expandable text areas. Interesting I thought, so I did a little research and found [this great article by A List Apart](http://alistapart.com/article/expanding-text-areas-made-elegant) which explains in more details how this is done.
 
 **Attempt number two**. Having seen the issue I know referenced the proper element for the input boxes when adding the text, the ones which are really used during the submission of the note. Let's try again.
 
-    1. Adding text programmatically: **Works**
-    2. Clicking submit/done: **Does not work!**
+    1. Adding text programmatically: Works
+    2. Clicking Done: Does NOT work!
 
 OK! Google Keep vs Lambros, 2 - 0.
 
@@ -113,12 +113,14 @@ The implementation source code of this logic and the whole note creation is in t
 
 **Attempt number three**. 
 
-    1. Adding text programmatically: **Works**
-    2. Clicking submit/done: **Works**
+    1. Adding text programmatically: Works
+    2. Clicking Done: Works
 
 And voila! We can now add notes into Keep programmatically.
 
 After this, I spent several hours figuring out how Chrome extensions work and went ahead and created my first extension. If you encounter any errors, please contact me or contribute to the project on Github. I have already said that it is a **highly experimental** project and it might break at any time if even the smallest detail changes on Google Keep's website.
+
+Google Keep vs Lambros, win for Lambros with KO!
 
 ### As Jeff Bezos says, "It's Still Day-One"
 
