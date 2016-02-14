@@ -102,7 +102,7 @@ In this section I will describe how we can make all requests to **wwww.lambrospe
 
     ```Html
     <html>
-        <header><title>Awesome website on AWS S3</title></header>
+        <head><title>Awesome website on AWS S3</title></head>
         <body>
             <h1>Hello world!</h1>
         </body>
@@ -239,6 +239,6 @@ Yes, my website at the moment (as of the time of this article) is hosted on S3, 
 
 ## References
 
-* [AWS Documentation - Working with Web Distributions](http://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/distribution-web-values-specify.html#DownloadDistValuesMinTTL)
+* [AWS Cloudfront Documentation - Working with Web Distributions](http://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/distribution-web-values-specify.html#DownloadDistValuesMinTTL)
 * [AWS S3 Documentation - Setting Up a Static Website](http://docs.aws.amazon.com/AmazonS3/latest/dev/HostingWebsiteOnS3Setup.html)
 * [Static website on S3, Cloudfront and Route 53, the right way!](http://www.michaelgallego.fr/blog/2013/08/27/static-website-on-s3-cloudfront-and-route-53-the-right-way/)
