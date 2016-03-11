@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
+    
+    <meta http-equiv="refresh" content="10;URL=https://lambrospetrou.com" />
+    
+    <meta name="keywords" content="Lambros,Petrou" />
+    <meta name="author" content="Lambros Petrou" />
+    <meta name="owner" content="Lambros Petrou" />
+    <meta name="copyright" content="2016 Lambros Petrou" />
+    <meta name="robots" content="all" />
+
+    <link rel="canonical" href="https://lambrospetrou.com/404.html" />
+
+    <title>Sorry! | Lambros Petrou</title>
+    <meta property="og:title" content="Sorry! | Lambros Petrou" />
+    <meta name="description" content="The resource you requested does not exist. Make sure your destination exists."/>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+        }    
+
+        html, body {
+            height: 100%;
+            width: 100%;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            color: #afafaf;
+            text-align: center;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        h1 {
+            font-size: 18em;
+            line-height: 100%;
+        }
+
+        p {
+            font-size: 1em;
+        }
+
+        .timer {
+            font-weight: bold;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="content">
+        <h1 class="error-code">404</h1>
+        <p>Redirecting to <strong>lambrospetrou.com</strong> in <span class="timer">10</span> seconds</p>
+    </div>
+
+    <script>
+        var timer = document.querySelector('.timer');
+        function counterDecrease() {
+            var value = parseInt(timer.innerHTML);
+            timer.innerHTML = '' + (value-1);
+        }
+
+        setInterval(counterDecrease, 1000);
+    </script>
+
+</body>
+</html>
