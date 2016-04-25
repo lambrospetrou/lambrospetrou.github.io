@@ -2,18 +2,17 @@
 title: Yet another Spito re-write, on the Cloud (AWS)
 description: This is an update explaining how I re-wrote Spito to be fully cloud based using AWS. Technologies used include Elastic Beanstalk, Route 53, Cloudfront, S3, and DynamoDB.
 url: yet-another-spito-rewrite-aws
-state: draft
 ---
 
 Finally, I found some time to re-write my URL shortener, pastebin-like service, yet once again :)
 
-As part of my preparation for the [AWS Certifications](https://aws.amazon.com/certification/) I plan on taking, I wanted to make an architectural re-design of **Spi.to** completely cloud-based on AWS. Last weekend, I finally convinced myself to stop watching shows on [Amazon Video](www.amazon.co.uk/av) and did it.
+As part of my preparation for the [AWS Certifications](https://aws.amazon.com/certification/) I plan on taking, I wanted to make an architectural re-design of **Spi.to** completely cloud-based on AWS. Last weekend, I finally convinced myself to stop watching shows on [Amazon Video](https://www.amazon.co.uk/av) and did it.
 
 ## Architecture overview
 
 In the following diagram we can see an overview of the application's architecture. It is is one of the simplest applications you can make in a weekend but at the same time it allows you to use many cloud services following best-practices in order to achieve fault-tolerance, high availability and durability, which is similar to what you would do in a real super-scalable service.
 
-    ![Spito Architecture Overview on AWS](/articles/yet-another-spito-rewrite-aws/spito-architecture.png "Spito Architecture Overview on AWS")
+![Spito Architecture Overview on AWS](/articles/yet-another-spito-rewrite-aws/spito-architecture.png "Spito Architecture Overview on AWS")
 
 You can see that it is a pretty basic setup but without sacrificing performance, availability or durability!
 
@@ -21,7 +20,7 @@ You can see that it is a pretty basic setup but without sacrificing performance,
 
 The services I use in this application can be identified from the diagram above but read below for a small description as to the **why** use each service.
 
-For more information about **Route 53**, **Cloudfront**, and **S3** regarding hosting a static website on AWS you can [read my previous article](https://lambrospetrou.com/articles/migrate-to-aws-static-website/).
+For more information about **Route 53**, **Cloudfront**, and **S3** regarding hosting a static website on AWS you can [read my previous article](/articles/migrate-to-aws-static-website/).
 
 ### Amazon Route 53
 
@@ -35,13 +34,15 @@ I use it in front of my static website server (explained in S3 section) and my R
 
 In cloudfront I specify certain behaviors for caching depending on the files but I also include some path patterns to direct each request to the appropriate backend (S3 or API). You can see below a snapshot of the rules I have at the moment.
 
-    ![Cloudfront behavior rules](/articles/yet-another-spito-rewrite-aws/cloudfront-behavior-rules.png "Cloudfront behavior rules")
+![Cloudfront behavior rules](/articles/yet-another-spito-rewrite-aws/cloudfront-behavior-rules.png "Cloudfront behavior rules")
 
-You can observe that the first rule ensures that all ```/api/``` calls are going to our **API backend** whilst whatever request comes with ```.``` (dots) or ```/``` (slashes) will go to the **website - App** backend. The fourth rule ensures that whatever request comes that only has our **hash ids** will go to the API backend. The last rule should not be used actually but I left it anyway.
+The above rules are evaluated top-down until the path matches one rule and that rule is applied without going further down the rule-chain.
 
-_Note_ that there might be a simpler solution, but this works for the purpose of learning, so I just wanted to play with the service :)
+You can observe that the first rule ensures that all ```/api/``` calls are going to our **API backend** whilst whatever request comes with ```.``` (dots) or ```/``` (slashes) will go to the **website client** backend. The fourth rule ensures that whatever request comes with **at least** one character, I want to match the **hash ids** now, will go to the API backend. The last rule ensures that the root path ```spi.to/``` without any path (since we covered all other cases) will go to the **website client**, which the homepage.
 
-Also, another important thing with Cloudfront that a lot of people ignore is that you **CAN** use it with dynamic services, like in this case our API is strictly dynamic since the spits have expiration dates so they cannot be just cached. You can specify that a path will have no caching, which means that you will just use Cloudfront as a proxy to your service, and as I said before it might be beneficial to your users because the communication to your servers will be done inside the AWS network which has all sorts of optimizations.
+There might be a simpler solution, but I could not find a way to use classes of characters in path patterns. If you find one or I missed something in the documentation please contact me :)
+
+Also, another important thing with Cloudfront that a **lot** of people ignore is that you **CAN** use it with dynamic services. In my case the API is strictly dynamic since the spits have expiration dates and they cannot be just cached. You can specify that a path will have no caching, which means that you will just use Cloudfront as a proxy to your service, and as I said before it might be beneficial to your users because the communication to your servers will be done inside the AWS network which has all sorts of optimizations.
 
 ### Amazon S3 - Simple Storage Service
 
@@ -51,37 +52,38 @@ Amazon S3 as discussed in my previous article, [Hosting a static website at AWS]
 
 ### Amazon DynamoDB
 
-[Amazon DynamoDB](https://aws.amazon.com/dynamodb/) is used to store the text or the URL that you upload to the service. I was considering to use S3 again for that but I will update the API and use S3 only for large sized text (now the service only allows you to post text up to 128KB).
+[Amazon DynamoDB](https://aws.amazon.com/dynamodb/) is used to store the text or the URL that you upload to the service. I was considering to use S3 again for that but Dynamo is much faster for small texts. I will update the API in the future and use S3 for large-sized text (now the service only allows you to post text up to 128KB).
 
-Dynamo allows the service to provide super-fast latencies for fetching the so-called **Spits** (my naming for text you upload to the service) and also provides durability and high-availability of the data.
+DynamoDB has very low latency and allows the service to provide super-fast retrieval of the so-called **Spits** (my naming for the uploaded text) and also provides durability and high-availability of the data.
 
 ### AWS Elastic Beanstalk
 
 [Elastic Beanstalk](https://aws.amazon.com/elasticbeanstalk/) is a tool that I just learnt recently, and I loved it instantly. Super-easy to use and you get all the benefits of autoscaling and custom bootstrapping out-of-the-box. You, as a user, just need to upload your source code or binary of the application.
 
-Beanstalk handles the **Spito API** servers inside a managed auto-scaling group and that behind an elastic load balancer, all handled by beanstalk itself.
+Beanstalk handles the **Spito API** servers inside a managed auto-scaling group which by its turn is behind a managed elastic load balancer, all handled by beanstalk itself.
 
-**T2.nano** instances are used to keep the costs low :)
+For this service I use **T2.nano** instances in order to keep the costs at a minimal, in case you were interested :)
 
 The Spito API is written in [#Go](https://golang.org/) (source code found in _Conclusion_ section).
 
 ### AWS CloudFormation
 
-[AWS Cloud Formation](https://aws.amazon.com/cloudformation/) is a **future** feature I will add in the project in order to automate the infrastructure creation. As developers we love code, so everything needs to be in code :)
+[AWS Cloud Formation](https://aws.amazon.com/cloudformation/) is a **future** feature I will add to the project in order to automate the infrastructure creation. As developers we love code, so everything needs to be in code :)
 
 _Coming soon_
 
 ## Conclusion
 
-Through this project I learnt a ton about **Elastic Beanstalk** and how to use **Cloud Formation** even for dynamic requests, and re-used the knowledge and tricks from my last project (the aforementioned article about static websites).
+Through this project I learnt a ton about **Elastic Beanstalk** and how to use **Cloudfront** even for dynamic requests, and also re-used the knowledge and tricks from my last project (the aforementioned article about static websites).
 
 I open-sourced the application, both the website and the REST API, but keep in mind that this is **only** the application. I still haven't added the CloudFormation template which creates and bootstraps the required AWS services in an automated way.
 
 Source code
+
 * [Spitoweb client](https://github.com/lambrospetrou/spitoweb)
 * [Spito API](https://github.com/lambrospetrou/spito)
 
-_Note: The client has been written a long time ago so it clearly does not follow Dart best-practices but it could be useful to read if you are into Dart too :)_
+_**Warning**: The client (spitoweb) has been written a long time ago so it clearly does not follow Dart best-practices, however it could be useful to read if you are into Dart too :)_
 
 **Ah,** and before I forget, you can find **Spito** at [http://spi.to](http://spi.to).
 
