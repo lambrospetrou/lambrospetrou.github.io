@@ -4,7 +4,7 @@ description: This is an update explaining how I re-wrote Spito to be fully cloud
 url: yet-another-spito-rewrite-aws
 ---
 
-Finally, I found some time to re-write my URL shortener, pastebin-like service, yet once again :)
+Finally, I found some time to re-write my super-duper URL shortener yet once again :)
 
 As part of my preparation for the [AWS Certifications](https://aws.amazon.com/certification/) I plan on taking, I wanted to make an architectural re-design of **Spi.to** completely cloud-based on AWS. Last weekend, I finally convinced myself to stop watching shows on [Amazon Video](https://www.amazon.co.uk/av) and did it.
 
