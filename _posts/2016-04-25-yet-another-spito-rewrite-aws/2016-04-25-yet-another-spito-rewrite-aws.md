@@ -2,6 +2,7 @@
 title: Yet another Spito re-write, on the Cloud (AWS)
 description: This is an update explaining how I re-wrote Spito to be fully cloud based using AWS. Technologies used include Elastic Beanstalk, Route 53, Cloudfront, S3, and DynamoDB.
 url: yet-another-spito-rewrite-aws
+state: draft
 ---
 
 Finally, I found some time to re-write my URL shortener, pastebin-like service, yet once again :)
@@ -55,6 +56,8 @@ Dynamo allows the service to provide super-fast latencies for fetching the so-ca
 [Elastic Beanstalk](https://aws.amazon.com/elasticbeanstalk/) is a tool that I just learnt recently, and I loved it instantly. Super-easy to use and you get all the benefits of autoscaling and custom bootstrapping out-of-the-box. You, as a user, just need to upload your source code or binary of the application.
 
 Beanstalk handles the **Spito API** servers inside a managed auto-scaling group and that behind an elastic load balancer, all handled by beanstalk itself.
+
+**T2.nano** instances are used to keep the costs low :)
 
 The Spito API is written in [#Go](https://golang.org/) (source code found in _Conclusion_ section).
 
