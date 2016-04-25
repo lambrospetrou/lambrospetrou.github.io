@@ -7,17 +7,19 @@ state: draft
 
 Finally, I found some time to re-write my URL shortener, pastebin-like service, yet once again :)
 
-As part of my preparation for the [AWS Certifications](https://aws.amazon.com/certification/) I plan on taking, I wanted to make an architectural re-design of **Spi.to** completely cloud-based on AWS. Last weekend, I finally convinced myself to stop watching shows on [Amazon Video](www.amazon.co.uk/av) and I did it.
+As part of my preparation for the [AWS Certifications](https://aws.amazon.com/certification/) I plan on taking, I wanted to make an architectural re-design of **Spi.to** completely cloud-based on AWS. Last weekend, I finally convinced myself to stop watching shows on [Amazon Video](www.amazon.co.uk/av) and did it.
 
 ## Architecture overview
 
-In the following diagram we can see an overview of the application's architecture. It is is one of the simplest applications you can make in a weekend but at the same time it allows you to put in-use many cloud services following best-practices in order to achieve fault-tolerance, high availability and durability, which is what you would similarly do in a real super-scalable service.
+In the following diagram we can see an overview of the application's architecture. It is is one of the simplest applications you can make in a weekend but at the same time it allows you to use many cloud services following best-practices in order to achieve fault-tolerance, high availability and durability, which is similar to what you would do in a real super-scalable service.
 
-**TODO** _Image missing here_
+    ![Spito Architecture Overview on AWS](/articles/yet-another-spito-rewrite-aws/spito-architecture.png "Spito Architecture Overview on AWS")
+
+You can see that it is a pretty basic setup but without sacrificing performance, availability or durability!
 
 ## Services
 
-The services I use in this service can be seen from the diagram but read below for a small description as to the **why** use each service.
+The services I use in this application can be identified from the diagram above but read below for a small description as to the **why** use each service.
 
 For more information about **Route 53**, **Cloudfront**, and **S3** regarding hosting a static website on AWS you can [read my previous article](https://lambrospetrou.com/articles/migrate-to-aws-static-website/).
 
@@ -31,19 +33,17 @@ For more information about **Route 53**, **Cloudfront**, and **S3** regarding ho
 
 I use it in front of my static website server (explained in S3 section) and my REST API service (explained in Elastic Beanstalk section) which are the two origins servicing my application. 
 
-In cloudfront I specify certain behaviors for caching depending on the files but I also include some path patterns to direct each request to the appropriate backend (S3 or API). You can see below a snapshot of the rules I have at the moment (there might be a simpler solution but this works for the purposes I wanted, which was to play with the services :)).
+In cloudfront I specify certain behaviors for caching depending on the files but I also include some path patterns to direct each request to the appropriate backend (S3 or API). You can see below a snapshot of the rules I have at the moment. _Note_ that there might be a simpler solution, but this works for the purpose of learning, which was to play with the services :)
 
-**TODO** _Image missing here_
+    ![Cloudfront behavior rules](/articles/yet-another-spito-rewrite-aws/cloudfront-behavior-rules.png "Cloudfront behavior rules")
+
+You can observe that the first rule ensures that all ```/api/``` calls are going to our **API backend** whilst whatever request comes with ```.``` (dots) or ```/``` (slashes) will go to the **website - App** backend. The fourth rule ensures that whatever request comes that only has our **hash ids** will go to the API backend. The last rule should not be used actually but I left it anyway.
 
 ### Amazon S3 - Simple Storage Service
 
 I use [Amazon S3](https://aws.amazon.com/s3/) in order to serve the web client (website) which you can access by visiting [http://Spi.to](http://spi.to). The client is a static web application written in Dart which consumes the **Spito API** (REST API explained below).
 
-Amazon S3 as discussed in my previous article about [Hosting a static website at AWS](https://lambrospetrou.com/articles/migrate-to-aws-static-website/) is just amazing for static content (especially when combined with Amazon Cloudfront).
-
-The source code of the website can be found at my Github account: [Spitoweb repository](https://github.com/lambrospetrou/spitoweb)
-
-_Note: The client has been written a long time ago so it clearly does not follow Dart best-practices but it could be useful to read :)_
+Amazon S3 as discussed in my previous article, [Hosting a static website at AWS](https://lambrospetrou.com/articles/migrate-to-aws-static-website/), is just amazing for static content (especially when combined with Amazon Cloudfront).
 
 ### Amazon DynamoDB
 
@@ -51,7 +51,7 @@ _Note: The client has been written a long time ago so it clearly does not follow
 
 Dynamo allows the service to provide super-fast latencies for fetching the so-called **Spits** (my naming for text you upload to the service) and also provides durability and high-availability of the data.
 
-### Amazon Elastic Beanstalk
+### AWS Elastic Beanstalk
 
 [Elastic Beanstalk](https://aws.amazon.com/elasticbeanstalk/) is a tool that I just learnt recently, and I loved it instantly. Super-easy to use and you get all the benefits of autoscaling and custom bootstrapping out-of-the-box. You, as a user, just need to upload your source code or binary of the application.
 
@@ -77,6 +77,8 @@ Source code
 * [Spitoweb client](https://github.com/lambrospetrou/spitoweb)
 * [Spito API](https://github.com/lambrospetrou/spito)
 
+_Note: The client has been written a long time ago so it clearly does not follow Dart best-practices but it could be useful to read if you are into Dart too :)_
+
 **Ah,** and before I forget, you can find **Spito** at [http://spi.to](http://spi.to).
 
 Any comment or feedback is appreciated. 
@@ -88,11 +90,3 @@ Any comment or feedback is appreciated.
 * [Configure the EB CLI](http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb-cli3-configuration.html)
 * [Whitepaper - Hosting Static Websites on AWS](https://d0.awsstatic.com/whitepapers/Building%20Static%20Websites%20on%20AWS.pdf)
 * [Whitepaper - Overview of Deployment Options on AWS](https://d0.awsstatic.com/whitepapers/overview-of-deployment-options-on-aws.pdf)
-
-
-
-
-
-
-
-
