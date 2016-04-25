@@ -74,7 +74,7 @@ Source code
 * [Spitoweb client](https://github.com/lambrospetrou/spitoweb)
 * [Spito API](https://github.com/lambrospetrou/spito)
 
-*Ah, and before I forget, you can find **Spito** at [http://spi.to](http://spi.to).
+**Ah,** and before I forget, you can find **Spito** at [http://spi.to](http://spi.to).
 
 Any comment or feedback is appreciated. 
 
