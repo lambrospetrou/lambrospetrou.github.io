@@ -33,11 +33,15 @@ For more information about **Route 53**, **Cloudfront**, and **S3** regarding ho
 
 I use it in front of my static website server (explained in S3 section) and my REST API service (explained in Elastic Beanstalk section) which are the two origins servicing my application. 
 
-In cloudfront I specify certain behaviors for caching depending on the files but I also include some path patterns to direct each request to the appropriate backend (S3 or API). You can see below a snapshot of the rules I have at the moment. _Note_ that there might be a simpler solution, but this works for the purpose of learning, which was to play with the services :)
+In cloudfront I specify certain behaviors for caching depending on the files but I also include some path patterns to direct each request to the appropriate backend (S3 or API). You can see below a snapshot of the rules I have at the moment.
 
     ![Cloudfront behavior rules](/articles/yet-another-spito-rewrite-aws/cloudfront-behavior-rules.png "Cloudfront behavior rules")
 
 You can observe that the first rule ensures that all ```/api/``` calls are going to our **API backend** whilst whatever request comes with ```.``` (dots) or ```/``` (slashes) will go to the **website - App** backend. The fourth rule ensures that whatever request comes that only has our **hash ids** will go to the API backend. The last rule should not be used actually but I left it anyway.
+
+_Note_ that there might be a simpler solution, but this works for the purpose of learning, so I just wanted to play with the service :)
+
+Also, another important thing with Cloudfront that a lot of people ignore is that you **CAN** use it with dynamic services, like in this case our API is strictly dynamic since the spits have expiration dates so they cannot be just cached. You can specify that a path will have no caching, which means that you will just use Cloudfront as a proxy to your service, and as I said before it might be beneficial to your users because the communication to your servers will be done inside the AWS network which has all sorts of optimizations.
 
 ### Amazon S3 - Simple Storage Service
 
