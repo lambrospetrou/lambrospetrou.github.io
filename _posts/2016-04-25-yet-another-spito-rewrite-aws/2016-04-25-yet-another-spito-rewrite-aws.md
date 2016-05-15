@@ -38,7 +38,7 @@ In cloudfront I specify certain behaviors for caching depending on the files but
 
 The above rules are evaluated top-down until the path matches one rule and that rule is applied without going further down the rule-chain.
 
-You can observe that the first rule ensures that all ```/api/``` calls are going to our **API backend** whilst whatever request comes with ```.``` (dots) or ```/``` (slashes) will go to the **website client** backend. The fourth rule ensures that whatever request comes with **at least** one character, I want to match the **hash ids** now, will go to the API backend. The last rule ensures that the root path ```spi.to/``` without any path (since we covered all other cases) will go to the **website client**, which the homepage.
+You can observe that the first rule ensures that all ```/api/``` calls are going to our **API backend** whilst whatever request comes with ```.``` (dots) or ```/``` (slashes) will go to the **website client** backend. The fourth rule ensures that whatever request comes with **at least** one character, I want to match the **hash ids** now, will go to the API backend. The last rule ensures that the root path ```spi.to/``` without any path (since we covered all other cases) will go to the **website client**, which is the homepage.
 
 There might be a simpler solution, but I could not find a way to use classes of characters in path patterns. If you find one or I missed something in the documentation please contact me :)
 
@@ -94,5 +94,6 @@ Any comment or feedback is appreciated.
 * [Migrate to AWS - Make a static website using S3, Cloudfront and Route 53](https://lambrospetrou.com/articles/migrate-to-aws-static-website/)
 * [Deploying Applications on the Go Platform](http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/go-environment.html)
 * [Configure the EB CLI](http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb-cli3-configuration.html)
+* [Values that You Specify When You Create or Update a Web Distribution - Cloudfront](http://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/distribution-web-values-specify.html#DownloadDistValuesPathPattern)
 * [Whitepaper - Hosting Static Websites on AWS](https://d0.awsstatic.com/whitepapers/Building%20Static%20Websites%20on%20AWS.pdf)
 * [Whitepaper - Overview of Deployment Options on AWS](https://d0.awsstatic.com/whitepapers/overview-of-deployment-options-on-aws.pdf)
