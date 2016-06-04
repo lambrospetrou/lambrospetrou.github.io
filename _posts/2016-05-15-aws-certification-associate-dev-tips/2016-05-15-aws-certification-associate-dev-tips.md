@@ -1,6 +1,6 @@
 ---
-title: AWS Developer Associate Certification Tips
-description: Some tips and helpful links for the AWS Developer Associate certification.
+title: AWS Certified Developer & Solution Architect Associate Certification Tips
+description: Some tips and helpful links for the AWS Developer and Solutions Architect Associate certifications.
 url: aws-certification-associate-dev-tips
 ---
 
@@ -72,6 +72,7 @@ Recommended reading:
 * [Introduction to AWS Security](http://d0.awsstatic.com/whitepapers/Security/Intro_to_AWS_Security.pdf)
 * [AWS Security Best Practices](http://d0.awsstatic.com/whitepapers/aws-security-best-practices.pdf)
 * [Overview of Deployment Options on AWS](http://d0.awsstatic.com/whitepapers/overview-of-deployment-options-on-aws.pdf)
+* [AWS Securing Data at Rest with Encryption](https://d0.awsstatic.com/whitepapers/AWS_Securing_Data_at_Rest_with_Encryption.pdf)
 
 ## Documentation and FAQs <a name="doc-faq"></a>
 
@@ -91,6 +92,12 @@ You can find the small script on Github: [AWS FAQ client](https://github.com/lam
 The official [AWS Certification Preparation Guide](http://aws.amazon.com/certification/certification-prep/) suggests to attend training classes depending on the exam you want to pass.
 
 I attended two of them so far, the [Developing on AWS](http://aws.amazon.com/training/course-descriptions/developing/) and the [System Operations on AWS](http://aws.amazon.com/training/course-descriptions/sysops/). I have to admit that the developing one apart from some advices and tips from the trainer himself it was very basic and I would not recommend it to someone that already uses AWS. However, if you are just starting with AWS it is a **great** introduction to the **core** services. The **SysOps** training on the other hand was **amazing**. I highly recommend this training to anyone because it covers things from advanced monitoring, to tagging, to cost-optimization, to custom AMIs and deployment options and pretty much things that I doubt you will ever do on your own or if you are not already working as a systems administrator.
+
+**Update @2016-05-30**
+
+Last week, I attended the [Architecting on AWS](http://aws.amazon.com/training/course-descriptions/architect/) training course. I would really recommend it to anyone that will attempt the certification exam since it is a very nice overview of all the architectural aspects of AWS. It goes over specific use-cases, optimizes and finds bottlenecks of the architecture for certain scenarios which requires you to know about several services and how they can be used together.
+
+Overall, if money is no problem (most companies cover the expenses anyway), I would really recommend you to attend these 3-day training courses. But, it really depends on your knowledge and expertise level. 
 
 ## AWS Qwiklabs <a name="aws-qwiklabs"></a>
 
