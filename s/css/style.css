@@ -158,6 +158,33 @@ pre code {
     padding: 10px;
     padding-left: 20px;
 }
+blockquote {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    color: #888;
+    font-style: italic;
+    margin: 30px;
+    padding: 20px 30px;
+    text-align: center;
+    quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+    color: #888;
+    content: open-quote;
+    font-size: 400%;
+    line-height: 0.1;
+    vertical-align: -0.4em;
+}
+blockquote:after {
+    content: close-quote;
+    font-size: 0;
+    line-height: 0;
+    visibility: hidden;
+    float: left;
+}
+blockquote p {
+    margin-top: 10px;
+}
 input, textarea {
     width: 100%;
     padding: 5px;
