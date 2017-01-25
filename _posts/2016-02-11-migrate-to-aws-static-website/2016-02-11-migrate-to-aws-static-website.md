@@ -136,8 +136,9 @@ In this section, I will describe how you can use your domain name (e.g. **lambro
     * Leave the **Name** as **blank** (empty).
     * Set the type to **A - IPv4 address**
     * Select **Alias - YES**
-    * Type into the **Alias Target** your **S3-Endpoint** for your non-www bucket (e.g **lambrospetrou.s3-website-region.amazonaws.com**). 
-      **VERY IMPORTANT**: do **not** select from the suggested targets, type the full S3-Endpoint yourself (I will explain later on why).
+    * Type into the **Alias Target** your **S3-Endpoint** for your non-www bucket (e.g **lambrospetrou.com.s3-website-region.amazonaws.com**). 
+      **VERY IMPORTANT**: do **not** select from the suggested targets, type the full S3-Endpoint yourself (I will explain later on why). 
+      If this gives you an error about an invalid value, i.e ```Alias target contains an invalid value``` then use the S3 website region endpoint for alias target, like ```s3-website-eu-west-1.amazonaws.com.``` (note the dot at the end!).
     * Click **Create**.
 
 8. Repeat step 7 in order to create a Record Set for your **www-prefixed** domain but now you have to use **www** as the **Name** of the Record Set, and the www-prefixed S3-Endpoint as an **Alias Target**.
