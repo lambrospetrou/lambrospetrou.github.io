@@ -1,5 +1,5 @@
 ---
-title: BT Broadband in London - Fault Story 2017
+title: [Closed] BT Broadband in London - Fault Story 2017
 description: The whole story of how BT has the worst customer support in the world!
 url: bt-broadband-london-fault-story-2017
 ---
@@ -91,7 +91,13 @@ The issue was that the modem-hub kept restarting, and even during the few period
     - At this point, I ask what is the procedure to cancel my account. Surprisingly, I need to **wait for a 3rd week** so that they have information (report from the new engineering team) that they did everything they can to fix the issue and they cannot. 
 * In addition, this month's bill just arrived, and surprisingly there is no discount at all! I can understand that since the issue is still ongoing they haven't processed anything, but still!
 
-### ...
+### 25-02-17
 
-The problem still goes on, till next week. I will keep this post updated till they resolve the issue or the cancel my account and refund me!
+* Another engineer came at the flat on Monday (20-02-17) and supposedly fixed the issue by moving the router to another port, blaming the cable we used. The internet worked for 2 hours after he left and then again the connectivity was lost, forever!
+* We did not do anything else during this week and on Saturday morning, the internet started working again. Nobody knows the root cause of the problem and nobody understood how it got fixed!
+* The discount for almost a whole month without internet was £6, what a joke!!!
 
+### As of 01/05/17
+
+The internet still works so I consider the issue resolved.
+I just wish there was a reliable wireless broadband to offer stable 4G connectivity and I would never fiddle again with this nonsense and companies that just want customer's money!
