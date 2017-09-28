@@ -1,3 +1,9 @@
 # Personal website
 
-This will hold my blogs in Jekyll format in the future.
+Hosted at https://www.lambrospetrou.com
+
+Build using: https://github.com/lambrospetrou/gomicroblog
+
+```
+gomicroblog -site ./
+```
