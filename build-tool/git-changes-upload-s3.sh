@@ -2,8 +2,8 @@
 set -ex
 
 FILES=()
-#for i in $( git diff --name-only ); do
-for i in $( git status -s | sed 's/\s*[a-zA-Z?]\+ \(.*\)/\1/' ); do
+#for i in $( git status -s | sed 's/\s*[a-zA-Z?]\+ \(.*\)/\1/' ); do
+for i in $( git status --porcelain | sed s/^...// ); do
     FILES+=( "$i" )
 done
 #echo "${FILES[@]}"
