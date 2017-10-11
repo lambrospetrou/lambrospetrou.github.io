@@ -43,6 +43,10 @@ Since Lambda has a static initialisation section every time the underlying conta
 
 This has a tremendous speedup over creating a new process every time since the average invocation runtime for the **128MB** using this approach is **1-100ms**, and consistently stays under **~10ms** with the **1536MB** memory configuration. This speedup is significant for lambdas that run many times over a period of time because the overhead of spawning a process is only observed the first time our code will run in a specific container instance, and then the same process is re-used leading to these extremely fast times.
 
+See proof below, using the 128MB memory configuration, and runtime of **0.51ms** (yes that's less than a millisecond)!
+
+![AWS Lambda running Racket](/articles/aws-lambda-meets-racket/aws-lambda-racket-128mb.png "AWS Lambda running Racket")
+
 ## Solution
 
 As explained in the previous section, my best solution so far which keeps the complexity to a minimum, is to spawn a subprocess of our Racket application binary during the static initialisation of the Lambda function and re-use that process during the individual lambda invocations, by communicating over stdio.
