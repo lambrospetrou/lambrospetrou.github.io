@@ -90,7 +90,7 @@ const readline = require('readline');
  ****************************/
 const execPath = './application';
 
-let proc = initProc(execPath);
+let proc = initProc();
 
 function initProc(options) {
     options = options || {};
