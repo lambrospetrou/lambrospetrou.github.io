@@ -77,6 +77,8 @@ Your logic can do whatever it wants with the input data and then just print the 
 
 ### Wrapper code in Node.js
 
+**Update@2017-10-18:** I created an npm package to significantly reduce the boilerplate code shown below, so **after** you have read this article and understood how the solution works, use the package [AWS-lambda-binary](https://www.npmjs.com/package/aws-lambda-binary) in your production Lambda functions.
+
 The wrapper code will be a bit longer but still remains very simple to understand.
 
 ```javascript
