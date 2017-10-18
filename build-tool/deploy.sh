@@ -47,3 +47,9 @@ cp -r ../_site.latest/* .
 # Exit the _site and then return to current working directory
 popd
 popd
+
+# Invalidate the cloudfront distribution
+read -p "Enter a cloudfront distribution id to invalidate: " CLOUDFRONT_ID
+if [ -n "$CLOUDFRONT_ID" ]; then
+    aws cloudfront create-invalidation --distribution-id "$CLOUDFRONT_ID" --paths "/*"
+fi
