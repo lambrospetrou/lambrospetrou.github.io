@@ -121,7 +121,7 @@ function initProc(options) {
     // so I use https://nodejs.org/api/readline.html#readline_event_line
     // but you can adapt this to use binary data as well, exactly like we did with
     // `stderr` above.
-    const rl = readline.createInterface({ input: p.stdin, output: p.stdout });
+    const rl = readline.createInterface({ input: p.stdout });
     rl.on('line', (line) => {
         const {handlerCallback} = proc;
         if (handlerCallback) {
@@ -164,7 +164,7 @@ exports.handler = function (event, context) {
     };
 
     // Send the input to the Racket application
-    proc.rl.write(`${JSON.stringify({event, context})}\n`);
+    proc.p.stdin.write(`${JSON.stringify({event, context})}\n`);
 };
 
 ```
