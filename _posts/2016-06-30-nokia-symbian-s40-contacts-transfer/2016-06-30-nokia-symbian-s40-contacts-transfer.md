@@ -1,7 +1,6 @@
 ---
 title: Transfer your contacts to an old Nokia Symbian S40 mobile phone
 description: A tutorial on how to copy your contacts to an old Nokia S40 phone.
-url: nokia-symbian-s40-contacts-transfer
 ---
 
 Every now and then we have to change phones and transfer contacts from one device to another. It's a trivial thing to do nowadays with Android, iOS and Windows Phone, but try to do it on an old Nokia Symbian S40 phone. It's 2016 and this simple thing is just **fuxxing too complex**. And it's standards inconsistencies and Nokia to blame!

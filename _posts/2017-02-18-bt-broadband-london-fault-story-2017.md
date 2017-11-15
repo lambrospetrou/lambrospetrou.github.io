@@ -1,7 +1,6 @@
 ---
 title: [Closed] BT Broadband in London - Fault Story 2017
 description: The whole story of how BT has the worst customer support in the world!
-url: bt-broadband-london-fault-story-2017
 ---
 
 15 days ago (as of day of writing) my broadband connection stopped working, no internet access and the BT hub enterred an infinite loop of rebooting staying for 1-2 minutes at each of its stages (Green, Orange, Blue).

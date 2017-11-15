@@ -1,7 +1,6 @@
 ---
 title: Micro-blog service written in Go as a personal blog
 description: I switched from Wordpress to my custom own-made blog coded in Go-lang.
-url: micro-blog-service-written-in-go-personal-blog
 ---
 
 I have been a user of Wordpress since 2006 in order to provide my own blog, latest version found at [MasterGenius.NET](http://mastergenius.net). I invested a lot of time in it learning PHP, web development (HTML, CSS, Javascript and the likes) and I thank it since it made my way into the web as a developer. There have been many times I wanted to switch out from it and make my own micro-blog service but due to time constraints and other things popping up I always halted the process.

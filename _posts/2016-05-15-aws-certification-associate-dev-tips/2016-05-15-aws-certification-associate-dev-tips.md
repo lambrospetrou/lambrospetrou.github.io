@@ -1,7 +1,6 @@
 ---
 title: AWS Certified Developer & Solution Architect Associate Certification Tips
 description: Some tips and helpful links for the AWS Developer and Solutions Architect Associate certifications.
-url: aws-certification-associate-dev-tips
 ---
 
 I wanted to write this article for a while now but I waited until I actually passed the certification exam before I started giving tips to others :) 

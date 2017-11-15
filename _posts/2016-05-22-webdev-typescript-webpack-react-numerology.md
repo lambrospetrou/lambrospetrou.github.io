@@ -1,7 +1,6 @@
 ---
 title: Fun with Typescript, Webpack and ReactJS
 description: A small fun-project with Typescript, Webpack and ReactJS. Numerology calculates your life path number.
-url: webdev-typescript-webpack-react-numerology
 ---
 
 I decided to play around with [Typescript](https://www.typescriptlang.org/) instead of [BabelJS](https://babeljs.io/), which I already tried in the past, for this weekend's project. 

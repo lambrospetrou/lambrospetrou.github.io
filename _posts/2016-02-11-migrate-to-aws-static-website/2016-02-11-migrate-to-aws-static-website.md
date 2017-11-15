@@ -1,7 +1,6 @@
 ---
 title: Migrate to AWS - Make a static website using S3, Cloudfront and Route 53
 description: This tutorial explains in detail how to setup a static website with unlimited throughput, durability and availability using Amazon S3. Additionally, we exploit Amazon Cloudfront to provide caching and super-fast downloads all over the world and finally, we use Route 53 to provide the website behind our custom domain name.
-url: migrate-to-aws-static-website
 ---
 
 A few months ago I started studying most of the Amazon Web Services (AWS) and as I said in a previous post one of my goals for this year is to transition all my apps and microservices into AWS.

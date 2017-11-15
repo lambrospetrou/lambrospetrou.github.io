@@ -1,7 +1,6 @@
 ---
 title: Control the fan speed of you Thinkpad T430 running Ubuntu 12.04 LTS
 description: Easy way to control the fan speed of your Thinkpad based on the temperatures of its sensors.
-url: control-thinkpad-t430-fan-ubuntu-12.04
 ---
 
 After researching for a few hours online to find a guide on how to control my Thinkpad's fan speed I realized that the new models have some differences from previous models and the guides available are not complete if not wrong. So, I am making this tutorial for anyone that has a new Thinkpad (x30/x20 models) and needs to control his fan in order to keep the noise down and get more battery life.

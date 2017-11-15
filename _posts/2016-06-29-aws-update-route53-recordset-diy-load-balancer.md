@@ -1,7 +1,6 @@
 ---
 title: Update Route53 record set with EC2 instance public IP for a DIY load balancer
 description: A cool snippet showing how to update a record set in Route53 with a new IP value. This is very helpful in case you want to have an application running on a few instances but you do not want the charge overheads of an Elastic Load Balancer.
-url: aws-update-route53-recordset-diy-load-balancer
 ---
 
 In this small tutorial I provide a code snippet that allows you to update a record set in [Route53](https://aws.amazon.com/route53/) with the public IP of an [EC2](https://aws.amazon.com/ec2/) instance programmatically.

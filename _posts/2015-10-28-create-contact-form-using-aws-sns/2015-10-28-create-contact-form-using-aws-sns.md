@@ -1,7 +1,6 @@
 ---
 title: Create a contact form using Amazon Web Services (AWS) Simple Notification Service (SNS)
 description: Guide that describes how you create a contact form for your website using Amazon Web Services (AWS) Simple Notification Service (SNS) without any server.
-url: create-contact-form-using-aws-sns
 ---
 
 A common feature among most websites is a way to contact the owner for any comments or feedback (or complaints). In previous versions of my website and blog I used several techniques to provide a contact me form. In almost all the cases I had to implement the actual email submission on the website's hosting server or in some cases used a 3rd party service that provided me this functionality by querying an HTTP endpoint they gave me with the actual message and they sent the email for me, to me.

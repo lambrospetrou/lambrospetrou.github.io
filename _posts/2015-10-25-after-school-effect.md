@@ -1,7 +1,6 @@
 ---
 title: After-school effect
 description: School is finally history freeing up more time to do exciting and interesting things.
-url: after-school-effect
 ---
 
 Time passes and goes at amazing speed. Finally, after twenty-five years, school has reached its end. I still don't know if this is bad or good, since I am now thrown into the wild jungle known as life.

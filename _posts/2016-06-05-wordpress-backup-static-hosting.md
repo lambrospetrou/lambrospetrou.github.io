@@ -1,7 +1,6 @@
 ---
 title: Backup your Wordpress and serve it as a static website
 description: An easy way to backup your Wordpress installation and serve it as a static website.
-url: wordpress-backup-static-hosting
 ---
 
 A few months ago I started migrating all my projects and websites into AWS. The last thing standing was my old wordpress blog (hosted at **mastergenius.net**, not alive anymore). Today, I decided to make a final backup and create a static version out of it and ditch the VPS I have running just for that.

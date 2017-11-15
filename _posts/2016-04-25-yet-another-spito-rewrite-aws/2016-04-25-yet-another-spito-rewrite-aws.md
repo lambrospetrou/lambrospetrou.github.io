@@ -1,7 +1,6 @@
 ---
 title: Yet another Spito re-write, on the Cloud (AWS)
 description: This is an update explaining how I re-wrote Spito to be fully cloud based using AWS. Technologies used include Elastic Beanstalk, Route 53, Cloudfront, S3, and DynamoDB.
-url: yet-another-spito-rewrite-aws
 ---
 
 Finally, I found some time to re-write my super-duper URL shortener yet once again :)

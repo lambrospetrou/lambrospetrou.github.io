@@ -1,7 +1,6 @@
 ---
 title: AWS S3 sync - only modified files, using git status
 description: An easy script to sync folders with S3 but only the updated, modified, files. I use git to properly handle changes.
-url: aws-s3-sync-git-status
 ---
 
 ## Problem

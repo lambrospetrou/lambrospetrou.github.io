@@ -1,7 +1,6 @@
 ---
 title: nVidia Optimus Support in Ubuntu 12.04 LTS - How to get the most of your battery life guide
 description: A guide that guides you through the installation of Bumblebee to manage the discrete along with the integrated graphics card.
-url: nvidia-optimus-support-ubuntu-12.04
 ---
 
 Anyone that purchased a laptop with nVidia Optimus is facing problems with Linux support. In a few words, Optimus is not supported officially ( the best project so far is Bumblebee ). As a result the power draw is more than double compared to integrated card-only systems because both cards are enabled and loaded but only one is in use, the Integrated one.

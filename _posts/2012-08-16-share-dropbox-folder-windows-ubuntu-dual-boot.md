@@ -1,7 +1,6 @@
 ---
 title: Share your Dropbox folder between Windows and Ubuntu on dual-boot system
 description: Tutorial on how to share your Dropbox sync folder between  Windows and Linux.
-url: share-dropbox-folder-windows-ubuntu-dual-boot
 ---
 
 Many users are dual booting Windows and Ubuntu for numerous reasons today. Well a problem that may arise is that if you have Dropbox, you should have 2 folders of your Dropbox files, 1 for Windows and 1 for Ubuntu.

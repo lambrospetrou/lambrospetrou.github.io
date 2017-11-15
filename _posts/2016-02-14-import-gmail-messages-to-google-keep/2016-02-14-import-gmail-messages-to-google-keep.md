@@ -1,7 +1,6 @@
 ---
 title: Import Gmail messages into Google Keep as notes
 description: This a tutorial for a Chrome extension that allows you to import Gmail messages into Google Keep as notes. It can even be used to import Apple Notes into Keep.
-url: import-gmail-messages-to-google-keep
 ---
 
 A few weeks ago a friend asked me for a way to import his Apple Notes into Google Keep. It seems that no easy straighforward way exists as of today so I decided it was a great opportunity to make my first Chrome extension and create my own importer.

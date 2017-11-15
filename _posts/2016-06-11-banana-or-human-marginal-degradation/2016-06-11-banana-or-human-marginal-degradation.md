@@ -1,7 +1,6 @@
 ---
 title: Banana or Human, and Marginal Degradation
 description: An article explaining how marginal degradation ruins your goals.
-url: banana-or-human-marginal-degradation
 ---
 
 A few months ago I attended a talk given by Monotype's [Steve Matteson](http://monotype.de/studio/steve-matteson) who designed awesome fonts like **Open Sans**, Android's **Droid family** and Microsoft's **Segoe family** among others, and by [Mark Boulton](http://markboulton.co.uk/) who is now Design Director at [Monotype](http://monotype.com/) and founder of [Mark Boulton Design](http://www.markboultondesign.com/), which was acquired by Monotype :)

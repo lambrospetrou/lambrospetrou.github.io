@@ -1,7 +1,6 @@
 ---
 title: Install JDK 7 (Java Development Toolkit) on Ubuntu 12.04 LTS
 description: Guide explaining how to easily install Java JDK on your Ubuntu 12.04 LTS.
-url: install-jdk7-ubuntu-12.04
 ---
 
 Since version 7 of Java Ubuntu no longer has in its packages the required files for the Oracle JDK 7 due to new license terms by Oracle. The default option for Ubuntu is OpenJDK but if you really want the standard Java from Oracle (former Sun) then you have no easy way to do it on your own.

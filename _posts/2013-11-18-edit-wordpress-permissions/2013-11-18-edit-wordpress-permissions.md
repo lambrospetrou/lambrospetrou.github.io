@@ -1,7 +1,6 @@
 ---
 title: Wordpress permissions guide
 description: Fix the permissions of your own wordpress installation.
-url: wordpress-permissions
 ---
 
 

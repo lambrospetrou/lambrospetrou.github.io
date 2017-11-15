@@ -1,7 +1,6 @@
 ---
 title: Keyboard shortcut for opening context menu
 description: A shortcut that opens context menu, known as right-click, in most applications.
-url: keyboard-shortcut-for-context-menu
 ---
 
 This is going to probably be the shortest article I wrote, or will write!
