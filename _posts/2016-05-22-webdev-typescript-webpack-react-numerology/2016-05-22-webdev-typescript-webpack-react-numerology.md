@@ -22,7 +22,7 @@ I already gave a go to Babel, so this time it was time for Typescript. Why choos
 
 I wanted to not spend more than 1-2 days so I have chosen something super simple to implement. I decided to develop a **numerology** calculator of your life path number :) Fancy stuff!
 
-Calculate your life path number at https://lambrospetrou.com/numerology/
+[Calculate your life path number at the demo page](/articles/webdev-typescript-webpack-react-numerology/demo/)
 
 ## Build Process
 
