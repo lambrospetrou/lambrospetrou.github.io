@@ -12,6 +12,26 @@ else
     COMMITS="1"
 fi
 
+# https://stackoverflow.com/a/27776822/1066790
+OS=$(uname -s)
+case "$(uname -s)" in
+   Darwin)
+     OS='mac'
+     ;;
+
+   Linux)
+     OS='linux'
+     ;;
+
+   CYGWIN*|MINGW32*|MSYS*)
+     OS='windows'
+     ;;
+
+   *)
+     echo 'other' 
+     ;;
+esac
+
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 #REPO="$(pwd)"
 REPO="$(dirname "$SCRIPT_DIR")"
@@ -38,7 +58,8 @@ pushd _site
 git init . && git add --all . && git commit -m 'previous'
 
 git checkout -b latest
-find ./ -maxdepth 1 -not -path "./.git*" -not -iname "." -exec rm -rf {} \;
+[ "$OS" == "mac" ] && find ./ -maxdepth 1 -not -path ".//.git*" -not -iname "." -exec rm -rf {} \;
+[ "$OS" != "mac" ] && find ./ -maxdepth 1 -not -path "./.git*" -not -iname "." -exec rm -rf {} \;
 cp -r ../_site.latest/* .
 
 # Run the script from my article https://www.lambrospetrou.com/articles/aws-s3-sync-git-status/
