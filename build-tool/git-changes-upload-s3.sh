@@ -14,5 +14,6 @@ for i in "${FILES[@]}"; do
 done
 #echo "${CMDS[@]}"
 
-echo "${CMDS[@]}" | xargs aws s3 sync . s3://www.lambrospetrou.com --delete --exclude "*" 
+echo "${CMDS[@]}" | xargs aws s3 sync . s3://www.lambrospetrou.com --dryrun --delete --exclude "*" 
+#echo "${CMDS[@]}" | xargs aws s3 sync . s3://www.lambrospetrou.com --profile lambros --dryrun --delete --exclude "*" 
 #for i in "${FILES[@]}"; do echo "--include=$i""*"; done | xargs aws s3 sync . s3://www.lambrospetrou.com --dryrun --delete --exclude "*" 

@@ -47,12 +47,12 @@ cd $(basename "$REPO")
 git reset --hard HEAD
 
 # build the latest version
-gomicroblog -site ./
+make
 mv _site _site.latest
 
 # build the previous version
 git reset --hard "HEAD~$COMMITS"
-gomicroblog -site ./
+make
 
 pushd _site
 git init . && git add --all . && git commit -m 'previous'
