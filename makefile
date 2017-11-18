@@ -13,7 +13,7 @@ build-css:
 build: build-css
 	gomicroblog -site ./
 
-start: build
+start:
 	gohttp -d _site
 
 # Docker targets
