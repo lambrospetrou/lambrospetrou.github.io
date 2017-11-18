@@ -1,6 +1,6 @@
-.PHONY: build-css build start default prepare all docker-build docker-image
+.PHONY: build-css build start default prepare all docker-build docker-image deploy
 
-default: build
+default: docker-build
 
 all: prepare build
 
@@ -23,3 +23,13 @@ docker-build:
 
 docker-image:
 	sudo docker build -t lpwebsite-compiler ./
+
+# Deployment commands
+
+# Make the remote bucket an exact copy of the local version. Deleting whatever is not local.
+CMD_S3_SYNC := aws s3 sync _site s3://www.lambrospetrou.com --delete
+
+# make deploy | make deploy args=--dryrun
+deploy:
+	$(CMD_S3_SYNC) $(args)
+
