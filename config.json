@@ -2,7 +2,8 @@
 	"static_paths": [
 		"static/s", 
         "static/404.html",
-        "static/keybase.txt"
+        "static/keybase.txt",
+        "static/cv"
 	],
 	"templates": [
 		"partials/header.html",

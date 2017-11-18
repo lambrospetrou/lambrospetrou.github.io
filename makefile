@@ -19,6 +19,7 @@ start:
 # Docker targets
 
 docker-build:
+	rm -rf _site
 	sudo docker run --rm -v `pwd`:/mnt/host -w /usr/src/app lpwebsite-compiler bash -c "make build && cp -r _site /mnt/host/_site && chown -R `id -u`:`id -u` /mnt/host/_site"
 
 docker-image:
