@@ -2,8 +2,8 @@
   "name": "node-tools",
   "version": "0.0.0",
   "scripts": {
-    "sass": "./node_modules/node-sass/bin/node-sass --output-style compressed ../../src/css/style.scss",
-    "autoprefixer": "./node_modules/postcss-cli/bin/postcss -u autoprefixer --autoprefixer.browsers '> 1%' -o ../../static/s/css/style.min.css --no-map",
+    "sass": "./node_modules/node-sass/bin/node-sass --output-style compressed ../../src/scss/style.scss",
+    "autoprefixer": "./node_modules/postcss-cli/bin/postcss -u autoprefixer --autoprefixer.browsers '> 1%' -o ../../src/static/s/css/style.min.css --no-map",
     "build-css": "npm run sass | npm run autoprefixer"
   },
   "devDependencies": {

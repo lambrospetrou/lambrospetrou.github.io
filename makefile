@@ -11,7 +11,7 @@ build-css:
 	npm run --prefix build-tool/node-tools build-css
 
 build: build-css
-	gomicroblog -site ./
+	gomicroblog -site src/ && mv src/_site ./
 
 start:
 	gohttp -d _site
@@ -20,7 +20,7 @@ start:
 
 docker-build:
 	rm -rf _site
-	sudo docker run --rm -v `pwd`:/mnt/host -w /usr/src/app lpwebsite-compiler bash -c "make build && cp -r _site /mnt/host/_site && chown -R `id -u`:`id -u` /mnt/host/_site"
+	sudo docker run --rm -v `pwd`:/mnt/host -w /app lpwebsite-compiler bash -c "rm -rf src/ && cp -r /mnt/host/src ./ && make build && cp -r _site /mnt/host/_site && chown -R `id -u`:`id -u` /mnt/host/_site"
 
 docker-image:
 	sudo docker build -t lpwebsite-compiler ./

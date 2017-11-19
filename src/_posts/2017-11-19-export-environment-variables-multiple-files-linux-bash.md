@@ -7,7 +7,7 @@ description: Easy way to export environment variables defined in multiple files 
 
 Recently, I have updated the [deployment scripts of my website](https://github.com/lambrospetrou/lambrospetrou.github.io) and for some tasks I wanted to have certain environment variables available in my scripts. For example, I wanted to [invalidate the Cloudfront distribution](http://docs.aws.amazon.com/cli/latest/reference/cloudfront/create-invalidation.html) so that I don't have to wait for the cache to expire before serving the new content, and I needed the `--distribution-id`.
 
-I looked for the easiest way to export environment variables from key-value pairs in a file, and I was delighted to see that the Linux command line tools allow you to do this in 1 line!
+I looked for the easiest way to export environment variables from key-value pairs in a file, and I was delighted to see that it can done with a single line!
 
 ## Solution
 
