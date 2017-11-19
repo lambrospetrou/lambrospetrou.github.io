@@ -28,13 +28,9 @@ docker-image:
 # Deployment commands
 
 # Make the remote bucket an exact copy of the local version. Deleting whatever is not local.
-CMD_S3_SYNC := aws s3 sync _site s3://www.lambrospetrou.com --delete
-CMD_S3_SYNC_ARGS = --dryrun
+CMD_S3_SYNC := ./build-tool/deploy-aws.sh
+CMD_S3_SYNC_ARGS = $(dryrun)
 
-ifeq ($(args),--no-dryrun)
-	CMD_S3_SYNC_ARGS = 
-endif
-
-# make deploy | make deploy args=--no-dryrun
 deploy:
+	bash -c "echo -e \"\nTo run without --dryrun, execute: make deploy dryrun=--no-dryrun\n\""
 	$(CMD_S3_SYNC) $(CMD_S3_SYNC_ARGS)

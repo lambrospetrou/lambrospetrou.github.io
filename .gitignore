@@ -1,2 +1,3 @@
 _site/
 **/*.css
+build-tool/env/aws.env
