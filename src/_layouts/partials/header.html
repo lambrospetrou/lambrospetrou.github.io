@@ -37,23 +37,25 @@
     <meta name="copyright" content="2017 Lambros Petrou" />
     <meta name="robots" content="all" />
 
-    <link rel="canonical" href="https://www.lambrospetrou.com" />
-
     <title>{{.Title}} | Lambros Petrou</title>
 
     {{ if .Post }}
+    <link rel="canonical" href="https://www.lambrospetrou.com/{{.Post.UrlPermalink}}/" />
+
     <meta property="og:title" content="{{.Post.Title}}" />
     <meta property="og:description" content="{{.Post.Description}}" />
     <meta name="description" content="{{.Post.Description}}" />
     {{ else }}
+    <link rel="canonical" href="https://www.lambrospetrou.com/" />
+
     <meta property="og:title" content="{{.Title}}" />
     <meta property="og:description" content="A personal blog where I publish my thoughts and anything else that comes to my mind regarding technology and programming."/>
     <meta name="description" content="A personal blog where I publish my thoughts and anything else that comes to my mind regarding technology and programming."/>
     {{ end }}
     <meta property="og:type" content="article" />
-    <meta property="og:locale" content="en_UK" />
-    <meta property="article:author" content="https://lambrospetrou.com" />
-    <meta property="article:publisher" content="https://lambrospetrou.com" />
+    <meta property="og:locale" content="en_GB" />
+    <meta property="article:author" content="https://www.lambrospetrou.com" />
+    <meta property="article:publisher" content="https://www.lambrospetrou.com" />
     <meta property="og:site_name" content="Lambros Petrou articles and bio."/>
 
     <!--<link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgo=">-->
