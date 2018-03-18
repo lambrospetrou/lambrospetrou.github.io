@@ -20,10 +20,10 @@ start:
 
 docker-build:
 	rm -rf _site
-	sudo docker run --rm -v `pwd`:/mnt/host -w /app lpwebsite-compiler bash -c "rm -rf src/ && cp -r /mnt/host/src ./ && make build && cp -r _site /mnt/host/_site && chown -R `id -u`:`id -u` /mnt/host/_site"
+	docker run --rm -v `pwd`:/mnt/host -w /app lpwebsite-compiler bash -c "rm -rf src/ && cp -r /mnt/host/src ./ && make build && cp -r _site /mnt/host/_site && chown -R `id -u`:`id -u` /mnt/host/_site"
 
 docker-image:
-	sudo docker build -t lpwebsite-compiler ./
+	docker build -t lpwebsite-compiler ./
 
 # Deployment commands
 
