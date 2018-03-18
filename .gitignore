@@ -1,4 +1,3 @@
 _site/
-**/*.css
-!src/static/s/**/*
+src/static/s/css/*.css
 build-tool/env/aws.env
