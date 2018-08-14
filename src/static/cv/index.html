@@ -18,17 +18,6 @@
 
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="style.css" media="all">
-
-    <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-59052212-3', 'auto');
-    ga('send', 'pageview');
-
-    </script>
 </head>
 
 <body>
@@ -67,12 +56,15 @@
                     <strong>Amazon Profiler team (Jun 2017 - present)</strong>
                     <ul>
                         <li>Provide internal tooling for performance optimisation and monitoring across Amazon backend services.</li>
+                        <li>Designed and implemented parts of our website using ReactJS (Redux, Redux-sagas, etc.)</li>
+                        <li>Deployed the website and several supporting APIs following a serverless architecture in AWS (i.e. AWS Lambda, CloudFront, S3, DynamoDB, API Gateway)</li>
                     </ul>
                 </p></li>
                 <li><p>
                     <strong>LOVEFiLM By Post &mdash; DVD and Blu-ray rental service team (Sep 2015 - May 2017)</strong>
                     <ul>
-                        <li>Lead engineer for the <em>LOVEFiLM By Post</em> mobile application (Cordova, Ionic, AngularJS).</li>
+                        <li>Lead engineer for the <em>LOVEFiLM By Post</em> mobile application (Cordova, Ionic, AngularJS, SASS).</li>
+                        <li>Worked on backend services and parts of the LOVEFiLM website (Java, SpringMVC)</li>
                     </ul>
                 </p></li>
                 <li><p>
@@ -109,7 +101,7 @@
             </header>
             <ul>
                 <li><p>Member of the LOVEFiLM By Post rental service team as summer intern.</p></li>
-                <li><p>Designed and implemented an internal service that automates the printing process for the labels of envelopes sent to customers containing their rented DVD or Blu-ray titles.</p></li>
+                <li><p>Implemented an internal service that automates the printing process for the labels of envelopes sent to customers containing their rented DVD or Blu-ray titles. (Java, Swing)</p></li>
             </ul>
         </section>
 
@@ -125,14 +117,14 @@
             <ul>
                 <li><p>Developed a complete architecture for an Indoor Positioning and Navigation system that provides a Web2.0 API for 3rd-party clients backed by a NoSQL datastore (<a href="http://anyplace.cs.ucy.ac.cy" target="_blank">http://anyplace.cs.ucy.ac.cy</a>).</p></li>
                 <li><p>Implemented an Android app that offers real-time positioning and navigation indoors, and a web-based application developed using Google Dart that provides similar services through any HTML-5 compliant browser.</p></li>
-                <li><p>Designed &amp; Implemented a Wi-Fi RSS-based radio map construction algorithm that can filter out useless Access Points and erroneous or unnecessary Wi-Fi fingerprints using the Hadoop – Map Reduce framework.</p></li>
+                <li><p>Designed &amp; implemented a Wi-Fi RSS-based radio map construction algorithm that can filter out useless Access Points and erroneous or unnecessary Wi-Fi fingerprints using the Hadoop – Map Reduce framework.</p></li>
             </ul>
         </section>
 
         <section class="cv-content-item cv-work-section">
             <header class="clear">
                 <h3>Data-Driven Multithread Research Laboratory, UCY</h3>
-                <div class="work-title"><p>Special Scientist, Intern</p></div>
+                <div class="work-title"><p>Software Developer, Intern</p></div>
                 <div class="work-time time">
                     <p><time datetime="2012-05" class="start">May 2012</time> &mdash; <time datetime="2012-08">Aug 2012</time></p>
                 </div>
@@ -146,13 +138,12 @@
             <header class="clear">
                 <h3>Computer Graphics Laboratory, UCY</h3>
                 <div class="work-title"><p>Software Developer, Intern</p></div>
-                <div class="work-time time"><p>
-                    <time datetime="2011-12" class="start">Dec 2011</time> &mdash; <time datetime="2012-01">Jan 2012</time></p>
+                <div class="work-time time">
+                    <p><time datetime="2011-12" class="start">Dec 2011</time> &mdash; <time datetime="2012-01">Jan 2012</time></p>
                 </div>
             </header>
             <ul>
-                <li><p>Imported crowd movement simulation data and presented them in a realistic 3D stage using 3D figures - <em>Unity3D</em></p></li>
-                <li><p>Represented the lab in CS Open Day 2012, with two games developed using Unity3D and Microsoft KINECT sensor.</p></li>
+                <li><p>Processed and presented crowd movement simulation data in a realistic 3D stage using 3D figures - <em>Unity3D, KINECT</em></p></li>
             </ul>
         </section>
 
@@ -172,11 +163,12 @@
             </header>
             <ul>
                 <li><p>Master of Science in Computer Science, <em>Grade: <strong>Distinction</strong></em></p></li>
-                <li><p>Thesis: <em>Single-round vs Multi-round Distributed Query Processing in Factorised Databases</em></p><ul>
-                        <li><p>Designed and implemented in <em>C++</em> a <em>distributed query engine</em>, coined D-FDB, that evaluates join queries in a distributed setting. In contrary to traditional systems that use flat relational tables, D-FDB uses data factorizations (f-representations) end-to-end exploiting their theoritical size-bounds against flat data to minimize the total query execution time.</p></li>
-                        <li><p>Additionally, I developed several serialization and bit-compression techniques to efficiently transmit data factorizations over the network whilst retaining the factorization compression levels.</p></li>
-                    </ul></li>
-                <li><p>Coursework: Concurrent Algorithms &amp; Data Structures (Scala), Computer Security, Functional Programming (Haskell), Concurrent Programming (Scala), Database Systems Implementation, Theory of Data and Knowledge Bases</p></li>
+                <li><p>Thesis: <em>Single-round vs Multi-round Distributed Query Processing in Factorised Databases</em></p>
+                    <ul>
+                        <li><p>Designed and implemented a <em>distributed join query evaluation engine</em> (C++), coined D-FDB. In contrary to traditional systems, D-FDB uses data factorizations (f-representations) end-to-end exploiting their theoritical size-bounds against flat relational tables minimizing the total query execution time.</p></li>
+                        <li><p>I developed several serialization and bit-compression techniques to efficiently transmit data factorizations over the network whilst retaining the factorization compression levels.</p></li>
+                    </ul>
+                </li>
             </ul>
         </section>
 
@@ -191,7 +183,7 @@
             <ul>
                 <li><p>Bachelor of Science in Computer Science, <em>GPA: 9.41 /10 (<strong>Ranked 1st</strong> of class)</em></p></li>
                 <li><p>Thesis: <em>AnyPlace: Indoor Positioning and Navigation System for Big Data</em> as described in <em>Work Experience</em></p></li>
-                <li><p>Coursework (<em>only selected courses</em>): Algorithms and Complexity, Distributed Algorithms, Parallel Algorithms, Computer Architecture, Systems Programming, Parallel Processing</p></li>
+                <li><p>Coursework (<em>selected courses</em>): Algorithms and Complexity, Distributed Algorithms, Parallel Algorithms, Computer Architecture, Systems Programming, Parallel Processing</p></li>
             </ul>
         </section>
 
@@ -215,8 +207,8 @@
         <h2>Languages &amp; Technologies</h2>
         <section class="cv-content-item cv-skills-section">
             <ul>
-                <li><p><em>Programming / SDKs</em>: C, C++, Java, Go, Elixir, Android, Ionic &amp; Cordova</p></li>
-                <li><p><em>Web</em>: Google Dart, HTML5, CSS &amp; SASS, Javascript (ES5, ES6, Typescript), AngularJS + AngularDart, ReactJS</p></li>
+                <li><p><em>Programming / SDKs</em>: C, C++, Java, Go, Python (scripting), Elixir, Mobile app development (Android, Ionic &amp; Cordova)</p></li>
+                <li><p><em>Web</em>: HTML5, CSS &amp; SASS, Javascript (ES5, ES6, Typescript), ReactJS, AngularJS + AngularDart</p></li>
             </ul>
         </section>
     </article> <!-- END OF SKILLS -->
@@ -229,7 +221,7 @@
         <section class="cv-content-item cv-other-section">
             <strong>Projects</strong>
             <ul>
-                <li><p><strong>Personal Website (2008 – Present)</strong>: Personal website and blog (<a href="http://lambrospetrou.com" target="_blank">https://lambrospetrou.com</a>)</p></li>
+                <li><p><strong>Personal Website (2008 – Present)</strong>: Personal website and blog (<a href="http://www.lambrospetrou.com" target="_blank">https://lambrospetrou.com</a>)</p></li>
                 <li><p><strong>ACM SIGMOD 2015 Programming Contest</strong>: Implemented a database management system that evaluated thousands of validation requests each with a set of Boolean Conjunctive Queries (extended with mathematical and logical operators)  against a constantly modified database (<a href="http://db.in.tum.de/sigmod15contest/leaders.html" target="_blank">http://db.in.tum.de/sigmod15contest/leaders.html</a>)</p></li>
                 <li><p><strong>ACM SIGMOD 2014 Programming Contest</strong>: Implemented a social network analysis system that responded to numerous Top-K queries (<a href="http://www.cs.albany.edu/~sigmod14contest/leaders.html" target="_blank">http://www.cs.albany.edu/~sigmod14contest/leaders.html</a>)</p></li>
                 <li><p><strong>ACM SIGMOD 2013 Programming Contest</strong>: Implemented a high-throughput streaming document filtering system using a dynamic set of exact and approximate continuous keyword match (<a href="http://sigmod.kaust.edu.sa/leaderboard.html" target="_blank">http://sigmod.kaust.edu.sa/leaderboard.html</a>)</p></li>
@@ -248,7 +240,6 @@
                 <li><p>ACM SIGMOD 2015 Programming Contest, ranked <em>1st nationwide (Cyprus &amp; UK)</em> and <em>5th worldwide</em> among 38 teams. Selected as one of the finalists to present our solution in ACM SIGMOD conference in Melbourne, Australia</p></li>
                 <li><p>ACM SIGMOD 2014 Programming Contest, ranked <em>1st nationwide</em> and 9th worldwide among 33 teams</p></li>
                 <li><p>ACM SIGMOD 2013 Programming Contest, ranked <em>1st nationwide</em> and 10th worldwide among 55 teams</p></li>
-                <li><p>Graduated Saint George Lyceum - Lakatameia, Nicosia, Cyprus, with excellence award (2005-2008) – <em>GPA: 19.67 /20</em></p></li>
                 <li><p>Promoted to Second Lieutenant of Infantry during my two years of obligatory army service (2008-2010)</p></li>
             </ul>
         </section>
@@ -270,7 +261,7 @@
         <section class="cv-content-item cv-interests-section">
             <ul>
                 <li><p>Love playing volleyball, indoor (setter) and on the beach.</p></li>
-                <li><p>Fan of martial arts &mdash; Practised Karate Shotokan for 8 years.</p></li>
+                <li><p>Fan of martial arts &mdash; Practised Karate Shotokan for 8 years, and Wing Chun Kung Fu for a few months.</p></li>
         </section>
     </article> <!-- END OF HOBBIES -->
 
