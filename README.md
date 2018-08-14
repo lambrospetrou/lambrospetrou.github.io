@@ -3,6 +3,10 @@
 Hosted at https://www.lambrospetrou.com
 Static side generator: https://github.com/lambrospetrou/gomicroblog
 
+**Prerequisites**
+
+* `go get github.com/lambrospetrou/gomicroblog`
+
 Uses docker to build as alternative to installing the build tools locally.
 
 ```
