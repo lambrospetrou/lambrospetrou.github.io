@@ -1,9 +1,10 @@
 {
 	"static_paths": [
 		"static/s", 
-        "static/404.html",
-        "static/keybase.txt",
-        "static/cv"
+		"static/404.html",
+		"static/keybase.txt",
+		"static/cv",
+		"static/projects"
 	],
 	"templates": [
 		"partials/header.html",
