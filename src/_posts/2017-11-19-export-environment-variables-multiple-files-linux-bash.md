@@ -15,14 +15,14 @@ The solution is based on [this StackOverflow answer](https://stackoverflow.com/a
 
 Assuming the following `aws.environment` file:
 
-```bash
+```sh
 DISTRIBUTION_ID=xxxxxxxxx
 S3_BUCKET=www.example.com
 ```
 
 The following script will export the above key-value pairs as environment variables.
 
-```bash
+```sh
 #!/usr/bin/env bash
 
 source <(sed -E -n 's/[^#]+/export &/ p' aws.environment)
@@ -32,7 +32,7 @@ source <(sed -E -n 's/[^#]+/export &/ p' aws.environment)
 
 In addition, I didn't want to limit myself only to one file of environment variables because I would like to version control some of them in git. So, I wanted to scan and export variables from all the files in a given directory. This can be done using the following script.
 
-```bash
+```sh
 #!/usr/bin/env bash
 
 source <(find ./build-tool/env/ -type f -exec sed -E -n 's/[^#]+/export &/ p' {} +)

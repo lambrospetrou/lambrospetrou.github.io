@@ -15,7 +15,7 @@ The example application I will deploy has two Go web services running which just
 
 **Web service 2** handles any request under the `/web2` path, and **Web Service 1** handles everything else.
 
-```
+```sh
 > curl http://multiplegoservices-env.mzkfjw36fh.eu-west-1.elasticbeanstalk.com/web2
 Service 2 Path, "/web2"
 
@@ -86,7 +86,7 @@ server {
 
 All the paths used in the files above are based on the following artifact (the `.zip` file) I deploy to Elastic Beanstalk. Full listing of the contents below:
 
-```
+```sh
 > unzip -l build/bundle.zip 
 Archive:  build/bundle.zip
   Length      Date    Time    Name
@@ -251,7 +251,7 @@ In order to achieve the same result as with the **Go Platform** I use the follow
 
 Full listing of the deployment artifact contents is as follows:
 
-```
+```sh
 > unzip -l build/bundle.zip 
 Archive:  build/bundle.zip
   Length      Date    Time    Name

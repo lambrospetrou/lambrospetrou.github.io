@@ -19,14 +19,14 @@ In a nutshell, the following describes how to use this package to start the Linu
 
 First of all if you don't have an existing lambda project, just create one using the following commands:
 
-```bash
+```sh
 mkdir lambda-test && cd lambda-test
 npm init -y
 ```
 
 Now that you have a project, install the npm package:
 
-```bash
+```sh
 npm install aws-lambda-binary
 ```
 
@@ -48,7 +48,7 @@ exports.handler = function (event, context) {
 
 Finally, prepare the zip file to upload to AWS Lambda by running the command below:
 
-```bash
+```sh
 zip -r bundle.zip wrapper.js node_modules/
 ```
 
