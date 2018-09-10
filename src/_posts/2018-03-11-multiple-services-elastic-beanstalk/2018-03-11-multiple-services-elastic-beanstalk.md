@@ -220,7 +220,6 @@ In order to achieve the same result as with the **Go Platform** I use the follow
     }
   ]
 }
-
 ```
 
 **Notes**
