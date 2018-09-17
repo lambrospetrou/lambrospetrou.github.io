@@ -1,8 +1,11 @@
-.PHONY: build-css build start default prepare all docker-build docker-image deploy
+.PHONY: clean build-css build start default prepare all docker-build docker-image deploy
 
 default: docker-build
 
-all: prepare build
+all: clean prepare build
+
+clean:
+	rm -rf _site
 
 prepare:
 	cd build-tool/node-tools && npm install
@@ -10,16 +13,15 @@ prepare:
 build-css:
 	npm run --prefix build-tool/node-tools build-css
 
-build: build-css
-	gomicroblog -site src/ && mv src/_site ./
+build: clean build-css
+	gomicroblog -site src/ && mkdir -p _site && cp -rf src/_site/* _site/ && rm -rf src/_site
 
 start:
 	gohttp -d _site
 
 # Docker targets
 
-docker-build:
-	rm -rf _site
+docker-build: clean
 	docker run --rm -v `pwd`:/mnt/host -w /app lpwebsite-compiler bash -c "rm -rf src/ && cp -r /mnt/host/src ./ && make build && cp -r _site /mnt/host/_site && chown -R `id -u`:`id -u` /mnt/host/_site"
 
 docker-image:
