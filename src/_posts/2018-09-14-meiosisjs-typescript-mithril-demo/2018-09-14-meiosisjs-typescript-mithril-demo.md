@@ -204,7 +204,7 @@ const createApp = (update: UpdateStream): MeiosisApp => {
   return {
     model: () => ({counter: 0}),
     view: (model: AppModel) => m("div", [
-      m('p', {onclick: () => actions.inc(1)}, model.counter),
+      m('p', model.counter),
       m('button', {onclick: () => actions.inc(1)}, 'plus'),
       m('button', {onclick: () => actions.inc(-1)}, 'minus')
     ]),
