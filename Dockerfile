@@ -1,9 +1,8 @@
-FROM golang
+FROM node:8
 
-RUN git clone https://github.com/tj/n.git && cd n && make install \
-    && n lts
-
-RUN go get github.com/lambrospetrou/gomicroblog
+#RUN git clone https://github.com/tj/n.git && cd n && make install \
+#    && n lts
+#RUN go get github.com/lambrospetrou/gomicroblog
 
 ENV APP_DIR "/app"
 COPY ./ "$APP_DIR"
