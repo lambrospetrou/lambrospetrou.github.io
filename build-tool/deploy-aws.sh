@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-#set -x
+set -e
 
 DRYRUN="--dryrun"
 if [ "$1" == "--no-dryrun" ]; then
