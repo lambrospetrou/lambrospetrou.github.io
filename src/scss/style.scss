@@ -47,7 +47,7 @@ a, a:link {
     text-decoration: none;
     color: #920000;
     border: 0;
-    border-bottom: 1px dotted #888;
+    border-bottom: 1px dotted #555;
 }
 a:hover, a:active, a:focus {
     border-bottom: 1px solid #920000;
@@ -234,7 +234,7 @@ article {
     font-style: italic;
     font-size: 90%;
     font-family: 'Georgia', 'Times New Roman', serif;
-    color: #888;
+    color: #555;
 }
 #inner-header #nav-buttons {
     margin-top: 0px;
@@ -245,11 +245,11 @@ article {
     border-bottom: 1px dotted;
     font-size: 70%;
     text-transform: uppercase;
-    color: #aaa;
+    color: #555;
 
     &:hover, &:focus {
         border-bottom: 1px solid;
-        color: #888;
+        color: #555;
     }
 }
 
@@ -270,7 +270,7 @@ article {
     font-weight: normal;
     font-size: 75%;
     line-height: 100%;
-    color: #888;
+    color: #555;
     text-transform: uppercase;
 }
 
