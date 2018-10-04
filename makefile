@@ -14,7 +14,7 @@ build-css:
 	npm run --prefix build-tool/node-tools build-css
 
 build: clean build-css
-	gomicroblog -site src/ && mkdir -p _site && cp -rf src/_site/* _site/ && rm -rf src/_site
+	./build-tool/gomicroblog -site src/ && mkdir -p _site && cp -rf src/_site/* _site/ && rm -rf src/_site
 
 start:
 	gohttp -d _site
