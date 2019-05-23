@@ -244,7 +244,8 @@ article {
     margin-top: 0px;
 }
 #inner-header #nav-buttons a {
-    margin: 0 15px;
+    display: inline-block;
+    margin: 10px 15px 0;
     padding: 2px;
     border-bottom: 1px dotted;
     font-size: 70%;
