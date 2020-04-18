@@ -21,7 +21,7 @@ Not much to say... Customers come first, so the customer should be the sole focu
 
 I cannot emphasize this enough. **Keeping the bar high**, and always insisting on high standards is not only important for the short-term but it's absolutely crucial for the long-term.
 
-We face the temptation of doing something **quick-and-dirty** pretty much in every line of code we write or decision we make. Choosing this path enough times though means that the product will degrade over time, but even worse, we make the job of our future self or future colleagues super hard.
+We face the temptation of doing something quick-and-dirty pretty much in every line of code we write or decision we make. Choosing this path enough times though means that the product will degrade over time, but even worse, we make the job of our future self or future colleagues super hard.
 
 How many times did you want to _have two words_ with the author of some part of a system you worked on... :)
 
@@ -29,9 +29,9 @@ How many times did you want to _have two words_ with the author of some part of 
 
 >Leaders focus on the key inputs for their business and deliver them with the right quality and in a timely fashion. Despite setbacks, they rise to the occasion and never compromise.
 
-This is the culmination of all the Leadership Principles together in my opinion. You have to focus on the **key inputs for your business**, and deliver them with the **right quality**, and in a **timely** fashion, while at the same time **never compromising**.
+This is the culmination of all the Leadership Principles together in my opinion. You have to focus on the **key inputs for your business**, and deliver them with the **right quality**, and in a **timely fashion**, while at the same time **never compromising**.
 
-Yeah, I pretty much re-stated the same thing, but this is the gist of it. At the end of the day, you have to deliver something to your customers, but the difficulty is doing it so in a timely fashion without compromosing quality.
+Yeah, I pretty much re-stated the same thing, but this is the gist of it. At the end of the day, you have to deliver something to your customers, but the difficulty lies in doing it in a timely fashion without compromosing quality.
 
 ## Conclusion
 
@@ -39,7 +39,7 @@ Yeah, I pretty much re-stated the same thing, but this is the gist of it. At the
 
 Having said that, it's almost impossible for every individual to have the same definition and the same bar for all 14 of them, and this is something I have seen a lot over the past few years. Each person will interpret each LP in their own way, which is fair and expected. 
 
-The magic happens when a team does not lose focus on the Leadership Principles and always comes back and re-evaluates everything against them!
+The magic though happens when a team does not lose focus on the Leadership Principles and always comes back and re-evaluates everything against them!
 
 I am glad I had the chance to be an Amazonian!
 
