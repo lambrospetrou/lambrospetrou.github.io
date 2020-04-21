@@ -1,11 +1,12 @@
 # Personal website
 
 Hosted at https://www.lambrospetrou.com
-Static side generator: https://github.com/lambrospetrou/gomicroblog
+Static side generator: [Next.js](https://nextjs.org/)
 
 **Prerequisites**
 
-* `go get github.com/lambrospetrou/gomicroblog`
+* Node
+* Docker (optional)
 
 Uses docker to build as alternative to installing the build tools locally.
 

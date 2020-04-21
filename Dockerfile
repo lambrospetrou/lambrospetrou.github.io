@@ -1,4 +1,4 @@
-FROM node:8
+FROM node:12
 
 #RUN git clone https://github.com/tj/n.git && cd n && make install \
 #    && n lts

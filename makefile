@@ -5,17 +5,15 @@ default: docker-build
 all: clean prepare build
 
 clean:
-	rm -rf _site
+	rm -rf _site .next
 
 prepare:
-	cd build-tool/node-tools && npm install
+	npm install
 
-build-css:
-	npm run --prefix build-tool/node-tools build-css
+build: clean
+	npm run release
 
-build: clean build-css
-	./build-tool/gomicroblog -site src/ && mkdir -p _site && cp -rf src/_site/* _site/ && rm -rf src/_site
-
+# Get `gohttp` from https://gist.github.com/lambrospetrou/7b582954357778a42cc6e98477d32910
 start:
 	gohttp -d _site
 
