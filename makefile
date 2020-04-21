@@ -13,6 +13,7 @@ prepare:
 build: clean
 	npm run release
 
+# Get `gohttp` from https://gist.github.com/lambrospetrou/7b582954357778a42cc6e98477d32910
 start:
 	gohttp -d _site
 
