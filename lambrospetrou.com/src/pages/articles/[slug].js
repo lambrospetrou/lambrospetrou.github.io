@@ -24,10 +24,13 @@ export default function Post({ postData }) {
         </header>
 
         <section className="post-body" dangerouslySetInnerHTML={{ __html: contentHtml }}/>
-        
+
         <br/>
         <section>
-        <a className="twitter-share-button" data-via="lambrospetrou" href="https://twitter.com/intent/tweet">Tweet</a>
+          <a className="twitter-share-button" data-via="lambrospetrou" href="https://twitter.com/intent/tweet">Tweet</a>
+          {/* The following will generate a warning like `index.js:1 Warning: Extra attributes from the server` 
+              because once the script loads it adds the attribute and then when React hydration kicks in
+              does not generate the same DOM. This is fine since we use `export` to static files.*/}
           <script type="text/javascript" dangerouslySetInnerHTML={{ __html: `
             window.twttr = (function(d, s, id) {
             var js, fjs = d.getElementsByTagName(s)[0],
