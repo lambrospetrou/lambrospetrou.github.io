@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "export": "next build && next export"
+    "release": "next build && next export"
   },
   "dependencies": {
     "next": "9.3.5",
@@ -14,7 +14,9 @@
     "react-dom": "16.13.1"
   },
   "devDependencies": {
+    "date-fns": "^2.12.0",
     "gray-matter": "^4.0.2",
+    "highlight.js": "^9.18.1",
     "marked": "^1.0.0",
     "sass": "^1.26.3"
   }

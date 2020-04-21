@@ -1,24 +1,34 @@
-import {getAllPostSlugs, getPostData} from "../../lib/posts-store";
+import Head from 'next/head'
 import {Layout} from "../../components/layout";
+import {getAllPostSlugs, getPostData} from "../../lib/posts-store";
+import {dateToLongDisplay} from "../../components/display-formatters";
 
 export default function Post({ postData }) {
   const {title, description, slug, date, contentHtml} = postData;
 
   return (
     <Layout>
+      <Head>
+        <link rel="canonical" href={`https://www.lambrospetrou.com/articles/${slug}/`} />
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
+        <meta name="description" content={description} />
+      </Head>
+
       <article className="post">
         <header>
           <h1 className="post-title">{title}</h1>
           <div className="post-meta">
-            <span>{date}</span>
+            <span>{dateToLongDisplay(date)}</span>
           </div>
-        </header> 
+        </header>
 
         <section className="post-body" dangerouslySetInnerHTML={{ __html: contentHtml }}/>
         
         <br/>
         <section>
-            <script type="text/javascript" jsx={`
+        <a className="twitter-share-button" data-via="lambrospetrou" href="https://twitter.com/intent/tweet">Tweet</a>
+          <script type="text/javascript" dangerouslySetInnerHTML={{ __html: `
             window.twttr = (function(d, s, id) {
             var js, fjs = d.getElementsByTagName(s)[0],
               t = window.twttr || {};
@@ -35,8 +45,7 @@ export default function Post({ postData }) {
 
             return t;
           }(document, "script", "twitter-wjs"));
-          `}/>
-          <a className="twitter-share-button" data-via="lambrospetrou" href="https://twitter.com/intent/tweet">Tweet</a>
+          `}}/>
         </section>
       </article>
     </Layout>

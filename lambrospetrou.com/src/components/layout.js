@@ -1,6 +1,10 @@
+import Head from 'next/head'
+import {CodeHighlightScripts} from "./code-highlight"
+
 export const Layout = ({children}) => {
   return (
     <>
+      <HeadAdditions/>
       <div id="outer-wrapper">
         <Header/>
         <div id="content-wrapper" className="outer-section">
@@ -10,9 +14,64 @@ export const Layout = ({children}) => {
         </div>
         <Footer/>
       </div>
-      <BodyScripts />
+      <CodeHighlightScripts/>
     </>
   );
+};
+
+const HeadAdditions = ({}) => {
+  return (
+    <Head>
+      <meta charSet="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1"/>
+
+      <script dangerouslySetInnerHTML={{ __html: `
+      var WebFontConfig = {
+        google: {
+            families: [
+                /*'Open Sans:300,400,400italic,700,800:greek,latin', */
+                'Source Sans Pro:300,400,400italic,700,900:greek,latin',
+                'Source Code Pro:400',
+            ]
+        }
+      };
+      (function() {
+          var wf = document.createElement('script');
+          wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+          '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+          wf.type = 'text/javascript';
+          wf.async = 'true';
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(wf, s);
+      })();
+      `}}/>
+
+      <noscript>
+        <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,400italic,700,900|Source+Code+Pro|Open+Sans:400,300,400italic,700,800&subset=latin,greek' rel='stylesheet' type='text/css'/>
+      </noscript>
+
+      <meta name="keywords" content="Lambros,Petrou,amazon,codeguru,profiler,facebook,portfolio,programming,developer,coder,software engineer,ucy,oxford" />
+      <meta name="author" content="Lambros Petrou" />
+      <meta name="owner" content="Lambros Petrou" />
+      <meta name="copyright" content={`${new Date().getFullYear()} Lambros Petrou`} />
+      <meta name="robots" content="all" />
+
+      <title>Home | Lambros Petrou</title>
+
+      <link rel="canonical" href="https://www.lambrospetrou.com/" />
+      <meta property="og:title" content="Home | Lambros Petrou" />
+      <meta property="og:description" content="My personal blog where I publish my thoughts."/>
+      <meta name="description" content="My personal blog where I publish my thoughts."/>
+
+      <meta property="og:type" content="article" />
+      <meta property="og:locale" content="en_GB" />
+      <meta property="article:author" content="https://www.lambrospetrou.com" />
+      <meta property="article:publisher" content="https://www.lambrospetrou.com" />
+      <meta property="og:site_name" content="Lambros Petrou blog"/>
+
+      <link id="page_favicon" href="data:image/x-icon;base64,R0lGODlhEAAQAPEAAAAAAJYeHgAAAAAAACH5BAkeAAIAIf8LTkVUU0NBUEUyLjADAQAAACwAAAAAEAAQAAAC55QkIiIiIoQQQgghhBBCCCEIgiAIQhAEgiAIghAEgSAIgSAEgSAIQhAQCAICQUAgEAQCAkEgIBAIAgJBICAQCAICQUAgEAQCAoEgEBAIBIGAQCAIBAQCgUAQCAgEgYBAEBAgICAgICAgICAgEBAgICAgICAgICAgICAgIBAQICAgICAgICAgICAgICAQECAgICAgICAgICAgICAgEBAgICAgICAgICAgICAgIBAQICAgICAgICAgICAgICAQECAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgQIAAAQIKAAAh+QQJHgACACwAAAAAEAAQAAAC55QkIiIiIoQQQgghhBBCCCEIgiAIgiAIgiAIgiAIgiAIQhAEgiAIghAIBAQCQUAgCAQEAoEgEBAIAgJBQCAQBAICQSAgEAgCAkEgIBAIAgJBQCAQBAICgSAQEAgEgYBAIBAQICAgICAQECAgEBAgIBAQICAgICAgICAgIBAQICAgICAgICAgICAgICAQECAgICAgICAgICAgICAgEBAgICAgICAgICAgICAgIBAQICAgICAgICAgICAgICAQECAgICAgICAgICAgICAgEBAgICAgICAgICAgICAgICAgICAgQIAAAQIKAAAh+QQJHgACACwAAAAAEAAQAAAC55QkIiIiIoQQQgghhBBCCCEIgiAIQhAEgiAIghAEgSAIgSAEgSAIQhAQCAICQUAgEAQCAkEgIBAIAgJBICAQCAICQUAgEAQCAoEgEBAIBIGAQCAIBAQCgUAQCAgEgYBAEBAgICAgICAgICAgEBAgICAgICAgICAgICAgIBAQICAgICAgICAgICAgICAQECAgICAgICAgICAgICAgEBAgICAgICAgICAgICAgIBAQICAgICAgICAgICAgICAQECAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgQIAAAQIKAAAh+QQJHgACACwAAAAAEAAQAAAC55QkIiIiIoQQQogQghBCCBEEgSAIgSAEgSAIQhAIQiAIgSAIQSAIQSAQCAICQSAgEAgCAkFAIBAEAgKBIBAQCASBgEAgCAQEAoFAEAgIBIGAQBAICAQCgUAgEAgEgYBAICAgICAgICAgICAgEBAgICAgICAgICAgICAgIBAQICAgICAgICAgICAgICAQECAgICAgICAgICAgICAgEBAgICAgICAgICAgICAgIBAQICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgQIAAAQIKAAAh+QQJHgACACwAAAAAEAAQAAAC55QkIiIiIoQQQgghhBBCCCEIgiAIQhAEgiAIghAEgSAIgSAEgSAIQhAQCAICQUAgEAQCAkEgIBAIAgJBICAQCAICQUAgEAQCAoEgEBAIBIGAQCAIBAQCgUAQCAgEgYBAEBAgICAgICAgICAgEBAgICAgICAgICAgICAgIBAQICAgICAgICAgICAgICAQECAgICAgICAgICAgICAgEBAgICAgICAgICAgICAgIBAQICAgICAgICAgICAgICAQECAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgQIAAAQIKAAA7" rel="icon" type="image/x-icon"/>
+    </Head>
+  )
 };
 
 const Header = ({}) => {
@@ -51,16 +110,4 @@ const Footer = ({}) => {
   //     </div>
   //   </footer>
   // )
-};
-
-const BodyScripts = ({}) => {
-  return (
-    <>
-      <link href="/s/js/highlight-styles/solarized-light.css" rel="stylesheet" type="text/css"/>
-      <script type="text/javascript" src="/s/js/highlight.pack.js"/>
-      {/* If we want this to work on both server and client rendering we need to
-          make it to use useEffect and run after rendering! */}
-      <script dangerouslySetInnerHTML={{ __html: `hljs.initHighlightingOnLoad();`}}/>
-    </>
-  );
 };

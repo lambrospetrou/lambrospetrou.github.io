@@ -1,14 +1,7 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
-import marked from "marked";
-
-marked.setOptions({
-  gfm: true,
-  smartLists: true,
-  smartypants: true,
-  xhtml: true
-});
+import { toHtml } from "./markdown";
 
 function _readAllPosts(postsDirectory = path.join(process.cwd(), '_posts')) {
   const posts = [];
@@ -19,8 +12,8 @@ function _readAllPosts(postsDirectory = path.join(process.cwd(), '_posts')) {
       return;
     }
 
-    // The substring-11 is to strip out the date part of the post names!
-    const slug = filename.replace(/\.md$/, "").substring(11);
+    const dateSlug = filename.substring(0, 10);
+    const slug = filename.replace(/\.md$/, "").substring(dateSlug.length + 1);
 
     const fullPath = path.join(postsDirectory, filename);
     const fileContents = fs.readFileSync(fullPath, 'utf8');
@@ -34,7 +27,9 @@ function _readAllPosts(postsDirectory = path.join(process.cwd(), '_posts')) {
       slug,
       filename,
       content,
-      contentHtml: marked(content)
+      contentHtml: toHtml(content),
+      dateSlug,
+      date: Date.parse(dateSlug)
     });
   });
 
