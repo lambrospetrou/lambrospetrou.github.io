@@ -1,10 +1,14 @@
 import { readAllPosts } from "../lib/posts-store";
+import Footer from "../components/footer";
 
 export default function ArticlesIndex({posts}) {
   return (
-    <ul class="index-posts">
-      {posts.map(p => <PostEntry key={p.slug} post={p}/>)}
-    </ul>
+    <>
+      <ul class="index-posts">
+        {posts.map(p => <PostEntry key={p.slug} post={p}/>)}
+      </ul>
+      <Footer />
+    </>
   );
 };
 
