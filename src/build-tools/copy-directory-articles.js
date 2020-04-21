@@ -19,7 +19,7 @@ const fse = require("fs-extra");
 const path = require("path");
 
 const postsDirectory = path.join(process.cwd(), "src", '_posts');
-const nextOutputDirectory = path.join(process.cwd(), 'out');
+const nextOutputDirectory = path.join(process.cwd(), '_site');
 const postsOutputDirectory = path.join(nextOutputDirectory, "articles");
 
 console.log(`Copying directory articles to ${nextOutputDirectory}`);

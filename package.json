@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "release": "next build && next export",
+    "release": "next build && next export -o _site",
     "postrelease": "npm run copy-directory-articles",
     "copy-directory-articles": "node src/build-tools/copy-directory-articles.js"
   },
