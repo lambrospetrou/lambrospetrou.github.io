@@ -1,0 +1,55 @@
+==================================================================
+https://keybase.io/lambrospetrou
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://www.lambrospetrou.com
+  * I am lambrospetrou (https://keybase.io/lambrospetrou) on keybase.
+  * I have a public key ASAEbUDrWOOF8uJRJ8KryBorw3PBqRKwXttx_jv_Hsb5cgo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120046d40eb58e385f2e25127c2abc81a2bc373c1a912b05edb71fe3bff1ec6f9720a",
+      "host": "keybase.io",
+      "kid": "0120046d40eb58e385f2e25127c2abc81a2bc373c1a912b05edb71fe3bff1ec6f9720a",
+      "uid": "f8bc3a4c10b5e0c8e5e5b7ec6e9b9319",
+      "username": "lambrospetrou"
+    },
+    "merkle_root": {
+      "ctime": 1507379379,
+      "hash": "e529145c132edf79cc93bc04e3d54665630113ecd72b1e330bbf0a85c7fa86872b7fcb404cc53e92108d8e33217122162b123c612f4b1446d54d16840a563f5a",
+      "hash_meta": "52b4510906f8ea55ace50178d6f16d22d0fdfd2c7baac4947dcfeba1260cbbe1",
+      "seqno": 1533956
+    },
+    "service": {
+      "hostname": "www.lambrospetrou.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "1.0.33"
+  },
+  "ctime": 1507379431,
+  "expire_in": 504576000,
+  "prev": "ec2797a9a8ed94319337deeb7b52fe5c601259fc093fc9069924a9109fc6148f",
+  "seqno": 4,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgBG1A61jjhfLiUSfCq8gaK8NzwakSsF7bcf47/x7G+XIKp3BheWxvYWTFA1J7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwMDQ2ZDQwZWI1OGUzODVmMmUyNTEyN2MyYWJjODFhMmJjMzczYzFhOTEyYjA1ZWRiNzFmZTNiZmYxZWM2Zjk3MjBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwMDQ2ZDQwZWI1OGUzODVmMmUyNTEyN2MyYWJjODFhMmJjMzczYzFhOTEyYjA1ZWRiNzFmZTNiZmYxZWM2Zjk3MjBhIiwidWlkIjoiZjhiYzNhNGMxMGI1ZTBjOGU1ZTViN2VjNmU5YjkzMTkiLCJ1c2VybmFtZSI6ImxhbWJyb3NwZXRyb3UifSwibWVya2xlX3Jvb3QiOnsiY3RpbWUiOjE1MDczNzkzNzksImhhc2giOiJlNTI5MTQ1YzEzMmVkZjc5Y2M5M2JjMDRlM2Q1NDY2NTYzMDExM2VjZDcyYjFlMzMwYmJmMGE4NWM3ZmE4Njg3MmI3ZmNiNDA0Y2M1M2U5MjEwOGQ4ZTMzMjE3MTIyMTYyYjEyM2M2MTJmNGIxNDQ2ZDU0ZDE2ODQwYTU2M2Y1YSIsImhhc2hfbWV0YSI6IjUyYjQ1MTA5MDZmOGVhNTVhY2U1MDE3OGQ2ZjE2ZDIyZDBmZGZkMmM3YmFhYzQ5NDdkY2ZlYmExMjYwY2JiZTEiLCJzZXFubyI6MTUzMzk1Nn0sInNlcnZpY2UiOnsiaG9zdG5hbWUiOiJ3d3cubGFtYnJvc3BldHJvdS5jb20iLCJwcm90b2NvbCI6Imh0dHBzOiJ9LCJ0eXBlIjoid2ViX3NlcnZpY2VfYmluZGluZyIsInZlcnNpb24iOjF9LCJjbGllbnQiOnsibmFtZSI6ImtleWJhc2UuaW8gZ28gY2xpZW50IiwidmVyc2lvbiI6IjEuMC4zMyJ9LCJjdGltZSI6MTUwNzM3OTQzMSwiZXhwaXJlX2luIjo1MDQ1NzYwMDAsInByZXYiOiJlYzI3OTdhOWE4ZWQ5NDMxOTMzN2RlZWI3YjUyZmU1YzYwMTI1OWZjMDkzZmM5MDY5OTI0YTkxMDlmYzYxNDhmIiwic2Vxbm8iOjQsInRhZyI6InNpZ25hdHVyZSJ9o3NpZ8RA0SVt9JCxDIZz7hrZHXANaphPN4J/dx66mSbPMKIK0+cxNAODdkur8r7zcpu6cLKuM5MtTK56opY+8rpwseipA6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIGyrtUqwwRX9EFuhLuKeCXmPwHu5PLnznA3vx2Hjvlc4o3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/lambrospetrou
+
+==================================================================

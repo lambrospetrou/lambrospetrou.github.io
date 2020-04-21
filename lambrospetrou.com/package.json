@@ -1,0 +1,24 @@
+{
+  "name": "lambrospetrou.com",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "export": "next build && next export"
+  },
+  "dependencies": {
+    "next": "9.3.5",
+    "react": "16.13.1",
+    "react-dom": "16.13.1"
+  },
+  "devDependencies": {
+    "dompurify": "^2.0.8",
+    "gray-matter": "^4.0.2",
+    "marked": "^1.0.0",
+    "remark": "^12.0.0",
+    "remark-html": "^11.0.1",
+    "sass": "^1.26.3"
+  }
+}
