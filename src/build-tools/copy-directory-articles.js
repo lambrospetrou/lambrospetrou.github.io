@@ -18,7 +18,7 @@ const fs = require("fs");
 const fse = require("fs-extra");
 const path = require("path");
 
-const postsDirectory = path.join(process.cwd(), '_posts');
+const postsDirectory = path.join(process.cwd(), "src", '_posts');
 const nextOutputDirectory = path.join(process.cwd(), 'out');
 const postsOutputDirectory = path.join(nextOutputDirectory, "articles");
 

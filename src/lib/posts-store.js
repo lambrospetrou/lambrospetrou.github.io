@@ -3,7 +3,7 @@ import path from "path";
 import matter from "gray-matter";
 import { toHtml } from "./markdown";
 
-function _readAllPosts(postsDirectory = path.join(process.cwd(), '_posts')) {
+function _readAllPosts(postsDirectory = path.join(process.cwd(), "src", '_posts')) {
   const posts = [];
 
   fs.readdirSync(postsDirectory).forEach(filename => {
