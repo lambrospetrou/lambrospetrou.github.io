@@ -8,12 +8,13 @@ function _readAllPosts(postsDirectory = path.join(process.cwd(), '_posts')) {
 
   fs.readdirSync(postsDirectory).forEach(filename => {
     const isSingleFile = filename.endsWith(".md");
-    if (!isSingleFile) return;
 
     const dateSlug = filename.substring(0, 10);
     const slug = filename.replace(/\.md$/, "").substring(dateSlug.length + 1);
 
-    const fullPath = path.join(postsDirectory, filename);
+    const fullPath = isSingleFile 
+      ? path.join(postsDirectory, filename)
+      : path.join(postsDirectory, filename, `${filename}.md`);
     const fileContents = fs.readFileSync(fullPath, 'utf8');
 
     // Use gray-matter to parse the post metadata section
