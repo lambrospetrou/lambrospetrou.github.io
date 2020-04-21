@@ -3,5 +3,4 @@ ID = "lp11"
 
 [build]
   publish = "_site/"
-  command = "make prepare && make build"
-
+  command = "make"

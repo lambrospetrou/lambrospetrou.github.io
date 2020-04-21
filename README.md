@@ -18,4 +18,7 @@ make docker-build # This to compile the app and generate the `_site`
 # Uses local tools
 make prepare # Install dependencies
 make build   # Compile the app
+
+# Run everything needed to generate the website.
+make
 ```

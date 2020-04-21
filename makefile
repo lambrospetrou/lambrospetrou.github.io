@@ -1,6 +1,6 @@
 .PHONY: clean build-css build start default prepare all docker-build docker-image deploy
 
-default: docker-build
+default: all
 
 all: clean prepare build
 
