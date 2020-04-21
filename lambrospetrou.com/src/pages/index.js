@@ -1,14 +1,13 @@
 import { readAllPosts } from "../lib/posts-store";
-import Footer from "../components/footer";
+import {Layout} from "../components/layout";
 
 export default function ArticlesIndex({posts}) {
   return (
-    <>
+    <Layout>
       <ul className="index-posts">
         {posts.map(p => <PostEntry key={p.slug} post={p}/>)}
       </ul>
-      <Footer />
-    </>
+    </Layout>
   );
 };
 

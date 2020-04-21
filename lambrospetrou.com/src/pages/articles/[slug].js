@@ -1,11 +1,11 @@
 import {getAllPostSlugs, getPostData} from "../../lib/posts-store";
-import Footer from "../../components/footer";
+import {Layout} from "../../components/layout";
 
 export default function Post({ postData }) {
   const {title, description, slug, date, contentHtml} = postData;
 
   return (
-    <>
+    <Layout>
       <article className="post">
         <header>
           <h1 className="post-title">{title}</h1>
@@ -18,7 +18,7 @@ export default function Post({ postData }) {
         
         <br/>
         <section>
-            <script type="text/javascript" dangerouslySetInnerHTML={{ __html: `
+            <script type="text/javascript" jsx={`
             window.twttr = (function(d, s, id) {
             var js, fjs = d.getElementsByTagName(s)[0],
               t = window.twttr || {};
@@ -35,12 +35,11 @@ export default function Post({ postData }) {
 
             return t;
           }(document, "script", "twitter-wjs"));
-          `}}/>
+          `}/>
           <a className="twitter-share-button" data-via="lambrospetrou" href="https://twitter.com/intent/tweet">Tweet</a>
         </section>
       </article>
-      <Footer />
-    </>
+    </Layout>
   )
 }
 
