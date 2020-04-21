@@ -56,13 +56,6 @@ const HeadAdditions = ({}) => {
       <meta name="copyright" content={`${new Date().getFullYear()} Lambros Petrou`} />
       <meta name="robots" content="all" />
 
-      <title>Home | Lambros Petrou</title>
-
-      <link rel="canonical" href="https://www.lambrospetrou.com/" />
-      <meta property="og:title" content="Home | Lambros Petrou" />
-      <meta property="og:description" content="My personal blog where I publish my thoughts."/>
-      <meta name="description" content="My personal blog where I publish my thoughts."/>
-
       <meta property="og:type" content="article" />
       <meta property="og:locale" content="en_GB" />
       <meta property="article:author" content="https://www.lambrospetrou.com" />

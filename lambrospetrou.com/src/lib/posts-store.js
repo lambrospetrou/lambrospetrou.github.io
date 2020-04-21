@@ -7,10 +7,8 @@ function _readAllPosts(postsDirectory = path.join(process.cwd(), '_posts')) {
   const posts = [];
 
   fs.readdirSync(postsDirectory).forEach(filename => {
-    // FIXME Handle directories as well!
-    if (!filename.endsWith(".md")) {
-      return;
-    }
+    const isSingleFile = filename.endsWith(".md");
+    if (!isSingleFile) return;
 
     const dateSlug = filename.substring(0, 10);
     const slug = filename.replace(/\.md$/, "").substring(dateSlug.length + 1);
@@ -39,7 +37,7 @@ function _readAllPosts(postsDirectory = path.join(process.cwd(), '_posts')) {
 export const readAllPosts = (() => {
   let posts = null;
   return () => {
-    if (!posts) posts = _readAllPosts();
+    if (null === posts) posts = _readAllPosts();
     return posts;
   };
 })();
