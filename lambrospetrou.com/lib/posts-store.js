@@ -1,7 +1,7 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
-import marked from "marked"
+import marked from "marked";
 
 marked.setOptions({
   gfm: true,
@@ -10,58 +10,49 @@ marked.setOptions({
   xhtml: true
 });
 
-const postsDirectory = path.join(process.cwd(), '_posts');
+function _readAllPosts(postsDirectory = path.join(process.cwd(), '_posts')) {
+  const posts = [];
 
-const slugToFilename = (() => {
-  let m = null;
-  return slug => {
-    if (!m) {
-      m = getAllPostsSlugToFilename();
+  fs.readdirSync(postsDirectory).forEach(filename => {
+    // FIXME Handle directories as well!
+    if (!filename.endsWith(".md")) {
+      return;
     }
-    if (!m[slug]) {
-      throw new Error(`Mapping does not contain requested 'slug': ${slug}`);
-    }
-    return m[slug];
+
+    // The substring-11 is to strip out the date part of the post names!
+    const slug = filename.replace(/\.md$/, "").substring(11);
+
+    const fullPath = path.join(postsDirectory, filename);
+    const fileContents = fs.readFileSync(fullPath, 'utf8');
+
+    // Use gray-matter to parse the post metadata section
+    const {data, content} = matter(fileContents);
+
+    // Combine the data with the slug and the markdown parsed to HTML.
+    posts.push({
+      ...data,
+      slug,
+      filename,
+      content,
+      contentHtml: marked(content)
+    });
+  });
+
+  return posts;
+}
+
+export const readAllPosts = (() => {
+  let posts = null;
+  return () => {
+    if (!posts) posts = _readAllPosts();
+    return posts;
   };
 })();
 
-function getAllPostsSlugToFilename() {
-  const fileNames = fs.readdirSync(postsDirectory);
-  
-  return fileNames.filter(f => f.endsWith(".md")).map(fileName => {
-    console.log(fileName)
-    // TODO Take care of the directories!!!
-
-    const slug = fileName.replace(/\.md$/, "").substring(11);
-
-    return {
-      [slug]: fileName
-    };
-  }).reduce((all, entry) => ({...all, ...entry}), {});
-}
-
 export function getAllPostSlugs() {
-  const mapping = getAllPostsSlugToFilename();
-  return Object.keys(mapping);
+  return readAllPosts().map(post => post.slug);
 }
 
-export async function getPostData(slug) {
-  const filename = slugToFilename(slug);
-  const fullPath = path.join(postsDirectory, filename)
-  const fileContents = fs.readFileSync(fullPath, 'utf8')
-
-  // Use gray-matter to parse the post metadata section
-  const {data, content} = matter(fileContents)
-
-  // Combine the data with the id
-  return {
-    ...data,
-    slug,
-    content,
-    contentHtml: await markdownToHtml(content)
-  };
-}
-
-async function markdownToHtml(markdown) {
-  return marked(markdown);
+export function getPostData(slug) {
+  return readAllPosts().find(p => p.slug === slug);
 }
