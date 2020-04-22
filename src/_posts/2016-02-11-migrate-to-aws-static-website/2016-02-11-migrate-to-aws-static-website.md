@@ -99,7 +99,7 @@ In this section I will describe how we can make all requests to **wwww.lambrospe
 
 1. Upload your website to the non-www bucket you created first, or just create an **index.html** file with the following snippet:
 
-    ```Html
+    ```html
     <html>
         <head><title>Awesome website on AWS S3</title></head>
         <body>

@@ -17,7 +17,7 @@ I found out that this method is also used [inside NASA when transferring files](
 
 In order to **encrypt and password-protect a file** run the following command:
 
-```sh
+```bash
 gpg -c --cipher-algo AES256 private-file.txt
 ```
 
@@ -27,7 +27,7 @@ The above command will ask you for the passphrase to use, and then will create a
 
 In order to **decrypt the file** run the following command:
 
-```sh
+```bash
 gpg private-file.txt.gpg
 ```
 
