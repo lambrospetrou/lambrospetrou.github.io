@@ -1,19 +1,12 @@
-import { useEffect } from "react";
-import { initHighlightingOnLoad } from "highlight.js";
-
 export const CodeHighlightScripts = ({}) => {
-  // This replaces the explicit script in normal static site generators! (see below)
-  useEffect(() => {
-    initHighlightingOnLoad();
-  }, []);
-
+  // I prefer using the following scripts instead of including them in this bundle
+  // to avoid delaying them, since the main bundle takes more time to fetch!
+  // Also, since we use the `autoloader` we cannot host them since it uses relative
+  // URLs to load the detected languages, otherwise I would need to get all of the languages I need.
   return (
     <>
-      {/* The CSS is now imported in `_app.js` directly */}
-      {/* <link href="/s/js/highlight-styles/solarized-light.css" rel="stylesheet" type="text/css"/> */}
-      {/* Uncomment the following for a normal static side generator! Now we use `highlightjs` straight from `marked()`. */}
-      {/* <script type="text/javascript" src="/s/js/highlight.pack.js"/> */}
-      {/* <script dangerouslySetInnerHTML={{ __html: `hljs.initHighlightingOnLoad();`}}/> */}
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/components/prism-core.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/autoloader/prism-autoloader.min.js"></script>
     </>
   );
 };

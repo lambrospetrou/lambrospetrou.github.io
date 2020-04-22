@@ -122,7 +122,7 @@ ol ol {
 ol ol ol {
     list-style-type: lower-greek;
 }
-code {
+code, code[class*=language-] {
     display: inline-block;
     white-space: pre-wrap;
     word-wrap: normal;
@@ -133,20 +133,25 @@ code {
     line-height: 150%;
     font-family: 'Source Code Pro', Menlo, Consolas, 'Courier New', monospace;
     color: #515151;
+
     border-radius: 0.3em;
 }
-pre {
+pre, pre[class*=language-] {
     overflow-x: auto;
+    margin: 0.6em 0;
+    padding: 0;
 }
-pre code {
+pre > code,
+pre > code[class*=language-], 
+pre[class*=language-] > code[class*=language-] {
     overflow: auto;
     white-space: pre;
     word-wrap: normal;
     overflow-wrap: normal;
-    margin: 0.6em 0;
     display: block;
-    padding: 0.5em;
-    padding-left: 1em;
+    padding: 1em;
+    border-left: 2px solid #920000;
+    box-shadow: -1px 0 0 0 #920000, 0 0 0 1px #dfdfdf;
 }
 blockquote {
     border-top: 1px solid #ccc;
@@ -293,8 +298,4 @@ article {
     &:focus {
         border-bottom: 1px solid $font-color-red;
     }
-}
-
-.hljs {
-    padding: 1em;
 }
