@@ -10,8 +10,8 @@ export default function Post({ postData }) {
     <Layout>
       <Head>
         <link rel="canonical" href={`https://www.lambrospetrou.com/articles/${slug}/`} />
-        <title>{title}</title>
-        <meta property="og:title" content={title} />
+        <title>{title} | Lambros Petrou</title>
+        <meta property="og:title" content={`${title} | Lambros Petrou`} />
         <meta property="og:description" content={description} />
         <meta name="description" content={description} />
       </Head>
