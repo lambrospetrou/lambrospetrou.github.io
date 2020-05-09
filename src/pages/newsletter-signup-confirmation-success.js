@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import {Layout} from "../components/layout";
+import {FavouriteArticlesList} from "../components/favourite-articles";
 
 export default function NewsletterSignupSuccess({}) {
   return (
@@ -11,8 +12,9 @@ export default function NewsletterSignupSuccess({}) {
         <meta property="og:description" content="My personal blog where I publish my thoughts."/>
         <meta name="description" content="My personal blog where I publish my thoughts."/>
       </Head>
-      <h1>Thank you for confirming your subscription 📰</h1>
+      <h1>Thank you for subscribing 🏆</h1>
       <p>Don't hesitate contacting me regarding my content, or asking for help in your own adventure.</p>
+      <FavouriteArticlesList/>
     </Layout>
   );
 };

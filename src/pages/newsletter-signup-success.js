@@ -12,7 +12,7 @@ export default function NewsletterSignupSuccess({}) {
         <meta name="description" content="My personal blog where I publish my thoughts."/>
       </Head>
       <h1>Thank you for subscribing ⏳</h1>
-      <p>Now please check your email for the signup confirmation.</p>
+      <p>Please check your inbox for the signup confirmation email from <code>lambros@lambrospetrou.com</code>. You won't receive any newsletter updates unless you verify your email address.</p>
     </Layout>
   );
 };
