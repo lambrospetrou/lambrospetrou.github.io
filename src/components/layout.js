@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import {CodeHighlightScripts} from "./code-highlight"
+import {InlineSignup} from "./newsletter-signup";
 
 export const Layout = ({children}) => {
   return (
@@ -80,7 +81,8 @@ const Header = ({}) => {
         <div id="header-name">Lambros Petrou</div>
         <div id="header-quote">"We are what we repeatedly do. Excellence then, is not an act, but a habit!"&#x2009;&mdash;&#x2009;Aristotle</div>
         <div id="nav-buttons">
-          <a href="/cv/" target="_blank" title="Lambros Petrou Resume - CV" rel="noopener">CV</a>
+          <a href="/" title="All Articles - Lambros Petrou">Articles</a>
+          <a href="/cv/" title="Lambros Petrou Resume - CV" rel="noopener" target="_blank">CV</a>
           <a href="https://www.linkedin.com/in/lambrospetrou/" title="Lambros Petrou on LinkedIn " target="_blank" rel="noopener">LinkedIn</a>
           <a href="https://github.com/lambrospetrou" title="Public code" target="_blank" rel="noopener">Github</a>
           <a href="https://twitter.com/lambrospetrou" title="Tweets" target="_blank" rel="noopener">Tweets</a>
@@ -91,17 +93,17 @@ const Header = ({}) => {
 };
 
 const Footer = ({}) => {
-  return null;
-  // return (
-  //   <footer id="footer-wrapper" className="outer-section">
-  //     <div id="inner-footer" className="inner-section clearfix">
-  //       <div id="footer-copyright">
-  //         <p>&copy; {new Date().getFullYear()} Lambros Petrou</p>
-  //       </div>
-  //       <div id="footer-links">
-  //         <p><a href="https://lambrospetrou.com" title="Lambros Petrou homepage">lambrospetrou.com</a></p>
-  //       </div>
-  //     </div>
-  //   </footer>
-  // )
+  return (
+    <footer id="footer-wrapper" className="outer-section">
+      <div id="inner-footer" className="inner-section clearfix">
+        <InlineSignup/>
+        {/* <div id="footer-copyright">
+          <p>&copy; {new Date().getFullYear()} Lambros Petrou</p>
+        </div>
+        <div id="footer-links">
+          <p><a href="https://lambrospetrou.com" title="Lambros Petrou homepage">lambrospetrou.com</a></p>
+        </div> */}
+      </div>
+    </footer>
+  )
 };
