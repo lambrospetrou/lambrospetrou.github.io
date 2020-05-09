@@ -72,6 +72,9 @@ const HeadAdditions = ({}) => {
 const Header = ({}) => {
   return (
     <header id="header-wrapper" className="outer-section">
+      <div className="header-signup-strip">
+        <small><a href="/newsletter">Subscribe to my newsletter</a> and be the first one to read new articles.</small>
+      </div>
       <div id="inner-header" className="inner-section">
         <div id="header-logo">
           <a href="/" title="Aries Ram - Click to vew all posts">

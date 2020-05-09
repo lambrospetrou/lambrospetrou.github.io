@@ -14,7 +14,7 @@ export default function NewsletterSignupSuccess({}) {
         <meta property="og:description" content={desc}/>
         <meta name="description" content={desc}/>
       </Head>
-      <h1>Be the first to read my articles 📰</h1>
+      <h1>Be the first one to read my articles 📰</h1>
       <FavouriteArticlesList heading="Not convinced? Read some of my favourite articles" />
       <p>
         Use the form below to subscribe to my newsletter for a weekly email with my latest articles.
