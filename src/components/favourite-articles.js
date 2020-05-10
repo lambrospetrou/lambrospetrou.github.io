@@ -9,6 +9,7 @@ export const FavouriteArticlesList = ({
         <li><a href="/articles/amazon-leadership-principles/">Amazon Leadership Principles — Choose 3</a></li>
         <li><a href="/articles/banana-or-human-marginal-degradation/">Banana or Human, and Marginal Degradation</a></li>
         <li><a href="/articles/encrypt-files-with-password-linux/">Encrypt files with password on Linux</a></li>
+        <li><a href="/articles/multiple-services-elastic-beanstalk/">Run multiple services on a single EC2 instance using AWS Elastic Beanstalk (Go and Multicontainer Docker platforms)</a></li>
       </ul>
     </section>
   );
