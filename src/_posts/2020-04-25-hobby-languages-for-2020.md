@@ -14,8 +14,8 @@ After trying and playing with many languages I realised that there are certain t
 My hobby language needs to:
 - Be fun to write
 - Have a good ecosystem to manage projects without a lot of ceremony
-- General purpose enough to write scripts and CLIs, but also web servers/clients
-- Fast enough
+- Be general purpose enough to write scripts and CLIs, but also web servers/clients
+- Be fast enough
 - Optional - Functional programming
 - Optional - Concurrency and Parallelism constructs
 
