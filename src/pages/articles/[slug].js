@@ -60,9 +60,11 @@ export default function Post({ postData }) {
 // NextJS hooks!
 /////////////////
 
-export async function getStaticProps({ params }) {
-  const postData = getPostData(params.slug);
-  
+export async function getStaticProps({ params, preview }) {
+  const postData = getPostData(params.slug, {
+    reloadPosts: preview
+  });
+
   return {
     props: {
       postData

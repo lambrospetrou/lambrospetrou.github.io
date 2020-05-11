@@ -47,6 +47,7 @@ export function getAllPostSlugs() {
   return readAllPosts().map(post => post.slug);
 }
 
-export function getPostData(slug) {
-  return readAllPosts().find(p => p.slug === slug);
+export function getPostData(slug, options = {}) {
+  const { reloadPosts = false } = options;
+  return (reloadPosts ? _readAllPosts : readAllPosts)().find(p => p.slug === slug);
 }
