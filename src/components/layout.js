@@ -30,8 +30,8 @@ const HeadAdditions = ({}) => {
       var WebFontConfig = {
         google: {
             families: [
-                /*'Open Sans:300,400,400italic,700,800:greek,latin', */
                 'Source Sans Pro:300,400,400italic,700,900:greek,latin',
+                // 'Roboto Slab:200,300,400,400italic,700,900:greek,latin',
                 // Read https://github.com/typekit/webfontloader/issues/409 about the 'display=swap'
                 'Source Code Pro:400&display=swap',
             ]

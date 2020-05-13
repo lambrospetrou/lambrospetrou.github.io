@@ -58,7 +58,7 @@ a:hover, a:active, a:focus {
 }
 
 h1, h2, h3, h4, h5, h6, h7 {
-    /*font-family: 'Source Sans Pro', 'Open Sans', 'Roboto', 'Georgia', 'Times New Roman', serif;*/
+    /*font-family: 'Roboto Slab', 'Georgia', 'Times New Roman', serif;*/
     font-weight: 900;
 }
 h1 {
@@ -131,7 +131,7 @@ code, code[class*=language-] {
     background-color: #f5f5f5;
     font-size: 80%;
     line-height: 150%;
-    font-family: 'Source Code Pro', Menlo, Consolas, 'Courier New', monospace;
+    font-family: 'Source Code Pro', Menlo, Consolas, 'Courier', monospace;
     color: #515151;
 
     border-radius: 0.3em;
@@ -274,7 +274,7 @@ p img {
 .post-title {
     margin-bottom: 5px;
     color: $font-color-red;
-    font-weight: 300;
+    font-weight: lighter;
 }
 
 .post-meta {
