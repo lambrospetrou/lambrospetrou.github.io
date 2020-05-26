@@ -5,7 +5,7 @@ description: A quick overview of three Jamstack platforms, Netlify, Vercel (form
 
 ## Overview
 
-If you [follow me](https://twitter.com/LambrosPetrou) online you probably know that I ike serverless platforms a lot. Serverless nowadays is a pretty ambiguous term and can mean anything; from [SQLite coining the term](https://www.sqlite.org/serverless.html) to [AWS enumerating their serverless offerings](https://aws.amazon.com/serverless/).
+If you [follow me](https://twitter.com/LambrosPetrou) online you probably know that I like serverless platforms a lot. Serverless nowadays is a pretty ambiguous term and can mean anything; from [SQLite coining the term](https://www.sqlite.org/serverless.html) to [AWS enumerating their serverless offerings](https://aws.amazon.com/serverless/).
 
 In this article, serverless corresponds to a single page application (SPA) website that is accompanied by a lightweight API. This setup exploded in popularity recently, and it even got a name, [Jamstack](https://jamstack.org/), for **J**avaScript, **A**PIs, and **M**arkup.
 
