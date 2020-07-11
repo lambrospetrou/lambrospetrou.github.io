@@ -13,7 +13,7 @@ However, last month, AWS released [integration between AWS Lambda and Amazon EFS
 
 I did a quick test using a Node.js Lambda function and it seems that the EFS connectivity adds around **100ms** of latency overhead to the Lambda invocations when accessing the database over EFS versus a local filesystem. This test is by no means scientific and performance will vary a lot depending on your database file size, the concurrent connections you have, and the number of concurrent writes to the database.
 
-The [simple test application (code available)](https://github.com/lambrospetrou/code-playground/blob/master/aws-lambda-node-sqlite/local.js) executes 100 `insert` statements using a transaction, 1 `select` query with a `where` condition, and then a `select *` query.
+The [simple test application (code available)](https://github.com/lambrospetrou/code-playground/blob/master/aws-lambda-node-sqlite/local.js) executes 100 `insert` statements using a transaction, a `select` query with a `where` condition, and then a `select *` query.
 
 **AWS Lambda**
 
