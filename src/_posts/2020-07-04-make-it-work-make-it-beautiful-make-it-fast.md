@@ -11,7 +11,7 @@ This phrase really resonates with me because this is exactly how I approach writ
 
 ## Make it work
 
-The main reason we write code (other than fun) is to solve a problem, and if our solution is not correct, then we did't do our job. **Correctness comes first!**
+The main reason we write code (other than fun) is to solve a problem, and if our solution is not correct, then we didn't do our job. **Correctness comes first!**
 
 During this step, I usually write code without too much thinking into abstractions, how to design the components, function names, or other appealing details. I just want to solve the problem.
 
