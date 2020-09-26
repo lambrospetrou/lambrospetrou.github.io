@@ -3,7 +3,7 @@ title: V8 Isolates for fast JavaScript execution in Go
 description: "Use V8 isolates to execute JavaScript code efficiently using Go (Golang)."
 ---
 
-I am working on a side project similar to Leetcode/HackerRank (more on that on another article) where I have to execute some given JavaScript code against hundreds of inputs. The first approach I thought was spawning a subprocess and executing `node -e "<code-to-evaluate>"` directly passing the script I want to run. This works fine and gets the job done in a low throughput scenario.
+I am working on a side project similar to Leetcode/HackerRank (more on that in another article) where I have to execute some given JavaScript code against hundreds of inputs. The first approach I thought was spawning a subprocess and executing `node -e "<code-to-evaluate>"` directly passing the script I want to run. This works fine and gets the job done in a low throughput scenario.
 
 However, I remembered that [Cloudflare Workers](https://workers.cloudflare.com/), Cloudflare's serverless offering, is using V8 Isolates to execute the submitted JavaScript code [[1](https://developers.cloudflare.com/workers/learning/how-workers-works#isolates)][[2](https://blog.cloudflare.com/cloud-computing-without-containers/)][[3](https://blog.cloudflare.com/mitigating-spectre-and-other-security-threats-the-cloudflare-workers-security-model/)]. Therefore, I wanted to see how much faster that can be for my usecase.
 
