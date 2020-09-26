@@ -78,7 +78,7 @@ The main method we use is `ctx.RunScript(script, filename)` which accepts the co
 
 Cloudflare makes bold statements about the performance of their Workers due to using Isolates, but I was still mind-blown by how fast they actually work 🤯
 
-I wrote some basic benchmarks for the above two functions and used a simple input for the array (10 to 25 integer numbers).
+I wrote some basic benchmarks for the above two functions and used a simple input for the array (10 to 150 integer numbers).
 
 **Mac 16" 2020 (16-threads)**
 
