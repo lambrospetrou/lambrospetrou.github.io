@@ -80,7 +80,7 @@ Cloudflare makes bold statements about the performance of their Workers due to u
 
 I wrote some basic benchmarks for the above two functions and used a simple input for the array (10 to 150 integer numbers).
 
-**Mac 16" 2020 (16-threads)**
+**Macbook 16" 2020 (16-threads)**
 
 ```
 ➜ go test -bench . -benchtime 1s -benchmem
@@ -114,11 +114,11 @@ PASS
 ok    github.com/lambrospetrou/code-playground/golang-v8isolates      12.725s
 ```
 
-As you can see, there is a **huge** performance boost when using V8 Isolates, instead of spawning the `node` process. It's not unexpected since spawning a process is a quite expensive but still...
+The difference between `BenchmarkV8IsolatesReuse` and `BenchmarkV8IsolatesNoReuse` is that instead of creating a new Isolate per test run, we use one Isolate per thread and only create a new context per run.
+
+As you can see, there is a **huge performance boost** when using V8 Isolates. At least one order of magnitude faster when creating new Isolate per run, and two orders of magnitude with Isolate reuse. It's not unexpected since spawning a process is quite expensive but still...
 
 We can do a lot of optimizations to how we use the spawned process as well. For example, we can spawn one `node` process per thread and then communicate with it over standard input/output, and having a small script that reads the standard input, evaluates it, and prints the result on standard output. This will probably be even faster than the V8 Isolates but apart from the fact that we completely lose execution isolation, it's also a lot more work, so it's out of scope.
-
-The difference between `BenchmarkV8IsolatesReuse` and `BenchmarkV8IsolatesNoReuse` is that instead of creating a new Isolate for every single run, we use one Isolate per thread and only create a new context per run. Awesome speed up!
 
 You can find the code for the experiment at <https://github.com/lambrospetrou/code-playground/tree/master/golang-v8isolates>.
 
