@@ -3,7 +3,7 @@ export const InlineSignup = () => {
     <div className="newsletter-signup">
       <header>
         <h3>Subscribe to my newsletter</h3>
-        <p>At most one email per week with all my new articles.</p>
+        <p>At most one email per month with all my new articles.</p>
       </header>
       <form
         action="https://app.convertkit.com/forms/1379666/subscriptions"
