@@ -5,11 +5,11 @@ export const FavouriteArticlesList = ({
     <section>
       <h4>{heading}</h4>
       <ul>
+        <li><a href="/articles/golang-v8-isolates/">V8 Isolates for fast JavaScript execution in Go</a></li>
+        <li><a href="/articles/make-it-work-make-it-beautiful-make-it-fast/">Make it Work, Make it Beautiful, Make it Fast</a></li>
         <li><a href="/articles/best-tip-the-worklog/">Best tip I received — The worklog</a></li>
         <li><a href="/articles/amazon-leadership-principles/">Amazon Leadership Principles — Choose 3</a></li>
         <li><a href="/articles/banana-or-human-marginal-degradation/">Banana or Human, and Marginal Degradation</a></li>
-        <li><a href="/articles/encrypt-files-with-password-linux/">Encrypt files with password on Linux</a></li>
-        <li><a href="/articles/multiple-services-elastic-beanstalk/">Run multiple services on a single EC2 instance using AWS Elastic Beanstalk (Go and Multicontainer Docker platforms)</a></li>
       </ul>
     </section>
   );
