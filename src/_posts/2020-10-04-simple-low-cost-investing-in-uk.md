@@ -37,6 +37,16 @@ Honestly, you could simplify this even further. If you really want a **no-mainte
 
 I use the Vanguard funds because I find them to be among the cheapest and the best around, but keep in mind that most of the investment companies and brokers provide their own variations and alternatives, so do your own research when choosing a broker.
 
+### US versus International
+
+As I already mentioned, the U.S. Equity Index Fund (like VTSAX) is only investing in US companies, whereas the FTSE Global All Cap Index Fund (like VTWAX) invests in international markets as well.
+
+There are huge and myriad debates among professionals and individual investors trying to decide what's the best. Trying to answer the question of how much you should invest internationally, and if you even need to. Each side comes up with all sorts of (valid) arguments supporting their view. You can read some of the discussions at [[1](https://investor.vanguard.com/investing/investment/international-investing)] [[2](https://www.bogleheads.org/wiki/Domestic/International)] [[3](https://www.reddit.com/r/Bogleheads/comments/i6041z/vtsaxvtiax_vs_vtwax/)] [[4](https://www.reddit.com/r/financialindependence/comments/ans6sj/the_100_vtsax_approach_appears_inconsistent_with/)] [[5](https://www.reddit.com/r/Bogleheads/comments/bi1q9t/100_vtwax/)] [[6](https://www.bogleheads.org/forum/viewtopic.php?f=1&t=281152)].
+
+Personally, I believe that it makes sense to have international exposure. However, I find the US market stronger at the moment, hence why I invest in both funds, so that I can tilt my weight more on the US market. Having said that, I gradually increase my share of the global fund because I believe that non-US markets will thrive over the next few years, maybe even more than the US.
+
+This is just another speculation, my speculation, thus if you have no opinion just go with the global fund and relax.
+
 ## Stocks and Shares ISA
 
 In the UK there are some special savings accounts called [Individual Savings Accounts (ISA)](https://www.gov.uk/individual-savings-accounts) which allow you to save up to £20000 a year (as of 2020), and any interest you get is tax-free.
