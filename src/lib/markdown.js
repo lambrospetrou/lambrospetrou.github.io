@@ -1,4 +1,4 @@
-import marked from "marked";
+const marked = require("marked");
 
 marked.setOptions({
   gfm: true,
@@ -7,4 +7,7 @@ marked.setOptions({
   xhtml: true,
 });
 
-export const toHtml = content => marked(content);
+const toHtml = content => marked(content);
+module.exports = {
+  toHtml
+};

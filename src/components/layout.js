@@ -89,6 +89,7 @@ const Header = ({}) => {
           <a href="https://www.linkedin.com/in/lambrospetrou/" title="Lambros Petrou on LinkedIn " target="_blank" rel="noopener">LinkedIn</a>
           <a href="https://github.com/lambrospetrou" title="Public code" target="_blank" rel="noopener">Github</a>
           <a href="https://twitter.com/lambrospetrou" title="Tweets" target="_blank" rel="noopener">Tweets</a>
+          <a href="/feed/rss.xml" title="Subscribe to my RSS Feed" target="_blank" rel="noopener">RSS Feed</a>
         </div>
       </div>
     </header>

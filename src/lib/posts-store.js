@@ -1,7 +1,7 @@
-import fs from "fs";
-import path from "path";
-import matter from "gray-matter";
-import { toHtml } from "./markdown";
+const fs = require("fs");
+const path = require("path");
+const matter = require("gray-matter");
+const { toHtml } = require("../lib/markdown.js");
 
 function _readAllPosts(postsDirectory = path.join(process.cwd(), "src", '_posts')) {
   const posts = [];
@@ -35,7 +35,7 @@ function _readAllPosts(postsDirectory = path.join(process.cwd(), "src", '_posts'
   return posts;
 }
 
-export const readAllPosts = (() => {
+const readAllPosts = (() => {
   let posts = null;
   return () => {
     if (null === posts) posts = _readAllPosts();
@@ -43,11 +43,15 @@ export const readAllPosts = (() => {
   };
 })();
 
-export function getAllPostSlugs() {
+function getAllPostSlugs() {
   return readAllPosts().map(post => post.slug);
 }
 
-export function getPostData(slug, options = {}) {
+function getPostData(slug, options = {}) {
   const { reloadPosts = false } = options;
   return (reloadPosts ? _readAllPosts : readAllPosts)().find(p => p.slug === slug);
 }
+
+module.exports = {
+  readAllPosts, getAllPostSlugs, getPostData
+};

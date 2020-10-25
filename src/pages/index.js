@@ -2,7 +2,6 @@ import Head from 'next/head'
 import { readAllPosts } from "../lib/posts-store";
 import {Layout} from "../components/layout";
 import {dateToLongDisplay} from "../components/display-formatters";
-import { useState } from 'react';
 
 export default function ArticlesIndex({posts}) {
   posts.sort((a, b) => b.date.valueOf() - a.date.valueOf());
