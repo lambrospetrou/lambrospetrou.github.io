@@ -19,7 +19,7 @@ I did a quick read of the whole book cover to cover, and then did a more focused
 
 The idea is simple, every question on the test is literally a sentence taken out of the book, formed as multiple-choice. Therefore, reading the book at least once gets you 50-60% there.
 
-The only thing I really wish the book provided is a simple timeline with just the names of all the different leaders/queens/kings on the same line in order, otherwise I found it hard to remember all the James' and Charles'. There is a Henry VIII for God's sake.
+The only thing I really wish the book provided is a simple timeline with just the names of all the different leaders/queens/kings on the same line in order, otherwise I found it hard to remember all the James and Charles. There is a Henry VIII for God's sake.
 
 Therefore, I did this stupidly simple timeline myself the night before the exam: https://gist.github.com/lambrospetrou/68241a9243312d95b19812ebf36109df
 
