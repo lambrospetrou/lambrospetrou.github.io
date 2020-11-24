@@ -39,7 +39,7 @@ The above application has 48 tests as of the time of writing. This was my practi
 
 Note that there are no difficulty levels in this test. All of the questions are pretty much of the same difficulty depending on what you are good at remembering. For example, I am horrible at remembering all the sportswomen/men and poets, so I came up with memorable tricks to remember at least some of them, either to help pick the correct answer, or to eliminate the wrong ones. This memorable information does not have to be anything scientific. I am even proud to say that for some of them I associated the sound of their name to their invention or sport 😅
 
-Overall, I spent roughly 6 hours just doing tests. The night before the exam I was at a point of completing a full test within 2 minutes, making just 1-2 mistakes.
+Overall, I spent roughly 6 hours just doing tests. The night before the exam I was at a point of completing a full test within 2 minutes, making just 1-2 mistakes, if any at all.
 
 ## Conclusion
 
