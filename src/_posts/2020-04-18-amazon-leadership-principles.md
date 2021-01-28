@@ -31,7 +31,7 @@ How many times did you want to _have two words_ with the author of some part of 
 
 This is the culmination of all the Leadership Principles together in my opinion. You have to focus on the **key inputs for your business**, and deliver them with the **right quality**, and in a **timely fashion**, while at the same time **never compromising**.
 
-Yeah, I pretty much re-stated the same thing, but this is the gist of it. At the end of the day, you have to deliver something to your customers, but the difficulty lies in doing it in a timely fashion without compromosing quality.
+Yeah, I pretty much re-stated the same thing, but this is the gist of it. At the end of the day, you have to deliver something to your customers, but the difficulty lies in doing it in a timely fashion without compromising quality.
 
 ## Conclusion
 
