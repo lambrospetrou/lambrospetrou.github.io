@@ -97,6 +97,6 @@ If you focus only on Jamstack applications, my recommendation would be to ~~go w
 
 If you are going to find uses for Netlify's add-ons, then it's a great choice as well! Really, Netlify and Vercel are very similar and you cannot go wrong with either. They even published an article yesterday on [how to deploy a Next.js application on Netlify](https://www.netlify.com/blog/2020/05/04/building-a-markdown-blog-with-next-9.3-and-netlify/).
 
-Finally, if your application is going to need additional cloud infrastructure to support it, like queueing systems, databases, detailed monitoring, or anything else not provided by these Jamstack oriented platforms, then AWS is probably your best bet. You can always make requests from Netlify/Vercel's serverless functions to other AWS resources, but it's a matter of control.
+Finally, if your application is going to need additional cloud infrastructure to support it, like control over the AWS Lambda functions, queueing systems, databases, detailed monitoring, or anything else not provided by these Jamstack oriented platforms, then AWS is your best bet. You can always make requests from Netlify/Vercel's serverless functions to other AWS resources, but it's a matter of control and flexibility.
 
 That's it for this article, maybe I will do a deep-dive in the future for certain features...
