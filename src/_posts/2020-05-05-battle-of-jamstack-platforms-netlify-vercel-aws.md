@@ -91,7 +91,7 @@ Finally, I would strongly recommend using [AWS CDK](https://aws.amazon.com/cdk/)
 
 I only scratched the surface of each platform's feature set, however it's quite clear that some are better at something and worse at something else.
 
-If you focus only on Jamstack applications, my recommendation would be to ~~go with Vercel~~ go with Netlify (see update below). It has amazing performance, and the zero-config approach really does wonders for the majority of the popular frameworks. Recommending [Next.js](https://nextjs.org/) for one more time 😃 
+If you focus only on Jamstack applications, my recommendation would be to ~~go with Vercel~~ go with Netlify (see update below). Recommending [Next.js](https://nextjs.org/) for one more time 😃 
 
 **Update 2021-02-22:** I have been experiencing slow load times (~2 seconds) on Vercel for two of my projects for a few weeks, and it seems that it's happening when the page is rarely visited (although it shouldn't according to docs, and Vercel support). Therefore, I now recommend Netlify over Vercel as a first choice. Netlify [also works with Next.js](https://github.com/netlify/next-on-netlify) even if you do not use the export mechanism, so feature parity is good.
 
