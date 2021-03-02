@@ -28,6 +28,50 @@ As the diagram above shows the user's browser interacts with three main systems.
 
 The last step is a bit debateable and I could serve the converted HTML files through Netlify Edge as well, having the S3 bucket acting as an origin. I did not go with this approach for now to avoid having to make the files stored on S3 public, therefore all access to the files uses presigned URLs, which gives me control on who can access them and for how long.
 
+## No JavaScript required
+
+It might be a bit unusual nowadays, but I want the website to be fully functional without JavaScript required in the user's browser.
+Obviously, I will introduce some JavaScript in the future, e.g. for drag & drop the file instead of manual selection, but I want 100% of the functionality to work without JavaScript needed.
+
+## Content server inside an iframe
+
+If you noticed in the architecture overview I mentioned that the output HTML is fetched using an S3 presigned URL. In addition, if you examine the actual page returned when viewing the generated content (e.g. [this sample](https://temp.minibri.com/view/sample)) you will see that it's basically a very simple skeleton page that contains only an `<iframe>` with its `src` attribute set to the S3 presigned URL.
+
+Let's see why.
+
+I have the following requirements:
+
+- The generated HTML for the converted content should be immutable. After its creation I should not need to ever touch it again, so that it can be served from S3 or any CDN service.
+- I want to be able to update the skeleton of the view page, for example to customize the header, or maybe in the future add a footer, etc. These changes are not related to the converted content, but the surrounding parts.
+
+I thought about three possible solutions to satisfy the immutability requirement:
+1. Generate the HTML file for the converted content, and also include all the HTML needed for my own purposes (e.g. header). Each HTML file will be self-contained completely, and will be the only thing needed to be served to the user.
+2. Generate the HTML file for the converted content, and include an `<iframe>` at the header section as a placeholder which has its `src` attribute set to the URL serving the header.
+3. Generate the HTML file for the converted content and store it on its own in S3. The HTML served to the user would be a different HTML page that contains an `<iframe>` with its `src` attribute set to the HTML file in S3 containing the converted content.
+
+Solution 1 is the easiest, and probably the one with the best caching since it can be cached literally forever. However, it does not allow for updates which is a deal-breaker (see second requirement). Solution 2 is OK since it allows me to update the header section anytime I want, and still benefits from immutable, cacheable HTML files. Solution 3 provides flexibility, and keeping the actual HTML file for the converted content separate from the skeleton page is good for future-proofing. Therefore, I went with solution 3.
+
+## Direct Download from Amazon S3
+
+This is something I might change in the future, but this section describes the initial implementation. When you upload a file, the serverless function handling the request will convert the content to HTML, and then store the generated HTML file on Amazon S3.
+
+One of the goals I had was that content should not be served directly from the serverless functions to avoid incurring high cost, since the [pricing for AWS Lambda](https://aws.amazon.com/lambda/pricing/), and hence [Netlify Functions](https://www.netlify.com/pricing/#add-ons-functions), is based on the number of requests and the duration of the function execution (rounded to the nearest millisecond precision). Furthermore, Amazon S3 is much more suited at serving static files versus AWS Lambda, which is good for our lightweight compute needs.
+
+Another goal of the final implementation was that I wouldn't allow public access to the S3 bucket.
+
+Let's go through the possible solutions and see what works and what doesn't:
+1. Use [Amazon CloudFront](https://aws.amazon.com/cloudfront/) (Amazon's CDN) in front of S3
+2. Use Netlify Edge (CDN) in front of S3
+3. Fetch from S3 directly
+
+Using Amazon CloudFront satisfies both goals, since it's a global CDN and by using something called [Origin Access Identity](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-restricting-access-to-s3.html) we avoid opening access to our S3 bucket. However, using Amazon CloudFront would add another service to the mix, and since Netlify is a CDN already I didn't want to introduce another. Next one.
+
+I haven't been able to find something akin to the Origin Access Identity for Netlify Edge, and therefore solution 2 is ruled out since it would require public access to S3. If there was a way, this would be my ideal solution.
+
+So we are left we solution 3, exposing files from S3 directly. But, didn't I say that I didn't want to give public access? 😒 The final approach is that when the serverless function handling the file upload responds, it basically returns a dummy HTML that contains an [`<iframe>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) with its `src` attribute set to a presigned URL for the actual HTML file in S3. This seems like a round-about solution, but it actually satisfies both of my goals nicely. I have total control over who has access to each file and for how long, and I do not expose the file structure on S3 directly.
+
+There is one drawback in this solution, namely S3's bandwidth cost. Usually for high traffic downloads it would be much cheaper to use a CDN in front of S3 to cache the content, rather than always hitting S3 directly. However, considering that the traffic is going to be close to zero, who cares 🙃 😜
+
 ## Content Expiration
 
 One of the features I wanted from the beginning was content expiration. Ideal for sharing content that is not ready for prime view or work in-progress, or even stupid notes to a friend.
@@ -39,27 +83,6 @@ For example, if I stored the content in different virtual directories we could h
 In my case, I prefer to use tagging instead of a certain directory layout to stay flexible in the way I name and store files. Therefore, I assign the tag `expiration=Days1`, or `expiration=Weeks1`, etc. to each object and create the corresponding Lifecycle rules to check the `expiration` tag value.
 
 Note that Amazon S3's expiration is not precise to the minute, or even to the hour. The cleanup runs once a day and therefore an object could be accessible for several hours passed its expiration. For Minibri Temp, this is fine, and we don't need anything more precise.
-
-## Direct Download from Amazon S3
-
-This is something I might change in the future, but this section describes the initial implementation. When you upload a file, the serverless function handling the request will convert the content to HTML, and then store the generated HTML file on Amazon S3.
-
-One of the goals I had was that content should not be served directly from the serverless functions to avoid incurring high cost, since the [pricing for AWS Lambda](https://aws.amazon.com/lambda/pricing/), and hence [Netlify Functions](https://www.netlify.com/pricing/#add-ons-functions), is based on the number of requests and the duration of the function execution (rounded to the nearest millisecond precision).
-
-This leads to the following possible solutions (among many others):
-1. Use [Amazon CloudFront](https://aws.amazon.com/cloudfront/) (Amazon's CDN) in front of S3
-2. Use Netlify Edge (CDN) in front of S3
-3. Fetch from S3 directly
-
-Another important aspect of the final implementation was that I **wouldn't allow public access to the S3 bucket**. There are lots of reasons why this would be bad, but I also didn't like exposing the URLs to S3 directly. Let's go through the solutions and see what works and what doesn't.
-
-Using Amazon CloudFront satisfies both goals, since it's a global CDN and by using something called [Origin Access Identity](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-restricting-access-to-s3.html) we avoid opening access to our S3 bucket. However, using Amazon CloudFront would add another service to the mix, and as I said at the introduction, I wanted this application to be as simple as possible. Next one.
-
-I haven't been able to find something akin to the Origin Access Identity for Netlify Edge, and therefore solution 2 is ruled out since it would violate rule 2; public access to S3. If there was a way, this would be my ideal solution.
-
-So we are left we solution 3, exposing files from S3 directly. But, didn't I say that I didn't want to give public access? 😒 The approach is that when the serverless function handling the file upload responds, it basically returns a dummy HTML that contains an [`<iframe>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) with its `src` attribute set to a presigned URL for the actual HTML file in S3. This seems like a round-about solution, but it actually satisfies both of my goals nicely. I have total control over who has access to each file and for how long, and I do not expose the file structure on S3 directly.
-
-There is one drawback in this solution, which is the cost. Usually for high traffic downloads it would be much better to use a CDN in front of S3 to cache the content, rather than always hitting S3 directly. However, considering that the traffic is going to be close to zero, who cares 🙃 😜
 
 ## URL Generation
 
@@ -102,6 +125,8 @@ Depends on how many people will actually use this, but unless it gets hundreds o
 
 ## Future Plans
 
+These are just some ideas I might implement in the near, and far, future.
+
 - Password protected content 🔐
 - Support more source formats, which was one of the original project goals 📋
 - Add an editor to write content directly on the website ✏️
@@ -112,3 +137,9 @@ Depends on how many people will actually use this, but unless it gets hundreds o
 ## Conclusion
 
 My favourite AWS services, AWS Lambda and Amazon S3, along with Netlify's superb simplicity and great development experience, are all we need to build powerful applications! 🥳 🚀
+
+### Changelog
+
+- 2021-03-02
+  + Added sections [No JavaScript required](#no-javascript-required), [Content server inside an iframe](#content-server-inside-an-iframe)
+  + Updated section [Direct Download from Amazon S3](#direct-download-from-amazon-s3)
