@@ -61,7 +61,7 @@ I have considered subscribing to the [Business Starter](https://workspace.google
 - £4.60 (~$6.50) per month
 - Integration with all the Google services with some business oriented features (e.g. for Google Meet)
 
-One thing that holds me back is that some of the business versions of the services lack certain features that are available in the corresponding consumer versions. Since I am mostly interested in Gmail, it's not an actual issue to be honest, especially when compared with other email providers. But if I would be paying that monthly amount then I would like to use all the features I get with that. At times I would probably get into conflict, between my personal Google account and the business one, having to choose which one to use since I am a heavy Google user (I pay for extra Google storage as well).
+One thing that holds me back is that some of the business versions of the services lack certain features that are available in the corresponding consumer versions. Since I am mostly interested in Gmail, it's not an actual issue to be honest, especially when compared with other email providers. But if I would be paying that monthly amount then I would like to use all the features I get with that. At times I would probably get into conflict, between my personal Google account and the business one, having to choose which one to use since I am a heavy Google services user.
 
 Google Workspace (G-Suite) is my top choice so far for a dedicated email provider, and I am sure I will find a way to juggle my data between my personal and the business account.
 
