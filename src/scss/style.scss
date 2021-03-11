@@ -13,7 +13,7 @@ $font-color-red: #920000;
     margin: 0;
 }
 body, input, button {
-    font-family: 'Source Sans Pro', 'Ubuntu', "Segoe UI", "Roboto", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+    font-family: 'Source Sans Pro', 'Ubuntu', "Segoe UI", "Roboto", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-size: 19px;
     color: $font-color-primary;
     line-height: 1.6;
@@ -94,6 +94,7 @@ p {
 ul, ol {
     list-style-position: outside;
     margin-left: 30px;
+    // padding-inline-start : 30px;
 }
 ul ol, ul ul, ol ul, ol ol {
     padding-left: 10px;
