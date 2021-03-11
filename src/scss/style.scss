@@ -93,16 +93,13 @@ p {
 }
 ul, ol {
     list-style-position: outside;
-    margin-left: 30px;
-    // padding-inline-start : 30px;
+    padding-inline-start : 30px;
+    margin-block-start: 10px;
+    margin-block-end: 10px;
 }
-ul ol, ul ul, ol ul, ol ol {
-    padding-left: 10px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
+// ul ol, ul ul, ol ul, ol ol {
+// }
 ol li, ul li {
-    padding-left: 10px;
     margin-bottom: 5px;
 }
 ul {
