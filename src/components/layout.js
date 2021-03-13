@@ -31,7 +31,6 @@ const HeadAdditions = ({}) => {
         google: {
             families: [
                 'Source Sans Pro:300,400,400italic,700,900:greek,latin',
-                // 'Roboto Slab:200,300,400,400italic,700,900:greek,latin',
                 // Read https://github.com/typekit/webfontloader/issues/409 about the 'display=swap'
                 'Source Code Pro:400&display=swap',
             ]
@@ -49,7 +48,7 @@ const HeadAdditions = ({}) => {
       `}}/>
 
       <noscript>
-        <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,400italic,700,900|Source+Code+Pro|Open+Sans:400,300,400italic,700,800&subset=latin,greek&display=swap' rel='stylesheet' type='text/css'/>
+        <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,400italic,700,900|Source+Code+Pro&subset=latin,greek&display=swap' rel='stylesheet' type='text/css'/>
       </noscript>
 
       <meta name="keywords" content="Lambros,Petrou,amazon,codeguru,profiler,facebook,portfolio,programming,developer,coder,software engineer,ucy,oxford" />
