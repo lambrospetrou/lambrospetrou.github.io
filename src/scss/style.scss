@@ -230,6 +230,32 @@ a:hover, a:active, a:focus {
     height: auto;
 }
 
+#header-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    a {
+        border: 0;
+        // Reset the line-height to just contain the svg content.
+        line-height: 0;
+        margin-right: 25px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    svg {
+        // stroke: #920000;
+        fill: #555;
+        width: 20px;
+        height: auto;
+
+        &:hover {
+            fill: #920000;
+        }
+    }
+}
+
 #header-name {
     font-size: 150%;
     font-weight: 700;
