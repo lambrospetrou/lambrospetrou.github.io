@@ -243,16 +243,16 @@ a:hover, a:active, a:focus {
         &:last-child {
             margin-right: 0;
         }
+        &:hover, &:focus, &:active {
+            & svg {
+                fill: #920000;
+            }
+        }
     }
     svg {
-        // stroke: #920000;
-        fill: #555;
+        fill: $font-color-secondary;
         width: 20px;
         height: auto;
-
-        &:hover {
-            fill: #920000;
-        }
     }
 }
 
