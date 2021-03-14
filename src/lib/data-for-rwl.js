@@ -37,7 +37,8 @@ export const DataList = [
   {
     url: "https://www.youtube.com/watch?v=M85UvH0TRPc",
     title: "The Internet's Own Boy: The Story of Aaron Swartz",
-    author: "Brian Knappenberger - Luminant Media"
+    author: "Brian Knappenberger - Luminant Media",
+    type: "video"
   },
   {
     url: "https://www.theatlantic.com/technology/archive/2017/09/saving-the-world-from-code/540393/",
