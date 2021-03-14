@@ -8,7 +8,7 @@ However, many times I am trying to find a link I know I shared before, but don't
 
 I decided to create a page where I will keep a list of content that I find interesting, and is worthy of sharing with others. This will be a curated list of things, and not just a dump of my tweets, with just what I consider great.
 
-You can find the new page at [https://www.lambrospetrou.com/read-watch-listen](/read-watch-listen), and at the corresponding link at the top of all pages on this website.
+I spent a few hours scrolling through my tweets for the past three years and I extracted the content that I still find interesting, and it's not behind a paywall at the moment. You can find the new page at [https://www.lambrospetrou.com/read-watch-listen](/read-watch-listen), and at the corresponding navigation link at the top of all pages on this website. The list is ordered with the content I most recently read at the top, therefore new items will always go at the top.
 
 I also created a [dedicated RSS feed](/feed/read-watch-listen.rss.xml) separate from my [articles RSS feed](/feed/rss.xml) in order to provide an easy way for people to consume this list using their favourite feed reader.
 

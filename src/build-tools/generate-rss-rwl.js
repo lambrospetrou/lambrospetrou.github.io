@@ -2,6 +2,12 @@ const fs = require("fs");
 const path = require("path");
 const { DataList, getItemId, getHostname } = require("../lib/data-for-rwl");
 
+function getContent(item) {
+  const id = getItemId(item);
+  return `<p><a href="${item.url}" title="Link to the content">${item.url}</a><br/>
+<a href="https://www.lambrospetrou.com/read-watch-listen#${id}" title="Link to The Read-Watch-Listen list">Visit The Read-Watch-Listen list</a></p>`
+}
+
 function main() {
   const {Feed} = require("feed");
   const feedDoc = new Feed({
@@ -30,10 +36,10 @@ function main() {
     const id = getItemId(item);
     
     feedDoc.addItem({
-      title: item.title,
+      title: `${item.title} - ${item.author} (${hostname})`,
       id: id,
       link: `https://www.lambrospetrou.com/read-watch-listen#${id}`,
-      content: item.url,
+      content: getContent(item),
       author: [
         {
           name: `${item.author} @ ${hostname}`
