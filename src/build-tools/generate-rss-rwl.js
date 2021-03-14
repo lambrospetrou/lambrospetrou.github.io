@@ -33,6 +33,7 @@ function main() {
       title: item.title,
       id: id,
       link: `https://www.lambrospetrou.com/read-watch-listen#${id}`,
+      content: item.url,
       author: [
         {
           name: `${item.author} @ ${hostname}`
