@@ -140,6 +140,12 @@ const DataList = [
     dateListed: "2021-03-14T11:00:00.000Z"
   },
   {
+    url: "http://paulgraham.com/avg.html",
+    title: "Beating the Averages",
+    author: "Paul Graham",
+    dateListed: "2021-03-14T11:00:00.000Z"
+  },
+  {
     url: "http://paulgraham.com/ds.html",
     title: "Do things that don't scale",
     author: "Paul Graham",
