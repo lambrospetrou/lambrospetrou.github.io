@@ -4,8 +4,8 @@ const { DataList, getItemId, getHostname } = require("../lib/data-for-rwl");
 
 function getContent(item) {
   const id = getItemId(item);
-  return `<p><a href="${item.url}" title="Link to the content">${item.url}</a><br/>
-<a href="https://www.lambrospetrou.com/read-watch-listen#${id}" title="Link to The Read-Watch-Listen list">Visit The Read-Watch-Listen list</a></p>`
+  return `<ul><li><a href="${item.url}" title="Link to the content">${item.url}</a></li>
+<li><a href="https://www.lambrospetrou.com/read-watch-listen#${id}" title="Link to The Read-Watch-Listen list">Visit The Read-Watch-Listen list</a></li></ul>`
 }
 
 function main() {
@@ -38,7 +38,7 @@ function main() {
     feedDoc.addItem({
       title: `${item.title} - ${item.author} (${hostname})`,
       id: id,
-      link: `https://www.lambrospetrou.com/read-watch-listen#${id}`,
+      link: item.url,
       content: getContent(item),
       author: [
         {
