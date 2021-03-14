@@ -9,6 +9,13 @@
 // };
 export const DataList = [
   {
+    url: "https://open.spotify.com/episode/0jU0dAZORvCB9zbTBz4keH?si=aniMpCV_SPyd-iRfM56voQ",
+    title: "Amazon Narratives: Memos, Working Backwards from Release, More (a16z Podcast)",
+    author: "Colin Bryar, Bill Carr, Sonal Chokshi",
+    type: "audio",
+    tags: ["favourite"]
+  },
+  {
     url: "https://bost.ocks.org/mike/algorithms/",
     title: "Visualizing Algorithms",
     author: "Mike Bostock"

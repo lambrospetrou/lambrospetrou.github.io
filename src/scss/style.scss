@@ -388,16 +388,16 @@ ul.rwl {
     li p {
         text-indent: -30px;
 
+        a.chain-link {
+            border: 0;
+            &:hover {
+                fill: #920000;
+            }
+        }
+
         svg {
             height: 20px;
             vertical-align: text-bottom;
-
-            &:first-child {
-                margin-right: 10px;
-            }
-            &:last-child {
-                margin-left: 10px;
-            }
         }
         svg.favourite {
             fill: #920000;
@@ -411,4 +411,11 @@ ul.rwl {
             word-break: keep-all;
         }
     }
+}
+
+.mr-10 {
+    margin-right: 10px;
+}
+.ml-10 {
+    margin-left: 10px;
 }
