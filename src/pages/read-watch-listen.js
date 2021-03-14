@@ -2,21 +2,7 @@ import Head from 'next/head'
 import {Layout} from "../components/layout";
 import { Aex } from "../components/common"
 
-import { DataList } from "../lib/data-for-rwl";
-
-function getHostname(urlStr) {
-  try {
-    return new URL(urlStr).hostname;
-  } catch (e) {
-    // IE
-    return "";
-  }
-}
-
-function getItemId({ url, title, author }) {
-  const hostname = getHostname(url);
-  return `${encodeURIComponent(hostname)}-${encodeURIComponent(title)}-${encodeURIComponent(author)}`.toLowerCase();
-}
+import { DataList, getHostname, getItemId } from "../lib/data-for-rwl";
 
 function IconDefs() {
   return <svg style={{display: "none"}} viewBox="0 0 0 0" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
@@ -78,9 +64,10 @@ export default function NewsletterSignupSuccess({}) {
       </Head>
       <IconDefs />
       <h1>The Read-Watch-Listen list 🔖</h1>
-      <p>
+      <p style={{textAlign: "center"}}>
         This page is an attempt to list content I read, watched, and listened worthy of sharing!<br/>
-        New content is always added to the top of the list (regardless of when it was created).
+        New content is always added to the top of the list (regardless of when it was created).<br/>
+        <small><Aex href="/feed/read-watch-listen.rss.xml">Grab the dedicated RSS feed</Aex> for this list and read them in your favourite feed reader.</small>
       </p>
       <ul className="rwl">
         {DataList.map(item => <Item key={item.url} item={item}/>)}
