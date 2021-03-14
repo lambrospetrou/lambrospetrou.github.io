@@ -26,7 +26,7 @@ export const DataList = [
   },
   {
     url: "https://web.dev/streams/",
-    title: "Streams—The definitive guide (web)",
+    title: "Streams—The definitive guide",
     author: "Thomas Steiner"
   },
   {
@@ -145,6 +145,11 @@ export const DataList = [
     author: "Paul Graham"
   },
   {
+    url: "https://ivoanjo.me/blog/2018/04/08/my-thoughts-on-and-how-i-approach-code-reviews/",
+    title: "my thoughts on, and how i approach code reviews",
+    author: "Ivo Anjo"
+  },
+  {
     url: "https://about.gitlab.com/company/culture/all-remote/asynchronous/",
     title: "Embracing asynchronous communication",
     author: "Gitlab"
@@ -152,7 +157,7 @@ export const DataList = [
   {
     url: "https://www.kalzumeus.com/2014/04/03/fantasy-tarsnap/",
     title: "What I Would Do If I Ran Tarsnap",
-    author: "Patrick McKenzie (patio11)"
+    author: "Patrick McKenzie"
   },
   {
     url: "https://www.lastweekinaws.com/blog/multi-cloud-is-the-worst-practice/",
@@ -309,12 +314,12 @@ export const DataList = [
   {
     url: "https://www.kalzumeus.com/2012/01/23/salary-negotiation/",
     title: "Salary Negotiation: Make More Money, Be More Valued",
-    author: "Patrick McKenzie (patio11)"
+    author: "Patrick McKenzie"
   },
   {
     url: "https://www.kalzumeus.com/2011/10/28/dont-call-yourself-a-programmer/",
     title: "Don't Call Yourself A Programmer, And Other Career Advice",
-    author: "Patrick McKenzie (patio11)"
+    author: "Patrick McKenzie"
   },
   {
     url: "https://mcfunley.com/choose-boring-technology",
