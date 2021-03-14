@@ -381,3 +381,34 @@ a:hover, a:active, a:focus {
         }
     }
 }
+
+ul.rwl {
+    list-style-type: none;
+
+    li p {
+        text-indent: -30px;
+
+        svg {
+            height: 20px;
+            vertical-align: text-bottom;
+
+            &:first-child {
+                margin-right: 10px;
+            }
+            &:last-child {
+                margin-left: 10px;
+            }
+        }
+        svg.favourite {
+            fill: #920000;
+            path {
+                stroke: #920000;
+            }
+        }
+        small {
+            color: $font-color-secondary;
+            white-space: nowrap;
+            word-break: keep-all;
+        }
+    }
+}

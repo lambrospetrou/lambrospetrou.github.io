@@ -103,6 +103,7 @@ const Header = ({}) => {
         <div id="header-quote">"We are what we repeatedly do. Excellence then, is not an act, but a habit!"&#x2009;&mdash;&#x2009;Aristotle</div>
         <div id="nav-buttons">
           <a href="/" title="All Articles - Lambros Petrou">Articles</a>
+          <a href="/read-watch-listen" title="My Read-Watch-Listen list">Read-Watch-Listen</a>
           <a href="/cv/" title="Lambros Petrou Resume - CV" rel="noopener" target="_blank">CV</a>
           <a href="/feed/rss.xml" title="Subscribe to my RSS Feed" target="_blank" rel="noopener">RSS Feed</a>
         </div>
