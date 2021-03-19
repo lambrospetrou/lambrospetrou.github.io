@@ -10,6 +10,12 @@
 // };
 const DataList = [
   {
+    url: "https://encore.dev/blog/advanced-go-concurrency",
+    title: "Advanced Go Concurrency",
+    author: "André Eriksson",
+    dateListed: "2021-03-19T16:00:00.000Z"
+  },
+  {
     url: "https://open.spotify.com/episode/0jU0dAZORvCB9zbTBz4keH?si=aniMpCV_SPyd-iRfM56voQ",
     title: "Amazon Narratives: Memos, Working Backwards from Release, More (a16z Podcast)",
     author: "Colin Bryar, Bill Carr, Sonal Chokshi",
