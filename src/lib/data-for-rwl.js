@@ -10,6 +10,13 @@
 // };
 const DataList = [
   {
+    url: "https://www.youtube.com/watch?v=5zXAHh5tJqQ",
+    title: "GopherCon 2018: Rethinking Classical Concurrency Patterns",
+    author: "Bryan C. Mills",
+    type: "video",
+    dateListed: "2021-03-19T19:00:00.000Z"
+  },
+  {
     url: "https://encore.dev/blog/advanced-go-concurrency",
     title: "Advanced Go Concurrency",
     author: "André Eriksson",
