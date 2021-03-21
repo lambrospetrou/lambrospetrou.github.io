@@ -13,12 +13,14 @@ const DataList = [
     url: "https://aws.amazon.com/builders-library/timeouts-retries-and-backoff-with-jitter/",
     title: "Timeouts, retries, and backoff with jitter",
     author: "Marc Brooker",
+    tags: ["favourite"],
     dateListed: "2021-03-21T15:00:00.000Z"
   },
   {
     url: "https://aws.amazon.com/builders-library/using-load-shedding-to-avoid-overload/",
     title: "Using load shedding to avoid overload",
     author: "David Yanacek",
+    tags: ["favourite"],
     dateListed: "2021-03-21T15:00:00.000Z"
   },
   {
