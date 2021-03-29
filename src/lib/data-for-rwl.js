@@ -10,6 +10,18 @@
 // };
 const DataList = [
   {
+    url: "https://martin.baillie.id/wrote/gotchas-in-the-go-network-packages-defaults/",
+    title: "Gotchas in the Go Network Packages Defaults",
+    author: "Martin Baillie",
+    dateListed: "2021-03-29T23:00:00.000Z"
+  },
+  {
+    url: "https://golang.org/doc/effective_go",
+    title: "Effective Go",
+    author: "Go Team",
+    dateListed: "2021-03-29T23:00:00.000Z"
+  },
+  {
     url: "https://aws.amazon.com/builders-library/timeouts-retries-and-backoff-with-jitter/",
     title: "Timeouts, retries, and backoff with jitter",
     author: "Marc Brooker",
