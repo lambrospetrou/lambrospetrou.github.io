@@ -3,7 +3,7 @@ title: Minibri Temp - Asciidoc support
 description: "Minibri Temp now supports Asciidoc formatted files to be rendered."
 ---
 
-Minibri Temp now supports files formatted in [Asciidoc](https://asciidoc.org/).
+[Minibri Temp](https://temp.minibri.com) now supports files formatted in [Asciidoc](https://asciidoc.org/).
 The uploaded file needs to have `.adoc` or `.asciidoc` extension to go through Asciidoc conversion.
 
 Check out an example of a rendered document at <https://temp.minibri.com/view/asciidoc-guide>.
