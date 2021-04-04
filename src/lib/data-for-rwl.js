@@ -10,6 +10,12 @@
 // };
 const DataList = [
   {
+    url: "https://www.bankeronwheels.com/how-to-take-advantage-of-a-recession/",
+    title: "Epic Stock Market Crashes - Guide on how to take advantage of the next recession",
+    author: "Raph Antoine aka Banker on Wheels",
+    dateListed: "2021-04-04T22:00:00.000Z"
+  },
+  {
     url: "https://martin.baillie.id/wrote/gotchas-in-the-go-network-packages-defaults/",
     title: "Gotchas in the Go Network Packages Defaults",
     author: "Martin Baillie",
