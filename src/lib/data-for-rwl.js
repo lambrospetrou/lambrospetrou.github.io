@@ -10,6 +10,12 @@
 // };
 const DataList = [
   {
+    url: "https://www.economicliberties.us/our-work/new-money-trust/",
+    title: "The New Money Trust: How Large Money Managers Control Our Economy and What We Can Do About It",
+    author: "Graham Steele",
+    dateListed: "2021-04-05T23:00:00.000Z"
+  },
+  {
     url: "https://www.bankeronwheels.com/how-to-take-advantage-of-a-recession/",
     title: "Epic Stock Market Crashes - Guide on how to take advantage of the next recession",
     author: "Raph Antoine aka Banker on Wheels",
