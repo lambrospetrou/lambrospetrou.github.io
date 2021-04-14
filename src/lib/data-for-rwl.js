@@ -10,6 +10,13 @@
 // };
 const DataList = [
   {
+    url: "https://gregoryszorc.com/blog/2021/04/13/rust-is-for-professionals/",
+    title: "Rust is for Professionals",
+    author: "Gregory Szorc",
+    dateListed: "2021-04-14T12:00:00.000Z",
+    tags: ["favourite"]
+  },
+  {
     url: "https://www.economicliberties.us/our-work/new-money-trust/",
     title: "The New Money Trust: How Large Money Managers Control Our Economy and What We Can Do About It",
     author: "Graham Steele",
