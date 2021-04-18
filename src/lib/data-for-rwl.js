@@ -10,6 +10,13 @@
 // };
 const DataList = [
   {
+    url: "https://blog.burntsushi.net/transducers/",
+    title: "Index 1,600,000,000 Keys with Automata and Rust (fst)",
+    author: "Andrew Gallant",
+    dateListed: "2021-04-18T21:00:00.000Z",
+    tags: ["favourite"]
+  },
+  {
     url: "https://gregoryszorc.com/blog/2021/04/13/rust-is-for-professionals/",
     title: "Rust is for Professionals",
     author: "Gregory Szorc",
