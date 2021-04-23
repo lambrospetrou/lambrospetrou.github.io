@@ -10,6 +10,13 @@
 // };
 const DataList = [
   {
+    url: "https://m.signalvnoise.com/reconsider/",
+    title: "RECONSIDER",
+    author: "David Heinemeier Hansson - DHH",
+    dateListed: "2021-04-23T11:00:00.000Z",
+    tags: ["favourite"]
+  },
+  {
     url: "https://blog.burntsushi.net/transducers/",
     title: "Index 1,600,000,000 Keys with Automata and Rust (fst)",
     author: "Andrew Gallant",
