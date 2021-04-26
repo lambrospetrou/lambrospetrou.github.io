@@ -10,6 +10,13 @@
 // };
 const DataList = [
   {
+    url: "https://kk.org/thetechnium/68-bits-of-unsolicited-advice/",
+    title: "68 Bits of Unsolicited Advice",
+    author: "Kevin Kelly",
+    dateListed: "2021-04-26T13:00:00.000Z",
+    tags: ["favourite"]
+  },
+  {
     url: "https://m.signalvnoise.com/reconsider/",
     title: "RECONSIDER",
     author: "David Heinemeier Hansson - DHH",
