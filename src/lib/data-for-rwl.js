@@ -10,6 +10,12 @@
 // };
 const DataList = [
   {
+    url: "https://kk.org/thetechnium/1000-true-fans/",
+    title: "1,000 True Fans",
+    author: "Kevin Kelly",
+    dateListed: "2021-04-27T23:00:00.000Z"
+  },
+  {
     url: "https://kk.org/thetechnium/99-additional-bits-of-unsolicited-advice/",
     title: "99 Additional Bits of Unsolicited Advice",
     author: "Kevin Kelly",
