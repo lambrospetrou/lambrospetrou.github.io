@@ -10,6 +10,12 @@
 // };
 const DataList = [
   {
+    url: "https://shinesolutions.com/2018/01/08/falsehoods-programmers-believe-about-names-with-examples/",
+    title: "Falsehoods Programmers Believe About Names – With Examples",
+    author: "Tony Rogers (shine solutions group)",
+    dateListed: "2021-04-30T10:00:00.000Z"
+  },
+  {
     url: "https://kk.org/thetechnium/1000-true-fans/",
     title: "1,000 True Fans",
     author: "Kevin Kelly",
