@@ -10,6 +10,13 @@
 // };
 const DataList = [
   {
+    url: "https://nav.al/rich",
+    title: "How to Get Rich",
+    author: "Naval",
+    dateListed: "2021-05-22T21:00:00.000Z",
+    tags: ["favourite"]
+  },
+  {
     url: "https://www.allencheng.com/boundaries-book-summary-henry-cloud-john-townsend/",
     title: "Boundaries Book Summary, by Henry Cloud, John Townsend",
     author: "Allen Cheng",
