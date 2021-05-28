@@ -10,6 +10,12 @@
 // };
 const DataList = [
   {
+    url: "https://arachnoid.com/equities_myths/",
+    title: "Equities Myths - Things you should know about investing",
+    author: "Paul Lutus",
+    dateListed: "2021-05-28T23:00:00.000Z"
+  },
+  {
     url: "https://nav.al/rich",
     title: "How to Get Rich",
     author: "Naval",
