@@ -10,6 +10,13 @@
 // };
 const DataList = [
   {
+    url: "https://www.youtube.com/watch?v=Z5chrxMuBoo",
+    title: "Valuation in Four Lessons | Aswath Damodaran | Talks at Google",
+    author: "Aswath Damodaran",
+    dateListed: "2021-06-03T22:00:00.000Z",
+    tags: ["favourite"]
+  },
+  {
     url: "https://arachnoid.com/equities_myths/",
     title: "Equities Myths - Things you should know about investing",
     author: "Paul Lutus",
@@ -26,8 +33,7 @@ const DataList = [
     url: "https://www.allencheng.com/boundaries-book-summary-henry-cloud-john-townsend/",
     title: "Boundaries Book Summary, by Henry Cloud, John Townsend",
     author: "Allen Cheng",
-    dateListed: "2021-05-11T22:00:00.000Z",
-    tags: ["favourite"]
+    dateListed: "2021-05-11T22:00:00.000Z"
   },
   {
     url: "https://cacm.acm.org/magazines/2021/5/252179-what-serverless-computing-is-and-should-become/fulltext",
