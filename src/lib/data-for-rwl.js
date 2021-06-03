@@ -14,6 +14,7 @@ const DataList = [
     title: "Valuation in Four Lessons | Aswath Damodaran | Talks at Google",
     author: "Aswath Damodaran",
     dateListed: "2021-06-03T22:00:00.000Z",
+    type: "video",
     tags: ["favourite"]
   },
   {
