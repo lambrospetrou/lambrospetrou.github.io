@@ -10,6 +10,13 @@
 // };
 const DataList = [
   {
+    url: "https://www.youtube.com/watch?v=PX5-XyBNi00",
+    title: "Warren Buffet's Life Advice Will Change Your Future",
+    author: "Warren Buffet",
+    dateListed: "2021-06-04T11:00:00.000Z",
+    type: "video"
+  },
+  {
     url: "https://www.youtube.com/watch?v=Z5chrxMuBoo",
     title: "Valuation in Four Lessons | Aswath Damodaran | Talks at Google",
     author: "Aswath Damodaran",
