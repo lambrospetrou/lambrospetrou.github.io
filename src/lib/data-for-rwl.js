@@ -10,6 +10,13 @@
 // };
 const DataList = [
   {
+    url: "https://www.youtube.com/watch?v=uH-ffKIgb38",
+    title: "The Value of Stories in Business | Aswath Damodaran | Talks at Google",
+    author: "Aswath Damodaran",
+    dateListed: "2021-06-09T15:00:00.000Z",
+    type: "video"
+  },
+  {
     url: "https://www.youtube.com/watch?v=PX5-XyBNi00",
     title: "Warren Buffet's Life Advice Will Change Your Future",
     author: "Warren Buffet",
