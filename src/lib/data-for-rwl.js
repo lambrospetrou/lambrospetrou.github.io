@@ -10,6 +10,18 @@
 // };
 const DataList = [
   {
+    url: "https://brooker.co.za/blog/2021/04/19/latency.html",
+    title: "Tail Latency Might Matter More Than You Think",
+    author: "Marc Brooker",
+    dateListed: "2021-08-07T08:43:00.000Z"
+  },
+  {
+    url: "https://brooker.co.za/blog/2017/12/28/mean.html",
+    title: "Is the Mean Really Useless?",
+    author: "Marc Brooker",
+    dateListed: "2021-08-07T08:00:00.000Z"
+  },
+  {
     url: "https://www.youtube.com/watch?v=uH-ffKIgb38",
     title: "The Value of Stories in Business | Aswath Damodaran | Talks at Google",
     author: "Aswath Damodaran",
