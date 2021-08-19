@@ -10,6 +10,12 @@
 // };
 const DataList = [
   {
+    url: "https://www.cmyr.net/blog/gui-framework-ingredients.html",
+    title: "So you want to write a GUI framework",
+    author: "Colin Rofls",
+    dateListed: "2021-08-19T14:29:00.000Z"
+  },
+  {
     url: "https://brooker.co.za/blog/2021/04/19/latency.html",
     title: "Tail Latency Might Matter More Than You Think",
     author: "Marc Brooker",
