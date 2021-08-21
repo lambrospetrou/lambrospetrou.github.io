@@ -10,6 +10,12 @@
 // };
 const DataList = [
   {
+    url: "https://sirupsen.com/adjacent-possible/",
+    title: "Adjacent Possible: Model for Peeking into the Future",
+    author: "Simon Hørup Eskildsen",
+    dateListed: "2021-08-21T18:25:00.000Z"
+  },
+  {
     url: "https://www.cmyr.net/blog/gui-framework-ingredients.html",
     title: "So you want to write a GUI framework",
     author: "Colin Rofls",
