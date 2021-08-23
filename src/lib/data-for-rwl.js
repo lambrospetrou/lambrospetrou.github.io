@@ -1,5 +1,4 @@
 // Put new content to the top of the array!
-// All fields are mandatory.
 // interface Entry {
 //   type: article | video | audio = article
 //   url: string,
