@@ -10,6 +10,12 @@
 // };
 const DataList = [
   {
+    url: "https://www.youtube.com/watch?v=T71ibcZAX3I&ab_channel=TalksatGoogle",
+    title: "The Simple Path to Wealth | JL Collins | Talks at Google",
+    author: "JL Collins",
+    dateListed: "2021-08-23T11:43:00.000Z"
+  },
+  {
     url: "https://sirupsen.com/adjacent-possible/",
     title: "Adjacent Possible: Model for Peeking into the Future",
     author: "Simon Hørup Eskildsen",
