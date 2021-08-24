@@ -9,6 +9,13 @@
 // };
 const DataList = [
   {
+    url: "https://www.expatsoftware.com/articles/guy-on-the-beach-with-a-laptop.html",
+    title: "How I built a business that lets me live on the beach full time",
+    author: "Jason Kester",
+    dateListed: "2021-08-24T22:16:00.000Z",
+    tags: ["favourite"]
+  },
+  {
     url: "https://stripe.com/en-gb/atlas/guides/pitching",
     title: "Pitching your early stage startup",
     author: "Patrick McKenzie (Stripe)",
