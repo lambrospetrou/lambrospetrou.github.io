@@ -12,7 +12,8 @@ const DataList = [
     url: "https://stripe.com/en-gb/atlas/guides/pitching",
     title: "Pitching your early stage startup",
     author: "Patrick McKenzie (Stripe)",
-    dateListed: "2021-08-24T18:00:00.000Z"
+    dateListed: "2021-08-24T18:00:00.000Z",
+    tags: ["favourite"]
   },
   {
     url: "https://www.youtube.com/watch?v=T71ibcZAX3I&ab_channel=TalksatGoogle",
