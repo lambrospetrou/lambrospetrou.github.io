@@ -9,6 +9,18 @@
 // };
 const DataList = [
   {
+    url: "http://www.paulgraham.com/top.html",
+    title: "The Top Idea In Your Mind",
+    author: "Paul Graham",
+    dateListed: "2021-08-25T12:08:00.000Z"
+  },
+  {
+    url: "http://www.paulgraham.com/relres.html",
+    title: "Relentlessly Resourceful",
+    author: "Paul Graham",
+    dateListed: "2021-08-25T12:05:00.000Z"
+  },
+  {
     url: "https://www.expatsoftware.com/articles/guy-on-the-beach-with-a-laptop.html",
     title: "How I built a business that lets me live on the beach full time",
     author: "Jason Kester",
