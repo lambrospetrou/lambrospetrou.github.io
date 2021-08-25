@@ -12,7 +12,8 @@ const DataList = [
     url: "http://www.paulgraham.com/top.html",
     title: "The Top Idea In Your Mind",
     author: "Paul Graham",
-    dateListed: "2021-08-25T12:08:00.000Z"
+    dateListed: "2021-08-25T12:08:00.000Z",
+    tags: ["favourite"]
   },
   {
     url: "http://www.paulgraham.com/relres.html",
