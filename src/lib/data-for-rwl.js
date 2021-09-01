@@ -9,6 +9,13 @@
 // };
 const DataList = [
   {
+    url: "https://www.stitcher.com/show/masters-in-business/episode/ritholtzs-masters-in-business-aswath-damodaran-interview-48339457",
+    title: "Ritholtz's Masters in Business: Aswath Damodaran Interview",
+    author: "Barry Ritholtz & Aswath Damodaran",
+    dateListed: "2021-09-01T21:53:00.000Z",
+    type: "audio"
+  },
+  {
     url: "http://www.paulgraham.com/top.html",
     title: "The Top Idea In Your Mind",
     author: "Paul Graham",
