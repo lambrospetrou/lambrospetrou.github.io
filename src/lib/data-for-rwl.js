@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "http://www.paulgraham.com/startupideas.html",
+    title: "How to Get Startup Ideas",
+    author: "Paul Graham",
+    dateListed: "2021-09-12T11:14:00.000Z",
+  },
+  {
     url: "https://www.stitcher.com/show/masters-in-business/episode/ritholtzs-masters-in-business-aswath-damodaran-interview-48339457",
     title: "Ritholtz's Masters in Business: Aswath Damodaran Interview",
     author: "Barry Ritholtz & Aswath Damodaran",
