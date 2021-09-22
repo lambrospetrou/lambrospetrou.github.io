@@ -86,7 +86,7 @@ const Header = ({}) => {
   return (
     <header id="header-wrapper" className="outer-section">
       <div className="header-signup-strip">
-        <small><a href="/newsletter">Subscribe to my newsletter</a> and don't miss new articles.</small>
+        <small><a href="/newsletter">Subscribe to my newsletter</a></small>
       </div>
       <div id="inner-header" className="inner-section">
         {/* <div id="header-logo">
