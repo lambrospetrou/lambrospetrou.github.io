@@ -25,7 +25,7 @@ Candidate solutions:
 
 ## make
 
-I chatted with a friend about this and he instantly said "just use make". I knew `make` was the main built tool for C/C++ projects, with fancy dynamic rules, running only the steps that have to run in the right order, and with good performance. I never used it though solely as an orchestration tool, with nothing to compile...
+I chatted with a friend about this and he instantly said "just use make". I knew `make` was the main build tool for C/C++ projects, with fancy dynamic rules, running only the steps that have to run in the right order, and with good performance. I never used it though solely as an orchestration tool, with nothing to compile...
 
 If you are not familiar with `make`, these are great resources on writing Makefiles:
 - https://makefiletutorial.com/
