@@ -295,7 +295,7 @@ $ native-image --no-fallback -H:+ReportExceptionStackTraces --enable-url-protoco
     + Average requests per second: `17.17k` (total: `341736`)
     + RSS memory after replay: `1700MB` (`1.7GB`)
 
-As we can see, the memory usage is reduced significantly compared to the JVM runs, especially at the start, without introducing significant performance regression. Also, even though the binary size is larger than the fat-JAR, this is a standalone binary we can copy to any system and just run. In the fat-JAR case we still need to have the Java JVM installed in the system running the code.
+As we can see, the memory usage is reduced significantly compared to the JVM runs, especially at the start, without introducing significant performance regression. Also, even though the binary size is larger than the fat-JAR, this is a standalone binary we can copy to any system and just run. In the fat-JAR case we still need to have the Java JVM installed in the system running the code. Although, to be fair, with the fat-JAR being less than `20MB` cold starts in AWS Lambda should be non-existent. 
 
 ### Binary compression with UPX
 
