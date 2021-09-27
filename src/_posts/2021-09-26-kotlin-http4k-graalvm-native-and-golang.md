@@ -274,7 +274,7 @@ Transfer/sec:    103.35MB
 
 So much memory used...
 
-I also tried restricting the heap memory to `512MB` (with `java -Xmx512M -jar build/libs/HelloWorld.jar`) but the results were roughly the same.
+I also tried restricting the heap memory to `256MB` (with `java -Xmx256M -jar build/libs/HelloWorld.jar`) but the results were roughly the same, even though the memory heap part was capped.
 The `ApacheServer` used here seems to be using lots of memory due to the many connections.
 
 ## Stats - GraalVM Native Image
@@ -304,7 +304,6 @@ As we can see, the memory usage is reduced significantly compared to the JVM run
 Running `upx -7 -k build/libs/HelloWorld-native` will essentially take the GraalVM binary and compress it down significantly. The first time the executable runs, it decompresses the content and then proceeds to execution.
 
 The size of the binary went from `46MB` down to `18.9MB`, without affecting the startup time in any meanigful way.
-This is great news since it's very close to the Go binary size.
 
 ## Stats - Summary
 
@@ -324,4 +323,4 @@ The throughput & latency of all server versions examined above is satisfactory t
 The huge memory usage difference though is what still concerns me when using the JVM, even when the code gets compiled down to an executable binary.
 I expected that with GraalVM Native Image the memory use would be reduced a lot more, but I guess there is still lots of space for improvement.
 
-I really like Kotlin the language though, so I am looking forward to the moment when memory won't be an issue anymore. For the time being, I think I will stick with Go for long-running servers that will have thousands of parallel open connections. On the other hand, for AWS Lambda deployments Kotlin has become a very viable solution! Each Lambda invocation serves exactly one connection at a time, which means we only care about the binary size, and overall performance, and both of these issues are solved with GraalVM Native Image.
+I really like Kotlin the language though, so I am looking forward to the moment when memory won't be an issue anymore. For the time being, I think I will stick with Go for long-running servers that will have thousands of parallel open connections. On the other hand, for AWS Lambda deployments Kotlin has become a very viable solution! Each Lambda invocation serves exactly one connection at a time, which means we only care about the binary size, and overall performance, and both of these are in the OK-territory (albeit the extra memory usage).
