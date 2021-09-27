@@ -9,6 +9,18 @@
 // };
 const DataList = [
   {
+    url: "https://noidea.dog/glue",
+    title: "Technical leadership and glue work",
+    author: "Tanya Reilly",
+    dateListed: "2021-09-27T21:04:00.000Z",
+  },
+  {
+    url: "https://newsletter.pragmaticengineer.com/p/project-management-in-tech",
+    title: "How Big Tech Runs Tech Projects and the Curious Absence of Scrum",
+    author: "Gergely Orosz",
+    dateListed: "2021-09-27T21:03:00.000Z",
+  },
+  {
     url: "http://www.paulgraham.com/startupideas.html",
     title: "How to Get Startup Ideas",
     author: "Paul Graham",
