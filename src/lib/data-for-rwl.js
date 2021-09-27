@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://blog.pragmaticengineer.com/what-silicon-valley-gets-right-on-software-engineers/",
+    title: "What Silicon Valley \"Gets\" about Software Engineers that Traditional Companies Do Not",
+    author: "Gergely Orosz",
+    dateListed: "2021-09-27T21:36:00.000Z",
+  },
+  {
     url: "https://noidea.dog/glue",
     title: "Technical leadership and glue work",
     author: "Tanya Reilly",
