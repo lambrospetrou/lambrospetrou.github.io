@@ -13,6 +13,7 @@ const DataList = [
     title: "Software disenchantment",
     author: "Nikita Prokopov",
     dateListed: "2021-09-28T19:36:00.000Z",
+    tags: ["favourite"]
   },
   {
     url: "https://blog.pragmaticengineer.com/what-silicon-valley-gets-right-on-software-engineers/",
