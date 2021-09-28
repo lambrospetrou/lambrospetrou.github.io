@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://tonsky.me/blog/disenchantment/",
+    title: "Software disenchantment",
+    author: "Nikita Prokopov",
+    dateListed: "2021-09-28T19:36:00.000Z",
+  },
+  {
     url: "https://blog.pragmaticengineer.com/what-silicon-valley-gets-right-on-software-engineers/",
     title: "What Silicon Valley \"Gets\" about Software Engineers that Traditional Companies Do Not",
     author: "Gergely Orosz",
