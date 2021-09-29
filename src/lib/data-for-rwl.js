@@ -26,6 +26,7 @@ const DataList = [
     title: "React 2014 - Responding in a Timely Manner",
     author: "Martin Thompson",
     dateListed: "2021-09-28T20:25:00.000Z",
+    type: "video",
   },
   {
     url: "https://tonsky.me/blog/disenchantment/",
