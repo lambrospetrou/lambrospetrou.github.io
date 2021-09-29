@@ -9,7 +9,13 @@
 // };
 const DataList = [
   {
-    url: "https://tonsky.me/blog/disenchantment/",
+    url: "https://boyter.org/2018/03/collection-favorite-optimization-posts-articles/",
+    title: "Collection of my favorite optimization posts and articles",
+    author: "Ben E. C. Boyter",
+    dateListed: "2021-09-29T11:52:00.000Z",
+  },
+  {
+    url: "https://boyter.org/posts/abusing-aws-to-make-a-search-engine/",
     title: "Abusing AWS Lambda to make an Aussie Search Engine",
     author: "Ben E. C. Boyter",
     dateListed: "2021-09-29T09:27:00.000Z",
