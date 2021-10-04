@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://thenewstack.io/rust-vs-go-why-theyre-better-together/",
+    title: "Rust vs. Go: Why They’re Better Together",
+    author: "Steve Francia",
+    dateListed: "2021-10-04T13:20:00.000Z",
+  },
+  {
     url: "https://boyter.org/2018/03/collection-favorite-optimization-posts-articles/",
     title: "Collection of my favorite optimization posts and articles",
     author: "Ben E. C. Boyter",
