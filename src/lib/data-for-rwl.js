@@ -9,6 +9,13 @@
 // };
 const DataList = [
   {
+    url: "https://www.youtube.com/watch?v=Jib2AmRb_rk",
+    title: "SQLite: The Database at the Edge of the Network with Dr. Richard Hipp",
+    author: "Richard Hipp",
+    dateListed: "2021-10-08T12:25:00.000Z",
+    type: "video"
+  },
+  {
     url: "https://thenewstack.io/rust-vs-go-why-theyre-better-together/",
     title: "Rust vs. Go: Why They’re Better Together",
     author: "Steve Francia",
