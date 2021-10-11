@@ -9,6 +9,24 @@
 // };
 const DataList = [
   {
+    url: "https://www.joelonsoftware.com/2001/01/27/daily-builds-are-your-friend/",
+    title: "Daily Builds Are Your Friend",
+    author: "Joel Spolsky",
+    dateListed: "2021-10-11T15:015:00.000Z",
+  },
+  {
+    url: "https://www.joelonsoftware.com/2002/01/06/fire-and-motion/",
+    title: "Fire And Motion",
+    author: "Joel Spolsky",
+    dateListed: "2021-10-11T15:01:00.000Z",
+  },
+  {
+    url: "https://www.joelonsoftware.com/2000/04/06/things-you-should-never-do-part-i/",
+    title: "Things You Should Never Do, Part I",
+    author: "Joel Spolsky",
+    dateListed: "2021-10-11T15:00:00.000Z",
+  },
+  {
     url: "https://www.youtube.com/watch?v=Jib2AmRb_rk",
     title: "SQLite: The Database at the Edge of the Network with Dr. Richard Hipp",
     author: "Richard Hipp",
