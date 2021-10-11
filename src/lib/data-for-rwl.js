@@ -12,7 +12,7 @@ const DataList = [
     url: "https://www.joelonsoftware.com/2001/01/27/daily-builds-are-your-friend/",
     title: "Daily Builds Are Your Friend",
     author: "Joel Spolsky",
-    dateListed: "2021-10-11T15:015:00.000Z",
+    dateListed: "2021-10-11T15:15:00.000Z",
   },
   {
     url: "https://www.joelonsoftware.com/2002/01/06/fire-and-motion/",
