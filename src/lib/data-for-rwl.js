@@ -9,6 +9,13 @@
 // };
 const DataList = [
   {
+    url: "https://www.ycombinator.com/library/51-learning-math-for-machine-learning",
+    title: "Learning Math for Machine Learning",
+    author: "Vincent Chen",
+    dateListed: "2021-10-18T10:47:00.000Z",
+    tags: ["favourite"],
+  },
+  {
     url: "https://www.joelonsoftware.com/2001/01/27/daily-builds-are-your-friend/",
     title: "Daily Builds Are Your Friend",
     author: "Joel Spolsky",
