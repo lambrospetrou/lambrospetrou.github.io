@@ -9,6 +9,19 @@
 // };
 const DataList = [
   {
+    url: "http://paulgraham.com/startupmistakes.html",
+    title: "The 18 mistakes that kill startups",
+    author: "Paul Graham",
+    dateListed: "2021-10-19T15:21:00.000Z",
+    tags: ["favourite"],
+  },
+  {
+    url: "https://www.ycombinator.com/library/4Q-a-minimum-viable-product-is-not-a-product-it-s-a-process",
+    title: "A Minimum Viable Product Is Not a Product, It's a Process",
+    author: "Jim Brikman",
+    dateListed: "2021-10-19T15:20:00.000Z",
+  },
+  {
     url: "https://www.ycombinator.com/library/51-learning-math-for-machine-learning",
     title: "Learning Math for Machine Learning",
     author: "Vincent Chen",
