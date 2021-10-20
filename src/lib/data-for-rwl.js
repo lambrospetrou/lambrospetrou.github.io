@@ -9,6 +9,13 @@
 // };
 const DataList = [
   {
+    url: "https://www.youtube.com/watch?v=f4_14pZlJBs&ab_channel=YCombinator",
+    title: "Before the Startup with Paul Graham (How to Start a Startup 2014: Lecture 3)",
+    author: "Paul Graham",
+    dateListed: "2021-10-20T14:08:00.000Z",
+    tags: ["favourite"],
+  },
+  {
     url: "https://www.fredrikholmqvist.com/posts/brooks-wirth-go/",
     title: "Brooks, Wirth and Go.",
     author: "Fredrik Holmqvist",
