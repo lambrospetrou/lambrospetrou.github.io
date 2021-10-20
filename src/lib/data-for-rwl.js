@@ -13,6 +13,7 @@ const DataList = [
     title: "Before the Startup with Paul Graham (How to Start a Startup 2014: Lecture 3)",
     author: "Paul Graham",
     dateListed: "2021-10-20T14:08:00.000Z",
+    type: "video",
     tags: ["favourite"],
   },
   {
