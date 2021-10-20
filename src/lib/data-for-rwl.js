@@ -9,6 +9,24 @@
 // };
 const DataList = [
   {
+    url: "https://www.fredrikholmqvist.com/posts/brooks-wirth-go/",
+    title: "Brooks, Wirth and Go.",
+    author: "Fredrik Holmqvist",
+    dateListed: "2021-10-20T14:02:00.000Z",
+  },
+  {
+    url: "https://www.fredrikholmqvist.com/posts/why-erlang/",
+    title: "Why Erlang?",
+    author: "Fredrik Holmqvist",
+    dateListed: "2021-10-20T14:01:00.000Z",
+  },
+  {
+    url: "https://www.fredrikholmqvist.com/pages/why-i-hate-frameworks.html",
+    title: "Why I Hate Frameworks, Benji Smith.",
+    author: "Fredrik Holmqvist",
+    dateListed: "2021-10-20T14:00:00.000Z",
+  },
+  {
     url: "http://paulgraham.com/startupmistakes.html",
     title: "The 18 mistakes that kill startups",
     author: "Paul Graham",
