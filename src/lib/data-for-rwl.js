@@ -9,6 +9,14 @@
 // };
 const DataList = [
   {
+    url: "https://medium.com/@pat_metzdorf/living-a-startup-double-life-5e2ef6295a65",
+    title: "Living a Startup Double Life - Managing your startup project while staying employed full-time",
+    author: "Patrick Metzdorf",
+    dateListed: "2021-10-31T15:20:00.000Z",
+    type: "article",
+    tags: ["favourite"],
+  },
+  {
     url: "https://www.youtube.com/watch?v=f4_14pZlJBs&ab_channel=YCombinator",
     title: "Before the Startup with Paul Graham (How to Start a Startup 2014: Lecture 3)",
     author: "Paul Graham",
