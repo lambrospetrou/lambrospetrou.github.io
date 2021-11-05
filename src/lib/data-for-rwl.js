@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://networkcapital.substack.com/p/the-amazon-way-of-writing",
+    title: "The Amazon Way of Writing - How to write clearly and influence people",
+    author: "Network Capital",
+    dateListed: "2021-11-05T09:02:00.000Z",
+  },
+  {
     url: "https://medium.com/@pat_metzdorf/living-a-startup-double-life-5e2ef6295a65",
     title: "Living a Startup Double Life - Managing your startup project while staying employed full-time",
     author: "Patrick Metzdorf",
