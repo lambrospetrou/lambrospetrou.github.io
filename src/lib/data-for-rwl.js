@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://www.nayuki.io/page/designing-better-file-organization-around-tags-not-hierarchies",
+    title: "Designing better file organization around tags, not hierarchies",
+    author: "Nayuki",
+    dateListed: "2021-11-08T09:52:00.000Z",
+  },
+  {
     url: "https://networkcapital.substack.com/p/the-amazon-way-of-writing",
     title: "The Amazon Way of Writing - How to write clearly and influence people",
     author: "Network Capital",
