@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://wbond.net/thoughts/building_a_high_performance_text_editor",
+    title: "Building a High Performance Text Editor",
+    author: "Will Bond",
+    dateListed: "2021-11-09T21:00:00.000Z",
+  },
+  {
     url: "https://www.nayuki.io/page/designing-better-file-organization-around-tags-not-hierarchies",
     title: "Designing better file organization around tags, not hierarchies",
     author: "Nayuki",
