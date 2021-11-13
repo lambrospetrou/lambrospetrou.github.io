@@ -39,6 +39,11 @@ export const SteakReferences = [
   },
   {
     type: "article",
+    url: "https://www.leanandtenderbeef.com/Blog/Steak-Seasoning/",
+    title: "Spice Things Up a Little: A List Of The Best Handmade Rubs and Steak Seasonings",
+  },
+  {
+    type: "article",
     url: "https://www.bbcgoodfood.com/howto/guide/how-cook-perfect-steak",
     title: "How to cook the perfect steak",
   },
@@ -46,6 +51,11 @@ export const SteakReferences = [
     type: "article",
     url: "https://blog.thermoworks.com/beef/steak-temps-getting-it-right/",
     title: "Steak Temps: Getting It Right",
+  },
+  {
+    type: "video",
+    url: "https://www.youtube.com/watch?v=l1tsOOtgmFA",
+    title: "Τα 9 μυστικά για την τέλεια μοσχαρίσια μπριζόλα - 9 secrets for the perfect steak (subtitled)",
   },
 ];
 
