@@ -22,7 +22,7 @@ export const SteakCheatsheets = [
   {
     type: "image",
     title: "Beef Cuts",
-    url: "/s/images/cooking/Cuts-of-Beef-Infographic.webp",
+    url: "/s/images/cooking/Cuts-of-Beef-Infographic.png",
   },
   {
     type: "image",
