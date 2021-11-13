@@ -39,8 +39,19 @@ export const SteakReferences = [
   },
   {
     type: "article",
+    url: "https://www.seriouseats.com/old-wives-tales-about-cooking-steak",
+    title: "7 Myths About Cooking Steak That Need to Go Away",
+  },
+  {
+    type: "article",
     url: "https://www.leanandtenderbeef.com/Blog/Steak-Seasoning/",
     title: "Spice Things Up a Little: A List Of The Best Handmade Rubs and Steak Seasonings",
+  },
+  {
+    type: "article",
+    url: "https://www.seriouseats.com/how-to-reverse-sear-best-way-to-cook-steak",
+    title: "The Food Lab: The Reverse Sear Is the Best Way to Cook a Steak, Period",
+    notes: "Good for thick steaks, i.e. 2+ inches (5cm+)."
   },
   {
     type: "article",

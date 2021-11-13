@@ -69,6 +69,7 @@ function Steaks({cheatsheets, references, shops}) {
     const hostname = getHostname(r.url)
     return <li key={r.url}>
       <Aex href={r.url} title={r.title}>{r.title}</Aex> {hostname.length > 0 && <small>({hostname})</small>}
+      {r.notes && <ul><li>{r.notes}</li></ul>}
     </li>
   })
 
