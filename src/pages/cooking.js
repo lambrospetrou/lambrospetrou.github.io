@@ -2,7 +2,7 @@ import Head from 'next/head'
 import {Layout} from "../components/layout";
 import { Aex } from "../components/common"
 
-import { DataList, getHostname, getItemId } from "../lib/data-for-rwl";
+import { getHostname, SteakCheatsheets, SteakReferences, SteakUKOnline } from "../lib/data-for-cooking";
 
 function IconDefs() {
   return <svg style={{display: "none"}} viewBox="0 0 0 0" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
@@ -49,29 +49,75 @@ function Item({item}) {
   </li>
 }
 
+function Steaks({cheatsheets, references, shops}) {
+  const cheatsheetsElems = cheatsheets.map(c => {
+    switch (c.type) {
+      case "image":
+        return <p key={c.url}>
+          <figure>
+          {/* <strong>{c.title}</strong> */}
+            <Aex href={c.url}><img src={c.url} title={c.title} alt={c.title} /></Aex>
+            <figcaption><strong>{c.title}</strong> - (click image to view full-size)</figcaption>
+          </figure>
+        </p>
+      default:
+        throw new Error(`invalid cheatsheet type: ${c}`)
+    }
+  })
+
+  const refElems = references.map(r => {
+    const hostname = getHostname(r.url)
+    return <li key={r.url}>
+      <Aex href={r.url} title={r.title}>{r.title}</Aex> {hostname.length > 0 && <small>({hostname})</small>}
+    </li>
+  })
+
+  const shopsElems = shops.map(s => {
+    return <li key={s.url}><Aex href={s.url}>{s.url}</Aex></li>
+  })
+
+  return (
+    <article>
+      <h2>Steaks</h2>
+      <p>This section is dedicated to cooking tips for steaks.</p>
+      <section>
+        <h3>Guides and Tips</h3>
+        <ul>
+          {refElems}
+        </ul>
+      </section>
+      <section>
+        <h3>Cheatsheets</h3>
+        {cheatsheetsElems}
+      </section>
+      <section>
+        <h3>UK Online Shops</h3>
+        <ul>
+          {shopsElems}
+        </ul>
+      </section>
+    </article>
+  )
+}
+
 export default function Page({}) {
-  const title = "Read-Watch-Listen | Lambros Petrou";
-  const desc = "Lambros' curated list of recommended material to read, watch, and listen.";
+  const title = "Cooking | Lambros Petrou";
+  const desc = "Lambros' curated list of recommended material to read, watch, and listen for cooking (e.g. steaks).";
 
   return (
     <Layout>
       <Head>
-        <link rel="canonical" href="https://www.lambrospetrou.com/read-watch-listen/" />
+        <link rel="canonical" href="https://www.lambrospetrou.com/cooking/" />
         <title>{title}</title>
         <meta property="og:title" content={title} />
         <meta property="og:description" content={desc}/>
         <meta name="description" content={desc}/>
       </Head>
       <IconDefs />
-      <h1>The Read-Watch-Listen list 🔖</h1>
-      <p style={{textAlign: "center"}}>
-        This page is an attempt to list content I read, watched, and listened worthy of sharing!<br/>
-        New content is always added to the top of the list (regardless of when it was created).<br/>
-        <small><Aex href="/feed/read-watch-listen.rss.xml">Grab the dedicated RSS feed</Aex> for this list and read them in your favourite feed reader.</small>
-      </p>
-      <ul className="rwl">
-        {DataList.map(item => <Item key={item.url} item={item}/>)}
-      </ul>
+
+      <h1>Cooking 🥩</h1>
+      <Steaks cheatsheets={SteakCheatsheets} references={SteakReferences} shops={SteakUKOnline} />
+
     </Layout>
   );
 };
