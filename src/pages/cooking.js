@@ -77,20 +77,20 @@ function Steaks({cheatsheets, references, shops}) {
   })
 
   return (
-    <article>
+    <article id="steaks">
       <h2>Steaks</h2>
       <p>This section is dedicated to cooking tips for steaks.</p>
-      <section>
+      <section id="steaks-guides-tips">
         <h3>Guides and Tips</h3>
         <ul>
           {refElems}
         </ul>
       </section>
-      <section>
+      <section id="steaks-cheatsheets">
         <h3>Cheatsheets</h3>
         {cheatsheetsElems}
       </section>
-      <section>
+      <section id="steaks-online-shops">
         <h3>UK Online Shops</h3>
         <ul>
           {shopsElems}
