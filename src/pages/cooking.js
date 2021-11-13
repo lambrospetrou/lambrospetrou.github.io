@@ -78,7 +78,7 @@ function Steaks({cheatsheets, references, shops}) {
 
   return (
     <article id="steaks">
-      <h2>Steaks</h2>
+      <h2>Steaks 🥩</h2>
       <p>This section is dedicated to cooking tips for steaks.</p>
       <section id="steaks-guides-tips">
         <h3>Guides and Tips</h3>
@@ -115,7 +115,7 @@ export default function Page({}) {
       </Head>
       <IconDefs />
 
-      <h1>Cooking 🥩</h1>
+      <h1>Cooking</h1>
       <Steaks cheatsheets={SteakCheatsheets} references={SteakReferences} shops={SteakUKOnline} />
 
     </Layout>
