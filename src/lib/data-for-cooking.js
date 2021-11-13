@@ -64,7 +64,7 @@ export const SteakUKOnline = [
     url: "https://www.craftedmeats.co.uk/",
   },
   {
-    url: "https://pipersfarm.com/",
+    url: "https://www.hgwalter.com/"
   },
   {
     url: "https://gridironmeat.co.uk/"
