@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://brandur.org/nanoglyphs/027-15-minutes",
+    title: "Red Rocks + 15 Minutes + K-sorted IDs",
+    author: "Brandur",
+    dateListed: "2021-11-20T15:25:00.000Z",
+  },
+  {
     url: "https://brandur.org/nanoglyphs/026-ids",
     title: "Identity Crisis: Sequence v. UUID as Primary Key",
     author: "Brandur",
