@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://brandur.org/nanoglyphs/026-ids",
+    title: "Identity Crisis: Sequence v. UUID as Primary Key",
+    author: "Brandur",
+    dateListed: "2021-11-20T14:25:00.000Z",
+  },
+  {
     url: "https://wbond.net/thoughts/building_a_high_performance_text_editor",
     title: "Building a High Performance Text Editor",
     author: "Will Bond",
