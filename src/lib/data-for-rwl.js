@@ -9,6 +9,18 @@
 // };
 const DataList = [
   {
+    url: "https://www.inc.com/jessica-stillman/nasa-napping-just-26-minutes-can-improve-job-performance-by-a-third.html",
+    title: "NASA: Napping Just 26 Minutes Can Improve Job Performance by a Third",
+    author: "Jessica Stillman",
+    dateListed: "2021-12-03T12:50:01.000Z",
+  },
+  {
+    url: "https://www.youtube.com/watch?v=3qHkcs3kG44",
+    title: "Joe Rogan Experience #1309 - Naval Ravikant",
+    author: "Joe Rogan & Naval Ravikant",
+    dateListed: "2021-12-03T12:50:00.000Z",
+  },
+  {
     url: "https://brandur.org/nanoglyphs/027-15-minutes",
     title: "Red Rocks + 15 Minutes + K-sorted IDs",
     author: "Brandur",
