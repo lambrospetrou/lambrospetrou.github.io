@@ -9,6 +9,25 @@
 // };
 const DataList = [
   {
+    url: "https://ishadeed.com/article/defensive-css/",
+    title: "Defensive CSS",
+    author: "Ahmad Shadeed",
+    dateListed: "2021-12-13T10:14:02.000Z",
+    tags: ["favourite"],
+  },
+  {
+    url: "https://danluu.com/postmortem-lessons/",
+    title: "Reading postmortems",
+    author: "Dan Luu",
+    dateListed: "2021-12-13T10:14:01.000Z",
+  },
+  {
+    url: "https://levels.io/contact/",
+    title: "Why I'm unreachable and maybe you should be too",
+    author: "Pieter Levels",
+    dateListed: "2021-12-13T10:14:00.000Z",
+  },
+  {
     url: "https://www.inc.com/jessica-stillman/nasa-napping-just-26-minutes-can-improve-job-performance-by-a-third.html",
     title: "NASA: Napping Just 26 Minutes Can Improve Job Performance by a Third",
     author: "Jessica Stillman",
