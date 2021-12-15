@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://kryogenix.org/code/browser/everyonehasjs.html",
+    title: "Everyone has JavaScript, right?",
+    author: "Kryogenix",
+    dateListed: "2021-12-15T21:14:01.000Z",
+  },
+  {
     url: "https://ishadeed.com/article/defensive-css/",
     title: "Defensive CSS",
     author: "Ahmad Shadeed",
