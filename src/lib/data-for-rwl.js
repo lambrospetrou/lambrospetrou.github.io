@@ -9,6 +9,24 @@
 // };
 const DataList = [
   {
+    url: "https://blog.codinghorror.com/performance-is-a-feature/",
+    title: "Performance is a Feature",
+    author: "Jeff Atwood",
+    dateListed: "2021-12-26T13:18:00.000Z",
+  },
+  {
+    url: "https://rytisbiel.com/2021/03/06/darker-corners-of-go/",
+    title: "Darker Corners of Go",
+    author: "Rytis Bieliunas",
+    dateListed: "2021-12-26T13:17:00.000Z",
+  },
+  {
+    url: "https://blog.codinghorror.com/discipline-makes-strong-developers/",
+    title: "Discipline Makes Strong Developers",
+    author: "Jeff Atwood",
+    dateListed: "2021-12-26T13:15:00.000Z",
+  },
+  {
     url: "https://kryogenix.org/code/browser/everyonehasjs.html",
     title: "Everyone has JavaScript, right?",
     author: "Kryogenix",
