@@ -9,6 +9,24 @@
 // };
 const DataList = [
   {
+    url: "https://danluu.com/p95-skill/",
+    title: "95%-ile isn't that good",
+    author: "Dan Luu",
+    dateListed: "2022-01-04T09:46:00.000Z",
+  },
+  {
+    url: "https://ottertune.com/blog/2021-databases-retrospective/",
+    title: "Databases in 2021: A Year in Review",
+    author: "Andy Pavlo",
+    dateListed: "2022-01-04T09:44:00.000Z",
+  },
+  {
+    url: "https://jonoscript.wordpress.com/these-things-i-believe/",
+    title: "These things I believe",
+    author: "Jono",
+    dateListed: "2022-01-04T09:43:00.000Z",
+  },
+  {
     url: "https://blog.codinghorror.com/performance-is-a-feature/",
     title: "Performance is a Feature",
     author: "Jeff Atwood",
