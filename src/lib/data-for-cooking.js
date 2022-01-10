@@ -75,6 +75,9 @@ export const SteakUKOnline = [
     url: "https://www.craftedmeats.co.uk/",
   },
   {
+    url: "https://www.tomhixson.co.uk/",
+  },
+  {
     url: "https://www.hgwalter.com/"
   },
   {
