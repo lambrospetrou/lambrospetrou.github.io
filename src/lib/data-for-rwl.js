@@ -9,6 +9,24 @@
 // };
 const DataList = [
   {
+    url: "https://frankchimero.com/blog/2018/everything-easy/",
+    title: "Everything Easy is Hard Again",
+    author: "Frank Chimero",
+    dateListed: "2022-01-10T13:41:00.000Z",
+  },
+  {
+    url: "https://research.swtch.com/deps",
+    title: "Our Software Dependency Problem",
+    author: "Russ Cox",
+    dateListed: "2022-01-10T13:40:00.000Z",
+  },
+  {
+    url: "https://www.tinyverse.org/",
+    title: "Lightweight is the right weight",
+    author: "Tinyverse",
+    dateListed: "2022-01-10T13:39:00.000Z",
+  },
+  {
     url: "https://danluu.com/p95-skill/",
     title: "95%-ile isn't that good",
     author: "Dan Luu",
