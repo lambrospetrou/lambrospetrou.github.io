@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://blog.wesleyac.com/posts/consider-sqlite",
+    title: "Consider SQLite",
+    author: "Wesley Aptekar-Cassels",
+    dateListed: "2022-01-11T12:23:00.000Z",
+  },
+  {
     url: "https://antonz.org/sqlite-is-not-a-toy-database/",
     title: "SQLite is not a toy database",
     author: "Anton Zhiyanov",
