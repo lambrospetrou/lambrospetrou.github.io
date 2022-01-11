@@ -9,6 +9,13 @@
 // };
 const DataList = [
   {
+    url: "https://antonz.org/sqlite-is-not-a-toy-database/",
+    title: "SQLite is not a toy database",
+    author: "Anton Zhiyanov",
+    dateListed: "2022-01-11T11:53:00.000Z",
+    tags: ["favourite"],
+  },
+  {
     url: "https://frankchimero.com/blog/2018/everything-easy/",
     title: "Everything Easy is Hard Again",
     author: "Frank Chimero",
