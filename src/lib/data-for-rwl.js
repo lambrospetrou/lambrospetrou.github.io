@@ -13,6 +13,7 @@ const DataList = [
     title: "The official ten-year retrospective of NewSQL databases",
     author: "Andy Pavlo",
     dateListed: "2022-01-11T22:00:00.000Z",
+    type: "video",
   },
   {
     url: "https://jvns.ca/blog/2016/02/10/have-high-expectations-for-computers/",
