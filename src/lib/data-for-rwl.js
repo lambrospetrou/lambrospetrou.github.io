@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://jvns.ca/blog/2016/02/10/have-high-expectations-for-computers/",
+    title: "Have high expectations for your computers",
+    author: "Julia Evans",
+    dateListed: "2022-01-11T12:30:00.000Z",
+  },
+  {
     url: "https://blog.wesleyac.com/posts/consider-sqlite",
     title: "Consider SQLite",
     author: "Wesley Aptekar-Cassels",
