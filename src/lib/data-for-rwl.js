@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://research.swtch.com/npm-colors",
+    title: "What NPM Should Do Today To Stop A New Colors Attack Tomorrow",
+    author: "Russ Cox",
+    dateListed: "2022-01-13T20:00:00.000Z",
+  },
+  {
     url: "https://youtu.be/LwkS82zs65g",
     title: "The official ten-year retrospective of NewSQL databases",
     author: "Andy Pavlo",
