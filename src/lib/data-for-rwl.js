@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://thenewstack.io/a-next-step-beyond-test-driven-development/",
+    title: "A Next Step Beyond Test Driven Development (TDD + Prod = ODD)",
+    author: "Charity Majors",
+    dateListed: "2022-01-16T20:40:00.000Z",
+  },
+  {
     url: "https://research.swtch.com/npm-colors",
     title: "What NPM Should Do Today To Stop A New Colors Attack Tomorrow",
     author: "Russ Cox",
