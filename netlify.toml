@@ -4,4 +4,4 @@ ID = "lp11"
 [build]
   publish = "_site/"
   command = "make"
-  environment = { NODE_VERSION = "12.16.2" }
+  environment = { NODE_VERSION = "16" }
