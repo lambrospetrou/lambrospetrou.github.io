@@ -8,7 +8,7 @@ clean:
 	rm -rf _site .next
 
 prepare:
-	npm install
+	npm ci
 
 build: clean
 	npm run release
