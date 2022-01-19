@@ -9,6 +9,13 @@
 // };
 const DataList = [
   {
+    url: "https://journal.stuffwithstuff.com/2015/02/01/what-color-is-your-function/",
+    title: "What Color is Your Function?",
+    author: "Bob Nystrom",
+    dateListed: "2022-01-19T10:40:00.000Z",
+    tags: ["favourite"],
+  },
+  {
     url: "https://thenewstack.io/a-next-step-beyond-test-driven-development/",
     title: "A Next Step Beyond Test Driven Development (TDD + Prod = ODD)",
     author: "Charity Majors",
