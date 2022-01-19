@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://remix.run/blog/remix-vs-next",
+    title: "Remix vs Next.js",
+    author: "Ryan Florence",
+    dateListed: "2022-01-19T13:30:00.000Z",
+  },
+  {
     url: "https://yougotthis.io/talks/planning-preparing-next-role/",
     title: "Planning and Preparing For Your Next Role",
     author: "Rachel Lee Nabors",
