@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://yougotthis.io/talks/planning-preparing-next-role/",
+    title: "Planning and Preparing For Your Next Role",
+    author: "Rachel Lee Nabors",
+    dateListed: "2022-01-19T12:30:00.000Z",
+  },
+  {
     url: "https://journal.stuffwithstuff.com/2015/02/01/what-color-is-your-function/",
     title: "What Color is Your Function?",
     author: "Bob Nystrom",
