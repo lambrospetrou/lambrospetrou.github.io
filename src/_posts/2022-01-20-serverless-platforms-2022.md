@@ -29,6 +29,8 @@ So, what's the main difference between an edge location, and a regional location
 - **Compute - Regional**: When we have the traditional regional compute it means that we decide which region will run our code, and then all users have to reach that single region.
 - **Compute - Multi-regional**: We also have the middle ground where our code runs in the regional locations, but we don't explicitly specify which one. This implies that the provider will run our code in the region that is the closest to the user making the request.
 
+The selling point of running on an edge compute platform is that our customers will get faster response times since our code runs closer to them. However, keep in mind that if the code needs access to a database or calls into external services, it means that those services are now a bottleneck and add to the overall latency. Everything has tradeoffs and the right choice depends on several factors.
+
 Now that the terms are understood, let's see how the different platforms compare.
 
 ## The platforms
@@ -110,7 +112,7 @@ Another recent addition is the native integration of [Workers with Cloudflare Pa
 
 > Develop. Preview. Ship.
 
-- https://www.netlify.com/
+- https://netlify.com/
 - https://vercel.com/
 
 Netlify and Vercel are the most popular serverless products among the frontend community. Their focus is entirely on improving the developer experience for frontend developers, and they are doing an incredibly amazing job.
@@ -126,17 +128,17 @@ So, are Netlify and Vercel the best products to use? Should everyone migrate the
 
 These products provide top-notch developer experience but it comes at a cost. Their serverless offerings are more limited than their native counterparts:
 - Serverless functions:
-  + Netlify limits: only `us-east-1` region, 1GB of memory, 10s synchronous execution
-  + Vercel limits: only `IAD1` region, 1GB of memory, 5s synchronous execution (15s on Pro, 30s on Enterprise)
+  + Netlify: only `us-east-1` region, 1GB of memory, 10s synchronous execution
+  + Vercel: only `IAD1` region, 1GB of memory, 5s synchronous execution (15s on Pro, 30s on Enterprise)
 - Edge functions:
-  + Netlify limits: 256MB of memory, 50ms runtime
+  + Netlify: 256MB of memory, 50ms runtime
   + Vercel: 1.5s runtime (after returning a response it can still run up to 30s)
 
 Some of the above limits can be lifted for their paid plans, but mostly the Enterprise ones.
 
 [Cloudflare Pages](https://pages.cloudflare.com/) gets an honorary mention in this section since it now competes in this space by offering a seamless integration with source code repositories, and serving Jamstack websites, while at the same time having built-in integration with Cloudflare Workers.
 
-The above limitations are why I personally still use AWS Lambda directly when I want an API, and combine it with Cloudflare Pages for the frontend. However, if your application does not need more resources than what these platforms offer, which to be fair most websites don't, then you are fine just using them and focusing on your application.
+The above limitations are why I personally still use AWS Lambda directly when I want an API, and combine it with Cloudflare Pages for the frontend. However, if your application does not need more resources than what these platforms offer, which to be fair most websites don't, then you are fine just using them and focusing on your application. This is exactly what I did when I built [Minibri Temp](https://temp.minibri.com/) with Netlify.
 
 ## Fly.io - Multi-regional
 
@@ -155,7 +157,7 @@ This is more like a traditional container product, but I included it because the
 
 I haven't used Fly.io a lot but I do like its approach and based on the feedback from others I definitely plan to give it a go with one of my side projects.
 
-Fun fact: While writing this post, [Fly.io announced free 3GB Postgres or persisted volumes](https://twitter.com/flydotio/status/1484278935726788608) in the free tier 🥳
+Fun fact: While writing this post, [Fly.io announced3GB Postgres or persisted volumes](https://twitter.com/flydotio/status/1484278935726788608) in the free tier 🥳
 
 ## Conclusion
 
