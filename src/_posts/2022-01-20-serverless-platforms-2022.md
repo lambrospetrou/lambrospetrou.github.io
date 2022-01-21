@@ -130,13 +130,13 @@ These products provide top-notch developer experience but it comes at a cost. Th
   + Vercel limits: only `IAD1` region, 1GB of memory, 5s synchronous execution (15s on Pro, 30s on Enterprise)
 - Edge functions:
   + Netlify limits: 256MB of memory, 50ms runtime
-  + Vercel: 1.5s runtime (after returning response it can still run up to 30s)
+  + Vercel: 1.5s runtime (after returning a response it can still run up to 30s)
 
 Some of the above limits can be lifted for their paid plans, but mostly the Enterprise ones.
 
 [Cloudflare Pages](https://pages.cloudflare.com/) gets an honorary mention in this section since it now competes in this space by offering a seamless integration with source code repositories, and serving Jamstack websites, while at the same time having built-in integration with Cloudflare Workers.
 
-The above limitations are why I personally still use AWS Lambda directly when I want an API, and combine it with Cloudflare Pages for the frontend. However, if your application does not need more resources than what these platforms offer, which to be fair most websites don't, then you are fine just using them and focus on your application.
+The above limitations are why I personally still use AWS Lambda directly when I want an API, and combine it with Cloudflare Pages for the frontend. However, if your application does not need more resources than what these platforms offer, which to be fair most websites don't, then you are fine just using them and focusing on your application.
 
 ## Fly.io - Multi-regional
 
