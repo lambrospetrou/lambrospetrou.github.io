@@ -9,6 +9,18 @@
 // };
 const DataList = [
   {
+    url: "https://www.troyhunt.com/serverless-to-the-max-doing-big-things-for-small-dollars-with-cloudflare-workers-and-azure-functions/",
+    title: "Serverless to the Max: Doing Big Things for Small Dollars with Cloudflare Workers and Azure Functions",
+    author: "Troy Hunt",
+    dateListed: "2022-01-24T14:30:00.000Z",
+  },
+  {
+    url: "http://boringtechnology.club/",
+    title: "Choose Boring Technology",
+    author: "Dan McKinley",
+    dateListed: "2022-01-24T14:29:00.000Z",
+  },
+  {
     url: "https://remix.run/blog/remix-vs-next",
     title: "Remix vs Next.js",
     author: "Ryan Florence",
