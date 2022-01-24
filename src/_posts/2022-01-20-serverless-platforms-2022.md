@@ -136,7 +136,7 @@ These products provide top-notch developer experience but it comes at a cost. Th
 
 Some of the above limits can be lifted for their paid plans, but mostly the Enterprise ones.
 
-[Cloudflare Pages](https://pages.cloudflare.com/) gets an honorary mention in this section since it now competes in this space by offering a seamless integration with source code repositories, and serving Jamstack websites, while at the same time having built-in integration with Cloudflare Workers.
+[Cloudflare Pages](https://pages.cloudflare.com/) gets an honorary mention in this section since it now competes in this space by offering a seamless integration with source code repositories, and serving [Jamstack websites](https://jamstack.org/), while at the same time having built-in [integration with Cloudflare Workers](https://developers.cloudflare.com/pages/platform/functions).
 
 The above limitations are why I personally still use AWS Lambda directly when I want an API, and combine it with Cloudflare Pages for the frontend. However, if your application does not need more resources than what these platforms offer, which to be fair most websites don't, then you are fine just using them and focusing on your application. This is exactly what I did when I built [Minibri Temp](https://temp.minibri.com/) with Netlify.
 
@@ -157,7 +157,7 @@ This is more like a traditional container product, but I included it because the
 
 I haven't used Fly.io a lot but I do like its approach and based on the feedback from others I definitely plan to give it a go with one of my side projects.
 
-Fun fact: While writing this post, [Fly.io announced3GB Postgres or persisted volumes](https://twitter.com/flydotio/status/1484278935726788608) in the free tier 🥳
+Fun fact: While writing this post, [Fly.io announced 3GB Postgres or persisted volumes](https://twitter.com/flydotio/status/1484278935726788608) in the free tier 🥳
 
 ## Conclusion
 
