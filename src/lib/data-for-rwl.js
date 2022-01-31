@@ -9,6 +9,18 @@
 // };
 const DataList = [
   {
+    url: "https://charity.wtf/2022/01/29/how-can-you-tell-if-the-company-youre-interviewing-with-is-rotten-on-the-inside/",
+    title: "How can you tell if the company you're interviewing with is rotten on the inside?",
+    author: "Charity Majors",
+    dateListed: "2022-01-31T00:32:00.000Z",
+  },
+  {
+    url: "https://blog.janestreet.com/magic-trace/",
+    title: "Magic-trace: Diagnosing tricky performance issues easily with Intel Processor Trace",
+    author: "Tristan Hume",
+    dateListed: "2022-01-31T00:30:00.000Z",
+  },
+  {
     url: "https://www.troyhunt.com/serverless-to-the-max-doing-big-things-for-small-dollars-with-cloudflare-workers-and-azure-functions/",
     title: "Serverless to the Max: Doing Big Things for Small Dollars with Cloudflare Workers and Azure Functions",
     author: "Troy Hunt",
