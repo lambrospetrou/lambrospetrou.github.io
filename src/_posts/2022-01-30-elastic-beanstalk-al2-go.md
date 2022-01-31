@@ -312,7 +312,7 @@ You can find the `.ebextensions/awslogs.config` file I used at <https://github.c
 
 AWS Elastic Beanstalk is simple, and flexible enough to do anything I want. When AWS Lambda cannot be used, this is my goto platform.
 
-In this article I put everything I had in my notes for using Elastic Beanstalk in my own projects over the years.
+In this article I put everything I had in my notes from using Elastic Beanstalk in my own projects over the years.
 There are some rough edges but the main issue I encounter is that the documentation is spread all over the place. Having this information structured makes it a bit easier to use and troubleshoot things.
 
 In the worst case, even if nobody else needs this, future me will be very happy I took the time to write this down 😎
