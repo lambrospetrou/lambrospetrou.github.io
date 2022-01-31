@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://tympanus.net/codrops/2022/01/19/animate-anything-along-an-svg-path/",
+    title: "Animate Anything Along an SVG Path",
+    author: "Louis Hoebregts",
+    dateListed: "2022-01-31T12:02:00.000Z",
+  },
+  {
     url: "https://charity.wtf/2022/01/29/how-can-you-tell-if-the-company-youre-interviewing-with-is-rotten-on-the-inside/",
     title: "How can you tell if the company you're interviewing with is rotten on the inside?",
     author: "Charity Majors",
