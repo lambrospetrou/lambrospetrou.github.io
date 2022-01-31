@@ -64,7 +64,7 @@ build: go build -o bin/app
 check: ./validate-app-binary.sh
 ```
 
-**Personal opinion:** I never use the `Buildfile` to build my application and I always have a CI system to build the source code (or even build it locally). This means that my uploaded bundle `.zip` file only contains the compiled artifacts, e.g. the `bin/app` binary from the above example. This makes deployments a bit faster as well since the build phase will not happen during the Beanstalk lifecycle and I don't worry about my build process being constrained by the machine running the actual application. For example, if you have a lot of dependencies or your tests need a lot of resources then doing it before triggering a Beanstalk deployment will allow you to use smaller lightweight instances for the actual application in production (e.g. `T3.nano`, `T4G.nano`).
+**Personal opinion:** I never use the `Buildfile` to build my application and I always have a CI system to build the source code (or even build it locally). Even the documentation itself suggests to use the `predeploy` platform hook (more later) instead for the one-off commands we want to run, so this is not really needed. This means that my uploaded bundle `.zip` file only contains the compiled artifacts, e.g. the `bin/app` binary from the above example. This makes deployments a bit faster as well since the build phase will not happen during the Beanstalk lifecycle and I don't worry about my build process being constrained by the machine running the actual application. For example, if you have a lot of dependencies or your tests need a lot of resources then doing it before triggering a Beanstalk deployment will allow you to use smaller lightweight instances for the actual application in production (e.g. `T3.nano`, `T4G.nano`).
 
 ## Procfile
 
@@ -97,7 +97,7 @@ Platform hooks are a new addition to the AL2 based platforms. The only way to ex
 
 The [Platform hooks](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/platforms-linux-extend.html#platforms-linux-extend.hooks) (expand section) are basically script files placed inside the `.platform/hooks` directory, under one of the following sub-directories: `prebuild`, `predeploy`, `postdeploy`, depending when they need to run.
 
-The scripts inside each of those directories are run in order of their filename. For example, let's examine the following directory structure:
+The scripts inside each of those directories run in order of their filename. For example, let's examine the following directory structure:
 ```sh
 $ ls .platform/hooks/**
 .platform/hooks/postdeploy:
@@ -168,17 +168,14 @@ I didn't put a `Buildfile` in this application, so when we want to deploy we nee
 
 This is how the directory structure looks like after running `make`:
 ```sh
-➜  single-process git:(master) ✗ ls ./**
+➜  single-process git:(master) find . -type f
+./app/go.mod
+./app/main.go
 ./Makefile
-
-./app:
-go.mod  main.go
-
-./build:
-Procfile   bin        bundle.zip
-
-./build-tools:
-Procfile
+./build/bin/app
+./build/bundle.zip
+./build/Procfile
+./build-tools/Procfile
 ```
 
 **Procfile**
@@ -187,7 +184,7 @@ Procfile
 web: ./bin/app -name web
 ```
 
-**Application code (app.go)**
+**Application code (main.go)**
 
 ```go
 package main
@@ -226,7 +223,7 @@ After deploying the above on Elastic Beanstalk and enabling [CloudWatch Logs str
 
 ![single instance CloudWatch Logs](/articles-data/2022-01-30-elastic-beanstalk-al2-go/cwl-single-process.png)
 
-Opening the `/aws/elasticbeanstalk/Al2go-env-1/var/log/web.stdout.log` log group contains the log lines from our application. The `web` prefix of the file corresponds to the `web` process name inside our `Procfile`.
+The `/aws/elasticbeanstalk/Al2go-env-1/var/log/web.stdout.log` log group contains the log lines from our application. The `web` prefix of the file corresponds to the `web` process name inside our `Procfile`.
 
 The `/aws/elasticbeanstalk/Al2go-env-1/var/log/eb-engine.log` log group contains all logs from the Beanstalk processes that run during a deployment, which is useful while troubleshooting failed deployments or trying to understand how deployments work.
 
@@ -240,23 +237,18 @@ In this section we have the same application as above, but this time I am starti
 
 This is how the directory structure looks like after running `make`:
 ```sh
-➜  multi-process git:(master) ls ./** ./.**
-./Makefile  ./README.md
-
-./.ebextensions:
-awslogs.config
-
-./.platform:
-nginx
-
-./app:
-go.mod  main.go
-
-./build:
-Procfile   bin        bundle.zip
-
-./build-tools:
-Procfile
+➜  multi-process git:(master) find . -type f
+./app/go.mod
+./app/main.go
+./Makefile
+./.ebextensions/awslogs.config
+./build/bin/app
+./build/bundle.zip
+./build/.ebextensions/awslogs.config
+./build/Procfile
+./build/.platform/nginx/conf.d/01_proxy.conf
+./build-tools/Procfile
+./.platform/nginx/conf.d/01_proxy.conf
 ```
 
 **Procfile**
@@ -266,7 +258,7 @@ web: bin/app -name web
 bgapp: bin/app -name bgapp -port 5001
 ```
 
-**Application code (app.go)**
+**Application code (main.go)**
 
 Exactly the same as before.
 
