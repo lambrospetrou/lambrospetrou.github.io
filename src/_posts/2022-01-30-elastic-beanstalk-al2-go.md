@@ -298,7 +298,9 @@ After reading the following resources I realised I need to provide a custom conf
 
 You can find the `.ebextensions/awslogs.config` file I used at <https://github.com/lambrospetrou/aws-playground/blob/master/elastic-beanstalk-al2-go/multi-process/.ebextensions/awslogs.config>.
 
-**NOTE:** I [opened a roadmap feature request](https://github.com/aws/elastic-beanstalk-roadmap/issues/225) to the Beanstalk team to make this automatically for all processes inside the `Procfile` since it doesn't make any sense to me to have to do this on my own since it's already done for the `web` process.
+**NOTE1:** The default IAM role created by Elastic Beanstalk for web services, [`AWSElasticBeanstalkWebTier`](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/concepts-roles-instance.html), does not include the `logs:CreateLogGroup` permission which is needed for the creation of the `/var/log/bgapp.stdout.log` log group so make sure to update the IAM role used by the instance to include that. The default log groups (e.g. for `/var/log/web.stdout.log`) are created by the Elastic Beanstalk service automatically hence why the role used by the EC2 instance does not (need to) have this permission. But since we are now adding custom logs to be streamed to CloudWatch Logs we need to attach explicit permissions to allow the creation of the log group as well.
+
+**NOTE2:** I [opened a roadmap feature request](https://github.com/aws/elastic-beanstalk-roadmap/issues/225) to the Beanstalk team to make this automatically for all processes inside the `Procfile` since it doesn't make any sense to me to have to do this on my own since it's already done for the `web` process.
 
 ## Conclusion
 
