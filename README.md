@@ -1,6 +1,7 @@
-# Personal website
+# Personal website - www.lambrospetrou.com
 
-Hosted at https://www.lambrospetrou.com
+Hosted at <https://www.lambrospetrou.com>.
+
 Static side generator: [Next.js](https://nextjs.org/)
 
 **Prerequisites**
