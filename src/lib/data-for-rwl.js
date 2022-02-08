@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://stratechery.com/2022/digital-advertising-in-2022/",
+    title: "Digital Advertising in 2022",
+    author: "Ben Thompson",
+    dateListed: "2022-02-08T23:18:00.000Z",
+  },
+  {
     url: "https://tympanus.net/codrops/2022/01/19/animate-anything-along-an-svg-path/",
     title: "Animate Anything Along an SVG Path",
     author: "Louis Hoebregts",
