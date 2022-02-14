@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://danluu.com/algorithms-interviews/",
+    title: "Algorithms interviews: theory vs. practice",
+    author: "Dan Luu",
+    dateListed: "2022-02-14T14:45:00.000Z",
+  },
+  {
     url: "https://stratechery.com/2022/digital-advertising-in-2022/",
     title: "Digital Advertising in 2022",
     author: "Ben Thompson",
