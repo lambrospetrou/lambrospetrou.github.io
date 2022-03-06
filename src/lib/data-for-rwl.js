@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://charity.wtf/2021/08/21/why-every-software-engineering-interview-should-include-ops-questions/",
+    title: "Why every Software Engineering Interview should include Ops Questions",
+    author: "Charity Majors",
+    dateListed: "2022-03-06T21:31:00.000Z",
+  },
+  {
     url: "https://charity.wtf/2020/11/01/questionable-advice-the-trap-of-the-premature-senior/",
     title: "Questionable Advice: The Trap of the Premature Senior",
     author: "Charity Majors",
