@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://charity.wtf/2020/11/01/questionable-advice-the-trap-of-the-premature-senior/",
+    title: "Questionable Advice: The Trap of the Premature Senior",
+    author: "Charity Majors",
+    dateListed: "2022-03-06T21:30:00.000Z",
+  },
+  {
     url: "https://danluu.com/algorithms-interviews/",
     title: "Algorithms interviews: theory vs. practice",
     author: "Dan Luu",
