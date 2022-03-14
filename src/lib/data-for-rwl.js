@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://zackkanter.com/2019/03/13/what-is-amazon/",
+    title: "What is Amazon?",
+    author: "Zack Kanter",
+    dateListed: "2022-03-14T22:39:00.000Z",
+  },
+  {
     url: "https://charity.wtf/2021/08/21/why-every-software-engineering-interview-should-include-ops-questions/",
     title: "Why every Software Engineering Interview should include Ops Questions",
     author: "Charity Majors",
