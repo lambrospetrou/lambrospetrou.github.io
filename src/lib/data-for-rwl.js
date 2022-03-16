@@ -9,6 +9,18 @@
 // };
 const DataList = [
   {
+    url: "https://danluu.com/essential-complexity/",
+    title: "Against essential and accidental complexity",
+    author: "Dan Luu",
+    dateListed: "2022-03-16T16:42:00.000Z",
+  },
+  {
+    url: "https://danluu.com/nothing-works/",
+    title: "Why is it so hard to buy things that work well?",
+    author: "Dan Luu",
+    dateListed: "2022-03-16T16:41:00.000Z",
+  },
+  {
     url: "https://zackkanter.com/2019/03/13/what-is-amazon/",
     title: "What is Amazon?",
     author: "Zack Kanter",
