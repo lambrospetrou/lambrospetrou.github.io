@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://bitfieldconsulting.com/golang/scripting",
+    title: "Scripting with Go",
+    author: "John Arundel",
+    dateListed: "2022-03-21T17:24:00.000Z",
+  },
+  {
     url: "https://danluu.com/essential-complexity/",
     title: "Against essential and accidental complexity",
     author: "Dan Luu",
