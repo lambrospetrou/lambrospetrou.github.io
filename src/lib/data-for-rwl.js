@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://copyconstruct.medium.com/testing-in-production-the-hard-parts-3f06cefaf592",
+    title: "Testing in Production: the hard parts",
+    author: "Cindy Sridharan",
+    dateListed: "2022-04-07T18:20:00.000Z",
+  },
+  {
     url: "https://lethain.com/forty-year-career/",
     title: "A forty-year career.",
     author: "Will Larson",
