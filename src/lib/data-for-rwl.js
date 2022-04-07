@@ -9,6 +9,20 @@
 // };
 const DataList = [
   {
+    url: "https://lethain.com/forty-year-career/",
+    title: "A forty-year career.",
+    author: "Will Larson",
+    dateListed: "2022-04-07T17:42:00.000Z",
+    tags: ["favourite"],
+  },
+  {
+    url: "https://staffeng.com/guides/what-do-staff-engineers-actually-do",
+    title: "What do Staff engineers actually do?",
+    author: "Will Larson",
+    dateListed: "2022-04-07T17:22:00.000Z",
+    tags: ["favourite"],
+  },
+  {
     url: "https://bitfieldconsulting.com/golang/scripting",
     title: "Scripting with Go",
     author: "John Arundel",
