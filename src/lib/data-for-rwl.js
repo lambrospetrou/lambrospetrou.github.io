@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://ferd.ca/errors-are-constructed-not-discovered.html",
+    title: "Errors are constructed, not discovered",
+    author: "Fred Hebert",
+    dateListed: "2022-04-21T13:20:00.000Z",
+  },
+  {
     url: "https://copyconstruct.medium.com/testing-in-production-the-hard-parts-3f06cefaf592",
     title: "Testing in Production: the hard parts",
     author: "Cindy Sridharan",
