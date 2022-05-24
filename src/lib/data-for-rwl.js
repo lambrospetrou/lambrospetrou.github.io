@@ -9,6 +9,14 @@
 // };
 const DataList = [
   {
+    url: "https://www.youtube.com/watch?v=jwG_qR6XmDQ",
+    title: "Jeff Bezos - Regret Minimization Framework",
+    author: "Jeff Bezos",
+    dateListed: "2022-05-24T21:30:00.000Z",
+    type: "video",
+    tags: ["favourite"],
+  },
+  {
     url: "https://signalvnoise.com/posts/1619-theres-always-time-to-launch-your-dream",
     title: "There's always time to launch your dream",
     author: "David Heinemeier Hansson",
