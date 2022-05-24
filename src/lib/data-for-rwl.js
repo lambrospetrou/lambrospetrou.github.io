@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://lethain.com/career-advice/",
+    title: "Some career advice.",
+    author: "Will Larson",
+    dateListed: "2022-05-24T21:47:00.000Z",
+  },
+  {
     url: "https://www.youtube.com/watch?v=jwG_qR6XmDQ",
     title: "Jeff Bezos - Regret Minimization Framework",
     author: "Jeff Bezos",
