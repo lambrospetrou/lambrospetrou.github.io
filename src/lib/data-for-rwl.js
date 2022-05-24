@@ -9,6 +9,37 @@
 // };
 const DataList = [
   {
+    url: "https://signalvnoise.com/posts/1619-theres-always-time-to-launch-your-dream",
+    title: "There's always time to launch your dream",
+    author: "David Heinemeier Hansson",
+    dateListed: "2022-05-24T21:08:00.000Z",
+    tags: ["favourite"],
+  },
+  {
+    url: "https://thenewstack.io/charity-majors-recipe-for-high-performing-teams/",
+    title: "Charity Majors’ Recipe for High-Performing Teams",
+    author: "Charity Majors",
+    dateListed: "2022-05-24T21:07:00.000Z",
+  },
+  {
+    url: "https://thorstenball.com/blog/2022/05/17/professional-programming-the-first-10-years/",
+    title: "Professional Programming: The First 10 Years",
+    author: "Thorsten Ball",
+    dateListed: "2022-05-24T21:06:00.000Z",
+  },
+  {
+    url: "http://www.paulgraham.com/badeconomy.html",
+    title: "Why to start a startup in a bad economy",
+    author: "Paul Graham",
+    dateListed: "2022-05-24T21:05:00.000Z",
+  },
+  {
+    url: "https://www.inkandswitch.com/local-first/",
+    title: "Local-first software - You own your data, in spite of the cloud",
+    author: "Martin Kleppmann, Adam Wiggins, Peter van Hardenberg, Mark McGranaghan",
+    dateListed: "2022-05-24T21:04:00.000Z",
+  },
+  {
     url: "https://ferd.ca/errors-are-constructed-not-discovered.html",
     title: "Errors are constructed, not discovered",
     author: "Fred Hebert",
