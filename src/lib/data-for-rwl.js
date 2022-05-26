@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://stripe.com/gb/atlas/guides/business-of-saas",
+    title: "The business of SaaS",
+    author: "Patrick McKenzie (Stripe)",
+    dateListed: "2022-05-26T21:38:00.000Z",
+  },
+  {
     url: "https://www.kitchensoap.com/2012/10/25/on-being-a-senior-engineer/",
     title: "On Being A Senior Engineer",
     author: "John Allspaw",
