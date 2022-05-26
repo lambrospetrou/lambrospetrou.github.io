@@ -9,6 +9,25 @@
 // };
 const DataList = [
   {
+    url: "https://www.kitchensoap.com/2012/10/25/on-being-a-senior-engineer/",
+    title: "On Being A Senior Engineer",
+    author: "John Allspaw",
+    dateListed: "2022-05-26T21:37:00.000Z",
+    tags: ["favourite"],
+  },
+  {
+    url: "https://omniti.com/seeds/your-code-may-be-elegant.html",
+    title: "Your Code May Be Elegant",
+    author: "Leon Fayer",
+    dateListed: "2022-05-26T21:36:00.000Z",
+  },
+  {
+    url: "https://jvns.ca/blog/senior-engineer/",
+    title: "What's a senior engineer's job?",
+    author: "Julia Evans",
+    dateListed: "2022-05-26T21:35:00.000Z",
+  },
+  {
     url: "https://lethain.com/career-advice/",
     title: "Some career advice.",
     author: "Will Larson",
