@@ -9,6 +9,19 @@
 // };
 const DataList = [
   {
+    url: "https://medium.com/nerd-for-tech/how-i-grew-an-engineering-productivity-tool-to-impact-thousands-of-engineers-at-amazon-and-how-28a990091207",
+    title: "A Tale of Elephants - How I grew a tool to impact thousands of engineers at Amazon",
+    author: "Carlos Arguelles",
+    dateListed: "2022-05-29T15:03:00.000Z",
+    tags: ["favourite"],
+  },
+  {
+    url: "https://medium.com/nerd-for-tech/the-day-i-lost-my-job-at-microsoft-anatomy-of-stasis-f0e2cd653e3a",
+    title: "The Day I Lost my Job at Microsoft - Sometimes bad things happen so that good things can happen",
+    author: "Carlos Arguelles",
+    dateListed: "2022-05-29T15:02:00.000Z",
+  },
+  {
     url: "https://stripe.com/gb/atlas/guides/business-of-saas",
     title: "The business of SaaS",
     author: "Patrick McKenzie (Stripe)",
