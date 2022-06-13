@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://jvns.ca/blog/brag-documents/",
+    title: "Get your work recognized: write a brag document",
+    author: "Julia Evans",
+    dateListed: "2022-06-13T14:10:00.000Z",
+  },
+  {
     url: "https://staffeng.com/guides/finding-the-right-company",
     title: "Finding the right company",
     author: "Will Larson",
