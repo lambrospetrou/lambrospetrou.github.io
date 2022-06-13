@@ -9,6 +9,13 @@
 // };
 const DataList = [
   {
+    url: "https://staffeng.com/guides/finding-the-right-company",
+    title: "Finding the right company",
+    author: "Will Larson",
+    dateListed: "2022-06-13T12:35:00.000Z",
+    tags: ["favourite"],
+  },
+  {
     url: "https://medium.com/nerd-for-tech/how-i-grew-an-engineering-productivity-tool-to-impact-thousands-of-engineers-at-amazon-and-how-28a990091207",
     title: "A Tale of Elephants - How I grew a tool to impact thousands of engineers at Amazon",
     author: "Carlos Arguelles",
