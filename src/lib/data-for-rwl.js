@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://freaktakes.substack.com/p/when-do-ideas-get-easier-to-find",
+    title: "When do ideas get easier to find?",
+    author: "Eric Gilliam",
+    dateListed: "2022-06-20T11:50:00.000Z",
+  },
+  {
     url: "https://jvns.ca/blog/brag-documents/",
     title: "Get your work recognized: write a brag document",
     author: "Julia Evans",
