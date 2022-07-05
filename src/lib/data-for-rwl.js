@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://microfounder.com/blog/american-micro-saas-dream",
+    title: "The New American Micro-SaaS Dream",
+    author: "Rauno Metsa",
+    dateListed: "2022-07-05T14:40:00.000Z",
+  },
+  {
     url: "https://freaktakes.substack.com/p/when-do-ideas-get-easier-to-find",
     title: "When do ideas get easier to find?",
     author: "Eric Gilliam",
