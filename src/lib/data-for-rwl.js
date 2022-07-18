@@ -9,6 +9,44 @@
 // };
 const DataList = [
   {
+    url: "https://copyconstruct.medium.com/distributed-tracing-weve-been-doing-it-wrong-39fc92a857df",
+    title: "Distributed Tracing — we've been doing it wrong",
+    author: "Cindy Sridharan",
+    dateListed: "2022-07-18T22:52:00.000Z",
+  },
+  {
+    url: "https://www.honeycomb.io/blog/so-you-want-to-build-an-observability-tool/",
+    title: "So You Want To Build An Observability Tool...",
+    author: "Charity Majors",
+    dateListed: "2022-07-18T22:51:00.000Z",
+  },
+  {
+    url: "https://www.youtube.com/watch?v=otbnC2zE2rw&list=PLwcQbu9cKWck73fERHl3HK9ToBed8LETe",
+    title: "Designing the Ideal Bootstrapped Business with Jason Cohen - #microconf2013",
+    author: "Jason Cohen",
+    dateListed: "2022-07-18T22:50:00.000Z",
+    type: "video",
+    tags: ["favourite"],
+  },
+  {
+    url: "https://staffeng.com/guides/being-visible",
+    title: "Being visible",
+    author: "Will Larson",
+    dateListed: "2022-07-18T22:46:01.000Z",
+  },
+  {
+    url: "https://staffeng.com/guides/staying-aligned-with-authority",
+    title: "Staying aligned with authority",
+    author: "Will Larson",
+    dateListed: "2022-07-18T22:46:00.000Z",
+  },
+  {
+    url: "https://staffeng.com/guides/work-on-what-matters",
+    title: "Work on what matters",
+    author: "Will Larson",
+    dateListed: "2022-07-18T22:45:00.000Z",
+  },
+  {
     url: "https://microfounder.com/blog/american-micro-saas-dream",
     title: "The New American Micro-SaaS Dream",
     author: "Rauno Metsa",
