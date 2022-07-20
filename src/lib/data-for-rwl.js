@@ -9,6 +9,27 @@
 // };
 const DataList = [
   {
+    url: "https://www.kalzumeus.com/2010/06/17/falsehoods-programmers-believe-about-names/",
+    title: "Falsehoods Programmers Believe About Names",
+    author: "Patrick McKenzie",
+    dateListed: "2022-07-20T12:15:00.000Z",
+  },
+  {
+    url: "https://www.youtube.com/watch?v=8PuKwEfXZqc&ab_channel=MicroConf",
+    title: "How to Build a Solo SaaS Sales Machine - Steli Efti - MicroConf 2015",
+    author: "Steli Efti",
+    dateListed: "2022-07-20T11:46:00.000Z",
+    type: "video",
+  },
+  {
+    url: "https://www.youtube.com/watch?v=-Tg48MVnBeQ&ab_channel=MicroConf",
+    title: "Leveling Up - Patrick McKenzie (Patio11) - MicroConf 2015",
+    author: "Patrick McKenzie",
+    dateListed: "2022-07-20T11:45:00.000Z",
+    type: "video",
+    tags: ["favourite"],
+  },
+  {
     url: "https://copyconstruct.medium.com/distributed-tracing-weve-been-doing-it-wrong-39fc92a857df",
     title: "Distributed Tracing — we've been doing it wrong",
     author: "Cindy Sridharan",
@@ -1158,6 +1179,7 @@ const DataList = [
     title: "Don't Call Yourself A Programmer, And Other Career Advice",
     author: "Patrick McKenzie",
     dateListed: "2021-03-14T11:00:00.000Z",
+    tags: ["favourite"],
   },
   {
     url: "https://mcfunley.com/choose-boring-technology",
