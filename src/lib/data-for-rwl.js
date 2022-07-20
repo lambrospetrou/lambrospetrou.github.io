@@ -9,6 +9,13 @@
 // };
 const DataList = [
   {
+    url: "https://www.joelonsoftware.com/2000/05/12/strategy-letter-i-ben-and-jerrys-vs-amazon/",
+    title: "Strategy Letter I: Ben and Jerry's vs. Amazon",
+    author: "Joel Spolsky",
+    dateListed: "2022-07-20T14:25:00.000Z",
+    tags: ["favourite"],
+  },
+  {
     url: "https://www.kalzumeus.com/2010/03/20/running-a-software-business-on-5-hours-a-week/",
     title: "Running A Software Business On 5 Hours A Week",
     author: "Patrick McKenzie",
@@ -529,6 +536,7 @@ const DataList = [
     title: "Fire And Motion",
     author: "Joel Spolsky",
     dateListed: "2021-10-11T15:01:00.000Z",
+    tags: ["favourite"],
   },
   {
     url: "https://www.joelonsoftware.com/2000/04/06/things-you-should-never-do-part-i/",
