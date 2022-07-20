@@ -9,6 +9,18 @@
 // };
 const DataList = [
   {
+    url: "https://www.kalzumeus.com/2010/03/20/running-a-software-business-on-5-hours-a-week/",
+    title: "Running A Software Business On 5 Hours A Week",
+    author: "Patrick McKenzie",
+    dateListed: "2022-07-20T14:05:00.000Z",
+  },
+  {
+    url: "https://www.kalzumeus.com/2011/07/08/business-psychology/",
+    title: "How Running A Business Changes The Way You Think",
+    author: "Patrick McKenzie",
+    dateListed: "2022-07-20T14:04:00.000Z",
+  },
+  {
     url: "https://www.youtube.com/watch?v=8PuKwEfXZqc&ab_channel=MicroConf",
     title: "How to Build a Solo SaaS Sales Machine - Steli Efti - MicroConf 2015",
     author: "Steli Efti",
