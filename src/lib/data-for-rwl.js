@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://codeburst.io/on-writing-tech-specs-6404c9791159",
+    title: "On Writing Tech Specs",
+    author: "Chuck Groom",
+    dateListed: "2022-07-27T12:45:00.000Z",
+  },
+  {
     url: "https://www.joelonsoftware.com/2000/05/12/strategy-letter-i-ben-and-jerrys-vs-amazon/",
     title: "Strategy Letter I: Ben and Jerry's vs. Amazon",
     author: "Joel Spolsky",
