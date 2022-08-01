@@ -1,5 +1,5 @@
 ---
-title: Fly.io cloud development environment with VSCode Remote-SSH
+title: Fly.io cloud development environment with Visual Studio Code Remote-SSH
 description: "A guide on how to use a Fly.io container as your personal cloud development environment and VSCode with Remote SSH as your editor."
 ---
 
