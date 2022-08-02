@@ -9,6 +9,18 @@
 // };
 const DataList = [
   {
+    url: "https://cacm.acm.org/magazines/2015/4/184705-who-builds-a-house-without-drawing-blueprints/fulltext",
+    title: "Who Builds a House Without Drawing Blueprints?",
+    author: " Leslie Lamport",
+    dateListed: "2022-08-02T09:44:00.000Z",
+  },
+  {
+    url: "https://debliu.substack.com/p/the-bias-no-one-talks-about",
+    title: "The Bias No One Talks About - How workplaces favor those who speak up, and what you can do about it",
+    author: "Deb Liu",
+    dateListed: "2022-08-02T09:40:00.000Z",
+  },
+  {
     url: "https://codeburst.io/on-writing-tech-specs-6404c9791159",
     title: "On Writing Tech Specs",
     author: "Chuck Groom",
