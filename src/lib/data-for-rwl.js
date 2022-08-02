@@ -9,9 +9,21 @@
 // };
 const DataList = [
   {
+    url: "https://debliu.substack.com/p/avoiding-the-pitfalls-of-taking-on",
+    title: "Avoiding the Pitfalls of Taking on a New Role",
+    author: "Deb Liu",
+    dateListed: "2022-08-02T14:11:00.000Z",
+  },
+  {
+    url: "https://debliu.substack.com/p/make-the-first-90-days-count",
+    title: "Make the First 90 Days Count - A Simple 30-60-90 Day Plan",
+    author: "Deb Liu",
+    dateListed: "2022-08-02T14:10:00.000Z",
+  },
+  {
     url: "https://cacm.acm.org/magazines/2015/4/184705-who-builds-a-house-without-drawing-blueprints/fulltext",
     title: "Who Builds a House Without Drawing Blueprints?",
-    author: " Leslie Lamport",
+    author: "Leslie Lamport",
     dateListed: "2022-08-02T09:44:00.000Z",
   },
   {
