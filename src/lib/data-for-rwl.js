@@ -9,6 +9,14 @@
 // };
 const DataList = [
   {
+    url: "https://www.youtube.com/watch?v=-Tg48MVnBeQ&ab_channel=MicroConf",
+    title: "How to Build a Startup Without Funding",
+    author: "Pieter Levels (@levelsio)",
+    dateListed: "2022-08-09T14:35:00.000Z",
+    type: "video",
+    tags: ["favourite"],
+  },
+  {
     url: "https://debliu.substack.com/p/avoiding-the-pitfalls-of-taking-on",
     title: "Avoiding the Pitfalls of Taking on a New Role",
     author: "Deb Liu",
