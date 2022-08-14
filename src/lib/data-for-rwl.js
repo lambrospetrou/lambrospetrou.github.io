@@ -9,6 +9,14 @@
 // };
 const DataList = [
   {
+    url: "https://www.youtube.com/watch?v=fOdtgHu_KeA",
+    title: "Observability for emerging infra: Charity Majors",
+    author: "Charity Majors",
+    dateListed: "2022-08-14T14:30:00.000Z",
+    type: "video",
+    tags: ["favourite"],
+  },
+  {
     url: "https://www.youtube.com/watch?v=Nffzkkdq7GM&t=276s&ab_channel=TalksatGoogle",
     title: "Release Engineering Keynote | Chuck Rossi | Talks at Google",
     author: "Chuck Rossi",
