@@ -14,6 +14,7 @@ const DataList = [
     author: "Chuck Rossi",
     dateListed: "2022-08-14T10:20:00.000Z",
     type: "video",
+    tags: ["favourite"],
   },
   {
     url: "https://engineering.fb.com/2017/08/31/web/rapid-release-at-massive-scale/",
