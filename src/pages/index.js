@@ -1,9 +1,10 @@
-import Head from 'next/head'
+import Head from "next/head";
 import { readAllPosts } from "../lib/posts-store";
-import {Layout} from "../components/layout";
-import {dateToLongDisplay} from "../components/display-formatters";
+import { Layout } from "../components/layout";
+import { dateToLongDisplay } from "../components/display-formatters";
+import { Aex } from "../components/common";
 
-export default function ArticlesIndex({posts}) {
+export default function ArticlesIndex({ posts }) {
   posts.sort((a, b) => b.date.valueOf() - a.date.valueOf());
 
   return (
@@ -12,23 +13,55 @@ export default function ArticlesIndex({posts}) {
         <link rel="canonical" href="https://www.lambrospetrou.com/" />
         <title>Home | Lambros Petrou</title>
         <meta property="og:title" content="Home | Lambros Petrou" />
-        <meta property="og:description" content="My personal blog where I publish my thoughts."/>
-        <meta name="description" content="My personal blog where I publish my thoughts."/>
+        <meta
+          property="og:description"
+          content="My personal blog where I publish my thoughts."
+        />
+        <meta
+          name="description"
+          content="My personal blog where I publish my thoughts."
+        />
       </Head>
+      <ElementsOfCICDBanner />
       <ul className="index-posts">
-        {posts.map(p => <PostEntry key={p.slug} post={p}/>)}
+        {posts.map((p) => (
+          <PostEntry key={p.slug} post={p} />
+        ))}
       </ul>
     </Layout>
   );
-};
+}
 
-function PostEntry({post}) {
-  const {date, slug, title} = post;
+function ElementsOfCICDBanner() {
+  return (
+    <div className="elements-of-cicd-banner">
+      <p>
+        I am currently building an in-depth advanced CI/CD course. Please visit{" "}
+        <strong>
+          <Aex
+            href="https://www.elementsofcicd.com"
+            title="The Elements of CI/CD landing page"
+          >
+            The Elements of CI/CD
+          </Aex>
+        </strong>{" "}
+        to learn more.
+      </p>
+    </div>
+  );
+}
+
+function PostEntry({ post }) {
+  const { date, slug, title } = post;
   return (
     <li>
       <article>
         <header>
-          <h2 className="post-title"><a href={`/articles/${slug}`} title="view post">{title}</a></h2>
+          <h2 className="post-title">
+            <a href={`/articles/${slug}`} title="view post">
+              {title}
+            </a>
+          </h2>
           <div className="post-meta">{dateToLongDisplay(date)}</div>
         </header>
       </article>
@@ -43,7 +76,11 @@ function PostEntry({post}) {
 export async function getStaticProps() {
   return {
     props: {
-      posts: readAllPosts()
-    }
+      posts: readAllPosts().map(({ date, slug, title }) => ({
+        date,
+        slug,
+        title,
+      })),
+    },
   };
 }
