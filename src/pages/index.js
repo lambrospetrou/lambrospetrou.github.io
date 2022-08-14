@@ -23,6 +23,7 @@ export default function ArticlesIndex({ posts }) {
         />
       </Head>
       <ElementsOfCICDBanner />
+      {/* <hr /> */}
       <ul className="index-posts">
         {posts.map((p) => (
           <PostEntry key={p.slug} post={p} />
@@ -36,7 +37,7 @@ function ElementsOfCICDBanner() {
   return (
     <div className="elements-of-cicd-banner">
       <p>
-        I am currently building an in-depth advanced CI/CD course. Please visit{" "}
+        👋 Checkout my new advanced CI/CD course:{" "}
         <strong>
           <Aex
             href="https://www.elementsofcicd.com"
@@ -45,7 +46,6 @@ function ElementsOfCICDBanner() {
             The Elements of CI/CD
           </Aex>
         </strong>{" "}
-        to learn more.
       </p>
     </div>
   );
@@ -73,10 +73,12 @@ function PostEntry({ post }) {
 // NextJS hooks!
 /////////////////
 
-export async function getStaticProps() {
+export async function getStaticProps({ preview }) {
   return {
     props: {
-      posts: readAllPosts().map(({ date, slug, title }) => ({
+      posts: readAllPosts({
+        reloadPosts: preview,
+      }).map(({ date, slug, title }) => ({
         date,
         slug,
         title,
