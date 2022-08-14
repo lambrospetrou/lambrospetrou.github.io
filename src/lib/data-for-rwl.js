@@ -9,6 +9,19 @@
 // };
 const DataList = [
   {
+    url: "https://www.youtube.com/watch?v=Nffzkkdq7GM&t=276s&ab_channel=TalksatGoogle",
+    title: "Release Engineering Keynote | Chuck Rossi | Talks at Google",
+    author: "Chuck Rossi",
+    dateListed: "2022-08-14T10:20:00.000Z",
+    type: "video",
+  },
+  {
+    url: "https://engineering.fb.com/2017/08/31/web/rapid-release-at-massive-scale/",
+    title: "Rapid release at massive scale",
+    author: "Chuck Rossi",
+    dateListed: "2022-08-14T10:19:00.000Z",
+  },
+  {
     url: "https://www.youtube.com/watch?v=-Tg48MVnBeQ&ab_channel=MicroConf",
     title: "How to Build a Startup Without Funding",
     author: "Pieter Levels (@levelsio)",
