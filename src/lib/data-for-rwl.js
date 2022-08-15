@@ -9,6 +9,13 @@
 // };
 const DataList = [
   {
+    url: "https://www.youtube.com/watch?v=XBDfsiKDpFo",
+    title: "Testing Microservices: A Sane Approach Pre-Production & In Production",
+    author: "Cindy Sridharan",
+    dateListed: "2022-08-15T18:20:00.000Z",
+    type: "video",
+  },
+  {
     url: "https://www.youtube.com/watch?v=fOdtgHu_KeA",
     title: "Observability for emerging infra: Charity Majors",
     author: "Charity Majors",
