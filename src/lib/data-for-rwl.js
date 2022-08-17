@@ -9,6 +9,13 @@
 // };
 const DataList = [
   {
+    url: "https://www.heinrichhartmann.com/posts/writing/",
+    title: "Writing for Engineers",
+    author: "Heinrich Hartmann",
+    dateListed: "2022-08-17T09:30:00.000Z",
+    tags: ["favourite"],
+  },
+  {
     url: "https://www.youtube.com/watch?v=XBDfsiKDpFo",
     title: "Testing Microservices: A Sane Approach Pre-Production & In Production",
     author: "Cindy Sridharan",
