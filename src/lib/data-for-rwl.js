@@ -805,6 +805,7 @@ const DataList = [
     title: "1,000 True Fans",
     author: "Kevin Kelly",
     dateListed: "2021-04-27T23:00:00.000Z",
+    tags: ["favourite"],
   },
   {
     url: "https://kk.org/thetechnium/99-additional-bits-of-unsolicited-advice/",
