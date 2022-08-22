@@ -9,6 +9,13 @@
 // };
 const DataList = [
   {
+    url: "https://newsletter.pragmaticengineer.com/p/becoming-a-better-writer",
+    title: "Becoming a Better Writer",
+    author: "Gergely Orosz",
+    dateListed: "2022-08-22T17:45:00.000Z",
+    tags: ["favourite"],
+  },
+  {
     url: "https://www.heinrichhartmann.com/posts/writing/",
     title: "Writing for Engineers",
     author: "Heinrich Hartmann",
