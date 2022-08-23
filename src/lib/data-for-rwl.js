@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://www.jason.af/effective-devrel-buffalo-stick/",
+    title: "Turn 1 piece of dev content into 10+ — use the buffalo stick",
+    author: "Jason Lengstorf",
+    dateListed: "2022-08-23T11:41:00.000Z",
+  },
+  {
     url: "https://newsletter.pragmaticengineer.com/p/becoming-a-better-writer",
     title: "Becoming a Better Writer",
     author: "Gergely Orosz",
