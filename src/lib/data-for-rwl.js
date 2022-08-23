@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://37signals.com/seven-shipping-principles",
+    title: "Seven Shipping Principles",
+    author: "37signals",
+    dateListed: "2022-08-23T13:10:00.000Z",
+  },
+  {
     url: "https://www.jason.af/effective-devrel-buffalo-stick/",
     title: "Turn 1 piece of dev content into 10+ — use the buffalo stick",
     author: "Jason Lengstorf",
