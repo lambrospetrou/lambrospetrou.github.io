@@ -9,6 +9,13 @@
 // };
 const DataList = [
   {
+    url: "https://howvideo.works/",
+    title: "How video works",
+    author: "Leandro Moreira",
+    dateListed: "2022-08-30T21:55:00.000Z",
+    tags: ["favourite"],
+  },
+  {
     url: "https://37signals.com/seven-shipping-principles",
     title: "Seven Shipping Principles",
     author: "37signals",
