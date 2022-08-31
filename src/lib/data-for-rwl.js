@@ -9,6 +9,18 @@
 // };
 const DataList = [
   {
+    url: "https://lethain.com/present-to-executives/",
+    title: "How to present to executives.",
+    author: "Will Larson",
+    dateListed: "2022-08-31T22:22:00.000Z",
+  },
+  {
+    url: "https://leaddev.com/managing-managers/how-streamline-your-processes-engineering-manager",
+    title: "How to streamline your processes as an engineering manager - Managing managers",
+    author: "Sarah Drasner",
+    dateListed: "2022-08-31T22:20:00.000Z",
+  },
+  {
     url: "https://howvideo.works/",
     title: "How video works",
     author: "Leandro Moreira",
