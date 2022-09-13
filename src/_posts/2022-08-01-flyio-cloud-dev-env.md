@@ -236,7 +236,7 @@ flyctl deploy
 This will pick up the `Dockerfile`, check if there are changes and build a new image if necessary, and then trigger a deployment.
 Once the deployment is finished you can use the cloud development environment, i.e. SSH into it.
 
-#### 4a. Generate SSH keys
+### 4a. Generate SSH keys
 
 **_If you already have your SSH keys you can skip this section and go to [Section 4b](#4b-ssh)._**
 
