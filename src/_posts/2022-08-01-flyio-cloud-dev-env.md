@@ -236,7 +236,30 @@ flyctl deploy
 This will pick up the `Dockerfile`, check if there are changes and build a new image if necessary, and then trigger a deployment.
 Once the deployment is finished you can use the cloud development environment, i.e. SSH into it.
 
-### 4. SSH
+#### 4a. Generate SSH keys
+
+**_If you already have your SSH keys you can skip this section and go to [Section 4b](#4b-ssh)._**
+
+To generate your key run the following (replace the `KEY_FILENAME` and the email as necessary):
+
+```sh
+ssh-keygen -t ed25519 -f ~/.ssh/<KEY_FILENAME> -C "your_email@example.com"
+
+# Or use RSA if the Ed25519 algorithm is not supported by your system.
+
+ssh-keygen -t rsa -b 4096 -f ~/.ssh/<KEY_FILENAME> -C "your_email@example.com"
+```
+
+The above command will generate two files:
+1. The private key, at `~/.ssh/<KEY_FILENAME>`, which should **never be shared with anyone**.
+2. The public key, at `~/.ssh/<KEY_FILENAME>.pub`, which is the one to upload in Github or in our case paste in the `HOME_SSH_AUTHORIZED_KEYS` section as described above.
+
+Common key filenames are `id_<algorithm>`, e.g. `id_rsa`, or `id_ed25519`. In some cases, I generate keys for different purposes so having specific names for the keys is very useful.
+
+You should add the key to the `ssh-agent` for easier use, [following the Github instructions](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#adding-your-ssh-key-to-the-ssh-agent).
+
+
+### 4b. SSH
 
 The default configuration only allows SSH-ing with authorized keys, and password-based authentication is disabled (see `etc/ssh/sshd_config` in the source code).
 Therefore, you need to update the `HOME_SSH_AUTHORIZED_KEYS` value in `fly.toml` with your laptop's SSH key (usually `~/.ssh/id_rsa.pub`), and then deploy once with `flyctl deploy`. Then, you can remove the SSH key from the `HOME_SSH_AUTHORIZED_KEYS` again to keep it safe.
