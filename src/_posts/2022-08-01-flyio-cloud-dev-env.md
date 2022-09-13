@@ -244,9 +244,11 @@ To generate your key run the following (replace the `KEY_FILENAME` and the email
 
 ```sh
 ssh-keygen -t ed25519 -f ~/.ssh/<KEY_FILENAME> -C "your_email@example.com"
+```
 
-# Or use RSA if the Ed25519 algorithm is not supported by your system.
+Or use RSA if the Ed25519 algorithm is not supported by your system.
 
+```sh
 ssh-keygen -t rsa -b 4096 -f ~/.ssh/<KEY_FILENAME> -C "your_email@example.com"
 ```
 
