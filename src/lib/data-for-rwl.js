@@ -9,6 +9,24 @@
 // };
 const DataList = [
   {
+    url: "https://blog.pragmaticengineer.com/postmortem-best-practices/",
+    title: "Incident Review and Postmortem Best Practices",
+    author: "Gergely Orosz",
+    dateListed: "2022-09-26T00:06:00.000Z",
+  },
+  {
+    url: "https://sacks.substack.com/p/the-wilderness-period-61f009c769ac",
+    title: "The Wilderness Period - Can Your SaaS Startup Cross the Penny Gap?",
+    author: "David Sacks",
+    dateListed: "2022-09-26T00:05:00.000Z",
+  },
+  {
+    url: "https://vldb.org/pvldb/volumes/15/paper/SQLite%3A%20Past%2C%20Present%2C%20and%20Future",
+    title: "SQLite: Past, Present, and Future",
+    author: "Kevin P Gaffney (University of Wisconsin-Madison), Martin Prammer (University of Wisconsin - Madison), Laurence C Brasfield (SQLite devs), Richard Hipp (SQLite.org), Dan R Kennedy (Sqlite), Jignesh Patel (UW - Madison)",
+    dateListed: "2022-09-26T00:04:00.000Z",
+  },
+  {
     url: "https://sive.rs/book/ChecklistManifesto",
     title: "The Checklist Manifesto",
     author: "Atul Gawande",
