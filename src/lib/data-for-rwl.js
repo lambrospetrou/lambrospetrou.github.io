@@ -9,6 +9,31 @@
 // };
 const DataList = [
   {
+    url: "https://www.cs.princeton.edu/courses/archive/spr09/cos333/beautiful.html",
+    title: "A Regular Expression Matcher",
+    author: "Rob Pike, Brian Kernighan",
+    dateListed: "2022-09-28T13:40:00.000Z",
+    tags: ["favourite"],
+  },
+  {
+    url: "https://xeiaso.net/talks/how-my-website-works",
+    title: "My Blog is Hilariously Overengineered to the Point People Think it's a Static Site",
+    author: "Xe Iaso (Christine Dodrill)",
+    dateListed: "2022-09-28T13:35:00.000Z",
+  },
+  {
+    url: "https://worksinprogress.substack.com/p/notes-on-progress-an-environmentalist",
+    title: "Notes on Progress: An environmentalist gets lunch - Why being an effective environmentalist can often feel like being a bad one",
+    author: "Hannah Ritchie",
+    dateListed: "2022-09-28T13:30:00.000Z",
+  },
+  {
+    url: "https://www.theatlantic.com/newsletters/archive/2022/09/career-ambition-advice-data/671374/",
+    title: "Your Career Is Just One-Eighth of Your Life",
+    author: "Derek Thompson",
+    dateListed: "2022-09-28T13:29:00.000Z",
+  },
+  {
     url: "https://blog.pragmaticengineer.com/postmortem-best-practices/",
     title: "Incident Review and Postmortem Best Practices",
     author: "Gergely Orosz",
