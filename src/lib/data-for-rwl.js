@@ -11,7 +11,7 @@ const DataList = [
   {
     url: "https://architecturenotes.co/redis/",
     title: "Redis Explained",
-    author: "Amos (@fasterthanlime)",
+    author: "Mahdi Yusuf",
     dateListed: "2022-09-29T14:58:00.000Z",
   },
   {
