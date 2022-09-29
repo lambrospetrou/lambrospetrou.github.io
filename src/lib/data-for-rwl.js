@@ -9,6 +9,20 @@
 // };
 const DataList = [
   {
+    url: "https://jakearchibald.com/2021/cors/",
+    title: "How to win at CORS",
+    author: "Jake Archibald",
+    dateListed: "2022-09-29T19:11:00.000Z",
+    tags: ["favourite"],
+  },
+  {
+    url: "https://jakearchibald.com/2016/caching-best-practices/",
+    title: "Caching best practices & max-age gotchas",
+    author: "Jake Archibald",
+    dateListed: "2022-09-29T19:10:00.000Z",
+    tags: ["favourite"],
+  },
+  {
     url: "https://github.com/nalgeon/sqlean",
     title: "All the missing SQLite functions",
     author: "Anton Zhiyanov (and others)",
