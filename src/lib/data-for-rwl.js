@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://architecturenotes.co/redis/",
+    title: "Redis Explained",
+    author: "Amos (@fasterthanlime)",
+    dateListed: "2022-09-29T14:58:00.000Z",
+  },
+  {
     url: "https://fasterthanli.me/articles/remote-development-with-rust-on-fly-io",
     title: "Remote development with Rust on fly.io",
     author: "Amos (@fasterthanlime)",
