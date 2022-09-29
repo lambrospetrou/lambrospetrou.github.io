@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://fasterthanli.me/articles/remote-development-with-rust-on-fly-io",
+    title: "Remote development with Rust on fly.io",
+    author: "Amos (@fasterthanlime)",
+    dateListed: "2022-09-29T14:28:00.000Z",
+  },
+  {
     url: "https://www.cs.princeton.edu/courses/archive/spr09/cos333/beautiful.html",
     title: "A Regular Expression Matcher",
     author: "Rob Pike, Brian Kernighan",
