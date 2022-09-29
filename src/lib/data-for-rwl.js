@@ -9,6 +9,13 @@
 // };
 const DataList = [
   {
+    url: "https://github.com/nalgeon/sqlean",
+    title: "All the missing SQLite functions",
+    author: "Anton Zhiyanov (and others)",
+    dateListed: "2022-09-29T16:30:00.000Z",
+    tags: ["favourite"],
+  },
+  {
     url: "https://architecturenotes.co/redis/",
     title: "Redis Explained",
     author: "Mahdi Yusuf",
