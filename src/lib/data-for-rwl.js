@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://jakearchibald.com/2017/es-modules-in-browsers/",
+    title: "ECMAScript modules in browsers",
+    author: "Jake Archibald",
+    dateListed: "2022-09-30T16:48:00.000Z",
+  },
+  {
     url: "https://jakearchibald.com/2021/cors/",
     title: "How to win at CORS",
     author: "Jake Archibald",
