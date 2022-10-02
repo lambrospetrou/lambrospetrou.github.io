@@ -9,6 +9,31 @@
 // };
 const DataList = [
   {
+    url: "https://charity.wtf/2022/09/23/the-hierarchy-is-bullshit-and-bad-for-business/",
+    title: "The hierarchy is bullshit (and bad for business)",
+    author: "Charity Majors",
+    dateListed: "2022-10-02T16:40:00.000Z",
+    tags: ["favourite"],
+  },
+  {
+    url: "https://collabfund.com/blog/the-three-sides-of-risk/",
+    title: "The Three Sides of Risk",
+    author: "Morgan Housel",
+    dateListed: "2022-10-02T16:39:00.000Z",
+  },
+  {
+    url: "https://eatthefinancialelephant.com/dirtbag-millionaires/",
+    title: "Dirtbag Millionaires",
+    author: "Chris Mamula",
+    dateListed: "2022-10-02T16:38:00.000Z",
+  },
+  {
+    url: "https://www.mrmoneymustache.com/2012/01/13/the-shockingly-simple-math-behind-early-retirement/",
+    title: "The Shockingly Simple Math Behind Early Retirement",
+    author: "Mr. Money Mustache",
+    dateListed: "2022-10-02T16:37:00.000Z",
+  },
+  {
     url: "https://jakearchibald.com/2017/es-modules-in-browsers/",
     title: "ECMAScript modules in browsers",
     author: "Jake Archibald",
