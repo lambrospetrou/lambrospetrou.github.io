@@ -9,6 +9,18 @@
 // };
 const DataList = [
   {
+    url: "https://apenwarr.ca/log/20190926",
+    title: "What do executives do, anyway?",
+    author: "apenwarr",
+    dateListed: "2022-10-03T18:59:00.000Z",
+  },
+  {
+    url: "https://dave.cheney.net/high-performance-go-workshop/gophercon-2019.html",
+    title: "High Performance Go Workshop",
+    author: "Dave Cheney",
+    dateListed: "2022-10-03T18:58:00.000Z",
+  },
+  {
     url: "https://charity.wtf/2022/09/23/the-hierarchy-is-bullshit-and-bad-for-business/",
     title: "The hierarchy is bullshit (and bad for business)",
     author: "Charity Majors",
