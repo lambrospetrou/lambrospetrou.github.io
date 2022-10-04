@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://steve-yegge.blogspot.com/2007/06/rich-programmer-food.html?m=1",
+    title: "Rich Programmer Food",
+    author: "Steve Yegge",
+    dateListed: "2022-10-04T12:12:00.000Z",
+  },
+  {
     url: "https://apenwarr.ca/log/20190926",
     title: "What do executives do, anyway?",
     author: "apenwarr",
