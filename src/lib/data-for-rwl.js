@@ -9,6 +9,44 @@
 // };
 const DataList = [
   {
+    url: "https://buffett.cnbc.com/",
+    title: "Warren Buffett Archive",
+    author: "Warren Buffett",
+    dateListed: "2022-10-12T17:10:00.000Z",
+    tags: ["favourite"],
+  },
+  {
+    url: "https://css-tricks.com/the-importance-of-career-laddering/",
+    title: "The Importance of Career Laddering",
+    author: "Sarah Drasner",
+    dateListed: "2022-10-12T17:07:00.000Z",
+  },
+  {
+    url: "https://laetusinpraesens.org/docs/systfail.php",
+    title: "Why Systems Fail and Problems Sprout Anew - Commentary on the principles of 'Systemantics'",
+    author: "Anthony Judge",
+    dateListed: "2022-10-12T17:07:00.000Z",
+  },
+  {
+    url: "https://www.patterns.dev/posts/rendering-introduction/",
+    title: "Introduction to rendering patterns",
+    author: "Addy Osmani, Lydia Hallie",
+    dateListed: "2022-10-12T17:06:00.000Z",
+    tags: ["favourite"],
+  },
+  {
+    url: "https://runnersfi.com/95-must-read-articles-of-fi/",
+    title: "95 Must-Read Articles of FI (Financial Independence)",
+    author: "David Ward",
+    dateListed: "2022-10-12T17:05:01.000Z",
+  },
+  {
+    url: "https://scottmeyers.blogspot.com/2013/01/effective-effective-books.html",
+    title: "Effective 'Effective' Books",
+    author: "Scott Meyers",
+    dateListed: "2022-10-12T17:05:00.000Z",
+  },
+  {
     url: "https://steve-yegge.blogspot.com/2007/06/rich-programmer-food.html?m=1",
     title: "Rich Programmer Food",
     author: "Steve Yegge",
