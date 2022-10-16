@@ -58,14 +58,14 @@ Before we dive into the code, let's setup our working directory for Go.
 
 After completing the above, we can now create our workspace. For the rest of the article, assume our code is under `~/dev/aws-lambda-upstash-redis`.
 
-```sh
+```bash
 mkdir -p ~/dev/aws-lambda-upstash-redis
 cd ~/dev/aws-lambda-upstash-redis
 ```
 
 Then, create a Go package:
 
-```sh
+```bash
 go mod init com.upstash/example/aws-lambda-upstash-redis
 ```
 
@@ -378,13 +378,13 @@ Let's do a quick demo to make sure everything works as expected.
 
 - First, set the `UPSTASH_REDIS_URL` environment variable to the URL of the database you created in section 1 above. You can find it in the _details_ tab of your database's page (see section 1.1 above).
 
-```sh
+```bash
 export UPSTASH_REDIS_URL="<your-url-here>"
 ```
 
 - Then, build and run the local server:
 
-```sh
+```bash
 make build-server && ./build/server
 ```
 
@@ -467,7 +467,7 @@ Outputs:
 
 - Build the handler bundle for AWS Lambda:
 
-```sh
+```bash
 make build-lambda
 ```
 
@@ -480,13 +480,13 @@ sam-deploy: build-lambda
 
 - Deploy to the specified region (see previous command).
 
-```sh
+```bash
 make sam-deploy
 ```
 
 - You should get some output like the below:
 
-```sh
+```bash
 CloudFormation outputs from deployed stack
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 Outputs
@@ -517,7 +517,7 @@ We can test our Lambda locally by providing a `sample-event.json` with the right
 
 - Then, once you have a valid JSON event file, run the following to invoke the server logic as it would run on AWS Lambda:
 
-```sh
+```bash
 sam local invoke -t aws-iac/sam-template.yml -e sample-event.json
 ```
 

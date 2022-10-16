@@ -14,6 +14,7 @@ In this article I will describe how I now use Fly.io as my development environme
 Fly.io is built on top of [Firecracker microVMs](https://fly.io/docs/reference/architecture/#microvms) and supports a [few types of builders](https://fly.io/docs/reference/builders/) that ultimately assemble a container to deploy. In this article I am going to use the [Dockerfile support](https://fly.io/docs/getting-started/dockerfile/) since that's how I prefer to model my development environment.
 
 The benefits of modelling my environment in a Dockerfile:
+
 - Upgrading the operating system (OS), or even changing it, is a single line change and a redeploy (e.g. from `FROM ubuntu:18.04` to `FROM ubuntu:20.04`).
 - Installing or uninstalling software and packages from the OS is again trivial using the [`RUN`](https://docs.docker.com/engine/reference/builder/#run) command.
 - Define exactly what processes should my server run and never have to worry about manually (re)starting them.
@@ -23,6 +24,7 @@ The benefits of modelling my environment in a Dockerfile:
 ## Cloud Development Environment
 
 For a basic remote development environment I want to be able to do the following:
+
 - SSH into it in case I need to test linux commands.
 - Checkout and work with Git repositories.
 - Install the several programming languages I work with.
@@ -67,6 +69,7 @@ CMD ["/usr/sbin/sshd", "-D"]
 Let's do a simple breakdown of each Dockerfile instruction.
 
 First, we define the Operating System (OS) to use, in this case [Ubuntu](https://hub.docker.com/_/ubuntu/) version `bionic` (codenamed `18.04`).
+
 ```dockerfile
 FROM ubuntu:bionic
 ```
@@ -78,6 +81,7 @@ The next 8 lines create a new user `clouddevuser` ([customisable argument using 
 Then, we have 2 lines essentially making sure the our local SSH configuration is copied into the container and is the one used.
 
 The last lines need some explanation.
+
 ```dockerfile
 COPY ./entrypoint.sh ./entrypoint.sh
 COPY ./docker-entrypoint.d/* ./docker-entrypoint.d/
@@ -93,7 +97,7 @@ In summary, this Dockerfile selects the OS we want, installs extra software pack
 
 ### entrypoint.sh
 
-```sh
+```bash
 #!/bin/bash
 
 set -euxo pipefail
@@ -123,7 +127,7 @@ if [ -f "$HOME_DIR/.ssh/id_ed25519" ]; then
     echo "$HOME_DIR/.ssh/id_ed25519 exists, skipping."
     echo ""
     echo "Make sure you add this public key to your Github / Gitlab / other vcs:"
-else 
+else
     echo "$HOME_DIR/.ssh/id_ed25519 does not exist, generating."
     ssh-keygen -t ed25519 -f $HOME_DIR/.ssh/id_ed25519 -C "$USER_ARG@fly-vscode" -N ""
     echo ""
@@ -145,6 +149,7 @@ exec "$@"
 ```
 
 Briefly, the entrypoint script:
+
 1. creates the user's home directory (needs to match the one we used in `Dockerfile`)
 2. adds some SSH authorized keys to our configuration to allow remote SSH-ing
 3. optionally generates an SSH key that we will use to authenticate this server with services like Github when pulling/pushing Git repositories
@@ -152,6 +157,7 @@ Briefly, the entrypoint script:
 5. and finally runs the command passed as argument to the script, which as we explained in the previous section it's going to be `/usr/sbin/sshd -D`
 
 **Notes**
+
 - Anything that needs the user uses the environment variable `USER_ARG` that we defined in the `Dockerfile`.
 - The content of the environment variable `HOME_SSH_AUTHORIZED_KEYS` is appended to the `$HOME_DIR/.ssh/authorized_keys` file, and then we do some shell shenanigans to only allow unique lines inside that file (to avoid appending the same keys each time our container is started). The value of `HOME_SSH_AUTHORIZED_KEYS` is provided by the `fly.toml` file as you will see below.
 - The generated `$HOME_DIR/.ssh/id_ed25519.pub` file is the public key we need to upload to Github or any other service that needs to authenticate its user using SSH keys.
@@ -187,6 +193,7 @@ app = "<WILL_BE_REPLACE_WITH_GENERATED_NAME>"
 Fly.io uses the [`fly.toml` configuration file](https://fly.io/docs/reference/configuration/) to configure your application when using the [`flyctl` CLI](https://fly.io/docs/flyctl/).
 
 What happens here?
+
 - The `app` key specifies the name of the Fly.io application after it's created (see below section) and is used by the `flyctl` CLI when issuing commands.
 - The `HOME_SSH_AUTHORIZED_KEYS` key can be updated to contain the SSH keys to put into the authorised keys file for our container at runtime. I usually update this with a new SSH key, deploy the application (see section below) which will append it to the `authorized_keys` file, and then remove it from the `fly.toml` file to avoid versioning it in the Git repository.
 - The `clouddevdata` persistent volume is mounted on `/data` inside the container.
@@ -207,7 +214,7 @@ All `flyctl` commands shown below need to run inside the source code directory.
 This step only needs to be run once in order to create your Fly.io application.
 After [installing the `flyctl` CLI](https://fly.io/docs/flyctl/installing/, run the following:
 
-```sh
+```bash
 flyctl launch --generate-name --no-deploy --copy-config
 ```
 
@@ -219,7 +226,7 @@ If you want to use a specific application name (since it's part of the DNS name 
 
 The main enabler for the cloud development environment is that we can use [persistent disk volumes](https://fly.io/docs/reference/volumes/) to hold our data files while keeping all the OS/packages controlled by the `Dockerfile`. So let's create our volume:
 
-```sh
+```bash
 flyctl volumes create clouddevdata --region lhr --size 10
 ```
 
@@ -229,7 +236,7 @@ This will create a `10GB` volume in London (`lhr`). You have to create the volum
 
 This is the only step we need to do every time we change something in our application.
 
-```sh
+```bash
 flyctl deploy
 ```
 
@@ -242,17 +249,18 @@ Once the deployment is finished you can use the cloud development environment, i
 
 To generate your key run the following (replace the `KEY_FILENAME` and the email as necessary):
 
-```sh
+```bash
 ssh-keygen -t ed25519 -f ~/.ssh/<KEY_FILENAME> -C "your_email@example.com"
 ```
 
 If your system does not support the Ed25519 algorithm, you can use RSA keys.
 
-```sh
+```bash
 ssh-keygen -t rsa -b 4096 -f ~/.ssh/<KEY_FILENAME> -C "your_email@example.com"
 ```
 
 The above command will generate two files:
+
 1. The private key, at `~/.ssh/<KEY_FILENAME>`, which should **never be shared with anyone**.
 2. The public key, at `~/.ssh/<KEY_FILENAME>.pub`, which is the one to upload in Github or in our case paste in the `HOME_SSH_AUTHORIZED_KEYS` section as described above.
 
@@ -260,14 +268,14 @@ Common key filenames are `id_<algorithm>`, e.g. `id_rsa`, or `id_ed25519`. In so
 
 You should add the key to the `ssh-agent` for easier use, [following the Github instructions](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#adding-your-ssh-key-to-the-ssh-agent).
 
-
 ### 4b. SSH
 
 The default configuration only allows SSH-ing with authorized keys, and password-based authentication is disabled (see `etc/ssh/sshd_config` in the source code).
 Therefore, you need to update the `HOME_SSH_AUTHORIZED_KEYS` value in `fly.toml` with your laptop's SSH key (usually `~/.ssh/id_rsa.pub`), and then deploy once with `flyctl deploy`. Then, you can remove the SSH key from the `HOME_SSH_AUTHORIZED_KEYS` again to keep it safe.
 
 Test that you can SSH into the cloud development environment (assuming application name `lp1111`, and user `clouddevuser`):
-```sh
+
+```bash
 ssh clouddevuser@lp1111.fly.dev -p 10022
 ```
 
@@ -279,7 +287,7 @@ VSCode has amazing [remote development capabilities](https://code.visualstudio.c
 
 1. Install the [Remote - SSH extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh) from the marketplace.
 2. The default configuration only allows SSH-ing with authorized keys, and password-based authentication is disabled (see `etc/ssh/sshd_config` in the source code).
-Therefore, you need to update the `HOME_SSH_AUTHORIZED_KEYS` value in `fly.toml` with your laptop's SSH key (usually `~/.ssh/id_rsa.pub`), and then deploy once with `flyctl deploy`. Then, you can remove the SSH key from the `HOME_SSH_AUTHORIZED_KEYS` again to keep it safe.
+   Therefore, you need to update the `HOME_SSH_AUTHORIZED_KEYS` value in `fly.toml` with your laptop's SSH key (usually `~/.ssh/id_rsa.pub`), and then deploy once with `flyctl deploy`. Then, you can remove the SSH key from the `HOME_SSH_AUTHORIZED_KEYS` again to keep it safe.
 3. Open the command palette (`CMD+SHIFT+p` on Mac, `CTRL+SHIFT+p` on Windows).
 4. Search for the `Remote-SSH: Connect to Host` command and select it.
 5. Type your environment details, e.g. `clouddevuser@lp1111.fly.dev:10022`, where `clouddevuser` is the user used in the `Dockerfile`, `lp1111` is the Fly.io application name, and `10022` is the port exported by the `Dockerfile`.

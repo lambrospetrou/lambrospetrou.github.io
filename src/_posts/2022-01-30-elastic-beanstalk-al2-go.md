@@ -23,10 +23,11 @@ AWS Elastic Beanstalk is similar in "principle" to [Azure App Service](https://a
 I personally like Elastic Beanstalk and is my first choice of deploying to actual hosts/VM instances. I usually use the [single instance](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/using-features-managing-env-types.html#single-instance-environ) environment to get the benefits without the costs, but there is also the [load-balanced environment](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/using-features-managing-env-types.html#autoscale-environ) which allows you to scale as much as you want.
 
 Features the Go platform provides which I cannot find in another platform as of time of writing ([see related tweet](https://twitter.com/LambrosPetrou/status/1487493396566528007)):
+
 - single server instance only (because not everything is web-scale)
 - persistent disk volumes (i.e. [Amazon EBS](https://aws.amazon.com/ebs/))
 - deployments in-place on same instance with only 1-2s of downtime
-  + restriction due to the persistent disk volume only being accessible from one host at a time
+  - restriction due to the persistent disk volume only being accessible from one host at a time
 - managed platform: OS updates, host patching, language runtime updates
 - variety of instance types, from the low-cost [T3](https://aws.amazon.com/ec2/instance-types/t3/), to the powerful ARM-based Graviton2 [C6g](https://aws.amazon.com/ec2/instance-types/c6g/)
 - <5$/month
@@ -35,9 +36,10 @@ Features the Go platform provides which I cannot find in another platform as of 
 
 The Amazon Linux 2 based platforms were added back in [2020](https://aws.amazon.com/blogs/compute/introducing-a-new-generation-of-aws-elastic-beanstalk-platforms/), and with that upgrade all the platforms now follow (almost) the same conventions and setup ([see supported Linux platforms](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/platforms-linux.html#platforms-linux.versions)), which is a nice improvement over the previous platforms based on Amazon Linux 1 where each language had its own idiosyncracies.
 
-The AWS documentation contains most of the things we need to know about the platforms but unfortunately as usual it's like they intentionally try to make it hard on their users, and they spread the information across multiple pages. In this article I will try to cover the main features of the platform and link to the corresponding documentation pages to make it easier to find what we need. This is basically a reference for future me 😅 
+The AWS documentation contains most of the things we need to know about the platforms but unfortunately as usual it's like they intentionally try to make it hard on their users, and they spread the information across multiple pages. In this article I will try to cover the main features of the platform and link to the corresponding documentation pages to make it easier to find what we need. This is basically a reference for future me 😅
 
 All AL2 platforms offer the following features ([see documentation](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/platforms-linux-extend.html)):
+
 - **Buildfile**: one-off commands to run from inside the uploaded bundle, e.g. building the source code to create the binary to run.
 - **Procfile**: long-running monitored commands to run, e.g. the web server.
 - **Platform hooks**: one-off commands to run during the deployment lifecycle hooks (e.g. predeploy, postdeploy). New to AL2 based platforms.
@@ -54,11 +56,13 @@ Let's go into details for each one of these for the [Go platform](https://docs.a
 The `Buildfile` file should be placed at the root of the uploaded bundle `.zip` file and contains one-off commands that we want to run as part of the **build** phase of the deployment. The working directory of each command is the root of the uploaded bundle. If your uploaded bundle contains your source code then this is where you would put your application compile command. If you have a [Continuous Integration (CI)](https://aws.amazon.com/devops/continuous-integration/) system to build your source code before-hand then you don't need a `Buildfile`.
 
 For example, the following `Buildfile` will compile the Go application and create a binary file named `app` into the `bin/` directory:
+
 ```
 cmd1: go build -o bin/app
 ```
 
 The `cmd1:` part is nothing but just a name and does not have any meaning other than differentiating the commands to run. The following is also valid:
+
 ```
 build: go build -o bin/app
 check: ./validate-app-binary.sh
@@ -76,6 +80,7 @@ The Go platform also supports conventions to [automatically build and run your a
 The `Procfile` file should be placed at the root of the uploaded bundle `.zip` file and contains the long-running commands that we want to run as part of the application. Each process started by these commands will be monitored by the environment and automatically restarted when they crash. This is the place where we specify the main command(s) to start the application.
 
 For example, the following starts the `bin/app` and `bin/bgapp` apps with the right flags:
+
 ```
 web: ./bin/app -name webapp
 bgapp: ./bin/bgapp -name bgapp -port 5001
@@ -98,7 +103,8 @@ Platform hooks are a new addition to the AL2 based platforms. The only way to ex
 The [Platform hooks](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/platforms-linux-extend.html#platforms-linux-extend.hooks) (expand section) are basically script files placed inside the `.platform/hooks` directory, under one of the following sub-directories: `prebuild`, `predeploy`, `postdeploy`, depending when they need to run.
 
 The scripts inside each of those directories run in order of their filename. For example, let's examine the following directory structure:
-```sh
+
+```bash
 $ ls .platform/hooks/**
 .platform/hooks/postdeploy:
 01-validate-http.sh  02-update-route53.sh
@@ -111,11 +117,12 @@ With the above files the script `01-setup-ebs.sh` will be executed before the ne
 
 ### Config hooks
 
-Apart from the `.platform/hooks` directory, there is also a `.platform/confighooks` directory supported. At first glance, the difference between the two is confusing. Even though the available hooks and execution rules are the same, the type of changes in a deployment will decide which hooks to trigger. 
+Apart from the `.platform/hooks` directory, there is also a `.platform/confighooks` directory supported. At first glance, the difference between the two is confusing. Even though the available hooks and execution rules are the same, the type of changes in a deployment will decide which hooks to trigger.
 
 > A configuration deployment occurs when you make configuration changes that only update environment instances without recreating them.
 
 According to the [docs](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/platforms-linux-extend.html#:~:text=A%20configuration%20deployment%20occurs%20when%20you%20make%20configuration%20changes%20that%20only%20update%20environment%20instances%20without%20recreating%20them.%20The%20following%20option%20updates%20cause%20a%20configuration%20update.) the following changes trigger `.platform/confighooks` only:
+
 - Environment properties and platform-specific settings
 - Static files
 - AWS X-Ray daemon
@@ -167,7 +174,8 @@ In this application we have a simple HTTP API written in Go. We don't use any of
 I didn't put a `Buildfile` in this application, so when we want to deploy we need to run `make` either locally or on our CI system, and then upload the bundle file located in `build/bundle.zip`.
 
 This is how the directory structure looks like after running `make`:
-```sh
+
+```bash
 ➜  single-process git:(master) find . -type f
 ./app/go.mod
 ./app/main.go
@@ -236,7 +244,8 @@ In this section we have the same application as above, but this time I am starti
 - Full code available: https://github.com/lambrospetrou/aws-playground/tree/master/elastic-beanstalk-al2-go/multi-process
 
 This is how the directory structure looks like after running `make`:
-```sh
+
+```bash
 ➜  multi-process git:(master) find . -type f
 ./app/go.mod
 ./app/main.go
@@ -267,6 +276,7 @@ Exactly the same as before.
 We have a process named `web` which is the same as before starting the server at given `PORT` (`5000`), and also a second process named `bgapp` which starts the same server at port `5001` explicitly. As I mentioned in the [Procfile](#procfile) section only the server at port `5000` will actually receive requests by default, so we need to override the `nginx` configuration to route traffic accordingly.
 
 We do this by providing `.platform/nginx/conf.d/01_proxy.conf`:
+
 ```
 server {
 	server_name .elasticbeanstalk.com;
@@ -293,6 +303,7 @@ When Beanstalk starts the `nginx` service it automatically includes all `.conf` 
 Unfortunately Elastic Beanstalk has some rough edges, and logging is one of those. When we only have a single `web` process everything is fine and as we saw above all the logs we need are automatically streamed to CloudWatch Logs (if enabled). The issue is when we have more than one process, e.g. in our current scenario where we also have the `bgapp` process.
 
 After reading the following resources I realised I need to provide a custom configuration file to install AWS CloudWatch Logs agent and set it up to stream the additional `bgapp.stdout.log` file to CloudWatch Logs.
+
 - https://aws.amazon.com/premiumsupport/knowledge-center/elastic-beanstalk-customized-log-files/
 - https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/AWSHowTo.cloudwatchlogs.html#AWSHowTo.cloudwatchlogs.streaming.custom
 
