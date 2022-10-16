@@ -1,15 +1,26 @@
-import Head from 'next/head'
-import {Layout} from "../../components/layout";
-import {getAllPostSlugs, getPostData} from "../../lib/posts-store";
-import {dateToLongDisplay} from "../../components/display-formatters";
+import Head from "next/head";
+import { Layout } from "../../components/layout";
+import { getAllPostSlugs, getPostData } from "../../lib/posts-store";
+import { dateToLongDisplay } from "../../components/display-formatters";
 
 export default function Post({ postData }) {
-  const {title, description, slug, date, contentHtml} = postData;
+  const {
+    title,
+    description,
+    canonical_url: canonicalInput,
+    slug,
+    date,
+    contentHtml,
+  } = postData;
+  let canonicalUrl = (canonicalInput || "").trim();
+  if (canonicalUrl === "") {
+    canonicalUrl = `https://www.lambrospetrou.com/articles/${slug}/`;
+  }
 
   return (
     <Layout>
       <Head>
-        <link rel="canonical" href={`https://www.lambrospetrou.com/articles/${slug}/`} />
+        <link rel="canonical" href={canonicalUrl} />
         <title>{title} | Lambros Petrou</title>
         <meta property="og:title" content={`${title} | Lambros Petrou`} />
         <meta property="og:description" content={description} />
@@ -24,15 +35,27 @@ export default function Post({ postData }) {
           </div>
         </header>
 
-        <section className="post-body" dangerouslySetInnerHTML={{ __html: contentHtml }}/>
+        <section
+          className="post-body"
+          dangerouslySetInnerHTML={{ __html: contentHtml }}
+        />
 
-        <br/>
+        <br />
         <section>
-          <a className="twitter-share-button" data-via="lambrospetrou" href="https://twitter.com/intent/tweet">Tweet</a>
+          <a
+            className="twitter-share-button"
+            data-via="lambrospetrou"
+            href="https://twitter.com/intent/tweet"
+          >
+            Tweet
+          </a>
           {/* The following will generate a warning like `index.js:1 Warning: Extra attributes from the server` 
               because once the script loads it adds the attribute and then when React hydration kicks in
               does not generate the same DOM. This is fine since we use `export` to static files.*/}
-          <script type="text/javascript" dangerouslySetInnerHTML={{ __html: `
+          <script
+            type="text/javascript"
+            dangerouslySetInnerHTML={{
+              __html: `
             window.twttr = (function(d, s, id) {
             var js, fjs = d.getElementsByTagName(s)[0],
               t = window.twttr || {};
@@ -49,11 +72,13 @@ export default function Post({ postData }) {
 
             return t;
           }(document, "script", "twitter-wjs"));
-          `}}/>
+          `,
+            }}
+          />
         </section>
       </article>
     </Layout>
-  )
+  );
 }
 
 /////////////////
@@ -62,22 +87,22 @@ export default function Post({ postData }) {
 
 export async function getStaticProps({ params, preview }) {
   const postData = getPostData(params.slug, {
-    reloadPosts: preview
+    reloadPosts: preview,
   });
 
   return {
     props: {
-      postData
-    }
+      postData,
+    },
   };
 }
 
 export async function getStaticPaths() {
-  const paths = getAllPostSlugs().map(slug => ({
-    params: {slug}
+  const paths = getAllPostSlugs().map((slug) => ({
+    params: { slug },
   }));
   return {
     paths,
-    fallback: false
-  }
+    fallback: false,
+  };
 }
