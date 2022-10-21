@@ -9,6 +9,13 @@
 // };
 const DataList = [
   {
+    url: "https://grugbrain.dev/",
+    title: "The Grug Brained Developer - A layman's guide to thinking like the self-aware smol brained",
+    author: "Carson Gross",
+    dateListed: "2022-10-21T13:10:00.000Z",
+    tags: ["favourite"],
+  },
+  {
     url: "https://buffett.cnbc.com/",
     title: "Warren Buffett Archive",
     author: "Warren Buffett",
