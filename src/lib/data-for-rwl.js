@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://charity.wtf/2019/05/01/friday-deploy-freezes-are-exactly-like-murdering-puppies/",
+    title: "Friday Deploy Freezes are Exactly Like Murderring Puppies",
+    author: "Charity Majors",
+    dateListed: "2022-10-25T13:50:00.000Z",
+  },
+  {
     url: "https://grugbrain.dev/",
     title: "The Grug Brained Developer - A layman's guide to thinking like the self-aware smol brained",
     author: "Carson Gross",
