@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://sive.rs/n",
+    title: "Hell Yeah or No - what's worth doing",
+    author: "Derek Sivers",
+    dateListed: "2022-10-26T17:33:00.000Z",
+  },
+  {
     url: "https://charity.wtf/2019/05/01/friday-deploy-freezes-are-exactly-like-murdering-puppies/",
     title: "Friday Deploy Freezes are Exactly Like Murderring Puppies",
     author: "Charity Majors",
