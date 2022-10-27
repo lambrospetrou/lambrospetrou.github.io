@@ -13,6 +13,7 @@ const DataList = [
     title: "Hell Yeah or No - what's worth doing",
     author: "Derek Sivers",
     dateListed: "2022-10-26T17:33:00.000Z",
+    tags: ["favourite"],
   },
   {
     url: "https://charity.wtf/2019/05/01/friday-deploy-freezes-are-exactly-like-murdering-puppies/",
