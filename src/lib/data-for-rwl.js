@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://www.heavybit.com/library/video/self-serve-go-to-market/",
+    title: "Building Self-Serve Go-to-Market with Adam Gross",
+    author: "Adam Gross",
+    dateListed: "2022-10-30T19:50:00.000Z",
+  },
+  {
     url: "https://sive.rs/n",
     title: "Hell Yeah or No - what's worth doing",
     author: "Derek Sivers",
