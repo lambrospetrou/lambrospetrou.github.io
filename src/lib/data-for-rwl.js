@@ -81,7 +81,7 @@ const DataList = [
   {
     url: "https://apenwarr.ca/log/20190926",
     title: "What do executives do, anyway?",
-    author: "apenwarr",
+    author: "Avery Pennarun (@apenwarr)",
     dateListed: "2022-10-03T18:59:00.000Z",
   },
   {
