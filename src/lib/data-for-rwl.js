@@ -9,6 +9,18 @@
 // };
 const DataList = [
   {
+    url: "https://m.signalvnoise.com/exponential-growth-devours-and-corrupts/",
+    title: "Exponential growth devours and corrupts",
+    author: "David Heinemeier Hansson - DHH",
+    dateListed: "2022-11-03T13:50:00.000Z",
+  },
+  {
+    url: "https://nira.com/basecamp-history/",
+    title: "How an Anti-Growth Mentality Helped Basecamp Grow to Over 2 Million Customers",
+    author: "Hiten Shah",
+    dateListed: "2022-11-03T13:40:00.000Z",
+  },
+  {
     url: "https://www.heavybit.com/library/video/self-serve-go-to-market/",
     title: "Building Self-Serve Go-to-Market with Adam Gross",
     author: "Adam Gross",
