@@ -9,6 +9,13 @@
 // };
 const DataList = [
   {
+    url: "https://37signals.com/why-we-choose-profit",
+    title: "Why We Choose Profit at 37signals",
+    author: "37signals",
+    dateListed: "2022-11-08T22:44:00.000Z",
+    tags: ["favourite"],
+  },
+  {
     url: "https://m.signalvnoise.com/exponential-growth-devours-and-corrupts/",
     title: "Exponential growth devours and corrupts",
     author: "David Heinemeier Hansson - DHH",
