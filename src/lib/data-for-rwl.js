@@ -9,6 +9,18 @@
 // };
 const DataList = [
   {
+    url: "https://brooker.co.za/blog/2022/11/08/writing.html",
+    title: "Writing Is Magic",
+    author: "Marc Brooker",
+    dateListed: "2022-11-08T22:55:00.000Z",
+  },
+  {
+    url: "https://www.joelonsoftware.com/2004/12/15/camels-and-rubber-duckies/",
+    title: "Camels and Rubber Duckies",
+    author: "Joel Spolsky",
+    dateListed: "2022-11-08T22:50:00.000Z",
+  },
+  {
     url: "https://37signals.com/why-we-choose-profit",
     title: "Why We Choose Profit at 37signals",
     author: "37signals",
