@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://simonwillison.net/2022/Nov/6/what-to-blog-about/",
+    title: "What to blog about",
+    author: "Simon Willison",
+    dateListed: "2022-11-12T19:10:00.000Z",
+  },
+  {
     url: "https://brooker.co.za/blog/2022/11/08/writing.html",
     title: "Writing Is Magic",
     author: "Marc Brooker",
