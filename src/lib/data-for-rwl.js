@@ -9,6 +9,13 @@
 // };
 const DataList = [
   {
+    url: "https://www.youtube.com/watch?v=QoqohmccTSc",
+    title: "50 Entrepreneurs share priceless advice",
+    author: "Multiple founders/entrepreneurs",
+    dateListed: "2022-11-13T20:30:00.000Z",
+    type: "video",
+  },
+  {
     url: "https://simonwillison.net/2022/Nov/6/what-to-blog-about/",
     title: "What to blog about",
     author: "Simon Willison",
