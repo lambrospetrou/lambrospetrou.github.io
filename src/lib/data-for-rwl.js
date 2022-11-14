@@ -1795,6 +1795,7 @@ const DataList = [
     author: "Guy Kawasaki",
     type: "video",
     dateListed: "2021-03-14T11:00:00.000Z",
+    tags: ["favourite"],
   },
   {
     url: "https://medium.com/always-be-coding/abc-always-be-coding-d5f8051afce2",
