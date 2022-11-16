@@ -65,7 +65,7 @@ _This is really one the top highlights!_
 
 - <https://sive.rs/tilt>
 
-## 24. There’s no speed limit"
+## 24. There’s no speed limit
 
 > [...] **“the standard pace is for chumps”** — that the system is designed so anyone can keep up. If you’re more driven than most people, you can do way more than anyone expects.
 
