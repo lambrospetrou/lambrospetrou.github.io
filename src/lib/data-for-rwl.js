@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://docs.aws.amazon.com/whitepapers/latest/aws-fault-isolation-boundaries/",
+    title: "AWS Fault Isolation Boundaries",
+    author: "AWS Whitepaper",
+    dateListed: "2022-11-21T21:10:00.000Z",
+  },
+  {
     url: "https://www.youtube.com/watch?v=QoqohmccTSc",
     title: "50 Entrepreneurs share priceless advice",
     author: "Multiple founders/entrepreneurs",
