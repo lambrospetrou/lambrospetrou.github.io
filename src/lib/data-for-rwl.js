@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://thorstenball.com/blog/2020/09/08/how-can-you-not-be-romantic-about-programming/",
+    title: "How can you not be romantic about programming?",
+    author: "Thorsten Ball",
+    dateListed: "2022-11-22T12:45:00.000Z",
+  },
+  {
     url: "https://docs.aws.amazon.com/whitepapers/latest/aws-fault-isolation-boundaries/",
     title: "AWS Fault Isolation Boundaries",
     author: "AWS Whitepaper",
