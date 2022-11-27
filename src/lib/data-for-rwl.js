@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://headrush.typepad.com/creating_passionate_users/2005/09/you_can_outspen.html",
+    title: "You can out-spend or out-teach",
+    author: "Kathy Sierra (Creating Passionate Users)",
+    dateListed: "2022-11-27T11:12:00.000Z",
+  },
+  {
     url: "https://www.joshwcomeau.com/css/interactive-guide-to-flexbox/",
     title: "An Interactive Guide to Flexbox",
     author: "Josh W. Comeau",
