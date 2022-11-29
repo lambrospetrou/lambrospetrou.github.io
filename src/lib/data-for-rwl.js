@@ -9,6 +9,14 @@
 // };
 const DataList = [
   {
+    url: "https://www.youtube.com/watch?v=rI8tNMsozo0",
+    title: "Rails Conf 2012 Keynote: Simplicity Matters",
+    author: "Rich Hickey",
+    dateListed: "2022-11-29T11:05:00.000Z",
+    type: "video",
+    tags: ["favourite"],
+  },
+  {
     url: "https://headrush.typepad.com/creating_passionate_users/2005/09/you_can_outspen.html",
     title: "You can out-spend or out-teach",
     author: "Kathy Sierra (Creating Passionate Users)",
