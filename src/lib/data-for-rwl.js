@@ -9,6 +9,13 @@
 // };
 const DataList = [
   {
+    url: "https://aws.amazon.com/builders-library/cicd-pipeline/",
+    title: "My CI/CD pipeline is my release captain",
+    author: "Clare Liguori",
+    dateListed: "2022-12-01T19:45:00.000Z",
+    tags: ["favourite"],
+  },
+  {
     url: "https://zerodha.tech/blog/scaling-with-common-sense/",
     title: "Scaling with common sense",
     author: "Kailash Nadh",
