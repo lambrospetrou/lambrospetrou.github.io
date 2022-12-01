@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://zerodha.tech/blog/scaling-with-common-sense/",
+    title: "Scaling with common sense",
+    author: "Kailash Nadh",
+    dateListed: "2022-12-01T11:00:00.000Z",
+  },
+  {
     url: "https://www.youtube.com/watch?v=rI8tNMsozo0",
     title: "Rails Conf 2012 Keynote: Simplicity Matters",
     author: "Rich Hickey",
