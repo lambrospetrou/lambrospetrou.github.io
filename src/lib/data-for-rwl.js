@@ -9,6 +9,18 @@
 // };
 const DataList = [
   {
+    url: "https://charity.wtf/2022/08/15/live-your-best-life-with-structured-events/",
+    title: "Live your best life with structured events",
+    author: "Charity Majors",
+    dateListed: "2022-12-06T18:10:00.000Z",
+  },
+  {
+    url: "http://_.0xffff.me/build-database-in-2020s.html",
+    title: "Building a database in the 2020s",
+    author: "Ed Huang",
+    dateListed: "2022-12-06T18:00:00.000Z",
+  },
+  {
     url: "https://aws.amazon.com/builders-library/cicd-pipeline/",
     title: "My CI/CD pipeline is my release captain",
     author: "Clare Liguori",
