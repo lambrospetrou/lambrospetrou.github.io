@@ -9,6 +9,14 @@
 // };
 const DataList = [
   {
+    url: "https://www.youtube.com/playlist?list=PL2yQDdvlhXf_hIzmfHCdbcXj2hS52oP9r",
+    title: "AWS re:Invent 2022 (all videos)",
+    author: "AWS Events",
+    dateListed: "2022-12-08T14:40:00.000Z",
+    type: "video",
+    tags: ["favourite"],
+  },
+  {
     url: "https://charity.wtf/2022/08/15/live-your-best-life-with-structured-events/",
     title: "Live your best life with structured events",
     author: "Charity Majors",
