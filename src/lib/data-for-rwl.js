@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://www.artofmanliness.com/character/behavior/autofocus-the-productivity-system-that-treats-your-to-do-list-like-a-river/",
+    title: "Autofocus: The Productivity System That Treats Your To-Do List Like a River",
+    author: "Brett & Kate McKay",
+    dateListed: "2022-12-12T14:30:00.000Z",
+  },
+  {
     url: "https://www.youtube.com/playlist?list=PL2yQDdvlhXf_hIzmfHCdbcXj2hS52oP9r",
     title: "AWS re:Invent 2022 (all videos)",
     author: "AWS Events",
