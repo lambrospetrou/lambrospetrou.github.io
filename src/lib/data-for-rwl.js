@@ -9,6 +9,20 @@
 // };
 const DataList = [
   {
+    url: "https://www.troyhunt.com/10-personal-finance-lessons-for-technology-professionals/",
+    title: "10 Personal Finance Lessons for Technology Professionals",
+    author: "Troy Hunt",
+    dateListed: "2022-12-12T15:00:00.000Z",
+  },
+  {
+    url: "https://www.youtube.com/watch?v=u_ktRTWMX3M",
+    title: "Arnold Schwarzenegger 2018 - The speech that broke the internet - Most Inspiring ever",
+    author: "Arnold Schwarzenegger",
+    dateListed: "2022-12-08T14:45:00.000Z",
+    type: "video",
+    tags: ["favourite"],
+  },
+  {
     url: "https://www.artofmanliness.com/character/behavior/autofocus-the-productivity-system-that-treats-your-to-do-list-like-a-river/",
     title: "Autofocus: The Productivity System That Treats Your To-Do List Like a River",
     author: "Brett & Kate McKay",
