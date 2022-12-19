@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://www.developermarkepear.com/blog/developer-marketing-hacker-news",
+    title: "How to market your dev tool on Hacker News: Learnings from Tailscale",
+    author: "Kuba Czakon",
+    dateListed: "2022-12-19T18:00:00.000Z",
+  },
+  {
     url: "https://www.troyhunt.com/10-personal-finance-lessons-for-technology-professionals/",
     title: "10 Personal Finance Lessons for Technology Professionals",
     author: "Troy Hunt",
