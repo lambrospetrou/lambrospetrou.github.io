@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://lwn.net/Articles/250967/",
+    title: "What every programmer should know about memory, Part 1",
+    author: "Ulrich Drepper",
+    dateListed: "2023-01-13T12:12:00.000Z",
+  },
+  {
     url: "https://www.developermarkepear.com/blog/developer-marketing-hacker-news",
     title: "How to market your dev tool on Hacker News: Learnings from Tailscale",
     author: "Kuba Czakon",
