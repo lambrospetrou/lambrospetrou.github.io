@@ -9,6 +9,24 @@
 // };
 const DataList = [
   {
+    url: "https://lethain.com/lessons-not-worth-learning/",
+    title: "Lessons not worth learning.",
+    author: "Will Larson",
+    dateListed: "2023-01-13T13:25:00.000Z",
+  },
+  {
+    url: "http://www.paulgraham.com/growth.html",
+    title: "Startup = Growth",
+    author: "Paul Graham",
+    dateListed: "2023-01-13T13:21:00.000Z",
+  },
+  {
+    url: "https://www.bvp.com/atlas/scaling-to-100-million",
+    title: "Scaling to $100 Million",
+    author: "Mary D'Onofrio, Ethan Ding",
+    dateListed: "2023-01-13T12:44:00.000Z",
+  },
+  {
     url: "https://lwn.net/Articles/250967/",
     title: "What every programmer should know about memory, Part 1",
     author: "Ulrich Drepper",
