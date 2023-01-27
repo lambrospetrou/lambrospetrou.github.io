@@ -1,0 +1,14 @@
+name: "workflow :: dynamic - empty"
+
+on:
+  workflow_call:
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  cicd:
+    runs-on: ubuntu-latest
+    steps:
+    - run: echo "Dynamic EMPTY workflow runs!"
