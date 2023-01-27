@@ -5,6 +5,8 @@ on:
     branches-ignore:
       - 'release_captain/**'
 
+permissions: write-all
+
 jobs:
   prepare_release_captain:
     runs-on: ubuntu-latest
