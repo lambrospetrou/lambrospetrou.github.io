@@ -1,6 +1,9 @@
 name: "workflow :: main"
 
-on: push
+on: 
+  push:
+    branches-ignore:
+      - 'release_captain/**'
 
 jobs:
   prepare_release_captain:
@@ -12,7 +15,14 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - run: cp ./.github/generated/dynamic.yml ./.github/workflows/dynamic.yml
+      - name: Push the workflow to run in its own branch
+        run: |
+          git config --global user.name "release_captain"
+          git config --global user.email "2052105+lambrospetrou@users.noreply.github.com"
+          git commit -a -m "Publishing the workflow to run for release_captain."
+          git push origin HEAD:release_captain/demo
+
 
   run_release_captain:
-    uses: ./.github/workflows/dynamic.yml
+    uses: ./.github/workflows/dynamic.yml@release_captain/demo
     needs: ["prepare_release_captain"]
