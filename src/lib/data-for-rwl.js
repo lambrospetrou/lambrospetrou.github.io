@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://bitfieldconsulting.com/golang/career",
+    title: "A career ending mistake",
+    author: "John Arundel",
+    dateListed: "2023-01-27T15:15:00.000Z",
+  },
+  {
     url: "https://lethain.com/lessons-not-worth-learning/",
     title: "Lessons not worth learning.",
     author: "Will Larson",
