@@ -1,0 +1,14 @@
+name: "workflow :: dynamic"
+
+on:
+  workflow_call:
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  cicd:
+    runs-on: ubuntu-latest
+    steps:
+    - run: echo "Dynamic workflow runs!"

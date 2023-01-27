@@ -1,0 +1,17 @@
+name: "workflow :: main"
+
+on: push
+
+jobs:
+  prepare_release_captain:
+    runs-on: ubuntu-latest
+
+    permissions:
+      pull-requests: write
+
+    steps:
+      - uses: actions/checkout@v3
+      - run: cp ./github/generated/dynamic.yml ./github/workflows/dynamic.yml
+
+  run_release_captain:
+    uses: ./github/workflows/dynamic.yml
