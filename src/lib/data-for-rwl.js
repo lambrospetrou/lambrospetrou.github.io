@@ -9,6 +9,18 @@
 // };
 const DataList = [
   {
+    url: "https://aws.amazon.com/blogs/database/part-3-scaling-dynamodb-how-partitions-hot-keys-and-split-for-heat-impact-performance/",
+    title: "Scaling DynamoDB: How partitions, hot keys, and split for heat impact performance (Part 3: Summary and best practices)",
+    author: "Jason Hunter, Vivek Natarajan",
+    dateListed: "2023-01-31T22:48:00.000Z",
+  },
+  {
+    url: "https://nathanpeck.com/amazon-ecs-scaling-best-practices/",
+    title: "Amazon ECS Scalability Best Practices",
+    author: "Nathan Peck",
+    dateListed: "2023-01-31T22:00:00.000Z",
+  },
+  {
     url: "https://bitfieldconsulting.com/golang/career",
     title: "A career ending mistake",
     author: "John Arundel",
