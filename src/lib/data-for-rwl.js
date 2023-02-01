@@ -9,6 +9,18 @@
 // };
 const DataList = [
   {
+    url: "https://www.gomomento.com/blog/youre-asking-why-serverless-lets-talk",
+    title: "You're asking “why serverless?” Let's talk!",
+    author: "Jack Christie, Khawaja Shams",
+    dateListed: "2023-02-01T13:05:00.000Z",
+  },
+  {
+    url: "https://www.gomomento.com/blog/fighting-off-fake-serverless-bandits-with-the-true-definition-of-serverless",
+    title: "Fighting off faux-serverless bandits with the true definition of serverless",
+    author: "Khawaja Shams, Kirk Kirkconnell",
+    dateListed: "2023-02-01T13:00:00.000Z",
+  },
+  {
     url: "https://aws.amazon.com/blogs/database/part-3-scaling-dynamodb-how-partitions-hot-keys-and-split-for-heat-impact-performance/",
     title: "Scaling DynamoDB: How partitions, hot keys, and split for heat impact performance (Part 3: Summary and best practices)",
     author: "Jason Hunter, Vivek Natarajan",
