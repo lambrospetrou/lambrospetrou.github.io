@@ -9,6 +9,13 @@
 // };
 const DataList = [
   {
+    url: "https://blog.codinghorror.com/rule-of-three/",
+    title: "The Rule of Three",
+    author: "Jeff Atwood",
+    dateListed: "2023-02-01T22:30:00.000Z",
+    tags: ["favourite"],
+  },
+  {
     url: "https://www.gomomento.com/blog/youre-asking-why-serverless-lets-talk",
     title: "You're asking “why serverless?” Let's talk!",
     author: "Jack Christie, Khawaja Shams",
