@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://motherduck.com/blog/big-data-is-dead/",
+    title: "Big Data Is Dead",
+    author: "Jordan Tigani",
+    dateListed: "2023-02-07T20:15:00.000Z",
+  },
+  {
     url: "https://blog.codinghorror.com/rule-of-three/",
     title: "The Rule of Three",
     author: "Jeff Atwood",
