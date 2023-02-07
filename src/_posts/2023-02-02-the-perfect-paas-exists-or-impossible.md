@@ -81,7 +81,7 @@ I want to be able to host my toy projects that have literally 0 requests-per-sec
 
 While looking through products, I tend to compare their compute pricing with AWS EC2, and anything that is within 2x of EC2 costs feels OK to me.
 
-For comparison, Heroku costs 5-10x (or higher) more than AWS once we go past the entry-level dynos (what they call their instances): `Performance M` @ `$250/dyno/month` vs `EC2 m6g.medium` @ `$33.58/instance/month`.
+For comparison, Heroku costs 5-10x (or higher) more than AWS once we go past the entry-level dynos (what they call their instances): `Performance M` for `$250/dyno/month` vs `EC2 m6g.medium` for `$33.58/instance/month`.
 
 Most new platforms also fail in the pricing dimension, and are way more expensive than what I would pay for my workload.
 Some platforms take a cut of the AWS bill for the resources they manage, which to me is nuts. The value I get from their platform doesn't depend on the instance types I use (ten instances of `t4g.nano` vs `c6g.2xlarge`) so why should my bill. Others charge per seat (`$99/seat` is getting quite popular) in addition to actual compute charges, which again seems off for me. 
@@ -94,8 +94,8 @@ I thought about pricing a lot. The model I would choose if I ever built it would
 
 With the above two-fold model, anyone can start using the platform to make sure it works for them, pay for their usage along the way, and once they settle to use it they could switch to the second pricing plan. Some prefer predictability, some prefer usage-based, so why not both. 
 
-[Basecamp](https://basecamp.com/pricing) actually just updated their pricing to the above two-fold model, just this month. As of this writing, they offer a per-user `$15/month` plan, but also a flat `$299/month` plan for unlimited use.
-That's what ideal pricing looks to me! In this case it's not stricly usage-based, but their low-price per-seat price is pretty close.
+[Basecamp](https://basecamp.com/pricing) actually just updated their pricing to a two-fold model, just this month. As of this writing, they offer a per-user `$15/month` plan, but also a flat `$299/month` plan for unlimited use.
+That's what ideal pricing looks to me! In this case it's not stricly usage-based, but their low per-seat price is pretty close to the above model.
 
 I love how easy it is to start using and ramping up with managed pay-as-you-go products like AWS DynamoDB, S3, and even non-AWS products like the new [Momento Serverless Cache](https://www.gomomento.com/pricing) that charges `$0.15/GB` and that's it. One price to think; it can't get simpler than that.
 
@@ -249,13 +249,13 @@ Oh well, what do I know, I am neither Jeff Bezos, nor Andy Jassy 🤐
 
 Okay, my ranting is almost over.
 
-I probably looked into more than 50 products, open source self hosted platforms (e.g. [Dokku](https://dokku.com/), [CapRover](https://caprover.com/)), platforms that deploy into my own AWS accounts (e.g. [Qovery](https://www.qovery.com/pricing), [Flightcontrol](https://www.flightcontrol.dev/pricing), [WithCoherence](https://withcoherence.com/pricing), [Stacktape](https://stacktape.com/#:~:text=Open%20source-,Pricing,-For%20individuals)), managed platforms (e.g. [Fly.io](https://fly.io/pricing), [Render](https://render.com/pricing), [Railway](https://railway.app/pricing)), and even the legendary [Heroku](https://www.heroku.com/dx).
+I probably looked into more than 50 products ([see list of products/tools/platforms](https://gist.github.com/lambrospetrou/88ea9592e44ca6decb3f3fea04859eca)), open source self hosted platforms (e.g. [Dokku](https://dokku.com/), [CapRover](https://caprover.com/)), platforms that deploy into my own AWS accounts (e.g. [Qovery](https://www.qovery.com/pricing), [Flightcontrol](https://www.flightcontrol.dev/pricing), [WithCoherence](https://withcoherence.com/pricing), [Stacktape](https://stacktape.com/#:~:text=Open%20source-,Pricing,-For%20individuals)), managed platforms (e.g. [Fly.io](https://fly.io/pricing), [Render](https://render.com/pricing), [Railway](https://railway.app/pricing)), and even the legendary [Heroku](https://www.heroku.com/dx).
 
 All of them fail in some of the above core requirements. If it's not pricing, it's features, and if it's not features, it's developer experience.
 
 I currently settled on the following mix:
 - Cloudflare Pages for websites.
-- AWS Lambda for anything that can tolerate cold-starts and >100ms latencies.
+- AWS Lambda for anything that can tolerate cold-starts and `>100ms` latencies.
 - Fly.io for my autoscaled applications that work without in-place deployments.
 - AWS Elastic Beanstalk or custom EC2 setup for my single-instance use-cases.
 - AWS SAM and Terraform for Infrastructure as Code.
