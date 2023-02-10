@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://research.swtch.com/sample",
+    title: "The Magic of Sampling, and its Limitations",
+    author: "Russ Cox",
+    dateListed: "2023-02-10T18:50:00.000Z",
+  },
+  {
     url: "https://world.hey.com/dhh/invest-in-things-that-don-t-change-6f7f19e1",
     title: "Invest in things that don't change",
     author: "David Heinemeier Hansson",
