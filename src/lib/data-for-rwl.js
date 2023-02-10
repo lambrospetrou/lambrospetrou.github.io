@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://venilnoronha.io/a-simple-state-machine-framework-in-go",
+    title: "A Simple State Machine Framework in Go",
+    author: "Venil Noronha",
+    dateListed: "2023-02-10T09:15:00.000Z",
+  },
+  {
     url: "https://motherduck.com/blog/big-data-is-dead/",
     title: "Big Data Is Dead",
     author: "Jordan Tigani",
