@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://world.hey.com/dhh/invest-in-things-that-don-t-change-6f7f19e1",
+    title: "Invest in things that don't change",
+    author: "David Heinemeier Hansson",
+    dateListed: "2023-02-10T10:40:00.000Z",
+  },
+  {
     url: "https://venilnoronha.io/a-simple-state-machine-framework-in-go",
     title: "A Simple State Machine Framework in Go",
     author: "Venil Noronha",
