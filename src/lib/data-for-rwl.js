@@ -9,6 +9,20 @@
 // };
 const DataList = [
   {
+    url: "https://blog.asmartbear.com/kung-fu.html",
+    title: "Kung Fu - Startup strategy is like Kung Fu.",
+    author: "Jason Cohen",
+    dateListed: "2023-02-13T12:05:00.000Z",
+    tags: ["favourite"],
+  },
+  {
+    url: "https://blog.asmartbear.com/rich-vs-king-sold-company.html",
+    title: "Rich vs. King in the Real World: Why I sold my company",
+    author: "Jason Cohen",
+    dateListed: "2023-02-13T12:00:00.000Z",
+    tags: ["favourite"],
+  },
+  {
     url: "https://longform.asmartbear.com/extreme-questions/",
     title: "Extreme questions to trigger new, better ideas",
     author: "Jason Cohen",
