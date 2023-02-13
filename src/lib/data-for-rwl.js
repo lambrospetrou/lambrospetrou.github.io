@@ -9,6 +9,25 @@
 // };
 const DataList = [
   {
+    url: "https://longform.asmartbear.com/extreme-questions/",
+    title: "Extreme questions to trigger new, better ideas",
+    author: "Jason Cohen",
+    dateListed: "2023-02-13T11:30:00.000Z",
+    tags: ["favourite"],
+  },
+  {
+    url: "https://www.honeycomb.io/resources/how-honeycomb-manages-incident-response",
+    title: "How Honeycomb Manages Incident Response",
+    author: "Fred Hebert",
+    dateListed: "2023-02-13T11:10:00.000Z",
+  },
+  {
+    url: "https://www.epsilontheory.com/narrative-and-metaverse-pt-1-the-living-word/",
+    title: "Narrative and Metaverse, Pt. 1: The Living Word",
+    author: "Ben Hunt",
+    dateListed: "2023-02-13T11:00:00.000Z",
+  },
+  {
     url: "https://research.swtch.com/sample",
     title: "The Magic of Sampling, and its Limitations",
     author: "Russ Cox",
