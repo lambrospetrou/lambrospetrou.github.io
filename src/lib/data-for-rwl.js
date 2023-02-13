@@ -9,6 +9,19 @@
 // };
 const DataList = [
   {
+    url: "https://longform.asmartbear.com/moats/",
+    title: "Moats: Durable competitive advantage",
+    author: "Jason Cohen",
+    dateListed: "2023-02-13T16:05:00.000Z",
+  },
+  {
+    url: "https://stripe.com/gb/guides/atlas/saas-pricing",
+    title: "Pricing low-touch SaaS",
+    author: "Patrick McKenzie (patio11)",
+    dateListed: "2023-02-13T15:00:00.000Z",
+    tags: ["favourite"],
+  },
+  {
     url: "https://blog.asmartbear.com/kung-fu.html",
     title: "Kung Fu - Startup strategy is like Kung Fu.",
     author: "Jason Cohen",
