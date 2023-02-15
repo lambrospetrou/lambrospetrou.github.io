@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://twitter.com/10kdiver/status/1601996286877736962",
+    title: "How Often Should We Check Stock Prices?",
+    author: "10-K Diver",
+    dateListed: "2023-02-15T10:25:00.000Z",
+  },
+  {
     url: "https://longform.asmartbear.com/moats/",
     title: "Moats: Durable competitive advantage",
     author: "Jason Cohen",
