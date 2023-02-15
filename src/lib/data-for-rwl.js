@@ -9,6 +9,18 @@
 // };
 const DataList = [
   {
+    url: "https://writings.stephenwolfram.com/2023/02/what-is-chatgpt-doing-and-why-does-it-work/",
+    title: "What Is ChatGPT Doing … and Why Does It Work?",
+    author: "Stephen Wolfram",
+    dateListed: "2023-02-15T14:20:00.000Z",
+  },
+  {
+    url: "https://blog.asmartbear.com/not-disruptive.html",
+    title: "Not disruptive, and proud of it",
+    author: "Jason Cohen",
+    dateListed: "2023-02-15T14:15:00.000Z",
+  },
+  {
     url: "https://twitter.com/10kdiver/status/1601996286877736962",
     title: "How Often Should We Check Stock Prices?",
     author: "10-K Diver",
