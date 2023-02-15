@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://longform.asmartbear.com/exponential-growth/",
+    title: "The Elephant in the room: The myth of exponential hypergrowth",
+    author: "Jason Cohen",
+    dateListed: "2023-02-15T20:45:00.000Z",
+  },
+  {
     url: "https://writings.stephenwolfram.com/2023/02/what-is-chatgpt-doing-and-why-does-it-work/",
     title: "What Is ChatGPT Doing … and Why Does It Work?",
     author: "Stephen Wolfram",
