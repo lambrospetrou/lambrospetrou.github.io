@@ -19,13 +19,13 @@ const DataList = [
     url: "https://www.allthingsdistributed.com/2021/04/s3-strong-consistency.html",
     title: "Diving Deep on S3 Consistency",
     author: "Werner Vogels",
-    dateListed: "2023-02-16T10:06:00.000Z",
+    dateListed: "2023-02-16T10:07:00.000Z",
   },
   {
     url: "https://www.allthingsdistributed.com/2017/10/a-decade-of-dynamo.html",
     title: "A Decade of Dynamo: Powering the next wave of high-performance, internet-scale applications",
     author: "Werner Vogels",
-    dateListed: "2023-02-16T10:07:00.000Z",
+    dateListed: "2023-02-16T10:06:00.000Z",
   },
   {
     url: "https://www.allthingsdistributed.com/2016/03/10-lessons-from-10-years-of-aws.html",
