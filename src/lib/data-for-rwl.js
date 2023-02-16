@@ -9,6 +9,31 @@
 // };
 const DataList = [
   {
+    url: "https://www.allthingsdistributed.com/2021/03/happy-15th-birthday-amazon-s3.html",
+    title: "Happy 15th Birthday Amazon S3 -- the service that started it all",
+    author: "Werner Vogels",
+    dateListed: "2023-02-16T10:08:00.000Z",
+    tags: ["favourite"],
+  },
+  {
+    url: "https://www.allthingsdistributed.com/2021/04/s3-strong-consistency.html",
+    title: "Diving Deep on S3 Consistency",
+    author: "Werner Vogels",
+    dateListed: "2023-02-16T10:06:00.000Z",
+  },
+  {
+    url: "https://www.allthingsdistributed.com/2017/10/a-decade-of-dynamo.html",
+    title: "A Decade of Dynamo: Powering the next wave of high-performance, internet-scale applications",
+    author: "Werner Vogels",
+    dateListed: "2023-02-16T10:07:00.000Z",
+  },
+  {
+    url: "https://www.allthingsdistributed.com/2016/03/10-lessons-from-10-years-of-aws.html",
+    title: "10 Lessons from 10 Years of Amazon Web Services",
+    author: "Werner Vogels",
+    dateListed: "2023-02-16T10:05:00.000Z",
+  },
+  {
     url: "https://longform.asmartbear.com/exponential-growth/",
     title: "The Elephant in the room: The myth of exponential hypergrowth",
     author: "Jason Cohen",
