@@ -9,6 +9,14 @@
 // };
 const DataList = [
   {
+    // Backup: https://twitter.com/mattschnuck/status/1579121739186872320
+    url: "https://www.loom.com/share/97d678b26e2e475e94efa4d1f4ce36fb",
+    title: "Motivating Your Team - Magic Questions",
+    author: "Matt Mochary",
+    dateListed: "2023-02-22T17:50:00.000Z",
+    type: "video",
+  },
+  {
     url: "https://blog.asmartbear.com/slc.html",
     title: "I hate MVPs. So do your customers. Make it SLC instead.",
     author: "Jason Cohen",
