@@ -9,6 +9,18 @@
 // };
 const DataList = [
   {
+    url: "https://lauraroeder.com/exactly-how-i-cold-emailed-my-way-to-a-life-changing-exit-and-you-can-too-165d8eaf8306",
+    title: "Exactly How I Cold Emailed My Way to A Life-Changing Exit (And You Can Too)",
+    author: "Laura Roeder",
+    dateListed: "2023-02-22T12:10:00.000Z",
+  },
+  {
+    url: "https://lauraroeder.com/my-top-to-bottom-system-for-running-a-7-figure-bootstrapped-business-part-time-14d4bf577d33",
+    title: "My Top to Bottom System For Running a 7-Figure, Bootstrapped Business Part-Time",
+    author: "Laura Roeder",
+    dateListed: "2023-02-22T12:00:00.000Z",
+  },
+  {
     url: "https://www.allthingsdistributed.com/2021/03/happy-15th-birthday-amazon-s3.html",
     title: "Happy 15th Birthday Amazon S3 -- the service that started it all",
     author: "Werner Vogels",
