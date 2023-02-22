@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://www.focusedchaos.co/p/hearts-minds-wallets-the-simple-structure",
+    title: "Hearts, Minds, Wallets: the simple structure for a successful startup pitch",
+    author: "Ben Yoskovitz",
+    dateListed: "2023-02-22T21:30:00.000Z",
+  },
+  {
     // Backup: https://twitter.com/mattschnuck/status/1579121739186872320
     url: "https://www.loom.com/share/97d678b26e2e475e94efa4d1f4ce36fb",
     title: "Motivating Your Team - Magic Questions",
