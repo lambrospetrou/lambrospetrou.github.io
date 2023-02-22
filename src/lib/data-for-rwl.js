@@ -9,6 +9,13 @@
 // };
 const DataList = [
   {
+    url: "https://blog.asmartbear.com/slc.html",
+    title: "I hate MVPs. So do your customers. Make it SLC instead.",
+    author: "Jason Cohen",
+    dateListed: "2023-02-22T14:25:00.000Z",
+    tags: ["favourite"],
+  },
+  {
     url: "https://lauraroeder.com/exactly-how-i-cold-emailed-my-way-to-a-life-changing-exit-and-you-can-too-165d8eaf8306",
     title: "Exactly How I Cold Emailed My Way to A Life-Changing Exit (And You Can Too)",
     author: "Laura Roeder",
