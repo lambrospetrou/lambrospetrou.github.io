@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://writings.stephenwolfram.com/2023/01/wolframalpha-as-the-way-to-bring-computational-knowledge-superpowers-to-chatgpt/",
+    title: "Wolfram|Alpha as the Way to Bring Computational Knowledge Superpowers to ChatGPT",
+    author: "Stephen Wolfram",
+    dateListed: "2023-02-24T12:30:00.000Z",
+  },
+  {
     url: "https://www.focusedchaos.co/p/hearts-minds-wallets-the-simple-structure",
     title: "Hearts, Minds, Wallets: the simple structure for a successful startup pitch",
     author: "Ben Yoskovitz",
