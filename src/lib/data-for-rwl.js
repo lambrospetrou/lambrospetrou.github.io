@@ -9,6 +9,19 @@
 // };
 const DataList = [
   {
+    url: "https://blog.chriszacharias.com/page-weight-matters",
+    title: "Page Weight Matters",
+    author: "Chris Zacharias",
+    dateListed: "2023-02-25T21:40:00.000Z",
+  },
+  {
+    url: "https://fasterthanli.me/articles/a-half-hour-to-learn-rust",
+    title: "A half-hour to learn Rust",
+    author: "Amos (@fasterthanlime)",
+    dateListed: "2023-02-25T21:35:00.000Z",
+    tags: ["favourite"],
+  },
+  {
     url: "https://writings.stephenwolfram.com/2023/01/wolframalpha-as-the-way-to-bring-computational-knowledge-superpowers-to-chatgpt/",
     title: "Wolfram|Alpha as the Way to Bring Computational Knowledge Superpowers to ChatGPT",
     author: "Stephen Wolfram",
