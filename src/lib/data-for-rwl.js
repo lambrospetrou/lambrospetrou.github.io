@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://blog.bullettrain.co/teams-should-be-an-mvp-feature/",
+    title: "Teams should be an MVP feature!",
+    author: "Andrew Culver",
+    dateListed: "2023-02-27T15:55:00.000Z",
+  },
+  {
     url: "https://blog.chriszacharias.com/page-weight-matters",
     title: "Page Weight Matters",
     author: "Chris Zacharias",
