@@ -9,6 +9,14 @@
 // };
 const DataList = [
   {
+    url: "https://karpathy.ai/zero-to-hero.html",
+    title: "Neural Networks: Zero to Hero",
+    author: "Andrej Karpathy",
+    dateListed: "2023-03-02T12:00:00.000Z",
+    type: "video",
+    tags: ["favourite", "c-ai"],
+  },
+  {
     url: "https://css-tricks.com/technical-writing-for-developers/",
     title: "Technical Writing for Developers",
     author: "Eluda",
