@@ -9,6 +9,34 @@
 // };
 const DataList = [
   {
+    url: "https://css-tricks.com/technical-writing-for-developers/",
+    title: "Technical Writing for Developers",
+    author: "Eluda",
+    dateListed: "2023-03-02T10:00:00.000Z",
+    tags: ["c-writing"],
+  },
+  {
+    url: "https://websitesetup.org/web-accessibility-checklist/",
+    title: "Website Accessibility (15 Best Practices)",
+    author: "Bruce Lawson",
+    dateListed: "2023-03-02T09:52:00.000Z",
+    tags: ["c-writing"],
+  },
+  {
+    url: "https://piccalil.li/tutorial/improve-the-readability-of-the-content-on-your-website/",
+    title: "Improve the readability of the content on your website",
+    author: "Andy Bell",
+    dateListed: "2023-03-02T09:51:00.000Z",
+    tags: ["c-writing"],
+  },
+  {
+    url: "https://www.nngroup.com/articles/ux-writing-study-guide/",
+    title: "UX Writing: Study Guide",
+    author: "Anna Kaley",
+    dateListed: "2023-03-02T09:50:00.000Z",
+    tags: ["c-writing"],
+  },
+  {
     url: "https://brooker.co.za/blog/2020/10/19/big-changes.html",
     title: "Getting Big Things Done",
     author: "Marc Brooker",
@@ -361,6 +389,7 @@ const DataList = [
     title: "Writing Is Magic",
     author: "Marc Brooker",
     dateListed: "2022-11-08T22:55:00.000Z",
+    tags: ["c-writing"],
   },
   {
     url: "https://www.joelonsoftware.com/2004/12/15/camels-and-rubber-duckies/",
@@ -618,14 +647,14 @@ const DataList = [
     title: "Becoming a Better Writer",
     author: "Gergely Orosz",
     dateListed: "2022-08-22T17:45:00.000Z",
-    tags: ["favourite"],
+    tags: ["favourite", "c-writing"],
   },
   {
     url: "https://www.heinrichhartmann.com/posts/writing/",
     title: "Writing for Engineers",
     author: "Heinrich Hartmann",
     dateListed: "2022-08-17T09:30:00.000Z",
-    tags: ["favourite"],
+    tags: ["favourite", "c-writing"],
   },
   {
     url: "https://www.youtube.com/watch?v=XBDfsiKDpFo",
@@ -693,6 +722,7 @@ const DataList = [
     title: "On Writing Tech Specs",
     author: "Chuck Groom",
     dateListed: "2022-07-27T12:45:00.000Z",
+    tags: ["c-writing"],
   },
   {
     url: "https://www.joelonsoftware.com/2000/05/12/strategy-letter-i-ben-and-jerrys-vs-amazon/",
@@ -1156,6 +1186,7 @@ const DataList = [
     title: "The Amazon Way of Writing - How to write clearly and influence people",
     author: "Network Capital",
     dateListed: "2021-11-05T09:02:00.000Z",
+    tags: ["c-writing"],
   },
   {
     url: "https://medium.com/@pat_metzdorf/living-a-startup-double-life-5e2ef6295a65",
@@ -1770,6 +1801,7 @@ const DataList = [
     title: "How to write the perfect pull request",
     author: "Keavy McMinn",
     dateListed: "2021-03-14T11:00:00.000Z",
+    tags: ["c-writing"],
   },
   {
     url: "https://css-tricks.com/the-art-of-comments/",
