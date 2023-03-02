@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://chr.iswong.com/essays/the-dance-of-the-bees/",
+    title: "The Dance of the Bees: Finding Your Path as a Creator",
+    author: "Chris Wong",
+    dateListed: "2023-03-02T13:50:00.000Z",
+  },
+  {
     url: "https://karpathy.ai/zero-to-hero.html",
     title: "Neural Networks: Zero to Hero",
     author: "Andrej Karpathy",
