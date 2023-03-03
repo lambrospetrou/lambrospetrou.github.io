@@ -9,6 +9,13 @@
 // };
 const DataList = [
   {
+    url: "https://benhoyt.com/writings/the-small-web-is-beautiful/",
+    title: "The small web is beautiful",
+    author: "Ben Hoyt",
+    dateListed: "2023-03-03T19:30:00.000Z",
+    tags: ["favourite"],
+  },
+  {
     url: "https://chr.iswong.com/essays/the-dance-of-the-bees/",
     title: "The Dance of the Bees: Finding Your Path as a Creator",
     author: "Chris Wong",
