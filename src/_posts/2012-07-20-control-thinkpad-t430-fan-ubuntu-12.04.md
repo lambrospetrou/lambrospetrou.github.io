@@ -12,12 +12,13 @@ Every step below uses the terminal so open an instance with the combination ```C
     ```bash
     sudo apt-get install lm-sensors
     ```
-Configure the application in order to find every available sensor
+    Configure the application in order to find every available sensor
 
     ```bash
     sudo sensors-detect
     ```
-Answer **Yes** to every question and the last confirmation for saving the changes made.
+
+    Answer **Yes** to every question and the last confirmation for saving the changes made.
 
 2. Install **thinkfan** which is our main program:
 
