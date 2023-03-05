@@ -231,26 +231,14 @@ iframe.centered {
 }
 #inner-header {
     text-align: center;
-}
-#header-logo {
-    display: block;
-    padding-top: 10px;
-}
-#header-logo a {
-    border: 0;
-}
-#header-logo a:hover {
-    color: #920000;
-    border-bottom: 3px solid #920000;
-}
-#header-logo img,
-#header-logo svg {
-    width: 60px;
-    height: auto;
+
+    &.inner-section {
+        padding: 1rem 0;
+    }
 }
 
 #header-social {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
 
@@ -258,7 +246,7 @@ iframe.centered {
         border: 0;
         // Reset the line-height to just contain the svg content.
         line-height: 0;
-        margin-right: 25px;
+        margin-right: 1em;
         &:last-child {
             margin-right: 0;
         }
@@ -270,28 +258,32 @@ iframe.centered {
     }
     svg {
         fill: $font-color-secondary;
-        width: 20px;
+        width: 16px;
         height: auto;
     }
 }
 
 #header-name {
-    font-size: 150%;
-    font-weight: 700;
+    // text-align: left;
+    font-weight: lighter;
+    word-break: keep-all;
+    white-space: pre;
 }
 
 #header-quote {
+    text-align: center;
     font-style: italic;
-    font-size: 90%;
+    font-size: 70%;
     font-family: 'Georgia', 'Times New Roman', serif;
     color: $font-color-secondary;
 }
 #inner-header #nav-buttons {
     margin-top: 0px;
+    line-height: 1;
 }
 #inner-header #nav-buttons a {
     display: inline-block;
-    margin: 10px 15px 0;
+    margin: 0 15px 0;
     padding: 2px;
     border-bottom: 1px dotted;
     font-size: 70%;
@@ -304,18 +296,40 @@ iframe.centered {
 }
 
 .header-signup-strip {
-    &, .inner-section {
-        padding: 0.5em;
+    background-color: #f5f5f5;
+    box-shadow: 1px 1px 5px #aaa;
+    margin-bottom: 5px; /* for the shadow to be visible */
+    line-height: 1;
+
+    .inner-section {
         background-color: #f5f5f5;
-        text-align: center;
-        font-style: oblique;
+        gap: 10px;
+        max-width: 100%;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    @media (max-width: 130ch) {
+        .inner-section {
+            flex-direction: column;
+        }
+    }
+
+    a:link {
+        border-bottom: 0;
+    }
+    a:hover, a:active, a:focus {
+        border-bottom: 1px solid $font-color-red;
     }
 }
 
 .elements-of-cicd-banner {
     width: fit-content;
     max-width: 640px;
-    margin: 1rem auto 4rem;
+    margin: 0 auto 4rem;
     text-align: center;
     padding: 12px;
     border: 2px dashed #920000;
