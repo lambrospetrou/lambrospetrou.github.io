@@ -280,6 +280,10 @@ iframe.centered {
 #inner-header #nav-buttons {
     margin-top: 0px;
     line-height: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px 0;
 }
 #inner-header #nav-buttons a {
     display: inline-block;
