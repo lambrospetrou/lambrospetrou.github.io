@@ -30,9 +30,6 @@ export default function Post({ postData }) {
       <article className="post">
         <header>
           <h1 className="post-title">{title}</h1>
-          <div className="post-meta">
-            <span>{dateToLongDisplay(date)}</span>
-          </div>
         </header>
 
         <section
@@ -41,41 +38,46 @@ export default function Post({ postData }) {
         />
 
         <br />
-        <section>
-          <a
-            className="twitter-share-button"
-            data-via="lambrospetrou"
-            href="https://twitter.com/intent/tweet"
-          >
-            Tweet
-          </a>
-          {/* The following will generate a warning like `index.js:1 Warning: Extra attributes from the server` 
-              because once the script loads it adds the attribute and then when React hydration kicks in
-              does not generate the same DOM. This is fine since we use `export` to static files.*/}
-          <script
-            type="text/javascript"
-            dangerouslySetInnerHTML={{
-              __html: `
-            window.twttr = (function(d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0],
-              t = window.twttr || {};
-            if (d.getElementById(id)) return t;
-            js = d.createElement(s);
-            js.id = id;
-            js.src = "https://platform.twitter.com/widgets.js";
-            fjs.parentNode.insertBefore(js, fjs);
+        <div style={{display: "flex", justifyContent: "space-between"}}>
+          <section>
+            <a
+              className="twitter-share-button"
+              data-via="lambrospetrou"
+              href="https://twitter.com/intent/tweet"
+            >
+              Tweet
+            </a>
+            {/* The following will generate a warning like `index.js:1 Warning: Extra attributes from the server` 
+                because once the script loads it adds the attribute and then when React hydration kicks in
+                does not generate the same DOM. This is fine since we use `export` to static files.*/}
+            <script
+              type="text/javascript"
+              dangerouslySetInnerHTML={{
+                __html: `
+              window.twttr = (function(d, s, id) {
+              var js, fjs = d.getElementsByTagName(s)[0],
+                t = window.twttr || {};
+              if (d.getElementById(id)) return t;
+              js = d.createElement(s);
+              js.id = id;
+              js.src = "https://platform.twitter.com/widgets.js";
+              fjs.parentNode.insertBefore(js, fjs);
 
-            t._e = [];
-            t.ready = function(f) {
-              t._e.push(f);
-            };
+              t._e = [];
+              t.ready = function(f) {
+                t._e.push(f);
+              };
 
-            return t;
-          }(document, "script", "twitter-wjs"));
-          `,
-            }}
-          />
-        </section>
+              return t;
+            }(document, "script", "twitter-wjs"));
+            `,
+              }}
+            />
+          </section>
+          <div className="post-meta">
+            <span>{dateToLongDisplay(date)}</span>
+          </div>
+        </div>
       </article>
     </Layout>
   );
