@@ -9,6 +9,13 @@
 // };
 const DataList = [
   {
+    url: "https://sive.rs/plaintext",
+    title: "Write plain text files",
+    author: "Derek Sivers",
+    dateListed: "2023-03-05T16:50:00.000Z",
+    tags: ["favourite"],
+  },
+  {
     url: "https://benhoyt.com/writings/the-small-web-is-beautiful/",
     title: "The small web is beautiful",
     author: "Ben Hoyt",
