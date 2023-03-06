@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://pages.gseis.ucla.edu/faculty/agre/how-to-help.html",
+    title: "How to help someone use a computer.",
+    author: "Phil Agre",
+    dateListed: "2023-03-06T10:00:00.000Z",
+  },
+  {
     url: "https://sive.rs/plaintext",
     title: "Write plain text files",
     author: "Derek Sivers",
