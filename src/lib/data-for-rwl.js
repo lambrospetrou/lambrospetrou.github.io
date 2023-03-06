@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://lord.io/spreadsheets/",
+    title: "How to recalculate a spreadsheet",
+    author: "lord.io",
+    dateListed: "2023-03-06T10:00:00.000Z",
+  },
+  {
     url: "https://pages.gseis.ucla.edu/faculty/agre/how-to-help.html",
     title: "How to help someone use a computer.",
     author: "Phil Agre",
