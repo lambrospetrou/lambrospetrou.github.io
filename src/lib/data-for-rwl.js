@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://letterstoanewdeveloper.com/2023/03/06/understanding-people-matters-more-than-understanding-tech/",
+    title: "Understanding People Matters More Than Understanding Tech",
+    author: "Dan Moore",
+    dateListed: "2023-03-07T11:00:00.000Z",
+  },
+  {
     url: "https://lord.io/spreadsheets/",
     title: "How to recalculate a spreadsheet",
     author: "lord.io",
