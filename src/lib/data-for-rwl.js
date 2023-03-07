@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://medium.com/@fulalas/how-bullshit-has-dominated-the-tech-industry-bc63257f2a91",
+    title: "How Bullshit Has Dominated The Tech Industry",
+    author: "fulalas",
+    dateListed: "2023-03-07T11:40:00.000Z",
+  },
+  {
     url: "https://letterstoanewdeveloper.com/2023/03/06/understanding-people-matters-more-than-understanding-tech/",
     title: "Understanding People Matters More Than Understanding Tech",
     author: "Dan Moore",
