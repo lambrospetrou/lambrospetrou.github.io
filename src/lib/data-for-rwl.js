@@ -9,6 +9,13 @@
 // };
 const DataList = [
   {
+    url: "https://apenwarr.ca/log/20201227",
+    title: "Systems design explains the world: volume 1",
+    author: "Avery Pennarun (@apenwarr)",
+    dateListed: "2023-03-09T13:00:00.000Z",
+    tags: ["favourite"],
+  },
+  {
     url: "https://medium.com/@fulalas/how-bullshit-has-dominated-the-tech-industry-bc63257f2a91",
     title: "How Bullshit Has Dominated The Tech Industry",
     author: "fulalas",
