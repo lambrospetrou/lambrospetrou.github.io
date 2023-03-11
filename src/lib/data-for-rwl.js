@@ -9,6 +9,14 @@
 // };
 const DataList = [
   {
+    url: "https://www.youtube.com/playlist?list=PLUkh9m2BorqkHJz49csCvaCXf3diCLRLl",
+    title: "Valuation Undergraduate Spring 2023",
+    author: "Aswath Damodaran",
+    dateListed: "2023-03-11T11:00:00.000Z",
+    type: "video",
+    tags: ["favourite"],
+  },
+  {
     url: "https://apenwarr.ca/log/20201227",
     title: "Systems design explains the world: volume 1",
     author: "Avery Pennarun (@apenwarr)",
