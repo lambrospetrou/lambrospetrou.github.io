@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://longform.asmartbear.com/predict-the-future",
+    title: "Navigating the unpredictability of everything",
+    author: "Jason Cohen",
+    dateListed: "2023-03-12T13:20:00.000Z",
+  },
+  {
     url: "https://www.youtube.com/playlist?list=PLUkh9m2BorqkHJz49csCvaCXf3diCLRLl",
     title: "Valuation Undergraduate Spring 2023",
     author: "Aswath Damodaran",
