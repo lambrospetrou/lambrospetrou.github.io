@@ -9,6 +9,14 @@
 // };
 const DataList = [
   {
+    url: "https://www.youtube.com/watch?v=O8xLxNje30M&ab_channel=AmazonWebServices",
+    title: "AWS re:Invent 2018: Close Loops & Opening Minds: How to Take Control of Systems, Big & Small ARC337",
+    author: "Colm MacCárthaigh",
+    dateListed: "2023-03-19T11:30:00.000Z",
+    type: "video",
+    tags: ["favourite"],
+  },
+  {
     url: "https://longform.asmartbear.com/predict-the-future",
     title: "Navigating the unpredictability of everything",
     author: "Jason Cohen",
