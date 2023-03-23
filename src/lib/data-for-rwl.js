@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://about.sourcegraph.com/blog/cheating-is-all-you-need",
+    title: "Cheating is All You Need",
+    author: "Steve Yegge",
+    dateListed: "2023-03-23T19:00:00.000Z",
+  },
+  {
     url: "https://www.honeycomb.io/blog/deploys-wrong-way-change-user-experience",
     title: "Deploys Are the ✨WRONG✨ Way to Change User Experience",
     author: "Charity Majors",
