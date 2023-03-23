@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://writings.stephenwolfram.com/2023/03/chatgpt-gets-its-wolfram-superpowers/",
+    title: "ChatGPT Gets Its “Wolfram Superpowers”!",
+    author: "Stephen Wolfram",
+    dateListed: "2023-03-23T20:00:00.000Z",
+  },
+  {
     url: "https://about.sourcegraph.com/blog/cheating-is-all-you-need",
     title: "Cheating is All You Need",
     author: "Steve Yegge",
