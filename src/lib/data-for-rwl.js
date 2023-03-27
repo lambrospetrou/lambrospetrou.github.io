@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://makefiletutorial.com/",
+    title: "Learn Makefiles - With the tastiest examples",
+    author: "Chase Lambert",
+    dateListed: "2023-03-27T20:00:00.000Z",
+  },
+  {
     url: "https://writings.stephenwolfram.com/2023/03/chatgpt-gets-its-wolfram-superpowers/",
     title: "ChatGPT Gets Its “Wolfram Superpowers”!",
     author: "Stephen Wolfram",
