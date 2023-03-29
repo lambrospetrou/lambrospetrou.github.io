@@ -9,6 +9,18 @@
 // };
 const DataList = [
   {
+    url: "https://blog.kowalczyk.info/article/de943f80c7924745abf9405f8c7a2c67/levelsio-and-survivorship-bias.html",
+    title: "@levelsio and survivorship bias",
+    author: "Krzysztof Kowalczyk",
+    dateListed: "2023-03-29T12:35:00.000Z",
+  },
+  {
+    url: "https://blog.kowalczyk.info/article/cxn3/advanced-markdown-processing-in-go.html",
+    title: "Advanced markdown processing in Go",
+    author: "Krzysztof Kowalczyk",
+    dateListed: "2023-03-29T12:30:00.000Z",
+  },
+  {
     url: "https://makefiletutorial.com/",
     title: "Learn Makefiles - With the tastiest examples",
     author: "Chase Lambert",
