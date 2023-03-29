@@ -261,6 +261,10 @@ I currently settled on the following mix:
 - AWS SAM and Terraform for Infrastructure as Code.
 - Combination of AWS CodeBuild, Github Actions, and experimenting with Buildkite, for CICD.
 
+A simple decision tree for the platform I use depending on my needs:
+
+![Platform decision tree](/articles-data/2023-02-02-the-perfect-paas-exists-or-impossible/platform-decision-tree.opt.png)
+
 I basically have to setup the same things for every project I am working on, no matter how small or big. Infrastructure as Code templates, a CICD pipeline in a separate tool (when I need more than one stage) that needs access to the repo and my cloud account credentials, moving shared stuff into separate packages or copy-pasting them every time across repositories, etc.
 
 Why not move all this boilerplate into a platform. Is it only my boilerplate?
