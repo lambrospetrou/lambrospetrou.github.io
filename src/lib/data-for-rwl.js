@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://playbook.samaltman.com/",
+    title: "Startup Playbook",
+    author: "Sam Altman, Gregory Koberger",
+    dateListed: "2023-03-29T13:00:00.000Z",
+  },
+  {
     url: "https://blog.kowalczyk.info/article/de943f80c7924745abf9405f8c7a2c67/levelsio-and-survivorship-bias.html",
     title: "@levelsio and survivorship bias",
     author: "Krzysztof Kowalczyk",
