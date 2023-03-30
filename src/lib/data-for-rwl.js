@@ -9,6 +9,13 @@
 // };
 const DataList = [
   {
+    url: "https://open.spotify.com/episode/0XHHkfNNjYap6VCkMJHb7z?si=bc06d6085721418a",
+    title: "Revisiting 'The Ideal Bootstrapped Business' with Jason Cohen",
+    author: "Jason Cohen, Adam Wathan, Ben Orenstein",
+    dateListed: "2023-03-29T13:00:00.000Z",
+    type: "audio",
+  },
+  {
     url: "https://playbook.samaltman.com/",
     title: "Startup Playbook",
     author: "Sam Altman, Gregory Koberger",
