@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://www.datadoghq.com/blog/engineering/computing-accurate-percentiles-with-ddsketch/",
+    title: "Computing Accurate Percentiles with DDSketch",
+    author: "Charles Masson",
+    dateListed: "2023-03-31T12:30:00.000Z",
+  },
+  {
     url: "https://open.spotify.com/episode/0XHHkfNNjYap6VCkMJHb7z?si=bc06d6085721418a",
     title: "Revisiting 'The Ideal Bootstrapped Business' with Jason Cohen",
     author: "Jason Cohen, Adam Wathan, Ben Orenstein",
