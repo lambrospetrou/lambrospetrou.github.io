@@ -57,15 +57,24 @@ I use the following format for my worklog file:
 
 ## Activity log
 
-- Meeting for XXX (2020-04-29)
-- Worked on feature Y (2020-04-30)
-  + <Task URL> 
-  + <Code review URL> implements ZZZ
+### 2020-04-29
+
+- Meeting for XXX
+  - Notes: <URL>
+- Worked on feature Y
+  - <Task URL> 
+  - <Code review URL> implements ZZZ
+
+### 2020-04-30
+
 - Watched training videos
-  + infra (2020-05-02)
-  + networking (2020-05-03)
-- Investigated YYY (2020-05-03)
+  + infra: <link>
+  + networking
+- Investigated YYY
   + <link to the file containing details or to the internal issue>
+.
+.
+.
 
 ## TODO
 
@@ -76,12 +85,18 @@ I use the following format for my worklog file:
 - do a deep dive on XXX
 ```
 
-As you see, it's quite simple, three separate ordered lists.
+As you see, it's quite simple. Three separate ordered lists.
 
-You will notice that the meetings section orders the meetings by date in descending order (latest at the top), whereas the activity log section orders items by date in ascending order (latest at the bottom). This is super handy for me because over time the file grows, and in my productive months it can get hundreds of lines—each worklog file spans a period of 6 months. This structure allows me to instantly scroll to the top and start writing about the current meeting, or scroll to the bottom and start writing about today's activities, without wasting time figuring out where I need to write. Almost all the text editors and IDEs have shortcuts to move at the top and bottom of a file which makes this approach efficient.
+You will notice that the meetings section orders the meetings by date in descending order (latest at the top), whereas the activity log section is ordered by date in ascending order (latest at the bottom).
+
+This is super handy for me because over time the file grows, and in my productive months it can get hundreds of lines—each worklog file spans a period of 6 months. This structure allows me to instantly scroll to the top and start writing about the current meeting, or scroll to the bottom and start writing about today's activities, without wasting time figuring out where I need to write. Almost all the text editors and IDEs have shortcuts to move at the top and bottom of a file which makes this approach efficient.
 
 Regarding the todo section, I try to keep it short and not have more than 10 items, since at that point it becomes a backlog. I want items that I will work on during the next 2-3 weeks ordered in priority, with top being the next one to be done. Having said that, I almost always find myself having 1-2 items that are long-term oriented, for which I need to do some kind of investigation. It's useful to have them here to remind myself to do a bit of work every day.
 
 Every morning, I open the worklog, remind myself what needs to be done by going over the todo section, and I make sure it is synced with my team's backlog in case priorities shifted.
 
 That's it folks, I hope this is helpful!
+
+## Changelog
+
+- 2023-04-02: Updated the format for the activity log to use separate sections per day.
