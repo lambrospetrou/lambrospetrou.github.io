@@ -99,4 +99,4 @@ That's it folks, I hope this is helpful!
 
 ## Changelog
 
-- 2023-04-02: Updated the format for the activity log to use separate sections per day.
+- 2023-04-02: Updated the format of the activity log to use separate sections per day.
