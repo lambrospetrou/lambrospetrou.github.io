@@ -9,6 +9,13 @@
 // };
 const DataList = [
   {
+    url: "https://www.acquired.fm/episodes/nintendo",
+    title: "Nintendo - The Complete History & Strategy of Nintendo",
+    author: "Acquired Podcast",
+    dateListed: "2023-04-07T13:30:00.000Z",
+    type: "audio",
+  },
+  {
     url: "https://www.datadoghq.com/blog/engineering/computing-accurate-percentiles-with-ddsketch/",
     title: "Computing Accurate Percentiles with DDSketch",
     author: "Charles Masson",
