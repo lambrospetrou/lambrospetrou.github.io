@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://blog.pragmaticengineer.com/how-to-become-a-full-time-creator/",
+    title: "Becoming a Full-Time Creator as a Software Engineer: Controversial Advice",
+    author: "Gergely Orosz",
+    dateListed: "2023-04-07T15:35:00.000Z",
+  },
+  {
     url: "https://www.acquired.fm/episodes/nintendo",
     title: "Nintendo - The Complete History & Strategy of Nintendo",
     author: "Acquired Podcast",
