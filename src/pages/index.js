@@ -40,7 +40,7 @@ function ElementsOfCICDBanner() {
         👋 Checkout my new advanced CI/CD course:{" "}
         <strong>
           <Aex
-            href="https://www.elementsofcicd.com"
+            href="https://www.elementsofcicd.com/?ref=lambrospetrou.com"
             title="The Elements of CI/CD landing page"
           >
             The Elements of CI/CD
