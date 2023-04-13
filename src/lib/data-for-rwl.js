@@ -9,6 +9,18 @@
 // };
 const DataList = [
   {
+    url: "https://www.ycombinator.com/library/4D-yc-s-essential-startup-advice",
+    title: "YC’s Essential Startup Advice",
+    author: "Geoff Ralston, Michael Seibel",
+    dateListed: "2023-04-13T12:30:00.000Z",
+  },
+  {
+    url: "https://blog.cloudflare.com/oxy-the-journey-of-graceful-restarts/",
+    title: "Oxy: the journey of graceful restarts",
+    author: "Chris Branch",
+    dateListed: "2023-04-13T12:20:00.000Z",
+  },
+  {
     url: "https://blog.pragmaticengineer.com/how-to-become-a-full-time-creator/",
     title: "Becoming a Full-Time Creator as a Software Engineer: Controversial Advice",
     author: "Gergely Orosz",
