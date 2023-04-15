@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://newsletter.pragmaticengineer.com/p/steve-yegge",
+    title: "The Full Circle on Developer Productivity with Steve Yegge",
+    author: "Steve Yegge, Gergely Orosz",
+    dateListed: "2023-04-15T10:15:00.000Z",
+  },
+  {
     url: "https://www.ycombinator.com/library/4D-yc-s-essential-startup-advice",
     title: "YC’s Essential Startup Advice",
     author: "Geoff Ralston, Michael Seibel",
