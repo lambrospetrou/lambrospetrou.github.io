@@ -9,6 +9,24 @@
 // };
 const DataList = [
   {
+    url: "https://apenwarr.ca/log/20230415",
+    title: "Systems design 2: What we hope we know",
+    author: "Avery Pennarun (@apenwarr)",
+    dateListed: "2023-04-17T21:20:00.000Z",
+  },
+  {
+    url: "https://longform.asmartbear.com/problem",
+    title: "Excuse me, is there a problem?",
+    author: "Jason Cohen",
+    dateListed: "2023-04-17T21:10:00.000Z",
+  },
+  {
+    url: "https://blog.nelhage.com/post/efficiency-vs-resiliency/",
+    title: "Efficiency trades off against resiliency",
+    author: "Nelson Elhage",
+    dateListed: "2023-04-17T21:00:00.000Z",
+  },
+  {
     url: "https://newsletter.pragmaticengineer.com/p/steve-yegge",
     title: "The Full Circle on Developer Productivity with Steve Yegge",
     author: "Steve Yegge, Gergely Orosz",
