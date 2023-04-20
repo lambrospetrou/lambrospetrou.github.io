@@ -9,6 +9,26 @@
 // };
 const DataList = [
   {
+    url: "https://liamrosen.com/fitness.html",
+    title: "Beginner's Health and Fitness Guide",
+    author: "Liam Rosen",
+    dateListed: "2023-04-20T12:50:00.000Z",
+    tags: ["favourite"],
+  },
+  {
+    url: "https://sive.rs/multiply",
+    title: "Ideas are just a multiplier of execution",
+    author: "Derek Sivers",
+    dateListed: "2023-04-20T12:45:00.000Z",
+    tags: ["favourite"],
+  },
+  {
+    url: "https://www.joelonsoftware.com/2001/04/21/dont-let-architecture-astronauts-scare-you/",
+    title: "Don’t Let Architecture Astronauts Scare You",
+    author: "Joel Spolsky",
+    dateListed: "2023-04-20T12:40:00.000Z",
+  },
+  {
     url: "https://apenwarr.ca/log/20230415",
     title: "Systems design 2: What we hope we know",
     author: "Avery Pennarun (@apenwarr)",
