@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://bitfieldconsulting.com/golang/tao-of-go",
+    title: "The Tao of Go",
+    author: "John Arundel",
+    dateListed: "2023-04-20T19:00:00.000Z",
+  },
+  {
     url: "https://liamrosen.com/fitness.html",
     title: "Beginner's Health and Fitness Guide",
     author: "Liam Rosen",
