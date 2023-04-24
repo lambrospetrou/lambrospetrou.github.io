@@ -9,6 +9,13 @@
 // };
 const DataList = [
   {
+    url: "https://sive.rs/a",
+    title: "Anything You Want - 40 lessons for a new kind of entrepreneur",
+    author: "Derek Sivers",
+    dateListed: "2023-04-24T22:45:00.000Z",
+    tags: ["favourite"],
+  },
+  {
     url: "https://bitfieldconsulting.com/golang/tao-of-go",
     title: "The Tao of Go",
     author: "John Arundel",
