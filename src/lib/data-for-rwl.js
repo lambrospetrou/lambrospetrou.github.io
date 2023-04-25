@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://kottke.org/23/01/the-enshittification-lifecycle-of-online-platforms",
+    title: "The Enshittification Lifecycle of Online Platforms",
+    author: "Jason Kottke",
+    dateListed: "2023-04-25T16:10:00.000Z",
+  },
+  {
     url: "https://sive.rs/a",
     title: "Anything You Want - 40 lessons for a new kind of entrepreneur",
     author: "Derek Sivers",
