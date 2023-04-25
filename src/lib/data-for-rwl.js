@@ -9,6 +9,14 @@
 // };
 const DataList = [
   {
+    url: "https://www.youtube.com/watch?v=0BaDQCjqUHU",
+    title: "Derek Sivers — Finding Paths Less Traveled, Taking Giant Leaps, and Picking the Right “Game of Life”",
+    author: "Derek Sivers, Tim Ferriss",
+    dateListed: "2023-04-25T21:40:00.000Z",
+    tags: ["favourite"],
+    type: "video",
+  },
+  {
     url: "https://kottke.org/23/01/the-enshittification-lifecycle-of-online-platforms",
     title: "The Enshittification Lifecycle of Online Platforms",
     author: "Jason Kottke",
