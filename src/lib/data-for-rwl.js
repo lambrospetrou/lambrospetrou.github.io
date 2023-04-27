@@ -9,6 +9,18 @@
 // };
 const DataList = [
   {
+    url: "https://sive.rs/balance",
+    title: "How to do what you love and make good money",
+    author: "Derek Sivers",
+    dateListed: "2023-04-27T10:25:00.000Z",
+  },
+  {
+    url: "https://sive.rs/career",
+    title: "How to change or build your career",
+    author: "Derek Sivers",
+    dateListed: "2023-04-27T10:20:00.000Z",
+  },
+  {
     url: "https://www.youtube.com/watch?v=0BaDQCjqUHU",
     title: "Derek Sivers — Finding Paths Less Traveled, Taking Giant Leaps, and Picking the Right “Game of Life”",
     author: "Derek Sivers, Tim Ferriss",
