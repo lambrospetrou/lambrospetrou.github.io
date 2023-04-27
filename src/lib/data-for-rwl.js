@@ -9,6 +9,13 @@
 // };
 const DataList = [
   {
+    url: "https://commoncog.com/so-good-they-cant-ignore-you/",
+    title: "So Good They Can't Ignore You (book summary)",
+    author: "Cedric Chin",
+    dateListed: "2023-04-27T12:10:00.000Z",
+    tags: ["favourite"],
+  },
+  {
     url: "https://sive.rs/balance",
     title: "How to do what you love and make good money",
     author: "Derek Sivers",
