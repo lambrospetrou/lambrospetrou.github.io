@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://longform.asmartbear.com/more-value-not-save-money",
+    title: "How repositioning a product allows you to 8x its price",
+    author: "Jason Cohen",
+    dateListed: "2023-04-30T21:20:00.000Z",
+  },
+  {
     url: "https://commoncog.com/so-good-they-cant-ignore-you/",
     title: "So Good They Can't Ignore You (book summary)",
     author: "Cedric Chin",
