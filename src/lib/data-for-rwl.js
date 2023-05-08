@@ -9,6 +9,24 @@
 // };
 const DataList = [
   {
+    url: "https://jamesclear.com/saying-no",
+    title: "The Ultimate Productivity Hack is Saying No",
+    author: "James Clear",
+    dateListed: "2023-05-08T17:15:00.000Z",
+  },
+  {
+    url: "https://jamesclear.com/why-facts-dont-change-minds",
+    title: "Why Facts Don’t Change Our Minds",
+    author: "James Clear",
+    dateListed: "2023-05-08T17:05:00.000Z",
+  },
+  {
+    url: "https://jamesclear.com/goals-systems",
+    title: "Forget About Setting Goals. Focus on This Instead.",
+    author: "James Clear",
+    dateListed: "2023-05-08T17:00:00.000Z",
+  },
+  {
     url: "https://longform.asmartbear.com/more-value-not-save-money",
     title: "How repositioning a product allows you to 8x its price",
     author: "Jason Cohen",
