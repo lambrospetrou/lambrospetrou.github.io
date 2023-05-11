@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://nathanbarry.com/creator-flywheels/",
+    title: "Creator Flywheels - The Operating System for Your Business",
+    author: "Nathan Barry",
+    dateListed: "2023-05-11T14:00:00.000Z",
+  },
+  {
     url: "https://jamesclear.com/saying-no",
     title: "The Ultimate Productivity Hack is Saying No",
     author: "James Clear",
