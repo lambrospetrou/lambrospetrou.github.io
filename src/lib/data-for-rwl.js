@@ -9,6 +9,19 @@
 // };
 const DataList = [
   {
+    url: "https://medium.com/@kentbeck_7670/fast-slow-in-3x-explore-expand-extract-6d4c94a7539",
+    title: "Fast/Slow in 3X: Explore/Expand/Extract",
+    author: "Kent Beck",
+    dateListed: "2023-05-12T16:00:00.000Z",
+  },
+  {
+    url: "https://softwareengineeringdaily.com/2019/08/28/facebook-engineering-process-with-kent-beck/",
+    title: "Facebook Engineering Process with Kent Beck",
+    author: "Kent Beck",
+    dateListed: "2023-05-12T16:00:00.000Z",
+    type: "audio",
+  },
+  {
     url: "https://nathanbarry.com/creator-flywheels/",
     title: "Creator Flywheels - The Operating System for Your Business",
     author: "Nathan Barry",
