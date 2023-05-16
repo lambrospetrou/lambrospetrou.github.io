@@ -9,6 +9,13 @@
 // };
 const DataList = [
   {
+    url: "https://blog.visionarycto.com/p/why-i-love-boring-tech-startups",
+    title: "Why I Love Boring Tech Startups - It pays to create boring technology that everyone needs",
+    author: "Matt Watson",
+    dateListed: "2023-05-16T14:05:00.000Z",
+    tags: ["favourite"],
+  },
+  {
     url: "https://blog.visionarycto.com/p/my-20-year-career-is-technical-debt",
     title: "My 20 Year Career is Technical Debt or Deprecated - Deprecated should be my middle name",
     author: "Matt Watson",
