@@ -9,6 +9,18 @@
 // };
 const DataList = [
   {
+    url: "https://blog.visionarycto.com/p/my-20-year-career-is-technical-debt",
+    title: "My 20 Year Career is Technical Debt or Deprecated - Deprecated should be my middle name",
+    author: "Matt Watson",
+    dateListed: "2023-05-16T14:00:00.000Z",
+  },
+  {
+    url: "http://www.catb.org/~esr/writings/cathedral-bazaar/cathedral-bazaar/ar01s04.html",
+    title: "Release Early, Release Often",
+    author: "Eric S. Raymond",
+    dateListed: "2023-05-16T13:55:00.000Z",
+  },
+  {
     url: "https://medium.com/@kentbeck_7670/fast-slow-in-3x-explore-expand-extract-6d4c94a7539",
     title: "Fast/Slow in 3X: Explore/Expand/Extract",
     author: "Kent Beck",
