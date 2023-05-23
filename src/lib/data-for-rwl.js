@@ -9,6 +9,24 @@
 // };
 const DataList = [
   {
+    url: "https://wattenberger.com/thoughts/boo-chatbots",
+    title: "Why Chatbots Are Not the Future",
+    author: "Amelia Wattenberger",
+    dateListed: "2023-05-23T19:05:00.000Z",
+  },
+  {
+    url: "https://boyter.org/posts/how-to-start-go-project-2023/",
+    title: "How to start a Go project in 2023",
+    author: "Ben E. C. Boyter",
+    dateListed: "2023-05-23T19:00:00.000Z",
+  },
+  {
+    url: "https://longform.asmartbear.com/two-big-things",
+    title: "You can have two Big Things, but not three",
+    author: "Jason Cohen",
+    dateListed: "2023-05-23T18:50:00.000Z",
+  },
+  {
     url: "https://blog.visionarycto.com/p/why-i-love-boring-tech-startups",
     title: "Why I Love Boring Tech Startups - It pays to create boring technology that everyone needs",
     author: "Matt Watson",
