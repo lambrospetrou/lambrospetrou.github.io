@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://aswathdamodaran.substack.com/p/earnings-cash-flows-and-free-cash",
+    title: "Earnings, Cash Flows and Free Cash Flows: A Primer",
+    author: "Aswath Damodaran",
+    dateListed: "2023-05-27T22:05:00.000Z",
+  },
+  {
     url: "https://wattenberger.com/thoughts/boo-chatbots",
     title: "Why Chatbots Are Not the Future",
     author: "Amelia Wattenberger",
