@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://jamesclear.com/stop-procrastinating-seinfeld-strategy",
+    title: "How to Stop Procrastinating on Your Goals by Using the “Seinfeld Strategy”",
+    author: "James Clear",
+    dateListed: "2023-05-29T17:00:00.000Z",
+  },
+  {
     url: "https://jamesclear.com/delayed-gratification",
     title: "40 Years of Stanford Research Found That People With This One Quality Are More Likely to Succeed",
     author: "James Clear",
