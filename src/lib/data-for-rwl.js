@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://jamesclear.com/delayed-gratification",
+    title: "40 Years of Stanford Research Found That People With This One Quality Are More Likely to Succeed",
+    author: "James Clear",
+    dateListed: "2023-05-29T16:00:00.000Z",
+  },
+  {
     url: "https://aswathdamodaran.substack.com/p/earnings-cash-flows-and-free-cash",
     title: "Earnings, Cash Flows and Free Cash Flows: A Primer",
     author: "Aswath Damodaran",
