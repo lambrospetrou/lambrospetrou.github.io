@@ -9,6 +9,18 @@
 // };
 const DataList = [
   {
+    url: "https://kerkour.com/overthinking",
+    title: "Overthinking",
+    author: "Sylvain Kerkour",
+    dateListed: "2023-06-04T14:05:00.000Z",
+  },
+  {
+    url: "https://kerkour.com/engineer-vs-entrepreneur-mindset",
+    title: "Engineer vs Entrepreneur Mindset",
+    author: "Sylvain Kerkour",
+    dateListed: "2023-06-04T14:00:00.000Z",
+  },
+  {
     url: "https://jamesclear.com/stop-procrastinating-seinfeld-strategy",
     title: "How to Stop Procrastinating on Your Goals by Using the “Seinfeld Strategy”",
     author: "James Clear",
