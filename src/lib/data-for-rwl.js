@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://djhworld.github.io/hyperloglog/",
+    title: "HyperLogLog - visual helper guide",
+    author: "Daniel James Harper",
+    dateListed: "2023-06-05T22:05:00.000Z",
+  },
+  {
     url: "https://kerkour.com/overthinking",
     title: "Overthinking",
     author: "Sylvain Kerkour",
