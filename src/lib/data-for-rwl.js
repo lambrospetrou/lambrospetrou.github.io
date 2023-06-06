@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://www.honeycomb.io/blog/hard-stuff-nobody-talks-about-llm",
+    title: "All the Hard Stuff Nobody Talks About when Building Products with LLMs",
+    author: "Phillip Carter",
+    dateListed: "2023-06-06T11:05:00.000Z",
+  },
+  {
     url: "https://djhworld.github.io/hyperloglog/",
     title: "HyperLogLog - visual helper guide",
     author: "Daniel James Harper",
