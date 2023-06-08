@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://contrarianthinking.co/one-billionaires-secret-to-wealth/",
+    title: "One Billionaire’s Secret to Wealth: Framework for Becoming A Contrarian",
+    author: "Codie Sanchez",
+    dateListed: "2023-06-08T21:35:00.000Z",
+  },
+  {
     url: "https://www.honeycomb.io/blog/hard-stuff-nobody-talks-about-llm",
     title: "All the Hard Stuff Nobody Talks About when Building Products with LLMs",
     author: "Phillip Carter",
