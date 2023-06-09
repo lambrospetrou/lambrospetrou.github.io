@@ -13,7 +13,7 @@ const DataList = [
     title: "Anything You Want cartoons - Philosophies on life and business, 7 chapters from my book, turned into short little animations.",
     author: "Derek Sivers",
     dateListed: "2023-06-09T12:00:00.000Z",
-    tags: ["favourite"],
+    type: "video",
   },
   {
     url: "https://jvns.ca/blog/2023/06/05/some-blogging-myths/",
