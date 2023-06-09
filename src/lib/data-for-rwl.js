@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://jvns.ca/blog/2023/06/05/some-blogging-myths/",
+    title: "Some blogging myths",
+    author: "Julia Evans",
+    dateListed: "2023-06-09T10:30:00.000Z",
+  },
+  {
     url: "https://contrarianthinking.co/one-billionaires-secret-to-wealth/",
     title: "One Billionaire’s Secret to Wealth: Framework for Becoming A Contrarian",
     author: "Codie Sanchez",
