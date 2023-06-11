@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://chriscoyier.net/2023/06/06/modern-css-in-real-life/",
+    title: "Modern CSS in Real Life",
+    author: "Chris Coyier",
+    dateListed: "2023-06-11T20:00:00.000Z",
+  },
+  {
     url: "https://sive.rs/anything",
     title: "Anything You Want cartoons - Philosophies on life and business, 7 chapters from my book, turned into short little animations.",
     author: "Derek Sivers",
