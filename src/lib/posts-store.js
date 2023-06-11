@@ -51,8 +51,26 @@ function getAllPostSlugs() {
 }
 
 function getPostData(slug, options = {}) {
-  const { reloadPosts = false } = options;
-  return (reloadPosts ? _readAllPosts : readAllPosts)().find(
+  return readAllPosts(options).find(
+    (p) => p.slug === slug
+  );
+}
+
+const readAllNotes = (() => {
+  let posts = null;
+  return (options = {}) => {
+    const { reloadPosts = false } = options;
+    if (null === posts || reloadPosts) posts = _readAllPosts(path.join(process.cwd(), "src", "_notes"));
+    return posts;
+  };
+})();
+
+function getAllNoteSlugs() {
+  return readAllNotes().map((post) => post.slug);
+}
+
+function getNoteData(slug, options = {}) {
+  return readAllNotes(options).find(
     (p) => p.slug === slug
   );
 }
@@ -61,4 +79,7 @@ module.exports = {
   readAllPosts,
   getAllPostSlugs,
   getPostData,
+  readAllNotes,
+  getAllNoteSlugs,
+  getNoteData,
 };
