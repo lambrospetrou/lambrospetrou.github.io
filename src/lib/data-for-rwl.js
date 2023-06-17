@@ -12,7 +12,7 @@ const DataList = [
     url: "https://thenewstack.io/how-the-3-pillars-of-observability-miss-the-big-picture/",
     title: "How the ‘3 Pillars of Observability’ Miss the Big Picture",
     author: "Danyel Fisher",
-    dateListed: "2023-06-17T40:00:00.000Z",
+    dateListed: "2023-06-17T14:00:00.000Z",
   },
   {
     url: "https://chriscoyier.net/2023/06/06/modern-css-in-real-life/",
