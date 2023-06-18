@@ -9,6 +9,13 @@
 // };
 const DataList = [
   {
+    url: "https://apenwarr.ca/log/20230605",
+    title: "Tech debt metaphor maximalism",
+    author: "Avery Pennarun (@apenwarr)",
+    dateListed: "2023-06-18T09:40:00.000Z",
+    tags: ["favourite"],
+  },
+  {
     url: "https://thenewstack.io/how-the-3-pillars-of-observability-miss-the-big-picture/",
     title: "How the ‘3 Pillars of Observability’ Miss the Big Picture",
     author: "Danyel Fisher",
