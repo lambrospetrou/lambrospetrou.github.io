@@ -9,6 +9,13 @@
 // };
 const DataList = [
   {
+    url: "https://www.youtube.com/watch?v=MuK6lmsfX1E&ab_channel=PyConUS",
+    title: "PyCon US 2023 Talks - Andrew Godwin: Reconciling Everything",
+    author: "Andrew Godwin",
+    dateListed: "2023-06-20T22:40:00.000Z",
+    type: "video",
+  },
+  {
     url: "https://apenwarr.ca/log/20230605",
     title: "Tech debt metaphor maximalism",
     author: "Avery Pennarun (@apenwarr)",
