@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://medium.com/@mihsathe/load-balancing-the-intuition-behind-the-power-of-two-random-choices-6de2e139ac2f",
+    title: "Load Balancing: The Intuition Behind the Power of Two Random Choices",
+    author: "Mihir Sathe",
+    dateListed: "2023-06-21T19:20:00.000Z",
+  },
+  {
     url: "https://www.youtube.com/watch?v=MuK6lmsfX1E&ab_channel=PyConUS",
     title: "PyCon US 2023 Talks - Andrew Godwin: Reconciling Everything",
     author: "Andrew Godwin",
