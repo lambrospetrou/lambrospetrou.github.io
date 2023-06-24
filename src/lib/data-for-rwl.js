@@ -9,6 +9,18 @@
 // };
 const DataList = [
   {
+    url: "https://taylorpearson.me/how-to-stop-procrastinating/",
+    title: "How to Stop Procrastinating Using the 70% Rule",
+    author: "Taylor Pearson",
+    dateListed: "2023-06-24T21:30:00.000Z",
+  },
+  {
+    url: "https://www.profgalloway.com/origin-story/",
+    title: "Origin Story",
+    author: "Scott Galloway",
+    dateListed: "2023-06-24T21:20:00.000Z",
+  },
+  {
     url: "https://medium.com/@mihsathe/load-balancing-the-intuition-behind-the-power-of-two-random-choices-6de2e139ac2f",
     title: "Load Balancing: The Intuition Behind the Power of Two Random Choices",
     author: "Mihir Sathe",
