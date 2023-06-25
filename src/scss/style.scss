@@ -460,6 +460,7 @@ iframe.centered {
 
 .note-group {
     margin: 0;
+    margin-bottom: 40px;
     padding: 0;
     font-style: normal;
     font-weight: normal;
@@ -468,6 +469,10 @@ iframe.centered {
         font-size: 75%;
         color: $font-color-secondary;
         text-transform: uppercase;
+    }
+
+    li {
+        margin-bottom: 15px;
     }
 }
 
