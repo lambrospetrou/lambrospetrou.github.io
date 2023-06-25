@@ -2,16 +2,23 @@ import Head from 'next/head'
 import {CodeHighlightScripts} from "./code-highlight"
 import {InlineSignup} from "./newsletter-signup";
 
-export const Layout = ({children}) => {
+export const Layout = ({children, wrapInnerSection}) => {
+  wrapInnerSection = wrapInnerSection ?? true;
+  let content = children;
+  if (wrapInnerSection) {
+    content = (
+      <div id="inner-content" className="inner-section">
+        {children}
+      </div>
+    )
+  }
   return (
     <>
       <HeadAdditions/>
       <div id="outer-wrapper">
         <Header/>
         <div id="content-wrapper" className="outer-section">
-            <div id="inner-content" className="inner-section">
-              {children}
-            </div>
+            {content}
         </div>
         <Footer/>
       </div>
@@ -31,6 +38,7 @@ const HeadAdditions = ({}) => {
         google: {
             families: [
                 'Source Sans Pro:300,400,400italic,700,700italic,900:greek,latin',
+                'Source Serif Pro:300,400,900:latin',
                 // Read https://github.com/typekit/webfontloader/issues/409 about the 'display=swap'
                 'Source Code Pro:400&display=swap',
             ]

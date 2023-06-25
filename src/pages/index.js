@@ -4,11 +4,11 @@ import { Layout } from "../components/layout";
 import { dateToLongDisplay } from "../components/display-formatters";
 import { Aex } from "../components/common";
 
-export default function ArticlesIndex({ posts }) {
+export default function HomeIndex({ posts }) {
   posts.sort((a, b) => b.date.valueOf() - a.date.valueOf());
 
   return (
-    <Layout>
+    <Layout wrapInnerSection={false}>
       <Head>
         <link rel="canonical" href="https://www.lambrospetrou.com/" />
         <title>Home | Lambros Petrou</title>
@@ -22,6 +22,9 @@ export default function ArticlesIndex({ posts }) {
           content="My personal blog where I publish my thoughts."
         />
       </Head>
+
+      <HeroBanner />
+
       <ElementsOfCICDBanner />
       {/* <hr /> */}
       <ul className="index-posts">
@@ -30,6 +33,14 @@ export default function ArticlesIndex({ posts }) {
         ))}
       </ul>
     </Layout>
+  );
+}
+
+function HeroBanner() {
+  return (
+    <div className="home-hero-banner">
+      <span>I turn ideas into robust<br/> and reliable software products.</span>
+    </div>
   );
 }
 

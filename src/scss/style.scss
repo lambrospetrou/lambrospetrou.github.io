@@ -353,6 +353,20 @@ iframe.centered {
     }
 }
 
+.home-hero-banner {
+    background-color: #f5f5f5;
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 40px;
+    font-family: "Source Serif Pro", Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 3.5rem;
+
+    @media (max-width: 100ch) {
+        font-size: 2rem;
+    }
+}
+
 /******************************
  * MAIN CONTENT - SINGLE POST VIEW
  */
