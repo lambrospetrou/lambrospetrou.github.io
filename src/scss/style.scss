@@ -7,6 +7,12 @@ $font-family-system-sans-serif: "Source Sans Pro", -apple-system, "BlinkMacSyste
 $font-family-system-serif: "Source Serif Pro", Georgia, "Baskerville", "Times New Roman", "Droid Serif", "Times", serif, "Iowan Old Style", "Apple Garamond", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 $font-family-system-mono: "Source Code Pro", Menlo, Consolas, Monaco, "Liberation Mono", "Lucida Console", monospace;
 
+:root {
+    --linear-gradient-red2: linear-gradient(to right, rgba(92, 0, 0, 1),  rgba(150, 0, 0, 1), rgba(80, 0, 0, 1));
+    --linear-gradient-red: linear-gradient(to right, rgba(92, 0, 0, 1),  rgba(150, 0, 0, 1), rgba(80, 0, 0, 1));
+    --linear-gradient-red-white-tr: linear-gradient(to right, rgba(255, 255, 255, 0),  rgba(92, 0, 0, 1), rgba(255, 255, 255, 0));
+}
+
 .clearfix:after {
     clear: both;
     content: "";
@@ -228,6 +234,13 @@ iframe.centered {
     display: block;
     max-width: 100%;
     margin: 0px auto;
+}
+
+.text-bg-gradient {
+    background: var(--linear-gradient-red);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 /******************************

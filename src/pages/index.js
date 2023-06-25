@@ -35,7 +35,7 @@ export default function HomeIndex({ posts }) {
 function HeroBanner() {
   return (
     <div className="home-hero-banner">
-      <span>I turn ideas into robust<br/> and reliable software products.</span>
+      <span>I turn ideas into <span className="text-bg-gradient">robust</span><br/> and <span className="text-bg-gradient">reliable</span> software products.</span>
     </div>
   );
 }
