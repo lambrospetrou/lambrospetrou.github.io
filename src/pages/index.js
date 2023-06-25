@@ -29,6 +29,7 @@ export default function HomeIndex({ posts }) {
       {/* <ElementsOfCICDBanner /> */}
       {/* <hr /> */}
       <WidgetsSection />
+      <AristotleQuote />
       <WritingSection posts={posts} />
     </Layout>
   );
@@ -89,6 +90,12 @@ function WritingSection({posts}) {
       <header><h2>Read my writings</h2></header>
       <ArticlesList posts={posts}/>
     </section>
+  );
+}
+
+function AristotleQuote() {
+  return (
+    <div><blockquote><p>"We are what we repeatedly do. Excellence then, is not an act, but a habit!"&#x2009;&mdash;&#x2009;Aristotle</p></blockquote></div> 
   );
 }
 
