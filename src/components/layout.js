@@ -59,7 +59,7 @@ const HeadAdditions = ({}) => {
         <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,400italic,700,700italic,900|Source+Code+Pro&subset=latin,greek&display=swap' rel='stylesheet' type='text/css'/>
       </noscript>
 
-      <meta name="keywords" content="Lambros,Petrou,amazon,codeguru,profiler,facebook,portfolio,programming,developer,coder,software engineer,ucy,oxford" />
+      <meta name="keywords" content="Lambros,Petrou,datadog,amazon,codeguru,profiler,facebook,portfolio,programming,developer,coder,software engineer,ucy,oxford" />
       <meta name="author" content="Lambros Petrou" />
       <meta name="owner" content="Lambros Petrou" />
       <meta name="copyright" content={`${new Date().getFullYear()} Lambros Petrou`} />
@@ -69,7 +69,7 @@ const HeadAdditions = ({}) => {
       <meta property="og:locale" content="en_GB" />
       <meta property="article:author" content="https://www.lambrospetrou.com" />
       <meta property="article:publisher" content="https://www.lambrospetrou.com" />
-      <meta property="og:site_name" content="Lambros Petrou blog"/>
+      <meta property="og:site_name" content="Lambros Petrou personal website"/>
 
       <link id="page_favicon" href="data:image/x-icon;base64,R0lGODlhEAAQAPEAAAAAAJYeHgAAAAAAACH5BAkeAAIAIf8LTkVUU0NBUEUyLjADAQAAACwAAAAAEAAQAAAC55QkIiIiIoQQQgghhBBCCCEIgiAIQhAEgiAIghAEgSAIgSAEgSAIQhAQCAICQUAgEAQCAkEgIBAIAgJBICAQCAICQUAgEAQCAoEgEBAIBIGAQCAIBAQCgUAQCAgEgYBAEBAgICAgICAgICAgEBAgICAgICAgICAgICAgIBAQICAgICAgICAgICAgICAQECAgICAgICAgICAgICAgEBAgICAgICAgICAgICAgIBAQICAgICAgICAgICAgICAQECAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgQIAAAQIKAAAh+QQJHgACACwAAAAAEAAQAAAC55QkIiIiIoQQQgghhBBCCCEIgiAIgiAIgiAIgiAIgiAIQhAEgiAIghAIBAQCQUAgCAQEAoEgEBAIAgJBQCAQBAICQSAgEAgCAkEgIBAIAgJBQCAQBAICgSAQEAgEgYBAIBAQICAgICAQECAgEBAgIBAQICAgICAgICAgIBAQICAgICAgICAgICAgICAQECAgICAgICAgICAgICAgEBAgICAgICAgICAgICAgIBAQICAgICAgICAgICAgICAQECAgICAgICAgICAgICAgEBAgICAgICAgICAgICAgICAgICAgQIAAAQIKAAAh+QQJHgACACwAAAAAEAAQAAAC55QkIiIiIoQQQgghhBBCCCEIgiAIQhAEgiAIghAEgSAIgSAEgSAIQhAQCAICQUAgEAQCAkEgIBAIAgJBICAQCAICQUAgEAQCAoEgEBAIBIGAQCAIBAQCgUAQCAgEgYBAEBAgICAgICAgICAgEBAgICAgICAgICAgICAgIBAQICAgICAgICAgICAgICAQECAgICAgICAgICAgICAgEBAgICAgICAgICAgICAgIBAQICAgICAgICAgICAgICAQECAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgQIAAAQIKAAAh+QQJHgACACwAAAAAEAAQAAAC55QkIiIiIoQQQogQghBCCBEEgSAIgSAEgSAIQhAIQiAIgSAIQSAIQSAQCAICQSAgEAgCAkFAIBAEAgKBIBAQCASBgEAgCAQEAoFAEAgIBIGAQBAICAQCgUAgEAgEgYBAICAgICAgICAgICAgEBAgICAgICAgICAgICAgIBAQICAgICAgICAgICAgICAQECAgICAgICAgICAgICAgEBAgICAgICAgICAgICAgIBAQICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgQIAAAQIKAAAh+QQJHgACACwAAAAAEAAQAAAC55QkIiIiIoQQQgghhBBCCCEIgiAIQhAEgiAIghAEgSAIgSAEgSAIQhAQCAICQUAgEAQCAkEgIBAIAgJBICAQCAICQUAgEAQCAoEgEBAIBIGAQCAIBAQCgUAQCAgEgYBAEBAgICAgICAgICAgEBAgICAgICAgICAgICAgIBAQICAgICAgICAgICAgICAQECAgICAgICAgICAgICAgEBAgICAgICAgICAgICAgIBAQICAgICAgICAgICAgICAQECAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgQIAAAQIKAAA7" rel="icon" type="image/x-icon"/>
     </Head>
@@ -92,39 +92,6 @@ const SocialIcon = ({name}) => {
   }
 };
 
-const HeaderOld = ({}) => {
-  return (
-    <header id="header-wrapper" className="outer-section">
-      <div className="header-signup-strip">
-        <div className="inner-section">
-          <div style={{display: "flex", gap: "10px", alignItems: "baseline", flexWrap: "wrap", justifyContent: "center"}}>
-            <div id="header-name">&bull;&nbsp;&nbsp;<span style={{color: "#920000", fontWeight: "normal"}}>L</span>ambros <span style={{color: "#920000", fontWeight: "normal"}}>P</span>etrou&nbsp;&nbsp;&bull;</div>
-            <div id="header-quote">"We are what we repeatedly do. Excellence then, is not an act, but a habit!"&#x2009;&mdash;&#x2009;Aristotle</div> 
-          </div>
-          <div style={{display: "flex", gap: "10px", alignItems: "center", flexWrap: "wrap", justifyContent: "center"}}>
-            <div><small><a href="/newsletter">Subscribe to my newsletter</a></small></div> &#x7C;
-            <div id="header-social">
-              <SocialIcon name="github"/>
-              <SocialIcon name="linkedin"/>
-              <SocialIcon name="twitter"/>
-              <SocialIcon name="mastodon"/>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="inner-header" className="inner-section">
-        <div id="nav-buttons">
-          <a href="/" title="All Articles - Lambros Petrou">Articles</a>
-          <a href="/read-watch-listen/" title="My Read-Watch-Listen list">Read-Watch-Listen</a>
-          <a href="/cv/" title="Lambros Petrou Resume - CV" rel="noopener" target="_blank">CV</a>
-          <a href="https://temp.minibri.com" title="Minibri Temp - Share content with expiration" rel="noopener" target="_blank">Minibri Temp</a>
-          <a href="/feed/rss.xml" title="Subscribe to my RSS Feed" target="_blank" rel="noopener">RSS Feed</a>
-        </div>
-      </div>
-    </header>
-  );
-};
-
 const Header = ({}) => {
   return (
     <header id="header-wrapper" className="outer-section">
@@ -142,7 +109,7 @@ const Header = ({}) => {
               <a href="/cv/" title="Lambros Petrou Resume - CV" rel="noopener" target="_blank">CV</a>
               <a href="https://temp.minibri.com" title="Minibri Temp - Share content with expiration" rel="noopener" target="_blank">Minibri Temp</a>
               <a href="/feed/rss.xml" title="Subscribe to my RSS Feed" target="_blank" rel="noopener">RSS Feed</a>
-              <a className="cta-hire" href="/hire" >Hire me</a>
+              {/* <a className="cta-hire" href="/hire" >Hire me</a> */}
             </div>
         </div>
       </div>

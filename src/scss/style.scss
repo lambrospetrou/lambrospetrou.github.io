@@ -226,9 +226,6 @@ iframe.centered {
  * HEADER
  */
 
-#header-wrapper {
-    min-height: 60px;
-}
 #inner-header {
     text-align: center;
 
@@ -343,7 +340,7 @@ iframe.centered {
     width: 1024px;
     margin: 40px auto 20px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(50ch, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(35ch, 1fr));
     gap: 20px;
 
     &__item {
