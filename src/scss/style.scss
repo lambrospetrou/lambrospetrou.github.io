@@ -200,13 +200,13 @@ figure figcaption {
 
 a, a:link {
     outline: none;
-    text-decoration: none;
     color: $font-color-red;
-    border: 0;
-    border-bottom: 1px dotted $font-color-secondary;
+    text-decoration-style: dotted;
+    text-decoration-line: underline;
+    text-underline-offset: 5px;
 }
 a:hover, a:active, a:focus {
-    border-bottom: 1px solid $font-color-red;
+    text-decoration-style: solid;
 }
 
 hr {
@@ -264,10 +264,10 @@ iframe.centered {
 }
 
 #header-name {
-    // text-align: left;
-    font-weight: lighter;
     word-break: keep-all;
     white-space: pre;
+    color: $font-color-primary;
+    font-weight: bold;
 }
 
 #header-quote {
@@ -283,31 +283,32 @@ iframe.centered {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 15px 0;
+    align-items: center;
+    gap: 15px 30px;
 }
 #inner-header #nav-buttons a {
     display: inline-block;
-    margin: 0 15px 0;
-    padding: 2px;
-    border-bottom: 1px dotted;
     font-size: 70%;
     text-transform: uppercase;
     color: $font-color-secondary;
 
-    &:hover, &:focus {
-        border-bottom: 1px solid;
+    &.cta-hire {
+        padding: 10px;
+        background-color: $font-color-secondary;
+        color: #fff;
+        border-radius: 10%;
     }
 }
 
-.header-signup-strip {
+.header-strip {
     background-color: #f5f5f5;
-    box-shadow: 1px 1px 5px #aaa;
-    margin-bottom: 5px; /* for the shadow to be visible */
+    // box-shadow: 1px 1px 5px #aaa;
+    // margin-bottom: 5px; /* for the shadow to be visible */
     line-height: 1;
 
     .inner-section {
         background-color: #f5f5f5;
-        gap: 10px;
+        gap: 15px;
         max-width: 100%;
 
         display: flex;
@@ -316,17 +317,14 @@ iframe.centered {
         flex-wrap: wrap;
     }
 
-    @media (max-width: 130ch) {
+    @media (max-width: 100ch) {
         .inner-section {
             flex-direction: column;
         }
     }
 
-    a:link {
-        border-bottom: 0;
-    }
-    a:hover, a:active, a:focus {
-        border-bottom: 1px solid $font-color-red;
+    #header-quote {
+        margin-top: 20px;
     }
 }
 
@@ -374,13 +372,13 @@ iframe.centered {
 
 .index-posts a {
     &, &:link, &:visited {
-        border: 0;
+        text-decoration: none;
     }
 
     &:active,
     &:hover,
     &:focus {
-        border-bottom: 1px solid $font-color-red;
+        text-decoration: underline;
     }
 }
 
@@ -455,7 +453,7 @@ ul.rwl {
         text-indent: -30px;
 
         a.chain-link {
-            border: 0;
+            // border: 0;
             &:hover {
                 fill: #920000;
             }

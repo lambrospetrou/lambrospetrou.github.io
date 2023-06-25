@@ -84,7 +84,7 @@ const SocialIcon = ({name}) => {
   }
 };
 
-const Header = ({}) => {
+const HeaderOld = ({}) => {
   return (
     <header id="header-wrapper" className="outer-section">
       <div className="header-signup-strip">
@@ -111,6 +111,31 @@ const Header = ({}) => {
           <a href="/cv/" title="Lambros Petrou Resume - CV" rel="noopener" target="_blank">CV</a>
           <a href="https://temp.minibri.com" title="Minibri Temp - Share content with expiration" rel="noopener" target="_blank">Minibri Temp</a>
           <a href="/feed/rss.xml" title="Subscribe to my RSS Feed" target="_blank" rel="noopener">RSS Feed</a>
+        </div>
+      </div>
+    </header>
+  );
+};
+
+const Header = ({}) => {
+  return (
+    <header id="header-wrapper" className="outer-section">
+      <div className="header-strip">
+        <div id="inner-header" className="inner-section">
+          <div className="name-hire">
+            {/* <div id="header-name">&bull;&nbsp;&nbsp;<span style={{color: "#920000", fontWeight: "normal"}}>L</span>ambros <span style={{color: "#920000", fontWeight: "normal"}}>P</span>etrou&nbsp;&nbsp;&bull;</div> */}
+            <div id="header-name">Lambros Petrou</div>
+            
+          </div>
+
+            <div id="nav-buttons">
+              <a href="/" title="All Articles - Lambros Petrou">Articles</a>
+              <a href="/read-watch-listen/" title="My Read-Watch-Listen list">Read-Watch-Listen</a>
+              <a href="/cv/" title="Lambros Petrou Resume - CV" rel="noopener" target="_blank">CV</a>
+              <a href="https://temp.minibri.com" title="Minibri Temp - Share content with expiration" rel="noopener" target="_blank">Minibri Temp</a>
+              <a href="/feed/rss.xml" title="Subscribe to my RSS Feed" target="_blank" rel="noopener">RSS Feed</a>
+              <a className="cta-hire" href="/hire" >Hire me</a>
+            </div>
         </div>
       </div>
     </header>
