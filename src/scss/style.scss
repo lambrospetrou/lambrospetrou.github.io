@@ -276,13 +276,6 @@ iframe.centered {
     }
 }
 
-#header-quote {
-    text-align: center;
-    font-style: italic;
-    font-size: 70%;
-    font-family: 'Georgia', 'Times New Roman', serif;
-    color: $font-color-secondary;
-}
 #inner-header #nav-buttons {
     margin-top: 0px;
     line-height: 1;
@@ -363,8 +356,10 @@ iframe.centered {
         
     }
 }
-  
+
 .home-aristotle-quote {
+    font-family: 'Georgia', 'Times New Roman', serif;
+
     blockquote {
         border-top: 1px solid;
         border-bottom: 1px solid;
