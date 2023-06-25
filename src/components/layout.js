@@ -33,7 +33,7 @@ const HeadAdditions = ({}) => {
       <meta charSet="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1"/>
 
-      <script dangerouslySetInnerHTML={{ __html: `
+      {/* <script dangerouslySetInnerHTML={{ __html: `
       var WebFontConfig = {
         google: {
             families: [
@@ -57,7 +57,7 @@ const HeadAdditions = ({}) => {
 
       <noscript>
         <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,400italic,700,700italic,900|Source+Code+Pro&subset=latin,greek&display=swap' rel='stylesheet' type='text/css'/>
-      </noscript>
+      </noscript> */}
 
       <meta name="keywords" content="Lambros,Petrou,datadog,amazon,codeguru,profiler,facebook,portfolio,programming,developer,coder,software engineer,ucy,oxford" />
       <meta name="author" content="Lambros Petrou" />

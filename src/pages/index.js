@@ -76,7 +76,7 @@ function RWLWidget() {
       {/* <hr/> */}
       <div>
         <h3>&#10148; <a href="/read-watch-listen/" title="My Read-Watch-Listen list">Read-Watch-Listen list</a></h3>
-        <p>My <strong>Read-Watch-Listen list</strong> references content I read, watched, and listened, that I consider worthy of sharing!
+        <p>My <strong>Read-Watch-Listen list</strong> references content I read, watched, and listened, worthy of sharing!
         <br/>Topics covered include technical articles, career advice, business and startups, life, and more.</p>
       </div>
     </section>
