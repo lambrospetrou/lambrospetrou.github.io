@@ -3,7 +3,7 @@ $font-color-secondary: #555;
 $font-color-red: #920000;
 
 // https://systemfontstack.com/
-$font-family-system-sans-serif: "Source Sans Pro", -apple-system, "BlinkMacSystemFont", "Avenir Next", "Avenir", "Segoe Ui", "Helvetica Neue", "Helvetica", "Cantarell", "Ubuntu", "Roboto", "Noto", "Arial", sans-serif;
+$font-family-system-sans-serif: "Source Sans Pro", -apple-system, "Avenir Next", "Avenir", "BlinkMacSystemFont", "Segoe Ui", "Helvetica Neue", "Helvetica", "Cantarell", "Ubuntu", "Roboto", "Noto", "Arial", sans-serif;
 $font-family-system-serif: "Source Serif Pro", Georgia, "Baskerville", "Times New Roman", "Droid Serif", "Times", serif, "Iowan Old Style", "Apple Garamond", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 $font-family-system-mono: "Source Code Pro", Menlo, Consolas, Monaco, "Liberation Mono", "Lucida Console", monospace;
 
@@ -352,9 +352,9 @@ iframe.centered {
 .home-widgets {
     max-width: 95%;
     width: 1024px;
-    margin: 40px auto 20px;
+    margin: 40px auto 10px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(35ch, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(30ch, 1fr));
     gap: 20px;
 
     &__item {
