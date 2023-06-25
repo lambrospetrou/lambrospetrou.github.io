@@ -266,8 +266,17 @@ iframe.centered {
 #header-name {
     word-break: keep-all;
     white-space: pre;
-    color: $font-color-primary;
     font-weight: bold;
+    color: $font-color-primary;
+
+    a {
+        color: inherit;
+        text-decoration: none;
+        
+        &:hover, &:active, &:focus {
+            text-decoration-line: underline;
+        }
+    }
 }
 
 #header-quote {
