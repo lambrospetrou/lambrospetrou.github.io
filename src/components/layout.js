@@ -155,6 +155,12 @@ const Footer = ({}) => {
     <footer id="footer-wrapper" className="outer-section">
       <div id="inner-footer" className="inner-section clearfix">
         <InlineSignup/>
+        <div id="header-social">
+          <SocialIcon name="github"/>
+          <SocialIcon name="linkedin"/>
+          <SocialIcon name="twitter"/>
+          <SocialIcon name="mastodon"/>
+        </div>
         {/* <div id="footer-copyright">
           <p>&copy; {new Date().getFullYear()} Lambros Petrou</p>
         </div>

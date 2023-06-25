@@ -238,7 +238,7 @@ iframe.centered {
 }
 
 #header-social {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     justify-content: center;
 
@@ -332,10 +332,6 @@ iframe.centered {
             flex-direction: column;
         }
     }
-
-    #header-quote {
-        margin-top: 20px;
-    }
 }
 
 /******************************
@@ -345,7 +341,7 @@ iframe.centered {
 .home-widgets {
     max-width: 95%;
     width: 1024px;
-    margin: 0 auto;
+    margin: 40px auto 20px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(50ch, 1fr));
     gap: 20px;
@@ -357,9 +353,29 @@ iframe.centered {
 
     &__item h2 {
         text-align: center;
+
+        border-bottom: 1px solid;
+        // border-image: linear-gradient(to right, #f00, #00f);
+        border-image: linear-gradient(to right, rgba(0, 0, 0, 0), #920000, rgba(0, 0, 0, 0));
+        border-image-slice: 1;
+
+        // border-bottom: 2px;
+        // border-image-slice: 1;
+        // border-bottom-style: solid;
+        // border-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(92, 0, 0, 0.75), rgba(0, 0, 0, 0));
+        
     }
 }
   
+.home-aristotle-quote {
+    blockquote {
+        border-top: 1px solid;
+        border-bottom: 1px solid;
+        border-image: linear-gradient(to right, rgba(0, 0, 0, 0), #920000, rgba(0, 0, 0, 0));
+        border-image-slice: 1;
+    }
+}
+
 .elements-of-cicd-banner {
     width: fit-content;
     max-width: 640px;
@@ -447,6 +463,8 @@ iframe.centered {
 }
 
 #footer-wrapper {
+    padding-bottom: 20px;
+
     &, .inner-section {
         background-color: #f5f5f5;
     }

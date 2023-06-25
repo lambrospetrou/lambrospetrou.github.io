@@ -2,7 +2,6 @@ import Head from "next/head";
 import { readAllPosts } from "../lib/posts-store";
 import { Layout } from "../components/layout";
 import { ArticlesList } from "../components/articles";
-import { dateToLongDisplay } from "../components/display-formatters";
 import { Aex } from "../components/common";
 
 export default function HomeIndex({ posts }) {
@@ -26,8 +25,6 @@ export default function HomeIndex({ posts }) {
 
       <HeroBanner />
 
-      {/* <ElementsOfCICDBanner /> */}
-      {/* <hr /> */}
       <WidgetsSection />
       <AristotleQuote />
       <WritingSection posts={posts} />
@@ -54,15 +51,15 @@ function WidgetsSection() {
 function LearnWidget() {
   return (
     <section className="home-section">
-      <hr/>
-      <header><h2>Learn something</h2></header>
-      <hr/>
+      {/* <hr/> */}
+      {/* <header><h2>Learn something</h2></header> */}
+      {/* <hr/> */}
       <div>
-        <h3>&bull; <Aex
+        <h3>&#10148; <Aex
             href="https://www.elementsofcicd.com/?ref=lambrospetrou.com"
             title="The Elements of CI/CD landing page"
           >
-            elementsofcicd.com
+            ElementsOfCICD.com
           </Aex></h3>
         <p><strong>Elements of CI/CD</strong> is a comprehensive Continuous Integration (CI) and Continuous Deployment (CD) course with advanced techniques that teach you how to <strong>ship your code with confidence!</strong></p>
       </div>
@@ -73,12 +70,13 @@ function LearnWidget() {
 function RWLWidget() {
   return (
     <section className="home-section">
-      <hr/>
-      <header><h2>Check other content I like</h2></header>
-      <hr/>
+      {/* <hr/> */}
+      {/* <header><h2>Check other content I like</h2></header> */}
+      {/* <hr/> */}
       <div>
-        <h3>&bull; <a href="/read-watch-listen/" title="My Read-Watch-Listen list">Read-Watch-Listen list</a></h3>
-        <p>My <strong>Read-Watch-Listen list</strong> contains the best content I find online. Topics range from tech, to investments, to career advice, to life, and more.</p>
+        <h3>&#10148; <a href="/read-watch-listen/" title="My Read-Watch-Listen list">Read-Watch-Listen list</a></h3>
+        <p>My <strong>Read-Watch-Listen list</strong> contains the most interesting content I find online over time.
+        <br/>Topics range from tech, to investments, to career advice, to life, and more.</p>
       </div>
     </section>
   );
@@ -95,43 +93,7 @@ function WritingSection({posts}) {
 
 function AristotleQuote() {
   return (
-    <div><blockquote><p>"We are what we repeatedly do. Excellence then, is not an act, but a habit!"&#x2009;&mdash;&#x2009;Aristotle</p></blockquote></div> 
-  );
-}
-
-function ElementsOfCICDBanner() {
-  return (
-    <div className="elements-of-cicd-banner">
-      <p>
-        👋 Checkout my new advanced CI/CD course:{" "}
-        <strong>
-          <Aex
-            href="https://www.elementsofcicd.com/?ref=lambrospetrou.com"
-            title="The Elements of CI/CD landing page"
-          >
-            The Elements of CI/CD
-          </Aex>
-        </strong>{" "}
-      </p>
-    </div>
-  );
-}
-
-function PostEntry({ post }) {
-  const { date, slug, title } = post;
-  return (
-    <li>
-      <article>
-        <header>
-          <h2 className="post-title">
-            <a href={`/articles/${slug}`} title="view post">
-              {title}
-            </a>
-          </h2>
-          <div className="post-meta">{dateToLongDisplay(date)}</div>
-        </header>
-      </article>
-    </li>
+    <div className="home-aristotle-quote"><blockquote><p>"We are what we repeatedly do. Excellence then, is not an act, but a habit!"&#x2009;&mdash;&#x2009;Aristotle</p></blockquote></div> 
   );
 }
 
