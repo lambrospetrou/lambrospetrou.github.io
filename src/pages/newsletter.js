@@ -19,7 +19,7 @@ export default function NewsletterSignupSuccess({}) {
       <p>
         Use the form below to subscribe to my newsletter for a monthly email with my latest articles.
         <br/>
-        I promise not to spam you, only one email per month if there are new articles or no email at all.
+        I promise not to spam you, only one email per month with new articles, or no email at all.
       </p>
     </Layout>
   );
