@@ -305,6 +305,7 @@ iframe.centered {
     // box-shadow: 1px 1px 5px #aaa;
     // margin-bottom: 5px; /* for the shadow to be visible */
     line-height: 1;
+    border-top: 4px solid $font-color-red;
 
     .inner-section {
         background-color: #f5f5f5;
