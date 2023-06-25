@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { readAllPosts } from "../lib/posts-store";
 import { Layout } from "../components/layout";
+import { ArticlesList } from "../components/articles";
 import { dateToLongDisplay } from "../components/display-formatters";
 import { Aex } from "../components/common";
 
@@ -25,13 +26,10 @@ export default function HomeIndex({ posts }) {
 
       <HeroBanner />
 
-      <ElementsOfCICDBanner />
+      {/* <ElementsOfCICDBanner /> */}
       {/* <hr /> */}
-      <ul className="index-posts">
-        {posts.map((p) => (
-          <PostEntry key={p.slug} post={p} />
-        ))}
-      </ul>
+
+      <WritingSection posts={posts} />
     </Layout>
   );
 }
@@ -41,6 +39,15 @@ function HeroBanner() {
     <div className="home-hero-banner">
       <span>I turn ideas into robust<br/> and reliable software products.</span>
     </div>
+  );
+}
+
+function WritingSection({posts}) {
+  return (
+    <section className="home-section inner-section">
+      <header><h2>Read my writings</h2></header>
+      <ArticlesList posts={posts}/>
+    </section>
   );
 }
 
