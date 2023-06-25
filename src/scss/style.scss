@@ -338,6 +338,28 @@ iframe.centered {
     }
 }
 
+/******************************
+ * HOME CONTENT
+ */
+
+.home-widgets {
+    max-width: 95%;
+    width: 1024px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50ch, 1fr));
+    gap: 20px;
+
+    &__item {
+        // background-color: #eaeaea;
+        padding: 20px;
+    }
+
+    &__item h2 {
+        text-align: center;
+    }
+}
+  
 .elements-of-cicd-banner {
     width: fit-content;
     max-width: 640px;
@@ -356,6 +378,7 @@ iframe.centered {
 .home-hero-banner {
     background-color: #f5f5f5;
     text-align: center;
+    padding: 20px;
     padding-top: 80px;
     padding-bottom: 40px;
     font-family: "Source Serif Pro", Georgia, 'Times New Roman', Times, serif;

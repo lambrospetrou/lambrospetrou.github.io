@@ -28,7 +28,7 @@ export default function HomeIndex({ posts }) {
 
       {/* <ElementsOfCICDBanner /> */}
       {/* <hr /> */}
-
+      <WidgetsSection />
       <WritingSection posts={posts} />
     </Layout>
   );
@@ -39,6 +39,47 @@ function HeroBanner() {
     <div className="home-hero-banner">
       <span>I turn ideas into robust<br/> and reliable software products.</span>
     </div>
+  );
+}
+
+function WidgetsSection() {
+  return (<div className="home-widgets">
+    <div className="home-widgets__item"><LearnWidget /></div>
+    <div className="home-widgets__item"><RWLWidget /></div>
+    <div className="home-widgets__item"></div>
+  </div>);
+}
+
+function LearnWidget() {
+  return (
+    <section className="home-section">
+      <hr/>
+      <header><h2>Learn something</h2></header>
+      <hr/>
+      <div>
+        <h3>&bull; <Aex
+            href="https://www.elementsofcicd.com/?ref=lambrospetrou.com"
+            title="The Elements of CI/CD landing page"
+          >
+            elementsofcicd.com
+          </Aex></h3>
+        <p><strong>Elements of CI/CD</strong> is a comprehensive Continuous Integration (CI) and Continuous Deployment (CD) course with advanced techniques that teach you how to <strong>ship your code with confidence!</strong></p>
+      </div>
+    </section>
+  );
+}
+
+function RWLWidget() {
+  return (
+    <section className="home-section">
+      <hr/>
+      <header><h2>Check other content I like</h2></header>
+      <hr/>
+      <div>
+        <h3>&bull; <a href="/read-watch-listen/" title="My Read-Watch-Listen list">Read-Watch-Listen list</a></h3>
+        <p>My <strong>Read-Watch-Listen list</strong> contains the best content I find online. Topics range from tech, to investments, to career advice, to life, and more.</p>
+      </div>
+    </section>
   );
 }
 
