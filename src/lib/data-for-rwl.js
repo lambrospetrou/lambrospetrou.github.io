@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://longform.asmartbear.com/problem/",
+    title: "Excuse me, is there a problem?",
+    author: "Jason Cohen",
+    dateListed: "2023-06-30T19:20:00.000Z",
+  },
+  {
     url: "https://seths.blog/2021/12/dont-waste-the-good-days/",
     title: "Don’t waste the good days",
     author: "Seth Godin",
