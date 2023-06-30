@@ -22,9 +22,9 @@ That's it, without too much effort we maximized our long-term returns in a relat
 The most important book I read which I recommend everyone to also read is [The Little Book of Common Sense Investing](https://smile.amazon.co.uk/Little-Book-Common-Sense-Investing/dp/1119404509/). The main idea is that to avoid most of the risk, albeit reducing potential returns, is to invest **in the whole stock market** using low-cost index funds. This approach exposes you to the entirety of traded companies, which means that if a company goes under water it won't affect you a lot, since some other company that did well will cancel out the losses.
 
 Based on this simple idea, my current portfolio includes:
-- [U.S. Equity Index Fund](https://www.vanguardinvestor.co.uk/investments/vanguard-us-equity-index-fund-gbp-acc) - This fund invests in the top (roughly) 3500 companies in the US. This fund is very simple, thus having very low annual maintenance cost at 0.10%. This is the UK version of the super famous US fund [Vanguard Total Stock Market Index Fund - VTSAX](https://investor.vanguard.com/mutual-funds/profile/VTSAX).
-- [FTSE Global All Cap Index Fund](https://www.vanguardinvestor.co.uk/investments/vanguard-ftse-global-all-cap-index-fund-gbp-acc) - This fund invests in the top (roughly) 7000 companies in developed and emerging markets around the world. The annual maintenance cost is a bit higher on this fund (0.23%) but still well below the market average for actively-maintained funds. This is the UK version of the US fund [Vanguard Total World Stock Index Fund - VTWAX](https://investor.vanguard.com/mutual-funds/profile/VTWAX). Note that this fund is somewhat a superset of the above, and just using this one can be enough and simpler, depending on if you want exposure outside the US.
-    - [FTSE Developed World ex-U.K. Equity Index Fund](https://www.vanguardinvestor.co.uk/investments/vanguard-ftse-developed-world-ex-uk-equity-index-fund-gbp-acc/overview) - **Update 2023:** I switched from the Global All Cap Index fund to the Developed World Index fund. It excludes the Emerging Markets which had dissapointing growth over the recent years, and I personally prefer the more stable developed world. This fund also excludes the UK to avoid home-bias, which is OK for me, since living in the UK and getting paid in British Pounds (£) is enough exposure to the UK.
+- [U.S. Equity Index Fund](https://www.vanguardinvestor.co.uk/investments/vanguard-us-equity-index-fund-gbp-acc) - This fund invests in the top (roughly) 3500 companies in the US. This fund is very simple, thus having very low annual maintenance cost at `0.10%`. This is the UK version of the super famous US fund [Vanguard Total Stock Market Index Fund - VTSAX](https://investor.vanguard.com/mutual-funds/profile/VTSAX).
+- [FTSE Global All Cap Index Fund](https://www.vanguardinvestor.co.uk/investments/vanguard-ftse-global-all-cap-index-fund-gbp-acc) - This fund invests in the top (roughly) 7000 companies in developed and emerging markets around the world. The annual maintenance cost is a bit higher on this fund (`0.23%`) but still well below the market average for actively-maintained funds. This is the UK version of the US fund [Vanguard Total World Stock Index Fund - VTWAX](https://investor.vanguard.com/mutual-funds/profile/VTWAX). Note that this fund is somewhat a superset of the above, and just using this one can be enough and simpler, depending on if you want exposure outside the US.
+    - [FTSE Developed World ex-U.K. Equity Index Fund](https://www.vanguardinvestor.co.uk/investments/vanguard-ftse-developed-world-ex-uk-equity-index-fund-gbp-acc/overview) - **Update 2023:** I switched from the Global All Cap Index fund to the Developed World Index fund. It excludes the Emerging Markets which had dissapointing growth over the recent years, and I prefer the more stable developed world. This fund also excludes the UK to avoid home-bias, which is OK for me, since living in the UK and getting paid in British Pounds (£) is enough exposure to the UK. It has a lower annual maintenance cost too at `0.14%`.
 
 Both funds are relatively new (just a few years old) which explains why their total invested assets are way below the corresponding ones in the US (hundreds of billions), but hopefully as they get bigger, their cost will get further down, and maybe even reach the US-levels at some point 😅
 
@@ -84,11 +84,19 @@ The only suggestion I have is to go with a broker that has great customer suppor
 
 As an example, [Vanguard's low fees, clear costs](https://www.vanguardinvestor.co.uk/what-we-offer/fees-explained) approach is one of the things I love about it. There is an annual account cost of 0.15%, and in addition to that the annual maintenance cost for the funds invested. So far, 0.15% account management cost is the lowest I have found, hence why I use and recommend them.
 
-As of 2023, [Interactive Brokers also introduced their ISA accounts](https://www.interactivebrokers.co.uk/en/trading/isa-accounts.php), which has even lower fees. It chargers £3 / €3 per trade for Western European stocks, with a minimum £3 charger per month.
+> One low account fee
+> Just 0.15% per year
+> 
+> Capped at £375 per year for accounts over £250,000
+> - By [Vanguard Investor](https://www.vanguardinvestor.co.uk/what-we-offer/fees-explained)
+
+
+As of 2023, [Interactive Brokers also introduced their ISA accounts](https://www.interactivebrokers.co.uk/en/trading/isa-accounts.php), which has even lower fees. It chargers £3 / €3 per trade for Western European stocks, with a minimum £3 charge per month.
 
 > £3 / €3 per trade for Western European stocks, with no added spreads, account minimums or platform fees. These simplified commission rates are available with IB SmartRoutingSM, which optimizes the execution quality for clients by accessing the many exchanges and trading venues across the continent.1 Pricing on US stocks starts at just USD 0.005 per share.
 >
 > There is a minimum monthly activity fee of £3 for a Stocks and Shares (adult) ISA and £1 for a JISA. You receive one free withdrawal per month and there are no custody fees for all account types. All ISA accounts are cash only, no margin.
+> - By [Interactive Brokers](https://www.interactivebrokers.co.uk/en/trading/isa-accounts.php)
 
 ## Conclusion
 
