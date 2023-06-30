@@ -9,6 +9,18 @@
 // };
 const DataList = [
   {
+    url: "https://seths.blog/2021/12/dont-waste-the-good-days/",
+    title: "Don’t waste the good days",
+    author: "Seth Godin",
+    dateListed: "2023-06-30T13:00:00.000Z",
+  },
+  {
+    url: "https://addyosmani.com/blog/eisenhower-matrix/",
+    title: "Prioritizing tasks using the Eisenhower matrix",
+    author: "Addy Osmani",
+    dateListed: "2023-06-29T08:50:00.000Z",
+  },
+  {
     url: "https://taylorpearson.me/how-to-stop-procrastinating/",
     title: "How to Stop Procrastinating Using the 70% Rule",
     author: "Taylor Pearson",
