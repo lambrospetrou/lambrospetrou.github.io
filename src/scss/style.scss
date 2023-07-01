@@ -243,24 +243,8 @@ iframe.centered {
     color: transparent;
 }
 
-/******************************
- * HEADER
- */
-
-#inner-header {
-    text-align: center;
-
-    &.inner-section {
-        padding: 1rem 0;
-    }
-}
-
-#header-social {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    a {
+.svg-link {
+    & {
         border: 0;
         // Reset the line-height to just contain the svg content.
         line-height: 0;
@@ -279,6 +263,24 @@ iframe.centered {
         width: 16px;
         height: auto;
     }
+}
+
+/******************************
+ * HEADER
+ */
+
+#inner-header {
+    text-align: center;
+
+    &.inner-section {
+        padding: 1rem 0;
+    }
+}
+
+#header-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #header-name {
