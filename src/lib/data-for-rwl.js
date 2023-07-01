@@ -9,6 +9,13 @@
 // };
 const DataList = [
   {
+    url: "https://www.youtube.com/watch?v=vtIzMaLkCaM&t=1167s&ab_channel=UChicagoSocialSciences",
+    title: "LEADERSHIP LAB: The Craft of Writing Effectively",
+    author: "Larry McEnerney",
+    dateListed: "2023-07-01T10:20:00.000Z",
+    type: "video",
+  },
+  {
     url: "https://longform.asmartbear.com/problem/",
     title: "Excuse me, is there a problem?",
     author: "Jason Cohen",
