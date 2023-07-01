@@ -1,6 +1,6 @@
 ---
-title: "Finding good keywords for SEO - by Danny Postma"
-description: "How to find good keywords for efficient SEO, without needing an audience."
+title: "Networking and HTTP tools"
+description: "Useful networking and HTTP tools."
 ---
 
 Useful networking (HTTP, and more) tools.
