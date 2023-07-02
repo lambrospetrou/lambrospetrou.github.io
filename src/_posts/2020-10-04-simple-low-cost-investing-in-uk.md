@@ -88,6 +88,7 @@ As an example, [Vanguard's low fees, clear costs](https://www.vanguardinvestor.c
 > Just 0.15% per year
 > 
 > Capped at £375 per year for accounts over £250,000
+> 
 > — By [Vanguard Investor](https://www.vanguardinvestor.co.uk/what-we-offer/fees-explained)
 
 
@@ -96,6 +97,7 @@ As of 2023, [Interactive Brokers also introduced their ISA accounts](https://www
 > £3 / €3 per trade for Western European stocks, with no added spreads, account minimums or platform fees. These simplified commission rates are available with IB SmartRoutingSM, which optimizes the execution quality for clients by accessing the many exchanges and trading venues across the continent.1 Pricing on US stocks starts at just USD 0.005 per share.
 >
 > There is a minimum monthly activity fee of £3 for a Stocks and Shares (adult) ISA and £1 for a JISA. You receive one free withdrawal per month and there are no custody fees for all account types. All ISA accounts are cash only, no margin.
+> 
 > — By [Interactive Brokers](https://www.interactivebrokers.co.uk/en/trading/isa-accounts.php)
 
 ## Conclusion
