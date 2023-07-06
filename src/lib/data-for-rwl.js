@@ -9,6 +9,18 @@
 // };
 const DataList = [
   {
+    url: "https://justinjackson.ca/the-market",
+    title: "Why you should go after a market with strong demand",
+    author: "Justin Jackson",
+    dateListed: "2023-07-06T11:20:00.000Z",
+  },
+  {
+    url: "https://www.noahpinion.blog/p/the-internet-wants-to-be-fragmented",
+    title: "The internet wants to be fragmented - Throwing the whole world into a single room together doesn't work.",
+    author: "Noah Smith",
+    dateListed: "2023-07-06T11:15:00.000Z",
+  },
+  {
     url: "https://queue.acm.org/detail.cfm?id=2745840",
     title: "Reliable Cron across the Planet ...or How I stopped worrying and learned to love time",
     author: "Štěpán Davidovič, Kavita Guliani, Google",
