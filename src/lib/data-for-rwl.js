@@ -9,6 +9,42 @@
 // };
 const DataList = [
   {
+    url: "https://addyosmani.com/blog/motivation/",
+    title: "Don't expect to be motivated everyday",
+    author: "Addy Osmani",
+    dateListed: "2023-08-02T12:40:00.000Z",
+  },
+  {
+    url: "https://twitter.com/10kdiver/status/1601996286877736962",
+    title: "As investors, how often should we check stock prices?",
+    author: "10-K Diver",
+    dateListed: "2023-08-02T12:35:00.000Z",
+  },
+  {
+    url: "https://longform.asmartbear.com/survivor-bias",
+    title: "Business Advice Plagued by Survivor Bias - Advice from “successful entrepreneurs” might be unreliable due to Survivor Bias. What’s real, and what’s random?",
+    author: "Jason Cohen",
+    dateListed: "2023-08-02T12:30:00.000Z",
+  },
+  {
+    url: "https://www.hanselman.com/blog/brain-bytes-back-buns-the-programmers-priorities",
+    title: "Brain, Bytes, Back, Buns - The Programmer's Priorities",
+    author: "Scott Hanselman",
+    dateListed: "2023-08-02T12:20:00.000Z",
+  },
+  {
+    url: "https://world.hey.com/jason/do-you-have-to-love-what-you-do-296f7c43",
+    title: "Do you have to love what you do?",
+    author: "Jason Fried",
+    dateListed: "2023-08-01T10:30:00.000Z",
+  },
+  {
+    url: "https://world.hey.com/jason/founder-ceo-is-kinda-a-bs-title-9fe101e9",
+    title: "Founder & CEO is kinda a BS title",
+    author: "Jason Fried",
+    dateListed: "2023-08-01T10:20:00.000Z",
+  },
+  {
     url: "https://justinjackson.ca/the-market",
     title: "Why you should go after a market with strong demand",
     author: "Justin Jackson",
