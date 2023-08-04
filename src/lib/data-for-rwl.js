@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://www.allthingsdistributed.com/2023/07/building-and-operating-a-pretty-big-storage-system.html",
+    title: "Building and operating a pretty big storage system called S3",
+    author: "Andy Warfield, Werner Vogels",
+    dateListed: "2023-08-04T22:20:00.000Z",
+  },
+  {
     url: "https://addyosmani.com/blog/motivation/",
     title: "Don't expect to be motivated everyday",
     author: "Addy Osmani",
