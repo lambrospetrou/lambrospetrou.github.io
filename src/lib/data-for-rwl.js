@@ -9,6 +9,13 @@
 // };
 const DataList = [
   {
+    url: "https://medium.com/point-nine-news/the-p9-guide-to-cohort-analysis-in-saas-v0-9-63ce366ab427",
+    title: "The P9 Guide to Cohort Analysis in SaaS (v0.9) - Everything you always wanted to know about cohort analysis (but were afraid to ask)",
+    author: "Christoph Janz",
+    dateListed: "2023-08-05T08:40:00.000Z",
+    tags: ["favourite"],
+  },
+  {
     url: "https://www.allthingsdistributed.com/2023/07/building-and-operating-a-pretty-big-storage-system.html",
     title: "Building and operating a pretty big storage system called S3",
     author: "Andy Warfield, Werner Vogels",
