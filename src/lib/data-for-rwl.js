@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://substrate.tools/blog/terraform-best-practices-for-reliability-at-any-scale",
+    title: "Terraform best practices for reliability at any scale",
+    author: "Richard Crowley, Travis Cole",
+    dateListed: "2023-08-14T21:10:00.000Z",
+  },
+  {
     url: "https://medium.com/point-nine-news/the-p9-guide-to-cohort-analysis-in-saas-v0-9-63ce366ab427",
     title: "The P9 Guide to Cohort Analysis in SaaS (v0.9) - Everything you always wanted to know about cohort analysis (but were afraid to ask)",
     author: "Christoph Janz",
