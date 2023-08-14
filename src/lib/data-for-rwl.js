@@ -9,6 +9,19 @@
 // };
 const DataList = [
   {
+    url: "https://signalvnoise.com/posts/2486-bootstrapped-profitable-proud-github",
+    title: "Bootstrapped, Profitable, & Proud: GitHub",
+    author: "Matt Linderman, Chris Wanstrath",
+    dateListed: "2023-08-14T21:15:00.000Z",
+    tags: ["favourite"],
+  },
+  {
+    url: "https://signalvnoise.com/posts/2800-bootstrapped-profitable-proud-braintree",
+    title: "Bootstrapped, Profitable, & Proud: Braintree",
+    author: "Matt Linderman, Bryan Johnson",
+    dateListed: "2023-08-14T21:15:00.000Z",
+  },
+  {
     url: "https://substrate.tools/blog/terraform-best-practices-for-reliability-at-any-scale",
     title: "Terraform best practices for reliability at any scale",
     author: "Richard Crowley, Travis Cole",
