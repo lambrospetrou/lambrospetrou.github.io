@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://tyler.io/backing-up-everything-again/",
+    title: "Backing Up Everything (Again)",
+    author: "Tyler Hall",
+    dateListed: "2023-08-16T22:20:00.000Z",
+  },
+  {
     url: "https://signalvnoise.com/posts/2486-bootstrapped-profitable-proud-github",
     title: "Bootstrapped, Profitable, & Proud: GitHub",
     author: "Matt Linderman, Chris Wanstrath",
