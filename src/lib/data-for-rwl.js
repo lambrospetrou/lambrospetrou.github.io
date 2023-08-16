@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "http://highscalability.com/blog/2023/7/16/gossip-protocol-explained.html",
+    title: "Lessons Learned Running Presto At Meta Scale",
+    author: "Todd Hoff",
+    dateListed: "2023-08-16T23:20:00.000Z",
+  },
+  {
     url: "https://tyler.io/backing-up-everything-again/",
     title: "Backing Up Everything (Again)",
     author: "Tyler Hall",
