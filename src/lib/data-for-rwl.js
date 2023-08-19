@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://www.indiehackers.com/podcast/016-mike-perham-of-sidekiq",
+    title: "Building a $1 Million Business Solo with Mike Perham of Sidekiq",
+    author: "Courtland Allen, Mike Perham",
+    dateListed: "2023-08-19T08:30:00.000Z",
+  },
+  {
     url: "http://highscalability.com/blog/2023/7/16/gossip-protocol-explained.html",
     title: "Lessons Learned Running Presto At Meta Scale",
     author: "Todd Hoff",
