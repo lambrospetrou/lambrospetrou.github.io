@@ -13,6 +13,7 @@ const DataList = [
     title: "Building a $1 Million Business Solo with Mike Perham of Sidekiq",
     author: "Courtland Allen, Mike Perham",
     dateListed: "2023-08-19T08:30:00.000Z",
+    type: "audio",
   },
   {
     url: "http://highscalability.com/blog/2023/7/16/gossip-protocol-explained.html",
