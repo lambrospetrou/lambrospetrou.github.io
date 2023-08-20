@@ -16,6 +16,15 @@ Useful networking (HTTP, and more) tools.
 >
 > Hurl makes it easy to work with HTML content, REST / SOAP / GraphQL APIs, or any other XML / JSON based APIs.
 
+## HTTPie
+
+- https://httpie.io/app
+- https://httpie.io/docs/cli/examples
+
+> FLOW THROUGH APIs
+>
+> HTTPie is making APIs simple and intuitive for those building the tools of our time.
+
 ## Postman and newman
 
 - https://www.postman.com/product/tools/
