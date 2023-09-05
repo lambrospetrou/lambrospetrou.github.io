@@ -9,6 +9,43 @@
 // };
 const DataList = [
   {
+    url: "https://www.craigkerstiens.com/2013/03/13/planning-and-prioritizing/",
+    title: "Prioritizing and Planning within Heroku Postgres",
+    author: "Craig Kerstiens",
+    dateListed: "2023-09-05T11:50:00.000Z",
+  },
+  {
+    url: "https://addyosmani.com/blog/write-learn/",
+    title: "Write about what you learn. It pushes you to understand topics better.",
+    author: "Addy Osmani",
+    dateListed: "2023-09-05T11:45:00.000Z",
+    tags: ["favourite"],
+  },
+  {
+    url: "https://collabfund.com/blog/intelligent-vs-smart/",
+    title: "Intelligent vs. Smart",
+    author: "Morgan Housel",
+    dateListed: "2023-09-05T11:40:00.000Z",
+  },
+  {
+    url: "https://longform.asmartbear.com/willingness-to-pay/",
+    title: "When customers are “willing” to pay",
+    author: "Jason Cohen",
+    dateListed: "2023-09-05T11:36:00.000Z",
+  },
+  {
+    url: "https://collabfund.com/blog/how-to-read-lots-of-inputs-and-a-strong-filter/",
+    title: "How to Read: Lots of Inputs and a Strong Filter",
+    author: "Morgan Housel",
+    dateListed: "2023-09-05T11:35:00.000Z",
+  },
+  {
+    url: "https://collabfund.com/blog/the-spectrum-of-financial-dependence-and-independence/",
+    title: "The Spectrum of Financial Dependence and Independence",
+    author: "Morgan Housel",
+    dateListed: "2023-09-05T11:30:00.000Z",
+  },
+  {
     url: "https://www.indiehackers.com/podcast/016-mike-perham-of-sidekiq",
     title: "Building a $1 Million Business Solo with Mike Perham of Sidekiq",
     author: "Courtland Allen, Mike Perham",
