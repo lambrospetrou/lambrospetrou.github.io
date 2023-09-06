@@ -9,6 +9,13 @@
 // };
 const DataList = [
   {
+    url: "https://stevejobsarchive.com/",
+    title: "Steve Jobs Archive",
+    author: "Steve Jobs Archive, LLC",
+    dateListed: "2023-09-06T21:50:00.000Z",
+    tags: ["favourite"],
+  },
+  {
     url: "https://www.craigkerstiens.com/2013/03/13/planning-and-prioritizing/",
     title: "Prioritizing and Planning within Heroku Postgres",
     author: "Craig Kerstiens",
