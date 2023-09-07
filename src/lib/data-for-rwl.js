@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://antonz.org/mastering-curl/",
+    title: "Mastering curl: interactive text guide",
+    author: "Anton Zhiyanov",
+    dateListed: "2023-09-07T09:00:00.000Z",
+  },
+  {
     url: "https://stevejobsarchive.com/",
     title: "Steve Jobs Archive",
     author: "Steve Jobs Archive, LLC",
