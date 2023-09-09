@@ -9,6 +9,13 @@
 // };
 const DataList = [
   {
+    url: "https://archive.org/details/BizTalkSessionWithGaryVaynerchukAndJasonFried",
+    title: "Biz Talk session with Gary Vaynerchuk and Jason Fried",
+    author: "Gary Vaynerchuk, Jason Fried",
+    dateListed: "2023-09-09T10:30:00.000Z",
+    type: "audio",
+  },
+  {
     url: "https://antonz.org/mastering-curl/",
     title: "Mastering curl: interactive text guide",
     author: "Anton Zhiyanov",
