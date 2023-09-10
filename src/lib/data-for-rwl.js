@@ -14,6 +14,7 @@ const DataList = [
     author: "Gary Vaynerchuk, Jason Fried",
     dateListed: "2023-09-09T10:30:00.000Z",
     type: "audio",
+    tags: ["favourite"],
   },
   {
     url: "https://antonz.org/mastering-curl/",
