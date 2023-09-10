@@ -397,6 +397,7 @@ What I recommend, and what I personally do is the following:
     - [Meta engineering blog](https://engineering.fb.com/): Meta's engineering blog is among my favourites. It spans things from AI, to developer tooling, to core infrastructure platforms, to web-scale metric systems. Some of them are high-level and not very technical, but some are super nice.
     - [Cloudflare engineering blog](https://blog.cloudflare.com/): Cloudflare writes amazing technical blog posts about lots of their infrastructure and products. They range from super deeply technical network solutions to high-level architecture designs.
     - Other company blogs: [Datadog](https://www.datadoghq.com/blog/engineering/), [Stripe](https://stripe.com/blog/engineering), pick your favourite tech company.
+- Watch the [Systems Architecture Interview](https://www.youtube.com/playlist?list=PLeNDQKdre0oEzLXh8Ksl2Ocoeltx0gD8-) videos by Jackson Gabbard.
 - [Understanding Distributed Systems, Second Edition: What every developer should know about large distributed applications](https://www.amazon.co.uk/gp/product/1838430210)
     - I love this book. It does NOT go deep into the topics discussed, but it gives you a very broad coverage of many aspects around distributed systems.
     - This can be a great starting book that will expose you to the many topics you should be aware when designing systems, and then get other resources to go deeper in the topics you feel you have a gap.
@@ -460,6 +461,7 @@ Overall, these interviews have the following goals:
     - Tell me what your colleagues would say as your best quality.
     - Which soft or hard skills would you like to improve on.
 - Study the company you are interviewing with, and try to sell yourself in a way that makes sense for them. For example, if the company is an analytics company, try to talk about a project or something you did and how it impacted the analytics of your product, or talk about work you did to improve the analytics you gathered to improve decision making.
+- Watch this [Intro to Behavioural Interviews](https://www.youtube.com/watch?v=PJKYqLP6MRE) video by Jackson Gabbard.
 
 ## Conclusion
 
