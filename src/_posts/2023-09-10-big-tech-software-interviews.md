@@ -14,6 +14,14 @@ This is the advice I give to friends and colleagues, and how I personally prepar
 
 It works for me, it worked for some of my friends, so it might work for you too.
 
+**Table of contents**
+- [Proper preparation is worth it](#proper-preparation-is-worth-it)
+- [Interview process](#interview-process)
+- [Coding](#coding)
+- [System Design](#system-design)
+- [Behavorial](#behavorial)
+- [Connclusion](#conclusion)
+
 ## Proper preparation is worth it
 
 There are myriad of angry engineers online crying out loud that the current state of software engineering interviews is a mess.
@@ -382,9 +390,7 @@ It's not as simple as the coding interview, which boils down to practicing more 
 
 Practicing system design questions helps, but if you don't know much, then you won't know what you don't know 🤯
 
-The [Preparing for the Systems Design and Coding Interview](https://blog.pragmaticengineer.com/preparing-for-the-systems-design-and-coding-interviews/) article by Gergely Orosz has a lot of references on books, courses, and material to study.
-
-However, what I recommend, and what I personally do is the following:
+What I recommend, and what I personally do is the following:
 - Look into how your existing company implements a lot of their complex systems. You probably have access to all the internal implementation details, even the people working on them, so you can ask questions. Looking at real systems and how they are implemented is tremendously useful. I personally learnt a lot by researching how several AWS systems are implemented.
 - Read engineering blogs from well-known tech companies. This is very vague, I know, and I also have trouble following blogs outside a couple. The following is what I study religiously and then search around in more companies depending on topic.
     - [The Amazon Builders' Library](https://aws.amazon.com/builders-library/): This is one of my favourite resources for learning about distributed systems. These are technical articles taken out from actual Amazon/AWS systems. I actually saw many of the techniques described in these articles in real-life during my time at AWS, and that's why I love them. It's not just marketing bullshit.
@@ -408,6 +414,7 @@ However, what I recommend, and what I personally do is the following:
 
 The above material should be more than enough to prepare for the System Design interview, but if you want more material, the following are some resources I used a bit (definitely not exchaustively).
 
+- The [Preparing for the Systems Design and Coding Interview](https://blog.pragmaticengineer.com/preparing-for-the-systems-design-and-coding-interviews/) article by Gergely Orosz has a lot of references on books, courses, and material to study.
 - Distributed Systems lecture series: https://www.youtube.com/playlist?list=PLeKd45zvjcDFUEv_ohr_HdUFe97RItdiB
     - Amazing video playlist by the author of Designing Data-Intensive Applications (DDIA).
 - The morning paper: https://blog.acolyer.org/
