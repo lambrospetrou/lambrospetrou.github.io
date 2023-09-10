@@ -49,6 +49,7 @@ Usually the whole interview pipeline consists of:
 3. Behavorial (1-2x)
 
 I am going to focus on the above parts of the interview process.
+Each interview usually lasts 45 minutes, with some companies extending it to an hour.
 
 Some companies might have interviews that are more conversational, or oriented around specific technologies (e.g. Java and JVM internals, machine learning algorithms and frameworks).
 Those need dedicated preparation and it really depends on the company you are interviewing with, so I am not going to get into those.
