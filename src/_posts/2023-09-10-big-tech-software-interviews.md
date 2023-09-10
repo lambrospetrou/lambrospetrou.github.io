@@ -20,7 +20,7 @@ It works for me, it worked for some of my friends, so it might work for you too.
 - [Coding](#coding)
 - [System Design](#system-design)
 - [Behavorial](#behavorial)
-- [Connclusion](#conclusion)
+- [Conclusion](#conclusion)
 
 ## Proper preparation is worth it
 
