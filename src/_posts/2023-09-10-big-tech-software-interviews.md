@@ -24,7 +24,7 @@ It works for me, it worked for some of my friends, so it might work for you too.
 
 ## Proper preparation is worth it
 
-There are myriad of angry engineers online crying out loud that the current state of software engineering interviews is a mess.
+There are myriad of angry engineers online crying out loud that the current state of software engineering interviews is a mess. Some excuses they usually use against the coding interviews (which I do not agree with - I am pro-interviews!):
 
 - Why would you ever put a tenured engineer, writing code for years, sometimes decades, through a 40-minute process writing code in a collaboration doc or a whiteboard...
 - Why would you ask interviewees to explain and describe systems that they would probably never built in their day to day job...
@@ -32,7 +32,6 @@ There are myriad of angry engineers online crying out loud that the current stat
 - Why would someone even spend 1-2 months preparing for a stupid interview just to get into a big tech company, if they never use any of that knowledge day to day...
 
 I am **not** going to debate the pros and cons of the interview process in this article, although I should write one in the future.
-
 
 🙏🏼 For now, get over it! Big Tech companies, and even smaller ones, follow a pretty much standardised hiring process.
 
