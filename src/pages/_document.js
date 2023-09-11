@@ -13,6 +13,7 @@ class MyDocument extends Document {
         <body>
           <Main />
           <NextScript />
+          <script data-goatcounter="https://lambrospetrou.goatcounter.com/count" async="" src="/s/goatcounter.count.v3.js"></script>
         </body>
       </Html>
     )
