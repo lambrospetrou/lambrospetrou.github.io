@@ -198,9 +198,9 @@ Follow the above steps, and practice.
 
 ### Coding - preparation before the interview
 
-There are myriads of coding interview books, like [Elements of Programming Interviews in Python](https://www.amazon.co.uk/Elements-Programming-Interviews-Python-Insiders/dp/1537713949/) and [Cracking the coding interview](https://www.amazon.co.uk/Cracking-Coding-Interview-6th-Programming/dp/0984782850). There are also hundreds of online coding platforms dedicated to coding interviews like [Hackerrank](https://www.hackerrank.com/), [Leetcode](https://leetcode.com/) (probably most famous). 
+There are myriads of coding interview books, like [Elements of Programming Interviews in Python](https://www.amazon.co.uk/Elements-Programming-Interviews-Python-Insiders/dp/1537713949/) and [Cracking the coding interview](https://www.amazon.co.uk/Cracking-Coding-Interview-6th-Programming/dp/0984782850). There are also hundreds of online coding platforms dedicated to coding interviews like [HackerRank](https://www.hackerrank.com/), [Leetcode](https://leetcode.com/) (probably most famous). 
 
-I never liked Leetcode, and only use Hackerrank from time to time to get some practice using an online evaluation tool instead of coding locally on my laptop.
+I never liked Leetcode, and only use HackerRank from time to time to get some practice using an online evaluation tool instead of coding locally on my laptop.
 
 After reading tons of books and trying these platforms, I personally wholeheartedly recommend to everyone that asks me how to prepare, to buy the [Elements of Programming Interviews in Python](https://www.amazon.co.uk/Elements-Programming-Interviews-Python-Insiders/dp/1537713949/) book.
 
