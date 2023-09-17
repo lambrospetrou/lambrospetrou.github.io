@@ -43,9 +43,33 @@ function HeroBanner() {
 function WidgetsSection() {
   return (<div className="home-widgets">
     {/* <div className="home-widgets__item"><LearnWidget /></div> */}
+    <div className="home-widgets__item"><NewsletterWidget /></div>
     <div className="home-widgets__item"><RWLWidget /></div>
     {/* <div className="home-widgets__item"></div> */}
   </div>);
+}
+
+function NewsletterWidget() {
+  return (
+    <section className="home-section">
+      <div>
+        {/** https://www.toptal.com/designers/htmlarrows/symbols/ */}
+        <h3>&#10148; <a
+            href="/newsletter/?ref=homepage"
+            title="Lambros Petrou newsletter"
+          >
+            Sign up to my newsletter
+          </a></h3>
+        <p>
+          At <em>most one email per month</em> with all my new articles, product announcements and launch deals.
+          <br/>
+          Nothing new, means no email at all.
+          <br/>
+          <strong>No spam. No gimmicks.</strong>
+        </p>
+      </div>
+    </section>
+  );
 }
 
 function LearnWidget() {
@@ -75,7 +99,7 @@ function RWLWidget() {
       {/* <header><h2>Check other content I like</h2></header> */}
       {/* <hr/> */}
       <div>
-        <h3>&#10148; <a href="/read-watch-listen/" title="My Read-Watch-Listen list">Read-Watch-Listen list</a></h3>
+        <h3>&#10148; <a href="/read-watch-listen/?ref=homepage" title="My Read-Watch-Listen list">Read-Watch-Listen list</a></h3>
         <p>My <strong>Read-Watch-Listen list</strong> references content I read, watched, and listened, worthy of sharing!
         <br/>Topics covered include technical articles, career advice, business and startups, life, and more.</p>
       </div>
