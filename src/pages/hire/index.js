@@ -69,7 +69,7 @@ export default function HireIndex() {
           <li>Highly dynamic and interactive websites using React, including frameworks like Next.js, Astro, and Eleventy.</li>
           <li>Prefer server-rendered applications, with sprinkles of dynamic JavaScript using libraries like HTMX and Preact islands? Not a problem, I love that too.</li>
           <li>Reliable backend server, or serverless, REST APIs.</li>
-          <li>Scale your applications using the right caching, load balancing for high-availability, and smart CDNs.</li>
+          <li>Scale your applications using robust caching, load balancing for high-availability, and smart CDNs.</li>
         </ul>
       </section>
 
