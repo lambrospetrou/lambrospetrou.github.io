@@ -42,7 +42,7 @@ function HeroBanner() {
 
 function WidgetsSection() {
   return (<div className="home-widgets">
-    <div className="home-widgets__item"><LearnWidget /></div>
+    {/* <div className="home-widgets__item"><LearnWidget /></div> */}
     <div className="home-widgets__item"><RWLWidget /></div>
     {/* <div className="home-widgets__item"></div> */}
   </div>);
