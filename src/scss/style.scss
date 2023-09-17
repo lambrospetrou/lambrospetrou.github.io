@@ -575,33 +575,66 @@ ul.rwl {
  * Hire me page.
  */
 
-#hero {
-    h1 {
-        color: $font-color-red;
-        font-weight: lighter;
-        margin-bottom: 0;
-    }
-
-    #tagline {
-        margin-top: 0;
-        text-align: right;
-        font-weight: bolder;
-        font-size: 0.9em;
-    }
-}
-
-#intro {
-    display: flex;
-    margin-top: 100px;
-
-    img.profile-pic {
-        padding: 15px;
-        border-radius: 25%;
-        width: 300px;
-    }
-}
-
 .hire-container {
+    #hero {
+        h1 {
+            color: $font-color-red;
+            font-weight: lighter;
+            margin-bottom: 0;
+            text-align: center;
+        }
+    
+        #tagline {
+            margin-top: 0;
+            text-align: right;
+            font-weight: bolder;
+            font-size: 0.9em;
+        }
+    }
+
+    #intro {
+        display: flex;
+        margin-top: 100px;
+    
+        .intro-text, .profile-pic {
+            flex: 1;
+        }
+    
+        .intro-text {
+            order: 1;
+        }
+    
+        .profile-pic {
+            order: 2;
+            display: flex;
+            align-items: baseline;
+        }
+    
+        .profile-pic img {
+            display: inline-block;
+            margin: 0 auto;
+            width: 300px;
+            padding: 15px;
+            border-radius: 25%;
+        }
+    
+        @media (max-width: 40em) {
+            flex-direction: column;
+    
+            .intro-text {
+                order: 2;
+            }
+        
+            .profile-pic {
+                order: 1;
+            }
+    
+            .profile-pic img {
+                width: 200px;
+            }
+        }
+    }
+
     #websites ul {
         // list-style-type: "➤  ";
         list-style-type: "✧  ";
@@ -630,6 +663,52 @@ ul.rwl {
             flex-basis: 20em;
             flex-shrink: 0;
             flex-grow: 1;
+        }
+    }
+
+    .cta-container {
+        padding: 1em;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 10px;
+    
+        button {
+            cursor: pointer;
+            flex: 1 0 10em;
+            padding: 1em;
+            font-weight: bold;
+            border-radius: 0.375em;
+            border-width: 2px;
+            background-image: none;
+            border-style: solid;
+            background-color: var(--cta-color-1);
+            border-color: var(--cta-color-2);
+    
+            &:hover {
+                background-color: var(--cta-color-2);
+            }
+        }
+    
+        button small {
+            display: block;
+            font-style: italic;
+            font-weight: normal;
+        }
+    
+        .cta-consult {
+            // --cta-color-1: rgb(255, 102, 0);
+            // --cta-color-2: rgb(255, 102, 100);
+            --cta-color-1: rgb(153, 0, 0);
+            --cta-color-2: rgb(200, 0, 0);
+            color: #fff;
+        }
+        .cta-project {
+            --cta-color-1: rgb(0, 153, 153);
+            --cta-color-2: rgb(100, 153, 153);
+            // --cta-color-1: rgb(255, 102, 0);
+            // --cta-color-2: rgb(255, 102, 100);
+            color: #eee;
         }
     }
 }

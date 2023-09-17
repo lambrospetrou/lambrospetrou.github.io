@@ -2,9 +2,15 @@ import Head from "next/head";
 import { Layout } from "../../components/layout";
 
 function HireMeActions() {
-  return <div>
-    <button>BOOK A CONSULTATION SESSION</button>
-    <button>LET'S CHAT ABOUT CONTRACTING FOR A PROJECT</button>
+  return <div className="cta-container">
+    <button className="cta-consult">
+      Book consultation session
+      <small>1:1 session with me, any topic you want.</small>
+    </button>
+    <button className="cta-project">
+      Request project contract
+      <small>Fixed-duration contracting opportunities.</small>
+    </button>
   </div>
 }
 
@@ -28,11 +34,11 @@ export default function HireIndex() {
       <section>
         <header id="hero">
           <h1>I am an expert in website & API development, continuous delivery, and scaling server applications.</h1>
-          <p id="tagline">&#9733; Simplicity. Reliability. Results. Choose any three.</p>
+          <p id="tagline">&#9733; Simple. Reliable. Done.</p>
           {/* <p id="tagline">&#9733; Deliver value safely, reliably, continuously.</p> */}
         </header>
         <div id="intro">
-          <div>
+          <div className="intro-text">
             <p>Hi there 👋 I am Lambros.</p>
             <p>
               I build websites & APIs, implement continuous integration and continuous delivery (CI/CD) pipelines for cloud-native applications, and I can help you scale to millions of users.
@@ -44,8 +50,8 @@ export default function HireIndex() {
               <strong>Are you interested?</strong>
             </p>
           </div>
-          <div>
-            <img className="profile-pic" src="/s/images/profile-pic.opt.jpg" alt="Lambros Petrou profile picture"/>
+          <div className="profile-pic">
+            <img src="/s/images/profile-pic.opt.jpg" alt="Lambros Petrou profile picture"/>
           </div>
         </div>
         <div>
