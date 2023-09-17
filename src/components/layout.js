@@ -111,9 +111,9 @@ const Header = ({}) => {
             <a href="/read-watch-listen/" title="My Read-Watch-Listen list">Read-Watch-Listen</a>
             <a href="/cv/" title="Lambros Petrou Resume - CV" rel="noopener" target="_blank">CV</a>
             <a href="https://temp.minibri.com" title="Minibri Temp - Share content with expiration" rel="noopener" target="_blank">Minibri Temp</a>
-            {/* <a href="/feed/rss.xml" title="Subscribe to my RSS Feed" target="_blank" rel="noopener">RSS Feed</a> */}
+            <a className="cta-hire" href="/hire/" >Hire me</a>
             <SocialIcon name="rss"/>
-            {/* <a className="cta-hire" href="/hire" >Hire me</a> */}
+            {/* <a href="/feed/rss.xml" title="Subscribe to my RSS Feed" target="_blank" rel="noopener">RSS Feed</a> */}
           </div>
         </div>
       </div>
