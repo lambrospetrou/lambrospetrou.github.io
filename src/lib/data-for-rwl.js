@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://simonwillison.net/2023/Aug/27/wordcamp-llms/",
+    title: "Making Large Language Models work for you",
+    author: "Simon Willison",
+    dateListed: "2023-09-17T09:00:00.000Z",
+  },
+  {
     url: "https://archive.org/details/BizTalkSessionWithGaryVaynerchukAndJasonFried",
     title: "Biz Talk session with Gary Vaynerchuk and Jason Fried",
     author: "Gary Vaynerchuk, Jason Fried",
