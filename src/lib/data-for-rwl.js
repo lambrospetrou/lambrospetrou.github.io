@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://lethain.com/building-prestige/",
+    title: "Building personal and organizational prestige",
+    author: "Will Larson",
+    dateListed: "2023-09-17T09:20:00.000Z",
+  },
+  {
     url: "https://simonwillison.net/2023/Aug/27/wordcamp-llms/",
     title: "Making Large Language Models work for you",
     author: "Simon Willison",
