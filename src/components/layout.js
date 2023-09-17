@@ -2,8 +2,10 @@ import Head from 'next/head'
 import {CodeHighlightScripts} from "./code-highlight"
 import {InlineSignup} from "./newsletter-signup";
 
-export const Layout = ({children, wrapInnerSection}) => {
+export const Layout = ({children, wrapInnerSection, className}) => {
   wrapInnerSection = wrapInnerSection ?? true;
+  className = className || "";
+
   let content = children;
   if (wrapInnerSection) {
     content = (
@@ -15,7 +17,7 @@ export const Layout = ({children, wrapInnerSection}) => {
   return (
     <>
       <HeadAdditions/>
-      <div id="outer-wrapper">
+      <div id="outer-wrapper" className={className}>
         <Header/>
         <div id="content-wrapper" className="outer-section">
             {content}
