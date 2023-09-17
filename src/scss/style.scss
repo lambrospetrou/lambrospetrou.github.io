@@ -416,8 +416,13 @@ iframe.centered {
     font-weight: bold;
     font-size: 3.5rem;
 
+    p {
+        margin: 0 auto;
+        max-width: 20em;
+    }
+
     @media (max-width: 100ch) {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 }
 
