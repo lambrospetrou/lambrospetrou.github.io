@@ -576,6 +576,12 @@ ul.rwl {
  */
 
 .hire-container {
+    p svg {
+        vertical-align: top;
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
     #hero {
         padding: 0 1em 2em;
         display: flex;
@@ -620,7 +626,8 @@ ul.rwl {
     #intro {
         display: flex;
         margin-top: 2em;
-    
+
+
         .intro-text, .profile-pic {
             flex: 1;
         }
@@ -666,13 +673,11 @@ ul.rwl {
     }
 
     #cicd ul {
-        // list-style-type: "✧  ";
-        list-style-type: "➤  ";
+        list-style-type: "✧  ";
     }
 
     #career ul {
-        list-style-type: "✧  ";
-        // list-style-type: "➠  ";
+        list-style-type: "➤  ";
     }
 
     #tech ul {
@@ -727,6 +732,10 @@ ul.rwl {
             --cta-color-1: rgb(153, 0, 0);
             --cta-color-2: rgb(200, 0, 0);
             color: #fff;
+        }
+        .cta-interview {
+            --cta-color-1: #fff;
+            --cta-color-2: #aaa;
         }
         .cta-project {
             --cta-color-1: #fafafa;
