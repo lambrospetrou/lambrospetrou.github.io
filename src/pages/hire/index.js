@@ -95,7 +95,7 @@ export default function HireIndex() {
           <h3>CI/CD and Cloud Infrastructure</h3>
           <ul>
             <li>Setup your CI/CD pipeline to automatically test and build your applications on every pull-request.</li>
-            <li>Automatic continuous deployment of your software to customers using feature flags, controlled gradual rollouts, and optional automatic rollbacks.</li>
+            <li>Automatic continuous deployment of your software to customers using feature flags, for controlled gradual rollouts.</li>
             <li>Infrastructure-as-Code for provision cloud resources (AWS CDK, AWS SAM, Terraform).</li>
             <li>Integrate with observability tools.</li>
           </ul>
