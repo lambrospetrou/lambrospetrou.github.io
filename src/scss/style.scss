@@ -577,24 +577,49 @@ ul.rwl {
 
 .hire-container {
     #hero {
+        padding: 0 1em 2em;
+        display: flex;
+        flex-direction: column;
+        background-color: #f5f5f5;
+        background: linear-gradient(180deg, #f5f5f5 0%, #ffffff 100%);
+
+        border: 0px solid #555;
+        // border-width: 0 0 2px 0;
+        // border-radius: 0% 0% 100% 100%/0% 0% 200% 200%;
+        border-width: 0 0 13px;
+        border-radius: 0% 0% 200% 0%/0% 0% 65% 0%;
+
+        #consulting-badge {
+            margin: 0 auto;
+            padding: 4px 10px;
+            font-size: 1rem;
+            font-variant-caps: petite-caps;
+            border-radius: 10px;
+            background-color: #555;
+            border: 1px solid #eee;
+            color: white;
+            box-shadow: 0px 0 10px 5px #333 inset;
+        }
+
         h1 {
+            text-align: center;
             color: $font-color-red;
             font-weight: lighter;
-            margin-bottom: 0;
-            text-align: center;
+            margin-bottom: 0.5em;
+            margin-top: 0.5em;
         }
     
         #tagline {
             margin-top: 0;
-            text-align: right;
-            font-weight: bolder;
+            text-align: center;
+            font-weight: bold;
             font-size: 0.9em;
         }
     }
 
     #intro {
         display: flex;
-        margin-top: 100px;
+        margin-top: 2em;
     
         .intro-text, .profile-pic {
             flex: 1;
