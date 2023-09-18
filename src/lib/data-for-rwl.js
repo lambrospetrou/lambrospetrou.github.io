@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://jamesclear.com/great-speeches",
+    title: "Great Talks Most People Have Never Heard",
+    author: "James Clear",
+    dateListed: "2023-09-18T09:25:00.000Z",
+  },
+  {
     url: "https://lethain.com/building-prestige/",
     title: "Building personal and organizational prestige",
     author: "Will Larson",
