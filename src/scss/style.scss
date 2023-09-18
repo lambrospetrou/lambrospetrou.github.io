@@ -729,11 +729,13 @@ ul.rwl {
             color: #fff;
         }
         .cta-project {
-            --cta-color-1: rgb(0, 153, 153);
-            --cta-color-2: rgb(100, 153, 153);
+            --cta-color-1: #fafafa;
+            --cta-color-2: #f0f0f0;
+            // --cta-color-1: rgb(0, 153, 153);
+            // --cta-color-2: rgb(100, 153, 153);
             // --cta-color-1: rgb(255, 102, 0);
             // --cta-color-2: rgb(255, 102, 100);
-            color: #eee;
+            color: #555;
         }
     }
 }
