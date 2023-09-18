@@ -407,7 +407,6 @@ iframe.centered {
 }
 
 .home-hero-banner {
-    background-color: #f5f5f5;
     text-align: center;
     padding: 20px;
     padding-top: 80px;
@@ -415,6 +414,12 @@ iframe.centered {
     font-family: $font-family-system-serif;
     font-weight: bold;
     font-size: 3.5rem;
+
+    background-color: #f5f5f5;
+    background: linear-gradient(180deg, #f5f5f5 0%, #ffffff 100%);
+    border: 0px solid #555;
+    border-width: 0 0 13px;
+    border-radius: 0% 0% 200% 0%/0% 0% 65% 0%;
 
     p {
         margin: 0 auto;
@@ -590,8 +595,6 @@ ul.rwl {
         background: linear-gradient(180deg, #f5f5f5 0%, #ffffff 100%);
 
         border: 0px solid #555;
-        // border-width: 0 0 2px 0;
-        // border-radius: 0% 0% 100% 100%/0% 0% 200% 200%;
         border-width: 0 0 13px;
         border-radius: 0% 0% 200% 0%/0% 0% 65% 0%;
 
