@@ -84,7 +84,7 @@ export default function HireIndex() {
           <h3>Websites & APIs</h3>
           <ul>
             <li>Highly dynamic and interactive websites using React, including frameworks like Next.js, Astro, and Eleventy.</li>
-            <li>Prefer server-rendered applications, with sprinkles of dynamic JavaScript using libraries like HTMX and Preact islands? Not a problem, I love that too.</li>
+            <li>Prefer server-rendered applications, with sprinkles of dynamic JavaScript using libraries like HTMX and Preact? Not a problem, I love that too.</li>
             <li>Reliable and scalable backend server APIs.</li>
             <li>Scale your web applications using robust caching, load balancing for high-availability, and smart CDNs.</li>
           </ul>
@@ -95,7 +95,7 @@ export default function HireIndex() {
           <ul>
             <li>Setup your CI/CD pipeline to automatically test and build your applications on every pull-request.</li>
             <li>Automatic continuous deployment of your software to customers using feature flags, for controlled gradual rollouts.</li>
-            <li>Infrastructure-as-Code for provision cloud resources (AWS CDK, AWS SAM, Terraform).</li>
+            <li>Infrastructure-as-Code for provisioning cloud resources (AWS CDK, AWS SAM, Terraform).</li>
             <li>Integrate with observability & APM tools, and optimize your applications.</li>
           </ul>
         </section>
