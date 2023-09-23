@@ -88,8 +88,8 @@ export default function HireIndex() {
           <ul>
             <li>Highly dynamic and interactive websites using React, including frameworks like Next.js, Astro, and Eleventy.</li>
             <li>Prefer server-rendered applications, with sprinkles of dynamic JavaScript using libraries like HTMX and Preact islands? Not a problem, I love that too.</li>
-            <li>Reliable backend server, or serverless, REST APIs.</li>
-            <li>Scale your applications using robust caching, load balancing for high-availability, and smart CDNs.</li>
+            <li>Reliable and scalable backend server APIs.</li>
+            <li>Scale your web applications using robust caching, load balancing for high-availability, and smart CDNs.</li>
           </ul>
         </section>
 
@@ -99,7 +99,7 @@ export default function HireIndex() {
             <li>Setup your CI/CD pipeline to automatically test and build your applications on every pull-request.</li>
             <li>Automatic continuous deployment of your software to customers using feature flags, for controlled gradual rollouts.</li>
             <li>Infrastructure-as-Code for provision cloud resources (AWS CDK, AWS SAM, Terraform).</li>
-            <li>Integrate with observability tools.</li>
+            <li>Integrate with observability & APM tools, and optimize your applications.</li>
           </ul>
         </section>
 
@@ -134,7 +134,10 @@ export default function HireIndex() {
         </section>
 
         <section id="why-trust">
-          <h3>Why you should trust me... And work with me.</h3>
+          <h3>
+          <svg className="svg" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" d="M15 9h3.75M15 12h3.75M15 15h3.75M4.5 19.5h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5zm6-10.125a1.875 1.875 0 11-3.75 0 1.875 1.875 0 013.75 0zm1.294 6.336a6.721 6.721 0 01-3.17.789 6.721 6.721 0 01-3.168-.789 3.376 3.376 0 016.338 0z" /></svg>
+            Why you should trust me... And work with me.
+          </h3>
 
           <p>
             I have been creating websites for more than 10 years, even before being paid for it.
@@ -164,9 +167,9 @@ export default function HireIndex() {
 
           <p>
             Throughout my career, I always gravitated towards working with software release infrastructure.
-            I also love the web platform, creating websites and APIs, and scaling them to millions of users.
+            I also love the web platform; creating websites and APIs, and scaling them to millions of users.
           </p>
-          <p><strong>★ I want to help you deliver value to your own customers safely, reliably, continuously.</strong></p>
+          <p><strong>★ Let me help you deliver value to your own customers safely, reliably, continuously. ★</strong></p>
         </section>
 
         <HireMeActions />
