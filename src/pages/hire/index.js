@@ -4,8 +4,10 @@ import { Layout } from "../../components/layout";
 function HireMeActions() {
   return <div className="cta-container">
     <button className="cta-consult">
-      &#10144; Book consultation session
-      <small>1:1 session with me, any topic you want.</small>
+      <span>
+        &#10144; Book consultation session
+        <small>1:1 session with me, any topic you want.</small>
+      </span>
     </button>
     {/* <button className="cta-project">
       Request project contract
