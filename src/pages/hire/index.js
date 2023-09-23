@@ -15,7 +15,7 @@ function ConsultingAction() {
 function InterviewConsultingAction() {
   return <div className="cta-container">
     <a className="cta-interview" href="https://cal.com/lambrospetrou/interview-preparation-1h" target="_blank" rel="noopener noreferrer">
-      &#10144; Book your interview preparation session
+      &#10144; Book interview preparation session
       <small>1:1 session with me, to prepare you for coding or system design interviews.</small>
     </a>
   </div>
