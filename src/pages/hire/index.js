@@ -1,27 +1,23 @@
 import Head from "next/head";
 import { Layout } from "../../components/layout";
 
-function HireMeActions() {
+function ConsultingAction() {
   return <div className="cta-container">
-    <button className="cta-consult">
+    <a className="cta-consult" href="https://cal.com/lambrospetrou/consulting-session-1-hour" target="_blank" rel="noopener noreferrer">
       <span>
         &#10144; Book consultation session
         <small>1:1 session with me, any topic you want.</small>
       </span>
-    </button>
-    {/* <button className="cta-project">
-      Request project contract
-      <small>Fixed-duration contracting opportunities.</small>
-    </button> */}
+    </a>
   </div>
 }
 
 function InterviewConsultingAction() {
   return <div className="cta-container">
-    <button className="cta-interview">
+    <a className="cta-interview" href="https://cal.com/lambrospetrou/interview-preparation-1h" target="_blank" rel="noopener noreferrer">
       &#10144; Book your interview preparation session
       <small>1:1 session with me, to prepare you for coding or system design interviews.</small>
-    </button>
+    </a>
   </div>
 }
 
@@ -75,7 +71,8 @@ export default function HireIndex() {
             </div>
           </div>
           <div>
-            <HireMeActions />
+            <ConsultingAction />
+            <InterviewConsultingAction />
           </div>
         </section>
 
@@ -172,7 +169,7 @@ export default function HireIndex() {
           <p><strong>★ Let me help you deliver value to your own customers safely, reliably, continuously. ★</strong></p>
         </section>
 
-        <HireMeActions />
+        <ConsultingAction />
 
       </div>
 

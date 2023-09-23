@@ -717,8 +717,15 @@ ul.rwl {
         flex-wrap: wrap;
         justify-content: space-between;
         gap: 10px;
+
+        & + .cta-container {
+            padding-top: 0;
+        }
     
-        button {
+        button, a {
+            text-decoration: none;
+            text-align: center;
+
             cursor: pointer;
             flex: 1 0 10em;
             padding: 1em;
@@ -736,7 +743,7 @@ ul.rwl {
             }
         }
 
-        button small {
+        a small, button small {
             display: block;
             font-style: italic;
             font-weight: normal;
