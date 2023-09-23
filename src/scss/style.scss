@@ -700,6 +700,13 @@ ul.rwl {
         }
     }
 
+    h2 svg, h3 svg {
+        display: block;
+        width: 4em;
+        height: auto;
+        margin: 2em auto 0.5em;
+    }
+
     .cta-container {
         padding: 1em;
         display: flex;
