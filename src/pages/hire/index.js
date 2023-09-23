@@ -30,11 +30,11 @@ export default function HireIndex() {
         <meta property="og:title" content="Get expert help by Lambros Petrou" />
         <meta
           property="og:description"
-          content="Get expert help by Lambros Petrou in domains. I can help with backend, API, and website development, AWS infrastructure, and helping you ace your software interviews."
+          content="Expert consulting for websites & APIs development, and Big Tech software interview preparation."
         />
         <meta
           name="description"
-          content="Get expert help by Lambros Petrou in domains. I can help with backend, API, and website development, AWS infrastructure, and helping you ace your software interviews."
+          content="Expert consulting for websites & APIs development, and Big Tech software interview preparation."
         />
       </Head>
 
