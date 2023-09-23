@@ -102,7 +102,7 @@ const Header = ({}) => {
       <div className="header-strip">
         <div id="inner-header" className="inner-section">
           <div className="name-hire">
-            <div id="header-name"><a href="/" title="LambrosPetrou.com home page">Lambros Petrou</a></div>
+            <div id="header-name"><a href="/" title="LambrosPetrou.com home page">Lambros Petrou</a> <SocialIcon name="rss"/></div>
           </div>
 
           <div id="nav-buttons">
@@ -111,7 +111,6 @@ const Header = ({}) => {
             <a href="/cv/" title="Lambros Petrou Resume - CV" rel="noopener" target="_blank">CV</a>
             <a href="https://temp.minibri.com" title="Minibri Temp - Share content with expiration" rel="noopener" target="_blank">Minibri Temp</a>
             <a className="cta-hire" href="/hire/" >Hire me</a>
-            <SocialIcon name="rss"/>
             {/* <a href="/feed/rss.xml" title="Subscribe to my RSS Feed" target="_blank" rel="noopener">RSS Feed</a> */}
           </div>
         </div>

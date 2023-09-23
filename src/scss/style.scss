@@ -289,6 +289,10 @@ iframe.centered {
     font-weight: bold;
     color: $font-color-primary;
 
+    display: flex;
+    gap: 1em;
+    align-items: center;
+
     a {
         color: inherit;
         text-decoration: none;
