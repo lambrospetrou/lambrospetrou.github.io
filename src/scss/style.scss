@@ -694,7 +694,9 @@ ul.rwl {
         @media screen and (min-width: 960px) {
             & {
                 flex-direction: row;
-                gap: 6em;
+                flex-wrap: wrap;
+                column-gap: 6em;
+                row-gap: 2em;
                 max-width: 1280px;
             }
 
@@ -709,6 +711,12 @@ ul.rwl {
             section:first-child {
                 order: -1;
             }
+        }
+
+        #tech {
+            flex-basis: 100%;
+            max-width: 768px;
+            margin: 0 auto;
         }
     }
 

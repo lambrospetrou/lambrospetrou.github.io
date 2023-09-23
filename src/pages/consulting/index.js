@@ -101,9 +101,7 @@ export default function Index() {
             <li>Integrate with observability & APM tools, and optimize your applications.</li>
           </ul>
         </section>
-      </div>
 
-      <div className="inner-section">
         <section id="tech">
           {/* <h3>★ Technology stack ★</h3> */}
           <h3>
