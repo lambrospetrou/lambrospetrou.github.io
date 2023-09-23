@@ -1,6 +1,6 @@
 $font-color-primary: #333;
 $font-color-secondary: #555;
-$font-color-red: #920000;
+$font-color-red: #990000;
 
 // https://systemfontstack.com/
 $font-family-system-sans-serif: "Source Sans Pro", -apple-system, "Avenir Next", "Avenir", "BlinkMacSystemFont", "Segoe Ui", "Helvetica Neue", "Helvetica", "Cantarell", "Ubuntu", "Roboto", "Noto", "Arial", sans-serif;
@@ -154,9 +154,9 @@ pre[class*=language-] > code[class*=language-] {
     overflow-wrap: normal;
     display: block;
     padding: 1em;
-    border-left: 2px solid #920000;
+    border-left: 2px solid #990000;
     background-color: #f5f5f5;
-    box-shadow: -1px 0 0 0 #920000, 0 0 0 1px #dfdfdf;
+    box-shadow: -1px 0 0 0 #990000, 0 0 0 1px #dfdfdf;
 }
 blockquote {
     border-top: 1px solid #ccc;
@@ -254,7 +254,7 @@ iframe.centered {
         }
         &:hover, &:focus, &:active {
             & svg {
-                fill: #920000;
+                fill: #990000;
             }
         }
     }
@@ -369,7 +369,7 @@ iframe.centered {
 
         border-bottom: 1px solid;
         // border-image: linear-gradient(to right, #f00, #00f);
-        border-image: linear-gradient(to right, rgba(0, 0, 0, 0), #920000, rgba(0, 0, 0, 0));
+        border-image: linear-gradient(to right, rgba(0, 0, 0, 0), #990000, rgba(0, 0, 0, 0));
         border-image-slice: 1;
 
         // border-bottom: 2px;
@@ -386,7 +386,7 @@ iframe.centered {
     blockquote {
         border-top: 1px solid;
         border-bottom: 1px solid;
-        border-image: linear-gradient(to right, rgba(0, 0, 0, 0), #920000, rgba(0, 0, 0, 0));
+        border-image: linear-gradient(to right, rgba(0, 0, 0, 0), #990000, rgba(0, 0, 0, 0));
         border-image-slice: 1;
     }
 }
@@ -397,7 +397,7 @@ iframe.centered {
     margin: 0 auto 4rem;
     text-align: center;
     padding: 12px;
-    border: 2px double #920000;
+    border: 2px double #990000;
     border-radius: 4px;
 
     p {
@@ -551,7 +551,7 @@ ul.rwl {
         a.chain-link {
             // border: 0;
             &:hover {
-                fill: #920000;
+                fill: #990000;
             }
         }
 
@@ -560,7 +560,7 @@ ul.rwl {
             vertical-align: text-bottom;
         }
         svg.favourite {
-            stroke: #920000;
+            stroke: #990000;
         }
         small {
             color: $font-color-secondary;

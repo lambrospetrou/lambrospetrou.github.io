@@ -102,7 +102,6 @@ const Header = ({}) => {
       <div className="header-strip">
         <div id="inner-header" className="inner-section">
           <div className="name-hire">
-            {/* <div id="header-name">&bull;&nbsp;&nbsp;<span style={{color: "#920000", fontWeight: "normal"}}>L</span>ambros <span style={{color: "#920000", fontWeight: "normal"}}>P</span>etrou&nbsp;&nbsp;&bull;</div> */}
             <div id="header-name"><a href="/" title="LambrosPetrou.com home page">Lambros Petrou</a></div>
           </div>
 
