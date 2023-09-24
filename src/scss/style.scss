@@ -1,6 +1,7 @@
 $font-color-primary: #333;
 $font-color-secondary: #555;
-$font-color-red: #990000;
+$font-color-red: #990000; // rgb(99, 0, 0)
+$font-color-red-lighter: #c80000; // rgb(153, 0, 0)
 
 // https://systemfontstack.com/
 $font-family-system-sans-serif: "Source Sans Pro", -apple-system, "Avenir Next", "Avenir", "BlinkMacSystemFont", "Segoe Ui", "Helvetica Neue", "Helvetica", "Cantarell", "Ubuntu", "Roboto", "Noto", "Arial", sans-serif;
@@ -8,9 +9,11 @@ $font-family-system-serif: "Source Serif Pro", Georgia, "Baskerville", "Times Ne
 $font-family-system-mono: "Source Code Pro", Menlo, Consolas, Monaco, "Liberation Mono", "Lucida Console", monospace;
 
 :root {
+    --color-red: #990000;
+    --color-red-lighter: #8c0000;
     --linear-gradient-red2: linear-gradient(to right, rgba(92, 0, 0, 1),  rgba(150, 0, 0, 1), rgba(80, 0, 0, 1));
     --linear-gradient-red: linear-gradient(to right, rgba(92, 0, 0, 1),  rgba(150, 0, 0, 1), rgba(80, 0, 0, 1));
-    --linear-gradient-red-white-tr: linear-gradient(to right, rgba(255, 255, 255, 0),  rgba(92, 0, 0, 1), rgba(255, 255, 255, 0));
+    --linear-gradient-red-white-tr: linear-gradient(to right, #fff,  var(--color-red), #fff);
 }
 
 .clearfix:after {
@@ -228,7 +231,8 @@ hr {
     margin: 2rem 0;
     border: 0;
     height: 1px;
-    background-image: linear-gradient(to right, #fff, #990000, #fff);
+    // background-image: linear-gradient(to right, #fff, #990000, #fff);
+    background-image: var(--linear-gradient-red-white-tr);
 }
 
 iframe.centered {
@@ -255,7 +259,7 @@ iframe.centered {
         }
         &:hover, &:focus, &:active {
             & svg {
-                fill: #990000;
+                fill: $font-color-red;
             }
         }
     }
@@ -536,14 +540,14 @@ iframe.centered {
 
     form button[type="submit"] {
         padding: 10px;
-        border: 1px solid $font-color-red;
+        border: 1px solid $font-color-red-lighter;
         border-radius: 2px;
         background-color: $font-color-red;
         color: #fff;
         cursor: pointer;
 
         &:hover {
-            opacity: 0.8;
+            background-color: $font-color-red-lighter;
         }
     }
 }
@@ -557,7 +561,7 @@ ul.rwl {
         a.chain-link {
             // border: 0;
             &:hover {
-                fill: #990000;
+                fill: $font-color-red;
             }
         }
 
@@ -566,7 +570,7 @@ ul.rwl {
             vertical-align: text-bottom;
         }
         svg.favourite {
-            stroke: #990000;
+            stroke: $font-color-red;
         }
         small {
             color: $font-color-secondary;
