@@ -1,22 +1,22 @@
 import Head from "next/head";
 import { Layout } from "../../components/layout";
 
-function ConsultingAction() {
-  return <div className="cta-container">
+export function ConsultingAction() {
+  return <div className="consulting-cta-container">
     <a className="cta-consult" href="https://cal.com/lambrospetrou/consulting-session-1-hour" target="_blank" rel="noopener noreferrer">
       <span>
         Book consultation session
-        <small>1:1 session with me, any topic you want.</small>
+        <small>1:1 session &mdash; any topic you want.</small>
       </span>
     </a>
   </div>
 }
 
-function InterviewConsultingAction() {
-  return <div className="cta-container">
+export function InterviewConsultingAction() {
+  return <div className="consulting-cta-container">
     <a className="cta-interview" href="https://cal.com/lambrospetrou/interview-preparation-1h" target="_blank" rel="noopener noreferrer">
       Book interview preparation session
-      <small>1:1 session with me, to prepare you for coding or system design interviews.</small>
+      <small>1:1 session &mdash; coding or system design interviews.</small>
     </a>
   </div>
 }

@@ -2,7 +2,7 @@ import Head from "next/head";
 import { readAllPosts } from "../lib/posts-store";
 import { Layout } from "../components/layout";
 import { ArticlesList } from "../components/articles";
-import { Aex } from "../components/common";
+import { ConsultingAction, InterviewConsultingAction } from "../pages/consulting";
 
 export default function HomeIndex({ posts }) {
   posts.sort((a, b) => b.date.valueOf() - a.date.valueOf());
@@ -25,8 +25,9 @@ export default function HomeIndex({ posts }) {
 
       <HeroBanner />
 
-      <WidgetsSection />
+      <WidgetsSection widgets={[<NewsletterWidget/>, <RWLWidget />]} />
       <AristotleQuote />
+      <WidgetsSection widgets={[<BookInterviewSessionWidget />, <ConsultingSessionWidget />]} />
       <WritingSection posts={posts} />
     </Layout>
   );
@@ -40,12 +41,11 @@ function HeroBanner() {
   );
 }
 
-function WidgetsSection() {
+function WidgetsSection({widgets}) {
   return (<div className="home-widgets">
-    {/* <div className="home-widgets__item"><LearnWidget /></div> */}
-    <div className="home-widgets__item"><NewsletterWidget /></div>
-    <div className="home-widgets__item"><RWLWidget /></div>
-    {/* <div className="home-widgets__item"></div> */}
+    {
+      widgets.map((w, idx) => <div className="home-widgets__item" key={idx}>{w}</div>)
+    }
   </div>);
 }
 
@@ -72,36 +72,37 @@ function NewsletterWidget() {
   );
 }
 
-function LearnWidget() {
+function RWLWidget() {
   return (
     <section className="home-section">
-      {/* <hr/> */}
-      {/* <header><h2>Learn something</h2></header> */}
-      {/* <hr/> */}
       <div>
-        {/** https://www.toptal.com/designers/htmlarrows/symbols/ */}
-        <h3>&#10148; <Aex
-            href="https://www.elementsofcicd.com/?ref=lambrospetrou.com"
-            title="The Elements of CI/CD landing page"
-          >
-            ElementsOfCICD.com
-          </Aex></h3>
-        <p><strong>Elements of CI/CD</strong> is a comprehensive Continuous Integration (CI) and Continuous Deployment (CD) course with advanced techniques that teach you how to <strong>ship your code with confidence!</strong></p>
+        <h3>&#10148; <a href="/read-watch-listen/?ref=homepage" title="My Read-Watch-Listen list">Read-Watch-Listen list</a></h3>
+        <p>My <strong>Read-Watch-Listen list</strong> references content I read, watched, and listened, worthy of sharing!
+        <br/>Topics covered include technical articles, career advice, business and startups, life, and more.</p>
       </div>
     </section>
   );
 }
 
-function RWLWidget() {
+function BookInterviewSessionWidget() {
   return (
     <section className="home-section">
-      {/* <hr/> */}
-      {/* <header><h2>Check other content I like</h2></header> */}
-      {/* <hr/> */}
       <div>
-        <h3>&#10148; <a href="/read-watch-listen/?ref=homepage" title="My Read-Watch-Listen list">Read-Watch-Listen list</a></h3>
-        <p>My <strong>Read-Watch-Listen list</strong> references content I read, watched, and listened, worthy of sharing!
-        <br/>Topics covered include technical articles, career advice, business and startups, life, and more.</p>
+        <h3>&#10148; <a href="/consulting/?ref=homepage-interview-cta" title="Book an interview preparation session">Software interview preparation</a></h3>
+        <p>If you want to get a software job in a Big Tech (FAANG) company, I can help you prepare!</p>
+        <InterviewConsultingAction />
+      </div>
+    </section>
+  );
+}
+
+function ConsultingSessionWidget() {
+  return (
+    <section className="home-section">
+      <div>
+        <h3>&#10148; <a href="/consulting/?ref=homepage-consulting-cta" title="Book a consulting session">Expert Consulting</a></h3>
+        <p>If you want expert help in websites & APIs development, Cloud infrastructure, or CI/CD pipelines, get in touch!</p>
+        <ConsultingAction />
       </div>
     </section>
   );
