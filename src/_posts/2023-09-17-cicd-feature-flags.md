@@ -7,6 +7,20 @@ I originally sent part of this article to the mailing list of my [Elements of CI
 
 -----
 
+**Table of contents**
+
+- [Overview](#overview)
+- [Dynamic configuration](#dynamic-configuration)
+- [Not just for the server](#not-just-for-the-server)
+- [Beta testing and allowlisting](#beta-testing-and-allowlisting)
+- [Rule conditions](#rule-conditions)
+- [Feature rollout](#feature-rollout)
+- [AB testing and experiments](#ab-testing-and-experiments)
+- [Kill-switch](#kill-switch)
+- [Testing feature flags](#testing-feature-flags)
+- [Managing feature flags](#managing-feature-flags)
+- [Conclusion](#conclusion)
+
 ## Overview
 
 > **You should adopt and use feature flags as much as possible!**
@@ -116,6 +130,15 @@ Feature flags are a superpower, and by using them you:
 
 The rest of the article will focus on popular use-cases for using feature flags.
 Going through these use-cases will hopefully make the benefits and power of feature flags clear.
+
+### Also known as
+
+Feature flags also go by the following terms (non-exhaustive):
+
+- Feature switches
+- Feature toggles
+- Experiments
+- A/B testing (feature flags can be used for A/B testing as well)
 
 ## Dynamic configuration
 
@@ -278,6 +301,50 @@ There are certain cases where we want the ability to dynamically change our appl
 
 The deactivation/killing of certain features to allow others to perform better, falls into the **graceful degradation technique** ([see AWS reliability pillar](https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/rel_mitigate_interaction_failure_graceful_degradation.html), [see META's Defcon](https://www.usenix.org/conference/osdi23/presentation/meza)) we can employ in our complex systems in order to cope with scale.
 
+## Testing feature flags
+
+A common question I get from folks when discussing about feature flags is how to approach testing.
+
+For every treatment of a feature flag, you essentially create another branch of logic that needs to be tested.
+Do your unit/integrations tests need to to cover all possible values of the feature flag, or not?
+
+Personally, I do the following thinking process:
+- If some code is irrelevant to the feature flag, and is not affected by what the feature flag value will be, then I don't amend the tests related to that code.
+- If some code is directly by the value of the feature flag, then I will try to cover it with tests.
+  1. If the tests can become parametric, with the feature flag value as input parameter, the best would be to run all those tests for all the possible feature flag values.
+  2. If the tests cannot become parametric, then I usually test the happy path for all the feature flag values, and then some edge cases for the final feature flag value.
+    - For example, if we introduce a new feature flag for some new functionality, all the existing tests should still pass!
+    - Once I confirm that they pass, I mock the feature flag value for those tests to be what the final value will be after the full rollout. This will make sure that existing functionality will work fine once the feature flag is fully rolled out.
+    - Finally, I will duplicate some important tests (or somehow make them parametric) with the feature flag off to make sure that some new logic will not inadvertedly depend on the feature flag, and in case we roll back its release we end up with issues.
+
+Testing on its own is a hot-topic.
+Some engineers are neutral about it, others like it, others hate it, and you have the extreme camps on either side.
+
+I personally like to have some tests.
+I definitely don't push for arbitrary 90%+ coverage, but I also don't like having zero tests for core business logic because it makes development much much slower.
+
+If you like tests, then make them cover the feature flags too.
+If you don't like tests, then you shouldn't even be reading this section.
+
+## Managing feature flags
+
+Managing feature flags includes all the actions and procedures you need to have in-place in order to boost your productivity while doing safe rollouts of new features.
+
+1. Have one defined process everyone will follow when creating, updating, and deleting feature flags. This process can be automated with simple CLIs, any low-code workflow tools that can interact with source control, or using any of the SaaS services dedicated to feature flags.
+2. A feature flag should almost always have the following lifecycle:
+    1. Creation and code changes introducing branching behavior.
+    2. Ship code changes with feature flag OFF in staging/production.
+    3. Gradually enable the feature flag ON.
+    4. Once the feature flag is fully enabled, monitor key metrics for N days/weeks.
+    5. Once the verification is done, and the feature flag has been fully enabled for sufficient time, you should now delete the code changes using the feature flag, and make the enabled code branch the new default!
+    6. Delete the feature flag.
+3. Do code reviews for any feature flag change. Enabling or disabling a feature flag, changes the running code, so treat it as any other code change.
+4. Implement some kind of monitoring to notify you when a feature flag is fully enabled for N weeks, and not yet cleaned up. Or even worse, when a feature flag is partially rolled out for N weeks without new changes.
+
+As I said above, a feature flag introduces branching in the code behavior, so you should try to clean them up as soon as possible.
+
+Leftover feature flags, especially partially rolled out ones, are a nightmare to maintain.
+
 ## Conclusion
 
 **Use feature flags everywhere!** Backend servers, frontend websites, mobile apps.
@@ -287,3 +354,9 @@ Iterating on new features development without the fear of breaking production an
 You can start by a simple mechanism of hardcoded feature rules in a file, periodically fetched by your servers, and expand into more complex solutions later.
 
 **Deliver value to your customers, safely, reliably, continuously!** 🚀
+
+### Changelog
+
+- 2023-09-24
+  - Added sections "Testing feature flags" and "Managing feature flags".
+  - Added table of contents.
