@@ -3,6 +3,16 @@ title: "Writing docs"
 description: "I like writing detailed documentation. This article explains why you should too."
 ---
 
+**Table of contents**
+
+- [Context](#context)
+- [Future me will thank me](#future-me-will-thank-me)
+- [Onboarding new joiners](#Onboarding-new-joiners)
+- [Asked twice - asked often](#asked-twice---asked-often)
+- [Conclusion](#conclusion)
+
+## Context
+
 > what’s your motivation to create such good docs?
 
 A couple of days ago, a colleague asked me the above question.
