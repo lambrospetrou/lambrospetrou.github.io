@@ -7,7 +7,7 @@ description: "I like writing detailed documentation. This article explains why y
 
 - [Context](#context)
 - [Future me will thank me](#future-me-will-thank-me)
-- [Onboarding new joiners](#Onboarding-new-joiners)
+- [Onboarding new joiners](#onboarding-new-joiners)
 - [Asked twice - asked often](#asked-twice---asked-often)
 - [Conclusion](#conclusion)
 
