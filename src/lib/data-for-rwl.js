@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://tonsky.me/blog/python-build/",
+    title: "Python as a build tool",
+    author: "Nikita Prokopov",
+    dateListed: "2023-09-26T12:25:00.000Z",
+  },
+  {
     url: "https://jamesclear.com/great-speeches",
     title: "Great Talks Most People Have Never Heard",
     author: "James Clear",
