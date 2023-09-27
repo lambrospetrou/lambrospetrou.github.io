@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://go.dev/doc/modules/layout",
+    title: "Organizing a Go module",
+    author: "Go team",
+    dateListed: "2023-09-27T12:00:00.000Z",
+  },
+  {
     url: "https://tonsky.me/blog/python-build/",
     title: "Python as a build tool",
     author: "Nikita Prokopov",
