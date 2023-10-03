@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://muratbuffalo.blogspot.com/2023/10/hints-for-distributed-systems-design.html",
+    title: "Hints for Distributed Systems Design",
+    author: "Murat Demirbas",
+    dateListed: "2023-10-03T09:30:00.000Z",
+  },
+  {
     url: "https://go.dev/doc/modules/layout",
     title: "Organizing a Go module",
     author: "Go team",

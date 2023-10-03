@@ -1,5 +1,5 @@
 ---
-title: "How to pass the interview for software engineering roles in Big Tech - Handbook"
+title: "How to pass the interview for software engineering roles in Big Tech"
 description: "Practical information and guidelines in how to prepare, and pass, the software engineering interviews in Big Tech companies."
 ---
 
@@ -414,10 +414,12 @@ What I recommend, and what I personally do is the following:
 
 The above material should be more than enough to prepare for the System Design interview, but if you want more material, the following are some resources I used a bit (definitely not exchaustively).
 
+- Articles related to distributed systems by Murat Demirbas: http://muratbuffalo.blogspot.com/
+- Articles by Marc Brooker: https://brooker.co.za/blog/
+- The morning paper: https://blog.acolyer.org/
 - The [Preparing for the Systems Design and Coding Interview](https://blog.pragmaticengineer.com/preparing-for-the-systems-design-and-coding-interviews/) article by Gergely Orosz has a lot of references on books, courses, and material to study.
 - Distributed Systems lecture series: https://www.youtube.com/playlist?list=PLeKd45zvjcDFUEv_ohr_HdUFe97RItdiB
     - Amazing video playlist by the author of Designing Data-Intensive Applications (DDIA).
-- The morning paper: https://blog.acolyer.org/
 - Free online course: https://www.hiredintech.com/classrooms/system-design/
 - Preparation links and resources for system design questions: https://github.com/shashank88/system_design
 - System design interview for IT companies: https://github.com/checkcheckzz/system-design-interview
