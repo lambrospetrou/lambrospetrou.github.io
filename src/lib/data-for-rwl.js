@@ -9,10 +9,11 @@
 // };
 const DataList = [
   {
-    url: "https://skamille.medium.com/opp-other-peoples-problems-d7eb174724ee",
+    url: "https://www.elidedbranches.com/2019/05/opp-other-peoples-problems.html",
     title: "OPP (Other People’s Problems)",
     author: "Camille Fournier",
     dateListed: "2023-10-06T15:20:00.000Z",
+    tags: ["favourite"],
   },
   {
     url: "https://inowland.medium.com/using-6-page-and-2-page-documents-to-make-organizational-decisions-3216badde909",
