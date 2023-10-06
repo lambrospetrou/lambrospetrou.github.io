@@ -9,6 +9,18 @@
 // };
 const DataList = [
   {
+    url: "https://www.norberthires.blog/writing-without-bullshit-summary/",
+    title: "What I learned from Writing Without Bullshit",
+    author: "Norbert Hires",
+    dateListed: "2023-10-06T17:51:00.000Z",
+  },
+  {
+    url: "https://book.debuggingteams.com/",
+    title: "Debugging Teams (book)",
+    author: "Brian W. Fitzpatrick, Ben Collins-Sussman",
+    dateListed: "2023-10-06T17:50:00.000Z",
+  },
+  {
     url: "https://www.elidedbranches.com/2019/05/opp-other-peoples-problems.html",
     title: "OPP (Other People’s Problems)",
     author: "Camille Fournier",
