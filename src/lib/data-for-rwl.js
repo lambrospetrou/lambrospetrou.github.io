@@ -9,6 +9,25 @@
 // };
 const DataList = [
   {
+    url: "https://skamille.medium.com/opp-other-peoples-problems-d7eb174724ee",
+    title: "OPP (Other People’s Problems)",
+    author: "Camille Fournier",
+    dateListed: "2023-10-06T15:20:00.000Z",
+  },
+  {
+    url: "https://inowland.medium.com/using-6-page-and-2-page-documents-to-make-organizational-decisions-3216badde909",
+    title: "Using 6 Page and 2 Page Documents To Make Organizational Decisions",
+    author: "Ian Nowland",
+    dateListed: "2023-10-06T15:15:00.000Z",
+    tags: ["favourite"],
+  },
+  {
+    url: "https://orghacking.com/pioneers-settlers-town-planners-wardley-9dcd3709cde7",
+    title: "Pioneers, Settlers, Town Planners [Wardley]",
+    author: "Itamar Goldminz",
+    dateListed: "2023-10-06T15:10:00.000Z",
+  },
+  {
     url: "https://muratbuffalo.blogspot.com/2023/10/hints-for-distributed-systems-design.html",
     title: "Hints for Distributed Systems Design",
     author: "Murat Demirbas",
