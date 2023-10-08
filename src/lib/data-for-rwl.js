@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://collabfund.com/blog/the-written-word/",
+    title: "The Written Word",
+    author: "Morgan Housel",
+    dateListed: "2023-10-08T16:40:00.000Z",
+  },
+  {
     url: "https://www.norberthires.blog/writing-without-bullshit-summary/",
     title: "What I learned from Writing Without Bullshit",
     author: "Norbert Hires",
