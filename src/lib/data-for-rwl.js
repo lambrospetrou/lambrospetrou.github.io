@@ -9,6 +9,18 @@
 // };
 const DataList = [
   {
+    url: "https://cs007.blog/",
+    title: "CS 007: Personal Finance for Engineers",
+    author: "Stanford University",
+    dateListed: "2023-10-10T21:55:00.000Z",
+  },
+  {
+    url: "https://www.mattcutts.com/blog/scott-adams-financial-advice/",
+    title: "Scott Adams’ Financial Advice",
+    author: "Matt Cutts",
+    dateListed: "2023-10-10T21:50:00.000Z",
+  },
+  {
     url: "https://collabfund.com/blog/the-written-word/",
     title: "The Written Word",
     author: "Morgan Housel",
