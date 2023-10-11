@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://angiejones.tech/ten-commandments-code-reviews/",
+    title: "The 10 commandments of navigating code reviews",
+    author: "Angie Jones",
+    dateListed: "2023-10-11T11:55:00.000Z",
+  },
+  {
     url: "https://cs007.blog/",
     title: "CS 007: Personal Finance for Engineers",
     author: "Stanford University",
