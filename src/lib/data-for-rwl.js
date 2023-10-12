@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://eleganthack.com/the-art-of-the-okr-redux/",
+    title: "The Art of the OKR, Redux",
+    author: "Christina Wodtke",
+    dateListed: "2023-10-12T14:40:00.000Z",
+  },
+  {
     url: "https://angiejones.tech/ten-commandments-code-reviews/",
     title: "The 10 commandments of navigating code reviews",
     author: "Angie Jones",
