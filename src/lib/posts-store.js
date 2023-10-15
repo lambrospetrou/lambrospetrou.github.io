@@ -25,6 +25,7 @@ function _readAllPosts(
     // Combine the data with the slug and the markdown parsed to HTML.
     posts.push({
       ...data,
+      isDraft: Boolean(data.isDraft),
       slug,
       filename,
       content,

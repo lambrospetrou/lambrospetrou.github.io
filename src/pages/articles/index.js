@@ -33,10 +33,11 @@ export async function getStaticProps({ preview }) {
     props: {
       posts: readAllPosts({
         reloadPosts: preview,
-      }).map(({ date, slug, title }) => ({
+      }).map(({ date, slug, title, isDraft }) => ({
         date,
         slug,
         title,
+        isDraft: Boolean(isDraft),
       })),
     },
   };
