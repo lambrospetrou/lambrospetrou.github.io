@@ -26,6 +26,7 @@ export default function Post({ postData }) {
         <meta property="og:title" content={`${title} | Lambros Petrou`} />
         <meta property="og:description" content={description} />
         <meta name="description" content={description} />
+        <meta property="og:type" content="article" />
         {og_image && <meta property="og:image" content={og_image} />}
       </Head>
 
