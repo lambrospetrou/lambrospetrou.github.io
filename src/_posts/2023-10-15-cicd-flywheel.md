@@ -1,7 +1,6 @@
 ---
 title: "The CI/CD Flywheel"
 description: "The CD/CD flywheel explains the several stages of continuous intergation, delivery, and deployment of your software."
-isDraft: true
 ---
 
 **Table of contents**
