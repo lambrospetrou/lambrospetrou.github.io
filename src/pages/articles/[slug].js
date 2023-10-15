@@ -11,6 +11,7 @@ export default function Post({ postData }) {
     slug,
     date,
     contentHtml,
+    og_image
   } = postData;
   let canonicalUrl = (canonicalInput || "").trim();
   if (canonicalUrl === "") {
@@ -25,6 +26,7 @@ export default function Post({ postData }) {
         <meta property="og:title" content={`${title} | Lambros Petrou`} />
         <meta property="og:description" content={description} />
         <meta name="description" content={description} />
+        {og_image && <meta property="og:image" content={og_image} />}
       </Head>
 
       <article className="post">
