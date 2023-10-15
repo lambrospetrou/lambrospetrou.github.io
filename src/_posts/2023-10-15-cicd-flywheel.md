@@ -79,7 +79,7 @@ Keep in mind that at this point potentially several other engineers have also me
 The term "integrated" here means that we bring changes from multiple engineers and integrate them all together into one source, that needs to be built, tested, and then released as one.
 Even if there are no code-related conflicts, there could be logic/business oriented conflicts and issues because of this merging.
 
-At this step, we run extra analysis jobs like static code analysis, or security vulnerability checks, or end-to-end tests that could take several minutes or hours to complete, and more elaborated tests.
+At this step, we run extra analysis jobs like static code analysis, or security vulnerability checks, or end-to-end tests that could take several minutes or hours to complete, and more advanced tests.
 
 This is often the last step we will run most of our suite of automated tests without direct customer or manual interaction.
 
@@ -204,7 +204,7 @@ Monitoring and feedback: The pipeline should provide feedback on the application
 ## Why do we need CI/CD
 
 We have explored the CI/CD Flywheel that gives an overview of the CI/CD process. 
-Let's explore some of the concrete benefits we can get from implementing CI/CD into practice.
+Let's explore some of the concrete benefits we can get from implementing CI/CD in practice.
 
 ### Business benefits
 
@@ -288,7 +288,7 @@ So, let's recap what each scenario cost the business:
 - Scenario B: Y hours/days of developers and QA communication, but less risk of the issue reaching customers.
 - Scenario C: Z minutes of automated run on a remote machine, and less risk of the issue reaching customers.
 
-In majority of cases, it holds that `X >>> Y >> Z`, which means that even though initially it seems that having a full CI/CD pipeline is more work and more steps, in practice it will save us a lot of time.
+In majority of cases, it holds that `X ~= Y >> Z`, which means that even though initially it seems that having a full CI/CD pipeline is more work and more steps, in practice it will save us a lot of time.
 
 I hope it's clear how big of a cost reduction it is to detect issues early on and to automate their verification.
 
@@ -340,7 +340,7 @@ Another benefit from releasing the same artefact everywhere, is that we can reas
 
 Automatic deployments across environments enables the use of controlled, gradual, rollouts.
 
-We could be doing gradual rollouts on a small percentage of customers each time, or even rolling out changes continuously but hiding the feature behind [feature flags](/articles/cicd-feature-flags) and only enabling it for certain customers.
+We could be doing gradual rollouts on a small percentage of customers each time, or even rolling out changes continuously but hiding the feature behind [feature flags](/articles/cicd-feature-flags/) and only enabling it for certain customers.
 
 This allows monitoring to detect failures impacting customers, and rolling back the newly released changes automatically.
 This is easy and efficient to do in a CI/CD managed environment since each change that gets released is usually small and its rollback won't cause havoc to customers.
