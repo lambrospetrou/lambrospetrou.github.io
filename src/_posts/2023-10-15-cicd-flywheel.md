@@ -6,8 +6,8 @@ isDraft: true
 
 **Table of contents**
 
-- [The CI/CD flywheel](#the-cicd-flywheel)
-<!-- - [The CI/CD flywheel as a CI/CD pipeline](#the-cicd-flywheel-as-a-cicd-pipeline) -->
+- [Introduction to the CI/CD flywheel](#introduction-to-the-cicd-flywheel)
+- [The complete CI/CD flywheel](#the-complete-cicd-flywheel)
 - [Why do we need CI/CD](#why-do-we-need-cicd)
   - [Business benefits](#business-benefits)
   - [Technical benefits](#technical-benefits)
@@ -16,7 +16,7 @@ isDraft: true
 
 In this article you will learn what CI/CD is, why you should use it, understand why it can be a competitive advantage for any team, and in follow-up articles I am going to describe how CI/CD is implemented in real-world teams I have been working with.
 
-## The CI/CD flywheel
+## Introduction to the CI/CD flywheel
 
 Let's step through the full development and release lifecycle of releasing a traditional web application. We start by writing code, testing it, building it, shipping it to production, and making sure it works as we expect.
 
@@ -30,7 +30,7 @@ This process involves discussing and coming up with a well-defined feature that 
 
 Different teams follow very different methodologies for product decision making, so I am not going to get into that aspect here, but at the end of this step we end up with a bunch of engineering tasks that we want to implement.
 
-![flywheel-00-customer-feedback-requests]()
+![The CI/CD Flywheel - user feature requests and bug reports](/articles-data/2023-10-15-cicd-flywheel/cicd-flywheel-users.png)
 
 ### Local - Write the code
 
@@ -41,7 +41,7 @@ We use an IDE like Visual Studio Code, or a terminal based editor like `vim`.
 
 At the end of the day we end up with some source code supposedly implementing the agreed-upon feature in our product.
 
-![flywheel-01-source-code]()
+![The CI/CD Flywheel - locally write code](/articles-data/2023-10-15-cicd-flywheel/cicd-flywheel-local_code.png)
 
 ### Local - Build and Test
 
@@ -52,7 +52,7 @@ Most probably, if possible, you run the application locally for manual testing t
 
 We repeat the process of writing and testing the code until the feature is ready.
 
-![flywheel-02-local-build-test]
+![The CI/CD Flywheel - locally build and test](/articles-data/2023-10-15-cicd-flywheel/cicd-flywheel-local_code.png)
 
 ### Remote - Review and Test
 
@@ -67,7 +67,7 @@ Ideally, these jobs run in isolated environments that do not interfere with any 
 
 In some other code reviews systems, we are not able to do much other than building the code, and running the basic tests (unit, integration), so we just do that. Either way, we want to take advantage of this functionality to do testing of our code changes before merging them to the main branches used by everyone else in the team/company.
 
-![flywheel-03-remote-build-test]
+![The CI/CD Flywheel - code review and pull-requests](/articles-data/2023-10-15-cicd-flywheel/cicd-flywheel-pr.png)
 
 ### Remote - Merged, Integrated, Built
 
@@ -83,7 +83,7 @@ At this step, we run extra analysis jobs like static code analysis, or security 
 
 This is often the last step we will run most of our suite of automated tests without direct customer or manual interaction.
 
-![flywheel-04-ci-integration]
+![The CI/CD Flywheel - build and test](/articles-data/2023-10-15-cicd-flywheel/cicd-flywheel-ci_build.png)
 
 ### Remote - Prepare the release artefacts
 
@@ -94,7 +94,7 @@ It could be Docker containers that we publish to one of the container registries
 
 Regardless of the type of our product, this is the step where we generate the artefacts to be delivered to the production systems.
 
-![flywheel-05-ci-release-artefacts]
+![The CI/CD Flywheel - release artefacts](/articles-data/2023-10-15-cicd-flywheel/cicd-flywheel-ci_release.png)
 
 ### Deploy - staging / preproduction
 
@@ -114,7 +114,7 @@ This is what we call staging or pre-production environment(s).
 This is not always possible, and some teams prefer to just ship to production (if you are one of those - [at least use feature flags!](/articles/cicd-feature-flags/)).
 Personally, I always prefer having at least one staging environment.
 
-![flywheel-06-cd-staging]
+![The CI/CD Flywheel - staging deploy](/articles-data/2023-10-15-cicd-flywheel/cicd-flywheel-staging_deploy.png)
 
 ### Deploy - staging / preproduction verification
 
@@ -122,7 +122,7 @@ We deployed our changes to our staging/preproduction environment, and it's time 
 
 This verification could be done in various ways, automated, manual, in a few seconds, or across several hours. It all depends on the actual product.
 
-![flywheel-07-cd-staging-verification]
+![The CI/CD Flywheel - staging verification](/articles-data/2023-10-15-cicd-flywheel/cicd-flywheel-staging_test.png)
 
 ### Deploy - production
 
@@ -130,7 +130,7 @@ Finally, we deploy our artefacts to the production systems used by our actual cu
 
 This process should be similar to deploying to our staging environment(s), albeit in a different scale and ideally in a gradual way across all of your infrastructure.
 
-![flywheel-08-cd-production]
+![The CI/CD Flywheel - production deploy](/articles-data/2023-10-15-cicd-flywheel/cicd-flywheel-prod_deploy.png)
 
 ### Deploy - production verification
 
@@ -139,7 +139,7 @@ For one last time, we need to verify that everything works fine, no customer is 
 To succeed in this step we need to have proper monitoring and observability of our applications.
 There is a whole bunch of things around observability but at the end of the day, you should have alerts that will notify you when something is negatively impacting your users.
 
-![flywheel-09-cd-production-verification]
+![The CI/CD Flywheel - production verification](/articles-data/2023-10-15-cicd-flywheel/cicd-flywheel-prod_test.png)
 
 ### Customer feedback / New feature requests
 
@@ -147,9 +147,9 @@ Our changes are in production, used and loved by our customers, so now we repeat
 
 We go back to our editor, write some more code, and go through the whole cycle again.
 
-![flywheel-10-customer-feedback-requests]
+## The complete CI/CD flywheel
 
-### The complete flywheel
+![The CI/CD Flywheel - complete](/articles-data/2023-10-15-cicd-flywheel/cicd-flywheel-complete.png)
 
 The whole process we went through is what I call **The CI/CD flywheel**.
 
@@ -170,7 +170,7 @@ The latter steps in the flywheel (deploying, verifying and getting user feedback
 
 In the diagram below we can see how the steps of the flywheel map to the CI/CD phases: Continuous Integration (CI), Continuous Delivery (CD), and Continuous Deployment (CD). 
 
-![flywheel-11-cicd-complete]
+![The CI/CD Flywheel - complete cicd](/articles-data/2023-10-15-cicd-flywheel/cicd-flywheel-complete_cicd.png)
 
 Most of the flywheel belongs into at least one phase of a CI/CD pipeline.
 
