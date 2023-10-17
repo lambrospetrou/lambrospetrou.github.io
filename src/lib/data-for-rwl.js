@@ -9,6 +9,13 @@
 // };
 const DataList = [
   {
+    url: "https://affordanything.com/is-renting-better-than-buying-should-i-rent-or-buy/",
+    title: "Renting is throwing money away … right?",
+    author: "Paula Pant",
+    dateListed: "2023-10-17T12:10:00.000Z",
+    tags: ["favourite"],
+  },
+  {
     url: "https://eleganthack.com/the-art-of-the-okr-redux/",
     title: "The Art of the OKR, Redux",
     author: "Christina Wodtke",
