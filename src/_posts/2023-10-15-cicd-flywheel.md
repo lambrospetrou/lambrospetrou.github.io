@@ -24,7 +24,7 @@ The full flow is what I call **The CI/CD flywheel**, and as we will see at the e
 
 ### Product
 
-It all starts by our customers, or potential customers needing a feature.
+It all starts by our customers, or potential customers, needing a feature.
 
 This process involves discussing and coming up with a well-defined feature that we want to implement that will solve the customers' issue.
 
@@ -355,7 +355,7 @@ I want to showcase some examples of how companies use CI/CD in different ways, a
 
 In all these real-world system the fundamentals are the same. The goals are the same. The benefits are similar. The implementation is different.
 
-CI/CD Systems we will explore:
+CI/CD systems we will explore:
 - Amazon Retail / LOVEFiLM 
   - Gitflow development (2 branches), 2-3 stages (beta, gamma, prod) and 2 regions
 - Amazon Profiler 
