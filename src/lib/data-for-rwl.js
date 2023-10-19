@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://www.fool.com/investing/general/2015/10/13/financial-advice-for-my-new-son.aspx?ref=lambrospetrou_com-read_watch_listen",
+    title: "Financial Advice for My New Son",
+    author: "Morgan Housel ",
+    dateListed: "2023-10-19T12:00:00.000Z",
+  },
+  {
     url: "https://affordanything.com/is-renting-better-than-buying-should-i-rent-or-buy/?ref=lambrospetrou_com-read_watch_listen",
     title: "Renting is throwing money away … right?",
     author: "Paula Pant",
