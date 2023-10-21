@@ -9,9 +9,21 @@
 // };
 const DataList = [
   {
+    url: "https://www.ben-evans.com/benedictevans/2023/10/5/unbundling-ai?ref=lambrospetrou_com-read_watch_listen",
+    title: "Unbundling AI",
+    author: "Benedict Evans",
+    dateListed: "2023-10-21T23:00:00.000Z",
+  },
+  {
+    url: "https://bitfieldconsulting.com/golang/type-parameters?ref=lambrospetrou_com-read_watch_listen",
+    title: "Type parameters in Go",
+    author: "John Arundel",
+    dateListed: "2023-10-21T22:00:00.000Z",
+  },
+  {
     url: "https://www.fool.com/investing/general/2015/10/13/financial-advice-for-my-new-son.aspx?ref=lambrospetrou_com-read_watch_listen",
     title: "Financial Advice for My New Son",
-    author: "Morgan Housel ",
+    author: "Morgan Housel",
     dateListed: "2023-10-19T12:00:00.000Z",
   },
   {
