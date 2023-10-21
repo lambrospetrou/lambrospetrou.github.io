@@ -25,9 +25,9 @@ export default function HomeIndex({ posts }) {
 
       <HeroBanner />
 
-      <WidgetsSection widgets={[<BookInterviewSessionWidget />, <ConsultingSessionWidget />]} />
+      <WidgetsSection widgets={[<BookInterviewSessionWidget />, <NewsletterWidget/>]} />
       <AristotleQuote />
-      <WidgetsSection widgets={[<NewsletterWidget/>, <RWLWidget />]} />      
+      <WidgetsSection widgets={[<ConsultingSessionWidget />, <RWLWidget />]} />      
       <WritingSection posts={posts} />
     </Layout>
   );
