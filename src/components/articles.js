@@ -1,7 +1,6 @@
 import { dateToNoteGroup } from "./display-formatters";
 
 export function ArticlesList({ posts }) {
-  console.log(posts[posts.length-1])
   posts = posts.filter(p => !Boolean(p.isDraft));
 
   posts.sort((a, b) => b.date.valueOf() - a.date.valueOf());
