@@ -2,7 +2,6 @@
 title: "Amazon Profiler and AWS CodeGuru Profiler — CI/CD"
 description: "The CD/CD pipeline for Amazon Profiler and AWS CodeGuru Profiler products."
 og_image: "/articles-data/2023-10-22-cicd-amazon-aws-codeguru-profiler/real-world-cicd-profiler-aggregator.jpg"
-isDraft: true
 # <!-- cicd-real-world-codeguru: https://excalidraw.com/#room=407a1c7970e672f8c1d0,Zb3nLasEB29g7TVgfP7mfQ -->
 ---
 
