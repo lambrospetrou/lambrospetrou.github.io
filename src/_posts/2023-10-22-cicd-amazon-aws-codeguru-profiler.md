@@ -286,4 +286,4 @@ If your automated tests are sufficiently good, you can merge multiple times a da
 
 This was quite a long article, and there are still many things we didn't cover around CI/CD techniques in the real-world.
 
-I hope this gave a glipmse into how some of the principles and theory of Continuous Delivery (CI) and Continuous Deployment (CD) are applied in practice, and hopefully it gives you confident to implement some of these techniques in your own team's release process.
+I hope this gave a glipmse into how some of the principles and theory of Continuous Delivery (CI) and Continuous Deployment (CD) are applied in practice, and hopefully it gives you confidence to implement some of these techniques in your own team's release process.
