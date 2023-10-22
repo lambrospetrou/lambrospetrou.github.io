@@ -24,7 +24,7 @@ Read my previous article for ["The CI/CD Flywheel"](/articles/cicd-flywheel/) to
 
 ------
 
-**Important disclosure**
+**Important notice**
 
 Amazon is a huge company, with hundreds of engineering teams.
 
@@ -62,6 +62,7 @@ One of our backend services was the **Aggregator**, processing all ingested prof
 We had one pipeline with 4 stages, including 3 deployment environments (`beta`, `gamma`, `production`). All the environments were in the US.
 
 The `source packages` column is a collection of Git repositories that will trigger a pipeline execution on every push on the specified branches.
+Amazon doesn't use monorepos, therefore we could have multiple repositories (we call them packages) per service.
 
 The first stage, `build`, compiles the source code, runs a few static code analysis jobs, and builds the release artefacts.
 In our case, the artefacts were the Java `.jar` files, along with some configuration files.
@@ -117,7 +118,7 @@ We had one pipeline with 3 stages, including 2 deployment environments (`beta` a
 
 This is as simple as it can get, but incredibly sufficient for many teams.
 
-This is what I call **The Core pipeline**, and everyone should try to have this as starting point.
+> This is what I call **The Core pipeline**, and everyone should try to have this as starting point.
 
 The `source packages` column is a collection of Git repositories that will trigger a pipeline execution on every push on the specified branches.
 
@@ -168,7 +169,7 @@ All our backend services, including the website, followed the same CI/CD archite
 <br/>
 <figure>
   <img src="/articles-data/2023-10-22-cicd-amazon-aws-codeguru-profiler/cicd-real-world-codeguru.png" title="Diagram of the CI/CD pipeline for Amazon CodeGuru Profiler services" alt="Diagram of the CI/CD pipeline for Amazon CodeGuru Profiler services" />
-  <figcaption>CI/CD pipeline for Amazon CodeGuru Profiler services.<br/>(right-click and open in new tab for full preview)</figcaption>
+  <figcaption>CI/CD pipeline for Amazon CodeGuru Profiler services.<br/>(<em>right-click and open in new tab for full preview</em>)</figcaption>
 </figure>
 
 Don't get frighten by the big diagram 😅 We will go through it piece by piece.
