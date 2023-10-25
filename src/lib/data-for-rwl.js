@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "http://xahlee.info/js/js_executing_order.html?ref=lambrospetrou_com-read_watch_listen",
+    title: "JavaScript: Load Order, defer, async, module",
+    author: "Xah Lee",
+    dateListed: "2023-10-25T12:20:00.000Z",
+  },
+  {
     url: "https://www.ben-evans.com/benedictevans/2023/10/5/unbundling-ai?ref=lambrospetrou_com-read_watch_listen",
     title: "Unbundling AI",
     author: "Benedict Evans",
