@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://www.ansiblejunky.com/blog/ansible-101-standards/?ref=lambrospetrou_com-read_watch_listen",
+    title: "Ansible 101 - Standards - Collection of Ansible standards based on my experience.",
+    author: "John Wadleigh",
+    dateListed: "2023-10-26T21:40:00.000Z",
+  },
+  {
     url: "http://xahlee.info/js/js_executing_order.html?ref=lambrospetrou_com-read_watch_listen",
     title: "JavaScript: Load Order, defer, async, module",
     author: "Xah Lee",
