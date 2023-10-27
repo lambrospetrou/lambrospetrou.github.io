@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://bitfieldconsulting.com/golang/examples?ref=lambrospetrou_com-read_watch_listen",
+    title: "Go’s best-kept secret: executable examples",
+    author: "John Arundel",
+    dateListed: "2023-10-27T18:10:00.000Z",
+  },
+  {
     url: "https://www.ansiblejunky.com/blog/ansible-101-standards/?ref=lambrospetrou_com-read_watch_listen",
     title: "Ansible 101 - Standards - Collection of Ansible standards based on my experience.",
     author: "John Wadleigh",
