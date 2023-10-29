@@ -9,6 +9,25 @@
 // };
 const DataList = [
   {
+    url: "https://queue.acm.org/detail.cfm?id=3197520?ref=lambrospetrou_com-read_watch_listen",
+    title: "Manual Work is a Bug - A.B.A: always be automating",
+    author: "Thomas A. Limoncelli",
+    dateListed: "2023-10-29T10:10:00.000Z",
+    tags: ["favourite"],
+  },
+  {
+    url: "https://rafaeleyng.github.io/redis-pipelining-transactions-and-lua-scripts?ref=lambrospetrou_com-read_watch_listen",
+    title: "Redis: Pipelining, Transactions and Lua Scripts",
+    author: "Rafael Eyng",
+    dateListed: "2023-10-29T10:00:00.000Z",
+  },
+  {
+    url: "https://www.dbi-services.com/blog/specify-hosts-in-ansible-playbook-command-line/?ref=lambrospetrou_com-read_watch_listen",
+    title: "Specify hosts in ansible-playbook command line",
+    author: "Kévin Keovilay",
+    dateListed: "2023-10-28T10:00:00.000Z",
+  },
+  {
     url: "https://bitfieldconsulting.com/golang/examples?ref=lambrospetrou_com-read_watch_listen",
     title: "Go’s best-kept secret: executable examples",
     author: "John Arundel",
