@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://seths.blog/2019/04/the-elegance-of-nothing/?ref=lambrospetrou_com-read_watch_listen",
+    title: "The elegance of nothing - What ever happened to details?",
+    author: "Seth Godin",
+    dateListed: "2023-11-02T17:20:00.000Z",
+  },
+  {
     url: "https://users.ece.utexas.edu/~adnan/pike.html?ref=lambrospetrou_com-read_watch_listen",
     title: "Rob Pike's 5 Rules of Programming",
     author: "Rob Pike",
