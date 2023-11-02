@@ -9,6 +9,19 @@
 // };
 const DataList = [
   {
+    url: "https://users.ece.utexas.edu/~adnan/pike.html?ref=lambrospetrou_com-read_watch_listen",
+    title: "Rob Pike's 5 Rules of Programming",
+    author: "Rob Pike",
+    dateListed: "2023-11-02T09:20:00.000Z",
+    tags: ["favourite"],
+  },
+  {
+    url: "https://www.joshwcomeau.com/css/surprising-truth-about-pixels-and-accessibility/?ref=lambrospetrou_com-read_watch_listen",
+    title: "The Surprising Truth About Pixels and Accessibility",
+    author: "Josh W. Comeau",
+    dateListed: "2023-11-02T09:10:00.000Z",
+  },
+  {
     url: "https://queue.acm.org/detail.cfm?id=3197520?ref=lambrospetrou_com-read_watch_listen",
     title: "Manual Work is a Bug - A.B.A: always be automating",
     author: "Thomas A. Limoncelli",
