@@ -91,7 +91,7 @@ function WhiskyNights({}) {
         <WhiskyImage url="/s/images/whisky/whisky_night_11-2.jpeg" title="Ledaig 10 - Single Malt Scotch Whisky" />
       </WhiskyNight>
       <WhiskyNight title="Whisky Night #12">
-        <WhiskyImage url="/s/images/whisky/whisky_night_12.jpeg" title="Deaston 18 - Highland Single Malt Scotch Whisky" />
+        <WhiskyImage url="/s/images/whisky/whisky_night_12.jpeg" title="Deanston 18 - Highland Single Malt Scotch Whisky" />
       </WhiskyNight>
     </article>
   )
