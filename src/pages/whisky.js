@@ -56,6 +56,9 @@ function WhiskyNights({}) {
       <h2>Whisky Nights <a className="chain-link" href={`#whisky-nights`}><Icon type="chain-link"/></a></h2>
       <p>This section is dedicated to the whisky nights we organize.</p>
 
+      <WhiskyNight title="Whisky Night #1">
+        <WhiskyImage url="/s/images/whisky/whisky_night_1.jpg" title="WhistlePig 10 - Small Batch Rye Whisky" />
+      </WhiskyNight>
       <WhiskyNight title="Whisky Night #2">
         <WhiskyImage url="/s/images/whisky/whisky_night_2.jpeg" title="Octomore 11.1 - Super Heavily Peated Islay Single Malt Whisky" />
       </WhiskyNight>
