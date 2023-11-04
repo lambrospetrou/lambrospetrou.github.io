@@ -557,6 +557,34 @@ ul.rwl {
 }
 
 /***********************************************
+ * Whisky page.
+ */
+
+#whisky-nights {
+    figure {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    figure img {
+        // display: inline-block;
+        max-height: 500px;
+    }
+
+    a.chain-link {
+        &:hover {
+            fill: $font-color-red;
+        }
+    }
+
+    svg {
+        height: 20px;
+        // vertical-align: middle;
+    }
+}
+
+/***********************************************
  * Hire me page.
  */
 
