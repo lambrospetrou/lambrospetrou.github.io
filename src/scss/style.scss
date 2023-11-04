@@ -584,8 +584,11 @@ ul.rwl {
     }
 
     .rated-whisky {
-        .rating {
+        p {
             text-align: center;
+        }
+        .chain-link {
+            vertical-align: sub;
         }
     }
 }

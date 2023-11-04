@@ -35,7 +35,7 @@ const toId = (s) => {
   return s.replace(regex, "-").toLowerCase();
 }
 
-function WhiskyImage({ title, url}) {
+function WhiskyImage({ title, url }) {
   return (
     <figure>
       <Aex href={url}><img src={url} title={title} alt={title} /></Aex>
@@ -97,11 +97,11 @@ function WhiskyNights({}) {
   )
 }
 
-function RatedWhisky({ children, rating }) {
+function RatedWhisky({ children, id, rating }) {
   return (
-    <section className="rated-whisky">
+    <section className="rated-whisky" id={id}>
+      <p className="rating">Rating: <span>{rating}/5</span> <a className="chain-link" href={`#${id}`}><Icon type="chain-link"/></a></p>
       {children}
-      <div className="rating">Rating: <span>{rating}/5</span></div>
     </section>
   )
 }
@@ -114,23 +114,23 @@ function RatedWhiskies({}) {
       
       <hr />
 
-      <RatedWhisky rating={4}>
+      <RatedWhisky rating={4} id="whisky-smokehead-unfiltered">
         <WhiskyImage url="/s/images/whisky/blackrock_20231101_smokehead.jpg" title="Smokehead Unfiltered - Islay Single Malt Scotch Whisky" />
       </RatedWhisky>
       <hr />
-      <RatedWhisky rating={5}>
+      <RatedWhisky rating={4.5} id="whisky-lagg">
         <WhiskyImage url="/s/images/whisky/blackrock_20231101_lagg.jpg" title="Lagg Kilmory Edition - Single Malt Scotch Whisky" />
       </RatedWhisky>
       <hr />
-      <RatedWhisky rating={4}>
+      <RatedWhisky rating={4} id="whisky-port-askaig-cask-strength">
         <WhiskyImage url="/s/images/whisky/blackrock_20231101_port-askaig.jpg" title="Port Askaig Cask Strength - Islay Single Malt Scotch Whisky" />
       </RatedWhisky>
       <hr />
-      <RatedWhisky rating={4.5}>
+      <RatedWhisky rating={4.5} id="whisky-the-clenturret">
         <WhiskyImage url="/s/images/whisky/blackrock_20231101_the-clenturret.jpg" title="The Clenturret 10 Peat Smoked - Highland Single Malt Scotch Whisky" />
       </RatedWhisky>
       <hr />
-      <RatedWhisky rating={5}>
+      <RatedWhisky rating={5} id="whisky-octomore-14_1">
         <WhiskyImage url="/s/images/whisky/20231104_octomore-14_1.jpg" title="Octomore 14.1 Super Heavily Peated - Islay Single Malt Scotch Whisky" />
       </RatedWhisky>
       
