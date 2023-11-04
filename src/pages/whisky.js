@@ -32,7 +32,7 @@ function Icon({type, className = ""}) {
 
 const toId = (s) => {
   const regex = /[^a-z0-9-_]/gi;
-  return s.replaceAll(regex, "-").toLowerCase();
+  return s.replace(regex, "-").toLowerCase();
 }
 
 function WhiskyImage({ title, url}) {
