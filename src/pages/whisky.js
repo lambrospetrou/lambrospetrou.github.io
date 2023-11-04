@@ -53,7 +53,7 @@ function WhiskyNight({ title, children }) {
 function WhiskyNights({}) {
   return (
     <article id="whisky-nights">
-      <h2>Whisky Nights <a className="chain-link" href={`#whisky-nights`}><Icon type="chain-link"/></a></h2>
+      <h2>Whisky Nights <a className="chain-link" href="#whisky-nights"><Icon type="chain-link"/></a></h2>
       <p>This section is dedicated to the whisky nights we organize.</p>
 
       <WhiskyNight title="Whisky Night #1">
@@ -97,6 +97,47 @@ function WhiskyNights({}) {
   )
 }
 
+function RatedWhisky({ children, rating }) {
+  return (
+    <section className="rated-whisky">
+      {children}
+      <div className="rating">Rating: <span>{rating}/5</span></div>
+    </section>
+  )
+}
+
+function RatedWhiskies({}) {
+  return (
+    <article id="rated-whiskies">
+      <h2>Rated Whiskies <a className="chain-link" href="#rated-whiskies"><Icon type="chain-link"/></a></h2>
+      <p>This section contains whiskies I tried at the <Aex href="http://blackrock.bar/" title="BlackRock bar website">BlackRock bar</Aex>, or elsewhere and are worthy of mentioning. They are rated to a scale of 5, with 5 being the best, at least for my taste.</p>
+      
+      <hr />
+
+      <RatedWhisky rating={4}>
+        <WhiskyImage url="/s/images/whisky/blackrock_20231101_smokehead.jpg" title="Smokehead Unfiltered - Islay Single Malt Scotch Whisky" />
+      </RatedWhisky>
+      <hr />
+      <RatedWhisky rating={5}>
+        <WhiskyImage url="/s/images/whisky/blackrock_20231101_lagg.jpg" title="Lagg Kilmory Edition - Single Malt Scotch Whisky" />
+      </RatedWhisky>
+      <hr />
+      <RatedWhisky rating={4}>
+        <WhiskyImage url="/s/images/whisky/blackrock_20231101_port-askaig.jpg" title="Port Askaig Cask Strength - Islay Single Malt Scotch Whisky" />
+      </RatedWhisky>
+      <hr />
+      <RatedWhisky rating={4.5}>
+        <WhiskyImage url="/s/images/whisky/blackrock_20231101_the-clenturret.jpg" title="The Clenturret 10 Peat Smoked - Highland Single Malt Scotch Whisky" />
+      </RatedWhisky>
+      <hr />
+      <RatedWhisky rating={5}>
+        <WhiskyImage url="/s/images/whisky/20231104_octomore-14_1.jpg" title="Octomore 14.1 Super Heavily Peated - Islay Single Malt Scotch Whisky" />
+      </RatedWhisky>
+      
+    </article>
+  );
+}
+
 export default function Page({}) {
   const title = "Whisky | Lambros Petrou";
   const desc = "Lambros' curated list of whisky related material to read, watch, listen, and most importantly drink.";
@@ -112,11 +153,15 @@ export default function Page({}) {
         <meta property="og:type" content="article" />
         <meta property="og:image" content="/s/images/whisky/og_image.jpg" />
       </Head>
+
       <IconDefs />
 
-      <h1>Whisky 🥃</h1>
+      <div id="page-whisky">
+        <h1>Whisky 🥃</h1>
 
-      <WhiskyNights />
+        <WhiskyNights />
+        <RatedWhiskies />
+      </div>
 
     </Layout>
   );

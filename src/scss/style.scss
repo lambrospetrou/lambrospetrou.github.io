@@ -560,7 +560,7 @@ ul.rwl {
  * Whisky page.
  */
 
-#whisky-nights {
+#page-whisky {
     figure {
         display: flex;
         justify-content: center;
@@ -581,6 +581,12 @@ ul.rwl {
     svg {
         height: 20px;
         // vertical-align: middle;
+    }
+
+    .rated-whisky {
+        .rating {
+            text-align: center;
+        }
     }
 }
 
