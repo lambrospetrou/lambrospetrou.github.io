@@ -72,18 +72,18 @@
               <li>
                 <span class="work-team-name">Workplace Knowledge Library (Dec 2021 - Aug 2022)</span>
                 <ul>
-                    <li>Implemented Workplace features in the backend (Hack, JavaScript, Python).</li>
+                    <li>Developed backend API features for Workplace (Hack, JavaScript, Python).</li>
                 </ul>
               </li>
               <li>
                 <span class="work-team-name">WhatsApp Dev Infra (Apr 2020 - Dec 2021)</span>
                  <!-- &mdash; <a href="https://www.whatsapp.com/" target="_blank" rel="noopener">https://www.whatsapp.com</a> -->
                 <ul>
-                  <li>Implemented core components for FAUSTA, a new dynamic code analysis platform that detects reliability and privacy-related issues in WhatsApp server. Namely, a high-throughput traffic replayer, isolated server environments for deterministic test runs, and support for dynamically configuring the server test instances (Erlang, Python).</li>
+                  <li>Implemented core components for FAUSTA, our new dynamic code analysis platform that detects reliability and privacy-related issues in WhatsApp server. Namely, a high-throughput traffic replayer (1000 qps), isolated server environments for deterministic test runs, and support for dynamically configuring the server test instances (Erlang, Python).</li>
                   <li>
                     <!-- <br/><a href="https://research.facebook.com/publications/fausta:-scaling-dynamic-analysis-with-traffic-generation-at-whatsapp/" target="_blank" rel="noopener">https://research.facebook.com/publications/fausta:-scaling-dynamic-analysis-with-traffic-generation-at-whatsapp/</a> -->
                     Contributed to the paper <a href="https://www.lambrospetrou.com/projects/whatsapp-fausta-2022-01.pdf" target="_blank" rel="noopener">FAUSTA: Scaling Dynamic Analysis with Traffic Generation at WhatsApp</a> that received the <em>"Best Industry Paper award" (<a href="https://twitter.com/tanja_vos/status/1512343410132328450" target="_blank" rel="noopener">link</a>)</em>.</li>
-                  <li>Designed, proposed, and implemented an extension of the FAUSTA platform to provide continuous performance regression detection for WhatsApp server using A/B testing between different revisions.</li>
+                  <li>Designed, proposed, and implemented an extension of the FAUSTA platform to provide continuous performance regression detection for WhatsApp server using A/B testing between different code revisions.</li>
                   <li>Worked on the Continuous Integration (CI) workflows for WhatsApp server (Erlang, Python).</li>
                 </ul>
               </li>
@@ -92,50 +92,40 @@
 
         <section class="cv-content-item cv-work-section">
             <header class="clear">
-                <h3>Amazon Web Services (AWS), UK &mdash; <span class="work-title">Software Engineer</span></h3>
+                <h3>Amazon / Amazon Web Services (AWS), UK &mdash; <span class="work-title">Software Engineer</span></h3>
                 <div class="work-time time">
-                    <p><time datetime="2019-06">May 2019</time> &mdash; <time datetime="2020-04">Apr 2020</time></p>
+                    <p><time datetime="2015-09">Sep 2015</time> &mdash; <time datetime="2020-04">Apr 2020</time></p>
                 </div>
             </header>
             <ul>
                 <li>
-                    <span class="work-team-name">Amazon CodeGuru Profiler</span>
-                     <!-- &mdash; <a href="https://aws.amazon.com/codeguru/features#Amazon_CodeGuru_Profiler" target="_blank" rel="noopener">https://aws.amazon.com/codeguru/features#Amazon_CodeGuru_Profiler</a> -->
+                    <span class="work-team-name">Amazon Profiler & Amazon CodeGuru Profiler team (Jun 2017 - Apr 2020)</span>
                     <ul>
                         <li>Part of the team that created, and launched <a href="https://aws.amazon.com/about-aws/whats-new/2019/12/aws-announces-amazon-codeguru-for-automated-code-reviews-and-application-performance-recommendations/" target="_blank" rel="noopener">Amazon CodeGuru Profiler at AWS re:Invent 2019</a>.</li>
-                        <li>Lead engineer of the infrastructure platform for the CodeGuru Console, supporting 3 teams across US and UK.</li>
-                        <li>Implemented the initial CloudFormation integration support for CodeGuru Profiler resources.</li>
-                        <li>Architected and developed the CodeGuru Profiler API multi-region infrastructure applying best-practices for Infrastructure as Code using CloudFormation, and AWS CDK (Kotlin, TypeScript).</li>
-                        <li>Contributed to the user experience of the Console using React, Redux, Cypress.</li>
-                    </ul>
-                </li>
-            </ul>
-        </section>
-
-        <section class="cv-content-item cv-work-section">
-            <header class="clear">
-                <h3>Amazon Development Centre, UK &mdash; <span class="work-title">Software Engineer</span></h3>
-                <div class="work-time time">
-                    <p><time datetime="2015-09">Sep 2015</time> &mdash; <time datetime="2019-05">May 2019</time></p>
-                </div>
-            </header>
-            <ul>
-                <li>
-                    <span class="work-team-name">Amazon Profiler team (Jun 2017 - May 2019)</span>
-                    <ul>
-                        <!-- <li>Provide internal tooling for performance optimisation and monitoring across Amazon backend services.</li> -->
-                        <li>Implemented features on our backend services and APIs written in Java and Kotlin.</li>
-                        <li>Researched, proposed, and contributed to the implementation of the Profiler Efficiency Recommendations feature which codifies efficiency issues and provides recommendations to the users.</li>
-                        <li>Maintained an AWS Lambda@Edge interceptor in order to enable and grow the deployment of Amazon-authenticated websites using serverless technologies. Used by many teams across Amazon (e.g. AWS, Alexa, Retail), and became the blueprint for other teams to build their frameworks on-top.</li>
-                        <li>Deployed static websites and several supporting APIs following a serverless architecture in AWS (API Gateway, AWS Lambda &amp; Lambda@Edge, CloudFront, DynamoDB, S3, and more).</li>
-                        <li>Re-designed and implemented the Profiler website using React, Redux, Cypress.</li>
+                        <li>
+                            Lead engineer supporting 3 teams across the US and the UK for the infrastructure platform of the CodeGuru Console.
+                            Offerred training and mentoring to junior engineers onboarded into the AWS Console ecosystem.
+                        </li>
+                        <!-- <li>Implemented the CloudFormation integration support for CodeGuru Profiler resources.</li> -->
+                        <li>Architected and developed the CodeGuru Profiler API multi-region infrastructure applying best-practices for Infrastructure as Code (IaC) using CloudFormation, and AWS CDK (Kotlin, TypeScript).</li>
+                        <li>
+                            Researched, proposed, and implemented key parts of the "Profiler Efficiency Recommendations" feature which codifies performance efficiency issues and provides recommendations to the users.
+                            Tens of engineers across the company were able to contribute to the efficiency patterns collection, saving the company millions of $ in infrastructure costs.
+                        </li>
+                        <li>
+                            Pioneered the way to deploy serverless Amazon-authenticated internal websites, by maintaining an AWS Lambda@Edge library used by many teams across Amazon (e.g. AWS, Alexa, Retail).
+                            My work served as the blueprint for other teams to build their own frameworks on-top.
+                        </li>
+                        <li>Deployed websites and APIs following a serverless architecture in AWS (API Gateway, AWS Lambda &amp; Lambda@Edge, CloudFront, DynamoDB, S3). This led to simplification of our stack, and deletion of our legacy Rails deployments, while also having better reliability.</li>
+                        <li>Developed and optimized core parts of the Profiler website enabling our flamegraph visualizations to render hundreds of thousands of elements.</li>
+                        <li>Implemented key features on our backend services and APIs written in Java and Kotlin.</li>
                     </ul>
                 </li>
                 <li>
                     <span class="work-team-name">LOVEFiLM By Post &mdash; DVD and Blu-ray rental service team (Sep 2015 - May 2017)</span>
                     <ul>
-                        <li>Lead engineer for the <em>LOVEFiLM By Post</em> mobile application (Cordova, Ionic, AngularJS, SASS).</li>
-                        <li>Worked on backend services and parts of the LOVEFiLM website (Java, Spring MVC).</li>
+                        <li>Lead engineer for the <em>LOVEFiLM By Post</em> mobile application (JavaScript).</li>
+                        <li>Worked on backend API services and the LOVEFiLM website (Java, Spring MVC).</li>
                     </ul>
                 </li>
                 <li>
@@ -159,14 +149,14 @@
                 <li>
                     <span class="work-team-name">LOVEFiLM By Post — DVD and Blu-ray rental service team</span>
                     <ul>
-                        <li><p>I implemented a service that automates the printing process for the dispatched disks' envelope labels (FlexMail, .NET, Java, Swing).</p></li>
+                        <li><p>Implemented a desktop app automating the printing of dispatched envelope labels (.NET, Java, Swing).</p></li>
                     </ul>
                 </li>
             </ul>
         </section>
-
+        
         <div class="page-break"></div> <!-- CHANGE PAGE HERE -->
-
+        
         <section class="cv-content-item cv-work-section">
             <header class="clear">
                 <h3>Data Management Systems Lab, UCY, Cyprus &mdash; <span class="work-title">Software Engineer</span></h3>
@@ -178,7 +168,7 @@
                 <li>
                     <span class="work-team-name">AnyPlace: Indoor Positioning and Navigation System for Big Data</span>
                     <ul>
-                        <li><p>Developed and implemented an Indoor Positioning and Navigation system that provides a Web2.0 API for 3rd-party clients backed by Couchbase, along with a website and an Android app offering real-time positioning and navigation (<a href="https://anyplace.cs.ucy.ac.cy" target="_blank" rel="noopener">https://anyplace.cs.ucy.ac.cy</a>).</p></li>
+                        <li><p>Developed an Indoor Positioning and Navigation system providing a REST API backed by CouchbaseDB, along with a website and an Android app offering real-time positioning and navigation (<a href="https://anyplace.cs.ucy.ac.cy" target="_blank" rel="noopener">anyplace.cs.ucy.ac.cy</a>).</p></li>
                     </ul>
                 </li>
             </ul>
@@ -198,7 +188,7 @@
                 </div>
             </header>
             <ul>
-                <li><p>Master of Science in Computer Science, <em>Grade: <strong>Distinction</strong></em></p></li>
+                <li><p>Master of Science in Computer Science (MSc), <em>Grade: <strong>Distinction</strong></em></p></li>
                 <li><p>Thesis: <em>Single-round vs Multi-round Distributed Query Processing in Factorised Databases</em></p></li>
             </ul>
         </section>
@@ -212,7 +202,7 @@
                 </div>
             </header>
             <ul>
-                <li><p>Bachelor of Science in Computer Science, <em>Grade: <strong>Distinction</strong> (ranked <strong>1st</strong> of class)</em></p></li>
+                <li><p>Bachelor of Science in Computer Science (BSc), <em>Grade: <strong>Distinction</strong> (ranked <strong>1st</strong> of class)</em></p></li>
                 <li><p>Thesis: <em>AnyPlace: Indoor Positioning and Navigation System for Big Data</em></p></li>
             </ul>
         </section>
@@ -229,14 +219,26 @@
     </article> <!-- END OF SKILLS -->
 
     <article>
-        <h2>Other Experience</h2>
+        <h2>Projects</h2>
 
         <section class="cv-content-item cv-other-section">
             <ul>
-                <li><p><strong>Personal Website (2008 – Present)</strong>: Personal website and blog (<a href="http://www.lambrospetrou.com" target="_blank" rel="noopener">https://www.lambrospetrou.com</a>).</p></li>
+                <li><p><strong>Personal website and blog (2008 - present)</strong>: <a href="http://www.lambrospetrou.com" target="_blank" rel="noopener">https://www.lambrospetrou.com</a></p></li>
             </ul>
         </section>
     </article> <!-- END OF OTHER TECHNICAL EXPERIENCE -->
+
+    <article>
+        <h2>Publications</h2>
+        <section class="cv-content-item cv-publications-section">
+            <ul>
+                <li><p><strong>Paper</strong>: <em>"<a href="https://www.lambrospetrou.com/projects/whatsapp-fausta-2022-01.pdf" target="_blank" rel="noopener">FAUSTA: Scaling Dynamic Analysis with Traffic Generation at WhatsApp</a>"</em> Ke Mao, Timotej Kapus, <strong>Lambros Petrou</strong>, Ákos Hajdu, Matteo Marescotti, Andreas Löscher, Mark Harman, Dino Distefano, IEEE International Conference on Software Testing, Verification and Validation (ICST 2022)</p></li>
+                <li><p><strong>Demo paper</strong>: <em>"Anyplace: A Crowdsourced Indoor Information Service"</em>, K.Georgiou, T.Constambeys, C.Laoudias, <strong>L.Petrou</strong>, G.Chatzimilioudis and D.Zeinalipour-Yazti "Proceedings of the 16th IEEE International Conference on Mobile Data Management" (MDM '15), Pittsburgh, Pennsylvania, USA, June 15-18, 2015</p></li>
+                <li><p><strong>Demo paper</strong>: <em>"Crowdsourced Indoor Localization and Navigation with Anyplace"</em>, <strong>L.Petrou</strong>, G.Larkou, C.Laoudias, D.Zeinalipour-Yazti and C.G.Panayiotou "Proceedings of the 13th International Conference on Information Processing in Sensor Networks" (IPSN '14), Berlin, Germany, April 15-17, 2014</p></li>
+                <li><p><strong>Demo paper</strong>: <em>"Anyplace: Indoor Positioning and Navigation in the Big-Data Era"</em>, <strong>L.Petrou</strong>, G.Larkou, C.Laoudias, D.Zeinalipour-Yazti and C.G.Panayiotou "Proceedings of the 4th International Conference on Indoor Positioning and Indoor Navigation" (IPIN '13), Montbeliard-Belfort, France, October 28-31, 2013</p></li>
+            </ul>
+        </section>
+    </article> <!-- END OF PUBLICATIONS -->
 
     <article>
         <h2>Awards &amp; Achievements</h2>
@@ -252,18 +254,6 @@
             </ul>
         </section>
     </article> <!-- END OF AWARDS -->
-
-    <article>
-        <h2>Publications</h2>
-        <section class="cv-content-item cv-publications-section">
-            <ul>
-                <li><p><strong>Paper</strong>: <em>"<a href="https://www.lambrospetrou.com/projects/whatsapp-fausta-2022-01.pdf" target="_blank" rel="noopener">FAUSTA: Scaling Dynamic Analysis with Traffic Generation at WhatsApp</a>"</em> Ke Mao, Timotej Kapus, <strong>Lambros Petrou</strong>, Ákos Hajdu, Matteo Marescotti, Andreas Löscher, Mark Harman, Dino Distefano, IEEE International Conference on Software Testing, Verification and Validation (ICST 2022)</p></li>
-                <li><p><strong>Demo paper</strong>: <em>"Anyplace: A Crowdsourced Indoor Information Service"</em>, K.Georgiou, T.Constambeys, C.Laoudias, <strong>L.Petrou</strong>, G.Chatzimilioudis and D.Zeinalipour-Yazti "Proceedings of the 16th IEEE International Conference on Mobile Data Management" (MDM '15), Pittsburgh, Pennsylvania, USA, June 15-18, 2015</p></li>
-                <li><p><strong>Demo paper</strong>: <em>"Crowdsourced Indoor Localization and Navigation with Anyplace"</em>, <strong>L.Petrou</strong>, G.Larkou, C.Laoudias, D.Zeinalipour-Yazti and C.G.Panayiotou "Proceedings of the 13th International Conference on Information Processing in Sensor Networks" (IPSN '14), Berlin, Germany, April 15-17, 2014</p></li>
-                <li><p><strong>Demo paper</strong>: <em>"Anyplace: Indoor Positioning and Navigation in the Big-Data Era"</em>, <strong>L.Petrou</strong>, G.Larkou, C.Laoudias, D.Zeinalipour-Yazti and C.G.Panayiotou "Proceedings of the 4th International Conference on Indoor Positioning and Indoor Navigation" (IPIN '13), Montbeliard-Belfort, France, October 28-31, 2013</p></li>
-            </ul>
-        </section>
-    </article> <!-- END OF PUBLICATIONS -->
 
     <article>
         <!-- <h2>Other interests</h2>
