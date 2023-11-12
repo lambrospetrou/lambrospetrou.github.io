@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://www.geoffreylitt.com/2023/03/25/llm-end-user-programming.html?ref=lambrospetrou_com-read_watch_listen",
+    title: "Malleable software in the age of LLMs",
+    author: "SGeoffrey Litt",
+    dateListed: "2023-11-12T13:20:00.000Z",
+  },
+  {
     url: "https://seths.blog/2019/04/the-elegance-of-nothing/?ref=lambrospetrou_com-read_watch_listen",
     title: "The elegance of nothing - What ever happened to details?",
     author: "Seth Godin",
