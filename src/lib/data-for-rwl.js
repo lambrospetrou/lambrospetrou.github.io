@@ -11,7 +11,7 @@ const DataList = [
   {
     url: "https://www.geoffreylitt.com/2023/03/25/llm-end-user-programming.html?ref=lambrospetrou_com-read_watch_listen",
     title: "Malleable software in the age of LLMs",
-    author: "SGeoffrey Litt",
+    author: "Geoffrey Litt",
     dateListed: "2023-11-12T13:20:00.000Z",
   },
   {
