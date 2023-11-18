@@ -9,6 +9,18 @@
 // };
 const DataList = [
   {
+    url: "https://juli1.substack.com/p/building-codiga-building-an-iteration?ref=lambrospetrou_com-read_watch_listen",
+    title: "Building Codiga: Building an Iteration Engine",
+    author: "Julien Delange",
+    dateListed: "2023-11-18T15:15:00.000Z",
+  },
+  {
+    url: "https://juli1.substack.com/p/building-codiga-fundraising?ref=lambrospetrou_com-read_watch_listen",
+    title: "Building Codiga: Fundraising",
+    author: "Julien Delange",
+    dateListed: "2023-11-18T15:10:00.000Z",
+  },
+  {
     url: "https://www.geoffreylitt.com/2023/03/25/llm-end-user-programming.html?ref=lambrospetrou_com-read_watch_listen",
     title: "Malleable software in the age of LLMs",
     author: "Geoffrey Litt",
