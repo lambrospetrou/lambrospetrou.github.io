@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://charity.wtf/2023/08/17/how-to-communicate-when-trust-is-low-without-digging-yourself-into-a-deeper-hole/?ref=lambrospetrou_com-read_watch_listen",
+    title: "How to Communicate When Trust Is Low (Without Digging Yourself Into A Deeper Hole)",
+    author: "Charity Majors",
+    dateListed: "2023-11-18T16:35:00.000Z",
+  },
+  {
     url: "https://juli1.substack.com/p/building-codiga-building-an-iteration?ref=lambrospetrou_com-read_watch_listen",
     title: "Building Codiga: Building an Iteration Engine",
     author: "Julien Delange",
