@@ -9,6 +9,18 @@
 // };
 const DataList = [
   {
+    url: "https://www.promptingguide.ai/?ref=lambrospetrou_com-read_watch_listen",
+    title: "How to use Stable Diffusion",
+    author: "Dair.ai",
+    dateListed: "2023-11-19T19:50:00.000Z",
+  },
+  {
+    url: "https://stable-diffusion-art.com/beginners-guide/?ref=lambrospetrou_com-read_watch_listen",
+    title: "How to use Stable Diffusion",
+    author: "Andrew",
+    dateListed: "2023-11-19T19:30:00.000Z",
+  },
+  {
     url: "https://daleonai.com/transformers-explained?ref=lambrospetrou_com-read_watch_listen",
     title: "Transformers, Explained: Understand the Model Behind GPT-3, BERT, and T5",
     author: "Dale Markowitz",
