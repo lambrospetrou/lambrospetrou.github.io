@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://mccormickml.com/2022/12/21/how-stable-diffusion-works/?ref=lambrospetrou_com-read_watch_listen",
+    title: "How Stable Diffusion Works",
+    author: "Chris McCormick",
+    dateListed: "2023-11-19T18:10:00.000Z",
+  },
+  {
     url: "https://karpathy.medium.com/software-2-0-a64152b37c35?ref=lambrospetrou_com-read_watch_listen",
     title: "Software 2.0",
     author: "Andrej Karpathy",
