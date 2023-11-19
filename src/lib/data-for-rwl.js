@@ -9,6 +9,13 @@
 // };
 const DataList = [
   {
+    url: "https://karpathy.medium.com/software-2-0-a64152b37c35?ref=lambrospetrou_com-read_watch_listen",
+    title: "Software 2.0",
+    author: "Andrej Karpathy",
+    dateListed: "2023-11-19T14:15:00.000Z",
+    tags: ["favourite"],
+  },
+  {
     url: "https://www.reddit.com/r/StableDiffusion/comments/zs5dk5/i_made_an_infographic_to_explain_how_stable/?ref=lambrospetrou_com-read_watch_listen",
     title: "I made an infographic to explain how stable diffusion works in simple terms",
     author: "u/UnavailableUsername_",
