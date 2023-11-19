@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://daleonai.com/transformers-explained?ref=lambrospetrou_com-read_watch_listen",
+    title: "Transformers, Explained: Understand the Model Behind GPT-3, BERT, and T5",
+    author: "Dale Markowitz",
+    dateListed: "2023-11-19T19:20:00.000Z",
+  },
+  {
     url: "https://mccormickml.com/2022/12/21/how-stable-diffusion-works/?ref=lambrospetrou_com-read_watch_listen",
     title: "How Stable Diffusion Works",
     author: "Chris McCormick",
