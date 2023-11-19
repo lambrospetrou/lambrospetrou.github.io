@@ -10,7 +10,7 @@
 const DataList = [
   {
     url: "https://www.promptingguide.ai/?ref=lambrospetrou_com-read_watch_listen",
-    title: "How to use Stable Diffusion",
+    title: "Prompt Engineering Guide",
     author: "Dair.ai",
     dateListed: "2023-11-19T19:50:00.000Z",
   },
