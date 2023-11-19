@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://www.reddit.com/r/StableDiffusion/comments/zs5dk5/i_made_an_infographic_to_explain_how_stable/?ref=lambrospetrou_com-read_watch_listen",
+    title: "I made an infographic to explain how stable diffusion works in simple terms",
+    author: "u/UnavailableUsername_",
+    dateListed: "2023-11-19T13:45:00.000Z",
+  },
+  {
     url: "https://charity.wtf/2023/08/17/how-to-communicate-when-trust-is-low-without-digging-yourself-into-a-deeper-hole/?ref=lambrospetrou_com-read_watch_listen",
     title: "How to Communicate When Trust Is Low (Without Digging Yourself Into A Deeper Hole)",
     author: "Charity Majors",
