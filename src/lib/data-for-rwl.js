@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://a16z.com/the-generative-ai-revolution-in-games/?ref=lambrospetrou_com-read_watch_listen",
+    title: "The Generative AI Revolution in Games",
+    author: "James Gwertzman and Jack Soslow",
+    dateListed: "2023-11-20T10:50:00.000Z",
+  },
+  {
     url: "https://www.promptingguide.ai/?ref=lambrospetrou_com-read_watch_listen",
     title: "Prompt Engineering Guide",
     author: "Dair.ai",
