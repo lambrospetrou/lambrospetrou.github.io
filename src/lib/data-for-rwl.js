@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://andrewlock.net/working-with-stacked-branches-in-git-is-easier-with-update-refs/?ref=lambrospetrou_com-read_watch_listen",
+    title: "Working with stacked branches in Git is easier with --update-refs",
+    author: "Andrew Lock",
+    dateListed: "2023-11-23T09:20:00.000Z",
+  },
+  {
     url: "https://a16z.com/the-generative-ai-revolution-in-games/?ref=lambrospetrou_com-read_watch_listen",
     title: "The Generative AI Revolution in Games",
     author: "James Gwertzman and Jack Soslow",
