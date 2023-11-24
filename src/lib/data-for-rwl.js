@@ -9,6 +9,13 @@
 // };
 const DataList = [
   {
+    url: "https://www.joshwcomeau.com/css/interactive-guide-to-grid/?ref=lambrospetrou_com-read_watch_listen",
+    title: "An Interactive Guide to CSS Grid",
+    author: "Josh W. Comeau",
+    dateListed: "2023-11-24T21:30:00.000Z",
+    tags: ["favourite"],
+  },
+  {
     url: "https://andrewlock.net/working-with-stacked-branches-in-git-is-easier-with-update-refs/?ref=lambrospetrou_com-read_watch_listen",
     title: "Working with stacked branches in Git is easier with --update-refs",
     author: "Andrew Lock",
