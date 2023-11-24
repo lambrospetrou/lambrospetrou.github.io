@@ -9,6 +9,18 @@
 // };
 const DataList = [
   {
+    url: "https://betterstack.com/community/guides/logging/logging-in-go/?ref=lambrospetrou_com-read_watch_listen",
+    title: "Logging in Go with Slog: The Ultimate Guide",
+    author: "Ayooluwa Isaiah",
+    dateListed: "2023-11-24T23:15:00.000Z",
+  },
+  {
+    url: "https://betterstack.com/community/guides/logging/log-formatting/?ref=lambrospetrou_com-read_watch_listen",
+    title: "Log Formatting in Production: 9 Best Practices",
+    author: "Ayooluwa Isaiah",
+    dateListed: "2023-11-24T23:10:00.000Z",
+  },
+  {
     url: "https://www.evanjones.ca/random-load-balancing-is-uneven.html?ref=lambrospetrou_com-read_watch_listen",
     title: "Random Load Balancing is Unevenly Distributed",
     author: "Evan Jones",
