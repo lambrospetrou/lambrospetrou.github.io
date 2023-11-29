@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://threedots.tech/post/making-games-in-go/?ref=lambrospetrou_com-read_watch_listen",
+    title: "Making Games in Go for Absolute Beginners",
+    author: "Miłosz Smółka",
+    dateListed: "2023-11-29T11:50:00.000Z",
+  },
+  {
     url: "https://betterstack.com/community/guides/logging/logging-in-go/?ref=lambrospetrou_com-read_watch_listen",
     title: "Logging in Go with Slog: The Ultimate Guide",
     author: "Ayooluwa Isaiah",
