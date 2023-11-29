@@ -22,6 +22,16 @@ It works for me, it worked for some of my friends, so it might work for you too.
 - [Behavorial](#behavorial)
 - [Conclusion](#conclusion)
 
+<div class="upsell-section">
+    <p>Prefer a personalized 1:1 session for tips, or a mock interview?</p>
+    <div class="consulting-cta-container">
+        <a class="cta-interview" href="https://cal.com/lambrospetrou/interview-preparation-1h" target="_blank" rel="noopener noreferrer">
+        Book interview preparation session
+        <small>1:1 session &mdash; coding or system design interviews.</small>
+        </a>
+    </div>
+</div>
+
 ## Proper preparation is worth it
 
 There are myriad of angry engineers online crying out loud that the current state of software engineering interviews is a mess. Some excuses they usually use against the coding interviews (which I do not agree with - I am pro-interviews!):
@@ -472,3 +482,13 @@ This is my approach, and how I prepare for interviews.
 It has worked well for me so far, so I am confident you can get something valuable out of it.
 
 Good luck 💪🏼 and [let me know](https://twitter.com/LambrosPetrou) if you found this useful or if it helped you get that job!
+
+<div class="upsell-section">
+    <p>Prefer a personalized 1:1 session for tips, or a mock interview?</p>
+    <div class="consulting-cta-container">
+        <a class="cta-interview" href="https://cal.com/lambrospetrou/interview-preparation-1h" target="_blank" rel="noopener noreferrer">
+        Book interview preparation session
+        <small>1:1 session &mdash; coding or system design interviews.</small>
+        </a>
+    </div>
+</div>
