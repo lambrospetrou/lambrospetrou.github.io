@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://signalvnoise.com/posts/1620-sell-your-by-products?ref=lambrospetrou_com-read_watch_listen",
+    title: "Sell Your By-products",
+    author: "Jason Fried",
+    dateListed: "2023-11-29T22:20:00.000Z",
+  },
+  {
     url: "https://threedots.tech/post/making-games-in-go/?ref=lambrospetrou_com-read_watch_listen",
     title: "Making Games in Go for Absolute Beginners",
     author: "Miłosz Smółka",
