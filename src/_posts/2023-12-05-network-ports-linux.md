@@ -11,7 +11,7 @@ In many cases I want to check information about the network ports on my system, 
 lsof -nP +c 15 | grep LISTEN
 ```
 
-The command `lsof` stands for "list open files. It provides information about files and processes that are currently open on the system.
+The command `lsof` stands for "list open files". It provides information about files and processes that are currently open on the system.
 
 The following options to `lsof` make the command faster by avoiding DNS and service lookups. 
 - `-n` prevents the conversion of network numbers to hostnames.
