@@ -19,7 +19,7 @@ The following options to `lsof` make the command faster by avoiding DNS and serv
 
 The option `+c 15` specifies the number of seconds to wait before giving up on network-related operations.
 
-The `| grep LISTEN` pipe command filters the output of the `lsof` command for lines containing the word `LISTEN`, which typically indicates processes that are listening for incoming network connections.
+The `| grep LISTEN` pipe command filters the output of `lsof` for lines containing the word `LISTEN`, which indicates processes that are listening for incoming network connections.
 
 ## Option 2 - netstat
 
@@ -31,8 +31,13 @@ The command `netstat` stands for "network statistics". It provides information a
 
 The command `netstat -tuln` is used to display information about active network connections and listening sockets.
 
-The following options to `lsof` make the command faster by avoiding DNS and service lookups. 
+The options `-tuln` to `netstat` mean:
 - `-t` specifies that only TCP connections should be displayed. It filters the output to show only information related to TCP protocols.
 - `-u` specifies that only UDP connections should be displayed. Similar to the `-t` option, it filters the output to show only information related to UDP protocols.
 - `-l` stands for "listening" and instructs netstat to display only listening sockets, which are endpoints for incoming connections.
 - `-n` prevents the conversion of numeric addresses to symbolic hostnames. It speeds up the command execution by avoiding DNS lookups.
+
+Appending the `| grep http` pipe command filters the output of `netstat` for lines containing the word `http`, which indicates processes that are listening for incoming HTTP connections.
+
+References
+- https://www.redhat.com/sysadmin/netstat
