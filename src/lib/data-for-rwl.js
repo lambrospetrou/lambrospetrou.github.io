@@ -9,6 +9,18 @@
 // };
 const DataList = [
   {
+    url: "https://maheshba.bitbucket.io/blog/2021/10/19/42Things.html?ref=lambrospetrou_com-read_watch_listen",
+    title: "42 things I learned from building a production database",
+    author: "Mahesh Balakrishnan",
+    dateListed: "2023-12-13T20:30:00.000Z",
+  },
+  {
+    url: "http://highscalability.com/blog/2022/1/28/stuff-the-internet-says-on-scalability-for-january-28th-2022.html?ref=lambrospetrou_com-read_watch_listen",
+    title: "Stuff The Internet Says On Scalability For January 28th, 2022",
+    author: "Todd Hoff",
+    dateListed: "2023-12-13T20:20:00.000Z",
+  },
+  {
     url: "https://signalvnoise.com/posts/1620-sell-your-by-products?ref=lambrospetrou_com-read_watch_listen",
     title: "Sell Your By-products",
     author: "Jason Fried",
