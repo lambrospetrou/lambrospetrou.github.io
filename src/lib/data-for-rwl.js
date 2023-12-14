@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://transactional.blog/blog/2023-cloud-storage-costs?ref=lambrospetrou_com-read_watch_listen",
+    title: "S3-Compatible Cloud Storage Costs",
+    author: "Alex Miller",
+    dateListed: "2023-12-14T12:30:00.000Z",
+  },
+  {
     url: "https://maheshba.bitbucket.io/blog/2021/10/19/42Things.html?ref=lambrospetrou_com-read_watch_listen",
     title: "42 things I learned from building a production database",
     author: "Mahesh Balakrishnan",
