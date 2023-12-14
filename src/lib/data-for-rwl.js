@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://www.htmhell.dev/tips/the-document-outline/?ref=lambrospetrou_com-read_watch_listen",
+    title: "Issue #6 - the document outline",
+    author: "Manuel Matuzović",
+    dateListed: "2023-12-14T22:40:00.000Z",
+  },
+  {
     url: "https://training.kalzumeus.com/newsletters/archive/enterprise_sales?ref=lambrospetrou_com-read_watch_listen",
     title: "Selling To The Fortune 500, Government, And Other Lovecraftian Horrors",
     author: "Patrick McKenzie (patio11)",
