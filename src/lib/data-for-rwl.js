@@ -9,6 +9,24 @@
 // };
 const DataList = [
   {
+    url: "https://training.kalzumeus.com/newsletters/archive/enterprise_sales?ref=lambrospetrou_com-read_watch_listen",
+    title: "Selling To The Fortune 500, Government, And Other Lovecraftian Horrors",
+    author: "Patrick McKenzie (patio11)",
+    dateListed: "2023-12-14T20:45:00.000Z",
+  },
+  {
+    url: "https://www.htmhell.dev/adventcalendar/2023/2/?ref=lambrospetrou_com-read_watch_listen",
+    title: "You don't need JavaScript for that",
+    author: "Kilian Valkhof",
+    dateListed: "2023-12-14T20:55:00.000Z",
+  },
+  {
+    url: "https://charity.wtf/2020/09/14/useful-things-to-know-about-engineering-levels/?ref=lambrospetrou_com-read_watch_listen",
+    title: "Things to know about engineering levels",
+    author: "Charity Majors",
+    dateListed: "2023-12-14T20:40:00.000Z",
+  },
+  {
     url: "https://transactional.blog/blog/2023-cloud-storage-costs?ref=lambrospetrou_com-read_watch_listen",
     title: "S3-Compatible Cloud Storage Costs",
     author: "Alex Miller",
