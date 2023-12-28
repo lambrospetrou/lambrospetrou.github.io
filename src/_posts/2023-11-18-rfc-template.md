@@ -36,7 +36,6 @@ The list of reviewers should include:
 - Review status: `not-reviewed`, `in-progress`, `approved`, `declined`
 - Review date (date when the final decision was taken)
 
-<br/>
 <figure>
   <img src="/articles-data/2023-11-18-rfc-template/title-reviewers.png" title="RFC template title and reviewers section" alt="RFC template title and reviewers section" />
   <figcaption>RFC document title and reviewers section.</figcaption>

@@ -52,7 +52,6 @@ Let's explore the CI/CD setup for one of our backend services, and our website.
 
 One of our backend services was the **Aggregator**, processing all ingested profiling data submitted by all the services using our product, and generating aggregated data that we would then display on the website.
 
-<br/>
 <figure>
   <img src="/articles-data/2023-10-22-cicd-amazon-aws-codeguru-profiler/real-world-cicd-profiler-aggregator.jpg" title="Diagram of the CI/CD pipeline for Aggregator service" alt="Diagram of the CI/CD pipeline for Aggregator service" />
   <figcaption>CI/CD pipeline for Aggregator service.</figcaption>
@@ -107,7 +106,6 @@ One common approval workflow we had across our services was the **monitor bake t
 
 Our website was a Single-Page-Application using [React](https://reactjs.org/). We had a simpler setup than the backend, using AWS services: [CloudFront](https://aws.amazon.com/cloudfront/), [S3](https://aws.amazon.com/s3/), and [Lambda@Edge](https://aws.amazon.com/lambda/edge/).
 
-<br/>
 <figure>
   <img src="/articles-data/2023-10-22-cicd-amazon-aws-codeguru-profiler/real-world-cicd-profiler-website.jpg" title="Diagram of the CI/CD pipeline for Amazon Profiler website" alt="Diagram for the CI/CD pipeline for Amazon Profiler website" />
   <figcaption>CI/CD pipeline for Amazon Profiler website.</figcaption>
@@ -165,7 +163,6 @@ As I mentioned above, we were doing [trunk-based development](https://trunkbased
 
 All our backend services, including the website, followed the same CI/CD architecture, therefore I will use a generic service in the example below for simplicity.
 
-<br/>
 <figure>
   <img src="/articles-data/2023-10-22-cicd-amazon-aws-codeguru-profiler/cicd-real-world-codeguru.png" title="Diagram of the CI/CD pipeline for Amazon CodeGuru Profiler services" alt="Diagram of the CI/CD pipeline for Amazon CodeGuru Profiler services" />
   <figcaption>CI/CD pipeline for Amazon CodeGuru Profiler services.<br/>(<em>right-click and open in new tab for full preview</em>)</figcaption>
