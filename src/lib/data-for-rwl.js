@@ -9,6 +9,38 @@
 // };
 const DataList = [
   {
+    url: "https://patticus.com/2023/12/16/competitive-research-playbook/?ref=lambrospetrou_com-read_watch_listen",
+    title: "Competitor Research and Strategy",
+    author: "Patrick Campbell",
+    dateListed: "2024-01-04T12:00:00.000Z",
+    tags: ["favourite"],
+  },
+  {
+    url: "https://longform.asmartbear.com/product-market-fit-formula?ref=lambrospetrou_com-read_watch_listen",
+    title: "The roadmap to Product/Market Fit… maybe",
+    author: "Jason Cohen",
+    dateListed: "2024-01-04T11:35:00.000Z",
+    tags: ["favourite"],
+  },
+  {
+    url: "https://danluu.com/look-stupid/?ref=lambrospetrou_com-read_watch_listen",
+    title: "Willingness to look stupid",
+    author: "Dan Luu",
+    dateListed: "2024-01-04T11:15:00.000Z",
+  },
+  {
+    url: "https://addyo.substack.com/p/first-do-it-then-do-it-right-then?ref=lambrospetrou_com-read_watch_listen",
+    title: "First do it, then do it right, then do it better.",
+    author: "Addy Osmani",
+    dateListed: "2024-01-04T11:10:00.000Z",
+  },
+  {
+    url: "https://contrarianthinking.co/what-no-one-tells-you-before-buying-a-business/?ref=lambrospetrou_com-read_watch_listen",
+    title: "What No One Tells You Before Buying a Business",
+    author: "Codie Sanchez",
+    dateListed: "2024-01-04T11:00:00.000Z",
+  },
+  {
     url: "https://www.htmhell.dev/tips/the-document-outline/?ref=lambrospetrou_com-read_watch_listen",
     title: "Issue #6 - the document outline",
     author: "Manuel Matuzović",
