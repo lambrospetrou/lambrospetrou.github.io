@@ -94,7 +94,7 @@ function WhiskyNights({}) {
         <WhiskyImage url="/s/images/whisky/whisky_night_12.jpeg" title="Deanston 18 - Highland Single Malt Scotch Whisky" />
       </WhiskyNight>
       <WhiskyNight title="Whisky Night #13">
-        <WhiskyImage url="/s/images/whisky/whisky_night_13.jpeg" title="Smokehead Rum Cask Rebel (left), Smokehead Unfiltered (middle), Smokehead High Voltage (right) - Islay Single Malt Scotch Whisky" />
+        <WhiskyImage url="/s/images/whisky/whisky_night_13.jpg" title="Smokehead Rum Cask Rebel (left), Smokehead Unfiltered (middle), Smokehead High Voltage (right) - Islay Single Malt Scotch Whisky" />
       </WhiskyNight>
     </article>
   )
