@@ -9,6 +9,13 @@
 // };
 const DataList = [
   {
+    url: "https://longform.asmartbear.com/icp-ideal-customer-persona?ref=lambrospetrou_com-read_watch_listen",
+    title: "Selling to Carol: Why targeting an ICP brings 10x more customers than you expected",
+    author: "Jason Cohen",
+    dateListed: "2024-01-11T12:00:00.000Z",
+    tags: ["favourite"],
+  },
+  {
     url: "https://patticus.com/2023/12/16/competitive-research-playbook/?ref=lambrospetrou_com-read_watch_listen",
     title: "Competitor Research and Strategy",
     author: "Patrick Campbell",
