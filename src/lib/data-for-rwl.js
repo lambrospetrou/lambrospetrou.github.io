@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://aaronparecki.com/oauth-2-simplified/?ref=lambrospetrou_com-read_watch_listen",
+    title: "OAuth 2 Simplified",
+    author: "Aaron Parecki",
+    dateListed: "2024-01-24T16:00:00.000Z",
+  },
+  {
     url: "https://longform.asmartbear.com/icp-ideal-customer-persona?ref=lambrospetrou_com-read_watch_listen",
     title: "Selling to Carol: Why targeting an ICP brings 10x more customers than you expected",
     author: "Jason Cohen",
