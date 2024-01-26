@@ -96,6 +96,9 @@ function WhiskyNights({}) {
       <WhiskyNight title="Whisky Night #13">
         <WhiskyImage url="/s/images/whisky/whisky_night_13.jpg" title="Smokehead Rum Cask Rebel (left), Smokehead Unfiltered (middle), Smokehead High Voltage (right) - Islay Single Malt Scotch Whisky" />
       </WhiskyNight>
+      <WhiskyNight title="Whisky Night #14">
+        <WhiskyImage url="/s/images/whisky/whisky_night_14.jpg" title="Belmont Farm Virginia (left) - Straight Bourbon Whiskey, Machrie Moor (middle) - Single Malt Scotch Whisky, Kavalan Distillery Select #1 (right) - Single Malt Whisky" />
+      </WhiskyNight>
     </article>
   )
 }
