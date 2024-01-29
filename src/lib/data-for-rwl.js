@@ -9,6 +9,24 @@
 // };
 const DataList = [
   {
+    url: "https://longform.asmartbear.com/extreme-questions/?ref=lambrospetrou_com-read_watch_listen",
+    title: "Extreme brainstorming questions to trigger new, better ideas",
+    author: "Jason Cohen",
+    dateListed: "2024-01-29T11:20:00.000Z",
+  },
+  {
+    url: "https://brooker.co.za/blog/2024/01/18/scalability.html?ref=lambrospetrou_com-read_watch_listen",
+    title: "What is Scalability Anyway?",
+    author: "Marc Brooker",
+    dateListed: "2024-01-29T11:05:00.000Z",
+  },
+  {
+    url: "https://longform.asmartbear.com/one-benefit?ref=lambrospetrou_com-read_watch_listen",
+    title: "Pick one and own it - What if your company could have only one single advantage over the competition? This exercise will make your positioning and strategy stronger.",
+    author: "Jason Cohen",
+    dateListed: "2024-01-29T11:00:00.000Z",
+  },
+  {
     url: "https://aaronparecki.com/oauth-2-simplified/?ref=lambrospetrou_com-read_watch_listen",
     title: "OAuth 2 Simplified",
     author: "Aaron Parecki",
