@@ -9,6 +9,24 @@
 // };
 const DataList = [
   {
+    url: "https://aws.amazon.com/blogs/database/part-2-scaling-dynamodb-how-partitions-hot-keys-and-split-for-heat-impact-performance/?ref=lambrospetrou_com-read_watch_listen",
+    title: "Scaling DynamoDB: How partitions, hot keys, and split for heat impact performance (Part 2: Querying)",
+    author: "Jason Hunter, Vivek Natarajan",
+    dateListed: "2024-02-05T12:30:00.000Z",
+  },
+  {
+    url: "https://www.moderntreasury.com/journal/accounting-for-developers-part-i?ref=lambrospetrou_com-read_watch_listen",
+    title: "Accounting For Developers, Part I",
+    author: "Lucas Rocha",
+    dateListed: "2024-02-05T12:20:00.000Z",
+  },
+  {
+    url: "https://asteriskmag.com/issues/05/why-you-ve-never-been-in-a-plane-crash?ref=lambrospetrou_com-read_watch_listen",
+    title: "Why You’ve Never Been In A Plane Crash",
+    author: "Kyra Dempsey",
+    dateListed: "2024-02-05T12:15:00.000Z",
+  },
+  {
     url: "https://longform.asmartbear.com/extreme-questions/?ref=lambrospetrou_com-read_watch_listen",
     title: "Extreme brainstorming questions to trigger new, better ideas",
     author: "Jason Cohen",
