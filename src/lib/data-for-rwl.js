@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://piccalil.li/blog/a-more-modern-css-reset/?ref=lambrospetrou_com-read_watch_listen",
+    title: "A (more) Modern CSS Reset",
+    author: "Andy Bell",
+    dateListed: "2024-02-09T11:45:00.000Z",
+  },
+  {
     url: "https://aws.amazon.com/blogs/database/part-2-scaling-dynamodb-how-partitions-hot-keys-and-split-for-heat-impact-performance/?ref=lambrospetrou_com-read_watch_listen",
     title: "Scaling DynamoDB: How partitions, hot keys, and split for heat impact performance (Part 2: Querying)",
     author: "Jason Hunter, Vivek Natarajan",
