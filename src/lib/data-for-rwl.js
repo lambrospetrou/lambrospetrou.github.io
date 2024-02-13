@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://grafana.com/blog/2024/02/09/how-i-write-http-services-in-go-after-13-years/?ref=lambrospetrou_com-read_watch_listen",
+    title: "How I write HTTP services in Go after 13 years",
+    author: "Mat Ryer",
+    dateListed: "2024-02-13T15:15:00.000Z",
+  },
+  {
     url: "https://piccalil.li/blog/a-more-modern-css-reset/?ref=lambrospetrou_com-read_watch_listen",
     title: "A (more) Modern CSS Reset",
     author: "Andy Bell",
