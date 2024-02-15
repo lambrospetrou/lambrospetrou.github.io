@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://www.joshwcomeau.com/css/center-a-div/?from=lambrospetrou_com-read_watch_listen",
+    title: "How To Center a Div — The Ultimate Guide to Centering in CSS",
+    author: "Josh W. Comeau",
+    dateListed: "2024-02-15T12:00:00.000Z",
+  },
+  {
     url: "https://grafana.com/blog/2024/02/09/how-i-write-http-services-in-go-after-13-years/?ref=lambrospetrou_com-read_watch_listen",
     title: "How I write HTTP services in Go after 13 years",
     author: "Mat Ryer",
