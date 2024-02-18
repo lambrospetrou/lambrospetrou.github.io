@@ -3,6 +3,16 @@ title: "Skybear.net Scripts private user accounts - Changelog 2024-02-18"
 description: "Skybear.NET Scripts platform changelog for February 2024."
 ---
 
+**Table of contents**
+
+- [Rebranding to skybear.net](#rebranding-to-skybearnet)
+- [User accounts](#user-accounts)
+- [Script management](#script-management)
+- [Coming very soon](#coming-very-soon)
+- [Conclusion and feedback](#conclusion-and-feedback)
+
+--------
+
 [Skybear.net Scripts](https://www.skybear.net) is a managed platform to execute [Hurl.dev scripts](https://hurl.dev/).
 I like to describe Hurl scripts as simple workflows that orchestrate a sequence of HTTP requests, while doing response assertions and transformations.
 
