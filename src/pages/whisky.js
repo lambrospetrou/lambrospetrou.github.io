@@ -99,6 +99,9 @@ function WhiskyNights({}) {
       <WhiskyNight title="Whisky Night #14">
         <WhiskyImage url="/s/images/whisky/whisky_night_14.jpg" title="Belmont Farm Virginia (left) - Straight Bourbon Whiskey, Machrie Moor (middle) - Single Malt Scotch Whisky, Kavalan Distillery Select #1 (right) - Single Malt Whisky" />
       </WhiskyNight>
+      <WhiskyNight title="Whisky Night #15">
+        <WhiskyImage url="/s/images/whisky/whisky_night_15.jpg" title="Machrie Moor (left 1st), Smoke Wagon Uncut Unfiltered (left 2nd), Peaty Peninsula (left 3rd), Kavalan Solist (left 4th), Glendronach Revival 15y (left 5th), Glendronach Hand-filled (left 6th), Bunnahabhain The Coterie Exclusive (left 7th)" />
+      </WhiskyNight>
     </article>
   )
 }
