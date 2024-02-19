@@ -109,7 +109,8 @@ const Header = ({}) => {
             <a href="/articles" title="All Articles by Lambros Petrou">Articles</a>
             <a href="/read-watch-listen/" title="My Read-Watch-Listen list">Read-Watch-Listen</a>
             <a href="/cv/" title="Lambros Petrou Resume - CV" rel="noopener" target="_blank">CV</a>
-            <a href="https://temp.minibri.com" title="Minibri Temp - Share content with expiration" rel="noopener" target="_blank">Minibri Temp</a>
+            <a href="https://www.skybear.net" title="Skybear.net Scripts" rel="noopener" target="_blank">Skybear.net Scripts</a>
+            {/* <a href="https://temp.minibri.com" title="Minibri Temp - Share content with expiration" rel="noopener" target="_blank">Minibri Temp</a> */}
             <a className="cta-hire" href="/consulting/" >Consulting</a>
             {/* <a href="/feed/rss.xml" title="Subscribe to my RSS Feed" target="_blank" rel="noopener">RSS Feed</a> */}
           </div>
