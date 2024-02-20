@@ -9,6 +9,18 @@
 // };
 const DataList = [
   {
+    url: "https://stephango.com/file-over-app?from=lambrospetrou_com-read_watch_listen",
+    title: "File over app",
+    author: "Steph Ango",
+    dateListed: "2024-02-20T11:25:00.000Z",
+  },
+  {
+    url: "https://philipptanlak.com/web-frontends-in-go/?from=lambrospetrou_com-read_watch_listen",
+    title: "How I build web frontends in Go",
+    author: "Philipp Tanlak",
+    dateListed: "2024-02-20T11:10:00.000Z",
+  },
+  {
     url: "https://kerkour.com/sqlite-for-servers?from=lambrospetrou_com-read_watch_listen",
     title: "Optimizing SQLite for servers",
     author: "Sylvain Kerkour",
