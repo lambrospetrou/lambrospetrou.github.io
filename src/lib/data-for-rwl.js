@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://100go.co/98-profiling-execution-tracing/?from=lambrospetrou_com-read_watch_listen",
+    title: "100 Go Mistakes and How to Avoid Them - Not using Go diagnostics tooling - Profiling and Execution Tracing in Go",
+    author: "Steph Ango",
+    dateListed: "2024-02-20T11:25:00.000Z",
+  },
+  {
     url: "https://stephango.com/file-over-app?from=lambrospetrou_com-read_watch_listen",
     title: "File over app",
     author: "Steph Ango",
