@@ -9,6 +9,18 @@
 // };
 const DataList = [
   {
+    url: "https://longform.asmartbear.com/startup-beats-incumbent?from=lambrospetrou_com-read_watch_listen",
+    title: "How startups beat incumbents",
+    author: "Jason Cohen",
+    dateListed: "2024-02-25T16:35:00.000Z",
+  },
+  {
+    url: "https://blog.kowalczyk.info/article/wOYk/advanced-command-execution-in-go-with-osexec.html?from=lambrospetrou_com-read_watch_listen",
+    title: "Advanced command execution in Go with os/exec",
+    author: "Krzysztof Kowalczyk",
+    dateListed: "2024-02-25T16:25:00.000Z",
+  },
+  {
     url: "https://100go.co/98-profiling-execution-tracing/?from=lambrospetrou_com-read_watch_listen",
     title: "100 Go Mistakes and How to Avoid Them - Not using Go diagnostics tooling - Profiling and Execution Tracing in Go",
     author: "Steph Ango",
