@@ -9,6 +9,13 @@
 // };
 const DataList = [
   {
+    url: "https://pmarchive.com/guide_to_career_planning_part0.html?from=lambrospetrou_com-read_watch_listen",
+    title: "Part 0: Pmarca Guide to Career Planning: Introduction",
+    author: "Marc Andreessen",
+    dateListed: "2024-02-26T13:15:00.000Z",
+    tags: ["favourite"],
+  },
+  {
     url: "https://longform.asmartbear.com/startup-beats-incumbent?from=lambrospetrou_com-read_watch_listen",
     title: "How startups beat incumbents",
     author: "Jason Cohen",
