@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://artem.krylysov.com/blog/2023/04/19/how-rocksdb-works/?from=lambrospetrou_com-read_watch_listen",
+    title: "How RocksDB works",
+    author: "Artem Krylysov",
+    dateListed: "2024-02-29T13:10:00.000Z",
+  },
+  {
     url: "https://blog.acolyer.org/2015/06/05/scalability-but-at-what-cost/?from=lambrospetrou_com-read_watch_listen",
     title: "Scalability! But at what COST?",
     author: "Adrian Colyer",
