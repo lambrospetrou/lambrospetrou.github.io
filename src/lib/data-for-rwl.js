@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://blog.acolyer.org/2015/06/05/scalability-but-at-what-cost/?from=lambrospetrou_com-read_watch_listen",
+    title: "Scalability! But at what COST?",
+    author: "Adrian Colyer",
+    dateListed: "2024-02-29T12:30:00.000Z",
+  },
+  {
     url: "https://pmarchive.com/guide_to_career_planning_part0.html?from=lambrospetrou_com-read_watch_listen",
     title: "Part 0: Pmarca Guide to Career Planning: Introduction",
     author: "Marc Andreessen",
