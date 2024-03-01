@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://tonsky.me/blog/monitors/?from=lambrospetrou_com-read_watch_listen",
+    title: "Time to upgrade your monitor",
+    author: "Nikita Prokopov",
+    dateListed: "2024-03-01T10:43:00.000Z",
+  },
+  {
     url: "https://artem.krylysov.com/blog/2023/04/19/how-rocksdb-works/?from=lambrospetrou_com-read_watch_listen",
     title: "How RocksDB works",
     author: "Artem Krylysov",
