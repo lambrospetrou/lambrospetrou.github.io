@@ -9,6 +9,19 @@
 // };
 const DataList = [
   {
+    url: "https://brooker.co.za/blog/2024/02/06/time.html?from=lambrospetrou_com-read_watch_listen",
+    title: "How Do You Spend Your Time? - Career advice, or something like it.",
+    author: "Marc Brooker",
+    dateListed: "2024-03-06T10:15:00.000Z",
+    tags: ["favourite"],
+  },
+  {
+    url: "https://brooker.co.za/blog/2024/03/04/mousetrap.html?from=lambrospetrou_com-read_watch_listen",
+    title: "The Builder’s Guide to Better Mousetraps - A little rubric for making a tough decision.",
+    author: "Marc Brooker",
+    dateListed: "2024-03-06T10:10:00.000Z",
+  },
+  {
     url: "https://tonsky.me/blog/monitors/?from=lambrospetrou_com-read_watch_listen",
     title: "Time to upgrade your monitor",
     author: "Nikita Prokopov",
