@@ -410,12 +410,15 @@ What I recommend, and what I personally do is the following:
 - [Understanding Distributed Systems, Second Edition: What every developer should know about large distributed applications](https://www.amazon.co.uk/gp/product/1838430210)
     - I love this book. It does NOT go deep into the topics discussed, but it gives you a very broad coverage of many aspects around distributed systems.
     - This can be a great starting book that will expose you to the many topics you should be aware when designing systems, and then get other resources to go deeper in the topics you feel you have a gap.
-- [The System Design Primer](https://github.com/donnemartin/system-design-primer)
-    - Has a lot of information, examples of questions, and links to lots of other content to help with the system design interview.
+- Watch the [Distributed Systems lecture series](https://www.youtube.com/playlist?list=PLeKd45zvjcDFUEv_ohr_HdUFe97RItdiB) by Martin Kleppmann.
+    - Amazing video playlist by the author of "Designing Data-Intensive Applications (DDIA)".
+    - This series covers core distributed systems algorithms (e.g. consensus) and system models with crystal clear explanations.
 - [Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems](https://www.amazon.co.uk/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/B08VKMNDBN/)
     - At this point, this is the bible of distributed systems.
     - This book is not for beginners, or for spending a few days to quickly go over topics. This is an in-depth technical book, focused on the data aspects of applications and database concepts in general.
     - I recommend you leave this last, unless it's really matching the role you are interviewing for. But, you should definitely read it if you have the time.
+- [The System Design Primer](https://github.com/donnemartin/system-design-primer)
+    - Has a lot of information, examples of questions, and links to lots of other content to help with the system design interview.
 - After you have read the above (or even during), it's time to practice more. Just pick any product you use on a daily basis, pick a specific subset of its functionality, and start brainstorming how you would design it.
     - Doing this a few times will help you develop intuition in common solutions and techniques as most system designs have similar components.
     - Try to first think a solution on your own before googling to find out information about the actual implementation.
@@ -428,8 +431,6 @@ The above material should be more than enough to prepare for the System Design i
 - Articles by Marc Brooker: https://brooker.co.za/blog/
 - The morning paper: https://blog.acolyer.org/
 - The [Preparing for the Systems Design and Coding Interview](https://blog.pragmaticengineer.com/preparing-for-the-systems-design-and-coding-interviews/) article by Gergely Orosz has a lot of references on books, courses, and material to study.
-- Distributed Systems lecture series: https://www.youtube.com/playlist?list=PLeKd45zvjcDFUEv_ohr_HdUFe97RItdiB
-    - Amazing video playlist by the author of Designing Data-Intensive Applications (DDIA).
 - Free online course: https://www.hiredintech.com/classrooms/system-design/
 - Preparation links and resources for system design questions: https://github.com/shashank88/system_design
 - System design interview for IT companies: https://github.com/checkcheckzz/system-design-interview
