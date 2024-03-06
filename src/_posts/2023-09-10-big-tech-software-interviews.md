@@ -411,8 +411,8 @@ What I recommend, and what I personally do is the following:
     - I love this book. It does NOT go deep into the topics discussed, but it gives you a very broad coverage of many aspects around distributed systems.
     - This can be a great starting book that will expose you to the many topics you should be aware when designing systems, and then get other resources to go deeper in the topics you feel you have a gap.
 - Watch the [Distributed Systems lecture series](https://www.youtube.com/playlist?list=PLeKd45zvjcDFUEv_ohr_HdUFe97RItdiB) by Martin Kleppmann.
-    - Amazing video playlist by the author of "Designing Data-Intensive Applications (DDIA)".
-    - This series covers core distributed systems algorithms (e.g. consensus) and system models with crystal clear explanations.
+    - Amazing playlist by the author of "Designing Data-Intensive Applications" (DDIA).
+    - This series covers core distributed systems concepts (e.g. logical clocks, consensus, replication, quorums) with crystal clear explanations.
 - [Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems](https://www.amazon.co.uk/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/B08VKMNDBN/)
     - At this point, this is the bible of distributed systems.
     - This book is not for beginners, or for spending a few days to quickly go over topics. This is an in-depth technical book, focused on the data aspects of applications and database concepts in general.
