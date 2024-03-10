@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://mkorostoff.github.io/1-pixel-wealth/?from=lambrospetrou_com-read_watch_listen",
+    title: "Wealth shown to scale",
+    author: "Matt Korostoff",
+    dateListed: "2024-03-10T09:10:00.000Z",
+  },
+  {
     url: "https://brooker.co.za/blog/2024/02/06/time.html?from=lambrospetrou_com-read_watch_listen",
     title: "How Do You Spend Your Time? - Career advice, or something like it.",
     author: "Marc Brooker",
