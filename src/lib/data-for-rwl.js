@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://rauno.me/craft/interaction-design?from=lambrospetrou_com-read_watch_listen",
+    title: "Invisible Details of Interaction Design",
+    author: "Rauno Freiberg",
+    dateListed: "2024-03-17T17:50:00.000Z",
+  },
+  {
     url: "https://longform.asmartbear.com/perseverance?from=lambrospetrou_com-read_watch_listen",
     title: "Stubborn Visionaries & Pigheaded Fools",
     author: "Jason Cohen",
