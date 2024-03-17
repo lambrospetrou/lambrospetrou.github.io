@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://longform.asmartbear.com/perseverance?from=lambrospetrou_com-read_watch_listen",
+    title: "Stubborn Visionaries & Pigheaded Fools",
+    author: "Jason Cohen",
+    dateListed: "2024-03-17T11:50:00.000Z",
+  },
+  {
     url: "https://sockpuppet.org/blog/2015/03/06/the-hiring-post/?from=lambrospetrou_com-read_watch_listen",
     title: "The Hiring Post",
     author: "Thomas H. Ptacek",
