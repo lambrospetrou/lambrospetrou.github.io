@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://sockpuppet.org/blog/2015/03/06/the-hiring-post/?from=lambrospetrou_com-read_watch_listen",
+    title: "The Hiring Post",
+    author: "Thomas H. Ptacek",
+    dateListed: "2024-03-17T11:30:00.000Z",
+  },
+  {
     url: "https://mkorostoff.github.io/1-pixel-wealth/?from=lambrospetrou_com-read_watch_listen",
     title: "Wealth shown to scale",
     author: "Matt Korostoff",
