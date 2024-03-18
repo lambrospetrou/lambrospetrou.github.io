@@ -305,6 +305,7 @@ The non-functional requirements almost always revolve around the following dimen
 - Cost (efficiency of the design)
 
 It might be necessary, and almost always suggested, to do some back of the napkin math to estimate number of requests per second, storage needed, and other numbers throughout the session.
+
 For latency-related estimations, use the handy comparison table in "[Latency Numbers Every Programmer Should Know](https://gist.github.com/jboner/2841832)", and during your calculations use rounded numbers to simplify.
 
 #### 2. Provide a high-level end-to-end design
