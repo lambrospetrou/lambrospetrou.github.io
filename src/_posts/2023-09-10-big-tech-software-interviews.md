@@ -304,9 +304,12 @@ The non-functional requirements almost always revolve around the following dimen
 - Latency and consistency (eventual vs synchronous consistency, asynchronous vs synchronous operations)
 - Cost (efficiency of the design)
 
+It might be necessary, and almost always suggested, to do some back of the napkin math to estimate number of requests per second, storage needed, and other numbers throughout the session.
+For latency-related estimations, use the handy comparison table in "[Latency Numbers Every Programmer Should Know](https://gist.github.com/jboner/2841832)", and during your calculations use rounded numbers to simplify.
+
 #### 2. Provide a high-level end-to-end design
 
-Once you know what the system should do, next step is to put some high-level design down.
+Once you know what the system should do, for the following 5-10 minutes, the goal is to put some high-level design down.
 
 This is important, and I have seen many candidates skip this step, and failing the interview in the end because they ran out of time without having an end-to-end system in-place due to spending too much time in a few components.
 
@@ -318,13 +321,13 @@ For example, for the YouTube scenario, assuming we only need an upload video and
 
 ![High level architecture](/articles-data/2023-09-10-big-tech-software-interviews/post-high-level-min.png)
 
-You should not spend more than 5 minutes in this step.
+You should not spend more than 10 minutes in this step.
 
 The goal is not to cover every nitty gritty detail of the system, but to show that you understood the problem, you know the main components of the system, and the flow of data from input to output is clear.
 
 #### 3. Flesh out details for each component
 
-This step should take roughly 1/3 of the interview duration.
+This step should take roughly 1/3 of the interview duration, 20-25 minutes.
 
 You now have to take each component of the high-level design and go one step deeper, fleshing out enough technical details, such that if someone took your diagram and notes after this step they would have a good idea how to start implementing your system.
 
@@ -371,7 +374,7 @@ Important aspects to flesh out:
 
 At this point, the system should be well-defined with enough detail, and all the components are fleshed out.
 
-Now is the time to start discussing about constraints of the system, its limitations, and single points of failure.
+For the next 5-10 minutes, you should start discussing about constraints of the system, its limitations, and single points of failure.
 
 Examples:
 - If you use a cache what happens if it crashes?
