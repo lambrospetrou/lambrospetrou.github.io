@@ -328,7 +328,7 @@ The goal is not to cover every nitty gritty detail of the system, but to show th
 
 #### 3. Flesh out details for each component
 
-This step should take roughly 1/3 of the interview duration, 20-25 minutes.
+This step should take roughly 1/3-1/2 of the interview duration, 20-25 minutes.
 
 You now have to take each component of the high-level design and go one step deeper, fleshing out enough technical details, such that if someone took your diagram and notes after this step they would have a good idea how to start implementing your system.
 
