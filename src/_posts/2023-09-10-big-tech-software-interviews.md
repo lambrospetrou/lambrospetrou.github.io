@@ -396,6 +396,28 @@ Focus on some of the aspects you brought up in the previous section and explain 
 
 If they say yes, then focus on that component and open up the discussion to them at this point, making it a dialogue.
 
+#### Guidelines
+
+The following table provides a summary of how you should approach the system design interview, based on the previous sections.
+
+You can of course deviate depending on the company-specific details, but you should still apply the same structured thinking, methodical end-to-end designing, and deep dives into key components to showcase your technical depth.
+
+<br/>
+
+| <span style="white-space:nowrap;">Time spent</span> | Notes |
+| ---------- | --------------------- |
+| <span style="white-space:nowrap;">5-10 minutes</span> | Explore the problem and ask questions. Focus on business requirements (functional) and technical requirements (non-functional). |
+| <span style="white-space:nowrap;">5 minutes</span> | Provide a high-level end-to-end design. The flow of data and actions should be clear end-to-end without too many technical details. |
+| <span style="white-space:nowrap;">25 minutes</span> | Flesh out all technical details for all the components. Start from the input of the system, all the way to the outputs. If someone took your diagram and notes after this step they would have a good idea how to start implementing your system. |
+| <span style="white-space:nowrap;">5-10 minutes</span> |  Discuss about constraints, limitations, crash recovery and fault-tolerance, special considerations depending on the problem. |
+| <span style="white-space:nowrap;">5-10 minutes</span> | Deep dive into specific components if there is enough time. This section can be skipped if the previous one justifies taking more time. |
+
+Overall, keep in mind you will be evaluated for the following criteria:
+- Problem exploration and navigating ambiguity.
+- Understanding requirements and providing a high-level solution.
+- Showcase technical depth and broad knowledge. How well do you know the technologies you choose and how well do you justify using them.
+- Ability to communicate clearly when describing technical solutions.
+
 ### System Design - preparation before the interview
 
 Preparing for the system design interview doesn't have a single approach.
