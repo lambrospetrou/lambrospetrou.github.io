@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://longform.asmartbear.com/predict-the-future/?from=lambrospetrou_com-read_watch_listen",
+    title: "Navigating the unpredictability of everything",
+    author: "Jason Cohen",
+    dateListed: "2024-03-23T11:20:00.000Z",
+  },
+  {
     url: "https://rauno.me/craft/interaction-design?from=lambrospetrou_com-read_watch_listen",
     title: "Invisible Details of Interaction Design",
     author: "Rauno Freiberg",
