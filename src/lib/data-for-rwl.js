@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://r2p.dev/b/2024-03-18-1brc-go/?from=lambrospetrou_com-read_watch_listen",
+    title: "One Billion Row Challenge in Golang - From 95s to 1.96s",
+    author: "Renato Pereira",
+    dateListed: "2024-03-23T11:50:00.000Z",
+  },
+  {
     url: "https://longform.asmartbear.com/predict-the-future/?from=lambrospetrou_com-read_watch_listen",
     title: "Navigating the unpredictability of everything",
     author: "Jason Cohen",
