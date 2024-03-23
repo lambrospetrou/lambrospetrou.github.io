@@ -272,6 +272,12 @@ a:link {
     text-underline-offset: 5px;
 }
 
+h2 a, h2 a:link, h3 a, h3 a:link, h4 a, h4 a:link, h5 a, h5 a:link, h6 a, h6 a:link {
+    color: black;
+    text-decoration-style: none;
+    text-decoration-line: none;
+}
+
 a:hover,
 a:active,
 a:focus {
