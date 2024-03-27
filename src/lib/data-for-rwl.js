@@ -9,9 +9,16 @@
 // };
 const DataList = [
   {
+    url: "https://www.youtube.com/watch?v=ljqra3BcqWM?from=lambrospetrou_com-read_watch_listen",
+    title: "Extreme Ownership | Jocko Willink | TEDxUniversityofNevada",
+    author: "Jocko Willink",
+    dateListed: "2024-03-27T11:15:00.000Z",
+    type: "video",
+  },
+  {
     url: "https://signalvnoise.com/posts/1430-hire-managers-of-one?from=lambrospetrou_com-read_watch_listen",
     title: "Hire managers of one",
-    author: "Basecamp ",
+    author: "Basecamp",
     dateListed: "2024-03-27T11:05:00.000Z",
   },
   {
