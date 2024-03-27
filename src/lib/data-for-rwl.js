@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://signalvnoise.com/posts/1430-hire-managers-of-one?from=lambrospetrou_com-read_watch_listen",
+    title: "Hire managers of one",
+    author: "Basecamp ",
+    dateListed: "2024-03-27T11:05:00.000Z",
+  },
+  {
     url: "https://r2p.dev/b/2024-03-18-1brc-go/?from=lambrospetrou_com-read_watch_listen",
     title: "One Billion Row Challenge in Golang - From 95s to 1.96s",
     author: "Renato Pereira",
