@@ -9,6 +9,14 @@
 // };
 const DataList = [
   {
+    url: "https://www.youtube.com/watch?v=zTLaswJ_t_w?from=lambrospetrou_com-read_watch_listen",
+    title: "Naked Business: How Honesty Makes You More Money – Jason Cohen – MicroConf 2012",
+    author: "Jason Cohen",
+    dateListed: "2024-04-08T11:00:00.000Z",
+    type: "video",
+    tags: ["favourite"],
+  },
+  {
     url: "https://www.youtube.com/watch?v=ljqra3BcqWM?from=lambrospetrou_com-read_watch_listen",
     title: "Extreme Ownership | Jocko Willink | TEDxUniversityofNevada",
     author: "Jocko Willink",
