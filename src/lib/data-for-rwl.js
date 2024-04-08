@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://aaronfrancis.com/2024/try-hard?from=lambrospetrou_com-read_watch_listen",
+    title: "What if you tried hard?",
+    author: "Aaron Francis",
+    dateListed: "2024-04-08T21:10:00.000Z",
+  },
+  {
     url: "https://www.youtube.com/watch?v=zTLaswJ_t_w?from=lambrospetrou_com-read_watch_listen",
     title: "Naked Business: How Honesty Makes You More Money – Jason Cohen – MicroConf 2012",
     author: "Jason Cohen",
