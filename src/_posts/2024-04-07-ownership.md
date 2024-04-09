@@ -33,7 +33,7 @@ Having ownership and being a manager of one is very closely related to "high age
 
 > High Agency is about finding a way to get what you want, without waiting for conditions to be perfect or otherwise blaming the circumstances.
 
-All the above, except one, are definitions given by people for ownership, high agency, and being a manager of one.
+All the above, except one (😉), are definitions given by people for ownership, high agency, and being a manager of one.
 There are many other terms referring to the same thing.
 
 Some companies like Amazon put this in their [leadership principles and company values](https://www.amazon.jobs/content/en/our-workplace/leadership-principles#:~:text=obsess%20over%20customers.-,Ownership,-Leaders%20are%20owners).
