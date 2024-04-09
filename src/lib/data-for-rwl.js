@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://shayy.org/posts/cache-control/?from=lambrospetrou_com-read_watch_listen",
+    title: "Cache-Control: Cheat Sheet",
+    author: "Shayan Taslim",
+    dateListed: "2024-04-09T12:10:00.000Z",
+  },
+  {
     url: "https://aaronfrancis.com/2024/try-hard?from=lambrospetrou_com-read_watch_listen",
     title: "What if you tried hard?",
     author: "Aaron Francis",
