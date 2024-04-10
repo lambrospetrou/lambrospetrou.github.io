@@ -9,6 +9,19 @@
 // };
 const DataList = [
   {
+    url: "https://jxnl.github.io/blog/writing/2024/06/01/advice-to-young-people/?from=lambrospetrou_com-read_watch_listen",
+    title: "Advice to Young People, The Lies I Tell Myself",
+    author: "Jason Liu",
+    dateListed: "2024-04-10T12:30:00.000Z",
+    tags: ["favourite"],
+  },
+  {
+    url: "https://jxnl.co/writing/2024/01/08/learning/?from=lambrospetrou_com-read_watch_listen",
+    title: "Learning to Learn",
+    author: "Jason Liu",
+    dateListed: "2024-04-10T12:25:00.000Z",
+  },
+  {
     url: "https://shayy.org/posts/cache-control/?from=lambrospetrou_com-read_watch_listen",
     title: "Cache-Control: Cheat Sheet",
     author: "Shayan Taslim",
