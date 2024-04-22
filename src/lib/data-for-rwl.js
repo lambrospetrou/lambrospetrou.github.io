@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://evaparish.com/blog/how-i-edit?from=lambrospetrou_com-read_watch_listen",
+    title: "What I think about when I edit",
+    author: "Eva Parish",
+    dateListed: "2024-04-22T12:30:00.000Z",
+  },
+  {
     url: "https://jxnl.github.io/blog/writing/2024/06/01/advice-to-young-people/?from=lambrospetrou_com-read_watch_listen",
     title: "Advice to Young People, The Lies I Tell Myself",
     author: "Jason Liu",
