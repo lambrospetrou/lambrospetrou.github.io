@@ -9,6 +9,13 @@
 // };
 const DataList = [
   {
+    url: "https://worrydream.com/LearnableProgramming/?from=lambrospetrou_com-read_watch_listen",
+    title: "Learnable Programming - Designing a programming system for understanding programs",
+    author: "Bret Victor",
+    dateListed: "2024-04-23T14:00:00.000Z",
+    tags: ["favourite"],
+  },
+  {
     url: "https://evaparish.com/blog/how-i-edit?from=lambrospetrou_com-read_watch_listen",
     title: "What I think about when I edit",
     author: "Eva Parish",
