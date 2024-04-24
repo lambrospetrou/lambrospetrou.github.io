@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://en.algorithmica.org/hpc/?from=lambrospetrou_com-read_watch_listen",
+    title: "Algorithms for Modern Hardware",
+    author: "Sergey Slotin",
+    dateListed: "2024-04-24T14:00:00.000Z",
+  },
+  {
     url: "https://worrydream.com/LearnableProgramming/?from=lambrospetrou_com-read_watch_listen",
     title: "Learnable Programming - Designing a programming system for understanding programs",
     author: "Bret Victor",
