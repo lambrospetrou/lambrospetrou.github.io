@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://andymatuschak.org/books/?from=lambrospetrou_com-read_watch_listen",
+    title: "Why books donʼt work",
+    author: "Andy Matuschak",
+    dateListed: "2024-05-08T16:00:00.000Z",
+  },
+  {
     url: "https://en.algorithmica.org/hpc/?from=lambrospetrou_com-read_watch_listen",
     title: "Algorithms for Modern Hardware",
     author: "Sergey Slotin",
