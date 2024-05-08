@@ -9,6 +9,18 @@
 // };
 const DataList = [
   {
+    url: "https://lethain.com/profit-and-loss-statement/?from=lambrospetrou_com-read_watch_listen",
+    title: "Reading a Profit & Loss statement.",
+    author: "Will Larson",
+    dateListed: "2024-05-08T20:20:00.000Z",
+  },
+  {
+    url: "https://lethain.com/downturn-career-decisions/?from=lambrospetrou_com-read_watch_listen",
+    title: "Downturn career decisions.",
+    author: "Will Larson",
+    dateListed: "2024-05-08T20:10:00.000Z",
+  },
+  {
     url: "https://andymatuschak.org/books/?from=lambrospetrou_com-read_watch_listen",
     title: "Why books donʼt work",
     author: "Andy Matuschak",
