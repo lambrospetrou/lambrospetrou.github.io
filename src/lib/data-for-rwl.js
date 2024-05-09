@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://zed.dev/blog/zed-decoded-rope-sumtree?from=lambrospetrou_com-read_watch_listen",
+    title: "Zed Decoded: Rope & SumTree",
+    author: "Thorsten Ball, Nathan Sobo, Antonio Scandurra, Max Brunsfeld",
+    dateListed: "2024-05-09T15:00:00.000Z",
+  },
+  {
     url: "https://lethain.com/profit-and-loss-statement/?from=lambrospetrou_com-read_watch_listen",
     title: "Reading a Profit & Loss statement.",
     author: "Will Larson",
