@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://smudge.ai/blog/ratelimit-algorithms?from=lambrospetrou_com-read_watch_listen",
+    title: "Visualizing algorithms for rate limiting",
+    author: "smudge.ai",
+    dateListed: "2024-05-18T10:00:00.000Z",
+  },
+  {
     url: "https://zed.dev/blog/zed-decoded-rope-sumtree?from=lambrospetrou_com-read_watch_listen",
     title: "Zed Decoded: Rope & SumTree",
     author: "Thorsten Ball, Nathan Sobo, Antonio Scandurra, Max Brunsfeld",
