@@ -101,7 +101,7 @@ function SkybearCtaWidget() {
     <section className="home-section">
       <div>
         <h3>&#10148; <a href="https://www.skybear.net" title="Try skybear.net Scripts">Skybear.net Scripts</a></h3>
-        <p>Automate your HTTP website & API tests with Hurl scripts. An easy way to send and manipulate HTTP requests.</p>
+        <p>Automate your HTTP website & API tests with Hurl script workflows.</p>
         <HomeCtaWidgetAction />
       </div>
     </section>
