@@ -25,7 +25,7 @@ export default function HomeIndex({ posts }) {
 
       <HeroBanner />
 
-      <WidgetsSection widgets={[<BookInterviewSessionWidget />, <ConsultingSessionWidget />]} />
+      <WidgetsSection widgets={[<BookInterviewSessionWidget />, <SkybearCtaWidget />]} />
       <AristotleQuote />
       <WidgetsSection widgets={[<NewsletterWidget/>, <RWLWidget />]} />      
       <WritingSection posts={posts} />
@@ -96,16 +96,27 @@ function BookInterviewSessionWidget() {
   );
 }
 
-function ConsultingSessionWidget() {
+function SkybearCtaWidget() {
   return (
     <section className="home-section">
       <div>
-        <h3>&#10148; <a href="/consulting/?ref=homepage-consulting-cta" title="Book a consulting session">Expert Consulting</a></h3>
-        <p>If you want expert help in websites & APIs development, Cloud infrastructure, or CI/CD pipelines, get in touch!</p>
-        <ConsultingAction />
+        <h3>&#10148; <a href="https://www.skybear.net" title="Try skybear.net Scripts">Skybear.net Scripts</a></h3>
+        <p>Automate your HTTP website & API tests with Hurl scripts. An easy way to send and manipulate HTTP requests.</p>
+        <HomeCtaWidgetAction />
       </div>
     </section>
   );
+}
+
+export function HomeCtaWidgetAction() {
+  return <div className="consulting-cta-container">
+    <a className="cta-consult" href="https://www.skybear.net" title="Try skybear.net Scripts" target="_blank" rel="noopener noreferrer">
+      <span>
+        Try Skybear.net Scripts
+        <small>Simplify your HTTP testing.</small>
+      </span>
+    </a>
+  </div>
 }
 
 function WritingSection({posts}) {
