@@ -9,6 +9,18 @@
 // };
 const DataList = [
   {
+    url: "https://tomblomfield.com/post/750852175114174464/taking-risk?from=lambrospetrou_com-read_watch_listen",
+    title: "Taking Risk",
+    author: "Tom Bloomfield",
+    dateListed: "2024-05-21T09:30:00.000Z",
+  },
+  {
+    url: "https://world.hey.com/dhh/imperfections-create-connections-bc87d630?from=lambrospetrou_com-read_watch_listen",
+    title: "Taking Risk",
+    author: "David Heinemeier Hansson",
+    dateListed: "2024-05-21T09:20:00.000Z",
+  },
+  {
     url: "https://smudge.ai/blog/ratelimit-algorithms?from=lambrospetrou_com-read_watch_listen",
     title: "Visualizing algorithms for rate limiting",
     author: "smudge.ai",
