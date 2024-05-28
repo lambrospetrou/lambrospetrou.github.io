@@ -1,6 +1,7 @@
 ---
 title: "Skybear.net Scripts response bodies and cron triggers - Changelog 2024-05-28"
 description: "Skybear.NET Scripts platform changelog update for May 2024."
+og_image: "/articles-data/2024-05-28-skybearnet-scripts-changelog-2024-05-28/2024_05_28-skybearnet-response-outputs.png"
 ---
 
 **Table of contents**
