@@ -47,7 +47,7 @@ const DataList = [
   },
   {
     url: "https://world.hey.com/dhh/imperfections-create-connections-bc87d630?from=lambrospetrou_com-read_watch_listen",
-    title: "Taking Risk",
+    title: "Imperfections create connections",
     author: "David Heinemeier Hansson",
     dateListed: "2024-05-21T09:20:00.000Z",
   },
