@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://www.nikolasgoebel.com/2024/05/28/duckdb-doesnt-need-data.html?from=lambrospetrou_com-read_watch_listen",
+    title: "DuckDB Doesn’t Need Data To Be a Database",
+    author: "Nikolas Göbel",
+    dateListed: "2024-05-29T08:15:00.000Z",
+  },
+  {
     url: "https://tomblomfield.com/post/750852175114174464/taking-risk?from=lambrospetrou_com-read_watch_listen",
     title: "Taking Risk",
     author: "Tom Bloomfield",
