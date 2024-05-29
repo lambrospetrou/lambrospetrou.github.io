@@ -9,6 +9,13 @@
 // };
 const DataList = [
   {
+    url: "https://www.youtube.com/watch?v=9-S_nZ5gzGE?from=lambrospetrou_com-read_watch_listen",
+    title: "Pushing Java to the Limits: Processing a Billion Rows in under 2 Seconds by ROY VAN RIJN",
+    author: "Roy Van Rijn",
+    dateListed: "2024-05-29T09:00:00.000Z",
+    type: "video",
+  },
+  {
     url: "https://www.nikolasgoebel.com/2024/05/28/duckdb-doesnt-need-data.html?from=lambrospetrou_com-read_watch_listen",
     title: "DuckDB Doesn’t Need Data To Be a Database",
     author: "Nikolas Göbel",
