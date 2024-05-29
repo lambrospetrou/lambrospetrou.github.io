@@ -9,6 +9,24 @@
 // };
 const DataList = [
   {
+    url: "https://www.flightcontrol.dev/blog/ultimate-guide-to-multi-tenant-saas-data-modeling?from=lambrospetrou_com-read_watch_listen",
+    title: "Ultimate Guide to Multi-Tenant SaaS Data Modelling",
+    author: "Brandon Bayer",
+    dateListed: "2024-05-29T20:50:00.000Z",
+  },
+  {
+    url: "https://www.checklyhq.com/blog/building-a-multi-tenant-saas-data-model/?from=lambrospetrou_com-read_watch_listen",
+    title: "Building a multi-tenant SaaS data model",
+    author: "Tim Nolet",
+    dateListed: "2024-05-29T20:45:00.000Z",
+  },
+  {
+    url: "https://blog.bullettrain.co/teams-should-be-an-mvp-feature/?from=lambrospetrou_com-read_watch_listen",
+    title: "Teams should be an MVP feature!",
+    author: "Andrew Culver",
+    dateListed: "2024-05-29T20:40:00.000Z",
+  },
+  {
     url: "https://www.youtube.com/watch?v=9-S_nZ5gzGE?from=lambrospetrou_com-read_watch_listen",
     title: "Pushing Java to the Limits: Processing a Billion Rows in under 2 Seconds by ROY VAN RIJN",
     author: "Roy Van Rijn",
