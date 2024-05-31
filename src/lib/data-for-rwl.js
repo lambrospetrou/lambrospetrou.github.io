@@ -9,6 +9,13 @@
 // };
 const DataList = [
   {
+    url: "https://www.julian.com/guide/startup/landing-pages?from=lambrospetrou_com-read_watch_listen",
+    title: "Resource: Landing Pages - How do you write an enticing homepage?",
+    author: "Julian Shapiro",
+    dateListed: "2024-05-31T09:45:00.000Z",
+    tags: ["favourite"],
+  },
+  {
     url: "https://www.flightcontrol.dev/blog/ultimate-guide-to-multi-tenant-saas-data-modeling?from=lambrospetrou_com-read_watch_listen",
     title: "Ultimate Guide to Multi-Tenant SaaS Data Modelling",
     author: "Brandon Bayer",
