@@ -9,6 +9,18 @@
 // };
 const DataList = [
   {
+    url: "https://brandur.org/two-phase-render?from=lambrospetrou_com-read_watch_listen",
+    title: "Eradicating N+1s: The Two-phase Data Load and Render Pattern in Go",
+    author: "Brandur",
+    dateListed: "2024-06-05T18:00:00.000Z",
+  },
+  {
+    url: "https://brandur.org/fragments/go-no-common-nouns?from=lambrospetrou_com-read_watch_listen",
+    title: "Go: Don't name packages common nouns",
+    author: "Brandur",
+    dateListed: "2024-06-05T17:50:00.000Z",
+  },
+  {
     url: "https://www.julian.com/guide/startup/landing-pages?from=lambrospetrou_com-read_watch_listen",
     title: "Resource: Landing Pages - How do you write an enticing homepage?",
     author: "Julian Shapiro",
