@@ -102,6 +102,12 @@ function WhiskyNights({}) {
       <WhiskyNight title="Whisky Night #15">
         <WhiskyImage url="/s/images/whisky/whisky_night_15.jpg" title="Machrie Moor (left 1st), Smoke Wagon Uncut Unfiltered (left 2nd), Peaty Peninsula (left 3rd), Kavalan Solist (left 4th), Glendronach Revival 15y (left 5th), Glendronach Hand-filled (left 6th), Bunnahabhain The Coterie Exclusive (left 7th)" />
       </WhiskyNight>
+      <WhiskyNight title="Whisky Night #16">
+        <WhiskyImage url="/s/images/whisky/whisky_night_16.jpg" title="A.D. Rattray 8y (left) - Single Malt Scotch Whisky, Torabhaig - Cnoc Na Moine - The legacy series No.3 - Single Malt Scotch Whisky" />
+      </WhiskyNight>
+      <WhiskyNight title="Whisky Night #17">
+        <WhiskyImage url="/s/images/whisky/whisky_night_17.jpg" title="Auchentoshan 18y - Single Malt Scotch Whisky" />
+      </WhiskyNight>
     </article>
   )
 }
