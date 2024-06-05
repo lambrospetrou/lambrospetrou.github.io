@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://brandur.org/soft-deletion?from=lambrospetrou_com-read_watch_listen",
+    title: "Soft Deletion Probably Isn't Worth It",
+    author: "Brandur",
+    dateListed: "2024-06-05T18:10:00.000Z",
+  },
+  {
     url: "https://brandur.org/two-phase-render?from=lambrospetrou_com-read_watch_listen",
     title: "Eradicating N+1s: The Two-phase Data Load and Render Pattern in Go",
     author: "Brandur",
