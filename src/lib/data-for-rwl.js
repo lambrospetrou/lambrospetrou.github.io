@@ -9,6 +9,13 @@
 // };
 const DataList = [
   {
+    url: "https://www.joelonsoftware.com/2006/01/11/micro-isv-from-vision-to-reality-2/?from=lambrospetrou_com-read_watch_listen",
+    title: "Micro-ISV: From Vision to Reality",
+    author: "Joel Spolsky",
+    dateListed: "2024-06-08T12:00:00.000Z",
+    tags: ["favourite"],
+  },
+  {
     url: "https://brooker.co.za/blog/2024/06/04/scale.html?from=lambrospetrou_com-read_watch_listen",
     title: "Not Just Scale",
     author: "Marc Brooker",
