@@ -9,6 +9,13 @@
 // };
 const DataList = [
   {
+    url: "https://brooker.co.za/blog/2024/06/04/scale.html?from=lambrospetrou_com-read_watch_listen",
+    title: "Not Just Scale",
+    author: "Marc Brooker",
+    dateListed: "2024-06-08T10:30:00.000Z",
+    tags: ["favourite"],
+  },
+  {
     url: "https://brandur.org/soft-deletion?from=lambrospetrou_com-read_watch_listen",
     title: "Soft Deletion Probably Isn't Worth It",
     author: "Brandur",
