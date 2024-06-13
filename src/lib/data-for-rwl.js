@@ -9,6 +9,13 @@
 // };
 const DataList = [
   {
+    url: "https://medium.com/mycrypto/what-to-do-when-sim-swapping-happens-to-you-1367f296ef4d?from=lambrospetrou_com-read_watch_listen",
+    title: "The SIM Swapping Bible: What To Do When SIM-Swapping Happens To You",
+    author: "CipherBlade",
+    dateListed: "2024-06-13T10:25:00.000Z",
+    tags: ["favourite"],
+  },
+  {
     url: "https://www.joelonsoftware.com/2006/01/11/micro-isv-from-vision-to-reality-2/?from=lambrospetrou_com-read_watch_listen",
     title: "Micro-ISV: From Vision to Reality",
     author: "Joel Spolsky",
