@@ -9,6 +9,24 @@
 // };
 const DataList = [
   {
+    url: "https://stripe.com/gb/guides/atlas/starting-sales?from=lambrospetrou_com-read_watch_listen",
+    title: "Your first 10 customers — Scrappily start your sales process by identifying, approaching, and converting prospects into customers one at a time (for a start).",
+    author: "Patrick McKenzie",
+    dateListed: "2024-06-16T20:20:00.000Z",
+  },
+  {
+    url: "https://www.bannerbear.com/journey-to-10k-mrr/?from=lambrospetrou_com-read_watch_listen",
+    title: "A Bootstrapped SaaS Journey to $10K MRR",
+    author: "Jon Yongfook",
+    dateListed: "2024-06-16T20:15:00.000Z",
+  },
+  {
+    url: "https://onlineornot.com/how-to-get-your-first-ten-customers?from=lambrospetrou_com-read_watch_listen",
+    title: "How to get your first ten customers",
+    author: "Max Rozen",
+    dateListed: "2024-06-16T20:10:00.000Z",
+  },
+  {
     url: "https://medium.com/mycrypto/what-to-do-when-sim-swapping-happens-to-you-1367f296ef4d?from=lambrospetrou_com-read_watch_listen",
     title: "The SIM Swapping Bible: What To Do When SIM-Swapping Happens To You",
     author: "CipherBlade",
