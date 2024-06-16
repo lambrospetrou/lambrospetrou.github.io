@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://businessofsoftware.org/talks/gail-goodman-constant-contact-how-to-negotiate-the-long-slow-saas-ramp-of-death/?from=lambrospetrou_com-read_watch_listen",
+    title: "Gail Goodman: How to Negotiate the Long, Slow, SaaS Ramp of Death",
+    author: "Gail Goodman",
+    dateListed: "2024-06-16T20:35:00.000Z",
+  },
+  {
     url: "https://stripe.com/gb/guides/atlas/starting-sales?from=lambrospetrou_com-read_watch_listen",
     title: "Your first 10 customers — Scrappily start your sales process by identifying, approaching, and converting prospects into customers one at a time (for a start).",
     author: "Patrick McKenzie",
