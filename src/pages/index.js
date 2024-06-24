@@ -100,8 +100,8 @@ function SkybearCtaWidget() {
   return (
     <section className="home-section">
       <div>
-        <h3>&#10148; <a href="https://www.skybear.net" title="Try skybear.net Scripts">Skybear.net Scripts</a></h3>
-        <p>Automate your HTTP website & API tests with scripted declarative workflows.</p>
+        <h3>&#10148; <a href="https://www.skybear.net" title="Try skybear.net Scripts">Skybear.NET scripts</a></h3>
+        <p>Automate your HTTP API synthetics testing with plain text declarative workflows.</p>
         <HomeCtaWidgetSkybearAction />
       </div>
     </section>
