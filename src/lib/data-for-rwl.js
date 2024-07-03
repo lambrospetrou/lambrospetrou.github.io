@@ -9,6 +9,30 @@
 // };
 const DataList = [
   {
+    url: "https://lethain.com/quality/?from=lambrospetrou_com-read_watch_listen",
+    title: "How to create software quality.",
+    author: "Will Larson",
+    dateListed: "2024-07-03T16:20:00.000Z",
+  },
+  {
+    url: "https://maggieappleton.com/home-cooked-software?from=lambrospetrou_com-read_watch_listen",
+    title: "Home-Cooked Software and Barefoot Developers",
+    author: "Maggie Appleton",
+    dateListed: "2024-07-03T16:16:00.000Z",
+  },
+  {
+    url: "https://sourcegraph.com/blog/the-death-of-the-junior-developer?from=lambrospetrou_com-read_watch_listen",
+    title: "The Death of the Junior Developer",
+    author: "Steve Yegge",
+    dateListed: "2024-07-03T16:15:00.000Z",
+  },
+  {
+    url: "https://www.dolthub.com/blog/2024-07-01-golang-generic-collections/?from=lambrospetrou_com-read_watch_listen",
+    title: "Writing generic collection types in Go: the missing documentation",
+    author: "Zach Musgrave",
+    dateListed: "2024-07-03T16:00:00.000Z",
+  },
+  {
     url: "https://businessofsoftware.org/talks/gail-goodman-constant-contact-how-to-negotiate-the-long-slow-saas-ramp-of-death/?from=lambrospetrou_com-read_watch_listen",
     title: "Gail Goodman: How to Negotiate the Long, Slow, SaaS Ramp of Death",
     author: "Gail Goodman",
