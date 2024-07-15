@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://www.youtube.com/watch?v=lGHGzU3CtZg&from=lambrospetrou_com-read_watch_listen",
+    title: "The 7 Baby Steps Explained (Top Criticisms Addressed)",
+    author: "Dave Ramsey",
+    dateListed: "2024-07-15T09:20:00.000Z",
+  },
+  {
     url: "https://lethain.com/quality/?from=lambrospetrou_com-read_watch_listen",
     title: "How to create software quality.",
     author: "Will Larson",
