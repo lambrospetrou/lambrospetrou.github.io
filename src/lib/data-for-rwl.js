@@ -9,6 +9,18 @@
 // };
 const DataList = [
   {
+    url: "https://thebootstrappedfounder.com/finding-an-audience-for-your-side-business/?from=lambrospetrou_com-read_watch_listen",
+    title: "Finding an Audience for Your Side Business",
+    author: "Arvid Kahl",
+    dateListed: "2024-07-17T12:32:00.000Z",
+  },
+  {
+    url: "https://pilcrowonpaper.com/blog/how-i-would-do-auth/?from=lambrospetrou_com-read_watch_listen",
+    title: "How I would do auth",
+    author: "Pilcrow",
+    dateListed: "2024-07-17T12:20:00.000Z",
+  },
+  {
     url: "https://www.youtube.com/watch?v=lGHGzU3CtZg&from=lambrospetrou_com-read_watch_listen",
     title: "The 7 Baby Steps Explained (Top Criticisms Addressed)",
     author: "Dave Ramsey",
