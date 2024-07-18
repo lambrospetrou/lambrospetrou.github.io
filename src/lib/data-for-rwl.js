@@ -9,6 +9,19 @@
 // };
 const DataList = [
   {
+    url: "https://commandcenter.blogspot.com/2023/12/simplicity.html?from=lambrospetrou_com-read_watch_listen",
+    title: "Simplicity",
+    author: "Rob Pike",
+    dateListed: "2024-07-18T12:05:00.000Z",
+    tags: ["favourite"],
+  },
+  {
+    url: "https://www.gobeyond.dev/packages-as-layers/?from=lambrospetrou_com-read_watch_listen",
+    title: "Packages as layers, not groups",
+    author: "Ben johnson",
+    dateListed: "2024-07-18T12:00:00.000Z",
+  },
+  {
     url: "https://thebootstrappedfounder.com/finding-an-audience-for-your-side-business/?from=lambrospetrou_com-read_watch_listen",
     title: "Finding an Audience for Your Side Business",
     author: "Arvid Kahl",
