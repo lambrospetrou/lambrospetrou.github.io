@@ -9,6 +9,14 @@
 // };
 const DataList = [
   {
+    url: "https://www.infoq.com/presentations/staff-plus-level-scale/?from=lambrospetrou_com-read_watch_listen",
+    title: "Breaking the Ceiling: Scaling Your Impact at the Staff-Plus Level",
+    author: "Thiago Ghisi",
+    dateListed: "2024-07-18T18:25:00.000Z",
+    tags: ["favourite"],
+    type: "video",
+  },
+  {
     url: "https://commandcenter.blogspot.com/2023/12/simplicity.html?from=lambrospetrou_com-read_watch_listen",
     title: "Simplicity",
     author: "Rob Pike",
