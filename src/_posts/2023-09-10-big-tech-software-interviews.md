@@ -3,7 +3,7 @@ title: "How to pass the interview for software engineering roles in Big Tech"
 description: "Practical information and guidelines in how to prepare, and pass, the software engineering interviews in Big Tech companies."
 ---
 
-Over the past decade, I have gone through tens of interviews myself as an interviewee at small companies, startups, and Big Tech companies. I also completed more than a hundred interviews as an interviewer during my time at Amazon/AWS, Meta, and now Datadog. 
+Over the past decade, I have gone through tens of interviews myself as an interviewee at small companies, startups, and Big Tech companies, from junior to Principal level roles. I also completed more than a hundred interviews as an interviewer during my time at Amazon/AWS, Meta, and Datadog.
 
 Recently, I had discussions with several friends and colleagues about interviewing for software engineering roles, from entry level to senior levels. Some of them were going through interviews right now, and others asking about how to get better in interviewing in general.
 
@@ -27,7 +27,7 @@ It works for me, it worked for some of my friends, so it might work for you too.
     <div class="consulting-cta-container">
         <a class="cta-interview" href="https://cal.com/lambrospetrou/interview-preparation-1h" target="_blank" rel="noopener noreferrer">
         Book interview preparation session
-        <small>1:1 session &mdash; coding or system design interviews.</small>
+        <small>1:1 mock interview (coding or system design)</small>
         </a>
     </div>
 </div>
