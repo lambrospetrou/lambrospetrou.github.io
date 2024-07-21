@@ -1,5 +1,5 @@
 ---
-title: "Skybear.net Scripts private user accounts - Changelog 2024-02-18"
+title: "Skybear.NET Scripts private user accounts - Changelog 2024-02-18"
 description: "Skybear.NET Scripts platform changelog for February 2024."
 ---
 

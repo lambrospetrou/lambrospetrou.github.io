@@ -1,5 +1,5 @@
 ---
-title: "Skybear.net Scripts response bodies and cron triggers - Changelog 2024-05-28"
+title: "Skybear.NET Scripts response bodies and cron triggers - Changelog 2024-05-28"
 description: "Skybear.NET Scripts platform changelog update for May 2024."
 og_image: "/articles-data/2024-05-28-skybearnet-scripts-changelog-2024-05-28/2024_05_28-skybearnet-response-outputs.png"
 ---
@@ -56,7 +56,7 @@ The screenshot below shows a more complicated workflow involving 4 HTTP requests
 Clicking any of the four filenames (see **Output resources** section) opens the corresponding file as-returned in the original response.
 
 <figure>
-  <img src="/articles-data/2024-05-28-skybearnet-scripts-changelog-2024-05-28/2024_05_28-skybearnet-response-outputs.png" title="Skybear.net script with multiple requests saving their responses using the `output` option" alt="Skybear.net script with multiple requests saving their responses using the `output` option" alt="Multiple requests saving their responses using the `output` option" />
+  <img src="/articles-data/2024-05-28-skybearnet-scripts-changelog-2024-05-28/2024_05_28-skybearnet-response-outputs.png" title="Skybear.net script with multiple requests saving their responses using the `output` option" alt="Skybear.net script with multiple requests saving their responses using the `output` option" />
   <figcaption>Multiple requests saving their responses using the `output` option.</figcaption>
 </figure>
 
@@ -69,7 +69,7 @@ You are now able to access the full script run reports from the past 30 days.
 This retention period will be configurable with upcoming paid plans (get in touch if you have special needs).
 
 <figure>
-  <img src="/articles-data/2024-05-28-skybearnet-scripts-changelog-2024-05-28/2024_05_28-skybearnet-historical-runs.png" title="Skybear.net View past script run results actions" alt="Skybear.net View past script run results actions" alt="View past script run results actions" />
+  <img src="/articles-data/2024-05-28-skybearnet-scripts-changelog-2024-05-28/2024_05_28-skybearnet-historical-runs.png" title="Skybear.net View past script run results actions" alt="Skybear.net View past script run results actions" />
   <figcaption>View past script run results actions.</figcaption>
 </figure>
 
@@ -87,7 +87,7 @@ For now, you cannot configure a script to run more often than every 10-minutes, 
 This feature was built ontop of [Cloudflare Durable Objects](https://developers.cloudflare.com/durable-objects/) allowing for fine-grained second level granularity which provides plenty of flexibility for future extensions!
 
 <figure>
-  <img src="/articles-data/2024-05-28-skybearnet-scripts-changelog-2024-05-28/2024_05_19-skybearnet-cloudflare-cron-triggers.jpg" title="Cloudflare Durable Object logs for Skybear.net scripts cron triggers" alt="Cloudflare Durable Object logs for Skybear.net scripts cron triggers" alt="Cloudflare Durable Object logs for Skybear.net scripts cron triggers" />
+  <img src="/articles-data/2024-05-28-skybearnet-scripts-changelog-2024-05-28/2024_05_19-skybearnet-cloudflare-cron-triggers.jpg" title="Cloudflare Durable Object logs for Skybear.net scripts cron triggers" alt="Cloudflare Durable Object logs for Skybear.net scripts cron triggers" />
   <figcaption>Cloudflare Durable Object logs for Skybear.net scripts cron triggers.</figcaption>
 </figure>
 
