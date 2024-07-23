@@ -89,7 +89,7 @@ function BookInterviewSessionWidget() {
     <section className="home-section">
       <div>
         <h3>&#10148; <a href="/consulting/?ref=homepage-interview-cta" title="Book an interview preparation session">Software interview preparation</a></h3>
-        <p>If you want a software job in a Big Tech (FAANG) company, I can help you prepare! From juniors to seniors.</p>
+        <p>If you want a software job in a Big Tech (FAANG) company, I can help you prepare!</p>
         <InterviewConsultingAction />
       </div>
     </section>
