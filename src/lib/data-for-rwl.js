@@ -9,6 +9,24 @@
 // };
 const DataList = [
   {
+    url: "https://muratbuffalo.blogspot.com/2024/07/understanding-performance-implications.html?from=lambrospetrou_com-read_watch_listen",
+    title: "Understanding the Performance Implications of Storage-Disaggregated Databases",
+    author: "Murat Demirbas",
+    dateListed: "2024-07-24T20:45:00.000Z",
+  },
+  {
+    url: "https://emilkowal.ski/ui/great-animations?from=lambrospetrou_com-read_watch_listen",
+    title: "Great Animations",
+    author: "Emil Kowalski",
+    dateListed: "2024-07-24T20:35:00.000Z",
+  },
+  {
+    url: "https://longform.asmartbear.com/worse-but-unique/?from=lambrospetrou_com-read_watch_listen",
+    title: "Worse, but unique",
+    author: "Jason Cohen",
+    dateListed: "2024-07-24T20:30:00.000Z",
+  },
+  {
     url: "https://www.infoq.com/presentations/staff-plus-level-scale/?from=lambrospetrou_com-read_watch_listen",
     title: "Breaking the Ceiling: Scaling Your Impact at the Staff-Plus Level",
     author: "Thiago Ghisi",
