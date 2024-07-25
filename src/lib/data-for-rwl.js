@@ -9,6 +9,18 @@
 // };
 const DataList = [
   {
+    url: "https://phiresky.github.io/blog/2020/sqlite-performance-tuning/?from=lambrospetrou_com-read_watch_listen",
+    title: "SQLite performance tuning",
+    author: "phiresky",
+    dateListed: "2024-07-25T20:25:00.000Z",
+  },
+  {
+    url: "https://developer.android.com/topic/performance/sqlite-performance-best-practices?from=lambrospetrou_com-read_watch_listen",
+    title: "Best practices for SQLite performance",
+    author: "Android Developers",
+    dateListed: "2024-07-25T20:15:00.000Z",
+  },
+  {
     url: "https://muratbuffalo.blogspot.com/2024/07/understanding-performance-implications.html?from=lambrospetrou_com-read_watch_listen",
     title: "Understanding the Performance Implications of Storage-Disaggregated Databases",
     author: "Murat Demirbas",
