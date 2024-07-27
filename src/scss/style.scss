@@ -436,6 +436,10 @@ iframe.centered {
     &__item {
         padding: 20px;
     }
+
+    &__item h3 a {
+        text-decoration-line: underline;
+    }
 }
 
 .home-aristotle-quote {
