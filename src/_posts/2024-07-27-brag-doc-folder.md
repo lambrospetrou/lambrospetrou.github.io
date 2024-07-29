@@ -27,7 +27,7 @@ Finally, several folks often discuss about this type of documents on social medi
 
 A Brag document is many things, but the common definition is:
 - Listing what you do over time at work, tasks, problems solved, etc.
-- Which makes it easier to find your achievements for promotion docs, interview dicussions, etc.
+- Making it easier to find your achievements for promotion docs, interview dicussions, etc.
 - And can use it as a source of happiness and feeling of achievement.
 
 ## Is this... the Worklog?
