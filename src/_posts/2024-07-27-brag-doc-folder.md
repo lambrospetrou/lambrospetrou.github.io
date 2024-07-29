@@ -25,10 +25,10 @@ Others also wrote their own versions, mostly similar to Julia's post.
 
 Finally, several folks often discuss about this type of documents on social media, e.g. [this Reddit post titled "Keep a Brag Document"](https://www.reddit.com/r/ExperiencedDevs/comments/h972k3/keep_a_brag_document/).
 
-Writing a Brag document has many benefits, but the usual ones mentioned are:
-- A list of what you do over time at work, tasks, problems solved, etc.
-- Makes it easier to find your achievements for promotion docs, interview dicussions, etc.
-- Using it as a source of happiness and feeling of achievement.
+A Brag document is many things, but the common definition is:
+- Listing what you do over time at work, tasks, problems solved, etc.
+- Which makes it easier to find your achievements for promotion docs, interview dicussions, etc.
+- And can use it as a source of happiness and feeling of achievement.
 
 ## Is this... the Worklog?
 
