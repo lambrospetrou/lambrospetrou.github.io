@@ -9,6 +9,24 @@
 // };
 const DataList = [
   {
+    url: "https://www.somethingsimilar.com/2013/01/14/notes-on-distributed-systems-for-young-bloods/?from=lambrospetrou_com-read_watch_listen",
+    title: "Notes on Distributed Systems for Young Bloods",
+    author: "Jeff Hodges",
+    dateListed: "2024-08-02T09:50:00.000Z",
+  },
+  {
+    url: "https://a16z.com/nobody-cares/?from=lambrospetrou_com-read_watch_listen",
+    title: "Nobody Cares",
+    author: "Ben Horowitz",
+    dateListed: "2024-08-02T09:40:00.000Z",
+  },
+  {
+    url: "https://rauno.me/craft/depth?from=lambrospetrou_com-read_watch_listen",
+    title: "Designing Depth",
+    author: "Rauno Freiberg",
+    dateListed: "2024-08-02T09:20:00.000Z",
+  },
+  {
     url: "https://phiresky.github.io/blog/2020/sqlite-performance-tuning/?from=lambrospetrou_com-read_watch_listen",
     title: "SQLite performance tuning",
     author: "phiresky",
