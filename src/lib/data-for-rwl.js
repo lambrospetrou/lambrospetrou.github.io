@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://dsf.berkeley.edu/cs286/papers/fiveminute-tr1986.pdf?from=lambrospetrou_com-read_watch_listen",
+    title: "The 5 Minute Rule for Trading Memory for Disc Accesses and the 5 Byte Rule for Trading Memory for CPU Time",
+    author: "Jim Gray, Franco Putzolu",
+    dateListed: "2024-08-02T11:40:00.000Z",
+  },
+  {
     url: "https://www.somethingsimilar.com/2013/01/14/notes-on-distributed-systems-for-young-bloods/?from=lambrospetrou_com-read_watch_listen",
     title: "Notes on Distributed Systems for Young Bloods",
     author: "Jeff Hodges",
