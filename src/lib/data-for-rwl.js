@@ -9,6 +9,19 @@
 // };
 const DataList = [
   {
+    url: "https://alexwlchan.net/2019/falsehoods-programmers-believe-about-unix-time/?from=lambrospetrou_com-read_watch_listen",
+    title: "Falsehoods programmers believe about Unix time",
+    author: "Alex Chan",
+    dateListed: "2024-08-04T11:30:00.000Z",
+  },
+  {
+    url: "https://gist.github.com/timvisee/fcda9bbdff88d45cc9061606b4b923ca?from=lambrospetrou_com-read_watch_listen",
+    title: "Falsehoods programmers believe about time",
+    author: "Noah Sussman",
+    dateListed: "2024-08-04T11:20:00.000Z",
+    tags: ["favourite"],
+  },
+  {
     url: "https://dsf.berkeley.edu/cs286/papers/fiveminute-tr1986.pdf?from=lambrospetrou_com-read_watch_listen",
     title: "The 5 Minute Rule for Trading Memory for Disc Accesses and the 5 Byte Rule for Trading Memory for CPU Time",
     author: "Jim Gray, Franco Putzolu",
