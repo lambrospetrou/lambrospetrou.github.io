@@ -9,6 +9,13 @@
 // };
 const DataList = [
   {
+    url: "https://applied-llms.org/?from=lambrospetrou_com-read_watch_listen",
+    title: "What We’ve Learned From A Year of Building with LLMs",
+    author: "Eugene Yan, Bryan Bischof, Charles Frye, Hamel Husain, Jason Liu, Shreya Shankar",
+    dateListed: "2024-08-04T20:00:00.000Z",
+    tags: ["favourite"],
+  },
+  {
     url: "https://alexwlchan.net/2019/falsehoods-programmers-believe-about-unix-time/?from=lambrospetrou_com-read_watch_listen",
     title: "Falsehoods programmers believe about Unix time",
     author: "Alex Chan",
