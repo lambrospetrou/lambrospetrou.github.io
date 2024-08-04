@@ -9,6 +9,18 @@
 // };
 const DataList = [
   {
+    url: "https://applyingml.com/resources/first-rule-of-ml/?from=lambrospetrou_com-read_watch_listen",
+    title: "The First Rule of Machine Learning",
+    author: "Eugene Yan",
+    dateListed: "2024-08-04T20:10:00.000Z",
+  },
+  {
+    url: "https://developers.google.com/machine-learning/guides/rules-of-ml?from=lambrospetrou_com-read_watch_listen",
+    title: "Rules of Machine Learning: Best Practices for ML Engineering",
+    author: "Martin Zinkevich",
+    dateListed: "2024-08-04T20:05:00.000Z",
+  },
+  {
     url: "https://applied-llms.org/?from=lambrospetrou_com-read_watch_listen",
     title: "What We’ve Learned From A Year of Building with LLMs",
     author: "Eugene Yan, Bryan Bischof, Charles Frye, Hamel Husain, Jason Liu, Shreya Shankar",
