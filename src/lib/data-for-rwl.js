@@ -9,6 +9,19 @@
 // };
 const DataList = [
   {
+    url: "https://cloud.google.com/apis/design?from=lambrospetrou_com-read_watch_listen",
+    title: "API design guide",
+    author: "Google Cloud",
+    dateListed: "2024-08-08T19:45:00.000Z",
+    tags: ["favourite"],
+  },
+  {
+    url: "https://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api?from=lambrospetrou_com-read_watch_listen",
+    title: "Best Practices for Designing a Pragmatic RESTful API",
+    author: "Vinay Sahni",
+    dateListed: "2024-08-08T19:40:00.000Z",
+  },
+  {
     url: "https://applyingml.com/resources/first-rule-of-ml/?from=lambrospetrou_com-read_watch_listen",
     title: "The First Rule of Machine Learning",
     author: "Eugene Yan",
