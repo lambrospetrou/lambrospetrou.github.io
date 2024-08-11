@@ -9,6 +9,30 @@
 // };
 const DataList = [
   {
+    url: "https://fly.io/blog/soc2-the-screenshots-will-continue-until-security-improves/?from=lambrospetrou_com-read_watch_listen",
+    title: "SOC2: The Screenshots Will Continue Until Security Improves",
+    author: "Thomas Ptacek",
+    dateListed: "2024-08-11T19:20:00.000Z",
+  },
+  {
+    url: "https://www.latacora.com/blog/2020/03/12/the-soc-starting/?from=lambrospetrou_com-read_watch_listen",
+    title: "The SOC2 Starting Seven",
+    author: "Latacora, LLC",
+    dateListed: "2024-08-11T19:15:00.000Z",
+  },
+  {
+    url: "https://scrty.io/?from=lambrospetrou_com-read_watch_listen",
+    title: "Starting Up Security",
+    author: "Ryan McGeehan",
+    dateListed: "2024-08-11T19:14:00.000Z",
+  },
+  {
+    url: "https://blog.gardeviance.org/2015/03/on-pioneers-settlers-town-planners-and.html?from=lambrospetrou_com-read_watch_listen",
+    title: "On Pioneers, Settlers, Town Planners and Theft.",
+    author: "Simon Wardley",
+    dateListed: "2024-08-11T19:10:00.000Z",
+  },
+  {
     url: "https://cloud.google.com/apis/design?from=lambrospetrou_com-read_watch_listen",
     title: "API design guide",
     author: "Google Cloud",
