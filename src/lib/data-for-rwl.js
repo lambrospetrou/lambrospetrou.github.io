@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://aaronfrancis.com/2024/an-argument-for-logging-off-9a4de45b?from=lambrospetrou_com-read_watch_listen",
+    title: "An argument for logging off",
+    author: "Aaron Francis",
+    dateListed: "2024-08-12T23:40:00.000Z",
+  },
+  {
     url: "https://fly.io/blog/soc2-the-screenshots-will-continue-until-security-improves/?from=lambrospetrou_com-read_watch_listen",
     title: "SOC2: The Screenshots Will Continue Until Security Improves",
     author: "Thomas Ptacek",
