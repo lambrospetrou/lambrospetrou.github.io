@@ -19,9 +19,10 @@ In this article I will showcase Durable Objects (DO), probably the most underrat
 
 I am not going to focus on how you use Durable Objects in code at all, since the goal is to explain why Durable Objects should be used more, but you can find [code examples in the developer docs](https://developers.cloudflare.com/durable-objects/examples/).
 
-> Each Durable Object instance is identified by a user-provided key, has its own throughput limits, its own durable storage, its own in-memory state, executes in single-threaded fashion, and you can influence its location if necessary.
+> **TLDR;**
+> Durable Objects are built ontop of Workers, Cloudflare's serverless compute at the edge. Each Durable Object instance is identified by a user-provided key, and has its own throughput limits, its own durable persisted across requests key-value storage, its own in-memory state, executes in single-threaded fashion, and you can influence its location if necessary.
 
-If you don't understand what the above sentence means, reading the article will make it clear.
+If the above sentence is not clear, keep reading. You won't regret it.
 
 ## Not just for real-time collaboration
 
