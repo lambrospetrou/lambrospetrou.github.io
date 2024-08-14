@@ -51,10 +51,10 @@ Workers are Cloudflare's serverless compute platform that:
 
 You can read more on how Workers are implemented on-top of V8 isolates in the excellent ["How Workers works"](https://developers.cloudflare.com/workers/reference/how-workers-works/) page.
 
-The things we care about for this article is that Workers are:
-- Limited at 128MB of memory, therefore hard to do in-memory caching for anything significant.
-- A single Worker instance (V8 isolate) handles many requests routed to that specific machine.
-- Stateless across requests, since each request can potentially be routed to a different machine in Cloudflare's network.
+The things we care about for this article is that Workers:
+- Are limited at 128MB of memory, therefore hard to do in-memory caching for anything significant.
+- Concurrently handle many requests on a single Worker instance (V8 isolate).
+- Are stateless across requests, and each request can potentially be routed to a different machine in Cloudflare's network.
 - They can be destroyed and recreated whenever, therefore user code should have no assumptions about affinity (i.e. where it runs) or longevity (i.e. how long each worker instance runs).
 
 ## Durable Objects intro
