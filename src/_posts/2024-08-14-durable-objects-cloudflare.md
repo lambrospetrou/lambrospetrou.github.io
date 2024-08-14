@@ -105,7 +105,7 @@ With Durable Objects you get all of that 💪🏼 But with orders of magnitude m
 
 Your system now comprises of Cloudflare's whole network. Even though Durable Objects are not in every location of the CDN like Workers, they are in more than 25 cities across the world as of today (see [where.durableobjects.live](https://where.durableobjects.live/)) and they will keep expanding over time.
 
-As mentioned above, you can create unlimited instances of Durable Object types (or bindings), therefore if you design your Actor model well, you can scale across the whole of Cloudflare's edge network.
+As mentioned above, you can create unlimited instances of each Durable Object type (or binding), therefore if you design your Actor model well, you can scale across the whole of Cloudflare's edge network.
 
 ## Durable Objects use-cases
 
