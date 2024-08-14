@@ -4,11 +4,22 @@ description: "Understand Cloudflare Durable Objects and use them to simplify you
 isDraft: true
 ---
 
+**Table of contents**
+
+- [Not just for real-time collaboration](#not-just-for-real-time-collaboration)
+- [Workers intro](#workers-intro)
+- [Durable Objects intro](#durable-objects-intro)
+- [Durable Objects and the Actor model](#durable-objects-and-the-actor-model)
+- [Durable Objects use-cases](#durable-objects-use-cases)
+- [Limitations](#limitations)
+- [Pricing Durable Objects vs Workers](#pricing-durable-objects-vs-workers)
+- [Conclusion](#conclusion)
+
 In this article I will showcase Durable Objects (DO), probably the most underrated compute and storage offering by Cloudflare.
 
 I am not going to focus on how you use Durable Objects in code at all, since the goal is to explain why Durable Objects should be used more, but you can find [code examples in the developer docs](https://developers.cloudflare.com/durable-objects/examples/).
 
-## Durable Objects marketing
+## Not just for real-time collaboration
 
 As of the time of writing, the Cloudflare developer documentation ([see here](https://developers.cloudflare.com/durable-objects/)) and the Durable Objects landing page ([see here](https://www.cloudflare.com/en-gb/developer-platform/durable-objects/)) describe DOs as follows:
 
@@ -24,7 +35,7 @@ That is a lot of people, including myself when I initially read about Durable Ob
 
 I will showcase why **Durable Objects are a great fit for a lot more use-cases** than real-time collaboration.
 
-## Cloudflare Workers intro
+## Workers intro
 
 Durable Objects are super-powered Cloudflare Workers (see docs [[1](https://www.cloudflare.com/en-gb/developer-platform/workers/)] [[2](https://developers.cloudflare.com/workers/)] [[3](https://workers.cloudflare.com/)]).
 
