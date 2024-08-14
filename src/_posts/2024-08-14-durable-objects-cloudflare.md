@@ -70,7 +70,8 @@ Firstly, let's go through some key properties of DOs:
 - Each Durable Object instance has an identifier, either randomly-generated or user-generated, allowing you to "select" which Durable Object instance should handle a specific request or action by providing this identifier ([see docs](https://developers.cloudflare.com/durable-objects/best-practices/access-durable-objects-from-a-worker/#1-create-durable-object-ids)).
 - They are not available in every location like Workers, but are still spread around the world (see the [where.durableobjects.live](https://where.durableobjects.live/) project for live locations), and most importantly you can influence where each instance should be located ([see Location hints docs](https://developers.cloudflare.com/durable-objects/reference/data-location/#provide-a-location-hint)).
 - They provide an Alarms API that allows you to schedule an execution of your Durable Object instance any time in the future with millisecond-granularity ([see docs](https://developers.cloudflare.com/durable-objects/api/alarms/)).
-- They are effectively single-threaded; only a single request can execute to completion when the code has external side-effects (e.g. making `fetch()` requests, writing to its durable storage). Read more details on how this is implemented in the blog post ["Durable Objects: Easy, Fast, Correct — Choose three"](https://blog.cloudflare.com/durable-objects-easy-fast-correct-choose-three/).
+- They are effectively single-threaded; when a request execution causes any side-effects (e.g. durable storage reads/writes) other requests to that specific DO instance are blocked until the request completes. Read more details on how this is implemented in the blog post ["Durable Objects: Easy, Fast, Correct — Choose three"](https://blog.cloudflare.com/durable-objects-easy-fast-correct-choose-three/).
+- Each Durable Object "type" (or "binding" in Cloudflare terms) maps 1-to-1 with a Javascript class implementing the business logic. **You can create unlimited instances of each Durable Object type**.
 
 There are more things to know, but I listed the key features I care about.
 
@@ -102,6 +103,8 @@ When I was at WhatsApp a few years ago, I was really amazed by how the Erlang ru
 With Durable Objects you get all of that 💪🏼 But with orders of magnitude more power and much less effort than if you had to build all this infrastructure yourself!
 
 Your system now comprises of Cloudflare's whole network. Even though Durable Objects are not in every location of the CDN like Workers, they are in more than 25 cities across the world as of today (see [where.durableobjects.live](https://where.durableobjects.live/)) and they will keep expanding over time.
+
+As mentioned above, you can create unlimited instances of Durable Object types (or bindings), therefore if you design your Actor model well, you can scale across the whole of Cloudflare's edge network.
 
 ## Durable Objects use-cases
 
