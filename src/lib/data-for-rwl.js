@@ -9,6 +9,14 @@
 // };
 const DataList = [
   {
+    url: "https://www.youtube.com/watch?v=wjYPak5EUik?from=lambrospetrou_com-read_watch_listen",
+    title: "The SaaS Pricing Fundamentals I Used To Become a Millionaire",
+    author: "Rob Walling",
+    dateListed: "2024-08-17T19:10:00.000Z",
+    type: "video",
+    tags: ["favourite"],
+  },
+  {
     url: "https://aaronfrancis.com/2024/an-argument-for-logging-off-9a4de45b?from=lambrospetrou_com-read_watch_listen",
     title: "An argument for logging off",
     author: "Aaron Francis",
