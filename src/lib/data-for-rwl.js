@@ -9,6 +9,18 @@
 // };
 const DataList = [
   {
+    url: "https://www.latacora.com/blog/2018/04/03/cryptographic-right-answers/?from=lambrospetrou_com-read_watch_listen",
+    title: "Cryptographic Right Answers",
+    author: "Latacora",
+    dateListed: "2024-08-21T19:20:00.000Z",
+  },
+  {
+    url: "http://habitatchronicles.com/2004/04/you-cant-tell-people-anything/?from=lambrospetrou_com-read_watch_listen",
+    title: "You can't tell people anything",
+    author: "Chip Morningstar",
+    dateListed: "2024-08-21T19:10:00.000Z",
+  },
+  {
     url: "https://www.youtube.com/watch?v=wjYPak5EUik?from=lambrospetrou_com-read_watch_listen",
     title: "The SaaS Pricing Fundamentals I Used To Become a Millionaire",
     author: "Rob Walling",
