@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://select-statistics.co.uk/blog/importance-effect-sample-size/?from=lambrospetrou_com-read_watch_listen",
+    title: "The Importance and Effect of Sample Size",
+    author: "Sarah Littler",
+    dateListed: "2024-08-31T09:20:00.000Z",
+  },
+  {
     url: "https://www.latacora.com/blog/2018/04/03/cryptographic-right-answers/?from=lambrospetrou_com-read_watch_listen",
     title: "Cryptographic Right Answers",
     author: "Latacora",
