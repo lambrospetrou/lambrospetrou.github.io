@@ -9,6 +9,18 @@
 // };
 const DataList = [
   {
+    url: "https://vanschneider.com/blog/do-what-is-close-to-you/?from=lambrospetrou_com-read_watch_listen",
+    title: "Do what is close to you",
+    author: "Tobias van Schneider",
+    dateListed: "2024-09-04T11:50:00.000Z",
+  },
+  {
+    url: "https://vanschneider.com/blog/portfolio-tips/7-pieces-of-portfolio-advice-from-7-years-of-running-semplice/?from=lambrospetrou_com-read_watch_listen",
+    title: "7 pieces of portfolio advice from 7 years of running Semplice",
+    author: "Tobias van Schneider",
+    dateListed: "2024-09-04T11:40:00.000Z",
+  },
+  {
     url: "https://select-statistics.co.uk/blog/importance-effect-sample-size/?from=lambrospetrou_com-read_watch_listen",
     title: "The Importance and Effect of Sample Size",
     author: "Sarah Littler",
