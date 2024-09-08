@@ -9,6 +9,18 @@
 // };
 const DataList = [
   {
+    url: "https://www.oreilly.com/radar/how-i-failed/?from=lambrospetrou_com-read_watch_listen",
+    title: "How I failed - A candid post about some of the things that kept me, my employees, and our company from achieving our full potential.",
+    author: "Tim O’Reilly",
+    dateListed: "2024-09-08T08:30:00.000Z",
+  },
+  {
+    url: "https://tidyfirst.substack.com/p/the-founder-mode-tradeoff?from=lambrospetrou_com-read_watch_listen",
+    title: "The Founder Mode Tradeoff",
+    author: "Kent Beck",
+    dateListed: "2024-09-08T08:20:00.000Z",
+  },
+  {
     url: "https://vanschneider.com/blog/do-what-is-close-to-you/?from=lambrospetrou_com-read_watch_listen",
     title: "Do what is close to you",
     author: "Tobias van Schneider",
