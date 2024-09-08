@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://longform.asmartbear.com/legacy/?from=lambrospetrou_com-read_watch_listen",
+    title: "Legacy",
+    author: "Jason Cohen",
+    dateListed: "2024-09-08T08:45:00.000Z",
+  },
+  {
     url: "https://www.oreilly.com/radar/how-i-failed/?from=lambrospetrou_com-read_watch_listen",
     title: "How I failed - A candid post about some of the things that kept me, my employees, and our company from achieving our full potential.",
     author: "Tim O’Reilly",
