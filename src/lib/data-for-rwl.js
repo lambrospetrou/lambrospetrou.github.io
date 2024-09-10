@@ -585,6 +585,7 @@ const DataList = [
     title: "How I write HTTP services in Go after 13 years",
     author: "Mat Ryer",
     dateListed: "2024-02-13T15:15:00.000Z",
+    tags: ["favourite"],
   },
   {
     url: "https://piccalil.li/blog/a-more-modern-css-reset/?ref=lambrospetrou_com-read_watch_listen",
