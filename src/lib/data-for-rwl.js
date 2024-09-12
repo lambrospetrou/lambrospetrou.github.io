@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://jvns.ca/blog/2017/03/19/getting-started-with-ftrace/?from=lambrospetrou_com-read_watch_listen",
+    title: "ftrace: trace your kernel functions!",
+    author: "Julia Evans",
+    dateListed: "2024-09-12T10:50:00.000Z",
+  },
+  {
     url: "https://longform.asmartbear.com/legacy/?from=lambrospetrou_com-read_watch_listen",
     title: "Legacy",
     author: "Jason Cohen",
