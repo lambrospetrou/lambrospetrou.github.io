@@ -12,7 +12,7 @@ const DataList = [
     url: "https://jxnl.co/writing/2024/01/22/indie-consulting/?from=lambrospetrou_com-read_watch_listen",
     title: "Indie Consulting",
     author: "Jason Liu",
-    dateListed: "2024-09-14T16:00:00.000Z",
+    dateListed: "2024-09-14T16:05:00.000Z",
   },
   {
     url: "https://1millionarr.substack.com/p/part-1-how-to-get-your-first-100?from=lambrospetrou_com-read_watch_listen",
