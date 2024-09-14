@@ -9,6 +9,13 @@
 // };
 const DataList = [
   {
+    url: "https://signalvnoise.com/posts/3124-give-it-five-minutes?from=lambrospetrou_com-read_watch_listen",
+    title: "Give it five minutes",
+    author: "Jason Fried",
+    dateListed: "2024-09-14T16:10:00.000Z",
+    tags: ["favourite"],
+  },
+  {
     url: "https://jxnl.co/writing/2024/01/22/indie-consulting/?from=lambrospetrou_com-read_watch_listen",
     title: "Indie Consulting",
     author: "Jason Liu",
