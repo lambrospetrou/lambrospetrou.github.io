@@ -9,6 +9,24 @@
 // };
 const DataList = [
   {
+    url: "https://1millionarr.substack.com/p/part-1-how-to-get-your-first-100?from=lambrospetrou_com-read_watch_listen",
+    title: "Part 1: How to get your first 100 customers - Free marketing tactics to get traction",
+    author: "Iron Brands",
+    dateListed: "2024-09-14T15:59:00.000Z",
+  },
+  {
+    url: "https://www.startups.com/articles/how-to-find-the-first-100-customers-for-your-startup?from=lambrospetrou_com-read_watch_listen",
+    title: "How to find the first 100 customers for your startup",
+    author: "Vinay Koshy",
+    dateListed: "2024-09-14T15:55:00.000Z",
+  },
+  {
+    url: "https://blog.salesflare.com/startup-first-100-customers?from=lambrospetrou_com-read_watch_listen",
+    title: "6 foolproof ways to get your startup its first 100 customers",
+    author: "Gilles DC",
+    dateListed: "2024-09-14T15:50:00.000Z",
+  },
+  {
     url: "https://jvns.ca/blog/2017/03/19/getting-started-with-ftrace/?from=lambrospetrou_com-read_watch_listen",
     title: "ftrace: trace your kernel functions!",
     author: "Julia Evans",
