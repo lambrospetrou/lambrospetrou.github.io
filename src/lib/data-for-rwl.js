@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://a16z.com/usage-based-pricing-rule-of-thumb/?from=lambrospetrou_com-read_watch_listen",
+    title: "Usage-Based Pricing Is Popular, But Is It Right For You? Our Rule of Thumb",
+    author: "Tugce Erten, Mark Regan",
+    dateListed: "2024-09-17T20:00:00.000Z",
+  },
+  {
     url: "https://signalvnoise.com/posts/3124-give-it-five-minutes?from=lambrospetrou_com-read_watch_listen",
     title: "Give it five minutes",
     author: "Jason Fried",
