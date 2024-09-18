@@ -25,7 +25,8 @@ It works for me, it worked for some of my friends, so it might work for you too.
 <div class="upsell-section">
     <p>Prefer a personalized 1:1 session for tips, or a mock interview?</p>
     <div class="consulting-cta-container">
-        <a class="cta-interview" href="https://cal.com/lambrospetrou/interview-preparation-1h" target="_blank" rel="noopener noreferrer">
+        <!-- <a class="cta-interview" href="https://cal.com/lambrospetrou/interview-preparation-1h" target="_blank" rel="noopener noreferrer"> -->
+        <a class="cta-interview" href="https://go.lambrospetrou.com/interview-prep" target="_blank" rel="noopener">
         Book interview preparation session
         <small>1:1 mock interview (coding or system design)</small>
         </a>
@@ -513,7 +514,8 @@ Good luck 💪🏼 and [let me know](https://twitter.com/LambrosPetrou) if you f
 <div class="upsell-section">
     <p>Prefer a personalized 1:1 session for tips, or a mock interview?</p>
     <div class="consulting-cta-container">
-        <a class="cta-interview" href="https://cal.com/lambrospetrou/interview-preparation-1h" target="_blank" rel="noopener noreferrer">
+        <!-- <a class="cta-interview" href="https://cal.com/lambrospetrou/interview-preparation-1h" target="_blank" rel="noopener noreferrer"> -->
+        <a class="cta-interview" href="https://go.lambrospetrou.com/interview-prep" target="_blank" rel="noopener">
         Book interview preparation session
         <small>1:1 session &mdash; coding or system design interviews.</small>
         </a>
