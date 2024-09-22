@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://github.com/charlax/professional-programming?from=lambrospetrou_com-read_watch_listen",
+    title: "Professional-Programming - A collection of learning resources for curious software engineers",
+    author: "Charles-Axel Dein",
+    dateListed: "2024-09-22T10:50:00.000Z",
+  },
+  {
     url: "https://a16z.com/usage-based-pricing-rule-of-thumb/?from=lambrospetrou_com-read_watch_listen",
     title: "Usage-Based Pricing Is Popular, But Is It Right For You? Our Rule of Thumb",
     author: "Tugce Erten, Mark Regan",
