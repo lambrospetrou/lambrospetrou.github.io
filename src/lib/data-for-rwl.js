@@ -9,6 +9,18 @@
 // };
 const DataList = [
   {
+    url: "https://medium.com/@alexallain/ten-minutes-a-day-e2fa1084f924?from=lambrospetrou_com-read_watch_listen",
+    title: "The power of ten minutes a day",
+    author: "Alex Allain",
+    dateListed: "2024-09-22T11:00:00.000Z",
+  },
+  {
+    url: "https://www.linkedin.com/pulse/career-advice-i-wish-had-25-shane-rodgers/?from=lambrospetrou_com-read_watch_listen",
+    title: "The career advice I wish I had at 25",
+    author: "Shane Rodgers",
+    dateListed: "2024-09-22T10:55:00.000Z",
+  },
+  {
     url: "https://github.com/charlax/professional-programming?from=lambrospetrou_com-read_watch_listen",
     title: "Professional-Programming - A collection of learning resources for curious software engineers",
     author: "Charles-Axel Dein",
