@@ -100,8 +100,8 @@ function SkybearCtaWidget() {
   return (
     <section className="home-section">
       <div>
-        <h3>&#10148; <a href="https://www.skybear.net" title="Try Skybear.NET Platform">Skybear.NET Scripts</a></h3>
-        <p><span class="skybear-name">Skybear<span>.NET</span></span> is a managed platform <strong>automating Synthetic HTTP API testing</strong>.</p>
+        <h3>&#10148; <a href="https://www.skybear.net" title="Try Skybear.NET Platform" target="_blank">Skybear.NET Scripts</a></h3>
+        <p><span class="skybear-name">Skybear<span>.NET</span></span> is a managed platform automating Synthetic HTTP API testing.</p>
         <HomeCtaWidgetSkybearAction />
       </div>
     </section>
