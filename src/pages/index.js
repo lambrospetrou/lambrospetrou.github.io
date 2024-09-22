@@ -88,7 +88,7 @@ function BookInterviewSessionWidget() {
   return (
     <section className="home-section">
       <div>
-        <h3>&#10148; <a href="/consulting/?ref=homepage-interview-cta" title="Book an interview preparation session">Software interview preparation</a></h3>
+        <h3>&#10148; <a href="/tech-interviews/?ref=homepage-interview-cta" title="Book an interview preparation session">Software interview preparation</a></h3>
         <p>If you want a software job in a Big Tech (FAANG) company, I can help you prepare!</p>
         <InterviewConsultingAction />
       </div>
@@ -100,8 +100,8 @@ function SkybearCtaWidget() {
   return (
     <section className="home-section">
       <div>
-        <h3>&#10148; <a href="https://www.skybear.net" title="Try Skybear.NET Scripts">Skybear.NET scripts</a></h3>
-        <p>Automate your HTTP API synthetics testing with plain text declarative workflows.</p>
+        <h3>&#10148; <a href="https://www.skybear.net" title="Try Skybear.NET Platform">Skybear.NET Scripts</a></h3>
+        <p><span class="skybear-name">Skybear<span>.NET</span></span> is a managed platform <strong>automating Synthetic HTTP API testing</strong>.</p>
         <HomeCtaWidgetSkybearAction />
       </div>
     </section>
@@ -112,8 +112,8 @@ function HomeCtaWidgetSkybearAction() {
   return <div className="consulting-cta-container">
     <a className="cta-consult" href="https://www.skybear.net" title="Try Skybear.NET Scripts" target="_blank" rel="noopener noreferrer">
       <span>
-        Try Skybear.NET Scripts
-        <small>Simplify your HTTP testing.</small>
+        Try Skybear.NET
+        <small>Simplify your HTTP API testing.</small>
       </span>
     </a>
   </div>

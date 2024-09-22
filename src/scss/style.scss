@@ -334,6 +334,16 @@ iframe.centered {
     }
 }
 
+.skybear-name {
+    font-weight: bolder;
+    color: black;
+
+    & span {
+        font-size: 0.9em;
+        color: #990000;
+    } 
+}
+
 /******************************
  * HEADER
  */
