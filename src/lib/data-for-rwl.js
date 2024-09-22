@@ -9,6 +9,18 @@
 // };
 const DataList = [
   {
+    url: "https://cloud.google.com/blog/products/application-development/api-design-why-you-should-use-links-not-keys-to-represent-relationships-in-apis?from=lambrospetrou_com-read_watch_listen",
+    title: "API links vs keys: Why you should use links, not keys, to represent relationships in APIs",
+    author: "Martin Nally",
+    dateListed: "2024-09-22T12:10:00.000Z",
+  },
+  {
+    url: "https://blog.sequinstream.com/events-not-webhooks/?from=lambrospetrou_com-read_watch_listen",
+    title: "Give me /events, not webhooks",
+    author: "Anthony Accomazzo",
+    dateListed: "2024-09-22T12:00:00.000Z",
+  },
+  {
     url: "https://medium.com/@alexallain/ten-minutes-a-day-e2fa1084f924?from=lambrospetrou_com-read_watch_listen",
     title: "The power of ten minutes a day",
     author: "Alex Allain",
