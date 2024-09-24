@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://longform.asmartbear.com/code-is-your-enemy/?from=lambrospetrou_com-read_watch_listen",
+    title: "The Code is your Enemy",
+    author: "Jason Cohen",
+    dateListed: "2024-09-24T23:30:00.000Z",
+  },
+  {
     url: "https://cloud.google.com/blog/products/application-development/api-design-why-you-should-use-links-not-keys-to-represent-relationships-in-apis?from=lambrospetrou_com-read_watch_listen",
     title: "API links vs keys: Why you should use links, not keys, to represent relationships in APIs",
     author: "Martin Nally",
