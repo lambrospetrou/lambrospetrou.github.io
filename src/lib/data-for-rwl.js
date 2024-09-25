@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://oldmoe.blog/2024/04/30/backup-strategies-for-sqlite-in-production/?from=lambrospetrou_com-read_watch_listen",
+    title: "Backup strategies for SQLite in production",
+    author: "Oldmoe",
+    dateListed: "2024-09-25T16:40:00.000Z",
+  },
+  {
     url: "https://longform.asmartbear.com/code-is-your-enemy/?from=lambrospetrou_com-read_watch_listen",
     title: "The Code is your Enemy",
     author: "Jason Cohen",
