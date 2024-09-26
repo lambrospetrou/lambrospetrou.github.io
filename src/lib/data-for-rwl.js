@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://blog.cloudflare.com/sqlite-in-durable-objects/?from=lambrospetrou_com-read_watch_listen",
+    title: "Zero-latency SQLite storage in every Durable Object",
+    author: "Kenton Varda",
+    dateListed: "2024-09-26T14:40:00.000Z",
+  },
+  {
     url: "https://oldmoe.blog/2024/04/30/backup-strategies-for-sqlite-in-production/?from=lambrospetrou_com-read_watch_listen",
     title: "Backup strategies for SQLite in production",
     author: "Oldmoe",
