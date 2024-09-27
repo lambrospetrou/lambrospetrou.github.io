@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://erikbern.com/2024/09/27/its-hard-to-write-code-for-humans.html?from=lambrospetrou_com-read_watch_listen",
+    title: "It's hard to write code for computers, but it's even harder to write code for humans",
+    author: "Erik Bernhardsson",
+    dateListed: "2024-09-27T19:30:00.000Z",
+  },
+  {
     url: "https://joincolossus.com/episode/munger-a-conversation-with-charlie-munger-john-collison/?from=lambrospetrou_com-read_watch_listen",
     title: "A Conversation with Charlie Munger & John Collison",
     author: "Charlie Munger, John Collison",
