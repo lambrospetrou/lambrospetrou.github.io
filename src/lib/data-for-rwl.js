@@ -14,6 +14,7 @@ const DataList = [
     author: "Charlie Munger, John Collison",
     dateListed: "2024-09-27T12:40:00.000Z",
     type: "audio",
+    tags: ["favourite"],
   },
   {
     url: "https://blog.cloudflare.com/sqlite-in-durable-objects/?from=lambrospetrou_com-read_watch_listen",
