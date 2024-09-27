@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://joincolossus.com/episode/munger-a-conversation-with-charlie-munger-john-collison/?from=lambrospetrou_com-read_watch_listen",
+    title: "A Conversation with Charlie Munger & John Collison",
+    author: "Charlie Munger, John Collison",
+    dateListed: "2024-09-27T12:40:00.000Z",
+  },
+  {
     url: "https://blog.cloudflare.com/sqlite-in-durable-objects/?from=lambrospetrou_com-read_watch_listen",
     title: "Zero-latency SQLite storage in every Durable Object",
     author: "Kenton Varda",
