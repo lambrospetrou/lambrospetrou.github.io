@@ -124,6 +124,7 @@ const DataList = [
     title: "How I failed - A candid post about some of the things that kept me, my employees, and our company from achieving our full potential.",
     author: "Tim O’Reilly",
     dateListed: "2024-09-08T08:30:00.000Z",
+    tags: ["favourite"],
   },
   {
     url: "https://tidyfirst.substack.com/p/the-founder-mode-tradeoff?from=lambrospetrou_com-read_watch_listen",
