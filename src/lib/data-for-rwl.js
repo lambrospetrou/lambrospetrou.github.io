@@ -9,6 +9,19 @@
 // };
 const DataList = [
   {
+    url: "https://longform.asmartbear.com/customer-development/?from=lambrospetrou_com-read_watch_listen",
+    title: "The Iterative-Hypothesis customer development method",
+    author: "Jason Cohen",
+    dateListed: "2024-09-29T23:44:00.000Z",
+    tags: ["favourite"],
+  },
+  {
+    url: "https://www.lennysnewsletter.com/p/how-to-identify-your-ideal-customer?from=lambrospetrou_com-read_watch_listen",
+    title: "How to identify your ideal customer profile (ICP)",
+    author: "Lenny Rachitsky",
+    dateListed: "2024-09-29T23:30:00.000Z",
+  },
+  {
     url: "https://erikbern.com/2024/09/27/its-hard-to-write-code-for-humans.html?from=lambrospetrou_com-read_watch_listen",
     title: "It's hard to write code for computers, but it's even harder to write code for humans",
     author: "Erik Bernhardsson",
