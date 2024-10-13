@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://doc.cat-v.org/bell_labs/pikestyle?from=lambrospetrou_com-read_watch_listen",
+    title: "Notes on Programming in C - Complexity - Programming with data.",
+    author: "Rob Pike",
+    dateListed: "2024-10-13T13:05:00.000Z",
+  },
+  {
     url: "https://longform.asmartbear.com/little-company/?from=lambrospetrou_com-read_watch_listen",
     title: "You’re a little company, now act like one",
     author: "Jason Cohen",
