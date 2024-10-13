@@ -9,6 +9,13 @@
 // };
 const DataList = [
   {
+    url: "https://longform.asmartbear.com/little-company/?from=lambrospetrou_com-read_watch_listen",
+    title: "You’re a little company, now act like one",
+    author: "Jason Cohen",
+    dateListed: "2024-10-13T11:44:00.000Z",
+    tags: ["favourite"],
+  },
+  {
     url: "https://longform.asmartbear.com/customer-development/?from=lambrospetrou_com-read_watch_listen",
     title: "The Iterative-Hypothesis customer development method",
     author: "Jason Cohen",
