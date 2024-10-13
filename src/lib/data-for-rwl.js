@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://practicaltypography.com/typography-in-ten-minutes.html?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Typography in ten minutes",
+    author: "Matthew Butterick",
+    dateListed: "2024-10-13T18:40:00.000Z",
+  },
+  {
     url: "https://htmlforpeople.com/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "HTML is for people",
     author: "Blake Watson",
