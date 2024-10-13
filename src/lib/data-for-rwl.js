@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://htmlforpeople.com/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "HTML is for people",
+    author: "Blake Watson",
+    dateListed: "2024-10-13T18:30:00.000Z",
+  },
+  {
     url: "https://doc.cat-v.org/bell_labs/pikestyle?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Notes on Programming in C - Complexity - Programming with data.",
     author: "Rob Pike",
