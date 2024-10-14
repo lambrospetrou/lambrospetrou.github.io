@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://github.blog/open-source/git/framework-building-open-graph-images/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "A framework for building Open Graph images",
+    author: "Jason Etcovitch (Github)",
+    dateListed: "2024-10-14T13:40:00.000Z",
+  },
+  {
     url: "https://www.youtube.com/watch?v=l-oCDQGH3EU&ab_channel=NDCConferences?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Being Staff Plus - Ian Cooper - NDC Oslo 2024",
     author: "Ian Cooper",
