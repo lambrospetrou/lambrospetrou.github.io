@@ -9,6 +9,13 @@
 // };
 const DataList = [
   {
+    url: "https://www.youtube.com/watch?v=l-oCDQGH3EU&ab_channel=NDCConferences?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Being Staff Plus - Ian Cooper - NDC Oslo 2024",
+    author: "Ian Cooper",
+    dateListed: "2024-10-14T13:20:00.000Z",
+    type: "video",
+  },
+  {
     url: "https://practicaltypography.com/typography-in-ten-minutes.html?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Typography in ten minutes",
     author: "Matthew Butterick",
