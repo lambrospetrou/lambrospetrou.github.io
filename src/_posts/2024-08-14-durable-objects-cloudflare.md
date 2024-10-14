@@ -20,7 +20,7 @@ In this article I will showcase Durable Objects (DO), probably the most underrat
 I am not going to focus on how you use Durable Objects in code at all, since the goal is to explain why Durable Objects should be used more, but you can find [code examples in the developer docs](https://developers.cloudflare.com/durable-objects/examples/).
 
 > **TLDR;**
-> Durable Objects (DO) are built ontop of Cloudflare Workers (edge compute). Each DO instance has its own durable storage persisted across requests, in-memory state, executes in single-threaded fashion, and you decide its location. You can create unlimited of them!
+> Durable Objects (DO) are built ontop of Cloudflare Workers (edge compute). Each DO instance has its own durable storage persisted across requests, in-memory state, executes in single-threaded fashion, and you decide its location. You can create millions of them!
 
 If the above sentence is not clear, keep reading. You won't regret it.
 
