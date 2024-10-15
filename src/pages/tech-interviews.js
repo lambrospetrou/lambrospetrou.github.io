@@ -4,7 +4,7 @@ import { Layout } from "../components/layout";
 export function InterviewConsultingAction() {
   return <div className="consulting-cta-container">
     {/* <a className="cta-interview" href="https://cal.com/lambrospetrou/interview-preparation-1h" target="_blank" rel="noopener noreferrer"> */}
-    <a class="cta-interview" href="https://go.lambros.dev/book-interview-prep" target="_blank" rel="noopener">
+    <a className="cta-interview" href="https://go.lambros.dev/book-interview-prep" target="_blank" rel="noopener">
       Book interview preparation session
       <small>1:1 mock interview (coding or system design)</small>
     </a>
