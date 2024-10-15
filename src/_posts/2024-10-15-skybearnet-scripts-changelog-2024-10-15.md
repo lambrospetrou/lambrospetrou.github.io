@@ -6,7 +6,7 @@ og_image: "/articles-data/2024-07-21-skybearnet-scripts-changelog-2024-07-21/202
 
 **Table of contents**
 
-- [HTTP Trigger](#http-trigger)
+- [HTTP Hook Trigger](#http-hook-trigger)
 - [Secret Hurl variables](#secret-hurl-variables)
 - [Out of AWS Lambda into Fly.io](#out-of-aws-lambda-into-fly-io)
 - [Response bodies automatically persisted](#response-bodies-automatically-persisted)
@@ -23,7 +23,7 @@ On the contrary, the features shipped since then are quite the bangers!
 
 Let's dive into them. 👇🏼
 
-## HTTP Trigger
+## HTTP Hook Trigger
 
 In a past update ([see article](/articles/skybearnet-scripts-changelog-2024-05-28/)) I introduced the script triggers, specifically the scheduled cron trigger.
 Scheduled triggers allow you to configure a script to run periodically every few minutes based on a cron expression.
