@@ -9,6 +9,14 @@
 // };
 const DataList = [
   {
+    url: "https://www.youtube.com/watch?v=vsdDs7oOLlg&ab_channel=SorenBjornstad&utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Experience TiddlyWiki Fluency: Creating a Reading List",
+    author: "Soren Bjornstad",
+    dateListed: "2024-10-18T14:21:10.000Z",
+    type: "video",
+    tags: ["favourite"],
+  },
+  {
     url: "https://www.youtube.com/watch?v=rmueBVrLKcY?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Computer Science - A Guide for the Perplexed • Joe Armstrong • GOTO 2018",
     author: "Joe Armstrong",
