@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://groktiddlywiki.com/read/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Grok TiddlyWiki - Build a deep, lasting understanding of TiddlyWiki",
+    author: "Soren Bjornstad",
+    dateListed: "2024-10-18T14:23:10.000Z",
+  },
+  {
     url: "https://www.youtube.com/watch?v=vsdDs7oOLlg&ab_channel=SorenBjornstad&utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Experience TiddlyWiki Fluency: Creating a Reading List",
     author: "Soren Bjornstad",
