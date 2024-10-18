@@ -9,6 +9,13 @@
 // };
 const DataList = [
   {
+    url: "https://www.youtube.com/watch?v=rmueBVrLKcY?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Computer Science - A Guide for the Perplexed • Joe Armstrong • GOTO 2018",
+    author: "Joe Armstrong",
+    dateListed: "2024-10-18T14:20:00.000Z",
+    type: "video",
+  },
+  {
     url: "https://github.blog/open-source/git/framework-building-open-graph-images/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "A framework for building Open Graph images",
     author: "Jason Etcovitch (Github)",
