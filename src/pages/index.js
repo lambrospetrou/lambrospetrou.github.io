@@ -122,7 +122,7 @@ function HomeCtaWidgetSkybearAction() {
 function WritingSection({posts}) {
   return (
     <section className="home-section inner-section">
-      <header><h2>Read my writings</h2></header>
+      <header><h2>Articles</h2></header>
       <ArticlesList posts={posts}/>
     </section>
   );
