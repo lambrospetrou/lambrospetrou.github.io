@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://www.alexedwards.net/blog/a-time-saving-makefile-for-your-go-projects?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Quick tip: A time-saving Makefile for your Go projects",
+    author: "Alex Edwards",
+    dateListed: "2024-10-21T14:00:00.000Z",
+  },
+  {
     url: "https://cacm.acm.org/research/always-measure-one-level-deeper/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Always Measure One Level Deeper - Performance measurements often go wrong, reporting surface-level results that are more marketing than science.",
     author: "John Ousterhout",
