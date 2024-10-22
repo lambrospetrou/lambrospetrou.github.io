@@ -9,6 +9,14 @@
 // };
 const DataList = [
   {
+    url: "https://www.youtube.com/watch?v=OTrTqs9FLq0&ab_channel=TheDiaryOfACEO&utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "The Muscle Building Expert: They’re Lying To You About Workout Hours! Dr Michael Israetel",
+    author: "Dr Michael Israetel, The Diary Of A CEO",
+    dateListed: "2024-10-22T13:00:00.000Z",
+    type: "video",
+    tags: ["favourite"],
+  },
+  {
     url: "https://www.alexedwards.net/blog/a-time-saving-makefile-for-your-go-projects?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Quick tip: A time-saving Makefile for your Go projects",
     author: "Alex Edwards",
@@ -35,7 +43,7 @@ const DataList = [
     tags: ["favourite"],
   },
   {
-    url: "https://www.youtube.com/watch?v=rmueBVrLKcY?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    url: "https://www.youtube.com/watch?v=rmueBVrLKcY&utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Computer Science - A Guide for the Perplexed • Joe Armstrong • GOTO 2018",
     author: "Joe Armstrong",
     dateListed: "2024-10-18T14:20:00.000Z",
@@ -48,7 +56,7 @@ const DataList = [
     dateListed: "2024-10-14T13:40:00.000Z",
   },
   {
-    url: "https://www.youtube.com/watch?v=l-oCDQGH3EU&ab_channel=NDCConferences?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    url: "https://www.youtube.com/watch?v=l-oCDQGH3EU&ab_channel=NDCConferences&utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Being Staff Plus - Ian Cooper - NDC Oslo 2024",
     author: "Ian Cooper",
     dateListed: "2024-10-14T13:20:00.000Z",
@@ -247,7 +255,7 @@ const DataList = [
     dateListed: "2024-08-21T19:10:00.000Z",
   },
   {
-    url: "https://www.youtube.com/watch?v=wjYPak5EUik?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    url: "https://www.youtube.com/watch?v=wjYPak5EUik&utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "The SaaS Pricing Fundamentals I Used To Become a Millionaire",
     author: "Rob Walling",
     dateListed: "2024-08-17T19:10:00.000Z",
@@ -535,7 +543,7 @@ const DataList = [
     dateListed: "2024-05-29T20:40:00.000Z",
   },
   {
-    url: "https://www.youtube.com/watch?v=9-S_nZ5gzGE?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    url: "https://www.youtube.com/watch?v=9-S_nZ5gzGE&utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Pushing Java to the Limits: Processing a Billion Rows in under 2 Seconds by ROY VAN RIJN",
     author: "Roy Van Rijn",
     dateListed: "2024-05-29T09:00:00.000Z",
@@ -634,7 +642,7 @@ const DataList = [
     dateListed: "2024-04-08T21:10:00.000Z",
   },
   {
-    url: "https://www.youtube.com/watch?v=zTLaswJ_t_w?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    url: "https://www.youtube.com/watch?v=zTLaswJ_t_w&utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Naked Business: How Honesty Makes You More Money – Jason Cohen – MicroConf 2012",
     author: "Jason Cohen",
     dateListed: "2024-04-08T11:00:00.000Z",
@@ -642,7 +650,7 @@ const DataList = [
     tags: ["favourite"],
   },
   {
-    url: "https://www.youtube.com/watch?v=ljqra3BcqWM?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    url: "https://www.youtube.com/watch?v=ljqra3BcqWM&utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Extreme Ownership | Jocko Willink | TEDxUniversityofNevada",
     author: "Jocko Willink",
     dateListed: "2024-03-27T11:15:00.000Z",
@@ -1036,7 +1044,7 @@ const DataList = [
     dateListed: "2023-11-02T09:10:00.000Z",
   },
   {
-    url: "https://queue.acm.org/detail.cfm?id=3197520?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    url: "https://queue.acm.org/detail.cfm?id=3197520&utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Manual Work is a Bug - A.B.A: always be automating",
     author: "Thomas A. Limoncelli",
     dateListed: "2023-10-29T10:10:00.000Z",
