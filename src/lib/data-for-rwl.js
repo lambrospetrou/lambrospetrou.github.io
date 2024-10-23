@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://jeremymorrell.dev/blog/a-practitioners-guide-to-wide-events/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "A Practitioner's Guide to Wide Events",
+    author: "Jeremy Morrell",
+    dateListed: "2024-10-22T16:00:00.000Z",
+  },
+  {
     url: "https://www.youtube.com/watch?v=OTrTqs9FLq0&ab_channel=TheDiaryOfACEO&utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "The Muscle Building Expert: They’re Lying To You About Workout Hours! Dr Michael Israetel",
     author: "Dr Michael Israetel, The Diary Of A CEO",
