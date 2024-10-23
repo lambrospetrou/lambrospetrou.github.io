@@ -86,7 +86,7 @@ Requirement 5 is where things get hairy, really fast, with traditional hosting/c
 
 ## High-level architecture
 
-There are many approaches to implement this and satisfy the requirements. Some are complex, others are complicated, and others are just pain in the ass.
+There are many approaches to implement this and satisfy the requirements. Some are complex, others are complicated, and others are just a pain in the ass.
 
 The following design exploits and showcases the goodies of Durable Objects, satisfying all the requirements, without the code getting complex or our mental reasoning having trouble.
 
@@ -101,7 +101,7 @@ Let's break down the above diagram.
     - First user is in Portland, US.
 - **User 2**
     - Second user is in London, UK.
-- **Traffic to Cloudflare network (B)**
+- **Traffic to Cloudflare network (A)**
     - The traffic from all users is routed to the nearest Cloudflare datacenter using [Anycast](https://www.cloudflare.com/en-gb/learning/cdn/glossary/anycast-network/).
 - **Workers fleet (B)**
     - The Workers are stateless, and each user request goes to any available machine inside a datacenter close to the user request's location. Not necessarily the same machine each time.
@@ -131,11 +131,14 @@ Let's now explore a concrete example of how data flows through the above diagram
 3. The Worker code attempts to create a [Durable Object Stub](https://developers.cloudflare.com/durable-objects/api/stub/) for User 1's tenant ID.
     - Since this is the first time we attempt that, there is no Durable Object instance with that ID, therefore the platform will create one in the closest datacenter with Durable Object support, often in the same region.
     - The Worker code doesn't need to check anything to see if a `TENANT` DO already exists and worry about all that. When you create a reference to the DO you want to use, if it doesn't already exist it gets created, and then you just get routed to it.
-    - Reference code to get access a DO instance: `const doStub = env.TENANT.idFromName(tenantId).get();`
+    - Worker code to get access a DO instance:
+        ```javascript
+        const doStub = env.TENANT.idFromName(tenantId).get();
+        ```
     - The above line will return a [Durable Object Stub](https://developers.cloudflare.com/durable-objects/api/stub/) which allows us to call methods on the DO instance directly.
     - This stub can reference a DO instance in the same datacenter, on the same machine, or in the other side of the world.
 4. Now that the `TENANT_1` DO stub is created, we call `doStub.createWiki(...)` to create the first TiddlyWiki.
-5. The Durable Object `TENANT_1` now receives the request, initiates its local SQLite storage with the appropriate SQL tables for the user information (remember-this is the first time the user did anything), and subsequently attempts to create the Durable Object that will manage the wiki's data.
+5. The Durable Object `TENANT_1` now receives the request, initiates its local SQLite storage with the appropriate SQL tables for the user information (remember; this is the first time the user did anything), and subsequently attempts to create the Durable Object that will manage the wiki's data.
 6. Similar to step 3, we now attempt to get a stub on the wiki DO `WIKI_1`.
     - Generate a random ID for the wiki (i.e. `WIKI_1`): `const doId = env.WIKI.newUniqueId();`
     - Get the DO stub: `const wikiStub = await env.WIKI.get(doId);`
@@ -150,12 +153,16 @@ _Are you starting to see the magic?_ 👁️
 
 ## GetWiki data flow
 
-We have a wiki created now so let's see the much simpler wiki data flow now.
+We have a wiki created now, so let's see the much simpler wiki data read flow.
 
-1. User 1 opens the Tiddlyflare URL returned by the creation flow.
+1. User 1 opens the wiki URL returned by the creation flow.
 2. The `GET` request flows to the nearest Workers fleet within a datacenter in Portland.
 3. This time the Workers code attempts to create a Durable Object Stub straight to `WIKI_1`, and bypasses the `TENANT_1` DO, since the URL encodes the DO instance ID.
-    - Reference the wiki DO instance: `const wikiStub = env.WIKI.idFromString(extractWikiId(requestUrl)).get();`
+    - Worker code to the wiki DO instance:
+        ```javascript
+        const doId = extractWikiId(requestUrl)
+        const wikiStub = env.WIKI.idFromString(doId).get();
+        ```
     - As before, `WIKI_1` is probably in the same region as `TENANT_1` or even same datacenter.
 4. The worker now calls the DO stub to return the wiki content.
     - Code: `return wikiStub.getFileSrc(wikiId);`
@@ -170,7 +177,7 @@ That's it.
 
 Can you guess what the read flow looks like for User 2 trying to read `WIKI_1` from User 1? For simplicity let's assume all wikis are publicly accessible to anyone with the URL at hand (in reality we have actual auth).
 
-Go ahead and try to see which step of the previous section would be different.
+Go ahead and guess which step of the previous section would be different.
 
 OK.
 
@@ -232,7 +239,7 @@ This is why I love Durable Objects and what made the Workers platform really cli
     - I only used Workers and Durable Objects for the whole Tiddlyflare product.
     - There is so much you can do within the platform, and everything integrates with Workers through Bindings so nicely (and will get even more seamless).
     - Workers KV, R2, Workers AI, Cache API, Rate Limiters, upcoming Containers, and so much more.
-    - Example: Adding a global cache to Tiddlyflare is simply `env.KV.put(wikiId, src)`. This will now allow fast reads from any Worker processing requests for that `wikiId`, without having to even reach the DO instance. 1 line!
+    - Example: Adding a global cache to Tiddlyflare is simply `env.KV.put(wikiId, src)`. This will now allow fast reads from any Worker processing requests for that `wikiId` without having to even reach the DO instance. 1 line!
 
 ```javascript
 env.WIKI.get(extractDOID(wikiUrl)).deleteWiki(wikiId);
@@ -253,23 +260,23 @@ I [mentioned before](https://www.lambrospetrou.com/articles/durable-objects-clou
 
 > It's the Actor model with infinite scale built natively into the global Cloudflare network itself.
 
-In the end, this boils down to having to think about the main entities of your application as separate "things" that communicate with each other.
+In the end, this boils down to thinking about the main entities of your application as separate "things" that communicate with each other.
 
-Each entity has their own memory, their own local storage, and their own lifecycle. In our example above, we have two main entities, the tenant (user information), and the wikis (versions of HTML content).
+Each entity has their own memory, their own local disk storage, and their own lifecycle. In our example above, we have two main entities, the tenant (user information), and the wikis (versions of HTML content).
 
 At the application level we have 1 `TENANT` instance per user, and unlimited amount of `WIKI` instances per user.
 
-You could model all the wikis to be managed by a single Durable Object instance, or further merging the two and only having one Durable Object instance for each user with all their information including wiki content.
+You could model all the wikis to be managed by a single Durable Object instance, or further merging the two and only having one Durable Object instance for each user with all their information including wiki content. 👎🏼
 
 The problem with that design is that all requests and all operations for a user, including all the operations for all of their wikis, would be handled by a single Durable Object instance. What if a single wiki gets DDoSed and then blocks all others? What if the machine hosting that single Durable Object instance goes down? What if...?
 
-Durable Objects are a very, very powerful programming model. However, a single Durable Object instance is a tiny server of 128GB memory and 10GB disk space. There is only so much it can do for you and requests it can handle ([up to 1 thousand per second](https://developers.cloudflare.com/durable-objects/platform/limits/#how-much-work-can-a-single-durable-object-do)).
+Durable Objects are a very, very powerful programming model. However, a single Durable Object instance is a tiny server of 128MB memory and 10GB disk space. There is only so much it can do for you and requests it can handle ([up to 1 thousand per second](https://developers.cloudflare.com/durable-objects/platform/limits/#how-much-work-can-a-single-durable-object-do)).
 
 I previously described a bunch of other [example cases and how Durable Objects can influence their architecture](https://www.lambrospetrou.com/articles/durable-objects-cloudflare/#durable-objects-use-cases).
 
 In summary, the main hurdle of adopting the Workers platform is that you need to start designing your applications with this isolation in mind.
 
-> What if every core entity in your application had its own server?
+> What if every core entity in your application had its own mini server?
 
 That's Durable Objects.
 
@@ -277,7 +284,7 @@ That's Durable Objects.
 
 You made it. Awesome. Thank you. 🙏🏻
 
-I hope you now know what Durable Objects are, understand why they are powerful.
+I hope you now know what Durable Objects are, and understand why they are powerful.
 
 If you want to use them in your applications, and have more questions, please, please reach out.
 If you have feedback to improve the platform, please reach out.
