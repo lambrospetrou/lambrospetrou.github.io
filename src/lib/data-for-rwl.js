@@ -9,6 +9,18 @@
 // };
 const DataList = [
   {
+    url: "https://plaintextaccounting.org/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Plain Text Accounting (PTA)",
+    author: "Simon Michael",
+    dateListed: "2024-10-27T12:40:00.000Z",
+  },
+  {
+    url: "https://beancount.github.io/docs/the_double_entry_counting_method.html?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "The Double-Entry Counting Method",
+    author: "Martin Blais",
+    dateListed: "2024-10-27T12:30:00.000Z",
+  },
+  {
     url: "https://jeremymorrell.dev/blog/a-practitioners-guide-to-wide-events/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "A Practitioner's Guide to Wide Events",
     author: "Jeremy Morrell",
