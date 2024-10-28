@@ -179,7 +179,7 @@ The following deploy script will do the following in order:
 1. Generate the application version name based on commit (if it exists) and current time (see example of this in the [Systemd section](#systemd)).
 2. Copy all the files the application needs into a temporary directory.
     - This step ensures that all the files are copied on the target server before trying to restart any component to avoid any partial deployment.
-3. We send a big shell command over SSH that will do the following:
+3. We send a big shell command over SSH (or Tailscale SSH) that will do the following:
     1. Copy all the application files from the temporary directory into the `/opt/apps_workspace/<appname>/versions/` directory accordingly.
     2. Copy the [Systemd configuration](#systemd) and trigger its daemon to reload its configuration.
     3. Copy the [Caddy configuration](#caddy) and reload its config.
