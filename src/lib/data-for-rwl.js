@@ -12,7 +12,7 @@ const DataList = [
     url: "https://jasonzweig.com/wall-streets-wisest-man/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Wall Street’s Wisest Man",
     author: "Charley Ellis, Jason Zweig",
-    dateListed: "2024-10-27T12:40:00.000Z",
+    dateListed: "2024-10-28T20:10:00.000Z",
   },
   {
     url: "https://plaintextaccounting.org/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
