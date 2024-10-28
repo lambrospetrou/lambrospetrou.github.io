@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://gist.github.com/adamwiggins/5687294?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "My Heroku values",
+    author: "Adam Wiggins",
+    dateListed: "2024-10-28T22:40:00.000Z",
+  },
+  {
     url: "https://jasonzweig.com/wall-streets-wisest-man/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Wall Street’s Wisest Man",
     author: "Charley Ellis, Jason Zweig",
