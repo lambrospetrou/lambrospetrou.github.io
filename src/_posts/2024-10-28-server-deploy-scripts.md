@@ -134,8 +134,9 @@ Each application will have its own `/etc/caddy/sites-enabled/<appname>-Caddyfile
 This is the configuration I have for [<span class="skybear-name">Skybear<span>.NET</span></span>](https://about.skybear.net) which is an application serving multiple domains:
 
 ```
-:80, :443 {
+:80 {
     reverse_proxy http://127.0.0.1:8080 {
+        header_up Host {host}
         header_up X-Real-IP {remote}
 
         # This gives 10s of buffering to allow zero downtime restarts of the service.
@@ -147,9 +148,13 @@ This is the configuration I have for [<span class="skybear-name">Skybear<span>.N
 }
 ```
 
-The above config specifies that Caddy server will listen on ports `:80` and `:443` and act as a reverse proxy forwarding all requests to a process running locally and listening on `http://127.0.0.1:8080` for HTTP requests.
+The above config specifies that Caddy server will listen on port `:80` and act as a reverse proxy forwarding all requests to a process running locally and listening on `http://127.0.0.1:8080` for HTTP requests.
+
+I use Cloudflare as a proxy in front of all my servers, hence I don't need to serve HTTPS from my origin servers (therefore no need to listen on port `:443`).
+If you want to go straight to your servers without any proxy CDN, Caddy supports HTTPS out of the box ([see docs](https://caddyserver.com/docs/quick-starts/https)), so you just need to add some extra configuration for the domain(s) to certify.
 
 In the forwarded request the headers `Host` and `X-Real-IP` will be set appropriately, and the maximum request body we accept is 1MB otherwise the request will be rejected.
+Read through <https://caddyserver.com/docs/caddyfile/directives/reverse_proxy#defaults> to see if you really need these headers depending on your CDN used (if any at all).
 
 We are going to see in the [Deploy script](#deploy-script) section when this file is created, updated, and how we notify Caddy to pickup changes.
 
