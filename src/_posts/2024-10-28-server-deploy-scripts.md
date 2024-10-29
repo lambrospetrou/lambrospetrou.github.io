@@ -136,7 +136,6 @@ This is the configuration I have for [<span class="skybear-name">Skybear<span>.N
 ```
 :80, :443 {
     reverse_proxy http://127.0.0.1:8080 {
-        header_up Host {host}
         header_up X-Real-IP {remote}
 
         # This gives 10s of buffering to allow zero downtime restarts of the service.
@@ -157,6 +156,8 @@ We are going to see in the [Deploy script](#deploy-script) section when this fil
 Let's now explore the `lb_try_duration 10s` configuration.
 
 ### Zero downtime deployments
+
+ℹ️ **Assumption: Your application supports graceful shutdowns.** In order for zero downtime to work properly your application has to support graceful shutdown. That means you do not abruptly kill your process during restarts, but instead process in-flight requests without accepting new ones, and then exiting the process. How you do this depends on the language and framework you use. For example here is how it's done in Go servers: <https://pkg.go.dev/net/http#Server.Shutdown>
 
 Without the line `lb_try_duration 10s`, everything would still work correctly.
 
