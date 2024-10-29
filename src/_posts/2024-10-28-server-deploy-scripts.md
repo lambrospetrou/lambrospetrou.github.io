@@ -136,7 +136,6 @@ This is the configuration I have for [<span class="skybear-name">Skybear<span>.N
 ```
 :80 {
     reverse_proxy http://127.0.0.1:8080 {
-        header_up Host {host}
         header_up X-Real-IP {remote}
 
         # This gives 10s of buffering to allow zero downtime restarts of the service.
@@ -153,7 +152,7 @@ The above config specifies that Caddy server will listen on port `:80` and act a
 I use Cloudflare as a proxy in front of all my servers, hence I don't need to serve HTTPS from my origin servers (therefore no need to listen on port `:443`).
 If you want to go straight to your servers without any proxy CDN, Caddy supports HTTPS out of the box ([see docs](https://caddyserver.com/docs/quick-starts/https)), so you just need to add some extra configuration for the domain(s) to certify.
 
-In the forwarded request the headers `Host` and `X-Real-IP` will be set appropriately, and the maximum request body we accept is 1MB otherwise the request will be rejected.
+In the forwarded request the headers `X-Real-IP` will be set appropriately, and the maximum request body we accept is 1MB otherwise the request will be rejected.
 Read through <https://caddyserver.com/docs/caddyfile/directives/reverse_proxy#defaults> to see if you really need these headers depending on your CDN used (if any at all).
 
 We are going to see in the [Deploy script](#deploy-script) section when this file is created, updated, and how we notify Caddy to pickup changes.
@@ -162,7 +161,7 @@ Let's now explore the `lb_try_duration 10s` configuration.
 
 ### Zero downtime deployments
 
-ℹ️ **Assumption: Your application supports graceful shutdowns.** In order for zero downtime to work properly your application has to support graceful shutdown. That means you do not abruptly kill your process during restarts, but instead process in-flight requests without accepting new ones, and then exiting the process. How you do this depends on the language and framework you use. For example here is how it's done in Go servers: <https://pkg.go.dev/net/http#Server.Shutdown>
+ℹ️ **Assumption: Your application supports graceful shutdowns.** In order for zero downtime to work properly your application has to support graceful shutdown. That means you do not abruptly kill your process during restarts, but instead process in-flight requests without accepting new ones, and then exiting the process. How you do this depends on the language and framework you use. For example here is how it's done in Go servers: <https://pkg.go.dev/net/http#example-Server.Shutdown>
 
 Without the line `lb_try_duration 10s`, everything would still work correctly.
 
