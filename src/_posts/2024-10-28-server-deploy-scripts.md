@@ -104,6 +104,12 @@ Also, the app is running under the user `appuser` and the group `appadmins`, jus
 
 We specify that we want to always restart the application, and that we want both the standard output and standard error to be logged into systemd's Journal.
 
+To tail the application logs:
+
+```sh
+sudo journalctl -u monosource-server -f
+```
+
 We are going to see in the [Deploy script](#deploy-script) section when this file is created, updated, and how we notify `systemd` to pickup changes.
 
 ## Caddy
@@ -180,10 +186,10 @@ The following deploy script will do the following in order:
 2. Copy all the files the application needs into a temporary directory.
     - This step ensures that all the files are copied on the target server before trying to restart any component to avoid any partial deployment.
 3. We send a big shell command over SSH (or Tailscale SSH) that will do the following:
-    1. Copy all the application files from the temporary directory into the `/opt/apps_workspace/<appname>/versions/` directory accordingly.
-    2. Copy the [Systemd configuration](#systemd) and trigger its daemon to reload its configuration.
-    3. Copy the [Caddy configuration](#caddy) and reload its config.
-    4. Create the symlink updating the current version.
+    1. Move all the application files from the temporary directory into the `/opt/apps_workspace/<appname>/versions/` directory accordingly.
+    2. Move the [Systemd configuration](#systemd) from the temporary directory to `/etc/systemd/system/<appname>.service`, and trigger its daemon to reload its configuration.
+    3. Move the [Caddy configuration](#caddy) from the temporary directory to `/etc/caddy/sites-enabled/<appname>-Caddyfile`, and trigger the Caddy daemon to reload its configuration.
+    4. Update the symlink `/opt/apps_workspace/<appname>/current/<appname>` to point to the new version.
     5. Restart the application using `systemctl restart <appname>`.
         - This is the only part that causes downtime, but is mitigated by using Caddy's load balancing feature to buffer requests.
 4. Delete older versions to retain only the latest 10 on the server, just in case I need to rollback to a previous version.
