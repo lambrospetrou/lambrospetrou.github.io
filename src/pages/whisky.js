@@ -1,9 +1,9 @@
 import Head from 'next/head'
-import {Layout} from "../components/layout";
+import { Layout } from "../components/layout";
 import { Aex } from "../components/common"
 
 function IconDefs() {
-  return <svg style={{display: "none"}} viewBox="0 0 0 0" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
+  return <svg style={{ display: "none" }} viewBox="0 0 0 0" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
     <defs>
       <path id="iconHeart" d="M9.719,17.073l-6.562-6.51c-0.27-0.268-0.504-0.567-0.696-0.888C1.385,7.89,1.67,5.613,3.155,4.14c0.864-0.856,2.012-1.329,3.233-1.329c1.924,0,3.115,1.12,3.612,1.752c0.499-0.634,1.689-1.752,3.612-1.752c1.221,0,2.369,0.472,3.233,1.329c1.484,1.473,1.771,3.75,0.693,5.537c-0.19,0.32-0.425,0.618-0.695,0.887l-6.562,6.51C10.125,17.229,9.875,17.229,9.719,17.073 M6.388,3.61C5.379,3.61,4.431,4,3.717,4.707C2.495,5.92,2.259,7.794,3.145,9.265c0.158,0.265,0.351,0.51,0.574,0.731L10,16.228l6.281-6.232c0.224-0.221,0.416-0.466,0.573-0.729c0.887-1.472,0.651-3.346-0.571-4.56C15.57,4,14.621,3.61,13.612,3.61c-1.43,0-2.639,0.786-3.268,1.863c-0.154,0.264-0.536,0.264-0.69,0C9.029,4.397,7.82,3.61,6.388,3.61"></path>
       <path id="iconChainLink" d="M16.469,8.924l-2.414,2.413c-0.156,0.156-0.408,0.156-0.564,0c-0.156-0.155-0.156-0.408,0-0.563l2.414-2.414c1.175-1.175,1.175-3.087,0-4.262c-0.57-0.569-1.326-0.883-2.132-0.883s-1.562,0.313-2.132,0.883L9.227,6.511c-1.175,1.175-1.175,3.087,0,4.263c0.288,0.288,0.624,0.511,0.997,0.662c0.204,0.083,0.303,0.315,0.22,0.52c-0.171,0.422-0.643,0.17-0.52,0.22c-0.473-0.191-0.898-0.474-1.262-0.838c-1.487-1.485-1.487-3.904,0-5.391l2.414-2.413c0.72-0.72,1.678-1.117,2.696-1.117s1.976,0.396,2.696,1.117C17.955,5.02,17.955,7.438,16.469,8.924 M10.076,7.825c-0.205-0.083-0.437,0.016-0.52,0.22c-0.083,0.205,0.016,0.437,0.22,0.52c0.374,0.151,0.709,0.374,0.997,0.662c1.176,1.176,1.176,3.088,0,4.263l-2.414,2.413c-0.569,0.569-1.326,0.883-2.131,0.883s-1.562-0.313-2.132-0.883c-1.175-1.175-1.175-3.087,0-4.262L6.51,9.227c0.156-0.155,0.156-0.408,0-0.564c-0.156-0.156-0.408-0.156-0.564,0l-2.414,2.414c-1.487,1.485-1.487,3.904,0,5.391c0.72,0.72,1.678,1.116,2.696,1.116s1.976-0.396,2.696-1.116l2.414-2.413c1.487-1.486,1.487-3.905,0-5.392C10.974,8.298,10.55,8.017,10.076,7.825"></path>
@@ -14,19 +14,19 @@ function IconDefs() {
   </svg>;
 }
 
-function Icon({type, className = ""}) {
+function Icon({ type, className = "" }) {
   // From http://svgicons.sparkk.fr/
   switch (type) {
-  case "favourite":
-    return <svg className={`favourite ${className}`} viewBox="0 0 20 20"><use xlinkHref="#iconHeart"/></svg>;
-  case "chain-link":
-    return <svg className={`${className}`} viewBox="0 0 20 20"><use xlinkHref="#iconChainLink"/></svg>;
-  case "audio":
-    return <svg className={`${className}`} viewBox="0 0 20 20"><use xlinkHref="#iconAudio"/></svg>;
-  case "video":
-    return <svg className={`${className}`} viewBox="0 0 20 20"><use xlinkHref="#iconVideo"/></svg>;
-  default:
-    return <svg className={`${className}`} viewBox="0 0 20 20"><use xlinkHref="#iconBook"/></svg>;
+    case "favourite":
+      return <svg className={`favourite ${className}`} viewBox="0 0 20 20"><use xlinkHref="#iconHeart" /></svg>;
+    case "chain-link":
+      return <svg className={`${className}`} viewBox="0 0 20 20"><use xlinkHref="#iconChainLink" /></svg>;
+    case "audio":
+      return <svg className={`${className}`} viewBox="0 0 20 20"><use xlinkHref="#iconAudio" /></svg>;
+    case "video":
+      return <svg className={`${className}`} viewBox="0 0 20 20"><use xlinkHref="#iconVideo" /></svg>;
+    default:
+      return <svg className={`${className}`} viewBox="0 0 20 20"><use xlinkHref="#iconBook" /></svg>;
   }
 }
 
@@ -39,7 +39,7 @@ function WhiskyImage({ title, url }) {
   return (
     <figure>
       <Aex href={url}><img src={url} title={title} alt={title} /></Aex>
-      <figcaption><strong>{title}</strong><br/>(click image to view full-size)</figcaption>
+      <figcaption><strong>{title}</strong><br />(click image to view full-size)</figcaption>
     </figure>)
 }
 
@@ -50,10 +50,10 @@ function WhiskyNight({ title, children }) {
   </section>)
 }
 
-function WhiskyNights({}) {
+function WhiskyNights({ }) {
   return (
     <article id="whisky-nights">
-      <h2>Whisky Nights <a className="chain-link" href="#whisky-nights"><Icon type="chain-link"/></a></h2>
+      <h2>Whisky Nights <a className="chain-link" href="#whisky-nights"><Icon type="chain-link" /></a></h2>
       <p>This section is dedicated to the whisky nights we organize.</p>
 
       <WhiskyNight title="Whisky Night #1">
@@ -108,6 +108,9 @@ function WhiskyNights({}) {
       <WhiskyNight title="Whisky Night #17">
         <WhiskyImage url="/s/images/whisky/whisky_night_17.jpg" title="Auchentoshan 18y - Single Malt Scotch Whisky" />
       </WhiskyNight>
+      <WhiskyNight title="Whisky Night #18">
+        <WhiskyImage url="/s/images/whisky/whisky_night_18.jpg" title="Craigellachie 17y - Speyside Single Malt Scotch Whisky" />
+      </WhiskyNight>
     </article>
   )
 }
@@ -115,18 +118,18 @@ function WhiskyNights({}) {
 function RatedWhisky({ children, id, rating }) {
   return (
     <section className="rated-whisky" id={id}>
-      <p className="rating">Rating: <span>{rating}/5</span> <a className="chain-link" href={`#${id}`}><Icon type="chain-link"/></a></p>
+      <p className="rating">Rating: <span>{rating}/5</span> <a className="chain-link" href={`#${id}`}><Icon type="chain-link" /></a></p>
       {children}
     </section>
   )
 }
 
-function RatedWhiskies({}) {
+function RatedWhiskies({ }) {
   return (
     <article id="rated-whiskies">
-      <h2>Rated Whiskies <a className="chain-link" href="#rated-whiskies"><Icon type="chain-link"/></a></h2>
+      <h2>Rated Whiskies <a className="chain-link" href="#rated-whiskies"><Icon type="chain-link" /></a></h2>
       <p>This section contains whiskies I tried at the <Aex href="http://blackrock.bar/" title="BlackRock bar website">BlackRock bar</Aex>, or elsewhere and are worthy of mentioning. They are rated to a scale of 5, with 5 being the best, at least for my taste.</p>
-      
+
       <hr />
 
       <RatedWhisky rating={4} id="whisky-smokehead-unfiltered">
@@ -148,12 +151,12 @@ function RatedWhiskies({}) {
       <RatedWhisky rating={5} id="whisky-octomore-14_1">
         <WhiskyImage url="/s/images/whisky/20231104_octomore-14_1.jpg" title="Octomore 14.1 Super Heavily Peated - Islay Single Malt Scotch Whisky" />
       </RatedWhisky>
-      
+
     </article>
   );
 }
 
-export default function Page({}) {
+export default function Page({ }) {
   const title = "Whisky | Lambros Petrou";
   const desc = "Lambros' curated list of whisky related material to read, watch, listen, and most importantly drink.";
 
@@ -163,8 +166,8 @@ export default function Page({}) {
         <link rel="canonical" href="https://www.lambrospetrou.com/whisky/" />
         <title>{title}</title>
         <meta property="og:title" content={title} />
-        <meta property="og:description" content={desc}/>
-        <meta name="description" content={desc}/>
+        <meta property="og:description" content={desc} />
+        <meta name="description" content={desc} />
         <meta property="og:type" content="article" />
         <meta property="og:image" content="/s/images/whisky/og_image.jpg" />
       </Head>
