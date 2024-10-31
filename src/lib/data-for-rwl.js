@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://www.youtube.com/watch?v=BBAuhqvT_ds&ab_channel=AliAbdaal&utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "My honest advice to someone who wants financial freedom",
+    author: "Ali Abdaal",
+    dateListed: "2024-10-31T13:40:00.000Z",
+  },
+  {
     url: "https://www.youtube.com/watch?v=J2xGBlT0cqY&ab_channel=MITVideoProductions&utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Jeff Bezos at MIT Amazon - Earth's Most Customer-Centric Company",
     author: "Jeff Bezos, Robert Frederick",
