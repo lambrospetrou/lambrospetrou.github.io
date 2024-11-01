@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://gwern.net/note/faster?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Computer Optimization: Your Computer Is Faster Than You Think",
+    author: "Gwern Branwen",
+    dateListed: "2024-11-01T19:40:00.000Z",
+  },
+  {
     url: "https://www.youtube.com/watch?v=BBAuhqvT_ds&ab_channel=AliAbdaal&utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "My honest advice to someone who wants financial freedom",
     author: "Ali Abdaal",
