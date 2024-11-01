@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://dgryski.medium.com/consistent-hashing-algorithmic-tradeoffs-ef6b8e2fcae8?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Consistent Hashing: Algorithmic Tradeoffs",
+    author: "Damian Gryski",
+    dateListed: "2024-11-01T22:00:00.000Z",
+  },
+  {
     url: "https://gwern.net/note/faster?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Computer Optimization: Your Computer Is Faster Than You Think",
     author: "Gwern Branwen",
