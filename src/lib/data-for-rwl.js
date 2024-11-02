@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://graphics.stanford.edu/~seander/bithacks.html?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Bit Twiddling Hacks",
+    author: "Sean Eron Anderson",
+    dateListed: "2024-11-02T14:20:00.000Z",
+  },
+  {
     url: "https://dgryski.medium.com/consistent-hashing-algorithmic-tradeoffs-ef6b8e2fcae8?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Consistent Hashing: Algorithmic Tradeoffs",
     author: "Damian Gryski",
