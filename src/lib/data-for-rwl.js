@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://kerkour.com/i-love-jwt?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "I ❤️ JWTs (JSON Web Tokens)",
+    author: "Sylvain Kerkour",
+    dateListed: "2024-11-03T20:30:00.000Z",
+  },
+  {
     url: "https://www.scalevp.com/insights/a-quick-primer-on-the-rule-of-40/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "A Quick Primer on the Rule of 40",
     author: "Sam Baker",
