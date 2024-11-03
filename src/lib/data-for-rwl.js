@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://www.scalevp.com/insights/a-quick-primer-on-the-rule-of-40/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "A Quick Primer on the Rule of 40",
+    author: "Sam Baker",
+    dateListed: "2024-11-03T13:55:00.000Z",
+  },
+  {
     url: "https://longform.asmartbear.com/saas-metric/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "No wait, of course THAT is the single most important SaaS metric",
     author: "Jason Cohen",
