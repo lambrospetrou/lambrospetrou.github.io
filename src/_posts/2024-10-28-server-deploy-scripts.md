@@ -23,13 +23,15 @@ Let's clarify what we want to achieve.
 **We want to deploy on servers.** Not serverless platforms, not managed container platforms.
 We have our application artifact, maybe a Go/Rust binary, maybe a zip/tar/jar file, a Python/Node script, and want to run it on the server.
 
-ℹ️ Note: Even though this guide is not for Docker containers, the [Caddy section](#caddy) and the [zero downtime section](#zero-downtime-deployments) actually do apply to Docker containerized applications too.
-
 **We want zero downtime.** This means we can deploy the application without failing in-progress requests or incoming requests while the application is being deployed.
 
 This is important since applications I deploy on my servers are usually SQLite-based and therefore all requests are routed onto that single server.
 
 Lastly, **we want simple deploy scripts** that can run from a CI like Github Actions or AWS CodeBuild and from laptops/machines locally without changes needed.
+
+ℹ️ Note 1: Even though this guide is not for Docker containers, the [Caddy section](#caddy) and the [zero downtime section](#zero-downtime-deployments) actually do apply to Docker containerized applications too.
+
+ℹ️ Note 2: I love the approach explained in this article, because it doesn't depend on language-specific libraries to achieve zero downtime, as long as your application supports graceful shutdowns ([more in Zero downtime deployments section](#zero-downtime-deployments)).
 
 ## Directory structure
 
