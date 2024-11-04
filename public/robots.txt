@@ -1,0 +1,7 @@
+# Disallow Cloudflare CGI scripts.
+User-agent: *
+Disallow: /cdn-cgi/
+
+# Otherwise all is fair game for now.
+User-agent: *
+Allow: /
