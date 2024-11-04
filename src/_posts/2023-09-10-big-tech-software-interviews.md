@@ -458,7 +458,7 @@ The above material should be more than enough to prepare for the System Design i
 - Articles by Marc Brooker: https://brooker.co.za/blog/
 - The morning paper: https://blog.acolyer.org/
 - The [Preparing for the Systems Design and Coding Interview](https://blog.pragmaticengineer.com/preparing-for-the-systems-design-and-coding-interviews/) article by Gergely Orosz has a lot of references on books, courses, and material to study.
-- Free online course: https://www.hiredintech.com/classrooms/system-design/
+- Free online course: https://www.hiredintech.com/system-design/
 - Preparation links and resources for system design questions: https://github.com/shashank88/system_design
 - System design interview for IT companies: https://github.com/checkcheckzz/system-design-interview
 

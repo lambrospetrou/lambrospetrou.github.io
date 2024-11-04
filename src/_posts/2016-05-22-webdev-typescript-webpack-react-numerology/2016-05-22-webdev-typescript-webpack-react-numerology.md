@@ -9,7 +9,7 @@ I decided to play around with [Typescript](https://www.typescriptlang.org/) inst
 
 During the last year I explored several Javascript **languages/flavors** (transpilers, etc.). If you read my previous articles you should know that I also like [Dart](https://www.dartlang.org/). I started using it in 2014 along with [AngularDart](https://github.com/angular/angular.dart) throughout its journey to the stable version 1.0, always going through refactorings and fixing breaking changes. But Dart made me feel again productive and gave me a sensible platform to do front-end development. Unfortunately, it did not pick up as many fans as Google (and me) wanted so it was kinda left behind.
 
-I really believe that the future lies in languages that compile to Javascript or even something else, **WebAssembly** maybe? ([WebAssembly homepage](https://webassembly.github.io/) and [Article](https://medium.com/javascript-scene/what-is-webassembly-the-dawn-of-a-new-era-61256ec5a8f6#.pb2824qir) )
+I really believe that the future lies in languages that compile to Javascript or even something else, **WebAssembly** maybe? ([WebAssembly](https://developer.mozilla.org/en-US/docs/WebAssembly) and [Article](https://medium.com/javascript-scene/what-is-webassembly-the-dawn-of-a-new-era-61256ec5a8f6#.pb2824qir) )
 
 I already gave a go to Babel, so this time it was time for Typescript. Why choose Typescript and not stay with Babel is justified by the points below.
 

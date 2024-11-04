@@ -118,7 +118,7 @@ Small binary, fast startup, and extremely low memory usage 🚀
 
 I am a huge fan of the [http4k](https://www.http4k.org/) framework for building APIs with Kotlin. It is very small, modular, extremely versatile, and due to its philosophy "Server as a Function" it's just an absolute joy to work with. It works both locally, and in AWS Lambda, and runs inside the JVM but also supports compiling down to native binary through [GraalVM Native Image](https://www.graalvm.org/reference-manual/native-image/).
 
-As a driver for SQLite I used [SQLDelight](https://cashapp.github.io/sqldelight/jvm_sqlite/). This is the first time I used it, and I am very pleasantly surprised by how nice it is. Definitely using it for all my SQL needs in the JVM. I tried to use [JetBrains Exposed](https://github.com/JetBrains/Exposed) before SQLDelight but faced issues during the native image compilation, and its custom modelling is a no-go for me.
+As a driver for SQLite I used [SQLDelight](https://github.com/sqldelight/sqldelight). This is the first time I used it, and I am very pleasantly surprised by how nice it is. Definitely using it for all my SQL needs in the JVM. I tried to use [JetBrains Exposed](https://github.com/JetBrains/Exposed) before SQLDelight but faced issues during the native image compilation, and its custom modelling is a no-go for me.
 
 Check out the full source code at <https://github.com/lambrospetrou/code-playground/tree/master/go-vs-kotlin-datastores/kotlin-sqlite>.
 

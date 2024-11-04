@@ -144,7 +144,7 @@ The above limitations are why I personally still use AWS Lambda directly when I 
 
 > Fly keeps your performance up by sending users on the shortest, fastest path to where your application is running.
 
-- https://fly.io/docs/introduction/
+- https://fly.io/docs/getting-started/
 
 Fly.io is a relatively new player (launched in 2020) but it definitely attracted many people already. It currently has [20 regions](https://fly.io/docs/reference/regions/) and the selling pitch is that you specify a Docker image for your application and depending on where the user is they will spin up an instance of it to the closest region and serve the request. Very similar to how Lambda@Edge works, but incredibly more flexible!
 

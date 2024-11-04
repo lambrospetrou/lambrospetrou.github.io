@@ -1380,12 +1380,6 @@ const DataList = [
     dateListed: "2023-08-14T21:15:00.000Z",
   },
   {
-    url: "https://substrate.tools/blog/terraform-best-practices-for-reliability-at-any-scale?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
-    title: "Terraform best practices for reliability at any scale",
-    author: "Richard Crowley, Travis Cole",
-    dateListed: "2023-08-14T21:10:00.000Z",
-  },
-  {
     url: "https://medium.com/point-nine-news/the-p9-guide-to-cohort-analysis-in-saas-v0-9-63ce366ab427?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "The P9 Guide to Cohort Analysis in SaaS (v0.9) - Everything you always wanted to know about cohort analysis (but were afraid to ask)",
     author: "Christoph Janz",
@@ -1533,12 +1527,6 @@ const DataList = [
     title: "Some blogging myths",
     author: "Julia Evans",
     dateListed: "2023-06-09T10:30:00.000Z",
-  },
-  {
-    url: "https://contrarianthinking.co/one-billionaires-secret-to-wealth/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
-    title: "One Billionaire’s Secret to Wealth: Framework for Becoming A Contrarian",
-    author: "Codie Sanchez",
-    dateListed: "2023-06-08T21:35:00.000Z",
   },
   {
     url: "https://www.honeycomb.io/blog/hard-stuff-nobody-talks-about-llm?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
@@ -2373,13 +2361,6 @@ const DataList = [
     dateListed: "2022-10-12T17:07:00.000Z",
   },
   {
-    url: "https://www.patterns.dev/posts/rendering-introduction/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
-    title: "Introduction to rendering patterns",
-    author: "Addy Osmani, Lydia Hallie",
-    dateListed: "2022-10-12T17:06:00.000Z",
-    tags: ["favourite"],
-  },
-  {
     url: "https://runnersfi.com/95-must-read-articles-of-fi/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "95 Must-Read Articles of FI (Financial Independence)",
     author: "David Ward",
@@ -3002,12 +2983,6 @@ const DataList = [
     dateListed: "2022-01-04T09:46:00.000Z",
   },
   {
-    url: "https://ottertune.com/blog/2021-databases-retrospective/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
-    title: "Databases in 2021: A Year in Review",
-    author: "Andy Pavlo",
-    dateListed: "2022-01-04T09:44:00.000Z",
-  },
-  {
     url: "https://jonoscript.wordpress.com/these-things-i-believe/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "These things I believe",
     author: "Jono",
@@ -3141,13 +3116,13 @@ const DataList = [
     tags: ["favourite"],
   },
   {
-    url: "https://www.ycombinator.com/library/4Q-a-minimum-viable-product-is-not-a-product-it-s-a-process?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    url: "https://www.ycombinator.com/blog/minimum-viable-product-process/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "A Minimum Viable Product Is Not a Product, It's a Process",
     author: "Jim Brikman",
     dateListed: "2021-10-19T15:20:00.000Z",
   },
   {
-    url: "https://www.ycombinator.com/library/51-learning-math-for-machine-learning?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    url: "https://www.ycombinator.com/blog/learning-math-for-machine-learning/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Learning Math for Machine Learning",
     author: "Vincent Chen",
     dateListed: "2021-10-18T10:47:00.000Z",

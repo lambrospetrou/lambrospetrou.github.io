@@ -74,6 +74,5 @@ If you want to use PC Suite, unfortunately you cannot import contacts with Greek
 
 ## References
 
-* [Import Google Contacts to Nokia PC Suite](http://blog.gluga.com/2009/11/import-google-contacts-to-nokia-pc.html)
 * [vCard Split](http://www.philipstorry.net/software/vcardsplit)
 * [Nokia Suite Support for Nokia 301 - Microsoft Answers](http://answers.microsoft.com/en-us/mobiledevices/forum/mdasha/nokia-suite-support-for-nokia-301/58a39104-d1ff-4ff1-91af-983ded51ea27)
