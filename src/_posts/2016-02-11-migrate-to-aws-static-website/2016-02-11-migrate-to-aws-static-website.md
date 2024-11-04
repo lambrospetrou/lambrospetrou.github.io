@@ -21,11 +21,11 @@ The other two services, Cloudfront and Route 53 are going to extend our website 
 
 Before we dive into the step-by-step guide let's create our scenario.
 
-Assume that throughout this tutorial we want to make a website for **lambrospetrou.com**. Also we want the www-prefixed domain, **www.lambrospetrou.com** to redirect the users to the APEX domain, the non-www domain, **lambrospetrou.com**.
+Assume that throughout this tutorial we want to make a website for `lambrospetrou.com`. Also we want the www-prefixed domain, `www.lambrospetrou.com` to redirect the users to the APEX domain, the non-www domain, `lambrospetrou.com`.
 
 1. First we want to create the bucket that will hold our website files. Visit the AWS management console and navigate to the S3 service. ([direct link to S3](https://console.aws.amazon.com/s3/)).
 
-2. Click **Create Bucket** and type in the **Bucket Name**, which in my case it was **lambrospetrou.com**. It is **very important** that you give your bucket a name that matches exactly your domain. Additionally, choose the region where you want your bucket to reside (choose the one closer to your users).
+2. Click **Create Bucket** and type in the **Bucket Name**, which in my case it was `lambrospetrou.com`. It is **very important** that you give your bucket a name that matches exactly your domain. Additionally, choose the region where you want your bucket to reside (choose the one closer to your users).
 
 3. Click **Create** and your new bucket should be visible under the list of All Buckets.
 
@@ -42,7 +42,7 @@ Assume that throughout this tutorial we want to make a website for **lambrospetr
 6. Now the last step is to add permissions to the bucket to allow **anyone** to access its files.
 
     - Click the **Permissions** option.
-    - Click **Add bucket policy** and paste in the following snippet (remember to replace **lambrospetrou.com** with your bucket's name):
+    - Click **Add bucket policy** and paste in the following snippet (remember to replace `lambrospetrou.com` with your bucket's name):
 
     ```
     {
@@ -62,7 +62,7 @@ Assume that throughout this tutorial we want to make a website for **lambrospetr
 
     ```
     <?xml version="1.0" encoding="UTF-8"?>
-    <CORSConfiguration xmlns="http://s3.amazonaws.com/doc/2006-03-01/">
+    <CORSConfiguration xmlns="https://s3.amazonaws.com/doc/2006-03-01/">
         <CORSRule>
             <AllowedOrigin>*</AllowedOrigin>
             <AllowedMethod>GET</AllowedMethod>
@@ -76,21 +76,21 @@ Assume that throughout this tutorial we want to make a website for **lambrospetr
 
 7. That's it! You have now a working website without the need to provision any server or any other infrastructure to support your static website. Whatever you upload in this bucket is going to be accessible from all over the world and rest assured that your website will always be online ;)
 
-8. The link to use in order to access your website is under the **Static Website Hosting** option, where it says **Endpoint**. It should be something similar to **lambrospetrou.com.s3-website-region.amazonaws.com**. I will refer to this endpoint throughout the rest of the tutorial as **S3-Endpoint**, so take a note of it.
+8. The link to use in order to access your website is under the **Static Website Hosting** option, where it says **Endpoint**. It should be something similar to `lambrospetrou.com.s3-website-region.amazonaws.com`. I will refer to this endpoint throughout the rest of the tutorial as **S3-Endpoint**, so take a note of it.
 
 9. Try to open that link using your browser. Of course you will see nothing since you haven't uploaded anything to your bucket yet ;p
 
 ### Make the www-subdomain to redirect to the APEX domain
 
-In this section I will describe how we can make all requests to **wwww.lambrospetrou.com** to be redirected to **lambrospetrou.com**. Again we only need to use Amazon S3 for this part. The idea is very simple. We will create another bucket named **wwww.lambrospetrou.com** but now instead of putting files into this bucket we will specify redirection rules to the bucket we created before.
+In this section I will describe how we can make all requests to `www.lambrospetrou.com` to be redirected to `lambrospetrou.com`. Again we only need to use Amazon S3 for this part. The idea is very simple. We will create another bucket named `www.lambrospetrou.com` but now instead of putting files into this bucket we will specify redirection rules to the bucket we created before.
 
-1. Create another bucket following the previous steps 1-4 but this time use the www-prefixed domain (e.g. **www.lambrospetrou.com**) as the bucket name.
+1. Create another bucket following the previous steps 1-4 but this time use the www-prefixed domain (e.g. `www.lambrospetrou.com`) as the bucket name.
 
 2. The next step is to add the redirection rules.
 
     - Click the **Static Website Hosting** option.
     - Select **Redirect all requests to another host name**
-    - Fill the input box named **Redirect all requests to:** with your non-www domain name, which is also the bucket name your created before (e.g. **lambrospetrou.com** like the picture below).
+    - Fill the input box named **Redirect all requests to:** with your non-www domain name, which is also the bucket name your created before (e.g. `lambrospetrou.com` like the picture below).
 
     ![Amazon S3 - Redirect requests](/articles/migrate-to-aws-static-website/s3-bucket-redirect.png "Amazon S3 - Redirect requests")
 
@@ -100,7 +100,7 @@ In this section I will describe how we can make all requests to **wwww.lambrospe
 
 ### Test your website
 
-1. Upload your website to the non-www bucket you created first, or just create an **index.html** file with the following snippet:
+1. Upload your website to the non-www bucket you created first, or just create an `index.html` file with the following snippet:
 
     ```html
     <html>
@@ -113,13 +113,13 @@ In this section I will describe how we can make all requests to **wwww.lambrospe
     </html>
     ```
 
-2. Try to access your website using your **S3-Endpoint** (remember ;) lambrospetrou.com.s3-website-region.amazonaws.com). You should see your website, if not there is a problem so contact me if you cannot figure out what step went wrong.
+2. Try to access your website using your **S3-Endpoint** (`lambrospetrou.com.s3-website-region.amazonaws.com`). You should see your website, if not there is a problem so contact me if you cannot figure out what step went wrong.
 
 3. Try to access your www-prefixed endpoint and make sure that you are redirected to the non-www one.
 
 ## Use a custom domain with our website instead of the Amazon S3 endpoints
 
-In this section, I will describe how you can use your domain name (e.g. **lambrospetrou.com**) to point to your website on S3 using [Route 53](https://aws.amazon.com/route53/), which is Amazon's DNS solution offering.
+In this section, I will describe how you can use your domain name (e.g. `lambrospetrou.com`) to point to your website on S3 using [Route 53](https://aws.amazon.com/route53/), which is Amazon's DNS solution offering.
 
 1. Register your domain with any registrar or Route 53 itself if you do not have a domain in hand.
 
@@ -129,7 +129,7 @@ In this section, I will describe how you can use your domain name (e.g. **lambro
 
 4. Click **Create Hosted Zone** in order to setup our domain.
 
-    - For **Domain Name** you have to specify the non-www domain (e.g. **lambrospetrou.com**)
+    - For **Domain Name** you have to specify the non-www domain (e.g. `lambrospetrou.com`)
     - Click **Create**
 
 5. Open the hosted zone you just created and make sure that it has the **NS** and **SOA** record sets.
@@ -142,14 +142,14 @@ In this section, I will describe how you can use your domain name (e.g. **lambro
     - Leave the **Name** as **blank** (empty).
     - Set the type to **A - IPv4 address**
     - Select **Alias - YES**
-    - Type into the **Alias Target** your **S3-Endpoint** for your non-www bucket (e.g **lambrospetrou.com.s3-website-region.amazonaws.com**).
+    - Type into the **Alias Target** your **S3-Endpoint** for your non-www bucket (e.g `lambrospetrou.com.s3-website-region.amazonaws.com`).
       **VERY IMPORTANT**: do **not** select from the suggested targets, type the full S3-Endpoint yourself (I will explain later on why).
       If this gives you an error about an invalid value, i.e `Alias target contains an invalid value` then use the S3 website region endpoint for alias target, like `s3-website-eu-west-1.amazonaws.com.` (note the dot at the end!).
     - Click **Create**.
 
 8. Repeat step 7 in order to create a Record Set for your **www-prefixed** domain but now you have to use **www** as the **Name** of the Record Set, and the www-prefixed S3-Endpoint as an **Alias Target**.
 
-9. You should allow a few minutes (or hours) for your changes to propagate through the network and assuming that your successfully changed the nameservers of your domain you should be able to visit your naked domain, **lambrospetrou.com**, and see your website as you would through the **S3-Endpoint**. Also, when you visit the www-prefixed domain you should be redirected to the naked one.
+9. You should allow a few minutes (or hours) for your changes to propagate through the network and assuming that your successfully changed the nameservers of your domain you should be able to visit your naked domain, `lambrospetrou.com`, and see your website as you would through the **S3-Endpoint**. Also, when you visit the www-prefixed domain you should be redirected to the naked one.
 
 **You can stop now** if you want since you managed to create a static website that is very durable, highly-available, cheap, and that uses your custom domain. The rest of the tutorial will cover Amazon Cloudfront and how caching can affect your users all over the world.
 
@@ -173,7 +173,7 @@ Let's go ahead and create our first Cloudfront distribution.
 
 3. Now you have to be **very careful** here.
 
-    - Option **Origin Domain Name** should be set to the full **S3-Endpoint** of your non-www bucket (e.g. lambrospetrou.com.s3-website-region.amazonaws.com)
+    - Option **Origin Domain Name** should be set to the full **S3-Endpoint** of your non-www bucket (e.g. `lambrospetrou.com.s3-website-region.amazonaws.com`)
     - Leave the other options default for now since you can change these later as your website evolves (see two pictures below).
 
     ![Amazon Cloudfront - Origin Settings](/articles/migrate-to-aws-static-website/cloudfront-origin-settings.png "Amazon Cloudfront - Origin Settings")
@@ -185,13 +185,13 @@ Let's go ahead and create our first Cloudfront distribution.
 
 4. In the **Distribution Settings** choose the **Price Class** you want depending on your user-base but bear in mind that the more edge locations you support the higher prices you pay.
 
-5. In the **Alternate Domain Names (CNAMEs)** you have to write in the custom domain names you want to use to point to this distribution. In my case I just have the naked domain **lambrospetrou.com**.
+5. In the **Alternate Domain Names (CNAMEs)** you have to write in the custom domain names you want to use to point to this distribution. In my case I just have the naked domain `lambrospetrou.com`.
 
 6. The next step is to setup our HTTPS certificate (if you do not want HTTPS just skip this step and leave the defaults)
 
     - Select **Custom SSL Certificate** under the **SSL Certificate** option.
     - If you have already uploaded your own custom certificate to AWS use that, otherwise click **Request an ACM certificate** to get an Amazon certificate for free.
-    - In the opened page type in your naked and www-prefixed domains (e.g. both **lambrospetrou.com** and **www.lambrospetrou.com**, see picture below).
+    - In the opened page type in your naked and www-prefixed domains (e.g. both `lambrospetrou.com` and `www.lambrospetrou.com`, see picture below).
 
     ![Amazon Certificate Manager - CNAMEs](/articles/migrate-to-aws-static-website/acm-cnames.png "Amazon Certificate Manager - CNAMEs")
 
@@ -212,7 +212,7 @@ Now we need to create another distribution for the www-prefixed domain in order 
 
 ### Set your domain in Route 53 to point to Cloudfront distribution
 
-The last step is to make our custom domains (e.g. **lambrospetrou.com** and **www.lambrospetrou.com**) point to the Cloudfront distributions rather than the S3 buckets directly.
+The last step is to make our custom domains (e.g. `lambrospetrou.com` and `www.lambrospetrou.com`) point to the Cloudfront distributions rather than the S3 buckets directly.
 
 Since we have already setup Record Sets in Route 53 we just need to update them.
 
@@ -220,9 +220,9 @@ Since we have already setup Record Sets in Route 53 we just need to update them.
 
 2. Click **Hosted Zones** from the left navigation menu.
 
-3. Select your domain hosted zone (e.g. **lambrospetrou.com**)
+3. Select your domain hosted zone (e.g. `lambrospetrou.com`)
 
-4. Click on the naked (non-www) domain record set and update the **Alias Target** now to have the **Domain Name** of the corresponding Cloudfront distribution (e.g. xxxxxxxxxxx.cloudfront.net). Click **Save Record Set**.
+4. Click on the naked (non-www) domain record set and update the **Alias Target** now to have the **Domain Name** of the corresponding Cloudfront distribution (e.g. `xxxxxxxxxxx.cloudfront.net`). Click **Save Record Set**.
 
 5. Repeat step 4 for the www-prefixed domain to use the second Cloudfront distribution.
 
