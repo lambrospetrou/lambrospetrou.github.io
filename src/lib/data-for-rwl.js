@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://diataxis.fr/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Diátaxis — A systematic approach to technical documentation authoring.",
+    author: "Daniele Procida",
+    dateListed: "2024-11-04T21:20:00.000Z",
+  },
+  {
     url: "https://kerkour.com/i-love-jwt?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "I ❤️ JWTs (JSON Web Tokens)",
     author: "Sylvain Kerkour",
