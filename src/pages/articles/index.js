@@ -7,7 +7,7 @@ export default function ArticlesIndex({ posts }) {
   return (
     <Layout>
       <Head>
-        <link rel="canonical" href="https://www.lambrospetrou.com/notes/" />
+        <link rel="canonical" href="https://www.lambrospetrou.com/articles/" />
         <title>Articles by Lambros Petrou</title>
         <meta property="og:title" content="Notes by Lambros Petrou" />
         <meta
@@ -19,7 +19,7 @@ export default function ArticlesIndex({ posts }) {
           content="Articles and posts I write about tech, business, career growth, and more."
         />
       </Head>
-      <ArticlesList posts={posts}/>
+      <ArticlesList posts={posts} />
     </Layout>
   );
 }
