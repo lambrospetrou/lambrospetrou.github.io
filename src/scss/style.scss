@@ -483,8 +483,8 @@ iframe.centered {
     h1 {
         font-size: 1em;
         line-height: inherit;
-        margin-top: inherit;
-        margin-bottom: inherit;
+        max-width: 20em;
+        margin: 0 auto;
     }
 
     p {
