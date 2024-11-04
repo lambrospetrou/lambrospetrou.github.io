@@ -27,7 +27,7 @@ which allows you to select any .csv, .vcf file to directly import into your phon
 
 The problem with **.csv** is that Google's csv format follows a different structure compared to Nokia's PC suite so that's a **no-go**. The problem with **.vcf** is that this one file was containing ~1000 contacts but the import functionality was only importing 1 contact (the same happens when you send this .vcf file directly to the phone via Bluetooth).
 
-After spending several hours going through myriads of forums with people asking for a solution I found [this article](http://blog.gluga.com/2009/11/import-google-contacts-to-nokia-pc.html) written in 2009 that provides a solution to split this single .vcf file into multiple .vcf files, one for each contact. The tool mentioned in the article, which I also used is [vCard Split](http://www.philipstorry.net/software/vcardsplit) by [Philip Storry](http://www.philipstorry.net/).
+After spending several hours going through myriads of forums with people asking for a solution I found an article written in 2009 that provides a solution to split this single `.vcf` file into multiple `.vcf` files, one for each contact. The tool mentioned in the article, which I also used is [vCard Split](http://www.philipstorry.net/software/vcardsplit) by [Philip Storry](http://www.philipstorry.net/).
 
 **Very important**
 
