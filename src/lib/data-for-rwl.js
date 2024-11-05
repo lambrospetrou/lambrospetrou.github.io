@@ -9,6 +9,13 @@
 // };
 const DataList = [
   {
+    url: "https://herman.bearblog.dev/my-product-is-my-garden/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "My product is my garden",
+    author: "Herman Martinus",
+    dateListed: "2024-11-05T10:20:00.000Z",
+    tags: ["favourite"],
+  },
+  {
     url: "https://diataxis.fr/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Diátaxis — A systematic approach to technical documentation authoring.",
     author: "Daniele Procida",
