@@ -9,6 +9,20 @@
 // };
 const DataList = [
   {
+    url: "https://go.dev/blog/errors-are-values?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Errors are values",
+    author: "Rob Pike",
+    dateListed: "2024-11-07T14:30:00.000Z",
+    tags: ["favourite"],
+  },
+  {
+    url: "https://www.youtube.com/watch?v=zhRt-IisSaM&ab_channel=RemembranceofThingsPast&utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Jeff Bezos in 2000",
+    author: "Jeff Bezos, Charlie Rose",
+    dateListed: "2024-11-07T14:00:00.000Z",
+    type: "video",
+  },
+  {
     url: "https://herman.bearblog.dev/my-product-is-my-garden/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "My product is my garden",
     author: "Herman Martinus",
