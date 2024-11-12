@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://www.seangoedecke.com/how-to-ship/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "How I ship projects at big tech companies",
+    author: "Sean Goedecke",
+    dateListed: "2024-11-12T21:30:00.000Z",
+  },
+  {
     url: "https://go.dev/blog/errors-are-values?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Errors are values",
     author: "Rob Pike",
