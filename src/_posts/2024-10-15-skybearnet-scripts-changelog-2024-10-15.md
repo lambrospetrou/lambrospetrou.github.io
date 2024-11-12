@@ -6,16 +6,16 @@ og_image: "/articles-data/2024-07-21-skybearnet-scripts-changelog-2024-07-21/202
 
 **Table of contents**
 
-- [HTTP Hook Trigger](#http-hook-trigger)
-- [Secret Hurl variables](#secret-hurl-variables)
-- [Out of AWS Lambda into Fly.io](#out-of-aws-lambda-into-fly-io)
-- [Response bodies automatically persisted](#response-bodies-automatically-persisted)
-- [Docs](#docs)
-- [Conclusion and feedback](#conclusion-and-feedback)
+-   [HTTP Hook Trigger](#http-hook-trigger)
+-   [Secret Hurl variables](#secret-hurl-variables)
+-   [Out of AWS Lambda into Fly.io](#out-of-aws-lambda-into-fly-io)
+-   [Response bodies automatically persisted](#response-bodies-automatically-persisted)
+-   [Docs](#docs)
+-   [Conclusion and feedback](#conclusion-and-feedback)
 
---------
+---
 
-[<span class="skybear-name">Skybear<span>.NET</span></span>](https://www.skybear.net) is a managed platform automating your HTTP API testing using [Hurl.dev](https://hurl.dev/) plain text scripts.
+[<span class="skybear-name">Skybear<span>.NET</span></span>](https://about.skybear.net/) is a managed platform automating your HTTP API testing using [Hurl.dev](https://hurl.dev/) plain text scripts.
 You can run your scripts on-demand through the API, or periodically based on a cron expression.
 
 It's been a few months since the last changelog article ([see last update in July](https://www.lambrospetrou.com/articles/skybearnet-scripts-changelog-2024-07-21/)), but it doesn't mean there wasn't any work done.
@@ -69,6 +69,7 @@ With the release of the HTTP hook triggers, it was only natural that folks wante
 <span class="skybear-name">Skybear<span>.NET</span></span> shipped support for Hurl variables as part of the request to the HTTP hook trigger URL ([see changelog](https://about.skybear.net/docs/support/changelog/#2024-aug-17--pass-hurl-variables-to-http-trigger-runs)), enabling fully dynamic scripts.
 
 An example `POST` request to the HTTP hook trigger of a script:
+
 ```
 curl --request POST \
   --header "Content-Type: application/json" \
@@ -122,13 +123,13 @@ Another huge upgrade in September was the upgrade of Hurl to version `5.0.1` ([s
 
 Before that upgrade, you had to use the `output: <filename.extension>` option in order to persist responses in your script run reports.
 
-With the new Hurl option `--report-json`, the platform now automatically persists every* single response body received while executing your script, uploads it to durable object storage, and makes it available to you for download later ([see changelog](https://about.skybear.net/docs/support/changelog/#2024-sep-21--all-response-bodies-automatically-persisted-and-available)).
+With the new Hurl option `--report-json`, the platform now automatically persists every\* single response body received while executing your script, uploads it to durable object storage, and makes it available to you for download later ([see changelog](https://about.skybear.net/docs/support/changelog/#2024-sep-21--all-response-bodies-automatically-persisted-and-available)).
 
 The `output` option continues to work, but you shouldn't need to use it.
 
 Debugging your scripts and APIs was never easier 🙃
 
-ps. * There is a limit on how much storage each script run can use at the moment, but I plan on extending this based on the active billing plan.
+\* There is a limit on how much storage each script run can use at the moment, but I plan on extending this based on the active billing plan.
 
 ## Docs
 

@@ -27,7 +27,7 @@ export default function HomeIndex({ posts }) {
 
       <WidgetsSection widgets={[<BookInterviewSessionWidget />, <SkybearCtaWidget />]} />
       <AristotleQuote />
-      <WidgetsSection widgets={[<NewsletterWidget/>, <RWLWidget />]} />      
+      <WidgetsSection widgets={[<NewsletterWidget />, <RWLWidget />]} />
       <WritingSection posts={posts} />
     </Layout>
   );
@@ -41,7 +41,7 @@ function HeroBanner() {
   );
 }
 
-function WidgetsSection({widgets}) {
+function WidgetsSection({ widgets }) {
   return (<div className="home-widgets">
     {
       widgets.map((w, idx) => <div className="home-widgets__item" key={idx}>{w}</div>)
@@ -55,16 +55,16 @@ function NewsletterWidget() {
       <div>
         {/** https://www.toptal.com/designers/htmlarrows/symbols/ */}
         <h3>&#10148; <a
-            href="/newsletter/?ref=homepage"
-            title="Lambros Petrou newsletter"
-          >
-            Sign up to my newsletter
-          </a></h3>
+          href="/newsletter/?ref=homepage"
+          title="Lambros Petrou newsletter"
+        >
+          Sign up to my newsletter
+        </a></h3>
         <p>
           At <em>most one email per month</em> with all my new articles, product announcements and launch deals.
-          <br/>
+          <br />
           Nothing new, means no email at all.
-          <br/>
+          <br />
           <strong>No spam. No gimmicks.</strong>
         </p>
       </div>
@@ -78,7 +78,7 @@ function RWLWidget() {
       <div>
         <h3>&#10148; <a href="/read-watch-listen/?ref=homepage" title="My Read-Watch-Listen list">Read-Watch-Listen list</a></h3>
         <p>My <strong>Read-Watch-Listen list</strong> references content I read, watched, and listened, worthy of sharing!
-        <br/>Topics covered include technical articles, career advice, business and startups, life, and more.</p>
+          <br />Topics covered include technical articles, career advice, business and startups, life, and more.</p>
       </div>
     </section>
   );
@@ -100,7 +100,7 @@ function SkybearCtaWidget() {
   return (
     <section className="home-section">
       <div>
-        <h3>&#10148; <a href="https://www.skybear.net" title="Try Skybear.NET Platform" target="_blank">Skybear.NET Scripts</a></h3>
+        <h3>&#10148; <a href="https://about.skybear.net/" title="Try Skybear.NET Platform" target="_blank">Skybear.NET Scripts</a></h3>
         <p><span className="skybear-name">Skybear<span>.NET</span></span> is a managed platform automating Synthetic HTTP API testing.</p>
         <HomeCtaWidgetSkybearAction />
       </div>
@@ -110,7 +110,7 @@ function SkybearCtaWidget() {
 
 function HomeCtaWidgetSkybearAction() {
   return <div className="consulting-cta-container">
-    <a className="cta-consult" href="https://www.skybear.net" title="Try Skybear.NET Scripts" target="_blank" rel="noopener noreferrer">
+    <a className="cta-consult" href="https://about.skybear.net/" title="Try Skybear.NET Scripts" target="_blank" rel="noopener noreferrer">
       <span>
         Try Skybear.NET
         <small>Simplify your HTTP API testing.</small>
@@ -119,18 +119,18 @@ function HomeCtaWidgetSkybearAction() {
   </div>
 }
 
-function WritingSection({posts}) {
+function WritingSection({ posts }) {
   return (
     <section className="home-section inner-section">
       <header><h2>Articles</h2></header>
-      <ArticlesList posts={posts}/>
+      <ArticlesList posts={posts} />
     </section>
   );
 }
 
 function AristotleQuote() {
   return (
-    <div className="home-aristotle-quote"><blockquote><p>"We are what we repeatedly do. Excellence then, is not an act, but a habit!"&#x2009;&mdash;&#x2009;Aristotle</p></blockquote></div> 
+    <div className="home-aristotle-quote"><blockquote><p>"We are what we repeatedly do. Excellence then, is not an act, but a habit!"&#x2009;&mdash;&#x2009;Aristotle</p></blockquote></div>
   );
 }
 

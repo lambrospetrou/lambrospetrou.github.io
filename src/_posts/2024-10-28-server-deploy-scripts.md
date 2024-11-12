@@ -48,7 +48,7 @@ Next to the `versions/` directory, there is the `current/` directory that contai
 
 There is a symlink `current/<appname>` pointing to the corresponding binary file (or whatever artifact) under the `versions/` subdirectory.
 
-Live example from my [<span class="skybear-name">Skybear<span>.NET</span></span>](https://about.skybear.net) staging server:
+Live example from my [<span class="skybear-name">Skybear<span>.NET</span></span>](https://about.skybear.net/) staging server:
 
 ```sh
 $ ll /opt/apps_workspace/monosource-server/**
@@ -133,7 +133,7 @@ Yes, a single line importing all other Caddyfiles from the directory `/etc/caddy
 
 Each application will have its own `/etc/caddy/sites-enabled/<appname>-Caddyfile` configuration.
 
-This is the configuration I have for [<span class="skybear-name">Skybear<span>.NET</span></span>](https://about.skybear.net) which is an application serving multiple domains:
+This is the configuration I have for [<span class="skybear-name">Skybear<span>.NET</span></span>](https://about.skybear.net/) which is an application serving multiple domains:
 
 ```
 :80 {

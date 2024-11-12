@@ -6,16 +6,16 @@ og_image: "/articles-data/2024-05-28-skybearnet-scripts-changelog-2024-05-28/202
 
 **Table of contents**
 
-- [Full CRUD](#full-crud)
-- [Hurl 4.3.0](#hurl-4-3-0)
-- [Response outputs](#response-outputs)
-- [Historical script runs](#historical-script-runs)
-- [Script triggers - Scheduled Cron](#script-triggers-scheduled-cron)
-- [Conclusion and feedback](#conclusion-and-feedback)
+-   [Full CRUD](#full-crud)
+-   [Hurl 4.3.0](#hurl-4-3-0)
+-   [Response outputs](#response-outputs)
+-   [Historical script runs](#historical-script-runs)
+-   [Script triggers - Scheduled Cron](#script-triggers-scheduled-cron)
+-   [Conclusion and feedback](#conclusion-and-feedback)
 
---------
+---
 
-[Skybear.net Scripts](https://www.skybear.net) is a managed platform to automate your HTTP website and API tests using [Hurl.dev](https://hurl.dev/) scripts. I like to call them HTTP workflows.
+[Skybear.net Scripts](https://about.skybear.net/) is a managed platform to automate your HTTP website and API tests using [Hurl.dev](https://hurl.dev/) scripts. I like to call them HTTP workflows.
 
 Use it for testing your HTTP APIs periodically, use it as a website uptime checker, or use it as a complex orchestrator for a sequence of HTTP requests that need to be executed in order using data from previous ones at specific times of the day.
 
@@ -91,7 +91,6 @@ This feature was built ontop of [Cloudflare Durable Objects](https://developers.
   <figcaption>Cloudflare Durable Object logs for Skybear.net scripts cron triggers.</figcaption>
 </figure>
 
-
 Soon, there will be a built-in notification mechanism as well to notify you when the script fails to successfully complete execution.
 
 Check out the video below for a showcase of configuring a scheduled cron trigger.
@@ -103,7 +102,7 @@ Check out the video below for a showcase of configuring a scheduled cron trigger
 
 ## Conclusion and feedback
 
-[Skybear.net Scripts](https://www.skybear.net) can already be used for real-world use-cases. 🚀
+[Skybear.net Scripts](https://about.skybear.net/) can already be used for real-world use-cases. 🚀
 
 I use Skybear.net to test Skybear.net!
 

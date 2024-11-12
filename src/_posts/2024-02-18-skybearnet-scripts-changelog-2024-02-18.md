@@ -5,22 +5,22 @@ description: "Skybear.NET Scripts platform changelog for February 2024."
 
 **Table of contents**
 
-- [Rebranding to skybear.net](#rebranding-to-skybearnet)
-- [User accounts](#user-accounts)
-- [Script management](#script-management)
-- [Coming very soon](#coming-very-soon)
-- [Conclusion and feedback](#conclusion-and-feedback)
+-   [Rebranding to skybear.net](#rebranding-to-skybearnet)
+-   [User accounts](#user-accounts)
+-   [Script management](#script-management)
+-   [Coming very soon](#coming-very-soon)
+-   [Conclusion and feedback](#conclusion-and-feedback)
 
---------
+---
 
-[Skybear.net Scripts](https://www.skybear.net) is a managed platform to execute [Hurl.dev scripts](https://hurl.dev/).
+[Skybear.net Scripts](https://about.skybear.net/) is a managed platform to execute [Hurl.dev scripts](https://hurl.dev/).
 I like to describe Hurl scripts as simple workflows that orchestrate a sequence of HTTP requests, while doing response assertions and transformations.
 
 I blogged about the silent first release of an earlier version of the tool two months ago ([see article](/articles/hurl-webscripts/)), coined as **Hurl Webscripts**.
 
 ## Rebranding to skybear.net
 
-First update since that article, is that now the platform is hosted under the [**Skybear.net**](https://www.skybear.net) brand.
+First update since that article, is that now the platform is hosted under the [**Skybear.net**](https://about.skybear.net/) brand.
 
 I own several top-level `skybear` domains, and this is perfect use-case for them 😅
 
@@ -76,16 +76,17 @@ User accounts and script management, were the two main features prepping the gro
 I am so glad this release is finally out, and I can now gradually add features, much faster!
 
 Some of the short-term features that are either already in-progress or will be soon:
-- Upgrade the [Hurl](https://hurl.dev/) execution engine to `v4.2.0` from `v4.1.0`.
-- Support for names and descriptions per script for easier identification, in addition to the existing generated IDs.
-- Include all the HTTP responses of the script execution in the results, giving you complete visibility.
-- Add many more examples to make it easy to author Skybear.net scripts. (There are some fancy features I am brewing in this topic long-term...🤐)
+
+-   Upgrade the [Hurl](https://hurl.dev/) execution engine to `v4.2.0` from `v4.1.0`.
+-   Support for names and descriptions per script for easier identification, in addition to the existing generated IDs.
+-   Include all the HTTP responses of the script execution in the results, giving you complete visibility.
+-   Add many more examples to make it easy to author Skybear.net scripts. (There are some fancy features I am brewing in this topic long-term...🤐)
 
 Too many nice things coming up! ✨
 
 ## Conclusion and feedback
 
-[Skybear.net Scripts](https://www.skybear.net) is now ready for more complex Hurl workflows.
+[Skybear.net Scripts](https://about.skybear.net/) is now ready for more complex Hurl workflows.
 
 I already experimented with some workflows doing more than 300 HTTP requests (😮), asserting the responses, and making sure everything works correctly.
 
@@ -94,7 +95,7 @@ I am eager to hear your feedback and feature requests.
 
 If you have any questions, email me, or reach out at [@lambrospetrou](https://twitter.com/LambrosPetrou).
 
----------------
+---
 
 <figure>
   <img src="/articles-data/2024-02-18-skybearnet-scripts-changelog-2024-02-18/2024_02_18-skybearnet-linkedin_post.jpg" title="Skybear.net Scripts release LinkedIn post" alt="Skybear.net Scripts release LinkedIn post" />
