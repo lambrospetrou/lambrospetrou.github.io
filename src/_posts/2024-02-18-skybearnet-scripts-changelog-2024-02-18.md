@@ -13,14 +13,14 @@ description: "Skybear.NET Scripts platform changelog for February 2024."
 
 ---
 
-[Skybear.net Scripts](https://about.skybear.net/) is a managed platform to execute [Hurl.dev scripts](https://hurl.dev/).
+[Skybear.net Scripts](https://www.skybear.net/) is a managed platform to execute [Hurl.dev scripts](https://hurl.dev/).
 I like to describe Hurl scripts as simple workflows that orchestrate a sequence of HTTP requests, while doing response assertions and transformations.
 
 I blogged about the silent first release of an earlier version of the tool two months ago ([see article](/articles/hurl-webscripts/)), coined as **Hurl Webscripts**.
 
 ## Rebranding to skybear.net
 
-First update since that article, is that now the platform is hosted under the [**Skybear.net**](https://about.skybear.net/) brand.
+First update since that article, is that now the platform is hosted under the [**Skybear.net**](https://www.skybear.net/) brand.
 
 I own several top-level `skybear` domains, and this is perfect use-case for them 😅
 
@@ -86,7 +86,7 @@ Too many nice things coming up! ✨
 
 ## Conclusion and feedback
 
-[Skybear.net Scripts](https://about.skybear.net/) is now ready for more complex Hurl workflows.
+[Skybear.net Scripts](https://www.skybear.net/) is now ready for more complex Hurl workflows.
 
 I already experimented with some workflows doing more than 300 HTTP requests (😮), asserting the responses, and making sure everything works correctly.
 

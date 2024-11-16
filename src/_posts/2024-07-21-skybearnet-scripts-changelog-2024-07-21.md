@@ -14,7 +14,7 @@ og_image: "/articles-data/2024-07-21-skybearnet-scripts-changelog-2024-07-21/202
 
 ---
 
-[Skybear.NET](https://about.skybear.net/) is a managed platform to automate your HTTP API synthetics testing using [Hurl.dev](https://hurl.dev/) plain text scripts.
+[Skybear.NET](https://www.skybear.net/) is a managed platform to automate your HTTP API synthetics testing using [Hurl.dev](https://hurl.dev/) plain text scripts.
 
 Use it for testing your HTTP APIs on-demand or periodically, or use it as a complex orchestrator for a sequence of HTTP requests that need to be executed in order using data from previous ones at specific times of the day.
 
@@ -44,7 +44,7 @@ A small indicator now exists in the scripts list page that is awesome in quickly
 
 ## Landing page
 
-I finally launched the product's landing page. 🥳 Check it out at <https://about.skybear.net/>.
+I finally launched the product's landing page. 🥳 Check it out at <https://www.skybear.net/>.
 
 I spent some time working on the landing page's copy, trying to emphasize what Skybear.NET is about, what you can use it for, and why it's not simply yet another uptime checker.
 
@@ -104,7 +104,7 @@ There is already a big list of ideas I am brewing and will start working on over
 
 ## Conclusion and feedback
 
-[Skybear.NET](https://about.skybear.net/) can already be used for real-world use-cases. 🚀
+[Skybear.NET](https://www.skybear.net/) can already be used for real-world use-cases. 🚀
 
 I use Skybear.NET to test Skybear.NET!
 Check it out, try to run your own scripts on-demand or periodically, and let me know if you have specific feature requests.

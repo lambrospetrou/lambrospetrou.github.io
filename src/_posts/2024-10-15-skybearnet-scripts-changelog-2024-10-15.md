@@ -15,7 +15,7 @@ og_image: "/articles-data/2024-07-21-skybearnet-scripts-changelog-2024-07-21/202
 
 ---
 
-[<span class="skybear-name">Skybear<span>.NET</span></span>](https://about.skybear.net/) is a managed platform automating your HTTP API testing using [Hurl.dev](https://hurl.dev/) plain text scripts.
+[<span class="skybear-name">Skybear<span>.NET</span></span>](https://www.skybear.net/) is a managed platform automating your HTTP API testing using [Hurl.dev](https://hurl.dev/) plain text scripts.
 You can run your scripts on-demand through the API, or periodically based on a cron expression.
 
 It's been a few months since the last changelog article ([see last update in July](https://www.lambrospetrou.com/articles/skybearnet-scripts-changelog-2024-07-21/)), but it doesn't mean there wasn't any work done.
@@ -31,7 +31,7 @@ Scheduled triggers allow you to configure a script to run periodically every few
 However, in order to properly integrate with Continuous Integration (CI) systems running scripts periodically doesn't work.
 We want to be able to run scripts on-demand, wait for the results, and then accordingly progress or abort the deployment.
 
-Back in August ([see changelog](https://about.skybear.net/docs/support/changelog/#2024-aug-11--http-trigger)) I shipped a key feature, the **HTTP hook trigger**.
+Back in August ([see changelog](https://www.skybear.net/docs/support/changelog/#2024-aug-11--http-trigger)) I shipped a key feature, the **HTTP hook trigger**.
 
 In addition to the Scheduled Cron trigger, you can now configure your scripts to be invokable through an HTTP `POST` request.
 
@@ -66,7 +66,7 @@ HTTP 200
 
 With the release of the HTTP hook triggers, it was only natural that folks wanted a way to provide Hurl variables to their scripts since now they could run either through the UI, through their CI, or just manually through the HTTP trigger.
 
-<span class="skybear-name">Skybear<span>.NET</span></span> shipped support for Hurl variables as part of the request to the HTTP hook trigger URL ([see changelog](https://about.skybear.net/docs/support/changelog/#2024-aug-17--pass-hurl-variables-to-http-trigger-runs)), enabling fully dynamic scripts.
+<span class="skybear-name">Skybear<span>.NET</span></span> shipped support for Hurl variables as part of the request to the HTTP hook trigger URL ([see changelog](https://www.skybear.net/docs/support/changelog/#2024-aug-17--pass-hurl-variables-to-http-trigger-runs)), enabling fully dynamic scripts.
 
 An example `POST` request to the HTTP hook trigger of a script:
 
@@ -77,7 +77,7 @@ curl --request POST \
   https://api.skybear.net/v1/integrations/triggers/http/s_nkjfLc27FDb1dRz7rZ95zcc/strig_http_l9qRWlr16M3jm1LnbTzM7XtSNcGKShGtq:sync
 ```
 
-A few days later, I fully integrated Hurl variables into the <span class="skybear-name">Skybear<span>.NET</span></span> platform and built a UI to manage these variables through the UI ([see changelog](https://about.skybear.net/docs/support/changelog/#2024-sep-01--manage-hurl-variables-natively-in-the-ui)).
+A few days later, I fully integrated Hurl variables into the <span class="skybear-name">Skybear<span>.NET</span></span> platform and built a UI to manage these variables through the UI ([see changelog](https://www.skybear.net/docs/support/changelog/#2024-sep-01--manage-hurl-variables-natively-in-the-ui)).
 
 You can define them in your [<span class="skybear-name">Skybear<span>.NET</span></span> account secrets page](https://www.skybear.net/account/secrets), and use them across all your scripts.
 
@@ -103,11 +103,11 @@ Back in September, a user reported that their script sending requests to an IPv6
 At the time, the script execution was done inside [AWS Lambda](https://aws.amazon.com/lambda/).
 After a bit of research and testing, it turns out that AWS Lambda does not natively support outgoing IPv6 connections, therefore all scripts attempting to do that were failing.
 
-I immediately created a "known issue" in our documentation ([see issue entry](https://about.skybear.net/docs/support/known-issues/#ipv6-addresses)) for this so that I can share it with other customers in case they encounter this.
+I immediately created a "known issue" in our documentation ([see issue entry](https://www.skybear.net/docs/support/known-issues/#ipv6-addresses)) for this so that I can share it with other customers in case they encounter this.
 
 I went through a few solutions, and decided that it was not worth the effort to fiddle with AWS networking shenanigans, having to move my AWS Lambda functions inside a VPC, creating and proxying all traffic through NAT gateways, etc.
 
-After 2 days, all of the script executions were moved out of AWS Lambda into [Fly.io](https://fly.io) ([see changelog](https://about.skybear.net/docs/support/changelog/#2024-sep-10--script-executors-moved-out-of-aws-lambda)).
+After 2 days, all of the script executions were moved out of AWS Lambda into [Fly.io](https://fly.io) ([see changelog](https://www.skybear.net/docs/support/changelog/#2024-sep-10--script-executors-moved-out-of-aws-lambda)).
 
 The transition was trivial, uneventful, and has been running smooth since then! 🥳
 
@@ -119,11 +119,11 @@ And soon, I will enable users to select the location(s) where their scripts will
 
 ## Response bodies automatically persisted
 
-Another huge upgrade in September was the upgrade of Hurl to version `5.0.1` ([see changelog](https://about.skybear.net/docs/support/changelog/#2024-sep-08--hurl-upgrade-to-501)) that added the `--report-json` argument.
+Another huge upgrade in September was the upgrade of Hurl to version `5.0.1` ([see changelog](https://www.skybear.net/docs/support/changelog/#2024-sep-08--hurl-upgrade-to-501)) that added the `--report-json` argument.
 
 Before that upgrade, you had to use the `output: <filename.extension>` option in order to persist responses in your script run reports.
 
-With the new Hurl option `--report-json`, the platform now automatically persists every\* single response body received while executing your script, uploads it to durable object storage, and makes it available to you for download later ([see changelog](https://about.skybear.net/docs/support/changelog/#2024-sep-21--all-response-bodies-automatically-persisted-and-available)).
+With the new Hurl option `--report-json`, the platform now automatically persists every\* single response body received while executing your script, uploads it to durable object storage, and makes it available to you for download later ([see changelog](https://www.skybear.net/docs/support/changelog/#2024-sep-21--all-response-bodies-automatically-persisted-and-available)).
 
 The `output` option continues to work, but you shouldn't need to use it.
 
@@ -135,12 +135,12 @@ Debugging your scripts and APIs was never easier 🙃
 
 Finally, last month I released the initial documentation website for <span class="skybear-name">Skybear<span>.NET</span></span>.
 
-Visit <https://about.skybear.net/docs/> and let me know what you think.
+Visit <https://www.skybear.net/docs/> and let me know what you think.
 
 It's quite barebones at the moment, but I will be adding a lot of content over the next few weeks.
 Tutorials, existing feature descriptions, and plenty of examples for Hurl scripts.
 
-Keep an eye on the [Changelog](https://about.skybear.net/docs/support/changelog/) page listing major and highlighted releases.
+Keep an eye on the [Changelog](https://www.skybear.net/docs/support/changelog/) page listing major and highlighted releases.
 
 ## Conclusion and feedback
 

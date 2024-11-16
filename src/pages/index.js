@@ -100,7 +100,7 @@ function SkybearCtaWidget() {
   return (
     <section className="home-section">
       <div>
-        <h3>&#10148; <a href="https://about.skybear.net/" title="Try Skybear.NET Platform" target="_blank">Skybear.NET Scripts</a></h3>
+        <h3>&#10148; <a href="https://www.skybear.net/" title="Try Skybear.NET Platform" target="_blank">Skybear.NET Scripts</a></h3>
         <p><span className="skybear-name">Skybear<span>.NET</span></span> is a managed platform automating Synthetic HTTP API testing.</p>
         <HomeCtaWidgetSkybearAction />
       </div>
@@ -110,7 +110,7 @@ function SkybearCtaWidget() {
 
 function HomeCtaWidgetSkybearAction() {
   return <div className="consulting-cta-container">
-    <a className="cta-consult" href="https://about.skybear.net/" title="Try Skybear.NET Scripts" target="_blank" rel="noopener noreferrer">
+    <a className="cta-consult" href="https://www.skybear.net/" title="Try Skybear.NET Scripts" target="_blank" rel="noopener noreferrer">
       <span>
         Try Skybear.NET
         <small>Simplify your HTTP API testing.</small>
