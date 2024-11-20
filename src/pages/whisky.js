@@ -111,6 +111,9 @@ function WhiskyNights({ }) {
       <WhiskyNight title="Whisky Night #18">
         <WhiskyImage url="/s/images/whisky/whisky_night_18.jpg" title="Craigellachie 17y - Speyside Single Malt Scotch Whisky" />
       </WhiskyNight>
+      <WhiskyNight title="Whisky Night #19">
+        <WhiskyImage url="/s/images/whisky/whisky_night_19.jpg" title="Octomore 15.3 (left) - Super Heavily Peated Islay Single Malt Whisky, Redbreast Lustau edition (right) - Single Pot Still Irish Whiskey" />
+      </WhiskyNight>
     </article>
   )
 }
@@ -150,6 +153,9 @@ function RatedWhiskies({ }) {
       <hr />
       <RatedWhisky rating={5} id="whisky-octomore-14_1">
         <WhiskyImage url="/s/images/whisky/20231104_octomore-14_1.jpg" title="Octomore 14.1 Super Heavily Peated - Islay Single Malt Scotch Whisky" />
+      </RatedWhisky>
+      <RatedWhisky rating={4} id="whisky-blackwater-full_irish">
+        <WhiskyImage url="/s/images/whisky/blackrock_20241029_blackwater.jpg" title="The Full Irish - BlackWater Irish Whisky" />
       </RatedWhisky>
 
     </article>
