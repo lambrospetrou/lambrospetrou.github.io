@@ -35,7 +35,7 @@ Therefore, the application's performance and availability is not limited by a si
 
 Consider an example for a generic resource type `XYZ`, where `XYZ` could in-practice be a wiki, a collaborative document, a database for each user, or any other resource type in your application.
 
-![Figure 1: Control and data plane architectural pattern for Durable Objects](https://developers.cloudflare.com/_astro/diagram.oV4gSRwA_Z4pG8O.svg "Figure 1: Control and data plane architectural pattern for Durable Objects")
+![Figure 1: Control and data plane architectural pattern for Durable Objects](/articles-data/2024-11-20-durable-objects-control-data-plane-pattern/diagram.oV4gSRwA_Z4pG8O.svg "Figure 1: Control and data plane architectural pattern for Durable Objects")
 
 1. A user in London (LHR) initiates a resource `XYZ` creation request. The request is routed to the nearest Cloudflare datacenter and received by the Workers fleet which serves the application API.
 2. The Worker code will route the request to the appropriate control plane Durable Object instance managing the resources of type `XYZ`. We will use the `idFromName` approach to reference the Durable Object instance by name (`control-plane-xyz`). This allows immediate access to the control plane Durable Object instances without needing to maintain a mapping.
