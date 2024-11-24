@@ -42,6 +42,7 @@ The user journey we will test is the following:
 5. **Get** the database details and assert its details.
 6. Submit an **SQL query** with one `CREATE` and one `SELECT` statements and assert the results.
 7. Submit the same queries as step 6, but requesting "raw" results instead of the default and assert the results.
+8. Cleanup the database.
 
 Steps 1-4 could be simplified into a single step just creating the database, but I decided to do the above extra steps in the sake of showcasing some Hurl features and making our test suite more robust.
 
@@ -252,6 +253,14 @@ jsonpath "$.result[1].meta.duration" < 2.0
 ```
 
 Almost identical, with the assertions of the rows and columns being the difference.
+
+At the very end we should cleanup by deleting the database:
+
+```http
+DELETE https://api.cloudflare.com/client/v4/accounts/{{ CLOUDFLARE_ACC_ID }}/d1/database/{{ db_id }}
+Authorization: Bearer {{ CLOUDFLARE_TOKEN }}
+HTTP 200
+```
 
 OK, that's it.
 
