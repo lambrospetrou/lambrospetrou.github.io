@@ -18,6 +18,8 @@ As I wrote in a previous post, [I love using Hurl](/articles/hurl/) to test HTTP
 
 In this article, I will showcase some Hurl features with a concrete example. We will test part of the [Cloudflare D1 REST API](https://developers.cloudflare.com/api/operations/cloudflare-d1-list-databases).
 
+You can find the whole Hurl file mentioned below in this Gist: <https://gist.github.com/lambrospetrou/4e07bf79abea9fd82b52d1a6f985405c>
+
 ## User journey
 
 [Cloudflare D1](https://developers.cloudflare.com/d1/) is Cloudflare's take on a serverless SQL database.
