@@ -40,10 +40,10 @@ The user journey we will test is the following:
 3. If step 1 failed, it means the database existed already, so **delete** the database with the ID from step 2.
 4. If step 1 failed, we need to **create** a new database instance.
 5. **Get** the database details and assert its details.
-6. Submit an SQL query with one `CREATE` and one `SELECT` statements and assert the results.
-7. Submit the same queries as step 6, but requesting "/raw" results instead of the default and assert the results.
+6. Submit an **SQL query** with one `CREATE` and one `SELECT` statements and assert the results.
+7. Submit the same queries as step 6, but requesting "raw" results instead of the default and assert the results.
 
-Steps 1-4 could be simplified into a single step just creating the database but in the sake of showcasing some Hurl features we make our test suite more robust so that steps 5-7 always work with a freshly created database.
+Steps 1-4 could be simplified into a single step just creating the database, but I decided to do the above extra steps in the sake of showcasing some Hurl features and making our test suite more robust.
 
 ## Hurl source
 
@@ -266,7 +266,8 @@ If you use Hurl for HTTP API testing, and have scripts you wish you could run on
 The platform provides you [comprehensive reports for every single script run execution](https://www.skybear.net/docs/features/script-run-report/) that you can view at any time.
 The full HTTP response headers and bodies are automatically persisted for you, for every execution, which makes investigations and troubleshooting of your APIs easy and simple.
 
-The full script we examined so far is running as we speak on the Skybear.NET platform every few minutes.
+The full script we examined so far is running as-is on the [<span class="skybear-name">Skybear<span>.NET</span></span>](https://www.skybear.net/) platform as we speak, configured to run every few minutes.
+Your scripts can execute on the platform without any changes from how you run them locally.
 
 Try [<span class="skybear-name">Skybear<span>.NET</span></span>](https://www.skybear.net/) and send me your feature requests.
 
