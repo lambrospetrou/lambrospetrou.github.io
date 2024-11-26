@@ -2253,12 +2253,6 @@ const DataList = [
     dateListed: "2022-12-06T18:10:00.000Z",
   },
   {
-    url: "http://_.0xffff.me/build-database-in-2020s.html?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
-    title: "Building a database in the 2020s",
-    author: "Ed Huang",
-    dateListed: "2022-12-06T18:00:00.000Z",
-  },
-  {
     url: "https://aws.amazon.com/builders-library/cicd-pipeline/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "My CI/CD pipeline is my release captain",
     author: "Clare Liguori",
@@ -3147,12 +3141,6 @@ const DataList = [
     author: "Paul Graham",
     dateListed: "2021-10-19T15:21:00.000Z",
     tags: ["favourite"],
-  },
-  {
-    url: "https://www.ycombinator.com/blog/minimum-viable-product-process/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
-    title: "A Minimum Viable Product Is Not a Product, It's a Process",
-    author: "Jim Brikman",
-    dateListed: "2021-10-19T15:20:00.000Z",
   },
   {
     url: "https://www.ycombinator.com/blog/learning-math-for-machine-learning/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
