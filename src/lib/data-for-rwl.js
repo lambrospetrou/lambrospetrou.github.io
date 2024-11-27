@@ -9,6 +9,19 @@
 // };
 const DataList = [
   {
+    url: "https://tom.preston-werner.com/2011/03/29/ten-lessons-from-githubs-first-year?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Ten Lessons from GitHub’s First Year",
+    author: "Tom Preston-Werner",
+    dateListed: "2024-11-27T19:05:00.000Z",
+    tags: ["favourite"],
+  },
+  {
+    url: "https://tom.preston-werner.com/2010/12/11/designer-architect-developer?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Designer, Architect, Developer",
+    author: "Tom Preston-Werner",
+    dateListed: "2024-11-27T19:00:00.000Z",
+  },
+  {
     url: "https://tom.preston-werner.com/2010/08/23/readme-driven-development?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Readme Driven Development",
     author: "Tom Preston-Werner",
