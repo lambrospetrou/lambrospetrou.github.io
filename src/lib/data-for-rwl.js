@@ -9,6 +9,13 @@
 // };
 const DataList = [
   {
+    url: "https://longform.asmartbear.com/put-down-the-compiler/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Put down the compiler until you learn why they’re not buying",
+    author: "Jason Cohen",
+    dateListed: "2024-11-28T15:00:00.000Z",
+    tags: ["favourite"],
+  },
+  {
     url: "https://tom.preston-werner.com/2011/03/29/ten-lessons-from-githubs-first-year?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Ten Lessons from GitHub’s First Year",
     author: "Tom Preston-Werner",
