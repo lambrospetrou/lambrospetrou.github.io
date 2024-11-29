@@ -9,6 +9,13 @@
 // };
 const DataList = [
   {
+    url: "https://www.youtube.com/watch?v=mRrDIhsiNSo&utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "100M Business Genius Reveals The Formula to Get Clients Effortlessly",
+    author: "Daniel Priestley, Neel Dhingra",
+    dateListed: "2024-11-29T15:00:00.000Z",
+    type: "video",
+  },
+  {
     url: "https://longform.asmartbear.com/put-down-the-compiler/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Put down the compiler until you learn why they’re not buying",
     author: "Jason Cohen",
