@@ -9,6 +9,44 @@
 // };
 const DataList = [
   {
+    url: "https://www.joelonsoftware.com/2002/02/13/the-iceberg-secret-revealed/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "The Iceberg Secret, Revealed",
+    author: " Joel Spolsky",
+    dateListed: "2024-12-01T09:40:00.000Z",
+    tags: ["favourite"],
+  },
+  {
+    url: "https://asatarin.github.io/testing-distributed-systems/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Testing Distributed Systems - Curated list of resources on testing distributed systems",
+    author: "Andrey Satarin",
+    dateListed: "2024-12-01T09:30:00.000Z",
+    tags: ["favourite"],
+  },
+  {
+    url: "https://jazco.dev/2024/04/20/roaring-bitmaps/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "An entire Social Network in 1.6GB (GraphD Part 2)",
+    author: "Jaz Co",
+    dateListed: "2024-12-01T09:20:00.000Z",
+  },
+  {
+    url: "https://blog.colinbreck.com/predicting-the-future-of-distributed-systems/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Predicting the Future of Distributed Systems",
+    author: "Colin Breck",
+    dateListed: "2024-12-01T09:15:00.000Z",
+  },
+  {
+    url: "https://archive.uie.com/brainsparks/2011/07/08/beans-and-noses/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Beans and Noses",
+    author: "Jared Spool",
+    dateListed: "2024-12-01T09:05:00.000Z",
+  },
+  {
+    url: "https://simonwillison.net/2024/Nov/27/storing-times-for-human-events/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Storing times for human events",
+    author: "Simon Willison",
+    dateListed: "2024-12-01T09:00:00.000Z",
+  },
+  {
     url: "https://www.youtube.com/watch?v=mRrDIhsiNSo&utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "100M Business Genius Reveals The Formula to Get Clients Effortlessly",
     author: "Daniel Priestley, Neel Dhingra",
