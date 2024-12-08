@@ -9,6 +9,18 @@
 // };
 const DataList = [
   {
+    url: "https://cra.mr/optimizing-for-taste?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Optimizing for Taste",
+    author: "David Cramer (Sentry)",
+    dateListed: "2024-12-08T17:00:00.000Z",
+  },
+  {
+    url: "https://cra.mr/you-suck-at-marketing?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "You Suck at Marketing",
+    author: "David Cramer (Sentry)",
+    dateListed: "2024-12-08T16:55:00.000Z",
+  },
+  {
     url: "https://mailchimp.com/resources/high-converting-landing-page/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "10 Elements of a High Converting Landing Page",
     author: "Mailchimp Resource",
