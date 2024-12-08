@@ -9,9 +9,15 @@
 // };
 const DataList = [
   {
+    url: "https://mailchimp.com/resources/high-converting-landing-page/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "10 Elements of a High Converting Landing Page",
+    author: "Mailchimp Resource",
+    dateListed: "2024-12-08T16:40:00.000Z",
+  },
+  {
     url: "https://www.joelonsoftware.com/2002/02/13/the-iceberg-secret-revealed/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "The Iceberg Secret, Revealed",
-    author: " Joel Spolsky",
+    author: "Joel Spolsky",
     dateListed: "2024-12-01T09:40:00.000Z",
     tags: ["favourite"],
   },
