@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://cra.mr/a-seven-dollar-subscription?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "A $7 Subscription",
+    author: "David Cramer (Sentry)",
+    dateListed: "2024-12-08T17:15:00.000Z",
+  },
+  {
     url: "https://cra.mr/optimizing-for-taste?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Optimizing for Taste",
     author: "David Cramer (Sentry)",
