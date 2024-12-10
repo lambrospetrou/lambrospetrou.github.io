@@ -9,6 +9,18 @@
 // };
 const DataList = [
   {
+    url: "https://transactional.blog/notes-on/disaggregated-oltp?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Disaggregated OLTP Systems",
+    author: "Alex Miller",
+    dateListed: "2024-12-10T19:09:00.000Z",
+  },
+  {
+    url: "https://muratbuffalo.blogspot.com/2024/12/index-for-designing-data-intensive.html?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Index for Designing Data Intensive Applications (DDIA) book",
+    author: "Murat Demirbas",
+    dateListed: "2024-12-10T19:00:00.000Z",
+  },
+  {
     url: "https://cra.mr/a-seven-dollar-subscription?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "A $7 Subscription",
     author: "David Cramer (Sentry)",
