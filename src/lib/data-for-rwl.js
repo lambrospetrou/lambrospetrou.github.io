@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://notes.eatonphil.com/2024-08-20-deterministic-simulation-testing.html?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "What's the big deal about Deterministic Simulation Testing?",
+    author: "Phil Eaton",
+    dateListed: "2024-12-11T19:00:00.000Z",
+  },
+  {
     url: "https://transactional.blog/notes-on/disaggregated-oltp?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Disaggregated OLTP Systems",
     author: "Alex Miller",
