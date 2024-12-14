@@ -9,6 +9,25 @@
 // };
 const DataList = [
   {
+    url: "https://lethain.com/layers-of-context/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Layers of context.",
+    author: "Will Larson",
+    dateListed: "2024-12-14T20:10:00.000Z",
+  },
+  {
+    url: "https://www.tbray.org/ongoing/When/200x/2003/07/12/WebsThePlace?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "The Web’s the Place",
+    author: "Tim Bray",
+    dateListed: "2024-12-14T20:00:00.000Z",
+  },
+  {
+    url: "https://v5.chriskrycho.com/elsewhere/seeing-like-a-programmer/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Seeing Like a Programmer (LambdaConf 2024) - Resiliency, Limits, and Moral Hazards in Software Engineering",
+    author: "Chris Krycho",
+    dateListed: "2024-12-14T19:00:00.000Z",
+    tags: ["favourite"],
+  },
+  {
     url: "https://bitfieldconsulting.com/posts/constraints?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Constraints in Go",
     author: "John Arundel",
