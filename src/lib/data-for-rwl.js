@@ -3723,13 +3723,6 @@ const DataList = [
     dateListed: "2021-03-14T11:00:00.000Z",
   },
   {
-    url: "https://www.mixcloud.com/TheJoeRoganExperience/1342-john-carmack/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
-    title: "Joe Rogan Experience #1342 - John Carmack",
-    author: "Joe Rogan, John Carmack",
-    type: "audio",
-    dateListed: "2021-03-14T11:00:00.000Z",
-  },
-  {
     url: "https://dave.cheney.net/2020/02/23/the-zen-of-go?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "The Zen of Go",
     author: "Dave Cheney",
@@ -4038,12 +4031,6 @@ const DataList = [
     url: "https://tomjoro.github.io/2017-01-31-world-changed/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Elixir - Erlang didn't change, the world did",
     author: "Thomas O'Rourke",
-    dateListed: "2021-03-14T11:00:00.000Z",
-  },
-  {
-    url: "https://martin.kleppmann.com/2011/03/07/accounting-for-computer-scientists.html?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
-    title: "Accounting for Computer Scientists",
-    author: "Martin Kleppmann",
     dateListed: "2021-03-14T11:00:00.000Z",
   },
   {
