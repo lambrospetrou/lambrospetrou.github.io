@@ -31,7 +31,7 @@ Therefore, we use encryption to protect sensitive data and stop worrying if some
 The conversion from `A` to `B` is called **encryption**, and the reverse is called **decryption**.
 
 <figure>
-  <img src="/articles-data/2024-12-15-encryption/2024-06-11_article_encryption-symmetric.svg" title="Symmetric encryption diagram"/>
+  <img src="/articles-data/2024-12-15-encryption/2024-06-11_article_encryption-symmetric.svg" title="Symmetric encryption diagram" alt="Symmetric encryption diagram"/>
   <figcaption>Symmetric encryption with a data encryption key.</figcaption>
 </figure>
 
@@ -237,7 +237,7 @@ The main API offerred by KMS services that we care about is:
 Let's examine how we can use a KMS service for envelope encryption.
 
 <figure>
-  <img src="/articles-data/2024-12-15-encryption/2024-06-11_article_encryption-symmetric-envelope_encrypt.svg" title="Symmetric envelope encryption with KMS service"/>
+  <img src="/articles-data/2024-12-15-encryption/2024-06-11_article_encryption-symmetric-envelope_encrypt.svg" title="Symmetric envelope encryption with KMS service" alt="Symmetric envelope encryption with KMS service"/>
   <figcaption>Symmetric envelope encryption with KMS service.</figcaption>
 </figure>
 
@@ -249,7 +249,7 @@ Let's examine how we can use a KMS service for envelope encryption.
 4. Store the data ciphertext from step 2 and the DEK ciphertext from step 3 into our database/datastore.
 
 <figure>
-  <img src="/articles-data/2024-12-15-encryption/2024-06-11_article_encryption-symmetric-envelope_decrypt.svg" title="Symmetric envelope decryption with KMS service"/>
+  <img src="/articles-data/2024-12-15-encryption/2024-06-11_article_encryption-symmetric-envelope_decrypt.svg" title="Symmetric envelope decryption with KMS service" alt="Symmetric envelope decryption with KMS service"/>
   <figcaption>Symmetric envelope decryption with KMS service.</figcaption>
 </figure>
 
