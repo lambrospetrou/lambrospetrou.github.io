@@ -9,6 +9,24 @@
 // };
 const DataList = [
   {
+    url: "https://transactional.blog/blog/2024-erasure-coding?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Erasure Coding for Distributed Systems",
+    author: "Alex Miller",
+    dateListed: "2024-12-21T09:30:00.000Z",
+  },
+  {
+    url: "https://transactional.blog/how-to-learn/consensus?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Consensus - Paxos, Raft, and all their flavors, variations, and alternatives.",
+    author: "Alex Miller",
+    dateListed: "2024-12-21T09:00:00.000Z",
+  },
+  {
+    url: "https://longform.asmartbear.com/find-customers-to-interview/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "How to find potential customers to interview about your startup",
+    author: "Jason Cohen",
+    dateListed: "2024-12-21T08:30:00.000Z",
+  },
+  {
     url: "https://lethain.com/layers-of-context/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Layers of context.",
     author: "Will Larson",
