@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://horstmann.com/unblog/2024-12-11/index.html?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Java in the Small",
+    author: "Cay Horstmann",
+    dateListed: "2024-12-21T17:10:00.000Z",
+  },
+  {
     url: "https://www.linkedin.com/pulse/principal-engineer-roles-framework-mai-lan-tomsen-bukovec-142df/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Principal Engineer Roles Framework",
     author: "Mai-Lan Tomsen Bukovec",
