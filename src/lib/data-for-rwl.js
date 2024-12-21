@@ -9,6 +9,13 @@
 // };
 const DataList = [
   {
+    url: "https://www.linkedin.com/pulse/principal-engineer-roles-framework-mai-lan-tomsen-bukovec-142df/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Principal Engineer Roles Framework",
+    author: "Mai-Lan Tomsen Bukovec",
+    dateListed: "2024-12-21T11:20:00.000Z",
+    tags: ["favourite"],
+  },
+  {
     url: "https://transactional.blog/blog/2024-erasure-coding?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Erasure Coding for Distributed Systems",
     author: "Alex Miller",
