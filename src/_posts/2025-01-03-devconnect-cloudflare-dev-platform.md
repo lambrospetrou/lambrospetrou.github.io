@@ -1,9 +1,9 @@
 ---
-title: "DevConnect Series - Cloudflare Developer Platform"
+title: "DevConnect Series talk - Cloudflare Developer Platform Overview"
 description: "The talk covers an overview of the Cloudflare Developer platform, core services, and how to gradually integrate it with your existing infrastructure."
 ---
 
-I delivered a talk doing an overview of the [Cloudflare Developer Platform](https://www.cloudflare.com/en-gb/developer-platform/products/) in my home-city, Nicosia, Cyprus 🇨🇾.
+On 2025-Jan-03, I delivered a talk doing an overview of the [Cloudflare Developer Platform](https://www.cloudflare.com/en-gb/developer-platform/products/) in my home-city, Nicosia, Cyprus 🇨🇾.
 
 Thanks to [Parsectix](https://www.parsectix.com/), specifically Pavlos, for organising the event ([LinkedIn Event](https://www.linkedin.com/events/devconnectseries-27276910731701153793)), and to all the folks that joined.
 
