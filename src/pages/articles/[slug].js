@@ -43,39 +43,7 @@ export default function Post({ postData }) {
         <br />
         <div style={{display: "flex", justifyContent: "space-between"}}>
           <section>
-            <a
-              className="twitter-share-button"
-              data-via="lambrospetrou"
-              href="https://twitter.com/intent/tweet"
-            >
-              Tweet
-            </a>
-            {/* The following will generate a warning like `index.js:1 Warning: Extra attributes from the server` 
-                because once the script loads it adds the attribute and then when React hydration kicks in
-                does not generate the same DOM. This is fine since we use `export` to static files.*/}
-            <script
-              type="text/javascript"
-              dangerouslySetInnerHTML={{
-                __html: `
-              window.twttr = (function(d, s, id) {
-              var js, fjs = d.getElementsByTagName(s)[0],
-                t = window.twttr || {};
-              if (d.getElementById(id)) return t;
-              js = d.createElement(s);
-              js.id = id;
-              js.src = "https://platform.twitter.com/widgets.js";
-              fjs.parentNode.insertBefore(js, fjs);
-
-              t._e = [];
-              t.ready = function(f) {
-                t._e.push(f);
-              };
-
-              return t;
-            }(document, "script", "twitter-wjs"));
-            `,
-              }}
-            />
+            {/* social share buttons here, but removed now. */}
           </section>
           <div className="post-meta">
             <span>{dateToLongDisplay(date)}</span>
