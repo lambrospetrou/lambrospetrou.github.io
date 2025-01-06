@@ -12,3 +12,11 @@ It was awesome to see some familiar faces in the audience.😅
 The talk covers an overview of the Cloudflare Developer platform, core services, and how to gradually integrate it with your existing infrastructure as you see fit.
 
 📽️ [Download presentation slides](/articles-data/2025-01-03-devconnect-cloudflare-dev-platform/2025_01-DevConnect-DeveloperPlatform_Overview.pdf)
+
+-----
+
+Some folks asked about Cloudflare's free tier, and how cheap the plans are compared to other platforms, raising concerns around rug-pulling in the future (not uncommon with other platforms).
+
+Cloudflare already blogged about why and how we manage to offer the free tier, and how zero egress fee is possible, at the post [Reaffirming our commitment to free](https://blog.cloudflare.com/cloudflares-commitment-to-free/).
+
+I sent this already to some, and putting it here for future readers of this page with similar concerns.
