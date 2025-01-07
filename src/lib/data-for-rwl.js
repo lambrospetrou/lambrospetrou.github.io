@@ -9,6 +9,18 @@
 // };
 const DataList = [
   {
+    url: "https://retool.com/pipes?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "The life and times of Yahoo Pipes",
+    author: "Glenn Fleishman",
+    dateListed: "2025-01-07T12:20:00.000Z",
+  },
+  {
+    url: "https://www.youtube.com/playlist?list=PLSE8ODhjZXjYDBpQnSymaectKjxCy6BYq&utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "CMU Intro to Database Systems (15-445/645 - Fall 2024)",
+    author: "Andy Pavlo",
+    dateListed: "2025-01-07T10:00:00.000Z",
+  },
+  {
     url: "https://horstmann.com/unblog/2024-12-11/index.html?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Java in the Small",
     author: "Cay Horstmann",
