@@ -19,6 +19,8 @@ const DataList = [
     title: "CMU Intro to Database Systems (15-445/645 - Fall 2024)",
     author: "Andy Pavlo",
     dateListed: "2025-01-07T10:00:00.000Z",
+    type: "video",
+    tags: ["favourite"],
   },
   {
     url: "https://horstmann.com/unblog/2024-12-11/index.html?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
