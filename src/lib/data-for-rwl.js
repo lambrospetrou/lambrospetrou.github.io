@@ -9,6 +9,13 @@
 // };
 const DataList = [
   {
+    url: "https://transactional.blog/blog/2024-data-replication-design-spectrum?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Data Replication Design Spectrum",
+    author: "Alex Miller",
+    dateListed: "2025-01-07T14:00:00.000Z",
+    tags: ["favourite"],
+  },
+  {
     url: "https://retool.com/pipes?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "The life and times of Yahoo Pipes",
     author: "Glenn Fleishman",
