@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://brooker.co.za/blog/2021/10/20/simulation.html?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Serial, Parallel, and Quorum Latencies",
+    author: "Marc Brooker.",
+    dateListed: "2025-01-08T16:00:00.000Z",
+  },
+  {
     url: "https://transactional.blog/blog/2024-data-replication-design-spectrum?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Data Replication Design Spectrum",
     author: "Alex Miller",
