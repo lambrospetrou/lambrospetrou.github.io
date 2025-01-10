@@ -9,9 +9,27 @@
 // };
 const DataList = [
   {
+    url: "https://muratbuffalo.blogspot.com/2025/01/use-of-time-in-distributed-databases.html?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Use of Time in Distributed Databases (part 4): Synchronized clocks in production databases",
+    author: "Murat Demirbas (Distributolog)",
+    dateListed: "2025-01-10T19:10:00.000Z",
+  },
+  {
+    url: "https://brooker.co.za/blog/2020/01/02/why-distributed.html?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Why do we need distributed systems? Building distributed systems is hard. It's expensive. It's complex. But we do it anyway.",
+    author: "Marc Brooker",
+    dateListed: "2025-01-10T18:20:00.000Z",
+  },
+  {
+    url: "https://muratbuffalo.blogspot.com/2024/07/advice-to-young.html?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Advice to the young",
+    author: "Murat Demirbas (Distributolog)",
+    dateListed: "2025-01-10T18:00:00.000Z",
+  },
+  {
     url: "https://brooker.co.za/blog/2021/10/20/simulation.html?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Serial, Parallel, and Quorum Latencies",
-    author: "Marc Brooker.",
+    author: "Marc Brooker",
     dateListed: "2025-01-08T16:00:00.000Z",
   },
   {
