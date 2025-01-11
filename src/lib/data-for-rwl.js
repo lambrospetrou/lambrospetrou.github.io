@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://klinger.io/posts/how-to-use-gmail-more-efficiently?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "How to use Gmail more efficiently",
+    author: "Andreas Klinger",
+    dateListed: "2025-01-11T09:40:00.000Z",
+  },
+  {
     url: "https://muratbuffalo.blogspot.com/2025/01/use-of-time-in-distributed-databases.html?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Use of Time in Distributed Databases (part 4): Synchronized clocks in production databases",
     author: "Murat Demirbas (Distributolog)",
