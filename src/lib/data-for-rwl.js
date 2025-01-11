@@ -9,6 +9,26 @@
 // };
 const DataList = [
   {
+    url: "https://muratbuffalo.blogspot.com/2023/08/distributed-transactions-at-scale-in.html?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Distributed Transactions at Scale in Amazon DynamoDB",
+    author: "Murat Demirbas (Distributolog)",
+    dateListed: "2025-01-11T12:50:00.000Z",
+  },
+  {
+    url: "https://www.usenix.org/conference/fast19/presentation/terry?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "DynamoDB - Transactions and Scalability in Cloud Databases—Can’t We Have Both?",
+    author: "Doug Terry (AWS)",
+    dateListed: "2025-01-11T12:30:00.000Z",
+    type: "video",
+    tags: ["favourite"],
+  },
+  {
+    url: "https://muratbuffalo.blogspot.com/2014/07/hybrid-logical-clocks.html?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Hybrid Logical Clocks",
+    author: "Murat Demirbas (Distributolog)",
+    dateListed: "2025-01-11T12:00:00.000Z",
+  },
+  {
     url: "https://klinger.io/posts/how-to-use-gmail-more-efficiently?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "How to use Gmail more efficiently",
     author: "Andreas Klinger",
