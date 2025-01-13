@@ -9,6 +9,13 @@
 // };
 const DataList = [
   {
+    url: "https://www.youtube.com/watch?v=5ZjhNTM8XU8&ab_channel=StrangeLoopConference&utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Transactions: myths, surprises and opportunities",
+    author: "Martin Kleppmann (Strange Loop Conference)",
+    dateListed: "2025-01-13T10:00:00.000Z",
+    type: "video",
+  },
+  {
     url: "https://muratbuffalo.blogspot.com/2023/08/distributed-transactions-at-scale-in.html?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Distributed Transactions at Scale in Amazon DynamoDB",
     author: "Murat Demirbas (Distributolog)",
