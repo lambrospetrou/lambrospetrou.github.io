@@ -9,6 +9,13 @@
 // };
 const DataList = [
   {
+    url: "https://www.usenix.org/conference/nsdi20/presentation/brooker?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Millions of Tiny Databases",
+    author: "Marc Brooker, Tao Chen, and Fan Ping, AWS",
+    dateListed: "2025-01-13T10:20:00.000Z",
+    type: "video",
+  },
+  {
     url: "https://www.youtube.com/watch?v=5ZjhNTM8XU8&ab_channel=StrangeLoopConference&utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Transactions: myths, surprises and opportunities",
     author: "Martin Kleppmann (Strange Loop Conference)",
