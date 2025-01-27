@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://www.readtrung.com/p/jerry-seinfeld-ichiro-suzuki-and?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Jerry Seinfeld, Ichiro Suzuki and the Pursuit of Mastery",
+    author: "Jerry Seinfeld, Ichiro Suzuki",
+    dateListed: "2025-01-27T20:40:00.000Z",
+  },
+  {
     url: "https://transactional.blog/how-to-learn/disk-io?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Userland Disk I/O",
     author: "Alex Miller",
