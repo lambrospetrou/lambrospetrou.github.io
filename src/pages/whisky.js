@@ -114,6 +114,9 @@ function WhiskyNights({ }) {
       <WhiskyNight title="Whisky Night #19">
         <WhiskyImage url="/s/images/whisky/whisky_night_19.jpg" title="Octomore 15.3 (left) - Super Heavily Peated Islay Single Malt Whisky, Redbreast Lustau edition (right) - Single Pot Still Irish Whiskey" />
       </WhiskyNight>
+      <WhiskyNight title="Whisky Night #20">
+        <WhiskyImage url="/s/images/whisky/whisky_night_20.jpg" title="Lindores (left) - Lowland Single Malt Scotch Whisky, Mac-Talla Mara Cask Strength (right) - Islay Single Malt Scotch Whisky" />
+      </WhiskyNight>
     </article>
   )
 }
@@ -154,8 +157,15 @@ function RatedWhiskies({ }) {
       <RatedWhisky rating={5} id="whisky-octomore-14_1">
         <WhiskyImage url="/s/images/whisky/20231104_octomore-14_1.jpg" title="Octomore 14.1 Super Heavily Peated - Islay Single Malt Scotch Whisky" />
       </RatedWhisky>
+      
+      <hr />
       <RatedWhisky rating={4} id="whisky-blackwater-full_irish">
         <WhiskyImage url="/s/images/whisky/blackrock_20241029_blackwater.jpg" title="The Full Irish - BlackWater Irish Whisky" />
+      </RatedWhisky>
+
+      <hr />
+      <RatedWhisky rating={5} id="whisky-dalmore-blackrock-tasting">
+        <WhiskyImage url="/s/images/whisky/blackrock_20250128_whisky_tasting_dalmore.jpeg" title="Dalmore 12 years, Dalmore 15 years, Dalmore Cigar Malt Reserve, Dalmore 18 years, Dalmore King Alexander III, Dalmore 2007 Vintage - Highland Single Malt Scotch Whisky" />
       </RatedWhisky>
 
     </article>
