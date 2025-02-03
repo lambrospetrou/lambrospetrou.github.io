@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions.html?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Documenting Architecture Decisions (ADR)",
+    author: "Michael Nygard",
+    dateListed: "2025-02-03T19:00:00.000Z",
+  },
+  {
     url: "https://www.readtrung.com/p/jerry-seinfeld-ichiro-suzuki-and?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Jerry Seinfeld, Ichiro Suzuki and the Pursuit of Mastery",
     author: "Jerry Seinfeld, Ichiro Suzuki",
