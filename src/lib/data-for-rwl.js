@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://sites.google.com/site/forgottenemployee/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "The American Dream",
+    author: "Forgotten Employee",
+    dateListed: "2025-02-05T14:00:00.000Z",
+  },
+  {
     url: "https://cacm.acm.org/research/metas-hyperscale-infrastructure-overview-and-insights/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Meta’s Hyperscale Infrastructure: Overview and Insights",
     author: "Chunqiang Tang (META)",
