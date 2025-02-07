@@ -9,6 +9,14 @@
 // };
 const DataList = [
   {
+    url: "https://www.youtube.com/watch?v=7xTGNNLPyMI?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Deep Dive into LLMs like ChatGPT",
+    author: "Andrej Karpathy",
+    dateListed: "2025-02-07T09:10:00.000Z",
+    type: "video",
+    tags: ["favourite"],
+  },
+  {
     url: "https://sites.google.com/site/forgottenemployee/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "The American Dream",
     author: "Forgotten Employee",
