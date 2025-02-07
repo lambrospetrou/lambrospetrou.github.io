@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://csswizardry.com/2019/05/self-host-your-static-assets/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Self-Host Your Static Assets",
+    author: "Harry Roberts",
+    dateListed: "2025-02-07T10:10:00.000Z",
+  },
+  {
     url: "https://www.youtube.com/watch?v=7xTGNNLPyMI?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Deep Dive into LLMs like ChatGPT",
     author: "Andrej Karpathy",
