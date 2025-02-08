@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://2ality.com/2025/02/typescript-esm-packages.html?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Tutorial: publishing ESM-based npm packages with TypeScript",
+    author: "Dr. Axel Rauschmayer",
+    dateListed: "2025-02-08T21:00:00.000Z",
+  },
+  {
     url: "https://csswizardry.com/2019/05/self-host-your-static-assets/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Self-Host Your Static Assets",
     author: "Harry Roberts",
