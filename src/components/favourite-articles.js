@@ -5,6 +5,8 @@ export const FavouriteArticlesList = ({
     <section>
       <h4>{heading}</h4>
       <ul>
+        <li><a href="/articles/hurl">Love letter to Hurl</a></li>
+        <li><a href="/articles/tiddlyflare">Building a global TiddlyWiki hosting platform with Cloudflare Durable Objects and Workers — Tiddlyflare</a></li>
         <li><a href="/articles/big-tech-software-interviews">How to pass the interview for software engineering roles in Big Tech</a></li>
         <li><a href="/articles/cicd-feature-flags/">Feature Flags — CI/CD</a></li>
         <li><a href="/articles/fast-feedback-loop-vs-delayed-gratification/">Fast Feedback Loop and Delayed Gratification</a></li>
