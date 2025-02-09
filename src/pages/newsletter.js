@@ -4,7 +4,7 @@ import { FavouriteArticlesList } from '../components/favourite-articles';
 
 export default function NewsletterSignupSuccess({}) {
   const title = "Newsletter signup | Lambros Petrou";
-  const desc = "Subscribe to my newsletter for a weekly email with my latest articles.";
+  const desc = "Subscribe to my newsletter for my latest articles. At most one email per month.";
   return (
     <Layout>
       <Head>
