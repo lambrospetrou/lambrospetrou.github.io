@@ -9,6 +9,18 @@
 // };
 const DataList = [
   {
+    url: "https://www.smashingmagazine.com/2008/01/10-principles-of-effective-web-design/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "10 Principles Of Good Web Design",
+    author: "Vitaly Friedman",
+    dateListed: "2025-02-09T18:50:00.000Z",
+  },
+  {
+    url: "https://smallweb.page/why?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Welcome to the small web - An introduction to the movement that's called the 'small web'.",
+    author: "Parimal Satyal, wych(witch)",
+    dateListed: "2025-02-09T18:40:00.000Z",
+  },
+  {
     url: "https://medium.com/yandex/yandexs-high-performance-profiler-is-now-open-source-95e291df9d18?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Yandex’s High-Performance Profiler Is Now Open Source",
     author: "Sergey Skvortsov (Yandex)",
