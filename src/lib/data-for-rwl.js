@@ -10,7 +10,7 @@
 const DataList = [
   {
     url: "https://www.thepunctuationguide.com/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
-    title: "The Punctuation Guide - Topen ten tips",
+    title: "The Punctuation Guide - Top ten tips",
     author: "Jordan Penn",
     dateListed: "2025-02-09T11:08:00.000Z",
   },
