@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://jvns.ca/blog/2022/09/12/why-do-domain-names-end-with-a-dot-/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Why do domain names sometimes end with a dot?",
+    author: "Julia Evans",
+    dateListed: "2025-02-15T11:30:00.000Z",
+  },
+  {
     url: "https://www.smashingmagazine.com/2008/01/10-principles-of-effective-web-design/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "10 Principles Of Good Web Design",
     author: "Vitaly Friedman",
