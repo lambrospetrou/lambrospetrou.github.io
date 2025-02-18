@@ -9,6 +9,13 @@
 // };
 const DataList = [
   {
+    url: "https://aws.amazon.com/builders-library/instrumenting-distributed-systems-for-operational-visibility/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Instrumenting distributed systems for operational visibility",
+    author: "David Yanacek",
+    dateListed: "2025-02-18T20:00:00.000Z",
+    tags: ["favourite"],
+  },
+  {
     url: "https://jvns.ca/blog/2022/09/12/why-do-domain-names-end-with-a-dot-/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Why do domain names sometimes end with a dot?",
     author: "Julia Evans",
