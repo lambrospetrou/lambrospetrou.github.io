@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://stripe.com/blog/canonical-log-lines?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Fast and flexible observability with canonical log lines",
+    author: "Brandur Leach",
+    dateListed: "2025-02-19T07:50:00.000Z",
+  },
+  {
     url: "https://aws.amazon.com/builders-library/instrumenting-distributed-systems-for-operational-visibility/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Instrumenting distributed systems for operational visibility",
     author: "David Yanacek",
