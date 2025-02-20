@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://brandur.org/fragments/parallel-test-bundle?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "The parallel test bundle, a convention for Go testing",
+    author: "Brandur Leach",
+    dateListed: "2025-02-20T08:50:00.000Z",
+  },
+  {
     url: "https://stripe.com/blog/canonical-log-lines?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Fast and flexible observability with canonical log lines",
     author: "Brandur Leach",
