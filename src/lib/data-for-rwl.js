@@ -15,6 +15,12 @@ const DataList = [
     dateListed: "2025-02-22T17:00:10.000Z",
   },
   {
+    url: "https://kettlebellsworkouts.com/teaching-points-for-the-kettlebell-swing/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Learn Proper Kettlebell Swing Form and the Muscles Worked",
+    author: "Greg Brookes",
+    dateListed: "2025-02-22T17:00:05.000Z",
+  },
+  {
     url: "https://jack-vanlightly.com/blog/2025/2/10/how-to-disaggregate-a-log-replication-protocol?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "How to disaggregate a log replication protocol",
     author: "Jack Vanlightly",
