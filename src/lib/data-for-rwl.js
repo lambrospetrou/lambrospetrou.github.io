@@ -9,6 +9,18 @@
 // };
 const DataList = [
   {
+    url: "https://aws.amazon.com/builders-library/resilience-lessons-from-the-lunch-rush/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Resilience lessons from the lunch rush",
+    author: "Mike Haken (Amazon Builders' Library)",
+    dateListed: "2025-02-22T17:00:00.000Z",
+  },
+  {
+    url: "https://jack-vanlightly.com/blog/2025/2/10/how-to-disaggregate-a-log-replication-protocol?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "How to disaggregate a log replication protocol",
+    author: "Jack Vanlightly",
+    dateListed: "2025-02-22T17:00:00.000Z",
+  },
+  {
     url: "https://sylormiller.com/posts/2025/staff-plus-cliff/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "The Staff+ Performance Cliff",
     author: "Katie Sylor-Miller",
@@ -48,7 +60,7 @@ const DataList = [
   {
     url: "https://aws.amazon.com/builders-library/instrumenting-distributed-systems-for-operational-visibility/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Instrumenting distributed systems for operational visibility",
-    author: "David Yanacek",
+    author: "David Yanacek (Amazon Builders' Library)",
     dateListed: "2025-02-18T20:00:00.000Z",
     tags: ["favourite"],
   },
@@ -2633,7 +2645,7 @@ const DataList = [
   {
     url: "https://aws.amazon.com/builders-library/cicd-pipeline/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "My CI/CD pipeline is my release captain",
-    author: "Clare Liguori",
+    author: "Clare Liguori (Amazon Builders' Library)",
     dateListed: "2022-12-01T19:45:00.000Z",
     tags: ["favourite"],
   },
@@ -3796,14 +3808,14 @@ const DataList = [
   {
     url: "https://aws.amazon.com/builders-library/timeouts-retries-and-backoff-with-jitter/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Timeouts, retries, and backoff with jitter",
-    author: "Marc Brooker",
+    author: "Marc Brooker (Amazon Builders' Library)",
     tags: ["favourite"],
     dateListed: "2021-03-21T15:00:00.000Z",
   },
   {
     url: "https://aws.amazon.com/builders-library/using-load-shedding-to-avoid-overload/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Using load shedding to avoid overload",
-    author: "David Yanacek",
+    author: "David Yanacek (Amazon Builders' Library)",
     tags: ["favourite"],
     dateListed: "2021-03-21T15:00:00.000Z",
   },
@@ -3848,7 +3860,7 @@ const DataList = [
   {
     url: "https://aws.amazon.com/builders-library/reliability-and-constant-work/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Reliability, constant work, and a good cup of coffee",
-    author: "Colm MacCárthaigh",
+    author: "Colm MacCárthaigh (Amazon Builders' Library)",
     dateListed: "2021-03-14T11:00:00.000Z",
   },
   {
@@ -3900,14 +3912,14 @@ const DataList = [
   {
     url: "https://aws.amazon.com/builders-library/automating-safe-hands-off-deployments/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Automating safe, hands-off deployments",
-    author: "Clare Liguori",
+    author: "Clare Liguori (Amazon Builders' Library)",
     tags: ["favourite"],
     dateListed: "2021-03-14T11:00:00.000Z",
   },
   {
     url: "https://aws.amazon.com/builders-library/workload-isolation-using-shuffle-sharding/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Workload isolation using shuffle-sharding",
-    author: "Colm MacCárthaigh",
+    author: "Colm MacCárthaigh (Amazon Builders' Library)",
     tags: ["favourite"],
     dateListed: "2021-03-14T11:00:00.000Z",
   },
@@ -4019,7 +4031,7 @@ const DataList = [
   {
     url: "https://aws.amazon.com/builders-library/avoiding-overload-in-distributed-systems-by-putting-the-smaller-service-in-control/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Avoiding overload in distributed systems by putting the smaller service in control",
-    author: "Joe Magerramov",
+    author: "Joe Magerramov (Amazon Builders' Library)",
     dateListed: "2021-03-14T11:00:00.000Z",
   },
   {
