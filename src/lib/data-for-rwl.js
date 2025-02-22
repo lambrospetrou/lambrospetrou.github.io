@@ -9,6 +9,31 @@
 // };
 const DataList = [
   {
+    url: "https://sylormiller.com/posts/2025/staff-plus-cliff/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "The Staff+ Performance Cliff",
+    author: "Katie Sylor-Miller",
+    dateListed: "2025-02-22T12:10:00.000Z",
+    tags: ["favourite"],
+  },
+  {
+    url: "https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/xor/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "XOR",
+    author: "Simon Tatham",
+    dateListed: "2025-02-22T12:05:00.000Z",
+  },
+  {
+    url: "https://smudge.ai/blog/ratelimit-algorithms?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Visualizing algorithms for rate limiting",
+    author: "Smudge.ai",
+    dateListed: "2025-02-22T12:01:00.000Z",
+  },
+  {
+    url: "https://blog.gitbutler.com/how-git-core-devs-configure-git/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "How Core Git Developers Configure Git",
+    author: "Smudge.ai",
+    dateListed: "2025-02-22T12:00:00.000Z",
+  },
+  {
     url: "https://brandur.org/fragments/parallel-test-bundle?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "The parallel test bundle, a convention for Go testing",
     author: "Brandur Leach",
