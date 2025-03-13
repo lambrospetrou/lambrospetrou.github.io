@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://eatonphil.com/dris.html?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Data Storage, Replication, and Integrity Syllabus",
+    author: "Phil Eaton",
+    dateListed: "2025-03-13T16:30:00.000Z",
+  },
+  {
     url: "https://aws.amazon.com/builders-library/resilience-lessons-from-the-lunch-rush/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Resilience lessons from the lunch rush",
     author: "Mike Haken (Amazon Builders' Library)",
