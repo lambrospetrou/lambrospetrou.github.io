@@ -9,6 +9,18 @@
 // };
 const DataList = [
   {
+    url: "https://transactional.blog/talk/enough-with-all-the-raft?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Enough With All The Raft",
+    author: "Alex Miller",
+    dateListed: "2025-03-15T14:40:00.000Z",
+  },
+  {
+    url: "https://cedardb.com/blog/optimistic_btrees/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "To B or not to B: B-Trees with Optimistic Lock Coupling",
+    author: "Philipp Fent",
+    dateListed: "2025-03-15T14:30:00.000Z",
+  },
+  {
     url: "https://eatonphil.com/dris.html?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Data Storage, Replication, and Integrity Syllabus",
     author: "Phil Eaton",
