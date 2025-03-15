@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://evilmartians.com/chronicles/how-to-make-your-open-source-popular?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "How to make your open source popular",
+    author: "Andrey Sitnik, Travis Turner",
+    dateListed: "2025-03-15T23:20:00.000Z",
+  },
+  {
     url: "https://transactional.blog/talk/enough-with-all-the-raft?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Enough With All The Raft",
     author: "Alex Miller",
