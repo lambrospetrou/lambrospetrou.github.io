@@ -9,6 +9,19 @@
 // };
 const DataList = [
   {
+    url: "https://www.founderstribune.org/p/if-your-product-is-great-it-doesn-t-need-to-be-good-by-paul-buchheit?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "If your product is Great, it doesn't need to be Good by Paul Buchheit",
+    author: "Paul Buchheit (Gmail creator)",
+    dateListed: "2025-03-22T16:10:00.000Z",
+    tags: ["favourite"]
+  },
+  {
+    url: "https://emilkowal.ski/ui/developing-taste?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Developing Taste",
+    author: "Emil Kowalski",
+    dateListed: "2025-03-22T16:00:00.000Z",
+  },
+  {
     url: "https://evilmartians.com/chronicles/how-to-make-your-open-source-popular?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "How to make your open source popular",
     author: "Andrey Sitnik, Travis Turner",
