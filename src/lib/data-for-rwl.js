@@ -9,6 +9,19 @@
 // };
 const DataList = [
   {
+    url: "https://www.joelonsoftware.com/2000/08/09/the-joel-test-12-steps-to-better-code/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "The Joel Test: 12 Steps to Better Code",
+    author: "Joel Spolsky",
+    dateListed: "2025-03-22T16:50:00.000Z",
+    tags: ["favourite"],
+  },
+  {
+    url: "https://www.bennorthrop.com/Essays/2021/always-do-extra.php?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Always do Extra",
+    author: "Ben Northrop",
+    dateListed: "2025-03-22T16:30:00.000Z",
+  },
+  {
     url: "https://www.founderstribune.org/p/if-your-product-is-great-it-doesn-t-need-to-be-good-by-paul-buchheit?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "If your product is Great, it doesn't need to be Good by Paul Buchheit",
     author: "Paul Buchheit (Gmail creator)",
