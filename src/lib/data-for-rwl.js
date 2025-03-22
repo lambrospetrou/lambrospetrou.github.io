@@ -13,7 +13,13 @@ const DataList = [
     title: "If your product is Great, it doesn't need to be Good by Paul Buchheit",
     author: "Paul Buchheit (Gmail creator)",
     dateListed: "2025-03-22T16:10:00.000Z",
-    tags: ["favourite"]
+    tags: ["favourite"],
+  },
+  {
+    url: "https://www.geoffreylitt.com/2025/03/03/the-nightmare-bicycle.html?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Avoid the nightmare bicycle",
+    author: "Geoffrey Litt",
+    dateListed: "2025-03-22T16:05:00.000Z",
   },
   {
     url: "https://emilkowal.ski/ui/developing-taste?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
