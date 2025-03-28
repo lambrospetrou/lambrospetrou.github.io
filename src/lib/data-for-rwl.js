@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://www.timroes.de/elasticsearch-kibana-queries-in-depth-tutorial?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Elasticsearch/Kibana Queries - In Depth Tutorial",
+    author: "Tim Roes",
+    dateListed: "2025-03-28T13:00:00.000Z",
+  },
+  {
     url: "https://www.joelonsoftware.com/2000/08/09/the-joel-test-12-steps-to-better-code/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "The Joel Test: 12 Steps to Better Code",
     author: "Joel Spolsky",
