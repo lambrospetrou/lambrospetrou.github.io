@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://goperf.dev/01-common-patterns/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Common Go Patterns for Performance",
+    author: "Alexander Stavonin",
+    dateListed: "2025-04-03T19:50:00.000Z",
+  },
+  {
     url: "https://www.timroes.de/elasticsearch-kibana-queries-in-depth-tutorial?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Elasticsearch/Kibana Queries - In Depth Tutorial",
     author: "Tim Roes",
