@@ -9,6 +9,13 @@
 // };
 const DataList = [
   {
+    url: "https://www.highagency.com/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "High Agency In 30 Minutes",
+    author: "George Mack",
+    dateListed: "2025-04-12T18:10:00.000Z",
+    tags: ["favourite"],
+  },
+  {
     url: "https://transformer-circuits.pub/2025/attribution-graphs/biology.html?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "On the Biology of a Large Language Model - We investigate the internal mechanisms used by Claude 3.5 Haiku",
     author: "Anthropic",
