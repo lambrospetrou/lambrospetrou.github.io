@@ -9,6 +9,19 @@
 // };
 const DataList = [
   {
+    url: "https://transformer-circuits.pub/2025/attribution-graphs/biology.html?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "On the Biology of a Large Language Model - We investigate the internal mechanisms used by Claude 3.5 Haiku",
+    author: "Anthropic",
+    dateListed: "2025-04-12T14:10:00.000Z",
+    tags: ["favourite"],
+  },
+  {
+    url: "https://kiranet.org/posts/self-hosting-like-its-2025/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Self Hosting Like Its 2025",
+    author: "Kira",
+    dateListed: "2025-04-12T14:00:00.000Z",
+  },
+  {
     url: "https://goperf.dev/01-common-patterns/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Common Go Patterns for Performance",
     author: "Alexander Stavonin",
