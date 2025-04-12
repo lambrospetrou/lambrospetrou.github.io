@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+  url: "https://endler.dev/2025/best-programmers/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "The Best Programmers I Know",
+    author: "Matthias Endler",
+    dateListed: "2025-04-12T21:00:00.000Z",
+  },
+  {
     url: "https://www.highagency.com/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "High Agency In 30 Minutes",
     author: "George Mack",
