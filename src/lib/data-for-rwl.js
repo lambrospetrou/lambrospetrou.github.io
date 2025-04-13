@@ -9,7 +9,13 @@
 // };
 const DataList = [
   {
-  url: "https://endler.dev/2025/best-programmers/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    url: "https://stevana.github.io/erlangs_not_about_lightweight_processes_and_message_passing.html?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Erlang’s not about lightweight processes and message passing…",
+    author: "Stevan A",
+    dateListed: "2025-04-13T08:30:00.000Z",
+  },
+  {
+    url: "https://endler.dev/2025/best-programmers/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "The Best Programmers I Know",
     author: "Matthias Endler",
     dateListed: "2025-04-12T21:00:00.000Z",
