@@ -9,6 +9,25 @@
 // };
 const DataList = [
   {
+    url: "https://docs.google.com/document/d/1VibVXKAZfYaH09JDzgG5UGuFNvrMdduKKSzec-HCdM4/mobilebasic?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Michael's Hot Dog Stand: A Business Adventure",
+    author: "Pete Kazanjy",
+    dateListed: "2025-04-21T14:00:00.000Z",
+    tags: ["favourite"],
+  },
+  {
+    url: "https://ampcode.com/how-to-build-an-agent?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "How to Build an Agent or: The Emperor Has No Clothes",
+    author: "Thorsten Ball",
+    dateListed: "2025-04-21T13:00:00.000Z",
+  },
+  {
+    url: "https://www.anthropic.com/engineering/claude-code-best-practices?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Claude Code: Best practices for agentic coding",
+    author: "Anthropic",
+    dateListed: "2025-04-21T12:00:00.000Z",
+  },
+  {
     url: "https://stevana.github.io/erlangs_not_about_lightweight_processes_and_message_passing.html?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Erlang’s not about lightweight processes and message passing…",
     author: "Stevan A",
