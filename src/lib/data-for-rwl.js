@@ -9,6 +9,13 @@
 // };
 const DataList = [
   {
+    url: "https://transactional.blog/blog/2025-decomposing-transactional-systems?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Decomposing Transactional Systems",
+    author: "Alex Miller",
+    dateListed: "2025-04-21T19:00:00.000Z",
+    tags: ["favourite"],
+  },
+  {
     url: "https://docs.google.com/document/d/1VibVXKAZfYaH09JDzgG5UGuFNvrMdduKKSzec-HCdM4/mobilebasic?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Michael's Hot Dog Stand: A Business Adventure",
     author: "Pete Kazanjy",
