@@ -9,6 +9,30 @@
 // };
 const DataList = [
   {
+    url: "https://blog.codinghorror.com/how-to-achieve-ultimate-blog-success-in-one-easy-step/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "How To Achieve Ultimate Blog Success In One Easy Step",
+    author: "Jeff Atwood",
+    dateListed: "2025-04-24T12:00:00.000Z",
+  },
+  {
+    url: "https://restate.dev/blog/building-a-modern-durable-execution-engine-from-first-principles/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Building a modern Durable Execution Engine from First Principles - How Restate works, Part 2",
+    author: "Stephan Ewen, Ahmed Farghal, and Till Rohrmann",
+    dateListed: "2025-04-24T11:00:00.000Z",
+  },
+  {
+    url: "https://restate.dev/blog/every-system-is-a-log-avoiding-coordination-in-distributed-applications/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Every System is a Log: Avoiding coordination in distributed applications - How Restate works, Part 1",
+    author: "Stephan Ewen, Jack Kleeman, Giselle van Dongen",
+    dateListed: "2025-04-24T10:30:00.000Z",
+  },
+  {
+    url: "https://engineering.fb.com/2019/10/07/core-infra/scribe/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Scribe: Transporting petabytes per hour via a distributed, buffered queueing system",
+    author: "Manolis Karpathiotakis, Dino Wernli, Milos Stojanovic",
+    dateListed: "2025-04-24T10:00:00.000Z",
+  },
+  {
     url: "https://transactional.blog/blog/2025-decomposing-transactional-systems?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Decomposing Transactional Systems",
     author: "Alex Miller",
