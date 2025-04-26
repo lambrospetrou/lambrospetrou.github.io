@@ -36,6 +36,10 @@ Models: https://ai.google/get-started/our-models/ (e.g. Gemini 2.5 Pro)
 - [Prompting guide 101 - A quick-start handbook for effective prompts](https://services.google.com/fh/files/misc/gemini-for-google-workspace-prompting-guide-101.pdf)
 - [The Art of the Prompt - A prompt guide for Strategists and Creatives](https://www.thinkwithgoogle.com/documents/18466/Gemini_Prompt_Guide_for_Creatives_and_Strategists.pdf)
 
+**ElevenLabs**
+
+- [Prompting guide - Learn how to engineer lifelike, engaging Conversational AI voice agents](https://elevenlabs.io/docs/conversational-ai/best-practices/prompting-guide)
+
 ## Others
 
 - [Prompt Engineering Guide](https://www.promptingguide.ai/)
