@@ -32,6 +32,7 @@ Models: https://ai.google/get-started/our-models/ (e.g. Gemini 2.5 Pro)
 - [Prompt engineering: overview and guide](https://cloud.google.com/discover/what-is-prompt-engineering)
 - [Generative AI prompt samples](https://cloud.google.com/vertex-ai/generative-ai/docs/prompt-gallery)
 - [Introduction to prompting](https://cloud.google.com/vertex-ai/generative-ai/docs/learn/prompts/introduction-prompt-design)
+- [Prompt Engineering by Lee Boonstra](https://www.kaggle.com/whitepaper-prompt-engineering) ([direct PDF](https://drive.google.com/file/d/1AbaBYbEa_EbPelsT40-vj64L-2IwUJHy/view))
 - [Prompting guide 101 - A quick-start handbook for effective prompts](https://services.google.com/fh/files/misc/gemini-for-google-workspace-prompting-guide-101.pdf)
 - [The Art of the Prompt - A prompt guide for Strategists and Creatives](https://www.thinkwithgoogle.com/documents/18466/Gemini_Prompt_Guide_for_Creatives_and_Strategists.pdf)
 
