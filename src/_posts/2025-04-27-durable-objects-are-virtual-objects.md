@@ -33,7 +33,7 @@ Every sentence from the Orleans Actors description applies to Durable Objects as
 
 The same section continues to elaborate on the key facets of a Virtual Actor.
 
-### 1. Perpetual existence: 
+### 1. Perpetual existence
 
 > **Perpetual existence:** actors are purely logical entities that always exist, virtually. An actor cannot be explicitly created or destroyed and its virtual existence is unaffected by the failure of a server that executes it. Since actors always exist, they are always addressable.
 
@@ -41,7 +41,7 @@ Durable Objects are the same. You don't create them. You don't destroy them.
 
 You generate a [Durable Object ID](https://developers.cloudflare.com/durable-objects/api/id/) and address the corresponding Durable Object.
 
-### 2. Automatic instantiation: 
+### 2. Automatic instantiation
 
 > **Automatic instantiation:** Orleans’ runtime automatically creates in-memory instances of an actor called activations. At any point in time an actor may have zero or more activations. An actor will not be instantiated if there are no requests pending for it.
 
@@ -141,7 +141,7 @@ In the above snippet, I check if a table exists, and if it exists I read the `te
 
 This only covers the reading part, though, and the writing is done inside the `create(...)` action ([see code](https://github.com/lambrospetrou/tiddlyflare/blob/2f6cd98eab2d77f8319cca21922dea3a8ca41d9a/src/durable-objects.ts#L216)).
 
-In most applications, there is some specific operation (like `init(...)` or `create(...)`) that receives the needed information and writes it to storage.
+In most applications, there is some specific operation (like `create(...)`) that receives the needed information and writes it to storage.
 
 ### Delete all storage after inactivity
 
