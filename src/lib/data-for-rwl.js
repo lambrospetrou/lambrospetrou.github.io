@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://samwho.dev/reservoir-sampling/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Reservoir Sampling",
+    author: "Sam Rose",
+    dateListed: "2025-05-10T11:00:00.000Z",
+  },
+  {
     url: "https://blog.codinghorror.com/how-to-achieve-ultimate-blog-success-in-one-easy-step/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "How To Achieve Ultimate Blog Success In One Easy Step",
     author: "Jeff Atwood",
