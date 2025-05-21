@@ -9,6 +9,24 @@
 // };
 const DataList = [
   {
+    url: "https://maheshba.bitbucket.io/blog/2025/04/29/cars.html?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Jeeps, Ferraris, and Other Engineers",
+    author: "Mahesh Balakrishnan",
+    dateListed: "2025-05-21T18:30:00.000Z",
+  },
+  {
+    url: "https://blog.swgillespie.me/posts/monorepo-ingredients/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "The Ingredients of a Productive Monorepo",
+    author: "Sean Gillespie",
+    dateListed: "2025-05-21T18:10:00.000Z",
+  },
+  {
+    url: "https://longform.asmartbear.com/leverage/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "The three kinds of leverage that anchor effective strategies",
+    author: "Jason Cohen",
+    dateListed: "2025-05-21T18:00:00.000Z",
+  },
+  {
     url: "https://www.seangoedecke.com/wicked-features/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Wicked features",
     author: "Sean Goedecke",

@@ -43,3 +43,5 @@ Models: https://ai.google/get-started/our-models/ (e.g. Gemini 2.5 Pro)
 ## Others
 
 - [Prompt Engineering Guide](https://www.promptingguide.ai/)
+- [Building software on top of Large Language Models](https://simonwillison.net/2025/May/15/building-on-llms/) by Simon Willison
+- [Amp Is Now Available. Here Is How I Use It.](https://ampcode.com/how-i-use-amp) by Thorsten Ball
