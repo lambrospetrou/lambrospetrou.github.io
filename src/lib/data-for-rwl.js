@@ -9,6 +9,26 @@
 // };
 const DataList = [
   {
+    url: "https://www.youtube.com/watch?v=GKckbawOVeU?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "The Consistently Winning Trader - Dr. David Paul | Psychology | Probabilities | Markets",
+    author: "Dr. David Paul",
+    dateListed: "2025-05-30T10:10:00.000Z",
+    tags: ["favourite"],
+    type: "video",
+  },
+  {
+    url: "https://www.theserverlessmindset.com/p/the-way-to-great-software-is-slow?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "The Way to Great Software Is Slow and Steady - And you need very little AI for that",
+    author: "Marco Troisi",
+    dateListed: "2025-05-30T10:00:00.000Z",
+  },
+  {
+    url: "https://www.justfuckingcode.com/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Just fucking code.",
+    author: "Lane (boot.dev)",
+    dateListed: "2025-05-30T09:00:00.000Z",
+  },
+  {
     url: "https://maheshba.bitbucket.io/blog/2025/04/29/cars.html?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Jeeps, Ferraris, and Other Engineers",
     author: "Mahesh Balakrishnan",
