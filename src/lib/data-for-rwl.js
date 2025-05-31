@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://www.allthingsdistributed.com/2025/05/just-make-it-scale-an-aurora-dsql-story.html?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Just make it scale: An Aurora DSQL story",
+    author: "Werner Vogels, Niko Matsakis, Marc Bowes",
+    dateListed: "2025-05-31T08:00:00.000Z",
+  },
+  {
     url: "https://www.youtube.com/watch?v=GKckbawOVeU?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "The Consistently Winning Trader - Dr. David Paul | Psychology | Probabilities | Markets",
     author: "Dr. David Paul",
