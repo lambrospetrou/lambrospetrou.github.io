@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://csswizardry.com/2017/05/little-things-i-like-to-do-with-git/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Little Things I Like to Do with Git",
+    author: "Harry Roberts",
+    dateListed: "2025-06-02T13:30:00.000Z",
+  },
+  {
     url: "http://www.aaronsw.com/weblog/theoryofchange?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Theory of Change",
     author: "Aaron Swartz",
