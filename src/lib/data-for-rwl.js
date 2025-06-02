@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "http://www.aaronsw.com/weblog/theoryofchange?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Theory of Change",
+    author: "Aaron Swartz",
+    dateListed: "2025-06-02T13:00:00.000Z",
+  },
+  {
     url: "https://www.allthingsdistributed.com/2025/05/just-make-it-scale-an-aurora-dsql-story.html?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Just make it scale: An Aurora DSQL story",
     author: "Werner Vogels, Niko Matsakis, Marc Bowes",
