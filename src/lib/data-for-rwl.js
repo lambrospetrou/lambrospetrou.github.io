@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://rachelbythebay.com/w/2013/06/05/duck/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Project managers, ducks, and dogs marking territory",
+    author: "Rachel Kroll",
+    dateListed: "2025-06-14T16:30:00.000Z",
+  },
+  {
     url: "https://csswizardry.com/2017/05/little-things-i-like-to-do-with-git/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Little Things I Like to Do with Git",
     author: "Harry Roberts",
