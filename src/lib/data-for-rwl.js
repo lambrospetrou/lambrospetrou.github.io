@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://longform.asmartbear.com/prioritization/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Ruthless prioritization while the dog pees on the floor",
+    author: "Jason Cohen",
+    dateListed: "2025-06-22T12:30:00.000Z",
+  },
+  {
     url: "https://rachelbythebay.com/w/2013/06/05/duck/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Project managers, ducks, and dogs marking territory",
     author: "Rachel Kroll",
