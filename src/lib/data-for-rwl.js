@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://www.bondcap.com/reports/tai?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Trends - Artificial Intelligence - May 2025",
+    author: "BOND",
+    dateListed: "2025-06-24T16:00:00.000Z",
+  },
+  {
     url: "https://longform.asmartbear.com/prioritization/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Ruthless prioritization while the dog pees on the floor",
     author: "Jason Cohen",
