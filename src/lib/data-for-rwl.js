@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://refactoringenglish.com/chapters/release-announcements/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "How to Write Compelling Software Release Announcements",
+    author: "Michael Lynch",
+    dateListed: "2025-06-28T10:00:00.000Z",
+  },
+  {
     url: "https://www.bondcap.com/reports/tai?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Trends - Artificial Intelligence - May 2025",
     author: "BOND",
