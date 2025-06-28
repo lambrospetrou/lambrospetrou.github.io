@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://rcrowley.org/aws/future/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "The future I want for AWS",
+    author: "Richard Crowley",
+    dateListed: "2025-06-28T16:00:00.000Z",
+  },
+  {
     url: "https://refactoringenglish.com/chapters/release-announcements/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "How to Write Compelling Software Release Announcements",
     author: "Michael Lynch",
