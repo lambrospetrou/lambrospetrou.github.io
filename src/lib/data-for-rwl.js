@@ -9,6 +9,24 @@
 // };
 const DataList = [
   {
+    url: "https://piccalil.li/blog/some-simple-ways-to-make-content-look-good/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Some simple ways to make content look good",
+    author: "Andy Bell",
+    dateListed: "2025-06-29T09:30:00.000Z",
+  },
+  {
+    url: "https://ferd.ca/the-gap-through-which-we-praise-the-machine.html?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "The Gap Through Which We Praise the Machine",
+    author: "Fred Hebert",
+    dateListed: "2025-06-29T09:10:00.000Z",
+  },
+  {
+    url: "https://jack-vanlightly.com/blog/2025/6/11/coordinated-progress-part-1?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Coordinated Progress – Part 1 – Seeing the System: The Graph",
+    author: "Jack Vanlightly",
+    dateListed: "2025-06-29T09:00:00.000Z",
+  },
+  {
     url: "https://rcrowley.org/aws/future/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "The future I want for AWS",
     author: "Richard Crowley",
