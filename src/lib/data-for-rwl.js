@@ -15,6 +15,12 @@ const DataList = [
     dateListed: "2025-06-29T09:30:00.000Z",
   },
   {
+    url: "https://piccalil.li/blog/some-simple-ways-to-make-content-look-good/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Some simple ways to make content look good",
+    author: "Andy Bell",
+    dateListed: "2025-06-29T09:30:00.000Z",
+  },
+  {
     url: "https://ferd.ca/the-gap-through-which-we-praise-the-machine.html?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "The Gap Through Which We Praise the Machine",
     author: "Fred Hebert",
@@ -252,7 +258,7 @@ const DataList = [
   },
   {
     url: "https://evilmartians.com/chronicles/how-to-make-your-open-source-popular?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
-    title: "How to make your open source popular",
+    title: "PostCSS creator shares how to make your open source popular",
     author: "Andrey Sitnik, Travis Turner",
     dateListed: "2025-03-15T23:20:00.000Z",
   },
