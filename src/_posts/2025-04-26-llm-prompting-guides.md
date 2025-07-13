@@ -11,6 +11,7 @@ This is a "live" collection of the best Large Language Model (LLM) prompting gui
 
 Models: https://docs.anthropic.com/en/docs/about-claude/models/all-models (e.g. Claude 3.7 Sonnet)
 
+- [Build with Claude - Start developing Claude-powered applications with our comprehensive API guides and best practices](https://www.anthropic.com/learn/build-with-claude)
 - [Prompt engineering overview](https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview)
 - [Claude Code: Best practices for agentic coding](https://www.anthropic.com/engineering/claude-code-best-practices)
 - [Anthropic Cookbook - GitHub](https://github.com/anthropics/anthropic-cookbook)
