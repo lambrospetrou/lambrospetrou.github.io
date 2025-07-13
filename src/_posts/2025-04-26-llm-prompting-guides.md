@@ -24,6 +24,7 @@ Models: https://platform.openai.com/docs/models (e.g. GPT4.1)
 - [GPT-4.1 Prompting Guide](https://cookbook.openai.com/examples/gpt4-1_prompting_guide)
 - [OpenAI Cookbook](https://cookbook.openai.com/) ([see GitHub](https://github.com/openai/openai-cookbook))
 - [Best practices for prompt engineering with the OpenAI API](https://help.openai.com/en/articles/6654000-best-practices-for-prompt-engineering-with-the-openai-api)
+- [OpenAI Agents SDK - Building Voice Agents](https://openai.github.io/openai-agents-js/guides/voice-agents/build/)
 
 **Google**
 
