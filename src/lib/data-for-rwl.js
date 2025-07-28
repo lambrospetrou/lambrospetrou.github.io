@@ -9,6 +9,22 @@
 // };
 const DataList = [
   {
+    url: "https://www.youtube.com/watch?v=vagyIcmIGOQ?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "DHH: Future of Programming, AI, Ruby on Rails, Productivity & Parenting | Lex Fridman Podcast #474",
+    author: "Lex Fridman, David Heinemeier Hansson (DHH)",
+    dateListed: "2025-07-28T19:00:00.000Z",
+    tags: ["favourite"],
+    type: "video",
+  },
+  {
+    url: "https://www.youtube.com/watch?v=dVG8W-0p6vg?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Tech Promised Everything. Did it deliver? | Scott Hanselman | TEDxPortland",
+    author: "Scott Hanselman",
+    dateListed: "2025-07-28T18:00:00.000Z",
+    tags: ["favourite"],
+    type: "video",
+  },
+  {
     url: "https://piccalil.li/blog/some-simple-ways-to-make-content-look-good/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Some simple ways to make content look good",
     author: "Andy Bell",
