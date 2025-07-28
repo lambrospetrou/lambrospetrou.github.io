@@ -9,6 +9,18 @@
 // };
 const DataList = [
   {
+    url: "https://thorstenball.com/blog/2012/09/02/software-covers-and-programming-licks/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Software Cover Versions And Programming Licks",
+    author: "Thorsten Ball",
+    dateListed: "2025-07-28T20:30:00.000Z",
+  },
+  {
+    url: "https://blog.jsbarretto.com/post/software-is-joy?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Writing Toy Software Is A Joy - Why you should write more toy programs",
+    author: "Joshua Barretto",
+    dateListed: "2025-07-28T20:00:00.000Z",
+  },
+  {
     url: "https://www.youtube.com/watch?v=vagyIcmIGOQ?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "DHH: Future of Programming, AI, Ruby on Rails, Productivity & Parenting | Lex Fridman Podcast #474",
     author: "Lex Fridman, David Heinemeier Hansson (DHH)",
