@@ -9,6 +9,18 @@
 // };
 const DataList = [
   {
+    url: "https://stackingthebricks.com/dont-follow-your-passion/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Don't Follow Your Passion",
+    author: "Amy Hoy",
+    dateListed: "2025-08-02T16:10:00.000Z",
+  },
+  {
+    url: "https://canopy.is/blog/2019/08/15/how-to-manage-up-effectively/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "How to manage up effectively - 5 not-so-often-shared ways to manage up and have a better relationship with your boss.",
+    author: "Claire Lew",
+    dateListed: "2025-08-02T16:00:00.000Z",
+  },
+  {
     url: "https://www.dash0.com/guides/logging-in-go-with-slog?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Logging in Go with Slog: A Practitioner's Guide",
     author: "Ayooluwa Isaiah",
