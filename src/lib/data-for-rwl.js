@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://www.dash0.com/guides/logging-in-go-with-slog?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Logging in Go with Slog: A Practitioner's Guide",
+    author: "Ayooluwa Isaiah",
+    dateListed: "2025-08-02T09:00:00.000Z",
+  },
+  {
     url: "https://apenwarr.ca/log/20250711?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Billionaire math",
     author: "Avery Pennarun (@apenwarr)",
