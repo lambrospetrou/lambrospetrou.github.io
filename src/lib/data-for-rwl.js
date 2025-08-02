@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://www.joelonsoftware.com/2000/10/15/painless-functional-specifications-part-4-tips/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Painless Functional Specifications – Part 4: Tips",
+    author: "Joel Spolsky",
+    dateListed: "2025-08-02T18:50:00.000Z",
+  },
+  {
     url: "https://stackingthebricks.com/dont-follow-your-passion/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Don't Follow Your Passion",
     author: "Amy Hoy",
