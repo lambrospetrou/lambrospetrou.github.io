@@ -9,6 +9,18 @@
 // };
 const DataList = [
   {
+    url: "https://notes.eatonphil.com/2025-08-09-what-even-is-distributed-systems.html?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "What even is distributed systems",
+    author: "Phil Eaton",
+    dateListed: "2025-08-12T11:55:00.000Z",
+  },
+  {
+    url: "https://maypok86.github.io/otter/blog/cache-evolution/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "The Evolution of Caching Libraries in Go",
+    author: "Alexey Mayshev",
+    dateListed: "2025-08-12T11:50:00.000Z",
+  },
+  {
     url: "https://www.joelonsoftware.com/2000/10/15/painless-functional-specifications-part-4-tips/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Painless Functional Specifications – Part 4: Tips",
     author: "Joel Spolsky",
