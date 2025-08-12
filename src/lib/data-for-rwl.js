@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://web.stanford.edu/class/ee384m/Handouts/HowtoReadPaper.pdf?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "How to Read a Paper",
+    author: "S. Keshav",
+    dateListed: "2025-08-12T13:00:00.000Z",
+  },
+  {
     url: "https://notes.eatonphil.com/2025-08-09-what-even-is-distributed-systems.html?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "What even is distributed systems",
     author: "Phil Eaton",
