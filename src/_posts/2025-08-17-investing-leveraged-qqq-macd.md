@@ -296,6 +296,8 @@ And this is how the 40-week SMA crossover strategy would behave when using NDX a
 
 ![Screenshot from trading view QQQ3 40-week SMA crossover](/articles-data/2025-08-18-investing-leveraged-qqq-macd/qqq3-40w-sma-crossover-vs-ndx.png)
 
+Using the QQQ3 as signal with the 40-week SMA crossover strategy returns **+2,300% PROFIT**.
+
 ### QQQ3 with NDX signal
 
 - Dates: 2012-12-01 to 2025-07-31
