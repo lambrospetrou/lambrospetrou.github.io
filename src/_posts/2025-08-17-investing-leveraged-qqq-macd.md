@@ -1,7 +1,6 @@
 ---
 title: "Investing in 3x Daily Leveraged Nasdaq 100 ETFs (TQQQ or QQQ3) using QQQ weekly MACD signals"
-description: "A long-term strategy returns over +10,000% profit using MACD weekly signals from QQQ to exploit the bull runs of 3x Daily Leveraged ETFs like TQQQ."
-isDraft: true
+description: "A long-term strategy with over +10,000% of profit using MACD weekly signals from QQQ to exploit the bull runs of 3x Daily Leveraged ETFs like TQQQ."
 ---
 
 For the past few months I have been backtesting a long-term investing strategy with a friend, and we started following it since 2 months ago.
