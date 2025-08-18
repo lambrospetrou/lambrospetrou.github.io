@@ -1,3 +1,4 @@
+const { hr } = require("date-fns/locale");
 const {marked} = require("marked");
 
 const renderer = new marked.Renderer();
@@ -14,6 +15,11 @@ renderer.heading = function(text, level) {
     return marked.Renderer.prototype.heading.apply(this, arguments);
   }
 };
+
+renderer.image = function image(href, title, text) {
+  const originalMd = marked.Renderer.prototype.image.apply(this, arguments);
+  return `<a href="${href}" title="Open full image ${title ?? text ?? ""}" target="_blank">${originalMd}</a>`;
+}
 
 const options = {
   gfm: true,

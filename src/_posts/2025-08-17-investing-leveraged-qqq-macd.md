@@ -6,12 +6,38 @@ isDraft: true
 
 For the past few months I have been backtesting a long-term investing strategy with a friend, and we started following it since 2 months ago.
 
-The backtesting results are great. **More than +11,000% total profit from 2013 to 2025.**
+The backtesting results are great. **More than +10,000% total profit from 2012 to 2025.**
 Hopefully the future results will be too.😉💸
 
-![Screenshot from the strategy tester only](#)
+<figure>
+<a href="/articles-data/2025-08-18-investing-leveraged-qqq-macd/qqq3-vs-ndx-tester-only.png" target="_blank"><img src="/articles-data/2025-08-18-investing-leveraged-qqq-macd/qqq3-vs-ndx-tester-only.png" title="Screenshot from trading view QQQ3/NDX strategy tester showing the profits"/></a>
+<figcaption>
+MACD-weekly strategy executing QQQ3 using Nasdaq 100 index (NDX) signals.
+</figcaption>
+</figure>
 
 All backtesting is done in [TradingView](https://www.tradingview.com/pricing/?share_your_love=lphulk) (referral link so we both get $15) using their awesome PineScript platform and the [strategy tester](https://www.tradingview.com/support/solutions/43000562362-what-are-strategies-backtesting-and-forward-testing/). I love it.
+
+**Table of contents**
+
+- [TLDR](#tldr)
+- [Assumptions and requirements](#assumptions-and-requirements)
+- [Past research with leveraged ETFs](#past-research-with-leveraged-etfs)
+- [Room for improvement](#room-for-improvement)
+    - [Weekly signals](#weekly-signals)
+    - [Moving Average Convergence and Divergence - MACD](#moving-average-convergence-and-divergence---macd)
+    - [Cross symbol strategy](#cross-symbol-strategy)
+- [Risk management with stop losses](#risk-management-with-stop-losses)
+- [Tricks and tweaks](#tricks-and-tweaks)
+- [Backtesting](#backtesting)
+    - [QQQ3 with QQQ signal](#qqq3-with-qqq-signal)
+    - [QQQ3 with NDX signal](#qqq3-with-ndx-signal)
+    - [TQQQ with QQQ signal](#tqqq-with-qqq-signal)
+    - [Scottish Mortgage Trust (SMT) with QQQ signal](#scottish-mortgage-trust-smt-with-qqq-signal)
+    - [AVGO with QQQ signal](#avgo-with-qqq-signal)
+    - [UPRO with SPX](#upro-with-spx)
+- [Open questions](#open-questions)
+- [Conclusion](#conclusion)
 
 ## TLDR
 
@@ -28,6 +54,8 @@ For folks trading in the US check out TQQQ.
 OK, but what is the strategy? ...
 
 Well, you have to read the article for the details.
+
+If you just care for the results, jump to the [backtesting section](#backtesting).🚀
 
 ## Assumptions and requirements
 
@@ -60,9 +88,9 @@ Quoting from the publication's abstract:
 
 This is a great read with lots of backtesting going back to 1928, and explains well the drawdown reduction is achieved.
 
-![Screenshot page 17 from the PDF](#)
+![Screenshot from the publication showing the results using leveraged ETFs](/articles-data/2025-08-18-investing-leveraged-qqq-macd/publication-leveraged-sp500.png)
 
-The above table and chart shows the impact of taking advantage of leveraged gains and capping the losses. Superb results.
+The above table and chart from the publication shows the impact of taking advantage of leveraged gains and capping the losses. Superb results.
 
 Others have also discussed similar strategies, like this analysis by Logan Kane ["The Trading Strategy That Beat The S&P 500 By 16+ Percentage Points Per Year Since 1928"](https://seekingalpha.com/article/4226165-the-trading-strategy-that-beat-the-s-and-p-500-by-16-plus-percentage-points-per-year-since) that cites the publication above too.
 
@@ -72,10 +100,10 @@ Even though the above research shows great potential and gives a concrete way to
 
 I implemented the 200-daily Simple Moving Average (SMA) strategy of the publication using the QQQ3 ETF (3x leveraged Nasdaq 100), and I noticed a few things that can be improved.
 
-![TradingView screenshot QQQ3 with 200-daily SMA baseline strategy](#)
+![Screenshot from trading view QQQ3 40W crossover with the chart, the strategy panel, and the strategy tester](/articles-data/2025-08-18-investing-leveraged-qqq-macd/qqq3-40w-sma-crossover.png)
 
 1. There are false positive trades during whipsaw periods where there is no clear trend, like in 2016.
-2. There are big drawdowns from the peak high price to our exit points (crossunder of the 200-daily SMA), wasting gains of the bull run.
+2. There are big drawdowns from the peak high price to our exit points (crossunder of the 200-daily SMA), wasting gains of the bull run, like in 2020.
 
 We managed to reduce the whipsaw trades with some tricks and tweaks, but ultimately they are inevitable when the markets go sideways.
 
@@ -95,18 +123,16 @@ When this happens several times, losses are more likely than gains.
 Using weekly charts reduces the amount of noise we have, and it also reduces the amount of trades we can do in a year.
 Note that we use 40-week SMA now instead of the 200-daily SMA, same total duration.
 
-![TradingView screenshot QQQ3 with 40-weekly SMA baseline strategy](#)
-
-Notice how we reduced the total number of trades from 15 to 7, and there isn't any obvious whipsaw.
+This change reduced the total number of trades from 15 to 7, without any obvious whipsaw.
 
 ### Moving Average Convergence and Divergence - MACD
 
 Once we settled on using weekly signals, the next improvement comes from addressing the big drawdowns from the peak highs.
 
 For example, even though the COVID crash of March 2020 was short in duration, it was a significant dip.
-The QQQ3 drawdown from peak high down to our exit when QQQ crosses under the 40W-SMA was an **eye-watering -66%**.
+The QQQ3 drawdown from peak high down to our exit when QQQ crosses under the 40W-SMA was an **eye-watering -62%**.
 
-![TradingView screenshot QQQ3 with 40W strategy showing drawdown](#)
+![TradingView screenshot QQQ3 with 40W strategy showing drawdown](/articles-data/2025-08-18-investing-leveraged-qqq-macd/qqq3-40w-drawdown_2020.png)
 
 We did many iterations and different variations of the SMA crossover approach with OK results.
 Tweaks and tricks here and there and employing different sub-strategies while above the 40-weekly SMA to capture more of the bull run.
@@ -118,14 +144,14 @@ I won't spend much time explaining the MACD indicator, but quoting directly from
 
 > Moving average convergence/divergence (MACD) is a technical indicator to help investors identify price trends, measure trend momentum, and identify entry points for buying or selling. Moving average convergence/divergence (MACD) is a trend-following momentum indicator that shows the relationship between two exponential moving averages (EMAs) of a security’s price.
 
-In a nutshell, the MACD indicator has two lines, the MACD line and the signal line.
+In a nutshell, the MACD indicator has two lines, the MACD line and the Signal line.
 
 The MACD line is calculated using the Exponential Moving Average (EMA) of two periods:
 ```
 MACD = 12-Period EMA − 26-Period EMA
 ```
 
-The signal line is calculated by taking the EMA of the MACD line:
+The Signal line is calculated by taking the EMA of the MACD line:
 ```
 Signal = MACD 9-Period EMA
 ```
@@ -138,11 +164,6 @@ When the MACD line crosses over the zero line it means that now the 12-period EM
 When the MACD line cross under the zero line it means that the 12-period EMA moves lower than the 26-period EMA, indicating a bear trend therefore we EXIT our position.
 
 The fact that we use weekly charts makes the MACD crossovers usable, otherwise there would be a lot of noise, even more than the simple crossover strategy we explored earlier.
-
-This is how it would behave as a purely MACD-based crossover strategy using signals from QQQ and executing trades on QQQ3.
-_Hint: We are going to improve this a lot!_
-
-![TradingView screenshot QQQ3 with MACD strategy and no stop loss filter](#)
 
 ### Cross symbol strategy
 
@@ -176,28 +197,25 @@ Position = AccountValue * RiskBet% / StopLoss%
 => 20_000
 ```
 
-If you have experience with QQQ, and especially with its leveraged versions, you will notice that a stop loss of 10% would cause a lot of early exits.
-Just see the graphs above how big the movements are.
+The Nasdaq 100 makes moves larger than 10% regularly, and since we use 3x leveraged ETFs it means that a 3.4% movement from QQQ would instantly trigger our stop loss leading to false exits.
 
-The Nasdaq 100 makes moves larger than 10% regularly, and since we use 3x leveraged ETFs it means that a 3.4% movement from QQQ would instantly trigger our stop loss.
-
-So, my strategy uses dynamic stop losses on the way up.
-The stop loss from the entry price is a hard rule, and nothing overrides it, otherwise risk management is compromised.
+Therefore, the strategy uses dynamic stop losses on the way up.
+The stop loss from the entry price is a hard rule, and nothing overrides it.
 
 However, during a bull trend, we use a trailing stop loss from the peak highs and allow up to 30% of drawdown, extended with some volatility buffer (fixed or ATR-based).
 This allows the 3x leveraged movements to have enough wiggle room to dip and then go up again, which is crucial to avoid false exits.
 
-Concretely, the dynamic stop loss is something like this:
+Concretely, the stop loss calculation is something like this:
 ```
 stopLossPct = 10
-stopLossMultipler = 3
+stopLossDynamicPct = 30
 bufferPct = 2
 
 stopLossEntryPrice = entry_price * (1-stopLossPct/100)
-activeStopLoss = math.max(
-    stopLossEntryPrice, 
-    highestClose * (1-(stopLossPct*stopLossMultipler)/100) * (1-bufferPct/100),
-)
+dynamicStopLoss = highestClose * (1-stopLossDynamicPct/100) * (1-bufferPct/100)
+activeStopLoss = math.max(stopLossEntryPrice, dynamicStopLoss)
+
+shouldExitStopLoss = signalClose < activeStopLoss
 ```
 
 Experienced folks will say that using leveraged ETFs is dangerous since they can move more than 30% in a single week.
@@ -216,26 +234,28 @@ There are two main rules for an entering a position:
 1. MACD line crosses over the zero line.
 2. MACD line crosses over the Signal line, used only when the MACD line is above the zero line.
 
-The first rule is used for the 1st trade or when we exited because of a bear market where the MACD line crossed under the zero line.
+The first rule is used after we exit because of a bear market where the MACD line crossed under the zero line.
 
-The second rule is used when we exited due to a stop loss triggering and the MACD line is still above the zero line.
-This can happen when there are sudden big drops, but then the market recovers again before crossing under the zero line.
+The second rule is used after we exited due to a stop loss while the MACD line is still above the zero line.
+This can happen when there are big drops but the market recovers before crossing under the zero line.
 
 The benefit of the MACD-based strategy over the SMA-based strategy is that eventually the MACD line always crosses the MACD Signal line, even if they stay above the zero line.
 Prices do not always go up, at some point they will stabilise and the MACD line converges with the Signal line, leading to a crossover.
 
+This allows us to use stop losses and protect ourselves.
+
 ## Tricks and tweaks
 
-The strategy also incorporates a few tweaks and tricks that become possible due to the fact we use different symbols for signal and execution, and to further optimize our entries and exits to avoid false positives.
+The strategy also incorporates a few tweaks and tricks that become possible due to the fact we use different symbols for signal and execution, further optimizing our entries and exits to avoid false positives.
 
-As we will see later, this same strategy can be used with other company stocks as well, like META, or AVGO (Broadcom), or SMT (Scottish Mortgage Trust).
-The main requirement is that these stocks are very highly correlated with the signal symbol, in this case Nasdaq 100 (which is configurable too).
+As we will see later in the [backtesting section](#backtesting), this same strategy can be used with company stocks as well, like AVGO (Broadcom) or SMT (Scottish Mortgage Trust).
+The main requirement is that **these stocks are very highly correlated with the signal symbol**, in this case Nasdaq 100 (which is configurable too).
 
 I won't go into details for these tweaks but just to give a glimpse:
 - Relative strength. When entering a position the target symbol (QQQ3, AVGO) has to be trending upwards faster than the signal symbol (QQQ).
 - Rising or Falling. When entering or exiting a position the target symbol must be in the appropriate trend as well for N consecutive weeks. For example, enter only once there are 2 rising bars.
 - Buffer around the exit level to avoid false exits and whipsaws (sudden move down, then immediately up).
-- Avoid more whipsaws. If you entered and exited in the past N weeks, make sure this new ENTER is %-above the previous ENTER price.
+- For the MACD Signal line calculation I use a 5-period EMA instead of 9-period EMA. Falls into the overfitting category, I admit, but it does give a slight edge to some trades recovering faster from dip drawdowns, without any drawback. You can use the 9-period EMA, though, and the overall results will be similar.
 - ... few more.
 
 All of the above are configurable and optional.
@@ -247,35 +267,46 @@ I did actually implement most of these for that strategy too, but the MACD-based
 
 OK, let's see some numbers!
 
-A very minor tweak in the backtests below is that for the MACD Signal line calculation I use a 5-period EMA instead of 9-period EMA.
-You can put it in the overfitting category, I admit, since for most of the tests there isn't a significant difference, but it does give a slight edge to some trades recovering faster from dip drawdowns without any drawback.
+- **All charts below are logarithmic scale**, so that the past dips are not miniscule.
+- Click each image to see it in full size.
 
-You can use the 9-period EMA, though, and the overall results will be similar.
+**Chart legend**
+
+The screenshots below have a panel for the active strategy right below the chart itself.
+
+The strategy panel has certain icons that is worth knowing what they mean:
+- Green triangle: All conditions are met for an entry.
+- Red triangle: All conditions are met for an exit.
+- Red flag above red triangle: Exit triggerred because of a stop loss.
+- White cross overlay the red triangle: The trade ended up losing money.
+- Yellow triangle: MACD line crosses below the exit level, but we are waiting for the confirmation filters.
 
 ### QQQ3 with QQQ signal
 
-Dates: 
-Configuration:
+- Dates: 2012-12-01 to 2025-07-31
+- Configuration: `BufferPct=2%`
+- **Results: +10,981% PROFIT**
 
-Results: 
-
-![Screenshot from trading view QQQ3/QQQ with the chart, the strategy panel, and the strategy tester](#)
+![Screenshot from trading view QQQ3/QQQ with the chart, the strategy panel, and the strategy tester](/articles-data/2025-08-18-investing-leveraged-qqq-macd/qqq3-vs-qqq.png)
 
 And the individual trades.
 
-![Screenshot from trading view QQQ3/QQQ with the trades](#)
+![Screenshot from trading view QQQ3/QQQ with the list of trades](/articles-data/2025-08-18-investing-leveraged-qqq-macd/qqq3-vs-qqq-trades.png)
+
+And this is how the 40-week SMA crossover strategy would behave when using NDX as the signal symbol (with the 2% exit buffer too). **+2,800% PROFIT**
+
+![Screenshot from trading view QQQ3 40-week SMA crossover](/articles-data/2025-08-18-investing-leveraged-qqq-macd/qqq3-40w-sma-crossover-vs-ndx.png)
 
 ### QQQ3 with NDX signal
 
-Dates: 
-Configuration:
-
-Results: 
+- Dates: 2012-12-01 to 2025-07-31
+- Configuration: `BufferPct=2%`
+- **Results: +12,698% PROFIT**
 
 [NDX](https://www.nasdaq.com/market-activity/index/ndx) is the Nasdaq 100 index itself, whereas QQQ is an ETF tracking the index.
-As you see the performance is almost identical, just a single trade in 2016 moves a bit earlier when using NDX as the signal symbol leading to a bit of extra profit.
+As you see the performance is almost identical to the one using QQQ as signal, just a single trade in 2016 moves a bit earlier when using NDX as the signal symbol leading to a bit of extra profit.
 
-![Screenshot from trading view QQQ3/NDX with the chart, the strategy panel, and the strategy tester](#)
+![Screenshot from trading view QQQ3/NDX with the chart, the strategy panel, and the strategy tester](/articles-data/2025-08-18-investing-leveraged-qqq-macd/qqq3-vs-ndx.png)
 
 These small differences are insignificant at the grand scheme of things, and focusing too much on these just leads to overfitting the strategy which can lead to bad results in the future.
 
@@ -283,69 +314,58 @@ These small differences are insignificant at the grand scheme of things, and foc
 
 TQQQ is the US version of QQQ3, and the strategy works nicely as well.
 
-Dates: 
-Configuration:
+- Dates: 2010-02-08 to 2025-07-31
+- Configuration: `BufferPct=2%, ConsecutiveEnterConditions=2`
+- **Results: +11,194% PROFIT**
 
-Results: 
+![Screenshot from trading view TQQQ/QQQ with the chart, the strategy panel, and the strategy tester](/articles-data/2025-08-18-investing-leveraged-qqq-macd/qqq3-vs-qqq.png)
 
+And the individual trades.
 
-### QQQ with QQQ signal since 2000
-
-Now using QQQ for both signal detection and execution, so that we can see the strategy working throughout the crashes of the past 25 years, including the dotcom bubble in 2000, the crash of 2008, COVID crash in 2020, and the longer crash in 2022.
-
-Dates: 
-Configuration:
-
-Results: 
-
-![Screenshot from trading view QQQ/QQQ with the chart, the strategy panel, and the strategy tester](#)
+![Screenshot from trading view TQQQ/QQQ with the list of trades](/articles-data/2025-08-18-investing-leveraged-qqq-macd/tqqq-vs-qqq-trades.png)
 
 ### Scottish Mortgage Trust (SMT) with QQQ signal
 
 [Scottish Mortgage Trust](https://www.scottishmortgage.com/en/uk/individual-investors/holdings) is a growth focused trust in the UK, which I usually invest in for global growth exposure.
 
-Here we also use the relative strength configuration as entry confirmation, since occasionally QQQ will be trending upwards while SMT downwards, and that is not a good time to enter.
+Here we also use the relative strength filter as entry confirmation, since occasionally QQQ will be trending upwards while SMT downwards, and that is not a good time to enter.
 
-Dates: 
-Configuration:
+In this case, we can see the strategy working throughout the crashes of the past 25 years, including the dotcom bubble in 2000, the crash of 2008, COVID crash in 2020, and the longer crash in 2022.
 
-Results: 
+- Dates: 1995-07-24 to 2025-07-31
+- Configuration: `BufferPct=2%, RelativeStrengthBars=1`
+- **Results: +1,305% PROFIT**
 
+![Screenshot from trading view SMT/NDX with the chart, the strategy panel, and the strategy tester](/articles-data/2025-08-18-investing-leveraged-qqq-macd/smt-vs-ndx.png)
 
-![Screenshot from trading view SMT/QQQ with the chart, the strategy panel, and the strategy tester](#)
+The purple chart (3rd top to bottom) shows the relative strength of SMT against the Nasdaq 100 Index (NDX).
+When the line is purple SMT is weaker, therefore it does not enter a position (see the green triangles until mid-2001), and when the line is blue SMT is stronger than NDX and positions can be entered.
 
 ### AVGO with QQQ signal
 
-Dates: 
-Configuration:
+- Dates: 2009-08-03 to 2025-07-31
+- Configuration: `BufferPct=2%`
+- **Results: +6,000% PROFIT** (Note the 100% win rate!)
 
-Results: 
+![Screenshot from trading view AVGO/QQQ with the chart, the strategy panel, and the strategy tester](/articles-data/2025-08-18-investing-leveraged-qqq-macd/avgo-vs-qqq.png)
 
-![Screenshot from trading view AVGO/QQQ with the chart, the strategy panel, and the strategy tester](#)
+And with NDX instead of QQQ! **+6,159% PROFIT**
 
-### META with QQQ signal
+![Screenshot from trading view AVGO/NDX with the chart, the strategy panel, and the strategy tester](/articles-data/2025-08-18-investing-leveraged-qqq-macd/avgo-vs-ndx.png)
 
-Dates: 
-Configuration:
+### UPRO with SPX
 
-Results: 
+- Dates: 2010-06-01 to 2025-07-31
+- Configuration: `BufferPct=2%, EntryStopLoss=15%, DynamicStopLoss=30%`
+- **Results: +1,700% PROFIT**
 
-![Screenshot from trading view META/QQQ with the chart, the strategy panel, and the strategy tester](#)
+[UPRO](https://www.proshares.com/our-etfs/leveraged-and-inverse/upro) is the 3x daily leveraged ETF of the S&P 500 index, and [SPX](https://www.spglobal.com/spdji/en/indices/equity/sp-500/#overview) is the S&P 500 Index.
 
-### UPRO with VOO
+![Screenshot from trading view UPRO/SPX with the chart, the strategy panel, and the strategy tester](/articles-data/2025-08-18-investing-leveraged-qqq-macd/upro-vs-spx.png)
 
-[UPRO](https://www.proshares.com/our-etfs/leveraged-and-inverse/upro) is the 3x daily leveraged ETF of the S&P 500 index, and [VOO](https://investor.vanguard.com/investment-products/etfs/profile/voo) is the non-leveraged ETF.
+The 40-week SMA crossover strategy with the 2% exit buffer would return **+1,100% PROFIT** and when using the SPX as signal **+2,000% PROFIT**.
 
-Dates: 
-Configuration:
-
-Results: 
-
-Using lower dynamic stop loss at 20% here instead of the 30%, since the S&P 500 index moves in smaller movements than the Nasdaq 100.
-
-![Screenshot from trading view UPRO/SPY MACD-based with the chart, the strategy panel, and the strategy tester](#)
-
-![Screenshot from trading view UPRO/SPY 40W-based with the chart, the strategy panel, and the strategy tester](#)
+![Screenshot from trading view UPRO/SPY 40W-based with the chart, the strategy panel, and the strategy tester](/articles-data/2025-08-18-investing-leveraged-qqq-macd/upro-40w-sma-crossover.png)
 
 ## Open questions
 
