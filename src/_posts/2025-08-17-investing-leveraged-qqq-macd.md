@@ -9,7 +9,7 @@ The backtesting results are great. **More than +10,000% total profit from 2012 t
 Hopefully the future results will be too.😉💸
 
 <figure>
-<a href="/articles-data/2025-08-18-investing-leveraged-qqq-macd/qqq3-vs-ndx-tester-only.png" target="_blank"><img src="/articles-data/2025-08-18-investing-leveraged-qqq-macd/qqq3-vs-ndx-tester-only.png" title="Screenshot from trading view QQQ3/NDX strategy tester showing the profits"/></a>
+<a href="https://flare.lambrospetrou.com/articles-data/2025-08-18-investing-leveraged-qqq-macd/qqq3-vs-ndx-tester-only.png" target="_blank"><img src="https://flare.lambrospetrou.com/articles-data/2025-08-18-investing-leveraged-qqq-macd/qqq3-vs-ndx-tester-only.png" title="Screenshot from trading view QQQ3/NDX strategy tester showing the profits"/></a>
 <figcaption>
 MACD-weekly strategy executing QQQ3 using Nasdaq 100 index (NDX) signals.
 </figcaption>
@@ -87,7 +87,7 @@ Quoting from the publication's abstract:
 
 This is a great read with lots of backtesting going back to 1928, and explains well the drawdown reduction is achieved.
 
-![Screenshot from the publication showing the results using leveraged ETFs](/articles-data/2025-08-18-investing-leveraged-qqq-macd/publication-leveraged-sp500.png)
+![Screenshot from the publication showing the results using leveraged ETFs](https://flare.lambrospetrou.com/articles-data/2025-08-18-investing-leveraged-qqq-macd/publication-leveraged-sp500.png)
 
 The above table and chart from the publication shows the impact of taking advantage of leveraged gains and capping the losses. Superb results.
 
@@ -99,7 +99,7 @@ Even though the above research shows great potential and gives a concrete way to
 
 I implemented the 200-daily Simple Moving Average (SMA) strategy of the publication using the QQQ3 ETF (3x leveraged Nasdaq 100), and I noticed a few things that can be improved.
 
-![Screenshot from trading view QQQ3 40W crossover with the chart, the strategy panel, and the strategy tester](/articles-data/2025-08-18-investing-leveraged-qqq-macd/qqq3-40w-sma-crossover.png)
+![Screenshot from trading view QQQ3 40W crossover with the chart, the strategy panel, and the strategy tester](https://flare.lambrospetrou.com/articles-data/2025-08-18-investing-leveraged-qqq-macd/qqq3-40w-sma-crossover.png)
 
 1. There are false positive trades during whipsaw periods where there is no clear trend, like in 2016.
 2. There are big drawdowns from the peak high price to our exit points (crossunder of the 200-daily SMA), wasting gains of the bull run, like in 2020.
@@ -131,7 +131,7 @@ Once we settled on using weekly signals, the next improvement comes from address
 For example, even though the COVID crash of March 2020 was short in duration, it was a significant dip.
 The QQQ3 drawdown from peak high down to our exit when QQQ crosses under the 40W-SMA was an **eye-watering -62%**.
 
-![TradingView screenshot QQQ3 with 40W strategy showing drawdown](/articles-data/2025-08-18-investing-leveraged-qqq-macd/qqq3-40w-drawdown_2020.png)
+![TradingView screenshot QQQ3 with 40W strategy showing drawdown](https://flare.lambrospetrou.com/articles-data/2025-08-18-investing-leveraged-qqq-macd/qqq3-40w-drawdown_2020.png)
 
 We did many iterations and different variations of the SMA crossover approach with OK results.
 Tweaks and tricks here and there and employing different sub-strategies while above the 40-weekly SMA to capture more of the bull run.
@@ -286,15 +286,15 @@ The strategy panel has certain icons that is worth knowing what they mean:
 - Configuration: `BufferPct=2%`
 - **Results: +10,981% PROFIT**
 
-![Screenshot from trading view QQQ3/QQQ with the chart, the strategy panel, and the strategy tester](/articles-data/2025-08-18-investing-leveraged-qqq-macd/qqq3-vs-qqq.png)
+![Screenshot from trading view QQQ3/QQQ with the chart, the strategy panel, and the strategy tester](https://flare.lambrospetrou.com/articles-data/2025-08-18-investing-leveraged-qqq-macd/qqq3-vs-qqq.png)
 
 And the individual trades.
 
-![Screenshot from trading view QQQ3/QQQ with the list of trades](/articles-data/2025-08-18-investing-leveraged-qqq-macd/qqq3-vs-qqq-trades.png)
+![Screenshot from trading view QQQ3/QQQ with the list of trades](https://flare.lambrospetrou.com/articles-data/2025-08-18-investing-leveraged-qqq-macd/qqq3-vs-qqq-trades.png)
 
 And this is how the 40-week SMA crossover strategy would behave when using NDX as the signal symbol (with the 2% exit buffer too). **+2,800% PROFIT**
 
-![Screenshot from trading view QQQ3 40-week SMA crossover](/articles-data/2025-08-18-investing-leveraged-qqq-macd/qqq3-40w-sma-crossover-vs-ndx.png)
+![Screenshot from trading view QQQ3 40-week SMA crossover](https://flare.lambrospetrou.com/articles-data/2025-08-18-investing-leveraged-qqq-macd/qqq3-40w-sma-crossover-vs-ndx.png)
 
 Using the QQQ3 as signal with the 40-week SMA crossover strategy returns **+2,300% PROFIT**.
 
@@ -307,7 +307,7 @@ Using the QQQ3 as signal with the 40-week SMA crossover strategy returns **+2,30
 [NDX](https://www.nasdaq.com/market-activity/index/ndx) is the Nasdaq 100 index itself, whereas QQQ is an ETF tracking the index.
 As you see the performance is almost identical to the one using QQQ as signal, just a single trade in 2016 moves a bit earlier when using NDX as the signal symbol leading to a bit of extra profit.
 
-![Screenshot from trading view QQQ3/NDX with the chart, the strategy panel, and the strategy tester](/articles-data/2025-08-18-investing-leveraged-qqq-macd/qqq3-vs-ndx.png)
+![Screenshot from trading view QQQ3/NDX with the chart, the strategy panel, and the strategy tester](https://flare.lambrospetrou.com/articles-data/2025-08-18-investing-leveraged-qqq-macd/qqq3-vs-ndx.png)
 
 These small differences are insignificant at the grand scheme of things, and focusing too much on these just leads to overfitting the strategy which can lead to bad results in the future.
 
@@ -319,11 +319,11 @@ TQQQ is the US version of QQQ3, and the strategy works nicely as well.
 - Configuration: `BufferPct=2%, ConsecutiveEnterConditions=2`
 - **Results: +11,194% PROFIT**
 
-![Screenshot from trading view TQQQ/QQQ with the chart, the strategy panel, and the strategy tester](/articles-data/2025-08-18-investing-leveraged-qqq-macd/qqq3-vs-qqq.png)
+![Screenshot from trading view TQQQ/QQQ with the chart, the strategy panel, and the strategy tester](https://flare.lambrospetrou.com/articles-data/2025-08-18-investing-leveraged-qqq-macd/qqq3-vs-qqq.png)
 
 And the individual trades.
 
-![Screenshot from trading view TQQQ/QQQ with the list of trades](/articles-data/2025-08-18-investing-leveraged-qqq-macd/tqqq-vs-qqq-trades.png)
+![Screenshot from trading view TQQQ/QQQ with the list of trades](https://flare.lambrospetrou.com/articles-data/2025-08-18-investing-leveraged-qqq-macd/tqqq-vs-qqq-trades.png)
 
 ### Scottish Mortgage Trust (SMT) with QQQ signal
 
@@ -337,7 +337,7 @@ In this case, we can see the strategy working throughout the crashes of the past
 - Configuration: `BufferPct=2%, RelativeStrengthBars=1`
 - **Results: +1,305% PROFIT**
 
-![Screenshot from trading view SMT/NDX with the chart, the strategy panel, and the strategy tester](/articles-data/2025-08-18-investing-leveraged-qqq-macd/smt-vs-ndx.png)
+![Screenshot from trading view SMT/NDX with the chart, the strategy panel, and the strategy tester](https://flare.lambrospetrou.com/articles-data/2025-08-18-investing-leveraged-qqq-macd/smt-vs-ndx.png)
 
 The purple chart (3rd top to bottom) shows the relative strength of SMT against the Nasdaq 100 Index (NDX).
 When the line is purple SMT is weaker, therefore it does not enter a position (see the green triangles until mid-2001), and when the line is blue SMT is stronger than NDX and positions can be entered.
@@ -348,11 +348,11 @@ When the line is purple SMT is weaker, therefore it does not enter a position (s
 - Configuration: `BufferPct=2%`
 - **Results: +6,000% PROFIT** (Note the 100% win rate!)
 
-![Screenshot from trading view AVGO/QQQ with the chart, the strategy panel, and the strategy tester](/articles-data/2025-08-18-investing-leveraged-qqq-macd/avgo-vs-qqq.png)
+![Screenshot from trading view AVGO/QQQ with the chart, the strategy panel, and the strategy tester](https://flare.lambrospetrou.com/articles-data/2025-08-18-investing-leveraged-qqq-macd/avgo-vs-qqq.png)
 
 And with NDX instead of QQQ! **+6,159% PROFIT**
 
-![Screenshot from trading view AVGO/NDX with the chart, the strategy panel, and the strategy tester](/articles-data/2025-08-18-investing-leveraged-qqq-macd/avgo-vs-ndx.png)
+![Screenshot from trading view AVGO/NDX with the chart, the strategy panel, and the strategy tester](https://flare.lambrospetrou.com/articles-data/2025-08-18-investing-leveraged-qqq-macd/avgo-vs-ndx.png)
 
 ### UPRO with SPX
 
@@ -362,11 +362,11 @@ And with NDX instead of QQQ! **+6,159% PROFIT**
 
 [UPRO](https://www.proshares.com/our-etfs/leveraged-and-inverse/upro) is the 3x daily leveraged ETF of the S&P 500 index, and [SPX](https://www.spglobal.com/spdji/en/indices/equity/sp-500/#overview) is the S&P 500 Index.
 
-![Screenshot from trading view UPRO/SPX with the chart, the strategy panel, and the strategy tester](/articles-data/2025-08-18-investing-leveraged-qqq-macd/upro-vs-spx.png)
+![Screenshot from trading view UPRO/SPX with the chart, the strategy panel, and the strategy tester](https://flare.lambrospetrou.com/articles-data/2025-08-18-investing-leveraged-qqq-macd/upro-vs-spx.png)
 
 The 40-week SMA crossover strategy with the 2% exit buffer would return **+1,100% PROFIT** and when using the SPX as signal **+2,000% PROFIT**.
 
-![Screenshot from trading view UPRO/SPY 40W-based with the chart, the strategy panel, and the strategy tester](/articles-data/2025-08-18-investing-leveraged-qqq-macd/upro-40w-sma-crossover.png)
+![Screenshot from trading view UPRO/SPY 40W-based with the chart, the strategy panel, and the strategy tester](https://flare.lambrospetrou.com/articles-data/2025-08-18-investing-leveraged-qqq-macd/upro-40w-sma-crossover.png)
 
 ## Open questions
 
@@ -386,4 +386,5 @@ If you have better ideas or improvements to my strategy, feel free to reach out 
 
 ## Changelog
 
-- 2025-08-18: Initial post.
+- 2025-08-18: Initial public post.
+- 2025-08-17: Initial draft, not publicly listed.
