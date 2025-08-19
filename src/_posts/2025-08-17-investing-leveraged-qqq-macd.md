@@ -20,7 +20,7 @@ All backtesting is done in [TradingView](https://www.tradingview.com/pricing/?sh
 **Table of contents**
 
 - [TLDR](#tldr)
-- [Assumptions and requirements](#assumptions-and-requirements)
+- [Assumptions and goals](#assumptions-and-goals)
 - [Past research with leveraged ETFs](#past-research-with-leveraged-etfs)
 - [Room for improvement](#room-for-improvement)
     - [Weekly signals](#weekly-signals)
@@ -47,7 +47,7 @@ Using 3x daily leveraged ETFs makes the bull runs bigger and allows the strategy
 
 However, using 3x daily leveraged ETFs also magnifies the losses on the way down, so the strategy employs strict risk management in order to cap and minimize the losses while retaining the bulk of the profits.
 
-For the rest of the article I will focus on QQQ3 which is the 3x Daily Leveraged Nasdaq 100 instrument available for trading in Europe.
+For the rest of the article we will focus on QQQ3 which is the 3x Daily Leveraged Nasdaq 100 instrument available for trading in Europe.
 For folks trading in the US check out TQQQ.
 
 OK, but what is the strategy? ...
@@ -56,7 +56,7 @@ Well, you have to read the article for the details.
 
 If you just care for the results, jump to the [backtesting section](#backtesting).🚀
 
-## Assumptions and requirements
+## Assumptions and goals
 
 If any of these assumptions does not hold anymore, then the strategy won't perform as well. _You have been warned!_
 
@@ -97,7 +97,7 @@ Others have also discussed similar strategies, like this analysis by Logan Kane 
 
 Even though the above research shows great potential and gives a concrete way to outperform the market (S&P 500 in that case), we can do even better.
 
-I implemented the 200-daily Simple Moving Average (SMA) strategy of the publication using the QQQ3 ETF (3x leveraged Nasdaq 100), and I noticed a few things that can be improved.
+We implemented the 200-daily Simple Moving Average (SMA) strategy of the publication using the QQQ3 ETF (3x leveraged Nasdaq 100), and we noticed a few things that can be improved.
 
 ![Screenshot from trading view QQQ3 40W crossover with the chart, the strategy panel, and the strategy tester](https://flare.lambrospetrou.com/articles-data/2025-08-18-investing-leveraged-qqq-macd/qqq3-40w-sma-crossover.png)
 
@@ -139,7 +139,7 @@ More details about some of these tricks might come in a separate article.
 
 However, we decided to switch to using the weekly [MACD indicator](https://www.investopedia.com/terms/m/macd.asp) for our entry and exit signals, with tiny bit of tweaking to make it awesome.
 
-I won't spend much time explaining the MACD indicator, but quoting directly from [Investopedia's MACD definition](https://www.investopedia.com/terms/m/macd.asp):
+Quoting directly from [Investopedia's MACD definition](https://www.investopedia.com/terms/m/macd.asp):
 
 > Moving average convergence/divergence (MACD) is a technical indicator to help investors identify price trends, measure trend momentum, and identify entry points for buying or selling. Moving average convergence/divergence (MACD) is a trend-following momentum indicator that shows the relationship between two exponential moving averages (EMAs) of a security’s price.
 
@@ -188,7 +188,7 @@ What you choose exactly depends on your risk appetite and how confident you feel
 Note that the 2% bet, or 2K USD, is NOT the amount we should trade, it's the max we could lose.
 The total amount of the trade depends on the strategy.
 
-In my strategy I use a hard stop loss from the entry price at 10% (or 15% depending on how volatile is the traded symbol), so the total position I should enter comes out to 20K USD.
+In my strategy we use a hard stop loss from the entry price at 10% (or 15% depending on how volatile is the traded symbol), so the total position we should enter comes out to 20K USD.
 
 ```
 Position = AccountValue * RiskBet% / StopLoss%
@@ -220,7 +220,7 @@ shouldExitStopLoss = signalClose < activeStopLoss
 Experienced folks will say that using leveraged ETFs is dangerous since they can move more than 30% in a single week.
 
 Indeed, in theory this can happen.
-There is an optional escape hatch for emergency exits that I monitor manually.
+There is an optional escape hatch for emergency exits that we monitor manually.
 If the daily close price is lower than the calculated stop loss, then we can exit our position.
 
 Better to lose some profits in case it was a false exit that recovers the next day, instead of not being able to sleep at night.
@@ -250,17 +250,17 @@ The strategy also incorporates a few tweaks and tricks that become possible due 
 As we will see later in the [backtesting section](#backtesting), this same strategy can be used with company stocks as well, like AVGO (Broadcom) or SMT (Scottish Mortgage Trust).
 The main requirement is that **these stocks are very highly correlated with the signal symbol**, in this case Nasdaq 100 (which is configurable too).
 
-I won't go into details for these tweaks but just to give a glimpse:
+We won't go into details for these tweaks but just to give a glimpse:
 - Relative strength. When entering a position the target symbol (QQQ3, AVGO) has to be trending upwards faster than the signal symbol (QQQ).
 - Rising or Falling. When entering or exiting a position the target symbol must be in the appropriate trend as well for N consecutive weeks. For example, enter only once there are 2 rising bars.
 - Buffer around the exit level to avoid false exits and whipsaws (sudden move down, then immediately up).
-- For the MACD Signal line calculation I use a 5-period EMA instead of 9-period EMA. Falls into the overfitting category, I admit, but it does give a slight edge to some trades recovering faster from dip drawdowns, without any drawback. You can use the 9-period EMA, though, and the overall results will be similar.
+- For the MACD Signal line calculation we use a 5-period EMA instead of 9-period EMA. Falls into the overfitting category, but it does give a slight edge to some trades recovering faster from dip drawdowns, without any drawback. You can use the 9-period EMA, though, and the overall results will be similar.
 - ... few more.
 
 All of the above are configurable and optional.
 
 Keep in mind that these tricks can be incorporated in any strategy, even the 200-daily/40-weekly SMA crossover strategy.
-I did actually implement most of these for that strategy too, but the MACD-based strategy is still overall better.
+We did actually implement most of these for that strategy too, but the MACD-based strategy is still overall better.
 
 ## Backtesting
 
@@ -325,6 +325,27 @@ And the individual trades.
 
 ![Screenshot from trading view TQQQ/QQQ with the list of trades](https://flare.lambrospetrou.com/articles-data/2025-08-18-investing-leveraged-qqq-macd/tqqq-vs-qqq-trades.png)
 
+### EQQQ with NDX signal
+
+[EQQQ](https://www.invesco.com/uk/en/financial-products/etfs/invesco-eqqq-nasdaq-100-ucits-etf-dist.html) is the UCITS compliant version of QQQ tradeable in Europe.
+This comparison is mostly to show the behavior during market crashes, since EQQQ is in theory tracking NDX, although currency fluctuations can have an impact here too.
+
+- Dates: 2005-08-01 to 2025-07-31
+- Configuration: `BufferPct=2%, RelativeStrengthBars=1`
+- **Results: +1,100% PROFIT**
+
+Notice how the strategy handles the drawdowns of 2008-2009 and 2022 very nicely.
+In the end, the strategy underperformed slightly the buy and hold from 2005, but the whole benefit of using this strategy is that the drawdowns we experienced were almost nothing and the single losing trade in 2008 was just a -11%.
+
+This is why I like this strategy.
+Avoid holding the bag at the bottom, but capturing the meat of the bull.
+OK, it got too buzzwordy.
+
+![Screenshot from trading view EQQQ/NDX with the chart, the strategy panel, and the strategy tester](https://flare.lambrospetrou.com/articles-data/2025-08-18-investing-leveraged-qqq-macd/eqqq-vs-ndx.png)
+
+The purple chart (3rd top to bottom) shows the relative strength of EQQQ against the Nasdaq 100 Index (NDX).
+When the line is purple EQQQ is weaker than NDX, therefore it does not enter a position (see the green triangles until mid-2001), and when the line is blue EQQQ is stronger than NDX and positions can be entered.
+
 ### Scottish Mortgage Trust (SMT) with QQQ signal
 
 [Scottish Mortgage Trust](https://www.scottishmortgage.com/en/uk/individual-investors/holdings) is a growth focused trust in the UK, which I usually invest in for global growth exposure.
@@ -335,7 +356,7 @@ In this case, we can see the strategy working throughout the crashes of the past
 
 - Dates: 1995-07-24 to 2025-07-31
 - Configuration: `BufferPct=2%, RelativeStrengthBars=1`
-- **Results: +1,305% PROFIT**
+- **Results: +1,305% PROFIT** and we avoided most of the big dips.
 
 ![Screenshot from trading view SMT/NDX with the chart, the strategy panel, and the strategy tester](https://flare.lambrospetrou.com/articles-data/2025-08-18-investing-leveraged-qqq-macd/smt-vs-ndx.png)
 
@@ -352,7 +373,13 @@ When the line is purple SMT is weaker, therefore it does not enter a position (s
 
 And with NDX instead of QQQ! **+6,159% PROFIT**
 
-![Screenshot from trading view AVGO/NDX with the chart, the strategy panel, and the strategy tester](https://flare.lambrospetrou.com/articles-data/2025-08-18-investing-leveraged-qqq-macd/avgo-vs-ndx.png)
+Although, to be fair, it was quite hard to lose money holding AVGO in the past 15 years.
+The stock just goes up.
+Even with the buy and hold strategy AVGO only had a max of 35-40% drawdown occasionally, so if you could stomach those you would win big.
+
+The strategy's goal though is to not have to stomach more than what we want, and still try to capture much of the profit.
+
+<!-- ![Screenshot from trading view AVGO/NDX with the chart, the strategy panel, and the strategy tester](https://flare.lambrospetrou.com/articles-data/2025-08-18-investing-leveraged-qqq-macd/avgo-vs-ndx.png) -->
 
 ### UPRO with SPX
 
@@ -370,9 +397,9 @@ The 40-week SMA crossover strategy with the 2% exit buffer would return **+1,100
 
 ## Open questions
 
-The one question I am still researching and backtesting is how to add more money into an existing position.
+The one question we are still researching and backtesting is how to add more money into an existing position.
 
-Everything is mechanical around entering a position and exiting a position, but considering that some periods span multiple years I need a robust way to add more money into the position even if just a few times per year, without negatively impacting our risk management.
+Everything is mechanical around entering a position and exiting a position, but considering that some periods span multiple years we need a robust way to add more money into the position even if just a few times per year, without negatively impacting our risk management.
 
 ## Conclusion
 
@@ -386,5 +413,6 @@ If you have better ideas or improvements to my strategy, feel free to reach out 
 
 ## Changelog
 
+- 2025-08-19: Minor edits and new section on EQQQ vs NDX.
 - 2025-08-18: Initial public post.
 - 2025-08-17: Initial draft, not publicly listed.
