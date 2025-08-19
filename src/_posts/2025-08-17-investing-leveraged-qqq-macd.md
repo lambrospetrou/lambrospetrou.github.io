@@ -24,14 +24,15 @@ All backtesting is done in [TradingView](https://www.tradingview.com/pricing/?sh
 - [Past research with leveraged ETFs](#past-research-with-leveraged-etfs)
 - [Room for improvement](#room-for-improvement)
     - [Weekly signals](#weekly-signals)
-    - [Moving Average Convergence and Divergence - MACD](#moving-average-convergence-and-divergence---macd)
     - [Cross symbol strategy](#cross-symbol-strategy)
+    - [Moving Average Convergence and Divergence - MACD](#moving-average-convergence-and-divergence---macd)
 - [Risk management with stop losses](#risk-management-with-stop-losses)
 - [Tricks and tweaks](#tricks-and-tweaks)
 - [Backtesting](#backtesting)
     - [QQQ3 with QQQ signal](#qqq3-with-qqq-signal)
     - [QQQ3 with NDX signal](#qqq3-with-ndx-signal)
     - [TQQQ with QQQ signal](#tqqq-with-qqq-signal)
+    - [EQQQ with NDX signal](#eqqq-with-ndx-signal)
     - [Scottish Mortgage Trust (SMT) with QQQ signal](#scottish-mortgage-trust-smt-with-qqq-signal)
     - [AVGO with QQQ signal](#avgo-with-qqq-signal)
     - [UPRO with SPX](#upro-with-spx)
@@ -97,9 +98,9 @@ Others have also discussed similar strategies, like this analysis by Logan Kane 
 
 Even though the above research shows great potential and gives a concrete way to outperform the market (S&P 500 in that case), we can do even better.
 
-We implemented the 200-daily Simple Moving Average (SMA) strategy of the publication using the QQQ3 ETF (3x leveraged Nasdaq 100), and we noticed a few things that can be improved.
+We implemented the 200-daily Simple Moving Average (SMA) strategy of the publication using the QQQ3 ETF (3x leveraged Nasdaq 100) with 1% buffer around entries and exits, and we noticed a few things that can be improved.
 
-![Screenshot from trading view QQQ3 40W crossover with the chart, the strategy panel, and the strategy tester](https://flare.lambrospetrou.com/articles-data/2025-08-18-investing-leveraged-qqq-macd/qqq3-40w-sma-crossover.png)
+![Screenshot from trading view QQQ3 200D crossover with the chart, the strategy panel, and the strategy tester](https://flare.lambrospetrou.com/articles-data/2025-08-18-investing-leveraged-qqq-macd/qqq3-200d-sma-crossover.png)
 
 1. There are false positive trades during whipsaw periods where there is no clear trend, like in 2016.
 2. There are big drawdowns from the peak high price to our exit points (crossunder of the 200-daily SMA), wasting gains of the bull run, like in 2020.
@@ -122,14 +123,24 @@ When this happens several times, losses are more likely than gains.
 Using weekly charts reduces the amount of noise we have, and it also reduces the amount of trades we can do in a year.
 Note that we use 40-week SMA now instead of the 200-daily SMA, same total duration.
 
-This change reduced the total number of trades from 15 to 7, without any obvious whipsaw.
+This change reduced the total number of trades, reduced the whipsaws, but also reduced the profits too.
+
+### Cross symbol strategy
+
+Doing any technical analysis and signal detection on QQQ3 directly leads to noise and false positives, both for entries and exits, because each movement is significant.
+
+We concluded that in this situation it's better to use a less volatile symbol for detecting the signals, and use the more volatile but highly correlated symbol for the trade execution.
+
+For example, the QQQ3 is the more volatile sibling of QQQ, so we detect signals on QQQ and execute on QQQ3.
+
+[Stop losses](#risk-management-with-stop-losses) are calculated on the traded symbol, though, for proper risk management.
 
 ### Moving Average Convergence and Divergence - MACD
 
 Once we settled on using weekly signals, the next improvement comes from addressing the big drawdowns from the peak highs.
 
 For example, even though the COVID crash of March 2020 was short in duration, it was a significant dip.
-The QQQ3 drawdown from peak high down to our exit when QQQ crosses under the 40W-SMA was an **eye-watering -62%**.
+The QQQ3 drawdown from peak high down to our exit when QQQ crosses under its 40W-SMA was roughly **-60%**.
 
 ![TradingView screenshot QQQ3 with 40W strategy showing drawdown](https://flare.lambrospetrou.com/articles-data/2025-08-18-investing-leveraged-qqq-macd/qqq3-40w-drawdown_2020.png)
 
@@ -163,16 +174,6 @@ When the MACD line crosses over the zero line it means that now the 12-period EM
 When the MACD line cross under the zero line it means that the 12-period EMA moves lower than the 26-period EMA, indicating a bear trend therefore we EXIT our position.
 
 The fact that we use weekly charts makes the MACD crossovers usable, otherwise there would be a lot of noise, even more than the simple crossover strategy we explored earlier.
-
-### Cross symbol strategy
-
-Doing any technical analysis and signal detection on QQQ3 directly leads to noise and false positives, both for entries and exits, because each movement is significant.
-
-We concluded that in this situation it's better to use a less volatile symbol for detecting the signals, and use the more volatile but highly correlated symbol for the trade execution.
-
-For example, the QQQ3 is the more volatile sibling of QQQ, so we detect signals on QQQ and execute on QQQ3.
-
-Stop losses (see below) are calculated on the traded symbol, though, for proper risk management.
 
 ## Risk management with stop losses
 
@@ -413,6 +414,6 @@ If you have better ideas or improvements to my strategy, feel free to reach out 
 
 ## Changelog
 
-- 2025-08-19: Minor edits and new section on EQQQ vs NDX.
+- 2025-08-19: Minor edits and new section on EQQQ vs NDX. Fixed the 200D-SMA crossover screenshot.
 - 2025-08-18: Initial public post.
 - 2025-08-17: Initial draft, not publicly listed.
