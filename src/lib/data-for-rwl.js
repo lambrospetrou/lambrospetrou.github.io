@@ -9,6 +9,24 @@
 // };
 const DataList = [
   {
+    url: "https://planetscale.com/blog/database-sharding?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Database Sharding",
+    author: "Ben Dicken",
+    dateListed: "2025-08-20T09:15:00.000Z",
+  },
+  {
+    url: "https://planetscale.com/blog/btrees-and-database-indexes?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "B-trees and database indexes",
+    author: "Ben Dicken",
+    dateListed: "2025-08-20T09:05:00.000Z",
+  },
+  {
+    url: "https://planetscale.com/blog/dealing-with-large-tables?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Dealing with large tables",
+    author: "Ben Dicken",
+    dateListed: "2025-08-20T09:00:00.000Z",
+  },
+  {
     url: "https://web.stanford.edu/class/ee384m/Handouts/HowtoReadPaper.pdf?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "How to Read a Paper",
     author: "S. Keshav",
