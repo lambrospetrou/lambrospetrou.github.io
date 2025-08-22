@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://danluu.com/programmer-moneyball/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "We only hire the trendiest",
+    author: "Dan Luu",
+    dateListed: "2025-08-22T13:15:00.000Z",
+  },
+  {
     url: "https://planetscale.com/blog/database-sharding?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Database Sharding",
     author: "Ben Dicken",
