@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://pvk.ca/Blog/2017/09/24/rendezvous-hashing-my-baseline-consistent-distribution-method/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Rendezvous hashing: my baseline 'consistent' distribution method",
+    author: "Paul Khuong",
+    dateListed: "2025-08-26T17:40:00.000Z",
+  },
+  {
     url: "https://danluu.com/programmer-moneyball/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "We only hire the trendiest",
     author: "Dan Luu",
