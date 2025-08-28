@@ -9,6 +9,18 @@
 // };
 const DataList = [
   {
+    url: "https://aws.amazon.com/blogs/architecture/shuffle-sharding-massive-and-magical-fault-isolation/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Shuffle Sharding: Massive and Magical Fault Isolation",
+    author: "Colm MacCárthaigh",
+    dateListed: "2025-08-28T12:20:00.000Z",
+  },
+  {
+    url: "https://aws.amazon.com/blogs/compute/handling-billions-of-invocations-best-practices-from-aws-lambda/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Handling billions of invocations – best practices from AWS Lambda",
+    author: "Chris McPeek",
+    dateListed: "2025-08-28T12:00:00.000Z",
+  },
+  {
     url: "https://pvk.ca/Blog/2017/09/24/rendezvous-hashing-my-baseline-consistent-distribution-method/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Rendezvous hashing: my baseline 'consistent' distribution method",
     author: "Paul Khuong",
