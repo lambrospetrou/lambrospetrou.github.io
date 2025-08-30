@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://mitchellh.com/writing/building-large-technical-projects?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "My Approach to Building Large Technical Projects",
+    author: "Mitchell Hashimoto",
+    dateListed: "2025-08-30T20:00:00.000Z",
+  },
+  {
     url: "https://aws.amazon.com/blogs/architecture/shuffle-sharding-massive-and-magical-fault-isolation/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Shuffle Sharding: Massive and Magical Fault Isolation",
     author: "Colm MacCárthaigh",
