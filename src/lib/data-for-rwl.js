@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://www.draytonbird.net/files/ninewaystoimproveanad.pdf?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Nine Ways to Improve an Ad",
+    author: "Fred Manley",
+    dateListed: "2025-08-31T12:00:00.000Z",
+  },
+  {
     url: "https://mitchellh.com/writing/building-large-technical-projects?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "My Approach to Building Large Technical Projects",
     author: "Mitchell Hashimoto",
