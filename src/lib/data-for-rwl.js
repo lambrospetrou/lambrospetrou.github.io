@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://fchollet.substack.com/p/how-i-think-about-llm-prompt-engineering?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "How I think about LLM prompt engineering - Prompting as searching through a space of vector programs",
+    author: "François Chollet",
+    dateListed: "2025-08-31T13:00:00.000Z",
+  },
+  {
     url: "https://www.draytonbird.net/files/ninewaystoimproveanad.pdf?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Nine Ways to Improve an Ad",
     author: "Fred Manley",
