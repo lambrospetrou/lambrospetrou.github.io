@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://www.thecoder.cafe/p/latency-and-user-experience?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Latency and User Experience - How to Minimize Perceived Latency",
+    author: "Teiva Harsanyi",
+    dateListed: "2025-09-01T11:00:00.000Z",
+  },
+  {
     url: "https://fchollet.substack.com/p/how-i-think-about-llm-prompt-engineering?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "How I think about LLM prompt engineering - Prompting as searching through a space of vector programs",
     author: "François Chollet",
