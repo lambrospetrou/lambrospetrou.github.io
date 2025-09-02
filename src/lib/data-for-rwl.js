@@ -9,6 +9,13 @@
 // };
 const DataList = [
   {
+    url: "https://www.youtube.com/watch?v=PQccNdwm8Tw&ab_channel=berthubert&utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "How technology loses out in companies, countries & continents and what to do about it",
+    author: "Bert Hubert",
+    dateListed: "2025-09-02T12:00:00.000Z",
+    type: "video",
+  },
+  {
     url: "https://www.thecoder.cafe/p/latency-and-user-experience?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Latency and User Experience - How to Minimize Perceived Latency",
     author: "Teiva Harsanyi",
