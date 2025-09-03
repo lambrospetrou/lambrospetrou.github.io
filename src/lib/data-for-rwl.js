@@ -9,6 +9,13 @@
 // };
 const DataList = [
   {
+    url: "https://www.youtube.com/watch?v=d-7o9xYp7eE&ab_channel=RegentUniversitySchoolofLaw&utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Don't Talk to the Police",
+    author: "James Duane (Regent University School of Law)",
+    dateListed: "2025-09-03T12:00:00.000Z",
+    type: "video",
+  },
+  {
     url: "https://www.youtube.com/watch?v=PQccNdwm8Tw&ab_channel=berthubert&utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "How technology loses out in companies, countries & continents and what to do about it",
     author: "Bert Hubert",
