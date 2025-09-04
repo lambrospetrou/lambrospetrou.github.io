@@ -9,6 +9,13 @@
 // };
 const DataList = [
   {
+    url: "https://www.youtube.com/watch?v=yKgfk8lTQuE&ab_channel=TigerBeetle&utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "1000x: The Power of an Interface for Performance by Joran Dirk Greef",
+    author: "Joran Dirk Greef (TigerBeetle)",
+    dateListed: "2025-09-04T12:00:00.000Z",
+    type: "video",
+  },
+  {
     url: "https://www.youtube.com/watch?v=d-7o9xYp7eE&ab_channel=RegentUniversitySchoolofLaw&utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Don't Talk to the Police",
     author: "James Duane (Regent University School of Law)",
