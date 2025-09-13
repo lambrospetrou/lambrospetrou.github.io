@@ -9,9 +9,15 @@
 // };
 const DataList = [
   {
+    url: "https://www.seangoedecke.com/side-bets/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Senior engineers should make side bets",
+    author: "Sean Goedecke",
+    dateListed: "2025-09-13T14:00:00.000Z",
+  },
+  {
     url: "https://en.wikipedia.org/wiki/The_Power_of_10:_Rules_for_Developing_Safety-Critical_Code?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "The Power of 10: Rules for Developing Safety-Critical Code",
-    author: "Gerard J. Holzmann of the NASA/JPL",
+    author: "Gerard J. Holzmann (NASA/JPL)",
     dateListed: "2025-09-13T13:00:00.000Z",
   },
   {
