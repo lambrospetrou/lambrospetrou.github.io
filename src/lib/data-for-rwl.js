@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://bun.com/blog/behind-the-scenes-of-bun-install?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Behind The Scenes of Bun Install",
+    author: "Lydia Hallie",
+    dateListed: "2025-09-13T12:00:00.000Z",
+  },
+  {
     url: "https://www.youtube.com/watch?v=yKgfk8lTQuE&ab_channel=TigerBeetle&utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "1000x: The Power of an Interface for Performance by Joran Dirk Greef",
     author: "Joran Dirk Greef (TigerBeetle)",
