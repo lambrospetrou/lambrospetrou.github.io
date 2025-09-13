@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://en.wikipedia.org/wiki/The_Power_of_10:_Rules_for_Developing_Safety-Critical_Code?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "The Power of 10: Rules for Developing Safety-Critical Code",
+    author: "Gerard J. Holzmann of the NASA/JPL",
+    dateListed: "2025-09-13T13:00:00.000Z",
+  },
+  {
     url: "https://bun.com/blog/behind-the-scenes-of-bun-install?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Behind The Scenes of Bun Install",
     author: "Lydia Hallie",
