@@ -9,6 +9,18 @@
 // };
 const DataList = [
   {
+    url: "http://www.extendslogic.com/growth/no-brainer/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Is Your Product a No-Brainer?",
+    author: "Ruben Gamez",
+    dateListed: "2025-09-22T14:10:00.000Z",
+  },
+  {
+    url: "http://www.extendslogic.com/business/jobs-to-be-done-cancel-interviews/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Doing SaaS Cancellation Interviews (the Jobs-to-be-Done Way)",
+    author: "Ruben Gamez",
+    dateListed: "2025-09-22T14:00:00.000Z",
+  },
+  {
     url: "https://www.seangoedecke.com/side-bets/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Senior engineers should make side bets",
     author: "Sean Goedecke",
