@@ -9,6 +9,13 @@
 // };
 const DataList = [
   {
+    url: "https://www.youtube.com/playlist?list=PLP9v0Y4zla9vkQMGvpj2KNuRIefy0HaR2&utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Conversations on Quality",
+    author: "Linear",
+    dateListed: "2025-09-24T22:00:00.000Z",
+    type: "video",
+  },
+  {
     url: "https://valueinspiration.com/saas-rule-of-40-trap/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "The SaaS Rule of 40 trap: Why successful CEOs lose their strategic edge",
     author: "Ton Dobbe",
