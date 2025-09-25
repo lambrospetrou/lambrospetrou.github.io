@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://aws.amazon.com/builders-library/avoiding-insurmountable-queue-backlogs/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Avoiding insurmountable queue backlogs",
+    author: "David Yanacek",
+    dateListed: "2025-09-25T12:00:00.000Z",
+  },
+  {
     url: "https://www.youtube.com/playlist?list=PLP9v0Y4zla9vkQMGvpj2KNuRIefy0HaR2&utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Conversations on Quality",
     author: "Linear",
