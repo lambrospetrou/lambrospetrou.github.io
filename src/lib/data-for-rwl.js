@@ -9,6 +9,14 @@
 // };
 const DataList = [
   {
+    url: "https://www.youtube.com/watch?v=2L1S0zfnIzo&ab_channel=AWSEvents&utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "AWS re:Invent 2019: Beyond five 9s: Lessons from our highest available data planes (ARC349-R1)",
+    author: "Colm MacCárthaigh",
+    dateListed: "2025-09-25T16:50:00.000Z",
+    type: "video",
+    tags: ["favourite"],
+  },
+  {
     url: "https://aws.amazon.com/builders-library/avoiding-insurmountable-queue-backlogs/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Avoiding insurmountable queue backlogs",
     author: "David Yanacek",
