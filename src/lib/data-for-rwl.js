@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://refactoringenglish.com/blog/software-essays-that-shaped-me/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "The Software Essays that Shaped Me",
+    author: "Michael Lynch",
+    dateListed: "2025-10-09T21:00:00.000Z",
+  },
+  {
     url: "https://www.youtube.com/watch?v=2L1S0zfnIzo&ab_channel=AWSEvents&utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "AWS re:Invent 2019: Beyond five 9s: Lessons from our highest available data planes (ARC349-R1)",
     author: "Colm MacCárthaigh",
