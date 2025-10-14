@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://nvartolomei.com/oswald/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "OSWALD—Object Storage Write-Ahead Log Device",
+    author: "Nicolae Vartolomei",
+    dateListed: "2025-10-14T15:00:00.000Z",
+  },
+  {
     url: "https://www.epsilontheory.com/welcome-to-the-continental-we-do-hope-you-enjoy-your-stay/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Welcome to The Continental. We Do Hope You Enjoy Your Stay.",
     author: "Ben Hunt",
