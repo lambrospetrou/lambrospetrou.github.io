@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://www.w3.org/Provider/Style/URI?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Cool URIs don't change",
+    author: "Tim Berners-Lee",
+    dateListed: "2025-10-21T11:00:00.000Z",
+  },
+  {
     url: "https://nvartolomei.com/oswald/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "OSWALD—Object Storage Write-Ahead Log Device",
     author: "Nicolae Vartolomei",
