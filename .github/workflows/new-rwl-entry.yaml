@@ -2,60 +2,152 @@ name: Add RWL Entry from Issue
 
 on:
   issues:
-      types: [opened]
+    types: [opened]
 
-      jobs:
-        process-rwl-entry:
-            if: contains(github.event.issue.labels.*.name, 'rwl')
-                runs-on: ubuntu-latest
-                    
-                        permissions:
-                              contents: write
-                                    issues: write
-                                        
-                                            steps:
-                                                  - name: Checkout repository
-                                                          uses: actions/checkout@v4
-                                                                
-                                                                      - name: Parse Issue and Update RWL Data
-                                                                              uses: actions/github-script@v7
-                                                                                      with:
-                                                                                                script: |
-                                                                                                            const issue = context.payload.issue;
-                                                                                                                        const body = issue.body || '';
-                                                                                                                                    const lines = body.split('\n').map(line => line.trim()).filter(line => line);
-                                                                                                                                                
-                                                                                                                                                            // Parse issue body
-                                                                                                                                                                        if (lines.length < 3) {
-                                                                                                                                                                                      await github.rest.issues.createComment({
-                                                                                                                                                                                                      ...context.repo,
-                                                                                                                                                                                                                      issue_number: issue.number,
-                                                                                                                                                                                                                                      body: '❌ Invalid format. Expected at least:\nLine 1: URL\nLine 2: title\nLine 3: author\nLine 4 (optional): tags: tag1, tag2\nLine 5 (optional): type: article|video|audio'
-                                                                                                                                                                                                                                                    });
-                                                                                                                                                                                                                                                                  return;
-                                                                                                                                                                                                                                                                              }
-                                                                                                                                                                                                                                                                                          
-                                                                                                                                                                                                                                                                                                      const url = lines[0];
-                                                                                                                                                                                                                                                                                                                  const title = lines[1] || undefined;
-                                                                                                                                                                                                                                                                                                                              const author = lines[2] || undefined;
-                                                                                                                                                                                                                                                                                                                                          
-                                                                                                                                                                                                                                                                                                                                                      // Parse tags (line 4)
-                                                                                                                                                                                                                                                                                                                                                                  let tags = undefined;
-                                                                                                                                                                                                                                                                                                                                                                              if (lines.length >= 4 && lines[3].toLowerCase().startsWith('tags:')) {
-                                                                                                                                                                                                                                                                                                                                                                                            const tagsString = lines[3].substring(5).trim();
-                                                                                                                                                                                                                                                                                                                                                                                                          if (tagsString) {
-                                                                                                                                                                                                                                                                                                                                                                                                                          tags = tagsString.split(',').map(tag => tag.trim()).filter(tag => tag);
-                                                                                                                                                                                                                                                                                                                                                                                                                                        }
-                                                                                                                                                                                                                                                                                                                                                                                                                                                    }
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                            // Parse type (line 5)
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        let type = 'article'; // default
+jobs:
+  process-rwl-entry:
+    if: contains(github.event.issue.labels.*.name, 'rwl')
+    runs-on: ubuntu-latest
+    
+    permissions:
+      contents: write
+      issues: write
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Parse Issue and Update RWL Data
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const issue = context.payload.issue;
+            const body = issue.body || '';
+            const lines = body.split('\n').map(line => line.trim()).filter(line => line);
+            
+            // Parse issue body - need at least 3 lines (URL, title, author)
+            if (lines.length < 3) {
+              await github.rest.issues.createComment({
+                ...context.repo,
+                issue_number: issue.number,
+                body: '❌ Invalid format. Required:\nLine 1: URL\nLine 2: title\nLine 3: author\n\nOptional (any order):\ntags: tag1, tag2\ntype: article|video|audio'
+              });
+              return;
+            }
+            
+            // Required fields
+            const url = lines[0];
+            const title = lines[1];
+            const author = lines[2];
+            
+            // Parse optional fields from lines 4+
+            let tags = undefined;
+            let type = undefined;
+            
+            // Check lines 4 onwards for tags: and type: prefixes
+            for (let i = 3; i < lines.length; i++) {
+              const line = lines[i];
+              
+              if (line.toLowerCase().startsWith('tags:')) {
+                const tagsString = line.substring(5).trim();
+                if (tagsString) {
+                  tags = tagsString.split(',').map(tag => tag.trim()).filter(tag => tag);
+                  if (tags.length === 0) tags = undefined;
+                }
+              }
+              
+              if (line.toLowerCase().startsWith('type:')) {
+                const typeValue = line.substring(5).trim();
+                if (typeValue && ['article', 'video', 'audio'].includes(typeValue)) {
+                  type = typeValue;
+                }
+              }
+            }
+            
+            // Create entry object with required fields
+            const newEntry = {
+              url: url,
+              title: title,
+              author: author,
+              dateListed: new Date().toISOString()
+            };
+            
+            // Add optional fields only if they exist
+            if (type) newEntry.type = type;
+            if (tags && tags.length > 0) newEntry.tags = tags;
+            
+            // Get current file
+            const filePath = 'src/lib/data-for-rwl.js';
+            let fileData;
+            try {
+              const response = await github.rest.repos.getContent({
+                ...context.repo,
+                path: filePath
+              });
+              fileData = response.data;
+            } catch (error) {
+              await github.rest.issues.createComment({
+                ...context.repo,
+                issue_number: issue.number,
+                body: `❌ Could not find file: ${filePath}`
+              });
+              throw error;
+            }
+            
+            const content = Buffer.from(fileData.content, 'base64').toString('utf8');
+            
+            // Check for placeholder
+            if (!content.includes('// AUTOMATIC_ENTRY_PLACEHOLDER')) {
+              await github.rest.issues.createComment({
+                ...context.repo,
+                issue_number: issue.number,
+                body: '❌ Could not find `// AUTOMATIC_ENTRY_PLACEHOLDER` comment in file'
+              });
+              return;
+            }
+            
+            // Format the new entry with proper indentation
+            const entryString = JSON.stringify(newEntry, null, 2)
+              .split('\n')
+              .map(line => `  ${line}`)
+              .join('\n');
+            
+            // Replace placeholder with entry + placeholder
+            const newContent = content.replace(
+              '// AUTOMATIC_ENTRY_PLACEHOLDER',
+              `// AUTOMATIC_ENTRY_PLACEHOLDER\n${entryString},`
+            );
+            
+            // Commit the updated file
+            await github.rest.repos.createOrUpdateFileContents({
+              ...context.repo,
+              path: filePath,
+              message: `Add RWL entry: ${title}`,
+              content: Buffer.from(newContent).toString('base64'),
+              sha: fileData.sha
+            });
+            
+            // Create success comment
+            const successMessage = `✅ Entry added successfully!\n\n\`\`\`json\n${JSON.stringify(newEntry, null, 2)}\n\`\`\``;
+            await github.rest.issues.createComment({
+              ...context.repo,
+              issue_number: issue.number,
+              body: successMessage
+            });
+            
+            // Close the issue
+            await github.rest.issues.update({
+              ...context.repo,
+              issue_number: issue.number,
+              state: 'closed',
+              labels: [...issue.labels.map(l => l.name), 'processed']
+            });                                                                                                                                                                                                                                                                                                                                                                                                    let type = 'article'; // default
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     if (lines.length >= 5 && lines[4].toLowerCase().startsWith('type:')) {
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   const typeValue = lines[4].substring(5).trim();
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 if (typeValue && ['article', 'video', 'audio'].includes(typeValue)) {
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 type = typeValue;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               }
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          }
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         }
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   // Create entry object
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               const newEntry = {
