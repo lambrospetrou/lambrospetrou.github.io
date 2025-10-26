@@ -9,6 +9,36 @@
 // };
 const DataList = [
   {
+    url: "https://how.complexsystems.fail/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "How Complex Systems Fail",
+    author: "Richard I. Cook",
+    dateListed: "2025-10-26T16:10:00.000Z",
+  },
+  {
+    url: "https://amasad.me/keep-winning?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "How to Keep Winning",
+    author: "Amjad Masad",
+    dateListed: "2025-10-26T16:00:00.000Z",
+  },
+  {
+    url: "https://skoredin.pro/blog/golang/cpu-cache-friendly-go?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "CPU Cache-Friendly Data Structures in Go: 10x Speed with Same Algorithm",
+    author: "Serge Skoredin",
+    dateListed: "2025-10-26T15:10:00.000Z",
+  },
+  {
+    url: "https://tanelpoder.com/posts/sql-plan-flamegraph-loop-row-counts/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "SQL Plan Execution FlameGraphs with Loop and Row Counts",
+    author: "Tanel Poder",
+    dateListed: "2025-10-26T15:05:00.000Z",
+  },
+  {
+    url: "https://steipete.me/posts/just-talk-to-it?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Just Talk To It - the no-bs Way of Agentic Engineering",
+    author: "Peter Steinberger",
+    dateListed: "2025-10-26T15:00:00.000Z",
+  },
+  {
     url: "https://www.w3.org/Provider/Style/URI?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Cool URIs don't change",
     author: "Tim Berners-Lee",
