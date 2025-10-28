@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://kentonshouse.com/singletons?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Singletons Considered Harmful",
+    author: "Kenton Varda",
+    dateListed: "2025-10-28T11:10:00.000Z",
+  },
+  {
     url: "https://how.complexsystems.fail/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "How Complex Systems Fail",
     author: "Richard I. Cook",
