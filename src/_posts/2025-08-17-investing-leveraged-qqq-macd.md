@@ -320,7 +320,7 @@ TQQQ is the US version of QQQ3, and the strategy works nicely as well.
 - Configuration: `BufferPct=2%, ConsecutiveEnterConditions=2`
 - **Results: +11,194% PROFIT**
 
-![Screenshot from trading view TQQQ/QQQ with the chart, the strategy panel, and the strategy tester](https://flare.lambrospetrou.com/articles-data/2025-08-18-investing-leveraged-qqq-macd/qqq3-vs-qqq.png)
+![Screenshot from trading view TQQQ/QQQ with the chart, the strategy panel, and the strategy tester](https://flare.lambrospetrou.com/articles-data/2025-08-18-investing-leveraged-qqq-macd/tqqq-vs-qqq.png)
 
 And the individual trades.
 
@@ -414,6 +414,7 @@ If you have better ideas or improvements to my strategy, feel free to reach out 
 
 ## Changelog
 
+- 2025-11-14: Fixed the TQQQ with QQQ signal screenshot, incorrectly showing QQQ3.
 - 2025-08-19: Minor edits and new section on EQQQ vs NDX. Fixed the 200D-SMA crossover screenshot.
 - 2025-08-18: Initial public post.
 - 2025-08-17: Initial draft, not publicly listed.
