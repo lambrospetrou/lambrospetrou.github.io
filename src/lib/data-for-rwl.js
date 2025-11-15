@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://stratechery.com/2025/the-benefits-of-bubbles/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "The Benefits of Bubbles",
+    author: "Ben Thompson",
+    dateListed: "2025-11-15T14:00:00.000Z",
+  },
+  {
     url: "https://kentonshouse.com/singletons?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Singletons Considered Harmful",
     author: "Kenton Varda",
