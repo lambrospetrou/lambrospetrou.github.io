@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://rcrowley.org/2025/everything-is-lock-in/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Everything is lock-in",
+    author: "Richard Crowley",
+    dateListed: "2025-11-18T11:00:00.000Z",
+  },
+  {
     url: "https://stratechery.com/2025/the-benefits-of-bubbles/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "The Benefits of Bubbles",
     author: "Ben Thompson",
