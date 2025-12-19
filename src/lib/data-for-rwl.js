@@ -9,6 +9,24 @@
 // };
 const DataList = [
   {
+    url: "https://www.geoffreylitt.com/2025/10/24/code-like-a-surgeon?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Code like a surgeon",
+    author: "Geoffrey Litt",
+    dateListed: "2025-12-19T13:10:00.000Z",
+  },
+  {
+    url: "https://simonwillison.net/2025/Dec/18/code-proven-to-work/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Your job is to deliver code you have proven to work",
+    author: "Simon Willison",
+    dateListed: "2025-12-19T13:00:00.000Z",
+  },
+  {
+    url: "https://traderlion.com/quotes/druckenmiller-quotes/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "30 Stanley Druckenmiller Quotes Every Investor Should Know",
+    author: "Nick Schmidt",
+    dateListed: "2025-12-19T12:00:00.000Z",
+  },
+  {
     url: "https://rcrowley.org/2025/everything-is-lock-in/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Everything is lock-in",
     author: "Richard Crowley",
