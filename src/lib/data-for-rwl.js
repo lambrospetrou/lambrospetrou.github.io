@@ -9,6 +9,18 @@
 // };
 const DataList = [
   {
+    url: "https://lethain.com/everyinc-compound-engineering/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Learning from Every's Compound Engineering",
+    author: "Will Larson",
+    dateListed: "2026-01-24T13:10:00.000Z",
+  },
+  {
+    url: "https://every.to/chain-of-thought/compound-engineering-how-every-codes-with-agents?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Compound Engineering: How Every Codes With Agents - A four-step engineering process for software teams that don't write code",
+    author: "Kieran Klaassen, Dan Shipper",
+    dateListed: "2026-01-24T13:00:00.000Z",
+  },
+  {
     url: "https://www.geoffreylitt.com/2025/10/24/code-like-a-surgeon?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Code like a surgeon",
     author: "Geoffrey Litt",
