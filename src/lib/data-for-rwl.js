@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://adventures.nodeland.dev/archive/the-human-in-the-loop/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "The Human in the Loop",
+    author: "Matteo Collina",
+    dateListed: "2026-02-01T12:00:00.000Z",
+  },
+  {
     url: "https://lethain.com/everyinc-compound-engineering/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Learning from Every's Compound Engineering",
     author: "Will Larson",
