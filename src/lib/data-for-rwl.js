@@ -9,6 +9,24 @@
 // };
 const DataList = [
   {
+    url: "https://visualrambling.space/dithering-part-2/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Dithering Part 2 - The Ordered Dithering",
+    author: "Damar Aji Pramudita",
+    dateListed: "2026-02-01T20:10:00.000Z",
+  },
+  {
+    url: "https://modulovalue.com/blog/syscall-overhead-tar-gz-io-performance/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "I built a 2x faster lexer, then discovered I/O was the real bottleneck",
+    author: "Modestas Valauskas",
+    dateListed: "2026-02-01T20:05:00.000Z",
+  },
+  {
+    url: "https://dubroy.com/blog/look-for-whats-true/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Look for what's true",
+    author: "Patrick Dubroy",
+    dateListed: "2026-02-01T20:00:00.000Z",
+  },
+  {
     url: "https://adventures.nodeland.dev/archive/the-human-in-the-loop/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "The Human in the Loop",
     author: "Matteo Collina",
