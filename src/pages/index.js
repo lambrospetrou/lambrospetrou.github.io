@@ -61,9 +61,7 @@ function NewsletterWidget() {
           Sign up to my newsletter
         </a></h3>
         <p>
-          At <em>most one email per month</em>, nothing new means no email at all.
-          <br />
-          <strong>No spam. No gimmicks.</strong>
+          At <em>most one email per month</em>, nothing new means no email at all. <strong>No spam. No gimmicks.</strong>
         </p>
       </div>
     </section>
