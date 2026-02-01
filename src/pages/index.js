@@ -36,7 +36,7 @@ export default function HomeIndex({ posts }) {
 function HeroBanner() {
   return (
     <div className="home-hero-banner">
-      <h1>I turn ideas into <span className="text-bg-gradient">robust</span> and <span className="text-bg-gradient">reliable</span> software products.</h1>
+      <h1>We are what we <span className="text-bg-gradient">repeatedly do</span>. Excellence then, is <span className="text-bg-gradient">not an act, but a habit</span>!</h1>
     </div>
   );
 }
