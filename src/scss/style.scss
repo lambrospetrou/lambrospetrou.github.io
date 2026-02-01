@@ -478,8 +478,9 @@ iframe.centered {
 
 .home-hero-banner {
     text-align: center;
-    padding: 0px;
-    height: 20px;
+    padding: 20px;
+    padding-top: 80px;
+    padding-bottom: 40px;
     font-family: $font-family-system-serif;
     font-weight: bold;
     font-size: 3.5rem;
@@ -503,7 +504,7 @@ iframe.centered {
     }
 
     @media (max-width: 100ch) {
-        padding-top: 0px;
+        padding-top: 40px;
         font-size: 2rem;
     }
 }

@@ -23,7 +23,7 @@ export default function HomeIndex({ posts }) {
         />
       </Head>
 
-      <HeroBanner />
+      {/* <HeroBanner /> */}
 
       <WidgetsSection widgets={[/*<BookInterviewSessionWidget />,*/ <SkybearCtaWidget />]} />
       <WidgetsSection widgets={[<NewsletterWidget />, <RWLWidget />]} />
@@ -36,7 +36,7 @@ export default function HomeIndex({ posts }) {
 function HeroBanner() {
   return (
     <div className="home-hero-banner">
-{/* hero text removed, keeping decorative border */}
+      <h1>I turn ideas into <span className="text-bg-gradient">robust</span> and <span className="text-bg-gradient">reliable</span> software products.</h1>
     </div>
   );
 }
