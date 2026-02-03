@@ -8,11 +8,12 @@
 //   dateListed: ISO8601 (used for the RSS)
 // };
 const DataList = [
+
   {
-    url: "https://visualrambling.space/dithering-part-2/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
-    title: "Dithering Part 2 - The Ordered Dithering",
-    author: "Damar Aji Pramudita",
-    dateListed: "2026-02-01T20:10:00.000Z",
+    url: "https://alexharri.com/blog/ascii-rendering?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "ASCII characters are not pixels: a deep dive into ASCII rendering",
+    author: "Alex Harri",
+    dateListed: "2026-02-03T20:00:00.000Z",
   },
   {
     url: "https://modulovalue.com/blog/syscall-overhead-tar-gz-io-performance/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
