@@ -13,7 +13,7 @@ const DataList = [
     url: "https://www.kalzumeus.com/2011/10/28/dont-call-yourself-a-programmer/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Don't Call Yourself A Programmer, And Other Career Advice",
     author: "Patrick McKenzie (patio11)",
-    dateListed: "2026-02-17T12:00:00.000Z",
+    dateListed: "2026-02-17T08:00:00.000Z",
   },
   {
     url: "https://alexharri.com/blog/ascii-rendering?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
