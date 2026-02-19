@@ -8,7 +8,12 @@
 //   dateListed: ISO8601 (used for the RSS)
 // };
 const DataList = [
-
+  {
+    url: "https://medium.com/@aminebenseddik/how-i-set-up-free-go-vanity-urls-with-cloudflare-workers-824216aead41?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "How I Set Up Free Go Vanity URLs with Cloudflare Workers",
+    author: "Amine Benseddik",
+    dateListed: "2026-02-19T21:00:00.000Z",
+  },
   {
     url: "https://www.kalzumeus.com/2011/10/28/dont-call-yourself-a-programmer/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Don't Call Yourself A Programmer, And Other Career Advice",
