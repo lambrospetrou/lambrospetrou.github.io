@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://blog.kinglycrow.com/no-skill-no-taste/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "No Skill. No Taste.",
+    author: "The Crow's Nest",
+    dateListed: "2026-02-22T17:00:00.000Z",
+  },
+  {
     url: "https://medium.com/@aminebenseddik/how-i-set-up-free-go-vanity-urls-with-cloudflare-workers-824216aead41?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "How I Set Up Free Go Vanity URLs with Cloudflare Workers",
     author: "Amine Benseddik",
