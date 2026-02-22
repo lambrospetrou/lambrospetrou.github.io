@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://matduggan.com/i-sold-out-for-200-a-month-and-all-i-got-was-this-perfectly-generated-terraform/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "I Sold Out for $20 a Month and All I Got Was This Perfectly Generated Terraform",
+    author: "Mat Duggan",
+    dateListed: "2026-02-22T18:00:00.000Z",
+  },
+  {
     url: "https://blog.kinglycrow.com/no-skill-no-taste/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "No Skill. No Taste.",
     author: "The Crow's Nest",
