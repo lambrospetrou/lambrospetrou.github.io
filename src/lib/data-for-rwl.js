@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://addyosmani.com/blog/agents-md/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Stop Using /init for AGENTS.md",
+    author: "Addy Osmani",
+    dateListed: "2026-02-24T14:00:00.000Z",
+  },
+  {
     url: "https://matduggan.com/i-sold-out-for-200-a-month-and-all-i-got-was-this-perfectly-generated-terraform/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "I Sold Out for $20 a Month and All I Got Was This Perfectly Generated Terraform",
     author: "Mat Duggan",
