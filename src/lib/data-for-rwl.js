@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://brooker.co.za/blog/2025/12/15/database-for-ssd.html?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "What Does a Database for SSDs Look Like?",
+    author: "Marc Brooker",
+    dateListed: "2026-02-28T10:00:00.000Z",
+  },
+  {
     url: "https://addyosmani.com/blog/agents-md/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Stop Using /init for AGENTS.md",
     author: "Addy Osmani",
