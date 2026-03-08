@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://blog.jetbrains.com/go/2026/03/02/secure-go-error-handling-best-practices/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Best Practices for Secure Error Handling in Go",
+    author: "Dominika Stankiewicz",
+    dateListed: "2026-03-08T14:00:00.000Z",
+  },
+  {
     url: "https://brooker.co.za/blog/2025/12/15/database-for-ssd.html?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "What Does a Database for SSDs Look Like?",
     author: "Marc Brooker",
