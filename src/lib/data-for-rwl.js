@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://apenwarr.ca/log/20260316?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Every layer of review makes you 10x slower - Every layer of approval makes a process 10x slower",
+    author: "Avery Pennarun (@apenwarr)",
+    dateListed: "2026-03-18T08:30:00.000Z",
+  },
+  {
     url: "https://blog.jetbrains.com/go/2026/03/02/secure-go-error-handling-best-practices/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Best Practices for Secure Error Handling in Go",
     author: "Dominika Stankiewicz",
