@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://mariozechner.at/posts/2026-03-25-thoughts-on-slowing-the-fuck-down/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Thoughts on slowing the fuck down",
+    author: "Mario Zechner",
+    dateListed: "2026-03-25T19:50:00.000Z",
+  },
+  {
     url: "https://apenwarr.ca/log/20260316?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Every layer of review makes you 10x slower - Every layer of approval makes a process 10x slower",
     author: "Avery Pennarun (@apenwarr)",
