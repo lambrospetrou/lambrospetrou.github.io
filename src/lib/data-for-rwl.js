@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://www.cs.unc.edu/~stotts/COMP590-059-f24/robsrules.html?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Rob Pike's 5 Rules of Programming",
+    author: "Rob Pike",
+    dateListed: "2026-04-07T22:00:00.000Z",
+  },
+  {
     url: "https://mariozechner.at/posts/2026-03-25-thoughts-on-slowing-the-fuck-down/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Thoughts on slowing the fuck down",
     author: "Mario Zechner",
