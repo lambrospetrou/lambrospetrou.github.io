@@ -9,6 +9,18 @@
 // };
 const DataList = [
   {
+    url: "https://blog.mrcroxx.com/posts/foyer-a-hybrid-cache-in-rust-past-present-and-future/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Foyer: A Hybrid Cache in Rust — Past, Present, and Future",
+    author: "Yao Meng",
+    dateListed: "2026-04-21T14:00:00.000Z",
+  },
+  {
+    url: "https://engineering.fb.com/2021/08/06/core-infra/zippydb/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "How we built a general purpose key value store for Facebook with ZippyDB",
+    author: "Sarang Masti (Facebook)",
+    dateListed: "2026-04-21T13:00:00.000Z",
+  },
+  {
     url: "https://www.cs.unc.edu/~stotts/COMP590-059-f24/robsrules.html?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Rob Pike's 5 Rules of Programming",
     author: "Rob Pike",
