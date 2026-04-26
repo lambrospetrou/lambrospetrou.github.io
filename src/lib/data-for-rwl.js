@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://adamj.eu/tech/2022/06/17/mike-actons-expectations-of-professional-software-engineers/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Mike Acton’s Expectations of Professional Software Engineers",
+    author: "Adam Johnson",
+    dateListed: "2026-04-26T14:20:00.000Z",
+  },
+  {
     url: "https://blog.mrcroxx.com/posts/foyer-a-hybrid-cache-in-rust-past-present-and-future/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Foyer: A Hybrid Cache in Rust — Past, Present, and Future",
     author: "Yao Meng",
