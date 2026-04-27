@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://anirudhology.com/blog/building-raftly-reproducing-production-failures?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Raftly: Building a Production-Grade Raft Implementation from Scratch",
+    author: "Anirudh Sharma",
+    dateListed: "2026-04-27T10:00:00.000Z",
+  },
+  {
     url: "https://adamj.eu/tech/2022/06/17/mike-actons-expectations-of-professional-software-engineers/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Mike Acton’s Expectations of Professional Software Engineers",
     author: "Adam Johnson",
