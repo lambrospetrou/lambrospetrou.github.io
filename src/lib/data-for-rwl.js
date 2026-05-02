@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://engineering.fb.com/2022/06/08/core-infra/cache-made-consistent/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Cache made consistent",
+    author: "Lu Pan",
+    dateListed: "2026-05-02T10:00:00.000Z",
+  },
+  {
     url: "https://cloud.google.com/blog/products/databases/strict-serializability-and-external-consistency-in-spanner?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Spanner under the hood: Understanding strict serializability and external consistency",
     author: "Doug Judd",
