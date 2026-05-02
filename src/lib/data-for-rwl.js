@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://cloud.google.com/blog/products/databases/strict-serializability-and-external-consistency-in-spanner?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Spanner under the hood: Understanding strict serializability and external consistency",
+    author: "Doug Judd",
+    dateListed: "2026-05-02T09:00:00.000Z",
+  },
+  {
     url: "https://anirudhology.com/blog/building-raftly-reproducing-production-failures?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Raftly: Building a Production-Grade Raft Implementation from Scratch",
     author: "Anirudh Sharma",
