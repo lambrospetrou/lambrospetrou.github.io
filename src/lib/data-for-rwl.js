@@ -9,16 +9,23 @@
 // };
 const DataList = [
   {
+    url: "https://www.youtube.com/watch?v=cZ3JEbp4oO0?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "0x5 - Shuffling and Sampling",
+    author: "Colm MacCárthaigh",
+    dateListed: "2026-05-10T14:00:00.000Z",
+    type: "video",
+  },
+  {
     url: "https://www.figma.com/blog/pgkeeper-building-the-bouncer-we-needed-for-postgres/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "PGKeeper: Building the bouncer we needed for Postgres",
     author: "Figma",
-    dateListed: "2026-05-09T10:00:00.000Z",
+    dateListed: "2026-05-09T10:10:00.000Z",
   },
   {
     url: "https://rednafi.com/go/hoist-wire-plumb/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Hoisting wire plumbing out of your Go handlers",
     author: "Redowan Delowar",
-    dateListed: "2026-05-09T10:10:00.000Z",
+    dateListed: "2026-05-09T10:00:00.000Z",
   },
   {
     url: "https://engineering.fb.com/2022/06/08/core-infra/cache-made-consistent/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
