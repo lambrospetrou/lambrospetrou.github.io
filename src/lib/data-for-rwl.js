@@ -9,6 +9,18 @@
 // };
 const DataList = [
   {
+    url: "https://larsfaye.com/articles/agentic-coding-is-a-trap?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Agentic Coding is a Trap - Remaining vigilant about cognitive debt and atrophy.",
+    author: "Lars Faye",
+    dateListed: "2026-05-12T13:10:00.000Z",
+  },
+  {
+    url: "https://www.jamesshore.com/v2/blog/2026/you-need-ai-that-reduces-your-maintenance-costs?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "You Need AI That Reduces Maintenance Costs",
+    author: "James Shore",
+    dateListed: "2026-05-12T13:00:00.000Z",
+  },
+  {
     url: "https://www.youtube.com/watch?v=cZ3JEbp4oO0?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "0x5 - Shuffling and Sampling",
     author: "Colm MacCárthaigh",
