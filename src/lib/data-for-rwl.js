@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://distributed-computing-musings.com/2023/07/paper-notes-distributed-transactions-at-scale-in-amazon-dynamodb/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Paper Notes: Distributed Transactions at Scale in Amazon DynamoDB",
+    author: "Varun Upadhyay",
+    dateListed: "2026-05-16T19:00:00.000Z",
+  },
+  {
     url: "https://larsfaye.com/articles/agentic-coding-is-a-trap?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Agentic Coding is a Trap - Remaining vigilant about cognitive debt and atrophy.",
     author: "Lars Faye",
