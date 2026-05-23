@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://marc-bowes.com/index.html&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "AWS Aurora DSQL (blog post series)",
+    author: "Marc Bowes",
+    dateListed: "2026-05-23T09:00:00.000Z",
+  },
+  {
     url: "https://sive.rs/n0?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Prepare your “no” and keep it handy",
     author: "Derek Sivers",
