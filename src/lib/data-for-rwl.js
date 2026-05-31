@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://dubroy.com/blog/fast-is-better-than-slow?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Fast is better than slow",
+    author: "Patrick Dubroy",
+    dateListed: "2026-05-31T22:00:00.000Z",
+  },
+  {
     url: "https://blog.frankmtaylor.com/2026/05/13/you-dont-know-html-lists/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "You don’t know HTML Lists",
     author: "Frank M Taylor",
