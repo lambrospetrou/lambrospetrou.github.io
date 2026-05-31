@@ -9,7 +9,13 @@
 // };
 const DataList = [
   {
-    url: "https://marc-bowes.com/index.html&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    url: "https://blog.frankmtaylor.com/2026/05/13/you-dont-know-html-lists/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "You don’t know HTML Lists",
+    author: "Frank M Taylor",
+    dateListed: "2026-05-31T08:00:00.000Z",
+  },
+  {
+    url: "https://marc-bowes.com/index.html?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "AWS Aurora DSQL (blog post series)",
     author: "Marc Bowes",
     dateListed: "2026-05-23T09:00:00.000Z",
