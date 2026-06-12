@@ -9,6 +9,18 @@
 // };
 const DataList = [
   {
+    url: "https://charitydotwtf.substack.com/p/ai-enthusiasts-are-in-a-race-against?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "AI enthusiasts are in a race against time, AI skeptics are in a race against entropy",
+    author: "Charity Majors",
+    dateListed: "2026-06-12T16:10:00.000Z",
+  },
+  {
+    url: "https://writethatblog.substack.com/p/charity-majors-on-technical-blogging?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Charity Majors on Technical Blogging",
+    author: "Charity Majors",
+    dateListed: "2026-06-12T16:00:00.000Z",
+  },
+  {
     url: "https://dubroy.com/blog/fast-is-better-than-slow?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Fast is better than slow",
     author: "Patrick Dubroy",
