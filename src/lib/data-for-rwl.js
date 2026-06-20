@@ -8,6 +8,12 @@
 //   dateListed: ISO8601 (used for the RSS)
 // };
 const DataList = [
+   {
+    url: "https://destel.dev/blog/max-bytes-middleware-in-go?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "MaxBytes Middleware in Go: The Same Trap, Again",
+    author: "Viktor Nikolaiev",
+    dateListed: "2026-06-20T15:00:00.000Z",
+  },
   {
     url: "https://charitydotwtf.substack.com/p/ai-enthusiasts-are-in-a-race-against?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "AI enthusiasts are in a race against time, AI skeptics are in a race against entropy",
