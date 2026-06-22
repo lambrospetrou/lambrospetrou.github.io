@@ -8,6 +8,12 @@
 //   dateListed: ISO8601 (used for the RSS)
 // };
 const DataList = [
+  {
+    url: "https://vincent.bernat.ch/en/blog/2026-kpi-goodhart?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Building a Soviet Nail Factory: how KPIs killed efficiency",
+    author: "Vincent Bernat",
+    dateListed: "2026-06-22T09:30:00.000Z",
+  },
    {
     url: "https://destel.dev/blog/max-bytes-middleware-in-go?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "MaxBytes Middleware in Go: The Same Trap, Again",
