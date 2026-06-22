@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "http://johnsalvatier.org/blog/2017/reality-has-a-surprising-amount-of-detail?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Reality has a surprising amount of detail",
+    author: "John Salvatier",
+    dateListed: "2026-06-22T12:20:00.000Z",
+  },
+  {
     url: "https://vincent.bernat.ch/en/blog/2026-kpi-goodhart?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Building a Soviet Nail Factory: how KPIs killed efficiency",
     author: "Vincent Bernat",
