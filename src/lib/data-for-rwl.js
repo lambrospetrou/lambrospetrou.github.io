@@ -9,6 +9,18 @@
 // };
 const DataList = [
   {
+    url: "https://segflow.github.io/post/zero-copy-sendfile-splice/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Zero-copy in Go: sendfile, splice, and the cost of io.Copy",
+    author: "Assel Meher",
+    dateListed: "2026-07-04T10:10:00.000Z",
+  },
+  {
+    url: "https://planetscale.com/blog/the-feedback-loops-behind-kubernetes?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "The feedback loops behind Kubernetes",
+    author: "Fatih Arslan",
+    dateListed: "2026-07-04T10:00:00.000Z",
+  },
+  {
     url: "http://johnsalvatier.org/blog/2017/reality-has-a-surprising-amount-of-detail?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Reality has a surprising amount of detail",
     author: "John Salvatier",
