@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://peteris.rocks/blog/htop/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "htop explained - Explanation of everything you can see in htop/top on Linux",
+    author: "Pēteris Ņikiforovs",
+    dateListed: "2026-07-11T10:00:00.000Z",
+  },
+  {
     url: "https://segflow.github.io/post/zero-copy-sendfile-splice/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Zero-copy in Go: sendfile, splice, and the cost of io.Copy",
     author: "Assel Meher",
