@@ -9,6 +9,18 @@
 // };
 const DataList = [
   {
+    url: "https://seths.blog/2026/06/stop-ruining-it/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Stop ruining it",
+    author: "Seth Godin",
+    dateListed: "2026-07-11T11:10:00.000Z",
+  },
+  {
+    url: "https://seths.blog/2009/05/ignore-sunk-costs/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Ignore sunk costs",
+    author: "Seth Godin",
+    dateListed: "2026-07-11T11:00:00.000Z",
+  },
+  {
     url: "https://peteris.rocks/blog/htop/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "htop explained - Explanation of everything you can see in htop/top on Linux",
     author: "Pēteris Ņikiforovs",
