@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://wangcong.org/2026-06-30-why-i-stopped-arguing-with-people.html?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Why I Stopped Arguing With People",
+    author: "Cong Wang",
+    dateListed: "2026-07-11T12:10:00.000Z",
+  },
+  {
     url: "https://seths.blog/2026/06/stop-ruining-it/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Stop ruining it",
     author: "Seth Godin",
