@@ -9,6 +9,18 @@
 // };
 const DataList = [
   {
+    url: "https://www.allthingsdistributed.com/2026/08/on-building-scalable-control-planes.html?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "On building scalable control planes",
+    author: "Zak van der Merwe",
+    dateListed: "2026-08-06T11:50:00.000Z",
+  },
+  {
+    url: "https://brooker.co.za/blog/2025/11/18/consistency.html?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Why Strong Consistency? - Eventual consistency makes your life harder.",
+    author: "Marc Brooker",
+    dateListed: "2026-08-06T11:00:00.000Z",
+  },
+  {
     url: "https://weli.dev/blog/half-baked-product/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Half-Baked Product",
     author: "Gerard Marquina Rubio",
