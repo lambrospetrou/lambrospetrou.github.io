@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://blog.senko.net/code-was-never-the-hard-part-is-an-insult-to-all-programmers?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "“Code was never the hard part” is an insult to all programmers",
+    author: "Senko Rašić",
+    dateListed: "2026-08-08T16:50:00.000Z",
+  },
+  {
     url: "https://www.allthingsdistributed.com/2026/08/on-building-scalable-control-planes.html?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "On building scalable control planes",
     author: "Zak van der Merwe",
