@@ -9,6 +9,13 @@
 // };
 const DataList = [
   {
+    url: "https://www.youtube.com/watch?v=UTTeXZrpMR0&utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Distinguished Colloquium: Jeff Dean, February 10, 2026 - Important Trends in AI",
+    author: "Jeff Dean",
+    dateListed: "2026-08-14T14:50:00.000Z",
+    type: "video",
+  },
+  {
     url: "https://blog.senko.net/code-was-never-the-hard-part-is-an-insult-to-all-programmers?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "“Code was never the hard part” is an insult to all programmers",
     author: "Senko Rašić",
