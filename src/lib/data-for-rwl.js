@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://news.ycombinator.com/item?id=23285438&utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Sales tips - Sales is about people and it's about problem solving - People buy 4 things and 4 things only - People buy aspirin always",
+    author: "goatherders",
+    dateListed: "2026-08-16T22:00:00.000Z",
+  },
+  {
     url: "https://www.youtube.com/watch?v=UTTeXZrpMR0&utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Distinguished Colloquium: Jeff Dean, February 10, 2026 - Important Trends in AI",
     author: "Jeff Dean",
