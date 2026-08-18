@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://stephango.com/moats?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "How things win - moats",
+    author: "Steph Ango",
+    dateListed: "2026-08-18T11:00:00.000Z",
+  },
+  {
     url: "https://news.ycombinator.com/item?id=23285438&utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Sales tips - Sales is about people and it's about problem solving - People buy 4 things and 4 things only - People buy aspirin always",
     author: "goatherders",
