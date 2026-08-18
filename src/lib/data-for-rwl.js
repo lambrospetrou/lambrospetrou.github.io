@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://jeremymorrell.dev/blog/extensible-software-in-the-age-of-llms/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Extensible Software in the age of LLMs",
+    author: "Jeremy Morrell",
+    dateListed: "2026-08-18T17:00:00.000Z",
+  },
+  {
     url: "https://stephango.com/moats?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "How things win - moats",
     author: "Steph Ango",
