@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://cursor.com/blog/git-at-any-scale?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Git at any scale",
+    author: "Vicent Martí",
+    dateListed: "2026-08-25T11:00:00.000Z",
+  },
+  {
     url: "https://jeremymorrell.dev/blog/extensible-software-in-the-age-of-llms/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Extensible Software in the age of LLMs",
     author: "Jeremy Morrell",
