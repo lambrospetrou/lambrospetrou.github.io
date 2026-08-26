@@ -9,6 +9,18 @@
 // };
 const DataList = [
   {
+    url: "https://jack-vanlightly.com/blog/2026/8/25/the-logdrive-flexible-composition-through-abstraction-in-shared-logs?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "The LogDrive: Flexible Composition Through Abstraction in Shared Logs",
+    author: "Jack Vanlightly",
+    dateListed: "2026-08-26T09:30:00.000Z",
+  },
+  {
+    url: "https://theconsensus.dev/p/2026/08/23/another-look-at-sqlite-wal-reset.html?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Another look at SQLite's WAL-Reset bug",
+    author: "Phil Eaton",
+    dateListed: "2026-08-26T09:20:00.000Z",
+  },
+  {
     url: "https://cursor.com/blog/git-at-any-scale?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Git at any scale",
     author: "Vicent Martí",
