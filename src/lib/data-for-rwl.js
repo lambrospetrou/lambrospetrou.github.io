@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://www.vldb.org/pvldb/vol18/p4817-karpathiotakis.pdf?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Scribe: How Meta transports terabytes per second in real time",
+    author: "Manos Karpathiotakis, Vlassios Rizopoulos, Basri Kahveci, Tiziano Carotti, Artem Gelum, Hazem Nada, Yuri Dolgov",
+    dateListed: "2026-08-28T10:25:00.000Z",
+  },
+  {
     url: "https://arxiv.org/abs/2201.01174?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Binary Fuse Filters: Fast and Smaller Than Xor Filters",
     author: "Thomas Mueller Graf, Daniel Lemire",
