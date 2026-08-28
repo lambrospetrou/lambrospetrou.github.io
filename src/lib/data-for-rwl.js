@@ -9,6 +9,43 @@
 // };
 const DataList = [
   {
+    url: "https://arxiv.org/abs/2201.01174?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Binary Fuse Filters: Fast and Smaller Than Xor Filters",
+    author: "Thomas Mueller Graf, Daniel Lemire",
+    dateListed: "2026-08-28T09:25:00.000Z",
+  },
+  {
+    url: "https://lemire.me/blog/2019/12/19/xor-filters-faster-and-smaller-than-bloom-filters/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Xor Filters: Faster and Smaller Than Bloom Filters",
+    author: "Thomas Mueller Graf, Daniel Lemire",
+    dateListed: "2026-08-28T09:20:00.000Z",
+  },
+  {
+    url: "https://stripe.dev/blog/how-stripes-document-databases-supported-99.999-uptime-with-zero-downtime-data-migrations?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "How Stripe’s document databases supported 99.999% uptime with zero-downtime data migrations",
+    author: "Jimmy Morzaria, Suraj Narkhede",
+    dateListed: "2026-08-28T09:15:00.000Z",
+  },
+  {
+    url: "https://testing.googleblog.com/2015/01/testing-on-toilet-change-detector-tests.html?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Testing on the Toilet: Change-Detector Tests Considered Harmful",
+    author: "Alex Eagle",
+    dateListed: "2026-08-28T09:10:00.000Z",
+  },
+  {
+    url: "https://www.youtube.com/watch?v=GRJtYwneG2Q&utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "The Power of Ten: Rules for Safety Critical Coding by Gerard Holzmann",
+    author: "Gerard Holzmann",
+    dateListed: "2026-08-28T09:05:00.000Z",
+    type: "video",
+  },
+  {
+    url: "https://muratbuffalo.blogspot.com/2026/07/aurora-dsql-scalable-multi-region-oltp.html?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Aurora DSQL: Scalable, Multi-Region OLTP",
+    author: "Murat Demirbas (Distributolog)",
+    dateListed: "2026-08-28T09:00:00.000Z",
+  },
+  {
     url: "https://jack-vanlightly.com/blog/2026/8/25/the-logdrive-flexible-composition-through-abstraction-in-shared-logs?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "The LogDrive: Flexible Composition Through Abstraction in Shared Logs",
     author: "Jack Vanlightly",
