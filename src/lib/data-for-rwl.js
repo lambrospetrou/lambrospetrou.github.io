@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://sockpuppet.org/blog/2026/08/20/stop-making-tuis/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Stop Making TUIs - Our field has a weird relationship with terminal and command line interfaces. The time has come to re-evaluate it.",
+    author: "Thomas Ptacek",
+    dateListed: "2026-08-29T14:00:00.000Z",
+  },
+  {
     url: "https://www.vldb.org/pvldb/vol18/p4817-karpathiotakis.pdf?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Scribe: How Meta transports terabytes per second in real time",
     author: "Manos Karpathiotakis, Vlassios Rizopoulos, Basri Kahveci, Tiziano Carotti, Artem Gelum, Hazem Nada, Yuri Dolgov",
