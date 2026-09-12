@@ -9,6 +9,18 @@
 // };
 const DataList = [
   {
+    url: "https://www.youtube.com/watch?v=P0cAG-RM1_c&utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Making the Impossible Possible (Again): Ten Years of Flexible Paxos by Heidi Howard",
+    author: "Heidi Howard",
+    dateListed: "2026-09-12T12:30:00.000Z",
+  },
+  {
+    url: "https://planetscale.com/blog/the-lifecycle-of-a-sharded-postgres-query?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "The lifecycle of a sharded Postgres query",
+    author: "PlanetScale team",
+    dateListed: "2026-09-12T12:00:00.000Z",
+  },
+  {
     url: "https://sockpuppet.org/blog/2026/08/20/stop-making-tuis/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Stop Making TUIs - Our field has a weird relationship with terminal and command line interfaces. The time has come to re-evaluate it.",
     author: "Thomas Ptacek",
