@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://tailscale.com/blog/tailcat?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Tailcat: Tailscale without Tailscale, by Tailscale",
+    author: "Brad Fitzpatrick",
+    dateListed: "2026-09-12T13:30:00.000Z",
+  },
+  {
     url: "https://www.youtube.com/watch?v=P0cAG-RM1_c&utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Making the Impossible Possible (Again): Ten Years of Flexible Paxos by Heidi Howard",
     author: "Heidi Howard",
