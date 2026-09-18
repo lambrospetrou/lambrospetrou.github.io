@@ -9,6 +9,19 @@
 // };
 const DataList = [
   {
+    url: "https://www.mcsweeneys.net/articles/ai-economics-for-dummies?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "AI Economics for Dummies",
+    author: "Andrew Singleton",
+    dateListed: "2026-09-18T12:05:00.000Z",
+    tags: ["favourite"],
+  },
+  {
+    url: "https://planetscale.com/blog/introducing-tin?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Introducing TIN: full-text search for Postgres",
+    author: "Eric Ridge, Patrick Reynolds",
+    dateListed: "2026-09-18T12:00:00.000Z",
+  },
+  {
     url: "https://tailscale.com/blog/tailcat?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Tailcat: Tailscale without Tailscale, by Tailscale",
     author: "Brad Fitzpatrick",
