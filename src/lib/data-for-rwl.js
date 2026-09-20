@@ -9,6 +9,24 @@
 // };
 const DataList = [
   {
+    url: "https://antithesis.com/docs/resources/deterministic_simulation_testing/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Deterministic simulation testing - how it works and when to use it",
+    author: "Antithesis",
+    dateListed: "2026-09-20T14:20:00.000Z",
+  },
+  {
+    url: "https://anishathalye.com/testing-distributed-systems-for-linearizability/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Testing Distributed Systems for Linearizability",
+    author: "Anish Athalye",
+    dateListed: "2026-09-20T14:05:00.000Z",
+  },
+  {
+    url: "https://benjdd.com/aws/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "AWS data center latencies",
+    author: "Ben Dicken (and CloudPing)",
+    dateListed: "2026-09-20T14:00:00.000Z",
+  },
+  {
     url: "https://www.mcsweeneys.net/articles/ai-economics-for-dummies?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "AI Economics for Dummies",
     author: "Andrew Singleton",
