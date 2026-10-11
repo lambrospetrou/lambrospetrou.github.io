@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://distill.pub/2020/circuits/zoom-in/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Zoom In: An Introduction to Circuits - By studying the connections between neurons, we can find meaningful algorithms in the weights of neural networks.",
+    author: "OpenAI engineers",
+    dateListed: "2026-10-11T19:00:00.000Z",
+  },
+  {
     url: "https://antithesis.com/docs/resources/deterministic_simulation_testing/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Deterministic simulation testing - how it works and when to use it",
     author: "Antithesis",
