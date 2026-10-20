@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://planetscale.com/blog/leaky-buckets-in-software-explained?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "What today's software owes to Bronze Age clocks - Leaky buckets",
+    author: "Simeon Griggs",
+    dateListed: "2026-10-21T00:00:00.000Z",
+  },
+  {
     url: "https://distill.pub/2020/circuits/zoom-in/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Zoom In: An Introduction to Circuits - By studying the connections between neurons, we can find meaningful algorithms in the weights of neural networks.",
     author: "OpenAI engineers",
