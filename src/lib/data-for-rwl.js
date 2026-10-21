@@ -9,6 +9,24 @@
 // };
 const DataList = [
   {
+    url: "https://felixrieseberg.com/how-to-be-more-ambitious-a-tutorial-for-humans-with-models/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "How to be more ambitious: A tutorial for humans with models",
+    author: "Felix Rieseberg",
+    dateListed: "2026-10-21T13:00:00.000Z",
+  },
+  {
+    url: "https://lethain.com/small-changes/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Speeding up code review with 'small-change'",
+    author: "Will Larson",
+    dateListed: "2026-10-21T12:05:00.000Z",
+  },
+  {
+    url: "https://www.scattered-thoughts.net/writing/an-opinionated-map-of-incremental-and-streaming-systems/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "An opinionated map of incremental and streaming systems",
+    author: "Jamie Brandon",
+    dateListed: "2026-10-21T12:00:00.000Z",
+  },
+  {
     url: "https://planetscale.com/blog/leaky-buckets-in-software-explained?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "What today's software owes to Bronze Age clocks - Leaky buckets",
     author: "Simeon Griggs",
