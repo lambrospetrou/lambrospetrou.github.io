@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://philipotoole.com/twelve-years-of-distributed-sqlite/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Twelve years of distributed SQLite",
+    author: "Philip O'Toole",
+    dateListed: "2026-10-26T13:00:00.000Z",
+  },
+  {
     url: "https://felixrieseberg.com/how-to-be-more-ambitious-a-tutorial-for-humans-with-models/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "How to be more ambitious: A tutorial for humans with models",
     author: "Felix Rieseberg",
