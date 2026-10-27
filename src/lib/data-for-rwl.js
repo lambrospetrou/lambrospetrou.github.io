@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://enroute.sh/blog/everyone-is-doing-git-on-s3-wrong?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Everyone is doing Git on S3 wrong",
+    author: "Enroute",
+    dateListed: "2026-10-27T20:00:00.000Z",
+  },
+  {
     url: "https://philipotoole.com/twelve-years-of-distributed-sqlite/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Twelve years of distributed SQLite",
     author: "Philip O'Toole",
