@@ -9,6 +9,24 @@
 // };
 const DataList = [
   {
+    url: "https://manishrjain.com/egres/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Egres: A Postgres-compatible database for heavy, multi-tenant workloads",
+    author: "Manish R Jain",
+    dateListed: "2026-11-01T11:10:00.000Z",
+  },
+  {
+    url: "https://pydantic.dev/articles/bloom-filter-folding-parquet-logfire?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Faster, smaller Bloom filters in Parquet: taking the guesswork out of Bloom filter sizing",
+    author: "Adrian Garcia Badaracco",
+    dateListed: "2026-11-01T11:05:00.000Z",
+  },
+  {
+    url: "https://borretti.me/article/no-man-is-an-island?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "No Man Is an Island",
+    author: "Fernando Borretti",
+    dateListed: "2026-11-01T11:00:00.000Z",
+  },
+  {
     url: "https://enroute.sh/blog/everyone-is-doing-git-on-s3-wrong?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Everyone is doing Git on S3 wrong",
     author: "Enroute",
