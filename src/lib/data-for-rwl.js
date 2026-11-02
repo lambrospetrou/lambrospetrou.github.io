@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://rikiyat.github.io/blog/weight-space-programming/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Sparks of Weight-Space Programming: LLMs can natively read & write neural network weights",
+    author: "Rikiya Takehi (MIT)",
+    dateListed: "2026-11-02T19:00:00.000Z",
+  },
+  {
     url: "https://manishrjain.com/egres/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Egres: A Postgres-compatible database for heavy, multi-tenant workloads",
     author: "Manish R Jain",
