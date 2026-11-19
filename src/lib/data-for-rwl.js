@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://brooker.co.za/blog/2026/11/18/workload-mix.html?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Traffic mix matters",
+    author: "Marc Brooker",
+    dateListed: "2026-11-19T13:30:00.000Z",
+  },
+  {
     url: "https://rikiyat.github.io/blog/weight-space-programming/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Sparks of Weight-Space Programming: LLMs can natively read & write neural network weights",
     author: "Rikiya Takehi (MIT)",
