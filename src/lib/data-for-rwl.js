@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://planetscale.com/blog/securing-webhooks?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Webhook security: a hands-on guide",
+    author: "Mike Coutermarsh",
+    dateListed: "2026-11-19T23:30:00.000Z",
+  },
+  {
     url: "https://brooker.co.za/blog/2026/11/18/workload-mix.html?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Traffic mix matters",
     author: "Marc Brooker",
