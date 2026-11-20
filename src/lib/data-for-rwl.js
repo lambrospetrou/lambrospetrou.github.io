@@ -9,6 +9,19 @@
 // };
 const DataList = [
   {
+    url: "https://transactional.blog/talk/please-implement-a-quorum-database?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Please Implement A Quorum Database",
+    author: "Alex Miller",
+    dateListed: "2026-11-20T10:20:00.000Z",
+    tags: ["favourite"],
+  },
+  {
+    url: "https://martinfowler.com/articles/deterministic-simulation-testing.html?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Deterministic Simulation Testing (DST)",
+    author: "Unmesh Joshi",
+    dateListed: "2026-11-20T10:00:00.000Z",
+  },
+  {
     url: "https://planetscale.com/blog/securing-webhooks?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Webhook security: a hands-on guide",
     author: "Mike Coutermarsh",
