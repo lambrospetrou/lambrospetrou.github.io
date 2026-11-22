@@ -9,6 +9,18 @@
 // };
 const DataList = [
   {
+    url: "https://blog.acolyer.org/2020/11/09/delos/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Virtual consensus in Delos",
+    author: "Adrian Colyer",
+    dateListed: "2026-11-22T18:10:00.000Z",
+  },
+  {
+    url: "https://engineering.fb.com/2019/06/06/data-center-engineering/delos/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Delos: Simple, flexible storage for the Facebook control plane",
+    author: "Mahesh Balakrishnan, Jason Flinn",
+    dateListed: "2026-11-22T18:00:00.000Z",
+  },
+  {
     url: "https://transactional.blog/talk/please-implement-a-quorum-database?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Please Implement A Quorum Database",
     author: "Alex Miller",
