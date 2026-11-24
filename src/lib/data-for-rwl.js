@@ -9,6 +9,12 @@
 // };
 const DataList = [
   {
+    url: "https://planetscale.com/blog/why-you-shouldnt-do-app-level-sharding?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Why you shouldn't do application-level sharding",
+    author: "Ahmed Darwich",
+    dateListed: "2026-11-24T18:00:00.000Z",
+  },
+  {
     url: "https://blog.acolyer.org/2020/11/09/delos/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Virtual consensus in Delos",
     author: "Adrian Colyer",
