@@ -9,6 +9,24 @@
 // };
 const DataList = [
   {
+    url: "https://evilmartians.com/chronicles/type-errors-cost-our-coding-agents-under-one-percent-of-their-time?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Type errors cost our coding agents under 1% of their time",
+    author: "Irina Nazarova",
+    dateListed: "2026-11-27T08:30:00.000Z",
+  },
+  {
+    url: "https://www.amazon.science/publications/validating-a-high-performance-cloud-object-store-with-lightweight-formal-methods?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Validating a high-performance cloud object store with lightweight formal methods",
+    author: "Vimuth Fernando, Rajeev Joshi, Bernhard Kragl, Julien Mascart, Matthew Russo, Sarek Skotam, Colin Walker, Jake Wires",
+    dateListed: "2026-11-27T08:10:00.000Z",
+  },
+  {
+    url: "https://www.datadoghq.com/blog/ai/agentic-property-based-testing-with-ephyra/?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
+    title: "Ephyra: A new agentic property-based testing library to find the bugs you missed",
+    author: "Alp Keles",
+    dateListed: "2026-11-27T08:00:00.000Z",
+  },
+  {
     url: "https://planetscale.com/blog/why-you-shouldnt-do-app-level-sharding?utm_source=lambrospetrou_com&utm_medium=read_watch_listen_page&utm_campaign=rwl",
     title: "Why you shouldn't do application-level sharding",
     author: "Ahmed Darwich",
